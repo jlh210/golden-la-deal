@@ -9,12 +9,29 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as VerminInspectionsRouteImport } from './routes/vermin-inspections'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
-import { Route as ListingsRouteImport } from './routes/listings'
+import { Route as SecondGenerationRestaurantsRouteImport } from './routes/second-generation-restaurants'
+import { Route as RestaurantsForSaleRouteImport } from './routes/restaurants-for-sale'
+import { Route as ResidentialRouteImport } from './routes/residential'
+import { Route as OffMarketSourcingRouteImport } from './routes/off-market-sourcing'
+import { Route as LiquorLicenseForSaleRouteImport } from './routes/liquor-license-for-sale'
+import { Route as HealthInspectionRouteImport } from './routes/health-inspection'
+import { Route as HardwareStoreForSaleRouteImport } from './routes/hardware-store-for-sale'
+import { Route as GrandfatherProtectionRouteImport } from './routes/grandfather-protection'
+import { Route as E2VisaEuropeRouteImport } from './routes/e2-visa-europe'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as AssignmentsRentAbatementRouteImport } from './routes/assignments-rent-abatement'
+import { Route as AlcoholLicensingRouteImport } from './routes/alcohol-licensing'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const VerminInspectionsRoute = VerminInspectionsRouteImport.update({
+  id: '/vermin-inspections',
+  path: '/vermin-inspections',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
@@ -25,14 +42,71 @@ const ServicesRoute = ServicesRouteImport.update({
   path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ListingsRoute = ListingsRouteImport.update({
-  id: '/listings',
-  path: '/listings',
+const SecondGenerationRestaurantsRoute =
+  SecondGenerationRestaurantsRouteImport.update({
+    id: '/second-generation-restaurants',
+    path: '/second-generation-restaurants',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const RestaurantsForSaleRoute = RestaurantsForSaleRouteImport.update({
+  id: '/restaurants-for-sale',
+  path: '/restaurants-for-sale',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResidentialRoute = ResidentialRouteImport.update({
+  id: '/residential',
+  path: '/residential',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OffMarketSourcingRoute = OffMarketSourcingRouteImport.update({
+  id: '/off-market-sourcing',
+  path: '/off-market-sourcing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LiquorLicenseForSaleRoute = LiquorLicenseForSaleRouteImport.update({
+  id: '/liquor-license-for-sale',
+  path: '/liquor-license-for-sale',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HealthInspectionRoute = HealthInspectionRouteImport.update({
+  id: '/health-inspection',
+  path: '/health-inspection',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HardwareStoreForSaleRoute = HardwareStoreForSaleRouteImport.update({
+  id: '/hardware-store-for-sale',
+  path: '/hardware-store-for-sale',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GrandfatherProtectionRoute = GrandfatherProtectionRouteImport.update({
+  id: '/grandfather-protection',
+  path: '/grandfather-protection',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const E2VisaEuropeRoute = E2VisaEuropeRouteImport.update({
+  id: '/e2-visa-europe',
+  path: '/e2-visa-europe',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AssignmentsRentAbatementRoute =
+  AssignmentsRentAbatementRouteImport.update({
+    id: '/assignments-rent-abatement',
+    path: '/assignments-rent-abatement',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const AlcoholLicensingRoute = AlcoholLicensingRouteImport.update({
+  id: '/alcohol-licensing',
+  path: '/alcohol-licensing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -43,44 +117,151 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/alcohol-licensing': typeof AlcoholLicensingRoute
+  '/assignments-rent-abatement': typeof AssignmentsRentAbatementRoute
   '/contact': typeof ContactRoute
-  '/listings': typeof ListingsRoute
+  '/e2-visa-europe': typeof E2VisaEuropeRoute
+  '/grandfather-protection': typeof GrandfatherProtectionRoute
+  '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
+  '/health-inspection': typeof HealthInspectionRoute
+  '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
+  '/off-market-sourcing': typeof OffMarketSourcingRoute
+  '/residential': typeof ResidentialRoute
+  '/restaurants-for-sale': typeof RestaurantsForSaleRoute
+  '/second-generation-restaurants': typeof SecondGenerationRestaurantsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/vermin-inspections': typeof VerminInspectionsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/alcohol-licensing': typeof AlcoholLicensingRoute
+  '/assignments-rent-abatement': typeof AssignmentsRentAbatementRoute
   '/contact': typeof ContactRoute
-  '/listings': typeof ListingsRoute
+  '/e2-visa-europe': typeof E2VisaEuropeRoute
+  '/grandfather-protection': typeof GrandfatherProtectionRoute
+  '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
+  '/health-inspection': typeof HealthInspectionRoute
+  '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
+  '/off-market-sourcing': typeof OffMarketSourcingRoute
+  '/residential': typeof ResidentialRoute
+  '/restaurants-for-sale': typeof RestaurantsForSaleRoute
+  '/second-generation-restaurants': typeof SecondGenerationRestaurantsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/vermin-inspections': typeof VerminInspectionsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/alcohol-licensing': typeof AlcoholLicensingRoute
+  '/assignments-rent-abatement': typeof AssignmentsRentAbatementRoute
   '/contact': typeof ContactRoute
-  '/listings': typeof ListingsRoute
+  '/e2-visa-europe': typeof E2VisaEuropeRoute
+  '/grandfather-protection': typeof GrandfatherProtectionRoute
+  '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
+  '/health-inspection': typeof HealthInspectionRoute
+  '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
+  '/off-market-sourcing': typeof OffMarketSourcingRoute
+  '/residential': typeof ResidentialRoute
+  '/restaurants-for-sale': typeof RestaurantsForSaleRoute
+  '/second-generation-restaurants': typeof SecondGenerationRestaurantsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/vermin-inspections': typeof VerminInspectionsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contact' | '/listings' | '/services' | '/sitemap.xml'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/alcohol-licensing'
+    | '/assignments-rent-abatement'
+    | '/contact'
+    | '/e2-visa-europe'
+    | '/grandfather-protection'
+    | '/hardware-store-for-sale'
+    | '/health-inspection'
+    | '/liquor-license-for-sale'
+    | '/off-market-sourcing'
+    | '/residential'
+    | '/restaurants-for-sale'
+    | '/second-generation-restaurants'
+    | '/services'
+    | '/sitemap.xml'
+    | '/vermin-inspections'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact' | '/listings' | '/services' | '/sitemap.xml'
-  id: '__root__' | '/' | '/contact' | '/listings' | '/services' | '/sitemap.xml'
+  to:
+    | '/'
+    | '/about'
+    | '/alcohol-licensing'
+    | '/assignments-rent-abatement'
+    | '/contact'
+    | '/e2-visa-europe'
+    | '/grandfather-protection'
+    | '/hardware-store-for-sale'
+    | '/health-inspection'
+    | '/liquor-license-for-sale'
+    | '/off-market-sourcing'
+    | '/residential'
+    | '/restaurants-for-sale'
+    | '/second-generation-restaurants'
+    | '/services'
+    | '/sitemap.xml'
+    | '/vermin-inspections'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/alcohol-licensing'
+    | '/assignments-rent-abatement'
+    | '/contact'
+    | '/e2-visa-europe'
+    | '/grandfather-protection'
+    | '/hardware-store-for-sale'
+    | '/health-inspection'
+    | '/liquor-license-for-sale'
+    | '/off-market-sourcing'
+    | '/residential'
+    | '/restaurants-for-sale'
+    | '/second-generation-restaurants'
+    | '/services'
+    | '/sitemap.xml'
+    | '/vermin-inspections'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  AlcoholLicensingRoute: typeof AlcoholLicensingRoute
+  AssignmentsRentAbatementRoute: typeof AssignmentsRentAbatementRoute
   ContactRoute: typeof ContactRoute
-  ListingsRoute: typeof ListingsRoute
+  E2VisaEuropeRoute: typeof E2VisaEuropeRoute
+  GrandfatherProtectionRoute: typeof GrandfatherProtectionRoute
+  HardwareStoreForSaleRoute: typeof HardwareStoreForSaleRoute
+  HealthInspectionRoute: typeof HealthInspectionRoute
+  LiquorLicenseForSaleRoute: typeof LiquorLicenseForSaleRoute
+  OffMarketSourcingRoute: typeof OffMarketSourcingRoute
+  ResidentialRoute: typeof ResidentialRoute
+  RestaurantsForSaleRoute: typeof RestaurantsForSaleRoute
+  SecondGenerationRestaurantsRoute: typeof SecondGenerationRestaurantsRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  VerminInspectionsRoute: typeof VerminInspectionsRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/vermin-inspections': {
+      id: '/vermin-inspections'
+      path: '/vermin-inspections'
+      fullPath: '/vermin-inspections'
+      preLoaderRoute: typeof VerminInspectionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
@@ -95,11 +276,67 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/listings': {
-      id: '/listings'
-      path: '/listings'
-      fullPath: '/listings'
-      preLoaderRoute: typeof ListingsRouteImport
+    '/second-generation-restaurants': {
+      id: '/second-generation-restaurants'
+      path: '/second-generation-restaurants'
+      fullPath: '/second-generation-restaurants'
+      preLoaderRoute: typeof SecondGenerationRestaurantsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/restaurants-for-sale': {
+      id: '/restaurants-for-sale'
+      path: '/restaurants-for-sale'
+      fullPath: '/restaurants-for-sale'
+      preLoaderRoute: typeof RestaurantsForSaleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/residential': {
+      id: '/residential'
+      path: '/residential'
+      fullPath: '/residential'
+      preLoaderRoute: typeof ResidentialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/off-market-sourcing': {
+      id: '/off-market-sourcing'
+      path: '/off-market-sourcing'
+      fullPath: '/off-market-sourcing'
+      preLoaderRoute: typeof OffMarketSourcingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/liquor-license-for-sale': {
+      id: '/liquor-license-for-sale'
+      path: '/liquor-license-for-sale'
+      fullPath: '/liquor-license-for-sale'
+      preLoaderRoute: typeof LiquorLicenseForSaleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/health-inspection': {
+      id: '/health-inspection'
+      path: '/health-inspection'
+      fullPath: '/health-inspection'
+      preLoaderRoute: typeof HealthInspectionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hardware-store-for-sale': {
+      id: '/hardware-store-for-sale'
+      path: '/hardware-store-for-sale'
+      fullPath: '/hardware-store-for-sale'
+      preLoaderRoute: typeof HardwareStoreForSaleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/grandfather-protection': {
+      id: '/grandfather-protection'
+      path: '/grandfather-protection'
+      fullPath: '/grandfather-protection'
+      preLoaderRoute: typeof GrandfatherProtectionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/e2-visa-europe': {
+      id: '/e2-visa-europe'
+      path: '/e2-visa-europe'
+      fullPath: '/e2-visa-europe'
+      preLoaderRoute: typeof E2VisaEuropeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -107,6 +344,27 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/assignments-rent-abatement': {
+      id: '/assignments-rent-abatement'
+      path: '/assignments-rent-abatement'
+      fullPath: '/assignments-rent-abatement'
+      preLoaderRoute: typeof AssignmentsRentAbatementRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/alcohol-licensing': {
+      id: '/alcohol-licensing'
+      path: '/alcohol-licensing'
+      fullPath: '/alcohol-licensing'
+      preLoaderRoute: typeof AlcoholLicensingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -121,21 +379,23 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  AlcoholLicensingRoute: AlcoholLicensingRoute,
+  AssignmentsRentAbatementRoute: AssignmentsRentAbatementRoute,
   ContactRoute: ContactRoute,
-  ListingsRoute: ListingsRoute,
+  E2VisaEuropeRoute: E2VisaEuropeRoute,
+  GrandfatherProtectionRoute: GrandfatherProtectionRoute,
+  HardwareStoreForSaleRoute: HardwareStoreForSaleRoute,
+  HealthInspectionRoute: HealthInspectionRoute,
+  LiquorLicenseForSaleRoute: LiquorLicenseForSaleRoute,
+  OffMarketSourcingRoute: OffMarketSourcingRoute,
+  ResidentialRoute: ResidentialRoute,
+  RestaurantsForSaleRoute: RestaurantsForSaleRoute,
+  SecondGenerationRestaurantsRoute: SecondGenerationRestaurantsRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  VerminInspectionsRoute: VerminInspectionsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
