@@ -12,6 +12,9 @@ import {
   Building2,
   Store,
   Home,
+  FileSearch,
+  Handshake,
+  Stamp,
   type LucideIcon,
 } from "lucide-react";
 
@@ -119,6 +122,27 @@ export const services: Service[] = [
     short: "Select residential listings handled by Roschard Paticchio-Stein.",
     icon: Home,
   },
+  {
+    slug: "business-investigations",
+    to: "/business-investigations",
+    title: "Restaurant Business Investigations",
+    short: "Pre-purchase due diligence: lease, permits, sales, ABC, code, equipment.",
+    icon: FileSearch,
+  },
+  {
+    slug: "buyer-tenant-resolutions",
+    to: "/buyer-tenant-resolutions",
+    title: "Buyer / Tenant Resolutions",
+    short: "Stuck mid-deal? We resolve landlord, lease, escrow, and permit dilemmas.",
+    icon: Handshake,
+  },
+  {
+    slug: "health-permitting",
+    to: "/health-permitting",
+    title: "Health Dept Permitting & Plan Check",
+    short: "Hand-drafted blueprints, plan-check submittal, stamped approvals, permits.",
+    icon: Stamp,
+  },
 ];
 
 export const featuredServices = services.filter((s) => s.featured);
@@ -130,9 +154,12 @@ export const serviceTopics = [
   "Alcohol licensing (Type 41 / 47)",
   "Liquor license for sale",
   "Health department / inspection",
+  "Health Dept permitting / plan check",
   "Vermin / compliance inspection",
   "Grandfather protection question",
   "Lease assignment / rent abatement",
+  "Pre-purchase business investigation",
+  "Buyer / tenant resolution (deal stuck)",
   "Off-market sourcing",
   "E-2 visa (Europe)",
   "Second generation space",

@@ -17,11 +17,14 @@ import { Route as RestaurantsForSaleRouteImport } from './routes/restaurants-for
 import { Route as ResidentialRouteImport } from './routes/residential'
 import { Route as OffMarketSourcingRouteImport } from './routes/off-market-sourcing'
 import { Route as LiquorLicenseForSaleRouteImport } from './routes/liquor-license-for-sale'
+import { Route as HealthPermittingRouteImport } from './routes/health-permitting'
 import { Route as HealthInspectionRouteImport } from './routes/health-inspection'
 import { Route as HardwareStoreForSaleRouteImport } from './routes/hardware-store-for-sale'
 import { Route as GrandfatherProtectionRouteImport } from './routes/grandfather-protection'
 import { Route as E2VisaEuropeRouteImport } from './routes/e2-visa-europe'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as BuyerTenantResolutionsRouteImport } from './routes/buyer-tenant-resolutions'
+import { Route as BusinessInvestigationsRouteImport } from './routes/business-investigations'
 import { Route as AssignmentsRentAbatementRouteImport } from './routes/assignments-rent-abatement'
 import { Route as AlcoholLicensingRouteImport } from './routes/alcohol-licensing'
 import { Route as AboutRouteImport } from './routes/about'
@@ -68,6 +71,11 @@ const LiquorLicenseForSaleRoute = LiquorLicenseForSaleRouteImport.update({
   path: '/liquor-license-for-sale',
   getParentRoute: () => rootRouteImport,
 } as any)
+const HealthPermittingRoute = HealthPermittingRouteImport.update({
+  id: '/health-permitting',
+  path: '/health-permitting',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const HealthInspectionRoute = HealthInspectionRouteImport.update({
   id: '/health-inspection',
   path: '/health-inspection',
@@ -91,6 +99,16 @@ const E2VisaEuropeRoute = E2VisaEuropeRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BuyerTenantResolutionsRoute = BuyerTenantResolutionsRouteImport.update({
+  id: '/buyer-tenant-resolutions',
+  path: '/buyer-tenant-resolutions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BusinessInvestigationsRoute = BusinessInvestigationsRouteImport.update({
+  id: '/business-investigations',
+  path: '/business-investigations',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AssignmentsRentAbatementRoute =
@@ -120,11 +138,14 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/alcohol-licensing': typeof AlcoholLicensingRoute
   '/assignments-rent-abatement': typeof AssignmentsRentAbatementRoute
+  '/business-investigations': typeof BusinessInvestigationsRoute
+  '/buyer-tenant-resolutions': typeof BuyerTenantResolutionsRoute
   '/contact': typeof ContactRoute
   '/e2-visa-europe': typeof E2VisaEuropeRoute
   '/grandfather-protection': typeof GrandfatherProtectionRoute
   '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
   '/health-inspection': typeof HealthInspectionRoute
+  '/health-permitting': typeof HealthPermittingRoute
   '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
@@ -139,11 +160,14 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/alcohol-licensing': typeof AlcoholLicensingRoute
   '/assignments-rent-abatement': typeof AssignmentsRentAbatementRoute
+  '/business-investigations': typeof BusinessInvestigationsRoute
+  '/buyer-tenant-resolutions': typeof BuyerTenantResolutionsRoute
   '/contact': typeof ContactRoute
   '/e2-visa-europe': typeof E2VisaEuropeRoute
   '/grandfather-protection': typeof GrandfatherProtectionRoute
   '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
   '/health-inspection': typeof HealthInspectionRoute
+  '/health-permitting': typeof HealthPermittingRoute
   '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
@@ -159,11 +183,14 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/alcohol-licensing': typeof AlcoholLicensingRoute
   '/assignments-rent-abatement': typeof AssignmentsRentAbatementRoute
+  '/business-investigations': typeof BusinessInvestigationsRoute
+  '/buyer-tenant-resolutions': typeof BuyerTenantResolutionsRoute
   '/contact': typeof ContactRoute
   '/e2-visa-europe': typeof E2VisaEuropeRoute
   '/grandfather-protection': typeof GrandfatherProtectionRoute
   '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
   '/health-inspection': typeof HealthInspectionRoute
+  '/health-permitting': typeof HealthPermittingRoute
   '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
@@ -180,11 +207,14 @@ export interface FileRouteTypes {
     | '/about'
     | '/alcohol-licensing'
     | '/assignments-rent-abatement'
+    | '/business-investigations'
+    | '/buyer-tenant-resolutions'
     | '/contact'
     | '/e2-visa-europe'
     | '/grandfather-protection'
     | '/hardware-store-for-sale'
     | '/health-inspection'
+    | '/health-permitting'
     | '/liquor-license-for-sale'
     | '/off-market-sourcing'
     | '/residential'
@@ -199,11 +229,14 @@ export interface FileRouteTypes {
     | '/about'
     | '/alcohol-licensing'
     | '/assignments-rent-abatement'
+    | '/business-investigations'
+    | '/buyer-tenant-resolutions'
     | '/contact'
     | '/e2-visa-europe'
     | '/grandfather-protection'
     | '/hardware-store-for-sale'
     | '/health-inspection'
+    | '/health-permitting'
     | '/liquor-license-for-sale'
     | '/off-market-sourcing'
     | '/residential'
@@ -218,11 +251,14 @@ export interface FileRouteTypes {
     | '/about'
     | '/alcohol-licensing'
     | '/assignments-rent-abatement'
+    | '/business-investigations'
+    | '/buyer-tenant-resolutions'
     | '/contact'
     | '/e2-visa-europe'
     | '/grandfather-protection'
     | '/hardware-store-for-sale'
     | '/health-inspection'
+    | '/health-permitting'
     | '/liquor-license-for-sale'
     | '/off-market-sourcing'
     | '/residential'
@@ -238,11 +274,14 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   AlcoholLicensingRoute: typeof AlcoholLicensingRoute
   AssignmentsRentAbatementRoute: typeof AssignmentsRentAbatementRoute
+  BusinessInvestigationsRoute: typeof BusinessInvestigationsRoute
+  BuyerTenantResolutionsRoute: typeof BuyerTenantResolutionsRoute
   ContactRoute: typeof ContactRoute
   E2VisaEuropeRoute: typeof E2VisaEuropeRoute
   GrandfatherProtectionRoute: typeof GrandfatherProtectionRoute
   HardwareStoreForSaleRoute: typeof HardwareStoreForSaleRoute
   HealthInspectionRoute: typeof HealthInspectionRoute
+  HealthPermittingRoute: typeof HealthPermittingRoute
   LiquorLicenseForSaleRoute: typeof LiquorLicenseForSaleRoute
   OffMarketSourcingRoute: typeof OffMarketSourcingRoute
   ResidentialRoute: typeof ResidentialRoute
@@ -311,6 +350,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LiquorLicenseForSaleRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/health-permitting': {
+      id: '/health-permitting'
+      path: '/health-permitting'
+      fullPath: '/health-permitting'
+      preLoaderRoute: typeof HealthPermittingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/health-inspection': {
       id: '/health-inspection'
       path: '/health-inspection'
@@ -344,6 +390,20 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/buyer-tenant-resolutions': {
+      id: '/buyer-tenant-resolutions'
+      path: '/buyer-tenant-resolutions'
+      fullPath: '/buyer-tenant-resolutions'
+      preLoaderRoute: typeof BuyerTenantResolutionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-investigations': {
+      id: '/business-investigations'
+      path: '/business-investigations'
+      fullPath: '/business-investigations'
+      preLoaderRoute: typeof BusinessInvestigationsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/assignments-rent-abatement': {
@@ -382,11 +442,14 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   AlcoholLicensingRoute: AlcoholLicensingRoute,
   AssignmentsRentAbatementRoute: AssignmentsRentAbatementRoute,
+  BusinessInvestigationsRoute: BusinessInvestigationsRoute,
+  BuyerTenantResolutionsRoute: BuyerTenantResolutionsRoute,
   ContactRoute: ContactRoute,
   E2VisaEuropeRoute: E2VisaEuropeRoute,
   GrandfatherProtectionRoute: GrandfatherProtectionRoute,
   HardwareStoreForSaleRoute: HardwareStoreForSaleRoute,
   HealthInspectionRoute: HealthInspectionRoute,
+  HealthPermittingRoute: HealthPermittingRoute,
   LiquorLicenseForSaleRoute: LiquorLicenseForSaleRoute,
   OffMarketSourcingRoute: OffMarketSourcingRoute,
   ResidentialRoute: ResidentialRoute,

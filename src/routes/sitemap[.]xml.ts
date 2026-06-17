@@ -23,6 +23,9 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/e2-visa-europe", changefreq: "monthly", priority: "0.6" },
           { path: "/hardware-store-for-sale", changefreq: "weekly", priority: "0.6" },
           { path: "/residential", changefreq: "monthly", priority: "0.5" },
+          { path: "/business-investigations", changefreq: "monthly", priority: "0.7" },
+          { path: "/buyer-tenant-resolutions", changefreq: "monthly", priority: "0.7" },
+          { path: "/health-permitting", changefreq: "monthly", priority: "0.7" },
           { path: "/contact", changefreq: "monthly", priority: "0.8" },
         ];
         const urls = entries.map(
