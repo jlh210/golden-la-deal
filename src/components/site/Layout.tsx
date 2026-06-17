@@ -12,11 +12,26 @@ const HOURS = "8:00am – 7:00pm · Mon–Sun";
 const primaryNav = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/services", label: "Services" },
+  { to: "/services", label: "Services", hasDropdown: true },
   { to: "/restaurants-for-sale", label: "Restaurants" },
   { to: "/alcohol-licensing", label: "Licensing" },
   { to: "/contact", label: "Contact" },
 ] as const;
+
+const servicesDropdown = [
+  { to: "/restaurants-for-sale", label: "Restaurants For Sale" },
+  { to: "/second-generation-restaurants", label: "Second Generation Restaurants" },
+  { to: "/alcohol-licensing", label: "Alcohol Licensing" },
+  { to: "/liquor-license-for-sale", label: "Liquor License For Sale" },
+  { to: "/health-inspection", label: "Health Dept Inspection & Permitting" },
+  { to: "/vermin-inspections", label: "Vermin Infestations" },
+  { to: "/grandfather-protection", label: "Grandfather Protection" },
+  { to: "/assignments-rent-abatement", label: "Assignments & Rent Abatement" },
+  { to: "/off-market-sourcing", label: "Locating Off-Market Restaurant / Business" },
+  { to: "/e2-visa-europe", label: "E-2 Visa (Europe)" },
+  { to: "/hardware-store-for-sale", label: "Hardware Store For Sale" },
+  { to: "/residential", label: "Residential Requests" },
+];
 
 const fullNav = [
   { to: "/", label: "Home" },
