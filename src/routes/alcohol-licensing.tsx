@@ -45,18 +45,29 @@ const fees = [
 ];
 
 const recent = [
-  { addr: "14120 Ventura Blvd, Sherman Oaks", type: "Type 47", status: "Issuance Activated" },
-  { addr: "7275 Melrose Ave, Hollywood", type: "Type 47", status: "Pending Approval" },
-  { addr: "6535 Melrose Ave, Hollywood", type: "Type 41", status: "Issuance Activated" },
-  { addr: "5710 E Los Angeles Ave, Simi Valley", type: "Type 47", status: "Pending Approval" },
-  { addr: "1742 Sunset Blvd, Echo Park", type: "Type 47", status: "Issuance Activated" },
-  { addr: "York Blvd, Highland Park", type: "Type 41", status: "Deactivated" },
+  { addr: "14120 Ventura Blvd. Unit E, Sherman Oaks", type: "Type 41", status: "Pending" },
+  { addr: "7275 Melrose Ave", type: "Type 41", status: "Pending" },
+  { addr: "6535 Melrose Ave", type: "Type 47", status: "Pending" },
+  { addr: "5710 E Los Angeles Ave, Simi Valley", type: "Type 41", status: "Pending" },
+  { addr: "8406 Topanga Canyon Blvd, Canoga Park", type: "Type 41", status: "Pending" },
+  { addr: "1831 S La Cienega", type: "Type 41", status: "Pending" },
+  { addr: "6015 W. Third Street", type: "Type 41", status: "Pending" },
+  { addr: "6136 Venice Blvd", type: "Type 41", status: "Pending" },
+  { addr: "14350 Ventura Blvd, Sherman Oaks", type: "Type 41", status: "Issuance Activated" },
+  { addr: "101 Fairfax Ave", type: "Type 41", status: "Issuance Activated" },
+  { addr: "7300 Sunset Blvd", type: "Type 47", status: "Issuance Activated" },
+  { addr: "7274-7276 Melrose Ave", type: "Type 41", status: "Issuance Activated" },
+  { addr: "5910 W. Sunset Blvd", type: "Type 41", status: "Issuance Activated" },
+  { addr: "5902 W. Sunset Blvd", type: "Type 41", status: "Issuance Activated" },
+  { addr: "320 La Brea Ave", type: "Type 41", status: "Issuance Activated" },
+  { addr: "751 Echo Park, Silver Lake", type: "Type 41", status: "Issuance Activated" },
+  { addr: "7300 Sunset Blvd", type: "Type 41", status: "Issuance Activated" },
+  { addr: "7422 Melrose Ave", type: "Type 41", status: "Issuance Activated" },
 ];
 
 const statusStyle: Record<string, string> = {
   "Issuance Activated": "bg-gold/15 text-gold border-gold/40",
-  "Pending Approval": "bg-foreground/10 text-foreground/85 border-border",
-  "Deactivated": "bg-destructive/15 text-destructive border-destructive/30",
+  "Pending": "bg-foreground/10 text-foreground/85 border-border",
 };
 
 function LicensingPage() {
