@@ -12,6 +12,9 @@ import {
   Building2,
   Store,
   Home,
+  FileSearch,
+  Handshake,
+  Stamp,
   type LucideIcon,
 } from "lucide-react";
 
