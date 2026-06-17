@@ -223,8 +223,8 @@ function HomePage() {
       </section>
 
       <CTASection
-        title="Red tag, failed inspection, or ready to sell?"
-        body="Call us now. We answer the phone. We move today."
+        title="Are you a restaurant owner in need of assistance with a real restaurant problem?"
+        body="We buy, sell, lease, license, and rescue restaurants across LA County. One call. One team. Start to close."
       />
     </SiteLayout>
   );
