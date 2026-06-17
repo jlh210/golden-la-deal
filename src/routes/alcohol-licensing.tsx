@@ -45,12 +45,12 @@ const fees = [
 ];
 
 const recent = [
+  { addr: "14120 Ventura Blvd, Sherman Oaks", type: "Type 47", status: "Issuance Activated" },
+  { addr: "7275 Melrose Ave, Hollywood", type: "Type 47", status: "Pending Approval" },
+  { addr: "6535 Melrose Ave, Hollywood", type: "Type 41", status: "Issuance Activated" },
+  { addr: "5710 E Los Angeles Ave, Simi Valley", type: "Type 47", status: "Pending Approval" },
   { addr: "1742 Sunset Blvd, Echo Park", type: "Type 47", status: "Issuance Activated" },
-  { addr: "Wilshire Blvd, Mid-Wilshire", type: "Type 41", status: "Pending Approval" },
-  { addr: "Main St, Santa Monica", type: "Type 47", status: "Pending Approval" },
-  { addr: "Melrose Ave, West Hollywood", type: "Type 41", status: "Issuance Activated" },
-  { addr: "Lincoln Blvd, Venice", type: "Type 47", status: "Deactivated" },
-  { addr: "York Blvd, Highland Park", type: "Type 41", status: "Issuance Activated" },
+  { addr: "York Blvd, Highland Park", type: "Type 41", status: "Deactivated" },
 ];
 
 const statusStyle: Record<string, string> = {
@@ -119,14 +119,31 @@ function LicensingPage() {
             </table>
           </div>
 
-          <div className="mt-6 flex items-start gap-3 rounded-xl border border-gold/40 bg-gold/5 p-5">
-            <Info className="mt-0.5 h-5 w-5 text-gold shrink-0" />
-            <p className="text-sm">
-              <span className="font-semibold text-gold">CUB Diversion Permit:</span>{" "}
-              Inactive permits require an additional <span className="font-bold">$5,500</span> CUB
-              diversion permit fee to restore active status. Quoted separately when applicable.
-            </p>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            <div className="flex items-start gap-3 rounded-xl border border-gold/40 bg-gold/5 p-5">
+              <Info className="mt-0.5 h-5 w-5 text-gold shrink-0" />
+              <p className="text-sm">
+                <span className="font-semibold text-gold">CUB Diversion Permit:</span>{" "}
+                Inactive permits require an additional <span className="font-bold">$5,500</span> CUB
+                diversion permit fee to restore active status. Typical processing window:{" "}
+                <span className="font-bold">6 weeks</span>. Drinking hours set Mon–Sun to 10pm or 11pm depending on location.
+              </p>
+            </div>
+            <div className="flex items-start gap-3 rounded-xl border border-border bg-card p-5">
+              <Info className="mt-0.5 h-5 w-5 text-gold shrink-0" />
+              <p className="text-sm">
+                <span className="font-semibold text-gold">ABC Notification Radius:</span>{" "}
+                State notification mailings cover all residents within a{" "}
+                <span className="font-bold">500-foot radius</span> of the establishment. Included in the $2,900 line item above.
+              </p>
+            </div>
           </div>
+
+          <p className="mt-6 text-xs text-muted-foreground italic leading-relaxed max-w-3xl">
+            Disclaimer: It is the sole responsibility of the Restaurant Buyer or New Tenant to verify the status of the CUB
+            (Conditional Use Beverage) permit on any prospective location. It is <span className="font-semibold">not</span> the
+            responsibility of the Property Owner to disclose CUB status.
+          </p>
         </div>
       </section>
 

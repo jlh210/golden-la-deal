@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Lock, AlertTriangle } from "lucide-react";
+import { Lock, AlertTriangle, Clock, Accessibility, Droplets } from "lucide-react";
 import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
@@ -7,21 +7,28 @@ import { CTASection } from "@/components/site/CTASection";
 export const Route = createFileRoute("/grandfather-protection")({
   head: () => ({
     meta: [
-      { title: "Grandfather Protection — Older Restaurant Spaces | Penthouse Advisors" },
+      { title: "Grandfather Protection — 90-Day Rule & ADA Carve-Outs | Penthouse Advisors" },
       {
         name: "description",
         content:
-          "Older restaurant spaces under Grandfather Protection can't be altered or upgraded without losing protected status and triggering full code compliance costs.",
+          "Grandfather Protection on older LA restaurants auto-expires after 90 days closed with Health. ADA, grease trap, and floor-plan rules still apply. Know what you can touch.",
       },
       { property: "og:title", content: "Grandfather Protection — Penthouse Advisors" },
       {
         property: "og:description",
-        content: "Protect older restaurant spaces from triggering full code compliance.",
+        content: "Protect older restaurant spaces. 90-day rule. ADA carve-outs. Don't move the floor plan.",
       },
     ],
   }),
   component: GrandfatherPage,
 });
+
+const adaItems = [
+  "Front entrance ramp (required if any visible steps)",
+  "Restrooms must be ADA-compliant",
+  "Serving counter must be ADA-compliant",
+  "At least one (1) dining table must be ADA-compliant",
+];
 
 function GrandfatherPage() {
   return (
@@ -33,6 +40,25 @@ function GrandfatherPage() {
         subtitle="Older LA restaurant spaces are often operating under Grandfather Protection — meaning current code doesn't apply unless you trigger it. Trigger it once and the entire space owes full compliance."
       />
 
+      {/* 90-day rule — critical */}
+      <section className="border-b border-border bg-charcoal-deep">
+        <div className="container-x py-12 md:py-14 flex items-start gap-4">
+          <div className="grid h-12 w-12 place-items-center rounded-md bg-destructive/15 text-destructive border border-destructive/30 shrink-0">
+            <Clock className="h-6 w-6" />
+          </div>
+          <div>
+            <div className="text-xs font-semibold uppercase tracking-widest text-destructive">Critical 90-Day Rule</div>
+            <h2 className="mt-1 text-2xl md:text-3xl font-display font-bold">
+              Closed with the Health Department for over 90 days?
+            </h2>
+            <p className="mt-2 text-muted-foreground max-w-2xl">
+              Grandfather Protection automatically expires. The space owes full current code from day 91 onward —
+              no waivers, no negotiation. This is the single fastest way owners lose protected status.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="container-x py-16 md:py-20 grid gap-10 lg:grid-cols-2">
         <div className="rounded-2xl border border-border bg-card p-8 shadow-elegant">
           <div className="grid h-12 w-12 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30">
@@ -42,8 +68,8 @@ function GrandfatherPage() {
           <p className="mt-3 text-muted-foreground leading-relaxed">
             Grandfather Protection is a legacy allowance that lets older restaurant spaces
             continue operating under the codes in effect when they were built — not today's
-            stricter Building & Safety, Health, ADA, Title 24, hood, and grease
-            interceptor requirements. It's a real financial asset of the space.
+            stricter Building & Safety, Health, Title 24, hood, and grease interceptor
+            requirements. It's a real financial asset of the space.
           </p>
         </div>
 
@@ -52,16 +78,49 @@ function GrandfatherPage() {
             <AlertTriangle className="h-6 w-6" />
           </div>
           <h2 className="mt-5 text-2xl font-display font-bold">How owners lose it</h2>
-          <p className="mt-3 text-muted-foreground leading-relaxed">
-            Alter the space — move a wall, swap a hood, change occupancy, add seating,
-            permit a remodel — and you can lose protected status. The moment status is
-            lost, the entire space owes current code: ADA, Title 24, hood and exhaust,
-            grease interceptor, fire suppression, restrooms. The bill is often six figures.
-          </p>
+          <ul className="mt-3 space-y-2 text-muted-foreground leading-relaxed text-sm">
+            <li>• Closed with Health Dept for over 90 days (auto-expires)</li>
+            <li>• Remodeling that <span className="font-semibold text-foreground">changes the floor plan</span></li>
+            <li>• Moving or removing walls</li>
+            <li>• Swapping the hood or relocating gas equipment</li>
+            <li>• Changing occupancy or adding seating beyond permitted count</li>
+            <li>• Pulling a permit that triggers a full plan-check review</li>
+          </ul>
         </div>
       </section>
 
-      <section className="container-x pb-16">
+      {/* ADA carve-outs */}
+      <section className="border-y border-border bg-charcoal-deep">
+        <div className="container-x py-16 md:py-20">
+          <div className="flex items-center gap-3">
+            <Accessibility className="h-6 w-6 text-gold" />
+            <p className="text-xs font-semibold uppercase tracking-widest text-gold">Still Required Under Grandfather</p>
+          </div>
+          <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">ADA carve-outs apply even with protection.</h2>
+          <p className="mt-3 max-w-2xl text-muted-foreground">
+            Grandfather Protection does <span className="font-semibold text-foreground">not</span> exempt a restaurant from
+            baseline ADA compliance. These four items must be in place regardless of protected status:
+          </p>
+          <ul className="mt-8 grid gap-3 md:grid-cols-2">
+            {adaItems.map((item) => (
+              <li key={item} className="flex items-start gap-3 rounded-lg border border-gold/30 bg-card p-4 text-sm">
+                <Accessibility className="mt-0.5 h-4 w-4 text-gold shrink-0" /> {item}
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-6 flex items-start gap-3 rounded-xl border border-gold/40 bg-gold/5 p-5">
+            <Droplets className="mt-0.5 h-5 w-5 text-gold shrink-0" />
+            <p className="text-sm">
+              <span className="font-semibold text-gold">Grease trap:</span>{" "}
+              If the property is missing a grease trap under the 3-compartment sink, it will need to be installed —
+              this is enforced even under Grandfather Protection.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="container-x py-16">
         <div className="rounded-2xl border border-gold/40 bg-charcoal-deep p-8 md:p-10">
           <h2 className="text-2xl md:text-3xl font-display font-bold">Before you remodel — call us.</h2>
           <p className="mt-3 text-muted-foreground max-w-2xl">
