@@ -70,7 +70,7 @@ function Header() {
 
         <nav className="hidden lg:flex items-center gap-6">
           {primaryNav.map((n) =>
-            n.hasDropdown ? (
+            n.to === "/services" ? (
               <div key={n.to} className="relative group">
                 <Link
                   to={n.to}
