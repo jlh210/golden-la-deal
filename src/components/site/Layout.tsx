@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Menu, X, Mail, Clock } from "lucide-react";
 import { useState, type ReactNode } from "react";
+import logoAsset from "@/assets/logo.png.asset.json";
 
 const PHONE = "310-663-3521";
 const PHONE_HREF = "tel:+13106633521";
@@ -42,10 +43,12 @@ function Header() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-charcoal-deep/85 backdrop-blur-xl">
       <div className="container-x flex h-16 items-center justify-between gap-4 md:h-20">
         <Link to="/" className="flex items-center gap-2 min-w-0">
-          <span className="grid h-9 w-9 shrink-0 place-items-center rounded-sm bg-gold-gradient text-charcoal-deep font-display font-black">
-            P
-          </span>
-          <span className="font-display font-bold tracking-tight text-sm sm:text-base truncate">
+          <img
+            src={logoAsset.url}
+            alt="Penthouse Advisors Inc."
+            className="h-9 w-auto shrink-0 rounded-sm bg-white"
+          />
+          <span className="font-display font-bold tracking-tight text-sm sm:text-base truncate hidden sm:inline">
             PENTHOUSE <span className="text-gold">ADVISORS</span>
           </span>
         </Link>
@@ -146,9 +149,11 @@ function Footer() {
       <div className="container-x py-14 grid gap-10 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-2">
-            <span className="grid h-9 w-9 place-items-center rounded-sm bg-gold-gradient text-charcoal-deep font-display font-black">
-              P
-            </span>
+            <img
+              src={logoAsset.url}
+              alt="Penthouse Advisors Inc."
+              className="h-10 w-auto shrink-0 rounded-sm bg-white"
+            />
             <span className="font-display font-bold tracking-tight">
               PENTHOUSE <span className="text-gold">ADVISORS INC.</span>
             </span>
