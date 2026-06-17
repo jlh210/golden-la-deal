@@ -95,9 +95,7 @@ function HomePage() {
               <span className="text-gradient-gold">Buy. Sell. License. Rescue.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-base sm:text-lg text-muted-foreground">
-              Family-owned brokerage and advisory firm for LA County restaurant owners and
-              buyers. We move fast, we close deals, and we get the red tag off your door.
-              Our tagline is simple: <span className="text-gold font-semibold">Do It Now.</span>
+              Restaurant buying, selling, leasing, licensing, rescuing and permitting — all handled by one team, start to close.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
