@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Phone, Star, ShieldCheck, MapPin, Calendar } from "lucide-react";
 import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
-import { services } from "@/lib/services";
+import { CTASection } from "@/components/site/CTASection";
+import { featuredServices } from "@/lib/services";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -10,7 +11,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "LA's go-to restaurant brokerage & advisory firm. Buy, sell, license, lease, and rescue your restaurant. Call 310-663-3521.",
+          "LA County's go-to restaurant brokerage & advisory firm. Buy, sell, license, lease, and rescue your restaurant. Family-owned since 2021. Call 310-663-3521.",
       },
       { property: "og:title", content: "Penthouse Advisors — LA Restaurant Experts" },
       {
@@ -25,8 +26,8 @@ export const Route = createFileRoute("/")({
 const trust = [
   { icon: Calendar, label: "Est. 2021" },
   { icon: ShieldCheck, label: "Licensed Brokers" },
-  { icon: MapPin, label: "LA County Specialists" },
-  { icon: Star, label: "5-Star Service" },
+  { icon: MapPin, label: "LA County" },
+  { icon: Star, label: "Family-Owned" },
 ];
 
 const steps = [
@@ -50,7 +51,7 @@ const steps = [
 const testimonials = [
   {
     quote:
-      "They got my Type 47 transferred in 71 days and walked the landlord through every step. Doors opened on schedule.",
+      "They got my Type 47 transferred and walked the landlord through every step. Doors opened on schedule.",
     name: "Marco D.",
     role: "Owner, Westside concept",
   },
@@ -86,7 +87,7 @@ function HomePage() {
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/5 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-gold">
               <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
-              Los Angeles · Est. 2021
+              Los Angeles County · Est. 2021
             </div>
             <h1 className="mt-6 font-display font-extrabold text-4xl sm:text-6xl md:text-7xl leading-[1.02] tracking-tight">
               LA's Restaurant Experts.
@@ -94,9 +95,9 @@ function HomePage() {
               <span className="text-gradient-gold">Buy. Sell. License. Rescue.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-base sm:text-lg text-muted-foreground">
-              Family-owned brokerage and advisory firm for LA restaurant owners. We move
-              fast, we close deals, and we get the red tag off your door. Our tagline is
-              simple: <span className="text-gold font-semibold">Do It Now.</span>
+              Family-owned brokerage and advisory firm for LA County restaurant owners and
+              buyers. We move fast, we close deals, and we get the red tag off your door.
+              Our tagline is simple: <span className="text-gold font-semibold">Do It Now.</span>
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -115,7 +116,6 @@ function HomePage() {
           </div>
         </div>
 
-        {/* Trust bar */}
         <div className="relative border-t border-border/80 bg-charcoal-deep/60">
           <div className="container-x py-6 grid grid-cols-2 md:grid-cols-4 gap-4">
             {trust.map((t) => (
@@ -145,9 +145,10 @@ function HomePage() {
         </div>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((s) => (
-            <div
+          {featuredServices.map((s) => (
+            <Link
               key={s.slug}
+              to={s.to}
               className="group relative rounded-xl border border-border bg-card p-7 hover:border-gold/60 hover:-translate-y-0.5 transition shadow-elegant"
             >
               <div className="grid h-12 w-12 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30">
@@ -155,14 +156,10 @@ function HomePage() {
               </div>
               <h3 className="mt-5 text-lg font-display font-bold">{s.title}</h3>
               <p className="mt-2 text-sm text-muted-foreground">{s.short}</p>
-              <Link
-                to="/services"
-                hash={s.slug}
-                className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-gold opacity-0 group-hover:opacity-100 transition"
-              >
+              <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-gold opacity-0 group-hover:opacity-100 transition">
                 Learn more <ArrowRight className="h-3.5 w-3.5" />
-              </Link>
-            </div>
+              </span>
+            </Link>
           ))}
         </div>
       </section>
@@ -227,32 +224,10 @@ function HomePage() {
         </div>
       </section>
 
-      {/* CTA BANNER */}
-      <section className="container-x pb-24">
-        <div className="relative overflow-hidden rounded-2xl border border-gold/40 bg-gradient-to-br from-charcoal-deep via-charcoal to-charcoal-deep p-8 md:p-14 shadow-elegant">
-          <div
-            aria-hidden
-            className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-gold/20 blur-3xl"
-          />
-          <div className="relative grid gap-6 md:grid-cols-[1fr_auto] md:items-center">
-            <div>
-              <h2 className="text-2xl md:text-4xl font-display font-bold leading-tight">
-                Dealing with a <span className="text-gold">Red Tag</span>, Failed Inspection,
-                or Ready to <span className="text-gold">Sell?</span>
-              </h2>
-              <p className="mt-3 text-muted-foreground">
-                Call us now. We answer the phone. We move today.
-              </p>
-            </div>
-            <a
-              href={PHONE_HREF}
-              className="inline-flex items-center justify-center gap-2 rounded-md bg-gold-gradient px-7 py-4 text-base font-bold text-charcoal-deep shadow-gold whitespace-nowrap"
-            >
-              <Phone className="h-5 w-5" /> {PHONE}
-            </a>
-          </div>
-        </div>
-      </section>
+      <CTASection
+        title="Red tag, failed inspection, or ready to sell?"
+        body="Call us now. We answer the phone. We move today."
+      />
     </SiteLayout>
   );
 }

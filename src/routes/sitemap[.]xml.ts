@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 
-const BASE_URL = "";
+const BASE_URL = "https://golden-la-deal.lovable.app";
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {
@@ -9,9 +9,21 @@ export const Route = createFileRoute("/sitemap.xml")({
       GET: async () => {
         const entries = [
           { path: "/", changefreq: "weekly", priority: "1.0" },
+          { path: "/about", changefreq: "monthly", priority: "0.8" },
           { path: "/services", changefreq: "monthly", priority: "0.9" },
-          { path: "/listings", changefreq: "weekly", priority: "0.8" },
-          { path: "/contact", changefreq: "monthly", priority: "0.7" },
+          { path: "/restaurants-for-sale", changefreq: "weekly", priority: "0.9" },
+          { path: "/second-generation-restaurants", changefreq: "weekly", priority: "0.8" },
+          { path: "/alcohol-licensing", changefreq: "monthly", priority: "0.8" },
+          { path: "/liquor-license-for-sale", changefreq: "weekly", priority: "0.8" },
+          { path: "/health-inspection", changefreq: "monthly", priority: "0.7" },
+          { path: "/vermin-inspections", changefreq: "monthly", priority: "0.6" },
+          { path: "/grandfather-protection", changefreq: "monthly", priority: "0.6" },
+          { path: "/assignments-rent-abatement", changefreq: "monthly", priority: "0.6" },
+          { path: "/off-market-sourcing", changefreq: "monthly", priority: "0.7" },
+          { path: "/e2-visa-europe", changefreq: "monthly", priority: "0.6" },
+          { path: "/hardware-store-for-sale", changefreq: "weekly", priority: "0.6" },
+          { path: "/residential", changefreq: "monthly", priority: "0.5" },
+          { path: "/contact", changefreq: "monthly", priority: "0.8" },
         ];
         const urls = entries.map(
           (e) =>

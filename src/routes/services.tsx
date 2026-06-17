@@ -1,21 +1,23 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Check, ArrowRight, Phone } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
+import { PageHero } from "@/components/site/PageHero";
+import { CTASection } from "@/components/site/CTASection";
 import { services } from "@/lib/services";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Penthouse Advisors | LA Restaurant Brokerage & Advisory" },
+      { title: "All Services — Penthouse Advisors | LA Restaurant Brokerage & Advisory" },
       {
         name: "description",
         content:
-          "Brokerage, alcohol licensing, health permitting, lease negotiation, plan check drafting, and business rescue for LA restaurant owners.",
+          "Brokerage, alcohol licensing, health permitting, lease assignments, vermin inspections, off-market sourcing, E-2 visa support, 2nd gen spaces and more.",
       },
       { property: "og:title", content: "Services — Penthouse Advisors" },
       {
         property: "og:description",
-        content: "Full-service restaurant advisory for Los Angeles operators.",
+        content: "Full-service restaurant advisory for Los Angeles County operators.",
       },
     ],
   }),
@@ -25,69 +27,55 @@ export const Route = createFileRoute("/services")({
 function ServicesPage() {
   return (
     <SiteLayout>
-      <section className="bg-hero border-b border-border">
-        <div className="container-x py-16 md:py-24">
-          <p className="text-xs font-semibold uppercase tracking-widest text-gold">Services</p>
-          <h1 className="mt-3 text-4xl md:text-6xl font-display font-extrabold leading-[1.05]">
-            Everything a restaurant <span className="text-gradient-gold">owner</span> needs.
-          </h1>
-          <p className="mt-5 max-w-2xl text-muted-foreground">
-            Six services, one firm, one phone call. Built for LA restaurant operators who
-            need answers — and execution — fast.
-          </p>
+      <PageHero
+        eyebrow="Services"
+        title="Everything a restaurant"
+        accent="owner needs."
+        subtitle="One firm, one phone call. Built for LA County restaurant operators, buyers, landlords, and international investors who need answers — and execution — fast."
+      />
+
+      <section className="container-x py-16 md:py-20">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((s, i) => (
+            <Link
+              key={s.slug}
+              to={s.to}
+              className="group rounded-xl border border-border bg-card p-7 hover:border-gold/60 transition shadow-elegant flex flex-col"
+            >
+              <div className="flex items-center justify-between">
+                <div className="grid h-12 w-12 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30">
+                  <s.icon className="h-6 w-6" />
+                </div>
+                <span className="font-display text-xs font-bold text-gold/50">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+              </div>
+              <h2 className="mt-5 text-lg font-display font-bold">{s.title}</h2>
+              <p className="mt-2 text-sm text-muted-foreground flex-1">{s.short}</p>
+              <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-gold">
+                Open page <ArrowRight className="h-3.5 w-3.5" />
+              </span>
+            </Link>
+          ))}
+        </div>
+
+        <div className="mt-12 flex flex-wrap gap-3">
+          <Link
+            to="/contact"
+            className="inline-flex items-center gap-2 rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-charcoal-deep shadow-gold"
+          >
+            Book a Consultation <ArrowRight className="h-4 w-4" />
+          </Link>
+          <a
+            href={PHONE_HREF}
+            className="inline-flex items-center gap-2 rounded-md border border-gold/40 px-6 py-3.5 text-sm font-semibold hover:bg-gold/10"
+          >
+            <Phone className="h-4 w-4 text-gold" /> {PHONE}
+          </a>
         </div>
       </section>
 
-      <section className="container-x py-16 md:py-24 space-y-6">
-        {services.map((s, i) => (
-          <article
-            key={s.slug}
-            id={s.slug}
-            className="scroll-mt-24 grid gap-8 md:grid-cols-[1.1fr_2fr] rounded-2xl border border-border bg-card p-7 md:p-10 shadow-elegant"
-          >
-            <div>
-              <div className="flex items-center gap-3">
-                <span className="font-display text-xs font-bold text-gold/60">
-                  0{i + 1}
-                </span>
-                <div className="h-px flex-1 bg-border" />
-              </div>
-              <div className="mt-4 grid h-14 w-14 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30">
-                <s.icon className="h-7 w-7" />
-              </div>
-              <h2 className="mt-5 text-2xl md:text-3xl font-display font-bold">{s.title}</h2>
-              <p className="mt-3 text-muted-foreground">{s.short}</p>
-            </div>
-            <div>
-              <p className="text-base leading-relaxed">{s.long}</p>
-              <ul className="mt-6 space-y-3">
-                {s.bullets.map((b) => (
-                  <li key={b} className="flex items-start gap-3">
-                    <span className="mt-1 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-gold/15 text-gold">
-                      <Check className="h-3 w-3" />
-                    </span>
-                    <span className="text-sm text-foreground/90">{b}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center gap-2 rounded-md bg-gold-gradient px-5 py-3 text-sm font-bold text-charcoal-deep shadow-gold"
-                >
-                  Get a plan <ArrowRight className="h-4 w-4" />
-                </Link>
-                <a
-                  href={PHONE_HREF}
-                  className="inline-flex items-center gap-2 rounded-md border border-gold/40 px-5 py-3 text-sm font-semibold hover:bg-gold/10"
-                >
-                  <Phone className="h-4 w-4 text-gold" /> {PHONE}
-                </a>
-              </div>
-            </div>
-          </article>
-        ))}
-      </section>
+      <CTASection />
     </SiteLayout>
   );
 }
