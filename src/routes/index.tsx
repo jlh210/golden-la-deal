@@ -187,7 +187,7 @@ function HomePage() {
               to="/contact"
               className="inline-flex items-center gap-2 rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-charcoal-deep shadow-gold"
             >
-              Start with a free consult <ArrowRight className="h-4 w-4" />
+              Book a consultation <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>

@@ -16,7 +16,7 @@ export const Route = createFileRoute("/contact")({
       { property: "og:title", content: "Contact Penthouse Advisors" },
       {
         property: "og:description",
-        content: "Book a free consult with LA's restaurant experts.",
+        content: "Book a consultation with LA's restaurant experts.",
       },
     ],
   }),
