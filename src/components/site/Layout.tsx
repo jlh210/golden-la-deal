@@ -69,17 +69,44 @@ function Header() {
         </Link>
 
         <nav className="hidden lg:flex items-center gap-6">
-          {primaryNav.map((n) => (
-            <Link
-              key={n.to}
-              to={n.to}
-              className="text-sm font-medium text-foreground/80 hover:text-gold transition-colors"
-              activeProps={{ className: "text-gold" }}
-              activeOptions={{ exact: n.to === "/" }}
-            >
-              {n.label}
-            </Link>
-          ))}
+          {primaryNav.map((n) =>
+            n.hasDropdown ? (
+              <div key={n.to} className="relative group">
+                <Link
+                  to={n.to}
+                  className="text-sm font-medium text-foreground/80 hover:text-gold transition-colors inline-flex items-center gap-1 py-5"
+                  activeProps={{ className: "text-gold" }}
+                >
+                  {n.label}
+                  <ChevronDown className="h-3.5 w-3.5 transition-transform group-hover:rotate-180" />
+                </Link>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <div className="w-[560px] rounded-lg border border-border bg-charcoal-deep/95 backdrop-blur-xl shadow-elegant p-5 grid grid-cols-2 gap-x-6 gap-y-2.5">
+                    {servicesDropdown.map((s) => (
+                      <Link
+                        key={s.to}
+                        to={s.to}
+                        className="text-sm text-foreground/80 hover:text-gold transition-colors py-1.5"
+                        activeProps={{ className: "text-gold" }}
+                      >
+                        {s.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={n.to}
+                to={n.to}
+                className="text-sm font-medium text-foreground/80 hover:text-gold transition-colors"
+                activeProps={{ className: "text-gold" }}
+                activeOptions={{ exact: n.to === "/" }}
+              >
+                {n.label}
+              </Link>
+            )
+          )}
         </nav>
 
         <div className="flex items-center gap-2">
