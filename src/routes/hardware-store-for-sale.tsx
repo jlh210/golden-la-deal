@@ -95,6 +95,34 @@ function HardwarePage() {
           <div className="mt-8 rounded-2xl border border-border bg-card p-7 shadow-elegant">
             <div className="flex items-center gap-3">
               <FileText className="h-5 w-5 text-gold" />
+              <h3 className="text-lg font-display font-bold">Lease Terms</h3>
+            </div>
+            <ul className="mt-4 space-y-2">
+              {leaseTerms.map((r) => (
+                <li key={r} className="flex items-start gap-2 text-sm">
+                  <span className="mt-2 h-1 w-1 rounded-full bg-gold shrink-0" /> {r}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="mt-6 rounded-2xl border border-border bg-card p-7 shadow-elegant">
+            <div className="flex items-center gap-3">
+              <FileText className="h-5 w-5 text-gold" />
+              <h3 className="text-lg font-display font-bold">Escrow</h3>
+            </div>
+            <ul className="mt-4 space-y-2">
+              {escrowDetails.map((r) => (
+                <li key={r} className="flex items-start gap-2 text-sm">
+                  <span className="mt-2 h-1 w-1 rounded-full bg-gold shrink-0" /> {r}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="mt-6 rounded-2xl border border-border bg-card p-7 shadow-elegant">
+            <div className="flex items-center gap-3">
+              <FileText className="h-5 w-5 text-gold" />
               <h3 className="text-lg font-display font-bold">Buyer Requirements</h3>
             </div>
             <ul className="mt-4 space-y-2">
