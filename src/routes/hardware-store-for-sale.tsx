@@ -27,13 +27,30 @@ const specs = [
   { label: "Asking Price", value: "$190,000", note: "Negotiable + inventory" },
   { label: "Annual Revenue", value: "$402,000 / yr" },
   { label: "Year Established", value: "2020" },
+  { label: "Employees", value: "1 Full-Time" },
   { label: "Location", value: "Westwood Blvd, West LA" },
+  { label: "Lease Commenced", value: "Oct 9, 2020" },
+];
+
+const leaseTerms = [
+  "Base rent (commencement): $3,082.56 / mo",
+  "Year 6 monthly base rent: $4,840.89 + CAM",
+  "Three (3) 3-year options to extend",
+  "Security deposit reimbursed by buyer through escrow",
+  "FF&E sold as-is",
+  "4 weeks of support & training included",
+];
+
+const escrowDetails = [
+  "Tower Escrow — 3400 W Olympic Blvd, Ste 201, Los Angeles",
+  "Escrow fees split 50/50 between buyer and seller",
 ];
 
 const buyerReqs = [
+  "3 recent bank statements showing liquidity",
+  "One-page credit report",
+  "Resume of related business experience",
   "Proof of funds for purchase + working capital",
-  "Retail or inventory-management experience preferred",
-  "Willingness to assume existing lease (terms shared after NDA)",
   "Signed NDA before financials and exact address are released",
 ];
 
