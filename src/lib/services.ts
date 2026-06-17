@@ -122,6 +122,27 @@ export const services: Service[] = [
     short: "Select residential listings handled by Roschard Paticchio-Stein.",
     icon: Home,
   },
+  {
+    slug: "business-investigations",
+    to: "/business-investigations",
+    title: "Restaurant Business Investigations",
+    short: "Pre-purchase due diligence: lease, permits, sales, ABC, code, equipment.",
+    icon: FileSearch,
+  },
+  {
+    slug: "buyer-tenant-resolutions",
+    to: "/buyer-tenant-resolutions",
+    title: "Buyer / Tenant Resolutions",
+    short: "Stuck mid-deal? We resolve landlord, lease, escrow, and permit dilemmas.",
+    icon: Handshake,
+  },
+  {
+    slug: "health-permitting",
+    to: "/health-permitting",
+    title: "Health Dept Permitting & Plan Check",
+    short: "Hand-drafted blueprints, plan-check submittal, stamped approvals, permits.",
+    icon: Stamp,
+  },
 ];
 
 export const featuredServices = services.filter((s) => s.featured);
