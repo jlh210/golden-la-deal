@@ -197,16 +197,17 @@ function Footer() {
     <footer className="border-t border-border bg-card mt-24">
       <div className="container-x py-14 grid gap-10 md:grid-cols-3">
         <div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <img
               src={logoAsset.url}
               alt="Penthouse Advisors Inc."
-              className="h-10 w-auto shrink-0 rounded-sm bg-white"
+              className="h-11 w-auto shrink-0"
             />
-            <span className="font-display font-bold tracking-tight">
-              PENTHOUSE <span className="text-gold">ADVISORS INC.</span>
+            <span className="font-display text-lg tracking-[0.18em] uppercase">
+              Penthouse <span className="text-gold">Advisors</span>
             </span>
           </div>
+
           <p className="mt-4 text-sm text-muted-foreground max-w-sm">
             A sophisticated, full-service restaurant advisory and brokerage firm.
             Servicing Los Angeles County since 2021. <span className="text-gold font-semibold">Do It Now.</span>
