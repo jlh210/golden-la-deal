@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Menu, X, Mail, Clock, ChevronDown } from "lucide-react";
 import { useState, type ReactNode } from "react";
-import logoAsset from "@/assets/logo.png.asset.json";
+import logoAsset from "@/assets/logo-mark.png.asset.json";
 
 const PHONE = "310-663-3521";
 const PHONE_HREF = "tel:+13106633521";
@@ -63,16 +63,17 @@ function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-card backdrop-blur-xl">
       <div className="container-x flex h-16 items-center justify-between gap-4 md:h-20">
-        <Link to="/" className="flex items-center gap-2 min-w-0">
+        <Link to="/" className="flex items-center gap-3 min-w-0">
           <img
             src={logoAsset.url}
             alt="Penthouse Advisors Inc."
-            className="h-9 w-auto shrink-0 rounded-sm bg-white"
+            className="h-9 w-auto shrink-0"
           />
-          <span className="font-display font-bold tracking-tight text-sm sm:text-base truncate hidden sm:inline">
-            PENTHOUSE <span className="text-gold">ADVISORS</span>
+          <span className="font-display text-base sm:text-lg tracking-[0.18em] uppercase truncate hidden sm:inline">
+            Penthouse <span className="text-gold">Advisors</span>
           </span>
         </Link>
+
 
         <nav className="hidden lg:flex items-center gap-6">
           {primaryNav.map((n) =>
@@ -196,16 +197,17 @@ function Footer() {
     <footer className="border-t border-border bg-card mt-24">
       <div className="container-x py-14 grid gap-10 md:grid-cols-3">
         <div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <img
               src={logoAsset.url}
               alt="Penthouse Advisors Inc."
-              className="h-10 w-auto shrink-0 rounded-sm bg-white"
+              className="h-11 w-auto shrink-0"
             />
-            <span className="font-display font-bold tracking-tight">
-              PENTHOUSE <span className="text-gold">ADVISORS INC.</span>
+            <span className="font-display text-lg tracking-[0.18em] uppercase">
+              Penthouse <span className="text-gold">Advisors</span>
             </span>
           </div>
+
           <p className="mt-4 text-sm text-muted-foreground max-w-sm">
             A sophisticated, full-service restaurant advisory and brokerage firm.
             Servicing Los Angeles County since 2021. <span className="text-gold font-semibold">Do It Now.</span>
