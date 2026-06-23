@@ -63,7 +63,7 @@ function OffMarketPage() {
         eyebrow="Off-Market Sourcing"
         title="The deals that never"
         accent="hit the market."
-        subtitle="Most of the best LA restaurant deals never get listed. Operators sell quietly, landlords push deals to a short list, and family-run businesses transfer hand-to-hand. Tell us what you're hunting — we'll find it."
+        subtitle="Most of the best LA restaurant deals never get listed. Operators sell quietly, landlords push deals to a short list, and privately held businesses transfer hand-to-hand. Tell us what you're hunting — we'll find it."
       />
 
       <section className="container-x py-12 md:py-20 grid gap-10 lg:grid-cols-[1.3fr_1fr]">
