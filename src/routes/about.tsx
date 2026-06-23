@@ -7,19 +7,21 @@ import { CTASection } from "@/components/site/CTASection";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us — Penthouse Advisors Inc. | Family-Owned LA Restaurant Firm" },
+      { title: "About — Penthouse Advisors Inc. | LA Restaurant Advisory Firm" },
       {
         name: "description",
         content:
-          "Family-owned full-service restaurant brokerage and advisory firm. Established 2021, servicing Los Angeles County. Meet the team behind Penthouse Advisors.",
+          "Penthouse Advisors is a full-service restaurant advisory and brokerage firm in Los Angeles County. Restaurant real estate, licensing, permitting, escrows, and distressed-asset resolution — under one roof.",
       },
       { property: "og:title", content: "About — Penthouse Advisors Inc." },
       {
         property: "og:description",
-        content: "Family-owned LA restaurant brokerage & advisory firm. Est. 2021.",
+        content:
+          "Sophisticated, full-service restaurant advisory and brokerage firm. Servicing Los Angeles County since 2021.",
       },
     ],
   }),
+
   component: AboutPage,
 });
 
