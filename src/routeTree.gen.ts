@@ -27,6 +27,7 @@ import { Route as BuyerTenantResolutionsRouteImport } from './routes/buyer-tenan
 import { Route as BusinessInvestigationsRouteImport } from './routes/business-investigations'
 import { Route as AssignmentsRentAbatementRouteImport } from './routes/assignments-rent-abatement'
 import { Route as AlcoholLicensingRouteImport } from './routes/alcohol-licensing'
+import { Route as AgentsRouteImport } from './routes/agents'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -122,6 +123,11 @@ const AlcoholLicensingRoute = AlcoholLicensingRouteImport.update({
   path: '/alcohol-licensing',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AgentsRoute = AgentsRouteImport.update({
+  id: '/agents',
+  path: '/agents',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -136,6 +142,7 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/agents': typeof AgentsRoute
   '/alcohol-licensing': typeof AlcoholLicensingRoute
   '/assignments-rent-abatement': typeof AssignmentsRentAbatementRoute
   '/business-investigations': typeof BusinessInvestigationsRoute
@@ -158,6 +165,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/agents': typeof AgentsRoute
   '/alcohol-licensing': typeof AlcoholLicensingRoute
   '/assignments-rent-abatement': typeof AssignmentsRentAbatementRoute
   '/business-investigations': typeof BusinessInvestigationsRoute
@@ -181,6 +189,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/agents': typeof AgentsRoute
   '/alcohol-licensing': typeof AlcoholLicensingRoute
   '/assignments-rent-abatement': typeof AssignmentsRentAbatementRoute
   '/business-investigations': typeof BusinessInvestigationsRoute
@@ -205,6 +214,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/agents'
     | '/alcohol-licensing'
     | '/assignments-rent-abatement'
     | '/business-investigations'
@@ -227,6 +237,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/agents'
     | '/alcohol-licensing'
     | '/assignments-rent-abatement'
     | '/business-investigations'
@@ -249,6 +260,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/agents'
     | '/alcohol-licensing'
     | '/assignments-rent-abatement'
     | '/business-investigations'
@@ -272,6 +284,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  AgentsRoute: typeof AgentsRoute
   AlcoholLicensingRoute: typeof AlcoholLicensingRoute
   AssignmentsRentAbatementRoute: typeof AssignmentsRentAbatementRoute
   BusinessInvestigationsRoute: typeof BusinessInvestigationsRoute
@@ -420,6 +433,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AlcoholLicensingRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/agents': {
+      id: '/agents'
+      path: '/agents'
+      fullPath: '/agents'
+      preLoaderRoute: typeof AgentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -440,6 +460,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  AgentsRoute: AgentsRoute,
   AlcoholLicensingRoute: AlcoholLicensingRoute,
   AssignmentsRentAbatementRoute: AssignmentsRentAbatementRoute,
   BusinessInvestigationsRoute: BusinessInvestigationsRoute,

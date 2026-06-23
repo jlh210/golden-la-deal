@@ -108,8 +108,8 @@ function Header() {
                 to={n.to}
                 className="text-sm font-medium text-foreground/80 hover:text-gold transition-colors"
                 activeProps={{ className: "text-gold" }}
-                activeOptions={{ exact: n.to === "/" }}
               >
+
                 {n.label}
               </Link>
             )
