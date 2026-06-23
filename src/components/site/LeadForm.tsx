@@ -9,6 +9,7 @@ const schema = z.object({
   phone: z.string().trim().min(7, "Valid phone required").max(30),
   email: z.string().trim().email("Valid email required").max(255),
   topic: z.string().min(1, "Pick what you need"),
+  role: z.string().min(1, "Select your role"),
   message: z.string().trim().max(1000).optional(),
 });
 
