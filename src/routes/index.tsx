@@ -192,36 +192,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section className="container-x py-20 md:py-28">
-        <div className="max-w-2xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-gold">Operators On Us</p>
-          <h2 className="mt-2 text-3xl md:text-5xl font-display font-bold">
-            Restaurants we've moved.
-          </h2>
-        </div>
-        <div className="mt-12 grid gap-5 md:grid-cols-3">
-          {testimonials.map((t, i) => (
-            <figure
-              key={i}
-              className="rounded-xl border border-border bg-card p-7 flex flex-col justify-between"
-            >
-              <div>
-                <div className="flex gap-1 text-gold">
-                  {Array.from({ length: 5 }).map((_, k) => (
-                    <Star key={k} className="h-4 w-4 fill-current" />
-                  ))}
-                </div>
-                <blockquote className="mt-4 text-base leading-relaxed">"{t.quote}"</blockquote>
-              </div>
-              <figcaption className="mt-6 text-sm">
-                <div className="font-semibold">{t.name}</div>
-                <div className="text-muted-foreground">{t.role}</div>
-              </figcaption>
-            </figure>
-          ))}
-        </div>
-      </section>
 
       <CTASection
         title="Are you a restaurant owner in need of assistance with a real restaurant problem?"
