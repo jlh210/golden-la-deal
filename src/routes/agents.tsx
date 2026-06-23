@@ -93,8 +93,8 @@ function AgentsPage() {
                 ))}
               </ul>
               <div className="mt-6 pt-5 border-t border-border flex flex-col gap-2 text-sm">
-                <a href={PHONE_HREF} className="inline-flex items-center gap-2 hover:text-gold">
-                  <Phone className="h-4 w-4 text-gold" /> {PHONE}
+                <a href={a.phoneHref || PHONE_HREF} className="inline-flex items-center gap-2 hover:text-gold">
+                  <Phone className="h-4 w-4 text-gold" /> {a.phone || PHONE}
                 </a>
                 <a href={EMAIL_HREF} className="inline-flex items-center gap-2 hover:text-gold break-all">
                   <Mail className="h-4 w-4 text-gold" /> {EMAIL}
