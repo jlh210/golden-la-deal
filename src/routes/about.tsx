@@ -118,8 +118,9 @@ function AboutPage() {
 
       {/* Owners */}
       <section className="container-x py-16 md:py-24">
-        <p className="text-xs font-semibold uppercase tracking-widest text-gold">Ownership</p>
+        <p className="text-xs font-semibold uppercase tracking-widest text-gold">Leadership</p>
         <h2 className="mt-3 text-3xl md:text-5xl font-display font-bold">Restaurant advisory, licensing, and deal support — under one roof.</h2>
+
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {owners.map((o) => (
