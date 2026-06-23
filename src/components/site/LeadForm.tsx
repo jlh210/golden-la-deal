@@ -84,9 +84,23 @@ export function LeadForm({
           </select>
           {errors.topic && <p className="mt-1.5 text-xs text-destructive">{errors.topic}</p>}
         </div>
+        <div>
+          <label className="block text-sm font-semibold mb-2">Are you a</label>
+          <select
+            name="role"
+            defaultValue=""
+            className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-gold focus:outline-none"
+          >
+            <option value="" disabled>Select one…</option>
+            <option value="buyer">Buyer</option>
+            <option value="seller">Seller</option>
+            <option value="restaurant-operator">Restaurant Operator</option>
+          </select>
+          {errors.role && <p className="mt-1.5 text-xs text-destructive">{errors.role}</p>}
+        </div>
         {extraFields}
         <div>
-          <label className="block text-sm font-semibold mb-2">Details (optional)</label>
+          <label className="block text-sm font-semibold mb-2">Additional details</label>
           <textarea
             name="message"
             rows={4}
