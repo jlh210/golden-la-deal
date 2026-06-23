@@ -11,7 +11,7 @@ export const Route = createFileRoute("/restaurants-for-sale")({
       {
         name: "description",
         content:
-          "Current LA restaurants for sale and restaurant asset sales. Turnkey concepts, 2nd gen spaces, hoods, lease assignments. Updated weekly.",
+          "Current LA restaurants for sale and restaurant asset sales. Turnkey concepts, hoods, lease assignments. Updated weekly.",
       },
       { property: "og:title", content: "LA Restaurants For Sale — Penthouse Advisors" },
       {
@@ -23,7 +23,7 @@ export const Route = createFileRoute("/restaurants-for-sale")({
   component: ListingsPage,
 });
 
-type SaleType = "Business Sale" | "Asset Sale" | "2nd Gen Space";
+type SaleType = "Business Sale" | "Asset Sale";
 
 type Listing = {
   id: string;
@@ -63,19 +63,9 @@ const listings: Listing[] = [
     leaseType: "Assignment of lease",
     features: ["18-ft hood", "Full kitchen FF&E", "Dining room build-out", "Equipment NSF labeled"],
   },
-  {
-    id: "R-003",
-    type: "2nd Gen Space",
-    title: "Vented Kitchen Space",
-    location: "West Hollywood",
-    price: "$8,400/mo NNN",
-    leaseType: "New lease",
-    sqft: "≈ 1,650 sq ft",
-    features: ["$0 key money", "Type I hood", "Grease interceptor", "Patio approved"],
-  },
 ];
 
-const filters: Array<"All" | SaleType> = ["All", "Business Sale", "Asset Sale", "2nd Gen Space"];
+const filters: Array<"All" | SaleType> = ["All", "Business Sale", "Asset Sale"];
 
 function ListingsPage() {
   const [filter, setFilter] = useState<(typeof filters)[number]>("All");
