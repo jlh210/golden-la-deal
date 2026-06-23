@@ -11,14 +11,15 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "LA County's go-to restaurant brokerage & advisory firm. Buy, sell, license, lease, and rescue your restaurant. Family-owned since 2021. Call 310-663-3521.",
+          "LA County's sophisticated, full-service restaurant brokerage and advisory firm. Restaurant real estate, licensing, permits, leases, escrows, and distressed-asset resolution. Call 310-663-3521.",
       },
       { property: "og:title", content: "Penthouse Advisors — LA Restaurant Experts" },
       {
         property: "og:description",
-        content: "Buy. Sell. License. Rescue. Family-owned LA restaurant brokerage.",
+        content: "Buy. Sell. License. Rescue. A modern, full-service LA restaurant advisory firm.",
       },
     ],
+
   }),
   component: HomePage,
 });
