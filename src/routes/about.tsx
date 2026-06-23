@@ -27,10 +27,11 @@ export const Route = createFileRoute("/about")({
 
 const values = [
   { icon: Zap, title: "Do It Now", body: "We move on day one. Restaurants don't have time to wait for callbacks." },
-  { icon: Users, title: "Family-Owned", body: "Three owners. One firm. Personal accountability on every deal." },
-  { icon: Scale, title: "Fair & Honest", body: "All parties treated fairly, equally, honestly — buyer, seller, landlord, tenant." },
+  { icon: Users, title: "Principal-Led", body: "Direct access to the partners on every engagement. No layers, no handoffs." },
+  { icon: Scale, title: "Fair & Honest", body: "All parties — buyer, seller, landlord, tenant — represented with discretion and integrity." },
   { icon: Award, title: "Full-Service", body: "Brokerage, licensing, health, leases, blueprints — under one roof." },
 ];
+
 
 const corpBrief = [
   "Buying and selling restaurants with full disclosure",
