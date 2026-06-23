@@ -136,7 +136,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <CTASection title="Work with the family." body="Three owners. One firm. Direct line to decision-makers." />
+      <CTASection title="Work with a team that knows restaurant deals from every angle." body="Principal-led advisory. Brokerage, licensing, permitting, and resolution — coordinated by one firm." />
     </SiteLayout>
   );
 }
