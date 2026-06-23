@@ -87,7 +87,7 @@ function AboutPage() {
       </section>
 
       {/* Corp Brief */}
-      <section className="border-y border-border bg-charcoal-deep">
+      <section className="border-y border-border bg-card">
         <div className="container-x py-16 md:py-20 grid gap-10 md:grid-cols-[1fr_1.4fr]">
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-gold">Corp Brief</p>

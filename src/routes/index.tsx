@@ -114,7 +114,7 @@ function HomePage() {
           </div>
         </div>
 
-        <div className="relative border-t border-border/80 bg-charcoal-deep/60">
+        <div className="relative border-t border-border/80 bg-card">
           <div className="container-x py-6 grid grid-cols-2 md:grid-cols-4 gap-4">
             {trust.map((t) => (
               <div key={t.label} className="flex items-center gap-3">
@@ -163,7 +163,7 @@ function HomePage() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="border-y border-border bg-charcoal-deep">
+      <section className="border-y border-border bg-card">
         <div className="container-x py-20 md:py-28">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-widest text-gold">How It Works</p>

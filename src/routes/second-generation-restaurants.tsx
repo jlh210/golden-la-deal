@@ -61,7 +61,7 @@ function SecondGenPage() {
       </section>
 
       <section className="container-x pb-16">
-        <div className="rounded-2xl border border-gold/40 bg-charcoal-deep p-8 md:p-10 grid gap-6 md:grid-cols-[1fr_auto] md:items-center">
+        <div className="rounded-2xl border border-gold/40 bg-card p-8 md:p-10 grid gap-6 md:grid-cols-[1fr_auto] md:items-center">
           <div className="flex items-start gap-4">
             <div className="grid h-12 w-12 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30 shrink-0">
               <FileSignature className="h-6 w-6" />

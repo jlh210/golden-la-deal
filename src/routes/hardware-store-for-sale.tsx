@@ -67,7 +67,7 @@ function HardwarePage() {
       <section className="container-x py-12 md:py-16 grid gap-8 lg:grid-cols-[1.4fr_1fr]">
         <div>
           <div className="rounded-2xl border border-gold/40 bg-card overflow-hidden shadow-elegant">
-            <div className="bg-gradient-to-br from-charcoal-deep to-charcoal p-8 border-b border-border flex items-start gap-4">
+            <div className="bg-gradient-to-br from-muted to-card p-8 border-b border-border flex items-start gap-4">
               <div className="grid h-14 w-14 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30 shrink-0">
                 <Store className="h-7 w-7" />
               </div>
@@ -135,7 +135,7 @@ function HardwarePage() {
           </div>
         </div>
 
-        <aside className="rounded-2xl border border-gold/40 bg-charcoal-deep p-7 h-fit lg:sticky lg:top-28">
+        <aside className="rounded-2xl border border-gold/40 bg-card p-7 h-fit lg:sticky lg:top-28">
           <h3 className="text-xl font-display font-bold">Interested?</h3>
           <p className="mt-2 text-sm text-muted-foreground">
             Full financials, lease terms, and exact address released after NDA.

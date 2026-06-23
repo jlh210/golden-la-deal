@@ -125,7 +125,7 @@ function OffMarketPage() {
         </div>
 
         <aside className="space-y-5">
-          <div className="rounded-2xl border border-gold/40 bg-charcoal-deep p-7">
+          <div className="rounded-2xl border border-gold/40 bg-card p-7">
             <h3 className="font-display font-bold text-xl">How off-market works</h3>
             <ol className="mt-4 space-y-4 text-sm">
               <li><span className="text-gold font-bold">1.</span> You send the brief.</li>

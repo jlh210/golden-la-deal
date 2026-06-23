@@ -65,7 +65,7 @@ function VerminPage() {
           </ul>
         </div>
 
-        <aside className="rounded-2xl border border-gold/40 bg-charcoal-deep p-8 shadow-elegant h-fit lg:sticky lg:top-28">
+        <aside className="rounded-2xl border border-gold/40 bg-card p-8 shadow-elegant h-fit lg:sticky lg:top-28">
           <div className="grid h-12 w-12 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30">
             <Bug className="h-6 w-6" />
           </div>

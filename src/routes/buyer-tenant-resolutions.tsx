@@ -66,7 +66,7 @@ function ResolutionsPage() {
       </section>
 
       <section className="container-x pb-16">
-        <div className="rounded-2xl border border-gold/40 bg-charcoal-deep p-8 md:p-10 flex items-start gap-4">
+        <div className="rounded-2xl border border-gold/40 bg-card p-8 md:p-10 flex items-start gap-4">
           <Scale className="h-7 w-7 text-gold shrink-0 mt-1" />
           <div>
             <h2 className="text-2xl md:text-3xl font-display font-bold">Treated fairly, equally, honestly.</h2>

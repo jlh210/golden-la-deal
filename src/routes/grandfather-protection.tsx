@@ -41,7 +41,7 @@ function GrandfatherPage() {
       />
 
       {/* 90-day rule — critical */}
-      <section className="border-b border-border bg-charcoal-deep">
+      <section className="border-b border-border bg-card">
         <div className="container-x py-12 md:py-14 flex items-start gap-4">
           <div className="grid h-12 w-12 place-items-center rounded-md bg-destructive/15 text-destructive border border-destructive/30 shrink-0">
             <Clock className="h-6 w-6" />
@@ -90,7 +90,7 @@ function GrandfatherPage() {
       </section>
 
       {/* ADA carve-outs */}
-      <section className="border-y border-border bg-charcoal-deep">
+      <section className="border-y border-border bg-card">
         <div className="container-x py-16 md:py-20">
           <div className="flex items-center gap-3">
             <Accessibility className="h-6 w-6 text-gold" />
@@ -121,7 +121,7 @@ function GrandfatherPage() {
       </section>
 
       <section className="container-x py-16">
-        <div className="rounded-2xl border border-gold/40 bg-charcoal-deep p-8 md:p-10">
+        <div className="rounded-2xl border border-gold/40 bg-card p-8 md:p-10">
           <h2 className="text-2xl md:text-3xl font-display font-bold">Before you remodel — call us.</h2>
           <p className="mt-3 text-muted-foreground max-w-2xl">
             We review the property's permit history, identify what's protected, and tell
