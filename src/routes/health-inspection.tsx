@@ -52,7 +52,7 @@ function HealthPage() {
       />
 
       {/* Pricing band */}
-      <section className="border-b border-border bg-charcoal-deep">
+      <section className="border-b border-border bg-card">
         <div className="container-x py-10 md:py-12 flex items-start gap-4">
           <div className="grid h-12 w-12 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30 shrink-0">
             <DollarSign className="h-6 w-6" />
@@ -90,7 +90,7 @@ function HealthPage() {
       </section>
 
       {/* FORBIDDEN list */}
-      <section className="border-y border-border bg-charcoal-deep">
+      <section className="border-y border-border bg-card">
         <div className="container-x py-16 md:py-20">
           <div className="flex items-center gap-3">
             <Ban className="h-6 w-6 text-destructive" />

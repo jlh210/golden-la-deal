@@ -7,28 +7,31 @@ import { CTASection } from "@/components/site/CTASection";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us — Penthouse Advisors Inc. | Family-Owned LA Restaurant Firm" },
+      { title: "About — Penthouse Advisors Inc. | LA Restaurant Advisory Firm" },
       {
         name: "description",
         content:
-          "Family-owned full-service restaurant brokerage and advisory firm. Established 2021, servicing Los Angeles County. Meet the team behind Penthouse Advisors.",
+          "Penthouse Advisors is a full-service restaurant advisory and brokerage firm in Los Angeles County. Restaurant real estate, licensing, permitting, escrows, and distressed-asset resolution — under one roof.",
       },
       { property: "og:title", content: "About — Penthouse Advisors Inc." },
       {
         property: "og:description",
-        content: "Family-owned LA restaurant brokerage & advisory firm. Est. 2021.",
+        content:
+          "Sophisticated, full-service restaurant advisory and brokerage firm. Servicing Los Angeles County since 2021.",
       },
     ],
   }),
+
   component: AboutPage,
 });
 
 const values = [
   { icon: Zap, title: "Do It Now", body: "We move on day one. Restaurants don't have time to wait for callbacks." },
-  { icon: Users, title: "Family-Owned", body: "Three owners. One firm. Personal accountability on every deal." },
-  { icon: Scale, title: "Fair & Honest", body: "All parties treated fairly, equally, honestly — buyer, seller, landlord, tenant." },
+  { icon: Users, title: "Principal-Led", body: "Direct access to the partners on every engagement. No layers, no handoffs." },
+  { icon: Scale, title: "Fair & Honest", body: "All parties — buyer, seller, landlord, tenant — represented with discretion and integrity." },
   { icon: Award, title: "Full-Service", body: "Brokerage, licensing, health, leases, blueprints — under one roof." },
 ];
+
 
 const corpBrief = [
   "Buying and selling restaurants with full disclosure",
@@ -66,10 +69,11 @@ function AboutPage() {
     <SiteLayout>
       <PageHero
         eyebrow="About Us"
-        title="LA's family-owned restaurant"
+        title="LA's full-service restaurant"
         accent="advisory firm."
-        subtitle="Penthouse Advisors Inc. is a family-owned, highly motivated, full-service restaurant brokerage and advisory corporation. Established 2021. Servicing Los Angeles County. Committed to treating all parties fairly, equally, and honestly."
+        subtitle="Penthouse Advisors Inc. is a sophisticated, modern one-stop firm for restaurant owners, buyers, sellers, landlords, tenants, and operators. We handle restaurant real estate, licensing, permits, escrows, lease issues, alcohol licensing, health department matters, and distressed-restaurant resolutions. Established 2021. Servicing Los Angeles County."
       />
+
 
       {/* Values */}
       <section className="container-x py-16 md:py-20">
@@ -87,7 +91,7 @@ function AboutPage() {
       </section>
 
       {/* Corp Brief */}
-      <section className="border-y border-border bg-charcoal-deep">
+      <section className="border-y border-border bg-card">
         <div className="container-x py-16 md:py-20 grid gap-10 md:grid-cols-[1fr_1.4fr]">
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-gold">Corp Brief</p>
@@ -114,8 +118,10 @@ function AboutPage() {
 
       {/* Owners */}
       <section className="container-x py-16 md:py-24">
-        <p className="text-xs font-semibold uppercase tracking-widest text-gold">Ownership</p>
-        <h2 className="mt-3 text-3xl md:text-5xl font-display font-bold">Meet the family.</h2>
+        <p className="text-xs font-semibold uppercase tracking-widest text-gold">Leadership</p>
+        <h2 className="mt-3 text-3xl md:text-5xl font-display font-bold">Restaurant advisory, licensing, and deal support — under one roof.</h2>
+
+
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {owners.map((o) => (
             <article key={o.name} className="rounded-2xl border border-border bg-card p-7 shadow-elegant">
@@ -131,7 +137,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <CTASection title="Work with the family." body="Three owners. One firm. Direct line to decision-makers." />
+      <CTASection title="Work with a team that knows restaurant deals from every angle." body="Principal-led advisory. Brokerage, licensing, permitting, and resolution — coordinated by one firm." />
     </SiteLayout>
   );
 }

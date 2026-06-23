@@ -116,7 +116,7 @@ function ListingsPage() {
               key={l.id}
               className="group rounded-xl border border-border bg-card overflow-hidden hover:border-gold/60 transition shadow-elegant flex flex-col"
             >
-              <div className="relative h-44 bg-gradient-to-br from-charcoal to-charcoal-deep border-b border-border flex items-center justify-center">
+              <div className="relative h-44 bg-gradient-to-br from-muted to-card border-b border-border flex items-center justify-center">
                 <div
                   aria-hidden
                   className="absolute inset-0 opacity-20"
@@ -168,7 +168,7 @@ function ListingsPage() {
           ))}
         </div>
 
-        <div className="mt-14 rounded-2xl border border-gold/40 bg-charcoal-deep p-8 md:p-10 text-center">
+        <div className="mt-14 rounded-2xl border border-gold/40 bg-card p-8 md:p-10 text-center">
           <h2 className="text-2xl md:text-3xl font-display font-bold">
             Looking for something specific?
           </h2>

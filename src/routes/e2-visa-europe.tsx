@@ -79,7 +79,7 @@ function E2Page() {
         </article>
       </section>
 
-      <section className="border-y border-border bg-charcoal-deep">
+      <section className="border-y border-border bg-card">
         <div className="container-x py-16 md:py-20">
           <p className="text-xs font-semibold uppercase tracking-widest text-gold">Our Role</p>
           <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">What Penthouse handles directly.</h2>

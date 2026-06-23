@@ -103,7 +103,7 @@ function LicensingPage() {
       </section>
 
       {/* Fees */}
-      <section className="border-y border-border bg-charcoal-deep">
+      <section className="border-y border-border bg-card">
         <div className="container-x py-16 md:py-20">
           <p className="text-xs font-semibold uppercase tracking-widest text-gold">Transparent Pricing</p>
           <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">Fee schedule.</h2>
@@ -113,7 +113,7 @@ function LicensingPage() {
           </p>
           <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-card">
             <table className="w-full text-sm">
-              <thead className="bg-charcoal-deep/60 border-b border-border">
+              <thead className="bg-card border-b border-border">
                 <tr>
                   <th className="text-left p-4 font-semibold uppercase tracking-wider text-xs text-gold">Line Item</th>
                   <th className="text-right p-4 font-semibold uppercase tracking-wider text-xs text-gold">Amount</th>

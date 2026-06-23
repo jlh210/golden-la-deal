@@ -43,7 +43,7 @@ function ContactPage() {
           <div className="space-y-5">
             <a
               href={PHONE_HREF}
-              className="block rounded-2xl border border-gold/40 bg-charcoal-deep p-7 hover:border-gold transition"
+              className="block rounded-2xl border border-gold/40 bg-card p-7 hover:border-gold transition"
             >
               <div className="flex items-center gap-3">
                 <span className="grid h-10 w-10 place-items-center rounded-md bg-gold/15 text-gold border border-gold/30">

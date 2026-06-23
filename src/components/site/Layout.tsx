@@ -61,7 +61,7 @@ const fullNav = [
 function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-50 border-b border-border/60 bg-charcoal-deep/85 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-border/60 bg-card backdrop-blur-xl">
       <div className="container-x flex h-16 items-center justify-between gap-4 md:h-20">
         <Link to="/" className="flex items-center gap-2 min-w-0">
           <img
@@ -87,7 +87,7 @@ function Header() {
                   <ChevronDown className="h-3.5 w-3.5 transition-transform group-hover:rotate-180" />
                 </Link>
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                  <div className="w-[560px] rounded-lg border border-border bg-charcoal-deep/95 backdrop-blur-xl shadow-elegant p-5 grid grid-cols-2 gap-x-6 gap-y-2.5">
+                  <div className="w-[560px] rounded-lg border border-border bg-card backdrop-blur-xl shadow-elegant p-5 grid grid-cols-2 gap-x-6 gap-y-2.5">
                     {servicesDropdown.map((s) => (
                       <Link
                         key={s.to}
@@ -139,7 +139,7 @@ function Header() {
       </div>
 
       {open && (
-        <div className="lg:hidden border-t border-border bg-charcoal-deep max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden border-t border-border bg-card max-h-[80vh] overflow-y-auto">
           <div className="container-x py-4 flex flex-col gap-1">
             {fullNav.map((n) => (
               <Link
@@ -193,7 +193,7 @@ const OWNERS = [
 
 function Footer() {
   return (
-    <footer className="border-t border-border bg-charcoal-deep mt-24">
+    <footer className="border-t border-border bg-card mt-24">
       <div className="container-x py-14 grid gap-10 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-2">
@@ -207,9 +207,10 @@ function Footer() {
             </span>
           </div>
           <p className="mt-4 text-sm text-muted-foreground max-w-sm">
-            Family-owned, full-service restaurant brokerage and advisory firm.
+            A sophisticated, full-service restaurant advisory and brokerage firm.
             Servicing Los Angeles County since 2021. <span className="text-gold font-semibold">Do It Now.</span>
           </p>
+
           <ul className="mt-5 space-y-2 text-sm">
             <li className="flex items-center gap-2">
               <Phone className="h-4 w-4 text-gold" />

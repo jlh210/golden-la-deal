@@ -79,7 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "LA's restaurant experts. Buy, sell, license, lease & rescue restaurants. Family-owned brokerage in Los Angeles. Call 310-663-3521.",
+          "LA's restaurant experts. Buy, sell, license, lease & rescue restaurants. Sophisticated, full-service restaurant advisory in Los Angeles. Call 310-663-3521.",
       },
       { name: "author", content: "Penthouse Advisors Inc." },
       { property: "og:title", content: "Penthouse Advisors Inc. — LA Restaurant Brokerage & Advisory" },

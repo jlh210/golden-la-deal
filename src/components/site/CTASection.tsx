@@ -11,7 +11,7 @@ export function CTASection({
 }) {
   return (
     <section className="container-x pb-20 pt-4">
-      <div className="relative overflow-hidden rounded-2xl border border-gold/40 bg-gradient-to-br from-charcoal-deep via-charcoal to-charcoal-deep p-8 md:p-12 shadow-elegant">
+      <div className="relative overflow-hidden rounded-2xl border border-gold/40 bg-gradient-to-br from-muted via-charcoal to-card p-8 md:p-12 shadow-elegant">
         <div
           aria-hidden
           className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-gold/20 blur-3xl"

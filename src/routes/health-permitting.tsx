@@ -60,7 +60,7 @@ function PermittingPage() {
       />
 
       {/* Pricing band */}
-      <section className="border-b border-border bg-charcoal-deep">
+      <section className="border-b border-border bg-card">
         <div className="container-x py-10 md:py-12 flex items-start gap-4">
           <div className="grid h-12 w-12 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30 shrink-0">
             <DollarSign className="h-6 w-6" />
@@ -90,7 +90,7 @@ function PermittingPage() {
       </section>
 
       {/* Recent permits */}
-      <section className="border-t border-border bg-charcoal-deep">
+      <section className="border-t border-border bg-card">
         <div className="container-x py-16 md:py-20">
           <p className="text-xs font-semibold uppercase tracking-widest text-gold">Recent Permit Activity</p>
           <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">Files we've shepherded through.</h2>

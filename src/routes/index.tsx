@@ -11,14 +11,15 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "LA County's go-to restaurant brokerage & advisory firm. Buy, sell, license, lease, and rescue your restaurant. Family-owned since 2021. Call 310-663-3521.",
+          "LA County's sophisticated, full-service restaurant brokerage and advisory firm. Restaurant real estate, licensing, permits, leases, escrows, and distressed-asset resolution. Call 310-663-3521.",
       },
       { property: "og:title", content: "Penthouse Advisors — LA Restaurant Experts" },
       {
         property: "og:description",
-        content: "Buy. Sell. License. Rescue. Family-owned LA restaurant brokerage.",
+        content: "Buy. Sell. License. Rescue. A modern, full-service LA restaurant advisory firm.",
       },
     ],
+
   }),
   component: HomePage,
 });
@@ -27,7 +28,7 @@ const trust = [
   { icon: Calendar, label: "Est. 2021" },
   { icon: ShieldCheck, label: "Licensed Brokers" },
   { icon: MapPin, label: "LA County" },
-  { icon: Star, label: "Family-Owned" },
+  { icon: Star, label: "Principal-Led" },
 ];
 
 const steps = [
@@ -114,7 +115,7 @@ function HomePage() {
           </div>
         </div>
 
-        <div className="relative border-t border-border/80 bg-charcoal-deep/60">
+        <div className="relative border-t border-border/80 bg-card">
           <div className="container-x py-6 grid grid-cols-2 md:grid-cols-4 gap-4">
             {trust.map((t) => (
               <div key={t.label} className="flex items-center gap-3">
@@ -163,7 +164,7 @@ function HomePage() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="border-y border-border bg-charcoal-deep">
+      <section className="border-y border-border bg-card">
         <div className="container-x py-20 md:py-28">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-widest text-gold">How It Works</p>

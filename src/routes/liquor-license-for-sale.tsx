@@ -65,7 +65,7 @@ function LiquorLicenseForSale() {
         <div className="grid gap-6 lg:grid-cols-2">
           {licenses.map((l) => (
             <article key={l.id} className="rounded-2xl border border-gold/40 bg-card overflow-hidden shadow-elegant">
-              <div className="bg-gradient-to-br from-charcoal-deep to-charcoal p-7 border-b border-border flex items-start justify-between">
+              <div className="bg-gradient-to-br from-muted to-card p-7 border-b border-border flex items-start justify-between">
                 <div>
                   <div className="grid h-12 w-12 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30">
                     <Wine className="h-6 w-6" />

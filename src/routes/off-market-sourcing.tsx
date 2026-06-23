@@ -63,7 +63,7 @@ function OffMarketPage() {
         eyebrow="Off-Market Sourcing"
         title="The deals that never"
         accent="hit the market."
-        subtitle="Most of the best LA restaurant deals never get listed. Operators sell quietly, landlords push deals to a short list, and family-run businesses transfer hand-to-hand. Tell us what you're hunting — we'll find it."
+        subtitle="Most of the best LA restaurant deals never get listed. Operators sell quietly, landlords push deals to a short list, and privately held businesses transfer hand-to-hand. Tell us what you're hunting — we'll find it."
       />
 
       <section className="container-x py-12 md:py-20 grid gap-10 lg:grid-cols-[1.3fr_1fr]">
@@ -125,7 +125,7 @@ function OffMarketPage() {
         </div>
 
         <aside className="space-y-5">
-          <div className="rounded-2xl border border-gold/40 bg-charcoal-deep p-7">
+          <div className="rounded-2xl border border-gold/40 bg-card p-7">
             <h3 className="font-display font-bold text-xl">How off-market works</h3>
             <ol className="mt-4 space-y-4 text-sm">
               <li><span className="text-gold font-bold">1.</span> You send the brief.</li>
