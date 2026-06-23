@@ -49,26 +49,6 @@ const steps = [
   },
 ];
 
-const testimonials = [
-  {
-    quote:
-      "They got my Type 47 transferred and walked the landlord through every step. Doors opened on schedule.",
-    name: "Marco D.",
-    role: "Owner, Westside concept",
-  },
-  {
-    quote:
-      "Health Department red-tagged us on a Friday. Penthouse had us re-inspected and reopened by Wednesday.",
-    name: "Priya S.",
-    role: "Operator, San Gabriel Valley",
-  },
-  {
-    quote:
-      "Sold a 12-year-old café off-market in under 60 days. Staff never knew until we handed over the keys.",
-    name: "James R.",
-    role: "Seller, Silver Lake",
-  },
-];
 
 function HomePage() {
   return (
@@ -192,36 +172,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section className="container-x py-20 md:py-28">
-        <div className="max-w-2xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-gold">Operators On Us</p>
-          <h2 className="mt-2 text-3xl md:text-5xl font-display font-bold">
-            Restaurants we've moved.
-          </h2>
-        </div>
-        <div className="mt-12 grid gap-5 md:grid-cols-3">
-          {testimonials.map((t, i) => (
-            <figure
-              key={i}
-              className="rounded-xl border border-border bg-card p-7 flex flex-col justify-between"
-            >
-              <div>
-                <div className="flex gap-1 text-gold">
-                  {Array.from({ length: 5 }).map((_, k) => (
-                    <Star key={k} className="h-4 w-4 fill-current" />
-                  ))}
-                </div>
-                <blockquote className="mt-4 text-base leading-relaxed">"{t.quote}"</blockquote>
-              </div>
-              <figcaption className="mt-6 text-sm">
-                <div className="font-semibold">{t.name}</div>
-                <div className="text-muted-foreground">{t.role}</div>
-              </figcaption>
-            </figure>
-          ))}
-        </div>
-      </section>
 
       <CTASection
         title="Are you a restaurant owner in need of assistance with a real restaurant problem?"
