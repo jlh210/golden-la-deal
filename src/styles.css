@@ -108,8 +108,13 @@
 
   h1, h2, h3, h4 {
     font-family: var(--font-display);
-    letter-spacing: -0.02em;
+    font-weight: 500;
+    letter-spacing: 0.005em;
+    line-height: 1.1;
   }
+
+  h1 { letter-spacing: -0.005em; }
+
 }
 
 @utility text-gradient-gold {
