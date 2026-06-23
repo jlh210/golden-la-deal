@@ -63,16 +63,17 @@ function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-card backdrop-blur-xl">
       <div className="container-x flex h-16 items-center justify-between gap-4 md:h-20">
-        <Link to="/" className="flex items-center gap-2 min-w-0">
+        <Link to="/" className="flex items-center gap-3 min-w-0">
           <img
             src={logoAsset.url}
             alt="Penthouse Advisors Inc."
-            className="h-9 w-auto shrink-0 rounded-sm bg-white"
+            className="h-9 w-auto shrink-0"
           />
-          <span className="font-display font-bold tracking-tight text-sm sm:text-base truncate hidden sm:inline">
-            PENTHOUSE <span className="text-gold">ADVISORS</span>
+          <span className="font-display text-base sm:text-lg tracking-[0.18em] uppercase truncate hidden sm:inline">
+            Penthouse <span className="text-gold">Advisors</span>
           </span>
         </Link>
+
 
         <nav className="hidden lg:flex items-center gap-6">
           {primaryNav.map((n) =>
