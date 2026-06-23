@@ -34,8 +34,9 @@
   --color-cream: var(--cream);
   --color-charcoal: var(--charcoal);
   --color-charcoal-deep: var(--charcoal-deep);
-  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cormorant Garamond", "Times New Roman", Times, ui-serif, Georgia, serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
 }
 
 :root {
