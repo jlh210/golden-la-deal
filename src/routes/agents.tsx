@@ -50,6 +50,8 @@ const agents = [
     name: "Jamal Ali Joseph",
     title: "Business Agent",
     dre: "DRE #02417938",
+    phone: "(310) 432-3014",
+    phoneHref: "tel:+13104323014",
     bio: "Licensed business agent supporting restaurant sales, lease assignments, and buyer representation across Los Angeles County.",
     focus: ["Restaurant sales", "Lease assignments", "Buyer representation"],
   },
@@ -57,7 +59,9 @@ const agents = [
     name: "Jeremie Campbell",
     title: "Business Agent",
     dre: "DRE #02223132",
-    bio: "Business agent focused on restaurant brokerage, asset sales, and matching operators with the right opportunity.",
+    phone: "(310) 936-0854",
+    phoneHref: "tel:+13109360854",
+    bio: "Licensed business agent supporting restaurant sales, lease assignments, and buyer representation across Los Angeles County.",
     focus: ["Restaurant brokerage", "Asset sales", "Operator placement"],
   },
 ];
@@ -89,8 +93,8 @@ function AgentsPage() {
                 ))}
               </ul>
               <div className="mt-6 pt-5 border-t border-border flex flex-col gap-2 text-sm">
-                <a href={PHONE_HREF} className="inline-flex items-center gap-2 hover:text-gold">
-                  <Phone className="h-4 w-4 text-gold" /> {PHONE}
+                <a href={a.phoneHref || PHONE_HREF} className="inline-flex items-center gap-2 hover:text-gold">
+                  <Phone className="h-4 w-4 text-gold" /> {a.phone || PHONE}
                 </a>
                 <a href={EMAIL_HREF} className="inline-flex items-center gap-2 hover:text-gold break-all">
                   <Mail className="h-4 w-4 text-gold" /> {EMAIL}
