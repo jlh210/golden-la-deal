@@ -10,13 +10,13 @@ const EMAIL_HREF = "mailto:PenthouseAdvisors@gmail.com";
 const HOURS = "8:00am – 7:00pm · Mon–Sun";
 
 const primaryNav = [
-  { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
+  { to: "/about", label: "About Us" },
   { to: "/services", label: "Services", hasDropdown: true },
-  { to: "/restaurants-for-sale", label: "Restaurants" },
-  { to: "/alcohol-licensing", label: "Licensing" },
-  { to: "/contact", label: "Contact" },
+  { to: "/restaurants-for-sale", label: "Business Listings" },
+  { to: "/contact", label: "Work With Us" },
+  { to: "/agents", label: "Agents" },
 ] as const;
+
 
 const servicesDropdown = [
   { to: "/restaurants-for-sale", label: "Restaurants For Sale" },
@@ -108,8 +108,8 @@ function Header() {
                 to={n.to}
                 className="text-sm font-medium text-foreground/80 hover:text-gold transition-colors"
                 activeProps={{ className: "text-gold" }}
-                activeOptions={{ exact: n.to === "/" }}
               >
+
                 {n.label}
               </Link>
             )
