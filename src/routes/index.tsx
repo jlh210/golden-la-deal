@@ -28,7 +28,7 @@ const trust = [
   { icon: Calendar, label: "Est. 2021" },
   { icon: ShieldCheck, label: "Licensed Brokers" },
   { icon: MapPin, label: "LA County" },
-  { icon: Star, label: "Family-Owned" },
+  { icon: Star, label: "Principal-Led" },
 ];
 
 const steps = [
