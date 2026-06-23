@@ -207,9 +207,10 @@ function Footer() {
             </span>
           </div>
           <p className="mt-4 text-sm text-muted-foreground max-w-sm">
-            Family-owned, full-service restaurant brokerage and advisory firm.
+            A sophisticated, full-service restaurant advisory and brokerage firm.
             Servicing Los Angeles County since 2021. <span className="text-gold font-semibold">Do It Now.</span>
           </p>
+
           <ul className="mt-5 space-y-2 text-sm">
             <li className="flex items-center gap-2">
               <Phone className="h-4 w-4 text-gold" />
