@@ -46,6 +46,20 @@ const agents = [
     bio: "Broker of Record and head of finance. Rosanna is responsible for compliance, trust accounting, and licensure oversight across the firm's brokerage and ABC licensing activity.",
     focus: ["Broker of Record", "Compliance", "ABC licensing oversight"],
   },
+  {
+    name: "Jamal Ali Joseph",
+    title: "Business Agent",
+    dre: "DRE #02417938",
+    bio: "Licensed business agent supporting restaurant sales, lease assignments, and buyer representation across Los Angeles County.",
+    focus: ["Restaurant sales", "Lease assignments", "Buyer representation"],
+  },
+  {
+    name: "Jeremie Campbell",
+    title: "Business Agent",
+    dre: "DRE #02223132",
+    bio: "Business agent focused on restaurant brokerage, asset sales, and matching operators with the right opportunity.",
+    focus: ["Restaurant brokerage", "Asset sales", "Operator placement"],
+  },
 ];
 
 function AgentsPage() {
