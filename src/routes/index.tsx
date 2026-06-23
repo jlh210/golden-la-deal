@@ -49,26 +49,6 @@ const steps = [
   },
 ];
 
-const testimonials = [
-  {
-    quote:
-      "They got my Type 47 transferred and walked the landlord through every step. Doors opened on schedule.",
-    name: "Marco D.",
-    role: "Owner, Westside concept",
-  },
-  {
-    quote:
-      "Health Department red-tagged us on a Friday. Penthouse had us re-inspected and reopened by Wednesday.",
-    name: "Priya S.",
-    role: "Operator, San Gabriel Valley",
-  },
-  {
-    quote:
-      "Sold a 12-year-old café off-market in under 60 days. Staff never knew until we handed over the keys.",
-    name: "James R.",
-    role: "Seller, Silver Lake",
-  },
-];
 
 function HomePage() {
   return (
