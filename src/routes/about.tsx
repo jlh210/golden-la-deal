@@ -99,8 +99,8 @@ function AboutPage() {
               What Penthouse Advisors actually does.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              We solve restaurant problems fast. Below is the firm in one list - everything
-              we handle in-house for LA County restaurant owners, buyers, and landlords.
+              We solve restaurant problems fast. Here's everything we handle in-house
+              for LA County restaurant owners, buyers, and landlords.
             </p>
           </div>
           <ul className="space-y-3">
