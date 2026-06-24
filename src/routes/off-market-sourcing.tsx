@@ -62,7 +62,7 @@ function OffMarketPage() {
     setServerError(null);
     setLoading(true);
     try {
-      await send({ data: { source: "Off-Market Buyer Brief", fields: data } });
+      await send({ data: { source: "Off-Market Sourcing", serviceNeeded: "Off-Market Sourcing", fields: { ...data, role: "Buyer" } } });
       setSubmitted(true);
     } catch (err) {
       console.error(err);
