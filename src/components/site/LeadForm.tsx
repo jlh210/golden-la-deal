@@ -10,18 +10,18 @@ const schema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
   phone: z.string().trim().min(7, "Valid phone required").max(30),
   email: z.string().trim().email("Valid email required").max(255),
-  topic: z.string().min(1, "Pick what you need"),
+  serviceNeeded: z.string().min(1, "Pick what you need"),
   role: z.string().min(1, "Select your role"),
   message: z.string().trim().max(1000).optional(),
 });
 
 export function LeadForm({
-  defaultTopic,
+  serviceNeeded,
   title = "Book a Consultation",
   subtitle = "Tell us what you need. We respond same business day.",
   extraFields,
 }: {
-  defaultTopic?: string;
+  serviceNeeded?: string;
   title?: string;
   subtitle?: string;
   extraFields?: React.ReactNode;
@@ -49,7 +49,7 @@ export function LeadForm({
     setServerError(null);
     setLoading(true);
     try {
-      await send({ data: { source: title, fields: data } });
+      await send({ data: { source: title, serviceNeeded: serviceNeeded ?? data.serviceNeeded, fields: data } });
       setSubmitted(true);
     } catch (err) {
       console.error(err);
@@ -89,15 +89,24 @@ export function LeadForm({
         </div>
         <div>
           <label className="block text-sm font-semibold mb-2">Service Needed</label>
-          <select
-            name="topic"
-            defaultValue={defaultTopic ?? ""}
-            className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-gold focus:outline-none"
-          >
-            <option value="" disabled>Select one…</option>
-            {serviceTopics.map((t) => <option key={t} value={t}>{t}</option>)}
-          </select>
-          {errors.topic && <p className="mt-1.5 text-xs text-destructive">{errors.topic}</p>}
+          {serviceNeeded ? (
+            <>
+              <input type="hidden" name="serviceNeeded" value={serviceNeeded} />
+              <div className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm">
+                {serviceNeeded}
+              </div>
+            </>
+          ) : (
+            <select
+              name="serviceNeeded"
+              defaultValue=""
+              className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-gold focus:outline-none"
+            >
+              <option value="" disabled>Select one…</option>
+              {serviceTopics.map((t) => <option key={t} value={t}>{t}</option>)}
+            </select>
+          )}
+          {errors.serviceNeeded && <p className="mt-1.5 text-xs text-destructive">{errors.serviceNeeded}</p>}
         </div>
         <div>
           <label className="block text-sm font-semibold mb-2">Are you a</label>
@@ -107,9 +116,10 @@ export function LeadForm({
             className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-gold focus:outline-none"
           >
             <option value="" disabled>Select one…</option>
-            <option value="buyer">Buyer</option>
-            <option value="seller">Seller</option>
-            <option value="restaurant-operator">Restaurant Operator</option>
+            <option value="Owner">Owner</option>
+            <option value="Buyer">Buyer</option>
+            <option value="Seller">Seller</option>
+            <option value="Operator">Operator</option>
           </select>
           {errors.role && <p className="mt-1.5 text-xs text-destructive">{errors.role}</p>}
         </div>
