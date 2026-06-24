@@ -7,7 +7,7 @@ import { CTASection } from "@/components/site/CTASection";
 export const Route = createFileRoute("/assignments-rent-abatement")({
   head: () => ({
     meta: [
-      { title: "Lease Assignments & Rent Abatement — Penthouse Advisors" },
+      { title: "Lease Assignments & Rent Abatement - Penthouse Advisors" },
       {
         name: "description",
         content:
@@ -30,7 +30,7 @@ function AssignmentsPage() {
         eyebrow="Assignments & Rent Abatement"
         title="Know your guarantor position."
         accent="Negotiate real abatement."
-        subtitle="Lease assignments and rent abatement are two of the most misunderstood pieces of a restaurant deal — and two of the most expensive when handled wrong."
+        subtitle="Lease assignments and rent abatement are two of the most misunderstood pieces of a restaurant deal - and two of the most expensive when handled wrong."
       />
 
       <section className="container-x py-16 md:py-20 grid gap-6 md:grid-cols-2">
@@ -42,7 +42,7 @@ function AssignmentsPage() {
           <p className="mt-4 text-muted-foreground leading-relaxed">
             When a lease is assigned, the original tenant <span className="text-gold font-semibold">remains the first guarantor</span>.
             The incoming tenant becomes the <span className="text-gold font-semibold">second guarantor</span>. If the new operator defaults,
-            the landlord can still pursue the original tenant — for years. We structure
+            the landlord can still pursue the original tenant - for years. We structure
             assignments to protect both sides and, where possible, negotiate full releases
             of the original guarantor.
           </p>
@@ -55,7 +55,7 @@ function AssignmentsPage() {
           <h2 className="mt-5 text-2xl font-display font-bold">Rent Abatement</h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">
             Rent doesn't have to start the day you sign. We tie abatement to real
-            milestones — Health permit issuance, ABC license activation, or the day the
+            milestones - Health permit issuance, ABC license activation, or the day the
             doors actually open. That alignment can save a new operator 3–6 months of
             rent during a build-out or licensing period.
           </p>

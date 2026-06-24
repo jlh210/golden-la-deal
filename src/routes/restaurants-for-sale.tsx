@@ -7,13 +7,13 @@ import { PageHero } from "@/components/site/PageHero";
 export const Route = createFileRoute("/restaurants-for-sale")({
   head: () => ({
     meta: [
-      { title: "Restaurants For Sale in Los Angeles — Penthouse Advisors" },
+      { title: "Restaurants For Sale in Los Angeles - Penthouse Advisors" },
       {
         name: "description",
         content:
           "Current LA restaurants for sale and restaurant asset sales. Turnkey concepts, hoods, lease assignments. Updated weekly.",
       },
-      { property: "og:title", content: "LA Restaurants For Sale — Penthouse Advisors" },
+      { property: "og:title", content: "LA Restaurants For Sale - Penthouse Advisors" },
       {
         property: "og:description",
         content: "Turnkey restaurants and asset sales across Los Angeles County.",
@@ -39,13 +39,13 @@ type Listing = {
 
 /**
  * EDITORIAL: Update this array weekly with current inventory.
- * `type` drives the badge color. Keep features short — they show on the card.
+ * `type` drives the badge color. Keep features short - they show on the card.
  */
 const listings: Listing[] = [
   {
     id: "R-001",
     type: "Business Sale",
-    title: "Pizzeria — Turnkey",
+    title: "Pizzeria - Turnkey",
     location: "Silver Lake (near Glendale)",
     price: "$75,975",
     priceNote: "Non-Negotiable",
@@ -163,7 +163,7 @@ function ListingsPage() {
             Looking for something specific?
           </h2>
           <p className="mt-2 text-muted-foreground">
-            Most of our deals never hit this page. Tell us your budget, area, and concept —
+            Most of our deals never hit this page. Tell us your budget, area, and concept -
             we'll source it off-market.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">

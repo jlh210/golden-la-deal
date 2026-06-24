@@ -7,13 +7,13 @@ import { CTASection } from "@/components/site/CTASection";
 export const Route = createFileRoute("/e2-visa-europe")({
   head: () => ({
     meta: [
-      { title: "E-2 Visa Europe — Investor-Ready Restaurant Acquisitions | Penthouse Advisors" },
+      { title: "E-2 Visa Europe - Investor-Ready Restaurant Acquisitions | Penthouse Advisors" },
       {
         name: "description",
         content:
           "E-2 investor visa support for European entrepreneurs acquiring U.S. restaurants. LOI, lease assignment, business plan, and lease contingency negotiation.",
       },
-      { property: "og:title", content: "E-2 Visa Europe — Penthouse Advisors" },
+      { property: "og:title", content: "E-2 Visa Europe - Penthouse Advisors" },
       {
         property: "og:description",
         content: "E-2 investor visa restaurant acquisitions for European entrepreneurs.",
@@ -25,14 +25,14 @@ export const Route = createFileRoute("/e2-visa-europe")({
 
 const requirements = [
   "Investment must be substantial relative to the cost of the business",
-  "Investment must be at risk — committed, irrevocable, and subject to loss",
+  "Investment must be at risk - committed, irrevocable, and subject to loss",
   "The business must be active and operating (not passive holding)",
   "Applicant must have a controlling interest and intent to direct the enterprise",
 ];
 
 const docs = [
-  "Letter of Intent (LOI) — drafted by Penthouse Advisors",
-  "Purchase Agreement — drafted by Penthouse Advisors",
+  "Letter of Intent (LOI) - drafted by Penthouse Advisors",
+  "Purchase Agreement - drafted by Penthouse Advisors",
   "Lease assignment or new lease with E-2 contingency",
   "Current business licenses and permits",
   "Bank statements showing source and traceability of funds",

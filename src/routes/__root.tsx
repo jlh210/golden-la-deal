@@ -75,21 +75,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Penthouse Advisors Inc. — LA Restaurant Brokerage & Advisory" },
+      { title: "Penthouse Advisors Inc. - LA Restaurant Brokerage & Advisory" },
       {
         name: "description",
         content:
           "LA's restaurant experts. Buy, sell, license, lease & rescue restaurants. Sophisticated, full-service restaurant advisory in Los Angeles. Call 310-663-3521.",
       },
       { name: "author", content: "Penthouse Advisors Inc." },
-      { property: "og:title", content: "Penthouse Advisors Inc. — LA Restaurant Brokerage & Advisory" },
+      { property: "og:title", content: "Penthouse Advisors Inc. - LA Restaurant Brokerage & Advisory" },
       {
         property: "og:description",
         content: "Buy. Sell. License. Rescue. LA's go-to restaurant advisory firm.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Penthouse Advisors Inc. — LA Restaurant Brokerage & Advisory" },
+      { name: "twitter:title", content: "Penthouse Advisors Inc. - LA Restaurant Brokerage & Advisory" },
       { name: "description", content: "Penthouse Authority is a lead generation website for restaurant owners seeking expert brokerage and advisory services in Los Angeles." },
       { property: "og:description", content: "Penthouse Authority is a lead generation website for restaurant owners seeking expert brokerage and advisory services in Los Angeles." },
       { name: "twitter:description", content: "Penthouse Authority is a lead generation website for restaurant owners seeking expert brokerage and advisory services in Los Angeles." },

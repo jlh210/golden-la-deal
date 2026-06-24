@@ -8,13 +8,13 @@ import { services } from "@/lib/services";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "All Services — Penthouse Advisors | LA Restaurant Brokerage & Advisory" },
+      { title: "All Services - Penthouse Advisors | LA Restaurant Brokerage & Advisory" },
       {
         name: "description",
         content:
           "Brokerage, alcohol licensing, health permitting, lease assignments, vermin inspections, off-market sourcing, E-2 visa support, 2nd gen spaces and more.",
       },
-      { property: "og:title", content: "Services — Penthouse Advisors" },
+      { property: "og:title", content: "Services - Penthouse Advisors" },
       {
         property: "og:description",
         content: "Full-service restaurant advisory for Los Angeles County operators.",
@@ -31,7 +31,7 @@ function ServicesPage() {
         eyebrow="Services"
         title="Everything a restaurant"
         accent="owner needs."
-        subtitle="One firm, one phone call. Built for LA County restaurant operators, buyers, landlords, and international investors who need answers — and execution — fast."
+        subtitle="One firm, one phone call. Built for LA County restaurant operators, buyers, landlords, and international investors who need answers - and execution - fast."
       />
 
       <section className="container-x py-16 md:py-20">

@@ -7,13 +7,13 @@ import { CTASection } from "@/components/site/CTASection";
 export const Route = createFileRoute("/health-permitting")({
   head: () => ({
     meta: [
-      { title: "Restaurant Health Dept Permitting & Plan Check — $3,700 | Penthouse Advisors" },
+      { title: "Restaurant Health Dept Permitting & Plan Check - $3,700 | Penthouse Advisors" },
       {
         name: "description",
         content:
-          "$3,700 flat — hand-drafted blueprints, Health Dept plan-check submittal, stamped approvals, permit issuance. Good for 1 year or until restaurant is leased.",
+          "$3,700 flat - hand-drafted blueprints, Health Dept plan-check submittal, stamped approvals, permit issuance. Good for 1 year or until restaurant is leased.",
       },
-      { property: "og:title", content: "Health Dept Permitting & Plan Check — $3,700" },
+      { property: "og:title", content: "Health Dept Permitting & Plan Check - $3,700" },
       {
         property: "og:description",
         content: "$3,700 flat. Blueprints, plan check, stamps, permit. Good 1 year.",
@@ -24,12 +24,12 @@ export const Route = createFileRoute("/health-permitting")({
 });
 
 const scope = [
-  { icon: Ruler, title: "Hand-drafted blueprints", body: "Floor plan, proposed floor plan, site plan, reflected ceiling plan, hood and cook-line elevations, prep sink and drain elevations, scope of work, equipment schedule — all drafted to scale." },
+  { icon: Ruler, title: "Hand-drafted blueprints", body: "Floor plan, proposed floor plan, site plan, reflected ceiling plan, hood and cook-line elevations, prep sink and drain elevations, scope of work, equipment schedule - all drafted to scale." },
   { icon: FileCheck2, title: "Plan check submittal", body: "Full package submitted to LA County Health Dept Plan Check. We respond to corrections, coordinate with Building & Safety, and shepherd the file to approval." },
   { icon: Stamp, title: "Stamped approvals", body: "Stamped blueprints must be in place before any restaurant remodeling, alterations, or gas-equipment installation under the hood. We get the stamp first." },
   { icon: HardHat, title: "Permits to open", body: "Once construction is signed off by Building & Safety, we set the Health Dept site appointment, get final permitting, and walk out with the ID that lets you open." },
   { icon: Droplets, title: "Grease interceptor / trap review", body: "We estimate interceptor sizing and installation scope, including the missing 3-compartment-sink grease trap where required." },
-  { icon: Flame, title: "Hood Fire Inspection coordination", body: "Velocity testing and smoke testing of the hood system — coordinated through certified vendors under a separate agreement." },
+  { icon: Flame, title: "Hood Fire Inspection coordination", body: "Velocity testing and smoke testing of the hood system - coordinated through certified vendors under a separate agreement." },
   { icon: Thermometer, title: "Operational compliance check", body: "CUB permit status verification, HVAC review, hot water temperature check, NSF label verification on every piece of equipment." },
   { icon: FileCheck2, title: "Sellers Permit & POS", body: "Sellers Permit application and POS system setup supplied as part of the engagement." },
 ];
@@ -56,7 +56,7 @@ function PermittingPage() {
         eyebrow="Health Dept Permitting & Plan Check"
         title="Blueprints, plan check, permits."
         accent="$3,700 flat."
-        subtitle="If your restaurant has been closed over 90 days, you're remodeling, or you've had equipment red-tagged — you need stamped Health Dept blueprints before a single gas line moves. We draft them by hand and push them through plan check."
+        subtitle="If your restaurant has been closed over 90 days, you're remodeling, or you've had equipment red-tagged - you need stamped Health Dept blueprints before a single gas line moves. We draft them by hand and push them through plan check."
       />
 
       {/* Pricing band */}
@@ -68,10 +68,10 @@ function PermittingPage() {
           <div>
             <div className="text-xs font-semibold uppercase tracking-widest text-gold">Transparent Pricing</div>
             <h2 className="mt-1 text-2xl md:text-3xl font-display font-bold">
-              $3,700 flat — blueprints, plan check, and permit shepherding.
+              $3,700 flat - blueprints, plan check, and permit shepherding.
             </h2>
             <p className="mt-2 text-sm text-muted-foreground max-w-2xl">
-              Good for 1 year, or until the restaurant is leased — whichever comes first.
+              Good for 1 year, or until the restaurant is leased - whichever comes first.
             </p>
           </div>
         </div>
@@ -112,7 +112,7 @@ function PermittingPage() {
 
       <CTASection
         title="Need stamped blueprints or a permit pushed through?"
-        body="$3,700 flat. We draft, submit, and walk it through plan check — start to permit issuance."
+        body="$3,700 flat. We draft, submit, and walk it through plan check - start to permit issuance."
       />
     </SiteLayout>
   );

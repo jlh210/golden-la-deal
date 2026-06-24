@@ -7,13 +7,13 @@ import { CTASection } from "@/components/site/CTASection";
 export const Route = createFileRoute("/vermin-inspections")({
   head: () => ({
     meta: [
-      { title: "Vermin Infestation Inspections — Commercial Compliance | Penthouse Advisors" },
+      { title: "Vermin Infestation Inspections - Commercial Compliance | Penthouse Advisors" },
       {
         name: "description",
         content:
           "Monthly vermin and food-handling compliance inspections for LA commercial property owners. Restaurants and food markets. $1,000/mo · 1-year contract.",
       },
-      { property: "og:title", content: "Vermin Inspections — Penthouse Advisors" },
+      { property: "og:title", content: "Vermin Inspections - Penthouse Advisors" },
       {
         property: "og:description",
         content: "Monthly compliance inspections for commercial property owners.",
@@ -28,7 +28,7 @@ const includes = [
   "Visible signs of vermin and infestation documented with photos",
   "Food-handling violations flagged with corrective training advised",
   "Written report delivered to ownership each month",
-  "Tenant accountability framework — clear record of what's the tenant's responsibility",
+  "Tenant accountability framework - clear record of what's the tenant's responsibility",
   "Same-month re-walk if a serious finding requires follow-up",
 ];
 
@@ -39,7 +39,7 @@ function VerminPage() {
         eyebrow="Vermin (Fermin) Infestation Inspections"
         title="Monthly compliance"
         accent="for property owners."
-        subtitle="A recurring inspection service for commercial property owners and landlords. Tenants are responsible for vermin control within their leased space — Penthouse Advisors gives you the documented record to enforce it."
+        subtitle="A recurring inspection service for commercial property owners and landlords. Tenants are responsible for vermin control within their leased space - Penthouse Advisors gives you the documented record to enforce it."
       />
 
       <section className="container-x py-16 md:py-20 grid gap-10 lg:grid-cols-[1.4fr_1fr]">
@@ -50,7 +50,7 @@ function VerminPage() {
             Under a standard commercial lease, the tenant is responsible for vermin control
             within their leased premises. Without a monthly inspection record, that
             responsibility is hard to enforce. We give property owners a documented compliance
-            trail — and we coach the tenant on the corrective food-handling steps that
+            trail - and we coach the tenant on the corrective food-handling steps that
             prevent infestations in the first place.
           </p>
           <ul className="mt-8 space-y-3">
@@ -81,7 +81,7 @@ function VerminPage() {
         </aside>
       </section>
 
-      <CTASection title="Protect your property." body="Tell us how many spaces you operate — we'll send a contract today." />
+      <CTASection title="Protect your property." body="Tell us how many spaces you operate - we'll send a contract today." />
     </SiteLayout>
   );
 }

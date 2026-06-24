@@ -7,13 +7,13 @@ import { CTASection } from "@/components/site/CTASection";
 export const Route = createFileRoute("/alcohol-licensing")({
   head: () => ({
     meta: [
-      { title: "Alcohol Licensing — Type 41 & Type 47 ABC Licenses | Penthouse Advisors" },
+      { title: "Alcohol Licensing - Type 41 & Type 47 ABC Licenses | Penthouse Advisors" },
       {
         name: "description",
         content:
           "Type 41 Beer & Wine and Type 47 Hard Liquor licensing in Los Angeles. Transfers, new licenses, and CUB diversion permits. Transparent pricing.",
       },
-      { property: "og:title", content: "Alcohol Licensing — Penthouse Advisors" },
+      { property: "og:title", content: "Alcohol Licensing - Penthouse Advisors" },
       {
         property: "og:description",
         content: "Type 41 and Type 47 ABC licensing in LA County. Transparent pricing.",
@@ -25,12 +25,12 @@ export const Route = createFileRoute("/alcohol-licensing")({
 
 const types = [
   {
-    name: "Type 41 — Beer & Wine",
+    name: "Type 41 - Beer & Wine",
     body: "On-sale Beer & Wine for bona-fide eating places. The standard license for restaurants that don't pour hard liquor. Lower fees, faster path, fewer protests.",
     bullets: ["Restaurant required (kitchen + menu)", "Beer and wine, on-premise", "No public protests in most census tracts"],
   },
   {
-    name: "Type 47 — Hard Liquor",
+    name: "Type 47 - Hard Liquor",
     body: "On-sale General for bona-fide eating places. Full bar privileges. Requires either an existing license to transfer or, in many tracts, a Conditional Use Permit (CUP).",
     bullets: ["Beer, wine, and distilled spirits", "Often acquired by transfer from a held license", "CUP may be required by tract"],
   },
@@ -75,9 +75,9 @@ function LicensingPage() {
     <SiteLayout>
       <PageHero
         eyebrow="Alcohol Licensing"
-        title="Type 41 & Type 47 —"
+        title="Type 41 & Type 47 -"
         accent="done right."
-        subtitle="ABC license transfers, new licenses, and CUB diversion in Los Angeles County. We handle paperwork, posting, protests, Live Scan, and notary — straight through to issuance."
+        subtitle="ABC license transfers, new licenses, and CUB diversion in Los Angeles County. We handle paperwork, posting, protests, Live Scan, and notary - straight through to issuance."
       />
 
       {/* Types */}

@@ -7,13 +7,13 @@ import { featuredServices } from "@/lib/services";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Penthouse Advisors — LA Restaurant Brokerage. Buy. Sell. License. Rescue." },
+      { title: "Penthouse Advisors - LA Restaurant Brokerage. Buy. Sell. License. Rescue." },
       {
         name: "description",
         content:
           "LA County's sophisticated, full-service restaurant brokerage and advisory firm. Restaurant real estate, licensing, permits, leases, escrows, and distressed-asset resolution. Call 310-663-3521.",
       },
-      { property: "og:title", content: "Penthouse Advisors — LA Restaurant Experts" },
+      { property: "og:title", content: "Penthouse Advisors - LA Restaurant Experts" },
       {
         property: "og:description",
         content: "Buy. Sell. License. Rescue. A modern, full-service LA restaurant advisory firm.",
@@ -35,7 +35,7 @@ const steps = [
   {
     n: "01",
     title: "Consult",
-    body: "Tell us where you are — buying, selling, opening, or in trouble. We listen, we diagnose, we quote a plan.",
+    body: "Tell us where you are - buying, selling, opening, or in trouble. We listen, we diagnose, we quote a plan.",
   },
   {
     n: "02",
@@ -76,7 +76,7 @@ function HomePage() {
               <span className="text-gradient-gold">Buy. Sell. License. Rescue.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-base sm:text-lg text-muted-foreground">
-              Restaurant buying, selling, leasing, licensing, rescuing and permitting — all handled by one team, start to close.
+              Restaurant buying, selling, leasing, licensing, rescuing and permitting - all handled by one team, start to close.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link

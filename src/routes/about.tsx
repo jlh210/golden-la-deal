@@ -7,13 +7,13 @@ import { CTASection } from "@/components/site/CTASection";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Penthouse Advisors Inc. | LA Restaurant Advisory Firm" },
+      { title: "About - Penthouse Advisors Inc. | LA Restaurant Advisory Firm" },
       {
         name: "description",
         content:
-          "Penthouse Advisors is a full-service restaurant advisory and brokerage firm in Los Angeles County. Restaurant real estate, licensing, permitting, escrows, and distressed-asset resolution — under one roof.",
+          "Penthouse Advisors is a full-service restaurant advisory and brokerage firm in Los Angeles County. Restaurant real estate, licensing, permitting, escrows, and distressed-asset resolution - under one roof.",
       },
-      { property: "og:title", content: "About — Penthouse Advisors Inc." },
+      { property: "og:title", content: "About - Penthouse Advisors Inc." },
       {
         property: "og:description",
         content:
@@ -28,8 +28,8 @@ export const Route = createFileRoute("/about")({
 const values = [
   { icon: Zap, title: "Do It Now", body: "We move on day one. Restaurants don't have time to wait for callbacks." },
   { icon: Users, title: "Principal-Led", body: "Direct access to the partners on every engagement. No layers, no handoffs." },
-  { icon: Scale, title: "Fair & Honest", body: "All parties — buyer, seller, landlord, tenant — represented with discretion and integrity." },
-  { icon: Award, title: "Full-Service", body: "Brokerage, licensing, health, leases, blueprints — under one roof." },
+  { icon: Scale, title: "Fair & Honest", body: "All parties - buyer, seller, landlord, tenant - represented with discretion and integrity." },
+  { icon: Award, title: "Full-Service", body: "Brokerage, licensing, health, leases, blueprints - under one roof." },
 ];
 
 
@@ -48,7 +48,7 @@ const owners = [
     name: "Roschard Paticchio-Stein",
     title: "CEO · Owner · Business Agent",
     dre: "DRE #02203003",
-    bio: "Day-to-day leader at Penthouse Advisors and the primary agent on transactions. Roschard runs brokerage engagements end-to-end — from off-market sourcing and packaging to escrow close — and also handles the firm's select residential listings.",
+    bio: "Day-to-day leader at Penthouse Advisors and the primary agent on transactions. Roschard runs brokerage engagements end-to-end - from off-market sourcing and packaging to escrow close - and also handles the firm's select residential listings.",
   },
   {
     name: "Richard Stein",
@@ -99,7 +99,7 @@ function AboutPage() {
               What Penthouse Advisors actually does.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              We solve restaurant problems fast. Below is the firm in one list — everything
+              We solve restaurant problems fast. Below is the firm in one list - everything
               we handle in-house for LA County restaurant owners, buyers, and landlords.
             </p>
           </div>
@@ -119,7 +119,7 @@ function AboutPage() {
       {/* Owners */}
       <section className="container-x py-16 md:py-24">
         <p className="text-xs font-semibold uppercase tracking-widest text-gold">Leadership</p>
-        <h2 className="mt-3 text-3xl md:text-5xl font-display font-bold">Restaurant advisory, licensing, and deal support — under one roof.</h2>
+        <h2 className="mt-3 text-3xl md:text-5xl font-display font-bold">Restaurant advisory, licensing, and deal support - under one roof.</h2>
 
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -137,7 +137,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <CTASection title="Work with a team that knows restaurant deals from every angle." body="Principal-led advisory. Brokerage, licensing, permitting, and resolution — coordinated by one firm." />
+      <CTASection title="Work with a team that knows restaurant deals from every angle." body="Principal-led advisory. Brokerage, licensing, permitting, and resolution - coordinated by one firm." />
     </SiteLayout>
   );
 }

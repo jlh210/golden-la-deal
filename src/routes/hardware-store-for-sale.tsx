@@ -7,13 +7,13 @@ import { CTASection } from "@/components/site/CTASection";
 export const Route = createFileRoute("/hardware-store-for-sale")({
   head: () => ({
     meta: [
-      { title: "Hardware Store For Sale — Westwood Blvd, West LA | Penthouse Advisors" },
+      { title: "Hardware Store For Sale - Westwood Blvd, West LA | Penthouse Advisors" },
       {
         name: "description",
         content:
           "Established hardware store for sale on Westwood Blvd, West LA. $190,000 negotiable plus inventory. Revenue $402,000/yr. Established 2020.",
       },
-      { property: "og:title", content: "Hardware Store For Sale — West LA" },
+      { property: "og:title", content: "Hardware Store For Sale - West LA" },
       {
         property: "og:description",
         content: "Established hardware store on Westwood Blvd. $190k + inventory.",
@@ -42,7 +42,7 @@ const leaseTerms = [
 ];
 
 const escrowDetails = [
-  "Tower Escrow — 3400 W Olympic Blvd, Ste 201, Los Angeles",
+  "Tower Escrow - 3400 W Olympic Blvd, Ste 201, Los Angeles",
   "Escrow fees split 50/50 between buyer and seller",
 ];
 
@@ -59,7 +59,7 @@ function HardwarePage() {
     <SiteLayout>
       <PageHero
         eyebrow="Business For Sale"
-        title="Hardware Store —"
+        title="Hardware Store -"
         accent="West LA."
         subtitle="Established neighborhood hardware store on Westwood Blvd. Consistent revenue, loyal customer base, turnkey operation."
       />

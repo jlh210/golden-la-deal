@@ -8,13 +8,13 @@ import { PageHero } from "@/components/site/PageHero";
 export const Route = createFileRoute("/off-market-sourcing")({
   head: () => ({
     meta: [
-      { title: "Off-Market Restaurants & Businesses — Buyer Sourcing | Penthouse Advisors" },
+      { title: "Off-Market Restaurants & Businesses - Buyer Sourcing | Penthouse Advisors" },
       {
         name: "description",
         content:
-          "Source off-market restaurants and businesses across Los Angeles County. Tell us your budget, area, type, and timeline — we'll find what isn't listed.",
+          "Source off-market restaurants and businesses across Los Angeles County. Tell us your budget, area, type, and timeline - we'll find what isn't listed.",
       },
-      { property: "og:title", content: "Off-Market Sourcing — Penthouse Advisors" },
+      { property: "og:title", content: "Off-Market Sourcing - Penthouse Advisors" },
       {
         property: "og:description",
         content: "Source LA restaurants and businesses that never hit the open market.",
@@ -63,7 +63,7 @@ function OffMarketPage() {
         eyebrow="Off-Market Sourcing"
         title="The deals that never"
         accent="hit the market."
-        subtitle="Most of the best LA restaurant deals never get listed. Operators sell quietly, landlords push deals to a short list, and privately held businesses transfer hand-to-hand. Tell us what you're hunting — we'll find it."
+        subtitle="Most of the best LA restaurant deals never get listed. Operators sell quietly, landlords push deals to a short list, and privately held businesses transfer hand-to-hand. Tell us what you're hunting - we'll find it."
       />
 
       <section className="container-x py-12 md:py-20 grid gap-10 lg:grid-cols-[1.3fr_1fr]">
@@ -129,7 +129,7 @@ function OffMarketPage() {
             <h3 className="font-display font-bold text-xl">How off-market works</h3>
             <ol className="mt-4 space-y-4 text-sm">
               <li><span className="text-gold font-bold">1.</span> You send the brief.</li>
-              <li><span className="text-gold font-bold">2.</span> We circulate to our owner & landlord network — no public listing.</li>
+              <li><span className="text-gold font-bold">2.</span> We circulate to our owner & landlord network - no public listing.</li>
               <li><span className="text-gold font-bold">3.</span> You see vetted options with financials, under NDA.</li>
               <li><span className="text-gold font-bold">4.</span> We negotiate, structure, and close.</li>
             </ol>

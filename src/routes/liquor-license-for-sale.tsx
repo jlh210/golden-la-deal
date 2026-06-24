@@ -7,13 +7,13 @@ import { CTASection } from "@/components/site/CTASection";
 export const Route = createFileRoute("/liquor-license-for-sale")({
   head: () => ({
     meta: [
-      { title: "Liquor License For Sale — Type 47 ABC License | Penthouse Advisors" },
+      { title: "Liquor License For Sale - Type 47 ABC License | Penthouse Advisors" },
       {
         name: "description",
         content:
           "Active California ABC liquor licenses available for purchase. Vetted, transferable, all-in pricing. Type 47 Hard Liquor available now.",
       },
-      { property: "og:title", content: "Liquor License For Sale — Penthouse Advisors" },
+      { property: "og:title", content: "Liquor License For Sale - Penthouse Advisors" },
       {
         property: "og:description",
         content: "Active California ABC liquor licenses available for transfer.",
@@ -39,7 +39,7 @@ type License = {
 const licenses: License[] = [
   {
     id: "LL-001",
-    type: "Type 47 — Hard Liquor",
+    type: "Type 47 - Hard Liquor",
     licenseNumber: "47-525737",
     status: "Active",
     issued: "March 14, 2014",
