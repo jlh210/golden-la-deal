@@ -5,7 +5,7 @@ const SHEET_ID = "1XxSXkc43h9qV4CeSgYzudsAbPfGDXk2rQn24y7_0Yhg";
 const RANGE = "Sheet1!A:I";
 const GATEWAY = "https://connector-gateway.lovable.dev/google_sheets/v4";
 
-// Columns: Name | Phone | Email | Source | Role | serviceNeeded | Notes | Timestamp
+// Columns: Name | Phone | Email | Source | Role | serviceNeeded | Notes | Timestamp | Status
 export const COLUMNS = [
   "Name",
   "Phone",
@@ -15,6 +15,7 @@ export const COLUMNS = [
   "serviceNeeded",
   "Notes",
   "Timestamp",
+  "Status",
 ] as const;
 
 const leadSchema = z.object({
