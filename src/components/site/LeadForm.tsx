@@ -16,12 +16,12 @@ const schema = z.object({
 });
 
 export function LeadForm({
-  defaultTopic,
+  serviceNeeded,
   title = "Book a Consultation",
   subtitle = "Tell us what you need. We respond same business day.",
   extraFields,
 }: {
-  defaultTopic?: string;
+  serviceNeeded?: string;
   title?: string;
   subtitle?: string;
   extraFields?: React.ReactNode;
