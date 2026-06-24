@@ -7,13 +7,13 @@ import { LeadForm } from "@/components/site/LeadForm";
 export const Route = createFileRoute("/residential")({
   head: () => ({
     meta: [
-      { title: "Residential Requests — Penthouse Advisors LA" },
+      { title: "Residential Requests - Penthouse Advisors LA" },
       {
         name: "description",
         content:
           "Select residential listings in Los Angeles handled by Roschard Paticchio-Stein, CEO and licensed Business Agent. Inquire for availability.",
       },
-      { property: "og:title", content: "Residential Requests — Penthouse Advisors" },
+      { property: "og:title", content: "Residential Requests - Penthouse Advisors" },
       {
         property: "og:description",
         content: "Select residential listings in LA. Inquire for availability.",
@@ -30,7 +30,7 @@ function ResidentialPage() {
         eyebrow="Residential Requests"
         title="Select residential listings"
         accent="in Los Angeles."
-        subtitle="Alongside our restaurant and commercial work, we handle a small number of residential listings each year — personally managed by Roschard Paticchio-Stein, CEO. Inquire for current availability."
+        subtitle="Alongside our restaurant and commercial work, we handle a small number of residential listings each year - personally managed by Roschard Paticchio-Stein, CEO. Inquire for current availability."
       />
 
       <section className="container-x py-12 md:py-20 grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-start">
@@ -42,7 +42,7 @@ function ResidentialPage() {
           <p className="mt-4 text-muted-foreground leading-relaxed">
             We don't publish our residential inventory. Each listing is handled directly
             by the CEO with the same disclosure standards as our commercial work. Contact
-            us with what you're looking for — buying, selling, or leasing — and we'll
+            us with what you're looking for - buying, selling, or leasing - and we'll
             tell you what's currently available.
           </p>
           <div className="mt-6 rounded-lg border border-border bg-background p-5">

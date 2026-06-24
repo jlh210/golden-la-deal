@@ -13,7 +13,7 @@ export const Route = createFileRoute("/buyer-tenant-resolutions")({
         content:
           "Stuck mid-deal? Landlord non-disclosure, lease disputes, failed escrow, permit hold-ups, surprise code issues. We resolve restaurant buyer and tenant dilemmas fast.",
       },
-      { property: "og:title", content: "Buyer & Tenant Resolutions — Penthouse Advisors" },
+      { property: "og:title", content: "Buyer & Tenant Resolutions - Penthouse Advisors" },
       {
         property: "og:description",
         content: "Stuck mid-deal? We resolve restaurant buyer and tenant dilemmas fast.",
@@ -30,7 +30,7 @@ function ResolutionsPage() {
         eyebrow="Buyer / Tenant Resolutions"
         title="Stuck mid-deal? We unstick it."
         accent="Fast, workable solutions."
-        subtitle="Landlord non-disclosure, lease disputes, frozen escrow, permit hold-ups, surprise code violations, broken seller promises — restaurant buyers and tenants get blindsided every day. We step in and resolve it."
+        subtitle="Landlord non-disclosure, lease disputes, frozen escrow, permit hold-ups, surprise code violations, broken seller promises - restaurant buyers and tenants get blindsided every day. We step in and resolve it."
       />
 
       <section className="container-x py-16 md:py-20 grid gap-10 lg:grid-cols-2">
@@ -44,7 +44,7 @@ function ResolutionsPage() {
             <li>• Seller's sales numbers don't match POS or tax records</li>
             <li>• Lease language blocks your concept, signage, or hours</li>
             <li>• Escrow stalled over deposit, security, or assignment terms</li>
-            <li>• Permits won't issue — Building & Safety, Health, or ABC hold-up</li>
+            <li>• Permits won't issue - Building & Safety, Health, or ABC hold-up</li>
             <li>• Equipment turned out leased, broken, or red-tagged after closing</li>
           </ul>
         </div>
@@ -55,7 +55,7 @@ function ResolutionsPage() {
           </div>
           <h2 className="mt-5 text-2xl font-display font-bold">How we resolve it</h2>
           <ul className="mt-4 space-y-2 text-muted-foreground leading-relaxed">
-            <li>• Direct landlord and agent negotiation — written, on the record</li>
+            <li>• Direct landlord and agent negotiation - written, on the record</li>
             <li>• Lease re-trade: rent abatement, TI swaps, term changes</li>
             <li>• Deposit / escrow recovery and re-papering of agreements</li>
             <li>• Permit unblock through Building & Safety and Health Dept liaison</li>
@@ -71,7 +71,7 @@ function ResolutionsPage() {
           <div>
             <h2 className="text-2xl md:text-3xl font-display font-bold">Treated fairly, equally, honestly.</h2>
             <p className="mt-3 text-muted-foreground max-w-2xl">
-              We don't pick sides for sport — we get the deal to a workable close,
+              We don't pick sides for sport - we get the deal to a workable close,
               or we tell you straight when to walk. Either way, you stop bleeding time and money.
             </p>
           </div>

@@ -44,7 +44,7 @@ export const services: Service[] = [
     slug: "alcohol-licensing",
     to: "/alcohol-licensing",
     title: "Alcohol Licensing",
-    short: "Type 41 Beer & Wine, Type 47 Hard Liquor — transfers, new, CUB diversion.",
+    short: "Type 41 Beer & Wine, Type 47 Hard Liquor - transfers, new, CUB diversion.",
     icon: Wine,
     featured: true,
   },
@@ -52,7 +52,7 @@ export const services: Service[] = [
     slug: "liquor-license-for-sale",
     to: "/liquor-license-for-sale",
     title: "Liquor License For Sale",
-    short: "Active ABC licenses available — fully vetted, priced all-in.",
+    short: "Active ABC licenses available - fully vetted, priced all-in.",
     icon: Wine,
   },
   {
@@ -104,7 +104,7 @@ export const services: Service[] = [
     slug: "second-generation",
     to: "/second-generation-restaurants",
     title: "Second Generation Restaurants",
-    short: "Equipped 2nd-gen restaurant spaces — $0 key money, lawful terms.",
+    short: "Equipped 2nd-gen restaurant spaces - $0 key money, lawful terms.",
     icon: Building2,
     featured: true,
   },
@@ -112,7 +112,7 @@ export const services: Service[] = [
     slug: "hardware-store",
     to: "/hardware-store-for-sale",
     title: "Hardware Store For Sale",
-    short: "Established West LA hardware store — full business listing.",
+    short: "Established West LA hardware store - full business listing.",
     icon: Store,
   },
   {
@@ -147,7 +147,7 @@ export const services: Service[] = [
 
 export const featuredServices = services.filter((s) => s.featured);
 
-/** Service Needed dropdown — used on every lead form. */
+/** Service Needed dropdown - used on every lead form. */
 export const serviceTopics = [
   "Buying a restaurant",
   "Selling my restaurant",

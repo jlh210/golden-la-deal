@@ -7,7 +7,7 @@ import { LeadForm } from "@/components/site/LeadForm";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact / Book a Consultation — Penthouse Advisors LA" },
+      { title: "Contact / Book a Consultation - Penthouse Advisors LA" },
       {
         name: "description",
         content:
@@ -30,14 +30,14 @@ function ContactPage() {
         eyebrow="Get In Touch"
         title="Tell us what you"
         accent="need."
-        subtitle="We answer the phone. We respond to messages within the business day. Whether you're buying, selling, licensing, leasing, or in trouble — start here."
+        subtitle="We answer the phone. We respond to messages within the business day. Whether you're buying, selling, licensing, leasing, or in trouble - start here."
       />
 
       <section className="container-x py-12 md:py-16">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
           <LeadForm
             title="Book a Consultation"
-            subtitle="Pick your Service Needed below — every category we offer is in the dropdown."
+            subtitle="Pick your Service Needed below - every category we offer is in the dropdown."
           />
 
           <div className="space-y-5">

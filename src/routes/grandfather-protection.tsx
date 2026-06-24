@@ -7,13 +7,13 @@ import { CTASection } from "@/components/site/CTASection";
 export const Route = createFileRoute("/grandfather-protection")({
   head: () => ({
     meta: [
-      { title: "Grandfather Protection — 90-Day Rule & ADA Carve-Outs | Penthouse Advisors" },
+      { title: "Grandfather Protection - 90-Day Rule & ADA Carve-Outs | Penthouse Advisors" },
       {
         name: "description",
         content:
           "Grandfather Protection on older LA restaurants auto-expires after 90 days closed with Health. ADA, grease trap, and floor-plan rules still apply. Know what you can touch.",
       },
-      { property: "og:title", content: "Grandfather Protection — Penthouse Advisors" },
+      { property: "og:title", content: "Grandfather Protection - Penthouse Advisors" },
       {
         property: "og:description",
         content: "Protect older restaurant spaces. 90-day rule. ADA carve-outs. Don't move the floor plan.",
@@ -37,10 +37,10 @@ function GrandfatherPage() {
         eyebrow="Grandfather Protection"
         title="Don't touch the wrong wall."
         accent="Keep your status."
-        subtitle="Older LA restaurant spaces are often operating under Grandfather Protection — meaning current code doesn't apply unless you trigger it. Trigger it once and the entire space owes full compliance."
+        subtitle="Older LA restaurant spaces are often operating under Grandfather Protection - meaning current code doesn't apply unless you trigger it. Trigger it once and the entire space owes full compliance."
       />
 
-      {/* 90-day rule — critical */}
+      {/* 90-day rule - critical */}
       <section className="border-b border-border bg-card">
         <div className="container-x py-12 md:py-14 flex items-start gap-4">
           <div className="grid h-12 w-12 place-items-center rounded-md bg-destructive/15 text-destructive border border-destructive/30 shrink-0">
@@ -52,7 +52,7 @@ function GrandfatherPage() {
               Closed with the Health Department for over 90 days?
             </h2>
             <p className="mt-2 text-muted-foreground max-w-2xl">
-              Grandfather Protection automatically expires. The space owes full current code from day 91 onward —
+              Grandfather Protection automatically expires. The space owes full current code from day 91 onward -
               no waivers, no negotiation. This is the single fastest way owners lose protected status.
             </p>
           </div>
@@ -67,7 +67,7 @@ function GrandfatherPage() {
           <h2 className="mt-5 text-2xl font-display font-bold">What it means</h2>
           <p className="mt-3 text-muted-foreground leading-relaxed">
             Grandfather Protection is a legacy allowance that lets older restaurant spaces
-            continue operating under the codes in effect when they were built — not today's
+            continue operating under the codes in effect when they were built - not today's
             stricter Building & Safety, Health, Title 24, hood, and grease interceptor
             requirements. It's a real financial asset of the space.
           </p>
@@ -113,7 +113,7 @@ function GrandfatherPage() {
             <Droplets className="mt-0.5 h-5 w-5 text-gold shrink-0" />
             <p className="text-sm">
               <span className="font-semibold text-gold">Grease trap:</span>{" "}
-              If the property is missing a grease trap under the 3-compartment sink, it will need to be installed —
+              If the property is missing a grease trap under the 3-compartment sink, it will need to be installed -
               this is enforced even under Grandfather Protection.
             </p>
           </div>
@@ -122,7 +122,7 @@ function GrandfatherPage() {
 
       <section className="container-x py-16">
         <div className="rounded-2xl border border-gold/40 bg-card p-8 md:p-10">
-          <h2 className="text-2xl md:text-3xl font-display font-bold">Before you remodel — call us.</h2>
+          <h2 className="text-2xl md:text-3xl font-display font-bold">Before you remodel - call us.</h2>
           <p className="mt-3 text-muted-foreground max-w-2xl">
             We review the property's permit history, identify what's protected, and tell
             you exactly what work you can do without triggering full code compliance.

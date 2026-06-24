@@ -7,13 +7,13 @@ import { CTASection } from "@/components/site/CTASection";
 export const Route = createFileRoute("/agents")({
   head: () => ({
     meta: [
-      { title: "Agents — Penthouse Advisors Inc. | LA Restaurant Advisory Team" },
+      { title: "Agents - Penthouse Advisors Inc. | LA Restaurant Advisory Team" },
       {
         name: "description",
         content:
-          "Meet the agents and advisors at Penthouse Advisors Inc. — principal-led restaurant brokerage, licensing, and advisory for Los Angeles County.",
+          "Meet the agents and advisors at Penthouse Advisors Inc. - principal-led restaurant brokerage, licensing, and advisory for Los Angeles County.",
       },
-      { property: "og:title", content: "Agents — Penthouse Advisors Inc." },
+      { property: "og:title", content: "Agents - Penthouse Advisors Inc." },
       {
         property: "og:description",
         content:
@@ -29,7 +29,7 @@ const agents = [
     name: "Roschard Paticchio-Stein",
     title: "CEO · Owner · Business Agent",
     dre: "DRE #02203003",
-    bio: "Day-to-day leader at Penthouse Advisors and the primary agent on transactions. Roschard runs brokerage engagements end-to-end — from off-market sourcing and packaging to escrow close — and also handles the firm's select residential listings.",
+    bio: "Day-to-day leader at Penthouse Advisors and the primary agent on transactions. Roschard runs brokerage engagements end-to-end - from off-market sourcing and packaging to escrow close - and also handles the firm's select residential listings.",
     focus: ["Restaurant brokerage", "Off-market sourcing", "Residential listings"],
   },
   {
@@ -73,7 +73,7 @@ function AgentsPage() {
         eyebrow="Our Agents"
         title="Principal-led restaurant"
         accent="advisory team."
-        subtitle="Every engagement at Penthouse Advisors is led directly by an owner-partner. No layers, no handoffs — the principals on the page below are the people you'll be working with."
+        subtitle="Every engagement at Penthouse Advisors is led directly by an owner-partner. No layers, no handoffs - the principals on the page below are the people you'll be working with."
       />
 
       <section className="container-x py-16 md:py-24">
@@ -89,7 +89,7 @@ function AgentsPage() {
               <p className="mt-4 text-sm text-foreground/85 leading-relaxed">{a.bio}</p>
               <ul className="mt-5 space-y-1.5">
                 {a.focus.map((f) => (
-                  <li key={f} className="text-xs text-muted-foreground">— {f}</li>
+                  <li key={f} className="text-xs text-muted-foreground">- {f}</li>
                 ))}
               </ul>
               <div className="mt-6 pt-5 border-t border-border flex flex-col gap-2 text-sm">

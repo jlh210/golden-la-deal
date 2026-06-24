@@ -7,7 +7,7 @@ import { CTASection } from "@/components/site/CTASection";
 export const Route = createFileRoute("/second-generation-restaurants")({
   head: () => ({
     meta: [
-      { title: "Second Generation Restaurant Spaces — $0 Key Money | Penthouse Advisors" },
+      { title: "Second Generation Restaurant Spaces - $0 Key Money | Penthouse Advisors" },
       {
         name: "description",
         content:
@@ -30,7 +30,7 @@ function SecondGenPage() {
         eyebrow="Second Generation Restaurants"
         title="Equipped spaces."
         accent="$0 key money."
-        subtitle="We lease equipped or vacant second-generation restaurant spaces with zero key money. You take the space on the merits of the lease — not on a side payment to the previous tenant."
+        subtitle="We lease equipped or vacant second-generation restaurant spaces with zero key money. You take the space on the merits of the lease - not on a side payment to the previous tenant."
       />
 
       <section className="container-x py-16 md:py-20 grid gap-6 md:grid-cols-2">
@@ -40,7 +40,7 @@ function SecondGenPage() {
           </div>
           <h2 className="mt-5 text-2xl font-display font-bold">What we do</h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            Source 2nd-gen restaurant spaces — vented, plumbed, hood-equipped — directly
+            Source 2nd-gen restaurant spaces - vented, plumbed, hood-equipped - directly
             from landlords across LA County. Structure the lease, walk the space with
             health and building, and hand you operating keys.
           </p>
@@ -55,7 +55,7 @@ function SecondGenPage() {
             Previous tenants <span className="text-foreground font-semibold">cannot</span> demand under-the-table key money
             for FF&E unless that compensation is written into a lawful lease and disclosed.
             Equipment without <span className="text-gold font-semibold">NSF or ETL labels</span> is worthless under health
-            code — it cannot be permitted and must be replaced. Don't pay for it.
+            code - it cannot be permitted and must be replaced. Don't pay for it.
           </p>
         </article>
       </section>
@@ -80,7 +80,7 @@ function SecondGenPage() {
         </div>
       </section>
 
-      <CTASection title="Looking for a 2nd-gen space?" body="Tell us your area and concept — we'll send live options this week." />
+      <CTASection title="Looking for a 2nd-gen space?" body="Tell us your area and concept - we'll send live options this week." />
     </SiteLayout>
   );
 }

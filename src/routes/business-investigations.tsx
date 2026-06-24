@@ -11,9 +11,9 @@ export const Route = createFileRoute("/business-investigations")({
       {
         name: "description",
         content:
-          "Pre-purchase restaurant due diligence: lease terms, permit history, sales verification, ABC status, code violations, hidden landlord and disclosure issues — before you sign.",
+          "Pre-purchase restaurant due diligence: lease terms, permit history, sales verification, ABC status, code violations, hidden landlord and disclosure issues - before you sign.",
       },
-      { property: "og:title", content: "Restaurant Business Investigations — Penthouse Advisors" },
+      { property: "og:title", content: "Restaurant Business Investigations - Penthouse Advisors" },
       {
         property: "og:description",
         content: "Verify the deal before you sign. Full pre-purchase restaurant investigation.",
@@ -30,7 +30,7 @@ function InvestigationsPage() {
         eyebrow="Restaurant Business Investigations"
         title="Know exactly what you're buying."
         accent="Before you sign."
-        subtitle="Sellers and landlords don't always tell you everything. We dig — lease terms, permit history, code violations, sales numbers, ABC status, equipment condition — so you walk into the deal with eyes open."
+        subtitle="Sellers and landlords don't always tell you everything. We dig - lease terms, permit history, code violations, sales numbers, ABC status, equipment condition - so you walk into the deal with eyes open."
       />
 
       <section className="container-x py-16 md:py-20 grid gap-6 lg:grid-cols-3">
@@ -48,7 +48,7 @@ function InvestigationsPage() {
           {
             icon: ShieldCheck,
             title: "What you walk away with",
-            body: "A clear written report on the property, the business, and the seller's representations — plus a recommendation: proceed, renegotiate, or walk. One call can save six figures.",
+            body: "A clear written report on the property, the business, and the seller's representations - plus a recommendation: proceed, renegotiate, or walk. One call can save six figures.",
           },
         ].map((c) => (
           <div key={c.title} className="rounded-2xl border border-border bg-card p-7 shadow-elegant">
