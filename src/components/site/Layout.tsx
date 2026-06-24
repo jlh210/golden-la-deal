@@ -10,10 +10,12 @@ const EMAIL_HREF = "mailto:PenthouseAdvisors@gmail.com";
 const HOURS = "8:00am – 7:00pm · Mon–Sun";
 
 const primaryNav = [
-  { to: "/about", label: "About Us" },
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About" },
   { to: "/services", label: "Services", hasDropdown: true },
-  { to: "/restaurants-for-sale", label: "Business Listings" },
-  { to: "/contact", label: "Work With Us" },
+  { to: "/restaurants-for-sale", label: "Restaurants" },
+  { to: "/alcohol-licensing", label: "Licensing" },
+  { to: "/contact", label: "Contact" },
   { to: "/agents", label: "Agents" },
 ] as const;
 
