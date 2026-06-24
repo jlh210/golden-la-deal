@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { z } from "zod";
-import { Send, CheckCircle2, Phone } from "lucide-react";
+import { Send, CheckCircle2, Phone, Loader2 } from "lucide-react";
+import { useServerFn } from "@tanstack/react-start";
 import { PHONE, PHONE_HREF } from "./Layout";
 import { serviceTopics } from "@/lib/services";
+import { submitLead } from "@/lib/leads.functions";
 
 const schema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
