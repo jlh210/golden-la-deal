@@ -2,30 +2,29 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 
 const SHEET_ID = "1XxSXkc43h9qV4CeSgYzudsAbPfGDXk2rQn24y7_0Yhg";
-const RANGE = "Sheet1!A:M";
+const RANGE = "Sheet1!A:I";
 const GATEWAY = "https://connector-gateway.lovable.dev/google_sheets/v4";
 
-// Columns: timestamp | source | name | phone | email | topic | role | budget | location | businessType | timeline | message | extra
-const COLUMNS = [
+// Columns: timestamp | source | name | phone | email | role | serviceNeeded | message | extra
+export const COLUMNS = [
   "timestamp",
   "source",
   "name",
   "phone",
   "email",
-  "topic",
   "role",
-  "budget",
-  "location",
-  "businessType",
-  "timeline",
+  "serviceNeeded",
   "message",
   "extra",
 ] as const;
 
 const leadSchema = z.object({
   source: z.string().min(1).max(120),
+  serviceNeeded: z.string().max(160).optional(),
   fields: z.record(z.string(), z.string()).default({}),
 });
+
+const CORE = new Set(["name", "phone", "email", "role", "serviceNeeded", "message", "notes"]);
 
 export const submitLead = createServerFn({ method: "POST" })
   .inputValidator((input: unknown) => leadSchema.parse(input))
@@ -37,13 +36,9 @@ export const submitLead = createServerFn({ method: "POST" })
     }
 
     const f = data.fields;
-    const known = new Set([
-      "name", "phone", "email", "topic", "role",
-      "budget", "location", "businessType", "timeline", "message", "notes",
-    ]);
     const extra: Record<string, string> = {};
     for (const [k, v] of Object.entries(f)) {
-      if (!known.has(k)) extra[k] = v;
+      if (!CORE.has(k) && v) extra[k] = v;
     }
 
     const row = [
@@ -52,12 +47,8 @@ export const submitLead = createServerFn({ method: "POST" })
       f.name ?? "",
       f.phone ?? "",
       f.email ?? "",
-      f.topic ?? "",
       f.role ?? "",
-      f.budget ?? "",
-      f.location ?? "",
-      f.businessType ?? "",
-      f.timeline ?? "",
+      data.serviceNeeded ?? f.serviceNeeded ?? "",
       f.message ?? f.notes ?? "",
       Object.keys(extra).length ? JSON.stringify(extra) : "",
     ];
@@ -79,5 +70,5 @@ export const submitLead = createServerFn({ method: "POST" })
       throw new Error(`Sheets append failed: ${res.status}`);
     }
 
-    return { ok: true, columns: COLUMNS };
+    return { ok: true };
   });
