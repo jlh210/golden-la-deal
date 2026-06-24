@@ -40,11 +40,13 @@ const servicesDropdown = [
 
 const fullNav = [
   { to: "/", label: "Home" },
-  { to: "/about", label: "About Us" },
+  { to: "/about", label: "About" },
   { to: "/services", label: "All Services" },
-  { to: "/restaurants-for-sale", label: "Restaurants For Sale" },
+  { to: "/restaurants-for-sale", label: "Restaurants" },
+  { to: "/alcohol-licensing", label: "Licensing" },
+  { to: "/contact", label: "Contact" },
+  { to: "/agents", label: "Agents" },
   { to: "/second-generation-restaurants", label: "Second Generation Restaurants" },
-  { to: "/alcohol-licensing", label: "Alcohol Licensing" },
   { to: "/liquor-license-for-sale", label: "Liquor License For Sale" },
   { to: "/health-inspection", label: "Health Dept Inspection" },
   { to: "/health-permitting", label: "Health Permitting & Plan Check" },
@@ -57,7 +59,6 @@ const fullNav = [
   { to: "/e2-visa-europe", label: "E-2 Visa (Europe)" },
   { to: "/hardware-store-for-sale", label: "Hardware Store For Sale" },
   { to: "/residential", label: "Residential Requests" },
-  { to: "/contact", label: "Contact" },
 ] as const;
 
 function Header() {
