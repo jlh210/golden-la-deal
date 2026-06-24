@@ -130,10 +130,12 @@ function OffMarketPage() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-charcoal-deep shadow-gold"
+                  disabled={loading}
+                  className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-charcoal-deep shadow-gold disabled:opacity-60"
                 >
-                  Send Buyer Brief
+                  {loading ? (<><Loader2 className="h-4 w-4 animate-spin" /> Sending…</>) : "Send Buyer Brief"}
                 </button>
+                {serverError && <p className="text-xs text-destructive text-center">{serverError}</p>}
               </form>
             </>
           )}
