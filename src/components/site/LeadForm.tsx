@@ -89,15 +89,24 @@ export function LeadForm({
         </div>
         <div>
           <label className="block text-sm font-semibold mb-2">Service Needed</label>
-          <select
-            name="topic"
-            defaultValue={defaultTopic ?? ""}
-            className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-gold focus:outline-none"
-          >
-            <option value="" disabled>Select one…</option>
-            {serviceTopics.map((t) => <option key={t} value={t}>{t}</option>)}
-          </select>
-          {errors.topic && <p className="mt-1.5 text-xs text-destructive">{errors.topic}</p>}
+          {serviceNeeded ? (
+            <>
+              <input type="hidden" name="serviceNeeded" value={serviceNeeded} />
+              <div className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm">
+                {serviceNeeded}
+              </div>
+            </>
+          ) : (
+            <select
+              name="serviceNeeded"
+              defaultValue=""
+              className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-gold focus:outline-none"
+            >
+              <option value="" disabled>Select one…</option>
+              {serviceTopics.map((t) => <option key={t} value={t}>{t}</option>)}
+            </select>
+          )}
+          {errors.serviceNeeded && <p className="mt-1.5 text-xs text-destructive">{errors.serviceNeeded}</p>}
         </div>
         <div>
           <label className="block text-sm font-semibold mb-2">Are you a</label>
@@ -107,9 +116,10 @@ export function LeadForm({
             className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-gold focus:outline-none"
           >
             <option value="" disabled>Select one…</option>
-            <option value="buyer">Buyer</option>
-            <option value="seller">Seller</option>
-            <option value="restaurant-operator">Restaurant Operator</option>
+            <option value="Owner">Owner</option>
+            <option value="Buyer">Buyer</option>
+            <option value="Seller">Seller</option>
+            <option value="Operator">Operator</option>
           </select>
           {errors.role && <p className="mt-1.5 text-xs text-destructive">{errors.role}</p>}
         </div>
