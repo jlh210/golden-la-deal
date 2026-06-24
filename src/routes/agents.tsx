@@ -29,14 +29,14 @@ const agents = [
     name: "Roschard Paticchio-Stein",
     title: "CEO · Owner · Business Agent",
     dre: "DRE #02203003",
-    bio: "Chief Executive Officer (CEO) is responsible for making major corporate decisions, driving the direction of the company, supervising other executives, and overseeing growth plans.",
+    bio: "As CEO, Roschard makes the major corporate decisions that shape Penthouse Advisors, drives the firm’s direction, supervises the executive team, and oversees growth plans.",
     focus: ["Restaurant brokerage", "Off-market sourcing", "Residential listings"],
   },
   {
     name: "Richard Stein",
     title: "COO · Business Advisor · Owner",
     dre: null,
-    bio: "The Chief Operating Officer (COO) is the executive leader who turns the company's strategy into everyday results.",
+    bio: "As COO, Richard turns the firm’s strategy into everyday results, making sure execution across the company matches the direction set by leadership.",
     focus: ["Deal structuring", "Distressed advisory", "Vendor coordination"],
   },
   {
