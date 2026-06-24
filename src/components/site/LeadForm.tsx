@@ -126,10 +126,12 @@ export function LeadForm({
         </div>
         <button
           type="submit"
-          className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-charcoal-deep shadow-gold hover:opacity-95 transition"
+          disabled={loading}
+          className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-charcoal-deep shadow-gold hover:opacity-95 transition disabled:opacity-60"
         >
-          Send Message <Send className="h-4 w-4" />
+          {loading ? (<><Loader2 className="h-4 w-4 animate-spin" /> Sending…</>) : (<>Send Message <Send className="h-4 w-4" /></>)}
         </button>
+        {serverError && <p className="text-xs text-destructive text-center">{serverError}</p>}
         <p className="text-xs text-muted-foreground text-center">
           By submitting, you agree to be contacted by Penthouse Advisors.
         </p>
