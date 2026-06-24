@@ -29,14 +29,14 @@ const agents = [
     name: "Roschard Paticchio-Stein",
     title: "CEO · Owner · Business Agent",
     dre: "DRE #02203003",
-    bio: "Day-to-day leader at Penthouse Advisors and the primary agent on transactions. Roschard runs brokerage engagements end-to-end - from off-market sourcing and packaging to escrow close - and also handles the firm's select residential listings.",
+    bio: "Chief Executive Officer (CEO) is responsible for making major corporate decisions, driving the direction of the company, supervising other executives, and overseeing growth plans.",
     focus: ["Restaurant brokerage", "Off-market sourcing", "Residential listings"],
   },
   {
     name: "Richard Stein",
     title: "COO · Business Advisor · Owner",
     dre: null,
-    bio: "Operations and advisory backbone of the firm. Richard structures complex deals, advises owners in distress, and oversees the firm's vendor network across hood cleaning, repair, and emergency reopen work.",
+    bio: "The Chief Operating Officer (COO) is the executive leader who turns the company's strategy into everyday results.",
     focus: ["Deal structuring", "Distressed advisory", "Vendor coordination"],
   },
   {
