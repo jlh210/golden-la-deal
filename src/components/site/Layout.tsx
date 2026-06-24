@@ -15,7 +15,7 @@ const primaryNav = [
   { to: "/services", label: "Services", hasDropdown: true },
   { to: "/restaurants-for-sale", label: "Listings" },
   { to: "/alcohol-licensing", label: "Licensing" },
-  { to: "/contact", label: "Contact" },
+  { to: "/contact", label: "Work With Us" },
   { to: "/agents", label: "Agents" },
 ] as const;
 
@@ -44,7 +44,7 @@ const fullNav = [
   { to: "/services", label: "All Services" },
   { to: "/restaurants-for-sale", label: "Listings" },
   { to: "/alcohol-licensing", label: "Licensing" },
-  { to: "/contact", label: "Contact" },
+  { to: "/contact", label: "Work With Us" },
   { to: "/agents", label: "Agents" },
   { to: "/second-generation-restaurants", label: "Second Generation Restaurants" },
   { to: "/liquor-license-for-sale", label: "Liquor License For Sale" },
