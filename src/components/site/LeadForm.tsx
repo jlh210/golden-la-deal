@@ -28,8 +28,11 @@ export function LeadForm({
 }) {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [serverError, setServerError] = useState<string | null>(null);
+  const send = useServerFn(submitLead);
 
-  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
     const data = Object.fromEntries(fd) as Record<string, string>;
@@ -43,7 +46,17 @@ export function LeadForm({
       return;
     }
     setErrors({});
-    setSubmitted(true);
+    setServerError(null);
+    setLoading(true);
+    try {
+      await send({ data: { source: title, fields: data } });
+      setSubmitted(true);
+    } catch (err) {
+      console.error(err);
+      setServerError("Something went wrong sending your message. Please call us.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   if (submitted) {
