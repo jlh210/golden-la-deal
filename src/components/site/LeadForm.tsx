@@ -49,7 +49,7 @@ export function LeadForm({
     setServerError(null);
     setLoading(true);
     try {
-      await send({ data: { source: title, fields: data } });
+      await send({ data: { source: title, serviceNeeded: serviceNeeded ?? data.serviceNeeded, fields: data } });
       setSubmitted(true);
     } catch (err) {
       console.error(err);
