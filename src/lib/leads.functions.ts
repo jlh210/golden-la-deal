@@ -42,7 +42,7 @@ export const submitLead = createServerFn({ method: "POST" })
       f.role ?? "",
       data.serviceNeeded ?? f.serviceNeeded ?? "",
       f.message ?? f.notes ?? "",
-      new Date().toISOString(),
+      new Date().toLocaleString("en-US", { timeZone: "America/New_York" }),
     ];
 
     const url = `${GATEWAY}/spreadsheets/${SHEET_ID}/values/${RANGE}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`;
