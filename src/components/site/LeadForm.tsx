@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { z } from "zod";
-import { Send, CheckCircle2, Phone } from "lucide-react";
+import { Send, CheckCircle2, Phone, Loader2 } from "lucide-react";
+import { useServerFn } from "@tanstack/react-start";
 import { PHONE, PHONE_HREF } from "./Layout";
 import { serviceTopics } from "@/lib/services";
+import { submitLead } from "@/lib/leads.functions";
 
 const schema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
@@ -26,8 +28,11 @@ export function LeadForm({
 }) {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [serverError, setServerError] = useState<string | null>(null);
+  const send = useServerFn(submitLead);
 
-  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
     const data = Object.fromEntries(fd) as Record<string, string>;
@@ -41,7 +46,17 @@ export function LeadForm({
       return;
     }
     setErrors({});
-    setSubmitted(true);
+    setServerError(null);
+    setLoading(true);
+    try {
+      await send({ data: { source: title, fields: data } });
+      setSubmitted(true);
+    } catch (err) {
+      console.error(err);
+      setServerError("Something went wrong sending your message. Please call us.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   if (submitted) {
@@ -111,10 +126,12 @@ export function LeadForm({
         </div>
         <button
           type="submit"
-          className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-charcoal-deep shadow-gold hover:opacity-95 transition"
+          disabled={loading}
+          className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-charcoal-deep shadow-gold hover:opacity-95 transition disabled:opacity-60"
         >
-          Send Message <Send className="h-4 w-4" />
+          {loading ? (<><Loader2 className="h-4 w-4 animate-spin" /> Sending…</>) : (<>Send Message <Send className="h-4 w-4" /></>)}
         </button>
+        {serverError && <p className="text-xs text-destructive text-center">{serverError}</p>}
         <p className="text-xs text-muted-foreground text-center">
           By submitting, you agree to be contacted by Penthouse Advisors.
         </p>

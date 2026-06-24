@@ -1,9 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { z } from "zod";
-import { Search, CheckCircle2, Phone } from "lucide-react";
+import { Search, CheckCircle2, Phone, Loader2 } from "lucide-react";
+import { useServerFn } from "@tanstack/react-start";
 import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
+import { submitLead } from "@/lib/leads.functions";
 
 export const Route = createFileRoute("/off-market-sourcing")({
   head: () => ({
@@ -41,8 +43,11 @@ const timelines = ["This week", "30 days", "60–90 days", "3–6 months", "Flex
 function OffMarketPage() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [serverError, setServerError] = useState<string | null>(null);
+  const send = useServerFn(submitLead);
 
-  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
     const data = Object.fromEntries(fd) as Record<string, string>;
@@ -54,7 +59,17 @@ function OffMarketPage() {
       return;
     }
     setErrors({});
-    setSubmitted(true);
+    setServerError(null);
+    setLoading(true);
+    try {
+      await send({ data: { source: "Off-Market Buyer Brief", fields: data } });
+      setSubmitted(true);
+    } catch (err) {
+      console.error(err);
+      setServerError("Something went wrong. Please call us.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -115,10 +130,12 @@ function OffMarketPage() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-charcoal-deep shadow-gold"
+                  disabled={loading}
+                  className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-charcoal-deep shadow-gold disabled:opacity-60"
                 >
-                  Send Buyer Brief
+                  {loading ? (<><Loader2 className="h-4 w-4 animate-spin" /> Sending…</>) : "Send Buyer Brief"}
                 </button>
+                {serverError && <p className="text-xs text-destructive text-center">{serverError}</p>}
               </form>
             </>
           )}
