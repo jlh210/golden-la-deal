@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Menu, X, Mail, Clock, ChevronDown } from "lucide-react";
-import { useState, type ReactNode } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import logoAsset from "@/assets/logo-mark.png.asset.json";
+
 
 const PHONE = "310-663-3521";
 const PHONE_HREF = "tel:+13106633521";
@@ -61,10 +62,27 @@ const fullNav = [
   { to: "/residential", label: "Residential Requests" },
 ] as const;
 
-function Header() {
+function Header({ transparent = false }: { transparent?: boolean }) {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    if (!transparent) return;
+    const onScroll = () => setScrolled(window.scrollY > 80);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [transparent]);
+  const isFloating = transparent && !scrolled && !open;
   return (
-    <header className="sticky top-0 z-50 border-b border-border/60 bg-card backdrop-blur-xl">
+    <header
+      className={
+        "sticky top-0 z-50 transition-all duration-500 " +
+        (isFloating
+          ? "bg-transparent border-b border-transparent"
+          : "bg-card/95 backdrop-blur-xl border-b border-border/60 shadow-[0_2px_24px_-12px_oklch(0.2_0.02_265/0.18)]")
+      }
+    >
+
       <div className="container-x flex h-16 items-center justify-between gap-4 md:h-20">
         <Link to="/" className="flex items-center gap-3 min-w-0">
           <img
@@ -284,12 +302,13 @@ function FloatingCall() {
   );
 }
 
-export function SiteLayout({ children }: { children: ReactNode }) {
+export function SiteLayout({ children, transparentHeader = false }: { children: ReactNode; transparentHeader?: boolean }) {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
+      <Header transparent={transparentHeader} />
       <main className="flex-1">{children}</main>
       <Footer />
+
       <FloatingCall />
     </div>
   );
