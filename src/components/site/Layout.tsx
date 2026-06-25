@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Menu, X, Mail, Clock, ChevronDown } from "lucide-react";
-import { useState, type ReactNode } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import logoAsset from "@/assets/logo-mark.png.asset.json";
+
 
 const PHONE = "310-663-3521";
 const PHONE_HREF = "tel:+13106633521";
