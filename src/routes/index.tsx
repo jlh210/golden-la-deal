@@ -62,56 +62,125 @@ const steps = [
 
 
 function HomePage() {
+  const [scrollY, setScrollY] = useState(0);
+  useEffect(() => {
+    const onScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <SiteLayout>
+    <SiteLayout transparentHeader>
       {/* HERO */}
-      <section className="relative overflow-hidden bg-hero">
-        <div
-          aria-hidden
-          className="absolute inset-0 opacity-[0.08] pointer-events-none"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 1px 1px, oklch(0.78 0.13 85) 1px, transparent 0)",
-            backgroundSize: "32px 32px",
-          }}
-        />
-        <div className="container-x relative pt-16 pb-24 md:pt-28 md:pb-36">
-          <div className="max-w-4xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/5 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-gold">
-              <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
-              Los Angeles County · Est. 2021
+      <section className="relative bg-cream -mt-16 md:-mt-20 pt-16 md:pt-20 overflow-hidden">
+        <div className="container-x relative grid lg:grid-cols-[1.05fr_1fr] gap-12 lg:gap-16 items-center min-h-[calc(100vh-5rem)] py-16 lg:py-24">
+          {/* LEFT */}
+          <div className="relative z-10 max-w-xl">
+            <div
+              className="inline-flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.28em] text-charcoal-deep/70 animate-fade-in"
+              style={{ animationDelay: "0ms", animationFillMode: "both" }}
+            >
+              <span className="h-px w-8 bg-gold" />
+              Serving Los Angeles County
             </div>
-            <h1 className="mt-6 font-display font-extrabold text-4xl sm:text-6xl md:text-7xl leading-[1.02] tracking-tight">
-              LA's Restaurant Experts.
+
+            <h1
+              className="mt-8 font-display text-[2.75rem] sm:text-6xl lg:text-[4.5rem] font-normal leading-[1.02] tracking-[-0.01em] text-charcoal-deep animate-fade-in"
+              style={{ animationDelay: "120ms", animationFillMode: "both" }}
+            >
+              Los Angeles County's
               <br />
-              <span className="text-gradient-gold">Buy. Sell. License. Rescue.</span>
+              <span className="italic text-gradient-gold">Premier Restaurant</span>
+              <br />
+              Advisory Firm.
             </h1>
-            <p className="mt-6 max-w-2xl text-base sm:text-lg text-muted-foreground">
-              Restaurant buying, selling, leasing, licensing, rescuing and permitting - all handled by one team, start to close.
+
+            <p
+              className="mt-8 max-w-lg text-base sm:text-lg leading-relaxed text-charcoal/75 animate-fade-in"
+              style={{ animationDelay: "320ms", animationFillMode: "both" }}
+            >
+              Serving Los Angeles County with expert restaurant brokerage, licensing, leasing,
+              permitting, consulting, and transaction management—from first opportunity to final closing.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+
+            <div
+              className="mt-10 flex flex-wrap items-center gap-4 animate-fade-in"
+              style={{ animationDelay: "480ms", animationFillMode: "both" }}
+            >
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-charcoal-deep shadow-gold hover:opacity-95 transition"
+                className="group inline-flex items-center gap-3 bg-charcoal-deep px-7 py-4 text-[13px] font-medium uppercase tracking-[0.18em] text-cream hover:bg-gold hover:text-charcoal-deep transition-all duration-500"
               >
-                Book a Consultation <ArrowRight className="h-4 w-4" />
+                Book a Consultation
+                <ArrowRight className="h-4 w-4 transition-transform duration-500 group-hover:translate-x-1" />
               </Link>
-              <a
-                href={PHONE_HREF}
-                className="inline-flex items-center gap-2 rounded-md border border-gold/40 px-6 py-3.5 text-sm font-semibold text-foreground hover:bg-gold/10 transition"
+              <Link
+                to="/services"
+                className="group inline-flex items-center gap-2 px-2 py-4 text-[13px] font-medium uppercase tracking-[0.18em] text-charcoal-deep border-b border-charcoal-deep/30 hover:border-gold hover:text-gold transition-colors duration-500"
               >
-                <Phone className="h-4 w-4 text-gold" /> {PHONE}
-              </a>
+                Explore Our Services
+                <ArrowRight className="h-3.5 w-3.5 transition-transform duration-500 group-hover:translate-x-1" />
+              </Link>
             </div>
+
+            {/* Trust metrics */}
+            <div
+              className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-6 pt-10 border-t border-charcoal-deep/10 animate-fade-in"
+              style={{ animationDelay: "640ms", animationFillMode: "both" }}
+            >
+              {trustMetrics.map((m) => (
+                <div key={m.label} className="group">
+                  <div className="font-display text-2xl sm:text-[1.7rem] font-normal text-charcoal-deep leading-none">
+                    {m.value}
+                  </div>
+                  <div className="mt-2 text-[10.5px] font-medium uppercase tracking-[0.18em] text-charcoal/55 leading-snug">
+                    {m.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* RIGHT — cinematic visual */}
+          <div className="relative h-[60vh] lg:h-[78vh] w-full">
+            <div
+              className="absolute inset-0 overflow-hidden shadow-elegant"
+              style={{ transform: `translateY(${scrollY * 0.08}px)` }}
+            >
+              <img
+                src={heroImage}
+                alt="Upscale Los Angeles restaurant interior with marble bar, brass accents, and chef plating"
+                width={1024}
+                height={1536}
+                className="absolute inset-0 h-full w-full object-cover scale-105 transition-transform duration-[1500ms]"
+                style={{ transform: `scale(1.05) translateY(${scrollY * -0.04}px)` }}
+              />
+              {/* warm ivory overlay */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-cream/55 via-cream/15 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-b from-cream/30 via-transparent to-cream/40 pointer-events-none" />
+            </div>
+
+            {/* floating credential card */}
+            <div className="absolute -bottom-6 -left-6 lg:bottom-10 lg:-left-10 max-w-[260px] bg-cream/95 backdrop-blur-sm border border-gold/20 p-6 shadow-elegant animate-fade-in" style={{ animationDelay: "900ms", animationFillMode: "both" }}>
+              <div className="text-[10px] font-medium uppercase tracking-[0.24em] text-gold">Trusted Advisory</div>
+              <p className="mt-3 font-display text-lg leading-snug text-charcoal-deep">
+                "One trusted partner for every stage of the restaurant lifecycle."
+              </p>
+            </div>
+
+            {/* corner ornaments */}
+            <div className="absolute top-0 right-0 h-16 w-16 border-t border-r border-gold/60 pointer-events-none" />
+            <div className="absolute bottom-0 left-0 h-16 w-16 border-b border-l border-gold/60 pointer-events-none hidden lg:block" />
           </div>
         </div>
 
-        <div className="relative border-t border-border/80 bg-card">
-          <div className="container-x py-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+        {/* faint trust strip */}
+        <div className="relative border-t border-charcoal-deep/10">
+          <div className="container-x py-5 flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
             {trust.map((t) => (
-              <div key={t.label} className="flex items-center gap-3">
-                <t.icon className="h-5 w-5 text-gold shrink-0" />
-                <span className="text-sm font-semibold uppercase tracking-wider text-foreground/85">
+              <div key={t.label} className="flex items-center gap-2.5">
+                <t.icon className="h-3.5 w-3.5 text-gold shrink-0" />
+                <span className="text-[11px] font-medium uppercase tracking-[0.22em] text-charcoal/65">
                   {t.label}
                 </span>
               </div>
@@ -119,6 +188,7 @@ function HomePage() {
           </div>
         </div>
       </section>
+
 
       {/* SERVICES */}
       <section className="container-x py-20 md:py-28">
