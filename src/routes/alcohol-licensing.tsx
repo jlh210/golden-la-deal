@@ -123,7 +123,7 @@ function LicensingPage() {
                 {fees.map((f) => (
                   <tr key={f.label} className="border-b border-border last:border-0">
                     <td className="p-4">{f.label}</td>
-                    <td className="p-4 text-right font-display font-bold text-gold">{f.amount}</td>
+                    <td className="p-4 text-right font-display text-lg font-bold text-gold tabular-nums">{f.amount}</td>
                   </tr>
                 ))}
               </tbody>
