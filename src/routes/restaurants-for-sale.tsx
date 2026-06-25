@@ -1,8 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { MapPin, Ruler, Flame, ArrowRight, Phone } from "lucide-react";
+import { MapPin, Ruler, Flame, ArrowRight, Phone, Sparkles } from "lucide-react";
 import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
+import tujunga1 from "@/assets/tujunga-1.jpg.asset.json";
+import tujunga2 from "@/assets/tujunga-2.jpg.asset.json";
+import tujunga3 from "@/assets/tujunga-3.jpg.asset.json";
+import tujunga4 from "@/assets/tujunga-4.jpg.asset.json";
 
 export const Route = createFileRoute("/restaurants-for-sale")({
   head: () => ({
@@ -23,25 +27,45 @@ export const Route = createFileRoute("/restaurants-for-sale")({
   component: ListingsPage,
 });
 
-type SaleType = "Business Sale" | "Asset Sale";
+type SaleType = "Business Sale" | "Asset Sale" | "Real Estate";
 
 type Listing = {
   id: string;
   type: SaleType;
   title: string;
   location: string;
-  price: string;
+  price?: string;
   priceNote?: string;
   sqft?: string;
   leaseType: string;
   features: string[];
+  images?: string[];
+  badge?: string;
+  description?: string;
 };
 
-/**
- * EDITORIAL: Update this array weekly with current inventory.
- * `type` drives the badge color. Keep features short - they show on the card.
- */
 const listings: Listing[] = [
+  {
+    id: "RE-001",
+    type: "Real Estate",
+    title: "Jazzve Garden — Banquet Facility + Real Estate",
+    location: "6500 Foothill Blvd, Tujunga, CA 91042",
+    price: "Call for Price",
+    priceNote: "Just Listed 6/20/26",
+    leaseType: "Real estate sale · APN 2564-012012",
+    badge: "Just Listed",
+    description:
+      "Exceptional turn-key banquet facility with premium real estate. Built to host weddings and celebrations with ease and elegance — multiple commercial kitchens, dining rooms, and bars in a setting that balances sophistication and warmth.",
+    features: [
+      "Premium real estate included",
+      "Multiple commercial kitchens",
+      "Indoor + garden dining areas",
+      "Full bars",
+      "Turn-key wedding & event venue",
+      "Established Jazzve Garden brand",
+    ],
+    images: [tujunga1.url, tujunga2.url, tujunga3.url, tujunga4.url],
+  },
   {
     id: "R-001",
     type: "Business Sale",
@@ -65,7 +89,7 @@ const listings: Listing[] = [
   },
 ];
 
-const filters: Array<"All" | SaleType> = ["All", "Business Sale", "Asset Sale"];
+const filters: Array<"All" | SaleType> = ["All", "Business Sale", "Asset Sale", "Real Estate"];
 
 function ListingsPage() {
   const [filter, setFilter] = useState<(typeof filters)[number]>("All");
@@ -106,21 +130,37 @@ function ListingsPage() {
               key={l.id}
               className="group rounded-xl border border-border bg-card overflow-hidden hover:border-gold/60 transition shadow-elegant flex flex-col"
             >
-              <div className="relative h-44 bg-gradient-to-br from-muted to-card border-b border-border flex items-center justify-center">
-                <div
-                  aria-hidden
-                  className="absolute inset-0 opacity-20"
-                  style={{
-                    backgroundImage:
-                      "radial-gradient(circle at 1px 1px, oklch(0.78 0.13 85) 1px, transparent 0)",
-                    backgroundSize: "24px 24px",
-                  }}
-                />
-                <Flame className="relative h-12 w-12 text-gold/50" />
-                <span className="absolute top-3 left-3 inline-flex items-center gap-1 rounded-full bg-gold/15 border border-gold/40 px-2.5 py-1 text-xs font-semibold text-gold">
+              <div className="relative h-52 border-b border-border overflow-hidden">
+                {l.images && l.images.length > 0 ? (
+                  <img
+                    src={l.images[0]}
+                    alt={l.title}
+                    className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="absolute inset-0 bg-gradient-to-br from-muted to-card flex items-center justify-center">
+                    <div
+                      aria-hidden
+                      className="absolute inset-0 opacity-20"
+                      style={{
+                        backgroundImage:
+                          "radial-gradient(circle at 1px 1px, oklch(0.78 0.13 85) 1px, transparent 0)",
+                        backgroundSize: "24px 24px",
+                      }}
+                    />
+                    <Flame className="relative h-12 w-12 text-gold/50" />
+                  </div>
+                )}
+                <span className="absolute top-3 left-3 inline-flex items-center gap-1 rounded-full bg-gold/15 border border-gold/40 px-2.5 py-1 text-xs font-semibold text-gold backdrop-blur">
                   {l.type}
                 </span>
-                <span className="absolute top-3 right-3 text-xs font-mono text-muted-foreground">
+                {l.badge && (
+                  <span className="absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full bg-gold-gradient text-charcoal-deep px-2.5 py-1 text-xs font-bold shadow-gold">
+                    <Sparkles className="h-3 w-3" /> {l.badge}
+                  </span>
+                )}
+                <span className="absolute top-3 right-3 text-xs font-mono text-white/90 bg-black/40 px-1.5 py-0.5 rounded">
                   {l.id}
                 </span>
               </div>
@@ -134,12 +174,20 @@ function ListingsPage() {
                     <Ruler className="h-3.5 w-3.5 text-gold" /> {l.sqft} · {l.leaseType}
                   </div>
                 )}
-                <div className="mt-4 flex items-baseline gap-2">
-                  <span className="text-2xl font-display font-extrabold text-gold">{l.price}</span>
-                  {l.priceNote && (
-                    <span className="text-xs uppercase tracking-wider text-gold/70">{l.priceNote}</span>
-                  )}
-                </div>
+                {!l.sqft && (
+                  <div className="mt-1 text-sm text-muted-foreground">{l.leaseType}</div>
+                )}
+                {l.description && (
+                  <p className="mt-3 text-sm text-foreground/80 line-clamp-3">{l.description}</p>
+                )}
+                {l.price && (
+                  <div className="mt-4 flex items-baseline gap-2">
+                    <span className="text-2xl font-display font-extrabold text-gold">{l.price}</span>
+                    {l.priceNote && (
+                      <span className="text-xs uppercase tracking-wider text-gold/70">{l.priceNote}</span>
+                    )}
+                  </div>
+                )}
                 <ul className="mt-4 grid grid-cols-2 gap-1.5 text-xs text-foreground/85">
                   {l.features.map((f) => (
                     <li key={f} className="flex items-center gap-1.5">
@@ -147,6 +195,19 @@ function ListingsPage() {
                     </li>
                   ))}
                 </ul>
+                {l.images && l.images.length > 1 && (
+                  <div className="mt-4 grid grid-cols-3 gap-1.5">
+                    {l.images.slice(1, 4).map((src, i) => (
+                      <img
+                        key={i}
+                        src={src}
+                        alt={`${l.title} ${i + 2}`}
+                        className="h-16 w-full object-cover rounded border border-border"
+                        loading="lazy"
+                      />
+                    ))}
+                  </div>
+                )}
                 <Link
                   to="/contact"
                   className="mt-6 inline-flex items-center justify-center gap-2 rounded-md bg-gold-gradient px-4 py-3 text-sm font-bold text-charcoal-deep shadow-gold"
