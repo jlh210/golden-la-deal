@@ -3,7 +3,7 @@ import { ArrowRight, Star, ShieldCheck, MapPin, Calendar } from "lucide-react";
 import { SiteLayout } from "@/components/site/Layout";
 import { CTASection } from "@/components/site/CTASection";
 import { featuredServices } from "@/lib/services";
-import heroImage from "@/assets/hero-restaurant.jpg";
+import heroImage from "@/assets/hero-downtown-la.jpg";
 import { useEffect, useState } from "react";
 
 
