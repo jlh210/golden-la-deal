@@ -302,12 +302,13 @@ function FloatingCall() {
   );
 }
 
-export function SiteLayout({ children }: { children: ReactNode }) {
+export function SiteLayout({ children, transparentHeader = false }: { children: ReactNode; transparentHeader?: boolean }) {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
+      <Header transparent={transparentHeader} />
       <main className="flex-1">{children}</main>
       <Footer />
+
       <FloatingCall />
     </div>
   );
