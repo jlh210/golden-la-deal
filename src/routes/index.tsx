@@ -150,15 +150,16 @@ function HomePage() {
             >
               <img
                 src={heroImage}
-                alt="Upscale Los Angeles restaurant interior with marble bar, brass accents, and chef plating"
+                alt="Downtown Los Angeles skyline at golden hour with warm architectural light"
                 width={1024}
                 height={1536}
                 className="absolute inset-0 h-full w-full object-cover scale-105 transition-transform duration-[1500ms]"
                 style={{ transform: `scale(1.05) translateY(${scrollY * -0.04}px)` }}
               />
-              {/* warm ivory overlay */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-cream/55 via-cream/15 to-transparent pointer-events-none" />
-              <div className="absolute inset-0 bg-gradient-to-b from-cream/30 via-transparent to-cream/40 pointer-events-none" />
+              {/* brand gold overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-gold/30 via-gold/10 to-amber-500/15 mix-blend-overlay pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-cream/60 via-cream/20 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-b from-cream/35 via-transparent to-cream/45 pointer-events-none" />
             </div>
 
             {/* floating credential card */}
