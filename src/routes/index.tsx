@@ -27,12 +27,20 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 });
 
+const trustMetrics = [
+  { value: "250+", label: "Restaurants Advised" },
+  { value: "180+", label: "Transactions Closed" },
+  { value: "25+", label: "Years of Experience" },
+  { value: "LA County", label: "Exclusively Served" },
+];
+
 const trust = [
   { icon: Calendar, label: "Est. 2021" },
   { icon: ShieldCheck, label: "Licensed Brokers" },
   { icon: MapPin, label: "LA County" },
   { icon: Star, label: "Principal-Led" },
 ];
+
 
 const steps = [
   {
