@@ -3,6 +3,9 @@ import { ArrowRight, Phone, Star, ShieldCheck, MapPin, Calendar } from "lucide-r
 import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
 import { CTASection } from "@/components/site/CTASection";
 import { featuredServices } from "@/lib/services";
+import heroImage from "@/assets/hero-restaurant.jpg";
+import { useEffect, useState } from "react";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
