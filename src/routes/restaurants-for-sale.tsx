@@ -87,6 +87,25 @@ const listings: Listing[] = [
     leaseType: "Assignment of lease",
     features: ["18-ft hood", "Full kitchen FF&E", "Dining room build-out", "Equipment NSF labeled"],
   },
+  {
+    id: "R-003",
+    type: "Business Sale",
+    title: "Second-Generation Equipped Restaurant — Stand-Alone Building For Lease",
+    location: "2408 Wilshire Blvd, Santa Monica, CA",
+    price: "Call for Price",
+    priceNote: "For Lease",
+    leaseType: "Stand-alone building · Lease",
+    description:
+      "Rare stand-alone building on Wilshire Blvd in Santa Monica. Fully equipped second-generation restaurant with a gated outdoor rear area — ideal for patio dining, private events, or expanded service.",
+    features: [
+      "Stand-alone building",
+      "Second-generation restaurant",
+      "Fully equipped kitchen",
+      "Gated outdoor rear area",
+      "Prime Wilshire Blvd frontage",
+      "Available for lease",
+    ],
+  },
 ];
 
 const filters: Array<"All" | SaleType> = ["All", "Business Sale", "Asset Sale", "Real Estate"];
