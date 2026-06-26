@@ -18,6 +18,7 @@ import { Route as RestaurantsForSaleRouteImport } from './routes/restaurants-for
 import { Route as ResidentialRouteImport } from './routes/residential'
 import { Route as OffMarketSourcingRouteImport } from './routes/off-market-sourcing'
 import { Route as LiquorLicenseForSaleRouteImport } from './routes/liquor-license-for-sale'
+import { Route as LeasingVacantRestaurantsRouteImport } from './routes/leasing-vacant-restaurants'
 import { Route as HouseCondoServicingRouteImport } from './routes/house-condo-servicing'
 import { Route as HealthPermittingRouteImport } from './routes/health-permitting'
 import { Route as HealthInspectionRouteImport } from './routes/health-inspection'
@@ -81,6 +82,12 @@ const LiquorLicenseForSaleRoute = LiquorLicenseForSaleRouteImport.update({
   path: '/liquor-license-for-sale',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LeasingVacantRestaurantsRoute =
+  LeasingVacantRestaurantsRouteImport.update({
+    id: '/leasing-vacant-restaurants',
+    path: '/leasing-vacant-restaurants',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const HouseCondoServicingRoute = HouseCondoServicingRouteImport.update({
   id: '/house-condo-servicing',
   path: '/house-condo-servicing',
@@ -178,6 +185,7 @@ export interface FileRoutesByFullPath {
   '/health-inspection': typeof HealthInspectionRoute
   '/health-permitting': typeof HealthPermittingRoute
   '/house-condo-servicing': typeof HouseCondoServicingRoute
+  '/leasing-vacant-restaurants': typeof LeasingVacantRestaurantsRoute
   '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
@@ -205,6 +213,7 @@ export interface FileRoutesByTo {
   '/health-inspection': typeof HealthInspectionRoute
   '/health-permitting': typeof HealthPermittingRoute
   '/house-condo-servicing': typeof HouseCondoServicingRoute
+  '/leasing-vacant-restaurants': typeof LeasingVacantRestaurantsRoute
   '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
@@ -232,6 +241,7 @@ export interface FileRoutesById {
   '/health-inspection': typeof HealthInspectionRoute
   '/health-permitting': typeof HealthPermittingRoute
   '/house-condo-servicing': typeof HouseCondoServicingRoute
+  '/leasing-vacant-restaurants': typeof LeasingVacantRestaurantsRoute
   '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
@@ -261,6 +271,7 @@ export interface FileRouteTypes {
     | '/health-inspection'
     | '/health-permitting'
     | '/house-condo-servicing'
+    | '/leasing-vacant-restaurants'
     | '/liquor-license-for-sale'
     | '/off-market-sourcing'
     | '/residential'
@@ -288,6 +299,7 @@ export interface FileRouteTypes {
     | '/health-inspection'
     | '/health-permitting'
     | '/house-condo-servicing'
+    | '/leasing-vacant-restaurants'
     | '/liquor-license-for-sale'
     | '/off-market-sourcing'
     | '/residential'
@@ -314,6 +326,7 @@ export interface FileRouteTypes {
     | '/health-inspection'
     | '/health-permitting'
     | '/house-condo-servicing'
+    | '/leasing-vacant-restaurants'
     | '/liquor-license-for-sale'
     | '/off-market-sourcing'
     | '/residential'
@@ -342,6 +355,7 @@ export interface RootRouteChildren {
   HealthInspectionRoute: typeof HealthInspectionRoute
   HealthPermittingRoute: typeof HealthPermittingRoute
   HouseCondoServicingRoute: typeof HouseCondoServicingRoute
+  LeasingVacantRestaurantsRoute: typeof LeasingVacantRestaurantsRoute
   LiquorLicenseForSaleRoute: typeof LiquorLicenseForSaleRoute
   OffMarketSourcingRoute: typeof OffMarketSourcingRoute
   ResidentialRoute: typeof ResidentialRoute
@@ -416,6 +430,13 @@ declare module '@tanstack/react-router' {
       path: '/liquor-license-for-sale'
       fullPath: '/liquor-license-for-sale'
       preLoaderRoute: typeof LiquorLicenseForSaleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/leasing-vacant-restaurants': {
+      id: '/leasing-vacant-restaurants'
+      path: '/leasing-vacant-restaurants'
+      fullPath: '/leasing-vacant-restaurants'
+      preLoaderRoute: typeof LeasingVacantRestaurantsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/house-condo-servicing': {
@@ -561,6 +582,7 @@ const rootRouteChildren: RootRouteChildren = {
   HealthInspectionRoute: HealthInspectionRoute,
   HealthPermittingRoute: HealthPermittingRoute,
   HouseCondoServicingRoute: HouseCondoServicingRoute,
+  LeasingVacantRestaurantsRoute: LeasingVacantRestaurantsRoute,
   LiquorLicenseForSaleRoute: LiquorLicenseForSaleRoute,
   OffMarketSourcingRoute: OffMarketSourcingRoute,
   ResidentialRoute: ResidentialRoute,

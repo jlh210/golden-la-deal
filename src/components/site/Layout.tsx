@@ -39,6 +39,7 @@ const servicesDropdown = [
   { to: "/hardware-store-for-sale", label: "Hardware Store For Sale" },
   { to: "/residential", label: "Residential Requests" },
   { to: "/house-condo-servicing", label: "House / Condo Servicing" },
+  { to: "/leasing-vacant-restaurants", label: "Leasing Vacant Restaurants" },
 ];
 
 const fullNav = [
@@ -64,6 +65,7 @@ const fullNav = [
   { to: "/hardware-store-for-sale", label: "Hardware Store For Sale" },
   { to: "/residential", label: "Residential Requests" },
   { to: "/house-condo-servicing", label: "House / Condo Servicing" },
+  { to: "/leasing-vacant-restaurants", label: "Leasing Vacant Restaurants" },
 ] as const;
 
 function Header({ transparent = false }: { transparent?: boolean }) {
@@ -282,6 +284,7 @@ function Footer() {
             <li><Link to="/hardware-store-for-sale" className="hover:text-gold">Hardware Store</Link></li>
             <li><Link to="/residential" className="hover:text-gold">Residential</Link></li>
             <li><Link to="/house-condo-servicing" className="hover:text-gold">House / Condo Servicing</Link></li>
+            <li><Link to="/leasing-vacant-restaurants" className="hover:text-gold">Leasing Vacant Restaurants</Link></li>
             <li><Link to="/contact" className="hover:text-gold">Book a Consultation</Link></li>
           </ul>
         </div>
