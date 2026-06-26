@@ -89,7 +89,7 @@ export const listings: Listing[] = [
       "Turn-key wedding & event venue",
       "Premium real estate included",
     ],
-    images: [tujunga1.url, tujunga2.url, tujunga3.url],
+    images: [tujunga2.url, tujunga1.url, tujunga3.url],
   },
   {
     id: "R-002",
