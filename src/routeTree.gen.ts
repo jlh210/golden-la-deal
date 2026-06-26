@@ -30,6 +30,7 @@ import { Route as AlcoholLicensingRouteImport } from './routes/alcohol-licensing
 import { Route as AgentsRouteImport } from './routes/agents'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as RestaurantsForSaleSlugRouteImport } from './routes/restaurants-for-sale.$slug'
 
 const VerminInspectionsRoute = VerminInspectionsRouteImport.update({
   id: '/vermin-inspections',
@@ -138,6 +139,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RestaurantsForSaleSlugRoute = RestaurantsForSaleSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => RestaurantsForSaleRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -156,11 +162,12 @@ export interface FileRoutesByFullPath {
   '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
-  '/restaurants-for-sale': typeof RestaurantsForSaleRoute
+  '/restaurants-for-sale': typeof RestaurantsForSaleRouteWithChildren
   '/second-generation-restaurants': typeof SecondGenerationRestaurantsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vermin-inspections': typeof VerminInspectionsRoute
+  '/restaurants-for-sale/$slug': typeof RestaurantsForSaleSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -179,11 +186,12 @@ export interface FileRoutesByTo {
   '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
-  '/restaurants-for-sale': typeof RestaurantsForSaleRoute
+  '/restaurants-for-sale': typeof RestaurantsForSaleRouteWithChildren
   '/second-generation-restaurants': typeof SecondGenerationRestaurantsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vermin-inspections': typeof VerminInspectionsRoute
+  '/restaurants-for-sale/$slug': typeof RestaurantsForSaleSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -203,11 +211,12 @@ export interface FileRoutesById {
   '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
-  '/restaurants-for-sale': typeof RestaurantsForSaleRoute
+  '/restaurants-for-sale': typeof RestaurantsForSaleRouteWithChildren
   '/second-generation-restaurants': typeof SecondGenerationRestaurantsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vermin-inspections': typeof VerminInspectionsRoute
+  '/restaurants-for-sale/$slug': typeof RestaurantsForSaleSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -233,6 +242,7 @@ export interface FileRouteTypes {
     | '/services'
     | '/sitemap.xml'
     | '/vermin-inspections'
+    | '/restaurants-for-sale/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -256,6 +266,7 @@ export interface FileRouteTypes {
     | '/services'
     | '/sitemap.xml'
     | '/vermin-inspections'
+    | '/restaurants-for-sale/$slug'
   id:
     | '__root__'
     | '/'
@@ -279,6 +290,7 @@ export interface FileRouteTypes {
     | '/services'
     | '/sitemap.xml'
     | '/vermin-inspections'
+    | '/restaurants-for-sale/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -298,7 +310,7 @@ export interface RootRouteChildren {
   LiquorLicenseForSaleRoute: typeof LiquorLicenseForSaleRoute
   OffMarketSourcingRoute: typeof OffMarketSourcingRoute
   ResidentialRoute: typeof ResidentialRoute
-  RestaurantsForSaleRoute: typeof RestaurantsForSaleRoute
+  RestaurantsForSaleRoute: typeof RestaurantsForSaleRouteWithChildren
   SecondGenerationRestaurantsRoute: typeof SecondGenerationRestaurantsRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
@@ -454,8 +466,26 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/restaurants-for-sale/$slug': {
+      id: '/restaurants-for-sale/$slug'
+      path: '/$slug'
+      fullPath: '/restaurants-for-sale/$slug'
+      preLoaderRoute: typeof RestaurantsForSaleSlugRouteImport
+      parentRoute: typeof RestaurantsForSaleRoute
+    }
   }
 }
+
+interface RestaurantsForSaleRouteChildren {
+  RestaurantsForSaleSlugRoute: typeof RestaurantsForSaleSlugRoute
+}
+
+const RestaurantsForSaleRouteChildren: RestaurantsForSaleRouteChildren = {
+  RestaurantsForSaleSlugRoute: RestaurantsForSaleSlugRoute,
+}
+
+const RestaurantsForSaleRouteWithChildren =
+  RestaurantsForSaleRoute._addFileChildren(RestaurantsForSaleRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
@@ -474,7 +504,7 @@ const rootRouteChildren: RootRouteChildren = {
   LiquorLicenseForSaleRoute: LiquorLicenseForSaleRoute,
   OffMarketSourcingRoute: OffMarketSourcingRoute,
   ResidentialRoute: ResidentialRoute,
-  RestaurantsForSaleRoute: RestaurantsForSaleRoute,
+  RestaurantsForSaleRoute: RestaurantsForSaleRouteWithChildren,
   SecondGenerationRestaurantsRoute: SecondGenerationRestaurantsRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
