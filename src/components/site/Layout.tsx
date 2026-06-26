@@ -37,6 +37,7 @@ const servicesDropdown = [
   { to: "/e2-visa-europe", label: "E-2 Visa (Europe)" },
   { to: "/hardware-store-for-sale", label: "Hardware Store For Sale" },
   { to: "/residential", label: "Residential Requests" },
+  { to: "/house-condo-servicing", label: "House / Condo Servicing" },
 ];
 
 const fullNav = [
@@ -60,6 +61,7 @@ const fullNav = [
   { to: "/e2-visa-europe", label: "E-2 Visa (Europe)" },
   { to: "/hardware-store-for-sale", label: "Hardware Store For Sale" },
   { to: "/residential", label: "Residential Requests" },
+  { to: "/house-condo-servicing", label: "House / Condo Servicing" },
 ] as const;
 
 function Header({ transparent = false }: { transparent?: boolean }) {
@@ -276,6 +278,7 @@ function Footer() {
             <li><Link to="/e2-visa-europe" className="hover:text-gold">E-2 Visa (Europe)</Link></li>
             <li><Link to="/hardware-store-for-sale" className="hover:text-gold">Hardware Store</Link></li>
             <li><Link to="/residential" className="hover:text-gold">Residential</Link></li>
+            <li><Link to="/house-condo-servicing" className="hover:text-gold">House / Condo Servicing</Link></li>
             <li><Link to="/contact" className="hover:text-gold">Book a Consultation</Link></li>
           </ul>
         </div>
