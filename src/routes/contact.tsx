@@ -1,8 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { z } from "zod";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { SiteLayout, PHONE, PHONE_HREF, EMAIL, EMAIL_HREF, HOURS } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { LeadForm } from "@/components/site/LeadForm";
+import { serviceTopics } from "@/lib/services";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
