@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Menu, X, Mail, Clock, ChevronDown } from "lucide-react";
-import { useState, useEffect, type ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import logoAsset from "@/assets/logo-mark.png.asset.json";
 
 
@@ -68,25 +68,11 @@ const fullNav = [
   { to: "/leasing-vacant-restaurants", label: "Leasing Vacant Restaurants" },
 ] as const;
 
-function Header({ transparent = false }: { transparent?: boolean }) {
+function Header() {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  useEffect(() => {
-    if (!transparent) return;
-    const onScroll = () => setScrolled(window.scrollY > 80);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [transparent]);
-  const isFloating = transparent && !scrolled && !open;
   return (
     <header
-      className={
-        "sticky top-0 z-50 transition-all duration-500 " +
-        (isFloating
-          ? "bg-transparent border-b border-transparent text-white"
-          : "bg-black/95 backdrop-blur-xl border-b border-gold/40 shadow-[0_2px_24px_-12px_oklch(0.2_0.02_265/0.18)]")
-      }
+      className="sticky top-0 z-50 transition-all duration-500 bg-black border-b border-gold/40 shadow-[0_2px_24px_-12px_oklch(0.2_0.02_265/0.18)]"
     >
 
       <div className="container-x flex h-16 items-center justify-between gap-4 md:h-20">
@@ -316,7 +302,7 @@ function FloatingCall() {
 export function SiteLayout({ children, transparentHeader = false }: { children: ReactNode; transparentHeader?: boolean }) {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header transparent={transparentHeader} />
+      <Header />
       <main className="flex-1">{children}</main>
       <Footer />
 
