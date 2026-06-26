@@ -29,18 +29,19 @@ export const Route = createFileRoute("/")({
 });
 
 const trustMetrics = [
-  { value: "250+", label: "Restaurants Advised" },
-  { value: "180+", label: "Transactions Closed" },
-  { value: "25+", label: "Years of Experience" },
+  { value: "Est. 2021", label: "Family-Owned Corp" },
   { value: "LA County", label: "Exclusively Served" },
+  { value: "3 Principals", label: "Owner-Led Every Deal" },
+  { value: "One Roof", label: "Brokerage · Licensing · Permits" },
 ];
 
 const trust = [
   { icon: Calendar, label: "Est. 2021" },
-  { icon: ShieldCheck, label: "Licensed Brokers" },
+  { icon: ShieldCheck, label: "Licensed CA Brokers" },
   { icon: MapPin, label: "LA County" },
-  { icon: Star, label: "Principal-Led" },
+  { icon: Star, label: "Do It Now" },
 ];
+
 
 
 const steps = [
@@ -89,20 +90,22 @@ function HomePage() {
               className="mt-8 font-display text-[2.75rem] sm:text-6xl lg:text-[4.5rem] font-normal leading-[1.02] tracking-[-0.01em] text-charcoal-deep animate-fade-in"
               style={{ animationDelay: "120ms", animationFillMode: "both" }}
             >
-              Los Angeles County's
+              Family-Owned
               <br />
-              <span className="italic text-gradient-gold">Premier Restaurant</span>
+              <span className="italic text-gradient-gold">"Do It Now"</span>
               <br />
-              Advisory Firm.
+              Restaurant Brokerage.
             </h1>
 
             <p
               className="mt-8 max-w-lg text-base sm:text-lg leading-relaxed text-charcoal/75 animate-fade-in"
               style={{ animationDelay: "320ms", animationFillMode: "both" }}
             >
-              Serving Los Angeles County with expert restaurant brokerage, licensing, leasing,
-              permitting, consulting, and transaction management—from first opportunity to final closing.
+              Penthouse Advisors is a family-owned, full-service restaurant business corporation
+              with brokerage. Established 2021. Servicing the entire Los Angeles County.
+              All parties treated fairly, equally, and honestly.
             </p>
+
 
             <div
               className="mt-10 flex flex-wrap items-center gap-4 animate-fade-in"
