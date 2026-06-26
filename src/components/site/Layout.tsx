@@ -84,8 +84,8 @@ function Header({ transparent = false }: { transparent?: boolean }) {
       className={
         "sticky top-0 z-50 transition-all duration-500 " +
         (isFloating
-          ? "bg-transparent border-b border-transparent"
-          : "bg-card/95 backdrop-blur-xl border-b border-border/60 shadow-[0_2px_24px_-12px_oklch(0.2_0.02_265/0.18)]")
+          ? "bg-transparent border-b border-transparent text-white"
+          : "bg-black/95 backdrop-blur-xl border-b border-gold/40 shadow-[0_2px_24px_-12px_oklch(0.2_0.02_265/0.18)]")
       }
     >
 
