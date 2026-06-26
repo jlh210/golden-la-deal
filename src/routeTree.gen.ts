@@ -17,6 +17,7 @@ import { Route as RestaurantsForSaleRouteImport } from './routes/restaurants-for
 import { Route as ResidentialRouteImport } from './routes/residential'
 import { Route as OffMarketSourcingRouteImport } from './routes/off-market-sourcing'
 import { Route as LiquorLicenseForSaleRouteImport } from './routes/liquor-license-for-sale'
+import { Route as HouseCondoServicingRouteImport } from './routes/house-condo-servicing'
 import { Route as HealthPermittingRouteImport } from './routes/health-permitting'
 import { Route as HealthInspectionRouteImport } from './routes/health-inspection'
 import { Route as HardwareStoreForSaleRouteImport } from './routes/hardware-store-for-sale'
@@ -72,6 +73,11 @@ const OffMarketSourcingRoute = OffMarketSourcingRouteImport.update({
 const LiquorLicenseForSaleRoute = LiquorLicenseForSaleRouteImport.update({
   id: '/liquor-license-for-sale',
   path: '/liquor-license-for-sale',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HouseCondoServicingRoute = HouseCondoServicingRouteImport.update({
+  id: '/house-condo-servicing',
+  path: '/house-condo-servicing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HealthPermittingRoute = HealthPermittingRouteImport.update({
@@ -165,6 +171,7 @@ export interface FileRoutesByFullPath {
   '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
   '/health-inspection': typeof HealthInspectionRoute
   '/health-permitting': typeof HealthPermittingRoute
+  '/house-condo-servicing': typeof HouseCondoServicingRoute
   '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
@@ -190,6 +197,7 @@ export interface FileRoutesByTo {
   '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
   '/health-inspection': typeof HealthInspectionRoute
   '/health-permitting': typeof HealthPermittingRoute
+  '/house-condo-servicing': typeof HouseCondoServicingRoute
   '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
@@ -215,6 +223,7 @@ export interface FileRoutesById {
   '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
   '/health-inspection': typeof HealthInspectionRoute
   '/health-permitting': typeof HealthPermittingRoute
+  '/house-condo-servicing': typeof HouseCondoServicingRoute
   '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
@@ -242,6 +251,7 @@ export interface FileRouteTypes {
     | '/hardware-store-for-sale'
     | '/health-inspection'
     | '/health-permitting'
+    | '/house-condo-servicing'
     | '/liquor-license-for-sale'
     | '/off-market-sourcing'
     | '/residential'
@@ -267,6 +277,7 @@ export interface FileRouteTypes {
     | '/hardware-store-for-sale'
     | '/health-inspection'
     | '/health-permitting'
+    | '/house-condo-servicing'
     | '/liquor-license-for-sale'
     | '/off-market-sourcing'
     | '/residential'
@@ -291,6 +302,7 @@ export interface FileRouteTypes {
     | '/hardware-store-for-sale'
     | '/health-inspection'
     | '/health-permitting'
+    | '/house-condo-servicing'
     | '/liquor-license-for-sale'
     | '/off-market-sourcing'
     | '/residential'
@@ -317,6 +329,7 @@ export interface RootRouteChildren {
   HardwareStoreForSaleRoute: typeof HardwareStoreForSaleRoute
   HealthInspectionRoute: typeof HealthInspectionRoute
   HealthPermittingRoute: typeof HealthPermittingRoute
+  HouseCondoServicingRoute: typeof HouseCondoServicingRoute
   LiquorLicenseForSaleRoute: typeof LiquorLicenseForSaleRoute
   OffMarketSourcingRoute: typeof OffMarketSourcingRoute
   ResidentialRoute: typeof ResidentialRoute
@@ -383,6 +396,13 @@ declare module '@tanstack/react-router' {
       path: '/liquor-license-for-sale'
       fullPath: '/liquor-license-for-sale'
       preLoaderRoute: typeof LiquorLicenseForSaleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/house-condo-servicing': {
+      id: '/house-condo-servicing'
+      path: '/house-condo-servicing'
+      fullPath: '/house-condo-servicing'
+      preLoaderRoute: typeof HouseCondoServicingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/health-permitting': {
@@ -520,6 +540,7 @@ const rootRouteChildren: RootRouteChildren = {
   HardwareStoreForSaleRoute: HardwareStoreForSaleRoute,
   HealthInspectionRoute: HealthInspectionRoute,
   HealthPermittingRoute: HealthPermittingRoute,
+  HouseCondoServicingRoute: HouseCondoServicingRoute,
   LiquorLicenseForSaleRoute: LiquorLicenseForSaleRoute,
   OffMarketSourcingRoute: OffMarketSourcingRoute,
   ResidentialRoute: ResidentialRoute,

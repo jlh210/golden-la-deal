@@ -123,6 +123,13 @@ export const services: Service[] = [
     icon: Home,
   },
   {
+    slug: "house-condo-servicing",
+    to: "/house-condo-servicing",
+    title: "House / Condo Servicing",
+    short: "Sell your house or condo with our disciplined, confidential showing process.",
+    icon: Building2,
+  },
+  {
     slug: "business-investigations",
     to: "/business-investigations",
     title: "Restaurant Business Investigations",
@@ -165,6 +172,7 @@ export const serviceTopics = [
   "Second generation space",
   "Hardware store inquiry",
   "Residential listing",
+  "House/condo servicing",
   "Blueprint / plan check",
   "Red tag / emergency rescue",
   "Something else",
