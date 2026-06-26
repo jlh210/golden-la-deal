@@ -90,13 +90,15 @@ function Header({ transparent = false }: { transparent?: boolean }) {
     >
 
       <div className="container-x flex h-16 items-center justify-between gap-4 md:h-20">
-        <Link to="/" className="flex items-center gap-3 min-w-0">
-          <img
-            src={logoAsset.url}
-            alt="Penthouse Advisors Inc."
-            className="h-9 w-auto shrink-0"
-          />
-          <span className="font-display text-base sm:text-lg tracking-[0.18em] uppercase truncate hidden sm:inline">
+        <Link to="/" className="flex items-center gap-3 min-w-0 text-white">
+          <span className="grid h-11 w-11 shrink-0 place-items-center rounded-md bg-card p-1.5 ring-1 ring-gold/40">
+            <img
+              src={logoAsset.url}
+              alt="Penthouse Advisors Inc."
+              className="max-h-full w-auto"
+            />
+          </span>
+          <span className="font-display text-base sm:text-lg tracking-[0.18em] uppercase truncate hidden sm:inline text-white drop-shadow-sm">
             Penthouse <span className="text-gold">Advisors</span>
           </span>
         </Link>
