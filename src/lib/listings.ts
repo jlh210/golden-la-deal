@@ -2,6 +2,10 @@ import tujunga1 from "@/assets/tujunga-1.jpg.asset.json";
 import tujunga2 from "@/assets/tujunga-2.jpg.asset.json";
 import tujunga3 from "@/assets/tujunga-3.jpg.asset.json";
 import tujunga4 from "@/assets/tujunga-4.jpg.asset.json";
+import wilshire1 from "@/assets/wilshire-1.png.asset.json";
+import wilshire2 from "@/assets/wilshire-2.png.asset.json";
+import wilshire3 from "@/assets/wilshire-3.png.asset.json";
+import wilshire4 from "@/assets/wilshire-4.png.asset.json";
 
 export type SaleType = "Business Sale" | "Asset Sale" | "Real Estate";
 
@@ -112,21 +116,54 @@ export const listings: Listing[] = [
     id: "R-003",
     slug: "wilshire-second-gen-lease",
     type: "Business Sale",
-    title: "Second-Generation Equipped Restaurant — Stand-Alone Building For Lease",
+    title: "New Lease — Second-Generation Equipped Restaurant",
     location: "2408 Wilshire Blvd, Santa Monica, CA",
-    price: "Call for Price",
-    priceNote: "For Lease",
-    leaseType: "Stand-alone building · Lease",
+    price: "$10,000 / month",
+    priceNote: "New lease · Negotiable",
+    leaseType: "Stand-alone building · New lease",
     description:
-      "Rare stand-alone building on Wilshire Blvd in Santa Monica. Fully equipped second-generation restaurant with a gated outdoor rear area — ideal for patio dining, private events, or expanded service.",
+      "Second-generation equipped restaurant in a stand-alone building on Wilshire Blvd with a gated outdoor rear area for pop-ups, dining, birthday parties, and weddings.",
+    longDescription: [
+      "Second-generation equipped restaurant. Stand-alone building for lease with gated outdoor area at 2408 Wilshire Blvd., Santa Monica.",
+      "New lease and rent starting at $10,000 per month, negotiable to ensure a smooth change of possession.",
+      "Compelling Santa Monica opportunity at 24th Street, positioned to serve the area north of Santa Monica Blvd. with strong visibility and flexible event-driven use.",
+    ],
+    sections: [
+      {
+        heading: "Lease Opportunity",
+        body: "For lease with a gated outdoor area suited for pop-ups, dining, birthday parties, and weddings, plus a fully equipped kitchen ready for service.",
+        bullets: [
+          "Stand-alone building",
+          "New lease structure",
+          "Negotiable rent for smooth possession",
+          "Rear outdoor service and event area",
+          "Strong Wilshire Blvd visibility",
+        ],
+      },
+      {
+        heading: "Included Equipment",
+        body: "Type 1 commercial hood and a full cooking line already in place, along with the major refrigeration and prep pieces needed to operate.",
+        bullets: [
+          "12-foot Type 1 commercial hood",
+          "Full cooking line under hood",
+          "Walk-in refrigerator",
+          "Freezer + additional refrigerators",
+          "Refrigerated prep tables",
+          "Stainless tables and counters",
+          "Dishwasher and ice machine",
+          "Dining area tables and chairs",
+        ],
+      },
+    ],
     features: [
       "Stand-alone building",
       "Second-generation restaurant",
+      "12-foot Type 1 hood",
       "Fully equipped kitchen",
       "Gated outdoor rear area",
-      "Prime Wilshire Blvd frontage",
-      "Available for lease",
+      "Ideal for pop-ups, dining, and events",
     ],
+    images: [wilshire3.url, wilshire1.url, wilshire2.url, wilshire4.url],
   },
 ];
 
