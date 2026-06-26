@@ -93,18 +93,6 @@ export const listings: Listing[] = [
     images: [tujunga1.url, tujunga2.url, tujunga3.url, tujunga4.url],
   },
   {
-    id: "R-001",
-    slug: "silver-lake-pizzeria",
-    type: "Business Sale",
-    title: "Pizzeria - Turnkey",
-    location: "Silver Lake (near Glendale)",
-    price: "$75,975",
-    priceNote: "Non-Negotiable",
-    sqft: "≈ 1,200 sq ft",
-    leaseType: "Lease assignment",
-    features: ["Health Dept permitted", "12-ft hood", "Walk-in cooler", "Open and operating"],
-  },
-  {
     id: "R-002",
     slug: "santa-monica-asset-sale",
     type: "Asset Sale",
