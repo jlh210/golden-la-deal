@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Menu, X, Mail, Clock, ChevronDown } from "lucide-react";
-import { useState, useEffect, type ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import logoAsset from "@/assets/logo-mark.png.asset.json";
 
 
@@ -302,7 +302,7 @@ function FloatingCall() {
 export function SiteLayout({ children, transparentHeader = false }: { children: ReactNode; transparentHeader?: boolean }) {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header transparent={transparentHeader} />
+      <Header />
       <main className="flex-1">{children}</main>
       <Footer />
 
