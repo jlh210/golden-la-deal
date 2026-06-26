@@ -42,8 +42,9 @@ function ContactPage() {
       <section className="container-x py-12 md:py-16">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
           <LeadForm
+            serviceNeeded={prefill}
             title="Book a Consultation"
-            subtitle="Pick your Service Needed below - every category we offer is in the dropdown."
+            subtitle={prefill ? "We've pre-filled your service need below. Add a few details and we'll respond same business day." : "Pick your Service Needed below - every category we offer is in the dropdown."}
           />
 
           <div className="space-y-5">
