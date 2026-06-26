@@ -104,7 +104,7 @@ function LiquorLicenseForSale() {
         </div>
       </section>
 
-      <CTASection title="Looking for a specific license type?" body="Tell us your tract and we'll source a transferable license that fits." />
+      <CTASection serviceNeeded={"Liquor license for sale"} title="Looking for a specific license type?" body="Tell us your tract and we'll source a transferable license that fits." />
     </SiteLayout>
   );
 }

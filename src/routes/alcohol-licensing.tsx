@@ -180,7 +180,7 @@ function LicensingPage() {
         </div>
       </section>
 
-      <CTASection title="Need a Type 41 or Type 47?" body="Tell us the address and we'll quote the timeline and total cost today." />
+      <CTASection serviceNeeded={"Alcohol licensing (Type 41 / 47)"} title="Need a Type 41 or Type 47?" body="Tell us the address and we'll quote the timeline and total cost today." />
     </SiteLayout>
   );
 }

@@ -102,7 +102,7 @@ function E2Page() {
         </div>
       </section>
 
-      <CTASection title="Coming to LA to acquire a restaurant?" body="Start with a deal brief. We'll structure the acquisition to support the E-2 application." />
+      <CTASection serviceNeeded={"E-2 visa (Europe)"} title="Coming to LA to acquire a restaurant?" body="Start with a deal brief. We'll structure the acquisition to support the E-2 application." />
     </SiteLayout>
   );
 }

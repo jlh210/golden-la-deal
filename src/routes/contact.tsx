@@ -1,10 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { z } from "zod";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { SiteLayout, PHONE, PHONE_HREF, EMAIL, EMAIL_HREF, HOURS } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { LeadForm } from "@/components/site/LeadForm";
+import { serviceTopics } from "@/lib/services";
 
 export const Route = createFileRoute("/contact")({
+  validateSearch: (search) =>
+    z.object({ service: z.string().optional() }).parse(search),
   head: () => ({
     meta: [
       { title: "Contact / Book a Consultation - Penthouse Advisors LA" },
@@ -24,6 +28,8 @@ export const Route = createFileRoute("/contact")({
 });
 
 function ContactPage() {
+  const { service } = Route.useSearch();
+  const prefill = service && serviceTopics.includes(service) ? service : undefined;
   return (
     <SiteLayout>
       <PageHero
@@ -36,8 +42,9 @@ function ContactPage() {
       <section className="container-x py-12 md:py-16">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
           <LeadForm
+            serviceNeeded={prefill}
             title="Book a Consultation"
-            subtitle="Pick your Service Needed below - every category we offer is in the dropdown."
+            subtitle={prefill ? "We've pre-filled your service need below. Add a few details and we'll respond same business day." : "Pick your Service Needed below - every category we offer is in the dropdown."}
           />
 
           <div className="space-y-5">

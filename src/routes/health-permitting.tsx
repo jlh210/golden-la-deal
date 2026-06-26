@@ -110,7 +110,7 @@ function PermittingPage() {
         </div>
       </section>
 
-      <CTASection
+      <CTASection serviceNeeded={"Health Dept permitting / plan check"}
         title="Need stamped blueprints or a permit pushed through?"
         body="$3,700 flat. We draft, submit, and walk it through plan check - start to permit issuance."
       />

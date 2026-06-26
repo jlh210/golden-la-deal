@@ -61,7 +61,7 @@ function InvestigationsPage() {
         ))}
       </section>
 
-      <CTASection
+      <CTASection serviceNeeded={"Pre-purchase business investigation"}
         title="Thinking about buying a restaurant?"
         body="Get a full pre-purchase investigation before escrow opens. We move fast."
       />
