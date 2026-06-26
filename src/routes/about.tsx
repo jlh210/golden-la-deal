@@ -69,10 +69,11 @@ function AboutPage() {
     <SiteLayout>
       <PageHero
         eyebrow="About Us"
-        title="LA's full-service restaurant"
-        accent="advisory firm."
-        subtitle="Penthouse Advisors Inc. is a sophisticated, modern one-stop firm for restaurant owners, buyers, sellers, landlords, tenants, and operators. We handle restaurant real estate, licensing, permits, escrows, lease issues, alcohol licensing, health department matters, and distressed-restaurant resolutions. Established 2021. Servicing Los Angeles County."
+        title="Family-owned. Highly motivated."
+        accent={`"Do It Now."`}
+        subtitle='Penthouse Advisors is a family-owned corporation - a highly motivated "Do It Now" full-service restaurant business corporation with brokerage. Established 2021. Servicing the entire Los Angeles County. Protocol: all parties are treated fairly, equally, and honestly.'
       />
+
 
 
       {/* Values */}
