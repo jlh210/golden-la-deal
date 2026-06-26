@@ -255,7 +255,7 @@ function ListingDetail() {
             </ul>
           </div>
           <LeadForm
-            serviceNeeded={`Listing inquiry — ${l.id} ${l.title}`}
+            serviceNeeded={`Listing inquiry — ${l.location}`}
             title="Inquire about this listing"
             subtitle="Private inquiry. We respond same business day."
             extraFields={
