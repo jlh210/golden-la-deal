@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowLeft, MapPin, Ruler, Phone, ArrowRight, Sparkles, Check } from "lucide-react";
 import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
-import { getListingBySlug, listings } from "@/lib/listings";
+import { getListingBySlug, listings, type Listing } from "@/lib/listings";
 
 export const Route = createFileRoute("/restaurants-for-sale/$slug")({
   loader: ({ params }) => {
@@ -62,7 +62,7 @@ export const Route = createFileRoute("/restaurants-for-sale/$slug")({
 });
 
 function ListingDetail() {
-  const { listing: l } = Route.useLoaderData();
+  const { listing: l } = Route.useLoaderData() as { listing: Listing };
   const [active, setActive] = useState(0);
   const other = listings.filter((x) => x.slug !== l.slug).slice(0, 3);
 
