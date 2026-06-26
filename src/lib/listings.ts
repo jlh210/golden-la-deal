@@ -1,7 +1,6 @@
-import tujunga1 from "@/assets/tujunga-1.jpg.asset.json";
-import tujunga2 from "@/assets/tujunga-2.jpg.asset.json";
-import tujunga3 from "@/assets/tujunga-3.jpg.asset.json";
-import tujunga4 from "@/assets/tujunga-4.jpg.asset.json";
+import tujunga1 from "@/assets/jazzve-venue-collage.png.asset.json";
+import tujunga2 from "@/assets/jazzve-storefront.png.asset.json";
+import tujunga3 from "@/assets/jazzve-florals.png.asset.json";
 import wilshire1 from "@/assets/wilshire-1.png.asset.json";
 import wilshire2 from "@/assets/wilshire-2.png.asset.json";
 import wilshire3 from "@/assets/wilshire-3.png.asset.json";
@@ -90,7 +89,7 @@ export const listings: Listing[] = [
       "Turn-key wedding & event venue",
       "Premium real estate included",
     ],
-    images: [tujunga1.url, tujunga2.url, tujunga3.url, tujunga4.url],
+    images: [tujunga1.url, tujunga2.url, tujunga3.url],
   },
   {
     id: "R-002",
