@@ -30,6 +30,7 @@ import { Route as AlcoholLicensingRouteImport } from './routes/alcohol-licensing
 import { Route as AgentsRouteImport } from './routes/agents'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as RestaurantsForSaleIndexRouteImport } from './routes/restaurants-for-sale.index'
 import { Route as RestaurantsForSaleSlugRouteImport } from './routes/restaurants-for-sale.$slug'
 
 const VerminInspectionsRoute = VerminInspectionsRouteImport.update({
@@ -139,6 +140,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RestaurantsForSaleIndexRoute = RestaurantsForSaleIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => RestaurantsForSaleRoute,
+} as any)
 const RestaurantsForSaleSlugRoute = RestaurantsForSaleSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
@@ -168,6 +174,7 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vermin-inspections': typeof VerminInspectionsRoute
   '/restaurants-for-sale/$slug': typeof RestaurantsForSaleSlugRoute
+  '/restaurants-for-sale/': typeof RestaurantsForSaleIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -186,12 +193,12 @@ export interface FileRoutesByTo {
   '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
-  '/restaurants-for-sale': typeof RestaurantsForSaleRouteWithChildren
   '/second-generation-restaurants': typeof SecondGenerationRestaurantsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vermin-inspections': typeof VerminInspectionsRoute
   '/restaurants-for-sale/$slug': typeof RestaurantsForSaleSlugRoute
+  '/restaurants-for-sale': typeof RestaurantsForSaleIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -217,6 +224,7 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vermin-inspections': typeof VerminInspectionsRoute
   '/restaurants-for-sale/$slug': typeof RestaurantsForSaleSlugRoute
+  '/restaurants-for-sale/': typeof RestaurantsForSaleIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -243,6 +251,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/vermin-inspections'
     | '/restaurants-for-sale/$slug'
+    | '/restaurants-for-sale/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -261,12 +270,12 @@ export interface FileRouteTypes {
     | '/liquor-license-for-sale'
     | '/off-market-sourcing'
     | '/residential'
-    | '/restaurants-for-sale'
     | '/second-generation-restaurants'
     | '/services'
     | '/sitemap.xml'
     | '/vermin-inspections'
     | '/restaurants-for-sale/$slug'
+    | '/restaurants-for-sale'
   id:
     | '__root__'
     | '/'
@@ -291,6 +300,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/vermin-inspections'
     | '/restaurants-for-sale/$slug'
+    | '/restaurants-for-sale/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -466,6 +476,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/restaurants-for-sale/': {
+      id: '/restaurants-for-sale/'
+      path: '/'
+      fullPath: '/restaurants-for-sale/'
+      preLoaderRoute: typeof RestaurantsForSaleIndexRouteImport
+      parentRoute: typeof RestaurantsForSaleRoute
+    }
     '/restaurants-for-sale/$slug': {
       id: '/restaurants-for-sale/$slug'
       path: '/$slug'
@@ -478,10 +495,12 @@ declare module '@tanstack/react-router' {
 
 interface RestaurantsForSaleRouteChildren {
   RestaurantsForSaleSlugRoute: typeof RestaurantsForSaleSlugRoute
+  RestaurantsForSaleIndexRoute: typeof RestaurantsForSaleIndexRoute
 }
 
 const RestaurantsForSaleRouteChildren: RestaurantsForSaleRouteChildren = {
   RestaurantsForSaleSlugRoute: RestaurantsForSaleSlugRoute,
+  RestaurantsForSaleIndexRoute: RestaurantsForSaleIndexRoute,
 }
 
 const RestaurantsForSaleRouteWithChildren =
@@ -513,13 +532,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
