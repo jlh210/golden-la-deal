@@ -7,6 +7,8 @@ import { LeadForm } from "@/components/site/LeadForm";
 import { serviceTopics } from "@/lib/services";
 
 export const Route = createFileRoute("/contact")({
+  validateSearch: (search) =>
+    z.object({ service: z.string().optional() }).parse(search),
   head: () => ({
     meta: [
       { title: "Contact / Book a Consultation - Penthouse Advisors LA" },
@@ -26,6 +28,8 @@ export const Route = createFileRoute("/contact")({
 });
 
 function ContactPage() {
+  const { service } = Route.useSearch();
+  const prefill = service && serviceTopics.includes(service) ? service : undefined;
   return (
     <SiteLayout>
       <PageHero
