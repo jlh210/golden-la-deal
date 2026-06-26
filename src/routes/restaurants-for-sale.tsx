@@ -3,10 +3,7 @@ import { useState } from "react";
 import { MapPin, Ruler, Flame, ArrowRight, Phone, Sparkles } from "lucide-react";
 import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
-import tujunga1 from "@/assets/tujunga-1.jpg.asset.json";
-import tujunga2 from "@/assets/tujunga-2.jpg.asset.json";
-import tujunga3 from "@/assets/tujunga-3.jpg.asset.json";
-import tujunga4 from "@/assets/tujunga-4.jpg.asset.json";
+import { listings, type SaleType } from "@/lib/listings";
 
 export const Route = createFileRoute("/restaurants-for-sale")({
   head: () => ({
@@ -26,87 +23,6 @@ export const Route = createFileRoute("/restaurants-for-sale")({
   }),
   component: ListingsPage,
 });
-
-type SaleType = "Business Sale" | "Asset Sale" | "Real Estate";
-
-type Listing = {
-  id: string;
-  type: SaleType;
-  title: string;
-  location: string;
-  price?: string;
-  priceNote?: string;
-  sqft?: string;
-  leaseType: string;
-  features: string[];
-  images?: string[];
-  badge?: string;
-  description?: string;
-};
-
-const listings: Listing[] = [
-  {
-    id: "RE-001",
-    type: "Real Estate",
-    title: "Jazzve Garden — Banquet Facility + Real Estate",
-    location: "6500 Foothill Blvd, Tujunga, CA 91042",
-    price: "Call for Price",
-    priceNote: "Just Listed 6/20/26",
-    leaseType: "Real estate sale · APN 2564-012012",
-    badge: "Just Listed",
-    description:
-      "Exceptional turn-key banquet facility with premium real estate. Built to host weddings and celebrations with ease and elegance — multiple commercial kitchens, dining rooms, and bars in a setting that balances sophistication and warmth.",
-    features: [
-      "Premium real estate included",
-      "Multiple commercial kitchens",
-      "Indoor + garden dining areas",
-      "Full bars",
-      "Turn-key wedding & event venue",
-      "Established Jazzve Garden brand",
-    ],
-    images: [tujunga1.url, tujunga2.url, tujunga3.url, tujunga4.url],
-  },
-  {
-    id: "R-001",
-    type: "Business Sale",
-    title: "Pizzeria - Turnkey",
-    location: "Silver Lake (near Glendale)",
-    price: "$75,975",
-    priceNote: "Non-Negotiable",
-    sqft: "≈ 1,200 sq ft",
-    leaseType: "Lease assignment",
-    features: ["Health Dept permitted", "12-ft hood", "Walk-in cooler", "Open and operating"],
-  },
-  {
-    id: "R-002",
-    type: "Asset Sale",
-    title: "Restaurant Asset Sale",
-    location: "Santa Monica",
-    price: "$145,000",
-    sqft: "≈ 2,000 sq ft",
-    leaseType: "Assignment of lease",
-    features: ["18-ft hood", "Full kitchen FF&E", "Dining room build-out", "Equipment NSF labeled"],
-  },
-  {
-    id: "R-003",
-    type: "Business Sale",
-    title: "Second-Generation Equipped Restaurant — Stand-Alone Building For Lease",
-    location: "2408 Wilshire Blvd, Santa Monica, CA",
-    price: "Call for Price",
-    priceNote: "For Lease",
-    leaseType: "Stand-alone building · Lease",
-    description:
-      "Rare stand-alone building on Wilshire Blvd in Santa Monica. Fully equipped second-generation restaurant with a gated outdoor rear area — ideal for patio dining, private events, or expanded service.",
-    features: [
-      "Stand-alone building",
-      "Second-generation restaurant",
-      "Fully equipped kitchen",
-      "Gated outdoor rear area",
-      "Prime Wilshire Blvd frontage",
-      "Available for lease",
-    ],
-  },
-];
 
 const filters: Array<"All" | SaleType> = ["All", "Business Sale", "Asset Sale", "Real Estate"];
 
@@ -149,7 +65,11 @@ function ListingsPage() {
               key={l.id}
               className="group rounded-xl border border-border bg-card overflow-hidden hover:border-gold/60 transition shadow-elegant flex flex-col"
             >
-              <div className="relative h-52 border-b border-border overflow-hidden">
+              <Link
+                to="/restaurants-for-sale/$slug"
+                params={{ slug: l.slug }}
+                className="relative h-52 border-b border-border overflow-hidden block"
+              >
                 {l.images && l.images.length > 0 ? (
                   <img
                     src={l.images[0]}
@@ -182,9 +102,17 @@ function ListingsPage() {
                 <span className="absolute top-3 right-3 text-xs font-mono text-white/90 bg-black/40 px-1.5 py-0.5 rounded">
                   {l.id}
                 </span>
-              </div>
+              </Link>
               <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-lg font-display font-bold">{l.title}</h3>
+                <h3 className="text-lg font-display font-bold">
+                  <Link
+                    to="/restaurants-for-sale/$slug"
+                    params={{ slug: l.slug }}
+                    className="hover:text-gold transition"
+                  >
+                    {l.title}
+                  </Link>
+                </h3>
                 <div className="mt-2 flex items-center gap-1.5 text-sm text-muted-foreground">
                   <MapPin className="h-3.5 w-3.5 text-gold" /> {l.location}
                 </div>
@@ -200,10 +128,14 @@ function ListingsPage() {
                   <p className="mt-3 text-sm text-foreground/80 line-clamp-3">{l.description}</p>
                 )}
                 {l.price && (
-                  <div className="mt-4 flex items-baseline gap-2">
-                    <span className="text-2xl font-display font-extrabold text-gold">{l.price}</span>
+                  <div className="mt-4 flex items-baseline gap-2 flex-wrap">
+                    <span className="text-2xl font-display font-extrabold text-gold tabular-nums">
+                      {l.price}
+                    </span>
                     {l.priceNote && (
-                      <span className="text-xs uppercase tracking-wider text-gold/70">{l.priceNote}</span>
+                      <span className="text-xs uppercase tracking-wider text-gold/70">
+                        {l.priceNote}
+                      </span>
                     )}
                   </div>
                 )}
@@ -227,12 +159,21 @@ function ListingsPage() {
                     ))}
                   </div>
                 )}
-                <Link
-                  to="/contact"
-                  className="mt-6 inline-flex items-center justify-center gap-2 rounded-md bg-gold-gradient px-4 py-3 text-sm font-bold text-charcoal-deep shadow-gold"
-                >
-                  Contact Agent <ArrowRight className="h-4 w-4" />
-                </Link>
+                <div className="mt-6 flex flex-col gap-2">
+                  <Link
+                    to="/restaurants-for-sale/$slug"
+                    params={{ slug: l.slug }}
+                    className="inline-flex items-center justify-center gap-2 rounded-md bg-gold-gradient px-4 py-3 text-sm font-bold text-charcoal-deep shadow-gold"
+                  >
+                    View Full Listing <ArrowRight className="h-4 w-4" />
+                  </Link>
+                  <Link
+                    to="/contact"
+                    className="inline-flex items-center justify-center gap-2 rounded-md border border-gold/40 px-4 py-2.5 text-sm font-semibold hover:bg-gold/10"
+                  >
+                    Contact Agent
+                  </Link>
+                </div>
               </div>
             </article>
           ))}
