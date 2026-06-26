@@ -115,12 +115,12 @@ function Header({ transparent = false }: { transparent?: boolean }) {
                   <ChevronDown className="h-3.5 w-3.5 transition-transform group-hover:rotate-180" />
                 </Link>
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                  <div className="w-[560px] rounded-lg border border-border bg-card backdrop-blur-xl shadow-elegant p-5 grid grid-cols-2 gap-x-6 gap-y-2.5">
+                  <div className="w-[560px] rounded-lg border border-gold/40 bg-black shadow-elegant p-5 grid grid-cols-2 gap-x-6 gap-y-2.5">
                     {servicesDropdown.map((s) => (
                       <Link
                         key={s.to}
                         to={s.to}
-                        className="text-sm text-foreground/80 hover:text-gold transition-colors py-1.5"
+                        className="text-sm text-white/80 hover:text-gold transition-colors py-1.5"
                         activeProps={{ className: "text-gold" }}
                       >
                         {s.label}
