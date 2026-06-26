@@ -15,6 +15,7 @@ import {
   FileSearch,
   Handshake,
   Stamp,
+  DoorOpen,
   type LucideIcon,
 } from "lucide-react";
 
@@ -94,6 +95,13 @@ export const services: Service[] = [
     featured: true,
   },
   {
+    slug: "door-knocking",
+    to: "/search-door-knocking",
+    title: "Search Off-Market Restaurant",
+    short: "Restaurant door-knocking off-market campaign — locate, negotiate, and permit.",
+    icon: DoorOpen,
+  },
+  {
     slug: "e2-visa",
     to: "/e2-visa-europe",
     title: "E-2 Visa Europe",
@@ -168,6 +176,7 @@ export const serviceTopics = [
   "Pre-purchase business investigation",
   "Buyer / tenant resolution (deal stuck)",
   "Off-market sourcing",
+  "Search off-market restaurant",
   "E-2 visa (Europe)",
   "Second generation space",
   "Hardware store inquiry",

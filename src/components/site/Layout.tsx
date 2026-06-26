@@ -34,6 +34,7 @@ const servicesDropdown = [
   { to: "/business-investigations", label: "Business Investigations" },
   { to: "/buyer-tenant-resolutions", label: "Buyer / Tenant Resolutions" },
   { to: "/off-market-sourcing", label: "Locating Off-Market Restaurant / Business" },
+  { to: "/search-door-knocking", label: "Search Off-Market Restaurant" },
   { to: "/e2-visa-europe", label: "E-2 Visa (Europe)" },
   { to: "/hardware-store-for-sale", label: "Hardware Store For Sale" },
   { to: "/residential", label: "Residential Requests" },
@@ -58,6 +59,7 @@ const fullNav = [
   { to: "/business-investigations", label: "Business Investigations" },
   { to: "/buyer-tenant-resolutions", label: "Buyer / Tenant Resolutions" },
   { to: "/off-market-sourcing", label: "Off-Market Sourcing" },
+  { to: "/search-door-knocking", label: "Search Off-Market Restaurant" },
   { to: "/e2-visa-europe", label: "E-2 Visa (Europe)" },
   { to: "/hardware-store-for-sale", label: "Hardware Store For Sale" },
   { to: "/residential", label: "Residential Requests" },
@@ -275,6 +277,7 @@ function Footer() {
             <li><Link to="/vermin-inspections" className="hover:text-gold">Vermin Inspections</Link></li>
             <li><Link to="/assignments-rent-abatement" className="hover:text-gold">Assignments & Abatement</Link></li>
             <li><Link to="/off-market-sourcing" className="hover:text-gold">Off-Market Sourcing</Link></li>
+            <li><Link to="/search-door-knocking" className="hover:text-gold">Search Off-Market Restaurant</Link></li>
             <li><Link to="/e2-visa-europe" className="hover:text-gold">E-2 Visa (Europe)</Link></li>
             <li><Link to="/hardware-store-for-sale" className="hover:text-gold">Hardware Store</Link></li>
             <li><Link to="/residential" className="hover:text-gold">Residential</Link></li>

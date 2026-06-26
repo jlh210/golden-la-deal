@@ -13,6 +13,7 @@ import { Route as VerminInspectionsRouteImport } from './routes/vermin-inspectio
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as SecondGenerationRestaurantsRouteImport } from './routes/second-generation-restaurants'
+import { Route as SearchDoorKnockingRouteImport } from './routes/search-door-knocking'
 import { Route as RestaurantsForSaleRouteImport } from './routes/restaurants-for-sale'
 import { Route as ResidentialRouteImport } from './routes/residential'
 import { Route as OffMarketSourcingRouteImport } from './routes/off-market-sourcing'
@@ -55,6 +56,11 @@ const SecondGenerationRestaurantsRoute =
     path: '/second-generation-restaurants',
     getParentRoute: () => rootRouteImport,
   } as any)
+const SearchDoorKnockingRoute = SearchDoorKnockingRouteImport.update({
+  id: '/search-door-knocking',
+  path: '/search-door-knocking',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RestaurantsForSaleRoute = RestaurantsForSaleRouteImport.update({
   id: '/restaurants-for-sale',
   path: '/restaurants-for-sale',
@@ -176,6 +182,7 @@ export interface FileRoutesByFullPath {
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
   '/restaurants-for-sale': typeof RestaurantsForSaleRouteWithChildren
+  '/search-door-knocking': typeof SearchDoorKnockingRoute
   '/second-generation-restaurants': typeof SecondGenerationRestaurantsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -201,6 +208,7 @@ export interface FileRoutesByTo {
   '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
+  '/search-door-knocking': typeof SearchDoorKnockingRoute
   '/second-generation-restaurants': typeof SecondGenerationRestaurantsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -228,6 +236,7 @@ export interface FileRoutesById {
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
   '/restaurants-for-sale': typeof RestaurantsForSaleRouteWithChildren
+  '/search-door-knocking': typeof SearchDoorKnockingRoute
   '/second-generation-restaurants': typeof SecondGenerationRestaurantsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -256,6 +265,7 @@ export interface FileRouteTypes {
     | '/off-market-sourcing'
     | '/residential'
     | '/restaurants-for-sale'
+    | '/search-door-knocking'
     | '/second-generation-restaurants'
     | '/services'
     | '/sitemap.xml'
@@ -281,6 +291,7 @@ export interface FileRouteTypes {
     | '/liquor-license-for-sale'
     | '/off-market-sourcing'
     | '/residential'
+    | '/search-door-knocking'
     | '/second-generation-restaurants'
     | '/services'
     | '/sitemap.xml'
@@ -307,6 +318,7 @@ export interface FileRouteTypes {
     | '/off-market-sourcing'
     | '/residential'
     | '/restaurants-for-sale'
+    | '/search-door-knocking'
     | '/second-generation-restaurants'
     | '/services'
     | '/sitemap.xml'
@@ -334,6 +346,7 @@ export interface RootRouteChildren {
   OffMarketSourcingRoute: typeof OffMarketSourcingRoute
   ResidentialRoute: typeof ResidentialRoute
   RestaurantsForSaleRoute: typeof RestaurantsForSaleRouteWithChildren
+  SearchDoorKnockingRoute: typeof SearchDoorKnockingRoute
   SecondGenerationRestaurantsRoute: typeof SecondGenerationRestaurantsRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
@@ -368,6 +381,13 @@ declare module '@tanstack/react-router' {
       path: '/second-generation-restaurants'
       fullPath: '/second-generation-restaurants'
       preLoaderRoute: typeof SecondGenerationRestaurantsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/search-door-knocking': {
+      id: '/search-door-knocking'
+      path: '/search-door-knocking'
+      fullPath: '/search-door-knocking'
+      preLoaderRoute: typeof SearchDoorKnockingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/restaurants-for-sale': {
@@ -545,6 +565,7 @@ const rootRouteChildren: RootRouteChildren = {
   OffMarketSourcingRoute: OffMarketSourcingRoute,
   ResidentialRoute: ResidentialRoute,
   RestaurantsForSaleRoute: RestaurantsForSaleRouteWithChildren,
+  SearchDoorKnockingRoute: SearchDoorKnockingRoute,
   SecondGenerationRestaurantsRoute: SecondGenerationRestaurantsRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
