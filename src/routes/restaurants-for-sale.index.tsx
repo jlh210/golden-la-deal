@@ -36,7 +36,7 @@ function ListingsPage() {
         eyebrow="Current Inventory"
         title="Restaurants for sale"
         accent="in Los Angeles."
-        subtitle="A snapshot of what we're moving right now. Full financials and exact addresses released after a signed NDA. Call for off-market opportunities not shown here."
+        subtitle="A snapshot of what we're moving right now. Call for off-market opportunities not shown here."
       />
 
       <section className="container-x py-12 md:py-16">
