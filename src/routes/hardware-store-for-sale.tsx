@@ -91,9 +91,9 @@ function HardwarePage() {
     <SiteLayout>
       <PageHero
         eyebrow="Business For Sale"
-        title="Hardware Store —"
-        accent="West LA."
-        subtitle="Established neighborhood hardware store on Westwood Blvd. Consistent revenue, loyal customer base, turnkey operation."
+        title="Hardware Store for Sale"
+        accent=""
+        subtitle="3400 W Olympic Blvd, Ste 201, Los Angeles, CA 90019"
       />
 
       <section className="container-x pt-10">
