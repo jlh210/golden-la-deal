@@ -81,7 +81,7 @@ function VerminPage() {
         </aside>
       </section>
 
-      <CTASection title="Protect your property." body="Tell us how many spaces you operate - we'll send a contract today." />
+      <CTASection serviceNeeded={"Vermin / compliance inspection"} title="Protect your property." body="Tell us how many spaces you operate - we'll send a contract today." />
     </SiteLayout>
   );
 }

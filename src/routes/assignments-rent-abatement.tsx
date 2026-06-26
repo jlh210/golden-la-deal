@@ -83,7 +83,7 @@ function AssignmentsPage() {
         </div>
       </section>
 
-      <CTASection title="Signing or assigning a lease?" body="Get it reviewed before you sign. We move on the same business day." />
+      <CTASection serviceNeeded={"Lease assignment / rent abatement"} title="Signing or assigning a lease?" body="Get it reviewed before you sign. We move on the same business day." />
     </SiteLayout>
   );
 }

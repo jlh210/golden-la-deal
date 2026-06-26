@@ -131,7 +131,7 @@ function GrandfatherPage() {
         </div>
       </section>
 
-      <CTASection title="Thinking about altering an older space?" body="Get a 15-minute Grandfather review before you spend a dollar on construction." />
+      <CTASection serviceNeeded={"Grandfather protection question"} title="Thinking about altering an older space?" body="Get a 15-minute Grandfather review before you spend a dollar on construction." />
     </SiteLayout>
   );
 }

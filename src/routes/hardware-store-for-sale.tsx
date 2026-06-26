@@ -149,7 +149,7 @@ function HardwarePage() {
         </aside>
       </section>
 
-      <CTASection title="Selling a non-restaurant business?" body="We broker hardware, retail, and select small businesses across LA." />
+      <CTASection serviceNeeded={"Hardware store inquiry"} title="Selling a non-restaurant business?" body="We broker hardware, retail, and select small businesses across LA." />
     </SiteLayout>
   );
 }

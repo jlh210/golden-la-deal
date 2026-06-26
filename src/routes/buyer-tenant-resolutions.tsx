@@ -78,7 +78,7 @@ function ResolutionsPage() {
         </div>
       </section>
 
-      <CTASection
+      <CTASection serviceNeeded={"Buyer / tenant resolution (deal stuck)"}
         title="Caught in a restaurant deal that's gone sideways?"
         body="Call us today. We answer the phone, assess the dilemma, and move on it now."
       />

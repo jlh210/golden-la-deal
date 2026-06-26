@@ -80,7 +80,7 @@ function SecondGenPage() {
         </div>
       </section>
 
-      <CTASection title="Looking for a 2nd-gen space?" body="Tell us your area and concept - we'll send live options this week." />
+      <CTASection serviceNeeded={"Second generation space"} title="Looking for a 2nd-gen space?" body="Tell us your area and concept - we'll send live options this week." />
     </SiteLayout>
   );
 }

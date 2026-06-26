@@ -111,7 +111,7 @@ function HealthPage() {
         </div>
       </section>
 
-      <CTASection title="Red tag on the door?" body="Call us today. Most red tags can be cleared within a week." />
+      <CTASection serviceNeeded={"Health department / inspection"} title="Red tag on the door?" body="Call us today. Most red tags can be cleared within a week." />
     </SiteLayout>
   );
 }
