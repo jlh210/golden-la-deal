@@ -108,19 +108,19 @@ function Header({ transparent = false }: { transparent?: boolean }) {
               <div key={n.to} className="relative group">
                 <Link
                   to={n.to}
-                  className="text-sm font-medium text-foreground/80 hover:text-gold transition-colors inline-flex items-center gap-1 py-5"
+                  className="text-sm font-medium text-white/80 hover:text-gold transition-colors inline-flex items-center gap-1 py-5"
                   activeProps={{ className: "text-gold" }}
                 >
                   {n.label}
                   <ChevronDown className="h-3.5 w-3.5 transition-transform group-hover:rotate-180" />
                 </Link>
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                  <div className="w-[560px] rounded-lg border border-gold/40 bg-black shadow-elegant p-5 grid grid-cols-2 gap-x-6 gap-y-2.5">
+                  <div className="w-[560px] rounded-lg border border-border bg-card/95 backdrop-blur-xl shadow-elegant p-5 grid grid-cols-2 gap-x-6 gap-y-2.5">
                     {servicesDropdown.map((s) => (
                       <Link
                         key={s.to}
                         to={s.to}
-                        className="text-sm text-white/80 hover:text-gold transition-colors py-1.5"
+                        className="text-sm text-foreground/80 hover:text-gold transition-colors py-1.5"
                         activeProps={{ className: "text-gold" }}
                       >
                         {s.label}
@@ -133,7 +133,7 @@ function Header({ transparent = false }: { transparent?: boolean }) {
               <Link
                 key={n.to}
                 to={n.to}
-                className="text-sm font-medium text-foreground/80 hover:text-gold transition-colors"
+                className="text-sm font-medium text-white/80 hover:text-gold transition-colors"
                 activeProps={{ className: "text-gold" }}
               >
 
@@ -146,7 +146,7 @@ function Header({ transparent = false }: { transparent?: boolean }) {
         <div className="flex items-center gap-2">
           <a
             href={PHONE_HREF}
-            className="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-foreground hover:text-gold"
+            className="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-gold"
           >
             <Phone className="h-4 w-4 text-gold" /> {PHONE}
           </a>
@@ -158,7 +158,7 @@ function Header({ transparent = false }: { transparent?: boolean }) {
           </Link>
           <button
             aria-label="Toggle menu"
-            className="lg:hidden grid h-10 w-10 place-items-center rounded-md border border-border text-foreground"
+            className="lg:hidden grid h-10 w-10 place-items-center rounded-md border border-gold/40 text-white"
             onClick={() => setOpen((v) => !v)}
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
