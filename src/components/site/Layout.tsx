@@ -167,14 +167,14 @@ function Header({ transparent = false }: { transparent?: boolean }) {
       </div>
 
       {open && (
-        <div className="lg:hidden border-t border-border bg-card max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden border-t border-gold/40 bg-black max-h-[80vh] overflow-y-auto">
           <div className="container-x py-4 flex flex-col gap-1">
             {fullNav.map((n) => (
               <Link
                 key={n.to}
                 to={n.to}
                 onClick={() => setOpen(false)}
-                className="text-base font-medium text-foreground/90 hover:text-gold py-2 border-b border-border/50"
+                className="text-base font-medium text-white/90 hover:text-gold py-2 border-b border-gold/20"
                 activeProps={{ className: "text-gold" }}
                 activeOptions={{ exact: n.to === "/" }}
               >
@@ -183,7 +183,7 @@ function Header({ transparent = false }: { transparent?: boolean }) {
             ))}
             <a
               href={PHONE_HREF}
-              className="inline-flex items-center gap-2 text-base font-semibold pt-4"
+              className="inline-flex items-center gap-2 text-base font-semibold pt-4 text-white/90"
             >
               <Phone className="h-4 w-4 text-gold" /> {PHONE}
             </a>
