@@ -184,6 +184,7 @@ export const serviceTopics = [
   "Buyer / tenant resolution (deal stuck)",
   "Off-market sourcing",
   "Search off-market restaurant",
+  "Leasing vacant restaurant",
   "E-2 visa (Europe)",
   "Second generation space",
   "Hardware store inquiry",
