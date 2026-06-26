@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowLeft, MapPin, Ruler, Phone, ArrowRight, Sparkles, Check } from "lucide-react";
 import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
+import { LeadForm } from "@/components/site/LeadForm";
 import { getListingBySlug, listings, type Listing } from "@/lib/listings";
 
 export const Route = createFileRoute("/restaurants-for-sale/$slug")({
@@ -202,12 +203,12 @@ function ListingDetail() {
               </>
             )}
             <div className="mt-5 space-y-2">
-              <Link
-                to="/contact"
+              <a
+                href="#inquire"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-gold-gradient px-4 py-3 text-sm font-bold text-charcoal-deep shadow-gold"
               >
-                Request NDA & Details <ArrowRight className="h-4 w-4" />
-              </Link>
+                Inquire About This Listing <ArrowRight className="h-4 w-4" />
+              </a>
               <a
                 href={PHONE_HREF}
                 className="inline-flex w-full items-center justify-center gap-2 rounded-md border border-gold/40 px-4 py-3 text-sm font-semibold hover:bg-gold/10"
@@ -221,6 +222,79 @@ function ListingDetail() {
             available on request.
           </div>
         </aside>
+      </section>
+
+      <section id="inquire" className="container-x pb-16 scroll-mt-24">
+        <div className="grid gap-8 lg:grid-cols-[1fr_1.2fr] items-start">
+          <div>
+            <div className="text-xs uppercase tracking-wider text-gold font-semibold">
+              Listing {l.id}
+            </div>
+            <h2 className="mt-2 text-2xl md:text-3xl font-display font-bold">
+              Inquire about {l.title}
+            </h2>
+            <p className="mt-3 text-muted-foreground">
+              Send a private inquiry on this specific property. We'll respond same business day
+              with next steps, NDA, and any financials available.
+            </p>
+            <ul className="mt-5 space-y-2 text-sm text-foreground/85">
+              <li className="flex items-start gap-2">
+                <MapPin className="mt-0.5 h-4 w-4 text-gold shrink-0" /> {l.location}
+              </li>
+              {l.price && (
+                <li className="flex items-start gap-2">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-gold shrink-0" />
+                  <span><span className="font-semibold">{l.price}</span>
+                    {l.priceNote ? ` · ${l.priceNote}` : ""}</span>
+                </li>
+              )}
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-gold shrink-0" />
+                <span>{l.leaseType}{l.sqft ? ` · ${l.sqft}` : ""}</span>
+              </li>
+            </ul>
+          </div>
+          <LeadForm
+            serviceNeeded={`Listing inquiry — ${l.id} ${l.title}`}
+            title="Inquire about this listing"
+            subtitle="Private inquiry. We respond same business day."
+            extraFields={
+              <>
+                <input type="hidden" name="listingId" value={l.id} />
+                <input type="hidden" name="listingSlug" value={l.slug} />
+                <input type="hidden" name="listingTitle" value={l.title} />
+                <div>
+                  <label className="block text-sm font-semibold mb-2">Timeline</label>
+                  <select
+                    name="timeline"
+                    defaultValue=""
+                    className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-gold focus:outline-none"
+                  >
+                    <option value="" disabled>Select one…</option>
+                    <option value="Ready now">Ready now</option>
+                    <option value="30-60 days">30-60 days</option>
+                    <option value="60-90 days">60-90 days</option>
+                    <option value="Just exploring">Just exploring</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold mb-2">Financing</label>
+                  <select
+                    name="financing"
+                    defaultValue=""
+                    className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-gold focus:outline-none"
+                  >
+                    <option value="" disabled>Select one…</option>
+                    <option value="Cash">Cash</option>
+                    <option value="SBA / bank">SBA / bank</option>
+                    <option value="Seller financing">Seller financing needed</option>
+                    <option value="Undecided">Undecided</option>
+                  </select>
+                </div>
+              </>
+            }
+          />
+        </div>
       </section>
 
       {other.length > 0 && (
