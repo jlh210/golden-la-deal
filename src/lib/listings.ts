@@ -6,6 +6,8 @@ import wilshire1 from "@/assets/wilshire-1.png.asset.json";
 import wilshire2 from "@/assets/wilshire-2.png.asset.json";
 import wilshire3 from "@/assets/wilshire-3.png.asset.json";
 import wilshire4 from "@/assets/wilshire-4.png.asset.json";
+import santaMonica1 from "@/assets/santa-monica-1.png.asset.json";
+import santaMonica2 from "@/assets/santa-monica-2.png.asset.json";
 
 export type SaleType = "Business Sale" | "Asset Sale" | "Real Estate";
 
