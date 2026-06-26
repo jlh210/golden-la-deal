@@ -5,9 +5,11 @@ import { PHONE, PHONE_HREF } from "./Layout";
 export function CTASection({
   title = "Ready to move?",
   body = "We answer the phone. We move today.",
+  serviceNeeded,
 }: {
   title?: string;
   body?: string;
+  serviceNeeded?: string;
 }) {
   return (
     <section className="container-x pb-20 pt-4">
@@ -26,6 +28,7 @@ export function CTASection({
           <div className="flex flex-wrap gap-3">
             <Link
               to="/contact"
+              search={serviceNeeded ? { service: serviceNeeded } : undefined}
               className="inline-flex items-center justify-center gap-2 rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-charcoal-deep shadow-gold whitespace-nowrap"
             >
               Book a Consultation <ArrowRight className="h-4 w-4" />
