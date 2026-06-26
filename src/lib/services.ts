@@ -124,6 +124,13 @@ export const services: Service[] = [
     icon: Store,
   },
   {
+    slug: "leasing-vacant-restaurants",
+    to: "/leasing-vacant-restaurants",
+    title: "Leasing Vacant Restaurants",
+    short: "No-fee representation for vacant, equipped, second-generation restaurant leases.",
+    icon: DoorOpen,
+  },
+  {
     slug: "residential",
     to: "/residential",
     title: "Residential Requests",
