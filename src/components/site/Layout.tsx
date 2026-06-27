@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Menu, X, Mail, Clock, ChevronDown } from "lucide-react";
 import { useState, type ReactNode } from "react";
+import logoMarkDark from "@/assets/logo-mark-dark.png";
 import logoAsset from "@/assets/logo-mark.png.asset.json";
 
 
