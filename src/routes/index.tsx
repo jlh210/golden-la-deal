@@ -43,9 +43,6 @@ const trust = [
 ];
 
 
-
-
-
 const steps = [
   {
     n: "01",
