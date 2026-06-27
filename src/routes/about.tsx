@@ -69,7 +69,7 @@ function AboutPage() {
     <SiteLayout>
       <PageHero
         eyebrow="About Us"
-        title="The LA Restaurant & Business Brokerage."
+        title="Servicing LA County's Restaurants & Businesses."
         accent={`"Do It Now."`}
         subtitle="Penthouse Advisors is a modern, full-service restaurant and business brokerage serving Los Angeles County. Established in 2021, we combine brokerage expertise, ABC licensing, and operational advisory under one roof. Protocol: every party is treated fairly, equally, and honestly."
       />
