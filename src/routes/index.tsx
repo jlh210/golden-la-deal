@@ -29,10 +29,10 @@ export const Route = createFileRoute("/")({
 });
 
 const trustMetrics = [
-  { value: "250+", label: "Restaurants Advised" },
-  { value: "180+", label: "Transactions Closed" },
-  { value: "25+", label: "Years of Experience" },
+  { value: "2021", label: "Established" },
+  { value: "3", label: "Principal Owners" },
   { value: "LA County", label: "Exclusively Served" },
+  { value: "One Roof", label: "Full-Service Firm" },
 ];
 
 const trust = [
