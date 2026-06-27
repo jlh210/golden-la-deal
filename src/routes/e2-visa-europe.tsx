@@ -68,10 +68,10 @@ function E2Page() {
           <div>
             <h2 className="text-2xl font-display font-bold">CORP BRIEF — MUST READ</h2>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Penthouse Advisors Inc., a “family owned and run business” full-service operation,
-              consults and advises on restaurant deals for the many active restaurant owners,
-              commercial property owners, and restaurant buyers throughout Los Angeles County.
-              We provide brilliant business tips and strategies in line with our “do it now”
+              Penthouse Advisors Inc. is a sophisticated, full-service restaurant and business
+              brokerage operation, consulting and advising on restaurant deals for active restaurant
+              owners, commercial property owners, and restaurant buyers throughout Los Angeles
+              County. We provide brilliant business tips and strategies in line with our “do it now”
               approach to creating resolutions with quick, workable solutions to restaurant business
               dilemmas and expanding the restaurant’s growth — meaning the monthly net returns in the
               pocket before tax.
