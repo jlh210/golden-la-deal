@@ -29,18 +29,20 @@ export const Route = createFileRoute("/")({
 });
 
 const trustMetrics = [
-  { value: "Est. 2021", label: "Family-Owned Corp" },
+  { value: "250+", label: "Restaurants Advised" },
+  { value: "180+", label: "Transactions Closed" },
+  { value: "25+", label: "Years of Experience" },
   { value: "LA County", label: "Exclusively Served" },
-  { value: "3 Principals", label: "Owner-Led Every Deal" },
-  { value: "One Roof", label: "Brokerage · Licensing · Permits" },
 ];
 
 const trust = [
   { icon: Calendar, label: "Est. 2021" },
-  { icon: ShieldCheck, label: "Licensed CA Brokers" },
+  { icon: ShieldCheck, label: "Licensed Brokers" },
   { icon: MapPin, label: "LA County" },
-  { icon: Star, label: "Do It Now" },
+  { icon: Star, label: "Principal-Led" },
 ];
+
+
 
 
 
