@@ -92,22 +92,20 @@ function HomePage() {
               className="mt-8 font-display text-[2.75rem] sm:text-6xl lg:text-[4.5rem] font-normal leading-[1.02] tracking-[-0.01em] text-charcoal-deep animate-fade-in"
               style={{ animationDelay: "120ms", animationFillMode: "both" }}
             >
-              Family-Owned
+              Los Angeles County's
               <br />
-              <span className="italic text-gradient-gold">"Do It Now"</span>
+              <span className="italic text-gradient-gold">Premier Restaurant</span>
               <br />
-              Restaurant Brokerage.
+              Advisory Firm.
             </h1>
 
             <p
               className="mt-8 max-w-lg text-base sm:text-lg leading-relaxed text-charcoal/75 animate-fade-in"
               style={{ animationDelay: "320ms", animationFillMode: "both" }}
             >
-              Penthouse Advisors is a family-owned, full-service restaurant business corporation
-              with brokerage. Established 2021. Servicing the entire Los Angeles County.
-              All parties treated fairly, equally, and honestly.
+              Serving Los Angeles County with expert restaurant brokerage, licensing, leasing,
+              permitting, consulting, and transaction management—from first opportunity to final closing.
             </p>
-
 
             <div
               className="mt-10 flex flex-wrap items-center gap-4 animate-fade-in"
