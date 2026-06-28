@@ -5,19 +5,19 @@ const SHEET_ID = "1XxSXkc43h9qV4CeSgYzudsAbPfGDXk2rQn24y7_0Yhg";
 const RANGE = "'Website leads'!A:K";
 const GATEWAY = "https://connector-gateway.lovable.dev/google_sheets/v4";
 
-// Columns: Name | Phone | Email | Source | Role | serviceNeeded | Notes | Timeline | Financing | Timestamp | Status
+// Columns: A Name | B Phone | C Email | D Source | E Role | F Service Needed | G Status | H Timeline | I Financing | J Timestamp | K Notes
 export const COLUMNS = [
   "Name",
   "Phone",
   "Email",
   "Source",
   "Role",
-  "serviceNeeded",
-  "Notes",
+  "Service Needed",
+  "Status",
   "Timeline",
   "Financing",
   "Timestamp",
-  "Status",
+  "Notes",
 ] as const;
 
 
@@ -45,12 +45,13 @@ export const submitLead = createServerFn({ method: "POST" })
       data.source,
       f.role ?? "",
       data.serviceNeeded ?? f.serviceNeeded ?? "",
-      f.message ?? f.notes ?? "",
+      "New Lead",
       f.timeline ?? "",
       f.financing ?? "",
       new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles" }),
-      "New Lead",
+      f.message ?? f.notes ?? "",
     ];
+
 
 
     const url = `${GATEWAY}/spreadsheets/${SHEET_ID}/values/${RANGE}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`;
