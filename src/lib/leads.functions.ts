@@ -46,9 +46,12 @@ export const submitLead = createServerFn({ method: "POST" })
       f.role ?? "",
       data.serviceNeeded ?? f.serviceNeeded ?? "",
       f.message ?? f.notes ?? "",
+      f.timeline ?? "",
+      f.financing ?? "",
       new Date().toLocaleString("en-US", { timeZone: "America/New_York" }),
       "New Lead",
     ];
+
 
     const url = `${GATEWAY}/spreadsheets/${SHEET_ID}/values/${RANGE}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`;
     const res = await fetch(url, {
