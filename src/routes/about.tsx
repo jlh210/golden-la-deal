@@ -33,88 +33,60 @@ const values = [
 ];
 
 
-const corpBrief = [
-  "Buying and selling restaurants with full disclosure",
-  "Alcohol licensing (Type 41 Beer & Wine, Type 47 Hard Liquor)",
-  "Health Department pre-inspections and red-tag removal",
-  "Lease and rent negotiation, assignments, and abatement",
-  "Hood cleaning, hood inspection, and hood repair coordination",
-  "Hand-drafted blueprints for plan check (floor plan, site plan, elevations, equipment schedule)",
-  "Fast resolutions for restaurants in legal, code, or financial dilemma",
+const serviceCategories = [
+  {
+    title: "Buying, Selling, Leasing Restaurant Brokerage",
+    body: "Throughout Los Angeles County. We are highly trained in negotiating the best deal between the parties, creating fast and solid resolutions. New lease negotiating with rent abatement allowances. Solving dilemmas resulting from non-disclosure issues, before and after lease signing.",
+  },
+  {
+    title: "Specialists in Alcohol Licensing and Transfers",
+    body: "Throughout Los Angeles County: ABC licensing in conjunction with Los Angeles County CUB conditional use beverage permits and ABC State of CA. We check the status of the CUB prior to lease signing.",
+  },
+  {
+    title: "Restaurant Health Department Permitting & Pre-Inspections",
+    body: "Throughout Los Angeles County: we perform Health Department code compliance restaurant inspections, assign all found corrections and repairs to our licensed GC general contractor, follow up by making a site evaluation appointment with the Health Department Plan-Check inspector, and generate final-approval permitting to facilitate ID issuance. Restaurant open.",
+  },
+  {
+    title: "Restaurant Red Tag Equipment (3 Step Removal)",
+    body: "Step One: Penthouse Advisors submits to Health Dept Plan-Check for approval and stamping of our hand-drawn blueprints to scale. Included in our $3,700 fee. Step Two: we assign our licensed GC general contractor to make all required repairs. Step Three: we make a site evaluation appointment to remove the red tag(s).",
+  },
+  {
+    title: "Restaurants Under Grandfather Protection",
+    body: "Throughout Los Angeles County: restaurants under grandfather protection means the existing floor plan of the restaurant can never be altered or upgraded in any way at any time. The restaurant must remain in its old fashion condition, out of current Health Department and ADA code compliance. This rule must be followed to prevent costly revamping to bring the premises into current code compliance.",
+  },
+  {
+    title: "Restaurant Repairs, Remodels & Alterations",
+    body: "Throughout Los Angeles County: upgrading and remodeling restaurants by our licensed GC general contractor, after we supply Health Department Plan Check our detailed hand-drafted blueprints for stamped approval.",
+  },
+  {
+    title: "Hood Servicing, Repairs & Cleaning",
+    body: "Hood servicing, repairs, and cleaning for limited liability insurance certification. All required permits are pulled for mechanical, electrical, and plumbing work. Example: gas equipment installed and hand sink drain lines connected to the sewer.",
+  },
+  {
+    title: "Vacant, Equipped, Second Generation Restaurants",
+    body: "Restaurant tenants before vacating the premises can sell the non-attached FF&E furniture, fixtures, and equipment (as key money) while holding legal possession under a lease. Property owners are not in the business of selling used restaurant furniture, fixtures, and equipment.",
+  },
+  {
+    title: "NSF or URL Sanitized Labeling",
+    body: "A Health Department code requirement on all kitchen equipment. The equipment is deemed worthless if not displaying such visible labels.",
+  },
 ];
 
-const owners = [
-  {
-    name: "Roschard Paticchio-Stein",
-    title: "CEO · Owner · Business Agent",
-    dre: "DRE #02203003",
-    bio: "As CEO, Roschard makes the major corporate decisions that shape Penthouse Advisors, drives the firm’s direction, supervises the executive team, and oversees growth plans.",
-  },
-  {
-    name: "Richard Stein",
-    title: "COO · Business Advisor · Owner",
-    dre: null,
-    bio: "As COO, Richard turns the firm’s strategy into everyday results, making sure execution across the company matches the direction set by leadership.",
-  },
-  {
-    name: "Rosanna Paticchio",
-    title: "CFO · Broker of Record",
-    dre: "DRE #02332697",
-    bio: "Broker of Record and head of finance. Rosanna is responsible for compliance, trust accounting, and licensure oversight across the firm's brokerage and ABC licensing activity.",
-  },
+const equipmentDetails = [
+  "Attached and non-attached equipment throughout the kitchen",
+  "Grease interceptor located in ground",
+  "Grease trap located under or alongside the 3-compartment sink",
+  "Grandfather protection allowances",
+  "CUB conditional use beverage permits",
+  "HVAC",
+  "ADA bathroom & front entrance",
+  "Plumbing",
+  "Walling materials, ceiling materials, flooring materials, and cove molding",
+  "Electric water heater kilowatt minimum allowance",
+  "Gas water heater btuH allowance",
+  "Visible kitchen and dining area alterations",
 ];
 
-function AboutPage() {
-  return (
-    <SiteLayout>
-      <PageHero
-        eyebrow="About Us"
-        title="Servicing LA County's Restaurants & Businesses."
-        subtitle="Penthouse Advisors is a modern, full-service restaurant and business brokerage serving Los Angeles County. Established in 2021, we combine brokerage expertise, ABC licensing, and operational advisory under one roof. Protocol: every party is treated fairly, equally, and honestly."
-      />
-
-
-
-      {/* Values */}
-      <section className="container-x py-16 md:py-20">
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {values.map((v) => (
-            <div key={v.title} className="rounded-xl border border-border bg-card p-6 shadow-elegant">
-              <div className="grid h-11 w-11 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30">
-                <v.icon className="h-5 w-5" />
-              </div>
-              <h3 className="mt-4 text-lg font-display font-bold">{v.title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{v.body}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Corp Brief */}
-      <section className="border-y border-border bg-card">
-        <div className="container-x py-16 md:py-20 grid gap-10 md:grid-cols-[1fr_1.4fr]">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-gold">Corp Brief</p>
-            <h2 className="mt-3 text-3xl md:text-4xl font-display font-bold">
-              What Penthouse Advisors actually does.
-            </h2>
-            <p className="mt-4 text-muted-foreground">
-              We solve restaurant problems fast. Here's everything we handle in-house
-              for LA County restaurant owners, buyers, and landlords.
-            </p>
-          </div>
-          <ul className="space-y-3">
-            {corpBrief.map((line) => (
-              <li key={line} className="flex items-start gap-3 rounded-lg border border-border bg-card p-4">
-                <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-gold/15 text-gold">
-                  <Check className="h-3 w-3" />
-                </span>
-                <span className="text-sm">{line}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
 
       {/* Owners */}
       <section className="container-x py-16 md:py-24">
