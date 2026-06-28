@@ -287,7 +287,7 @@ function ListingDetail() {
                     <option value="" disabled>Select one…</option>
                     <option value="Cash">Cash</option>
                     <option value="SBA / bank">SBA / bank</option>
-                    <option value="Seller financing">Seller financing needed</option>
+                    <option value="Seller financing needed">Seller financing needed</option>
                     <option value="Undecided">Undecided</option>
                   </select>
                 </div>
