@@ -2,10 +2,10 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 
 const SHEET_ID = "1XxSXkc43h9qV4CeSgYzudsAbPfGDXk2rQn24y7_0Yhg";
-const RANGE = "'Website leads'!A:I";
+const RANGE = "'Website leads'!A:K";
 const GATEWAY = "https://connector-gateway.lovable.dev/google_sheets/v4";
 
-// Columns: Name | Phone | Email | Source | Role | serviceNeeded | Notes | Timestamp | Status
+// Columns: Name | Phone | Email | Source | Role | serviceNeeded | Notes | Timeline | Financing | Timestamp | Status
 export const COLUMNS = [
   "Name",
   "Phone",
@@ -14,9 +14,12 @@ export const COLUMNS = [
   "Role",
   "serviceNeeded",
   "Notes",
+  "Timeline",
+  "Financing",
   "Timestamp",
   "Status",
 ] as const;
+
 
 const leadSchema = z.object({
   source: z.string().min(1).max(120),
