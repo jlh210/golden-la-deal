@@ -32,7 +32,6 @@ const values = [
   { icon: Award, title: "Full-Service", body: "Brokerage, licensing, health, leases, blueprints - under one roof." },
 ];
 
-
 const serviceCategories = [
   {
     title: "Buying, Selling, Leasing Restaurant Brokerage",
@@ -87,12 +86,93 @@ const equipmentDetails = [
   "Visible kitchen and dining area alterations",
 ];
 
+const owners = [
+  {
+    name: "Roschard Paticchio-Stein",
+    title: "CEO · Owner · Business Agent",
+    dre: "DRE #02203003",
+    bio: "As CEO, Roschard makes the major corporate decisions that shape Penthouse Advisors, drives the firm’s direction, supervises the executive team, and oversees growth plans.",
+  },
+  {
+    name: "Richard Stein",
+    title: "COO · Business Advisor · Owner",
+    dre: null,
+    bio: "As COO, Richard turns the firm’s strategy into everyday results, making sure execution across the company matches the direction set by leadership.",
+  },
+  {
+    name: "Rosanna Paticchio",
+    title: "CFO · Broker of Record",
+    dre: "DRE #02332697",
+    bio: "Broker of Record and head of finance. Rosanna is responsible for compliance, trust accounting, and licensure oversight across the firm's brokerage and ABC licensing activity.",
+  },
+];
+
+function AboutPage() {
+  return (
+    <SiteLayout>
+      <PageHero
+        eyebrow="About Us"
+        title="Servicing LA County's Restaurants & Businesses."
+        subtitle="Penthouse Advisors is a modern, full-service restaurant and business brokerage serving Los Angeles County. Established in 2021, we combine brokerage expertise, ABC licensing, and operational advisory under one roof. Protocol: every party is treated fairly, equally, and honestly."
+      />
+
+      {/* Values */}
+      <section className="container-x py-16 md:py-20">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {values.map((v) => (
+            <div key={v.title} className="rounded-xl border border-border bg-card p-6 shadow-elegant">
+              <div className="grid h-11 w-11 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30">
+                <v.icon className="h-5 w-5" />
+              </div>
+              <h3 className="mt-4 text-lg font-display font-bold">{v.title}</h3>
+              <p className="mt-2 text-sm text-muted-foreground">{v.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Corp Brief */}
+      <section className="border-y border-border bg-card">
+        <div className="container-x py-16 md:py-20">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-widest text-gold">Corp Brief</p>
+            <h2 className="mt-3 text-3xl md:text-4xl font-display font-bold">
+              What Penthouse Advisors actually does.
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              We solve restaurant problems fast. Here's everything we handle in-house for LA County restaurant owners, buyers, and landlords.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {serviceCategories.map((s) => (
+              <article key={s.title} className="rounded-xl border border-border bg-card p-6 shadow-elegant">
+                <h3 className="text-lg font-display font-bold leading-snug">{s.title}</h3>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{s.body}</p>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-12 rounded-2xl border border-border bg-card p-6 md:p-8">
+            <h3 className="text-lg font-display font-bold">Equipment & Code Details</h3>
+            <ul className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {equipmentDetails.map((line) => (
+                <li key={line} className="flex items-start gap-3 text-sm">
+                  <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-gold/15 text-gold">
+                    <Check className="h-3 w-3" />
+                  </span>
+                  <span>{line}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
 
       {/* Owners */}
       <section className="container-x py-16 md:py-24">
         <p className="text-xs font-semibold uppercase tracking-widest text-gold">Leadership</p>
         <h2 className="mt-3 text-3xl md:text-5xl font-display font-bold">Restaurant advisory, licensing, and deal support - under one roof.</h2>
-
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {owners.map((o) => (
