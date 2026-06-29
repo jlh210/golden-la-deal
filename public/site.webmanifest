@@ -1,0 +1,9 @@
+{
+  "name": "Penthouse Advisors Inc.",
+  "short_name": "Penthouse Advisors",
+  "description": "LA Restaurant Brokerage & Advisory Firm",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#c9a24a"
+}
