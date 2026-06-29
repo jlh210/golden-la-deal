@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, Menu, X, Mail, Clock, ChevronDown } from "lucide-react";
+import { Phone, Menu, X, Mail, Clock, ChevronDown, Calendar } from "lucide-react";
 import { useState, type ReactNode } from "react";
 import { agents } from "@/routes/agents";
 import logoMarkDark from "@/assets/logo-mark-dark.png";
@@ -304,15 +304,15 @@ function Footer() {
   );
 }
 
-function FloatingCall() {
+function FloatingCTA() {
   return (
-    <a
-      href={PHONE_HREF}
-      aria-label="Call Penthouse Advisors"
+    <Link
+      to="/contact"
+      aria-label="Request a consultation"
       className="md:hidden fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-gold-gradient px-5 py-3 text-sm font-bold text-charcoal-deep shadow-gold"
     >
-      <Phone className="h-4 w-4" /> Call Now
-    </a>
+      <Calendar className="h-4 w-4" /> Request a Consultation
+    </Link>
   );
 }
 
@@ -323,7 +323,7 @@ export function SiteLayout({ children, transparentHeader = false }: { children: 
       <main className="flex-1">{children}</main>
       <Footer />
 
-      <FloatingCall />
+      <FloatingCTA />
     </div>
   );
 }
