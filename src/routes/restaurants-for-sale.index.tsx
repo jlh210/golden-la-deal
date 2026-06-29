@@ -202,8 +202,7 @@ function ListingsPage() {
             Looking for something specific?
           </h2>
           <p className="mt-2 text-muted-foreground">
-            Most of our deals never hit this page. Tell us your budget, area, and concept -
-            we'll source it off-market.
+            Tell us your budget, area, and concept - we'll source it off-market.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <a
