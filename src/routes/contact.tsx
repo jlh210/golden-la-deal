@@ -45,6 +45,7 @@ function ContactPage() {
             serviceNeeded={prefill}
             title="Book a Consultation"
             subtitle={prefill ? "We've pre-filled your service need below. Add a few details and we'll respond same business day." : "Pick your Service Needed below - every category we offer is in the dropdown."}
+            messagePlaceholder={prefill ? "Address of my current restaurant" : "A few details on your situation…"}
           />
 
           <div className="space-y-5">
