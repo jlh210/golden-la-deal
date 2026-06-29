@@ -29,8 +29,10 @@ export const agents = [
     name: "Roschard Paticchio-Stein",
     title: "CEO · Owner · Business Agent",
     dre: "DRE #02203003",
+    phone: "(310) 460-9757",
+    phoneHref: "tel:+13104609757",
     bio: "As CEO, Roschard makes the major corporate decisions that shape Penthouse Advisors, drives the firm’s direction, supervises the executive team, and oversees growth plans.",
-    focus: ["Restaurant, Retail, Commercial Brokerage", "Off-market sourcing", "Residential listings"],
+    focus: ["buy/seller representation", "abc licensing oversight", "restaurant sales"],
   },
   {
     name: "Rosanna Paticchio",
