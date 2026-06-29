@@ -38,7 +38,13 @@ const types = [
   {
     name: "Type 47 - Hard Liquor",
     body: "On-sale General for bona-fide eating places. Full bar privileges. Requires either an existing license to transfer or, in many tracts, a Conditional Use Permit (CUP).",
-    bullets: ["Beer, wine, and distilled spirits", "Often acquired by transfer from a held license", "CUP may be required by tract"],
+    bullets: [
+      "Restaurant required ADA Bathroom his/hers, (kitchen + menu)",
+      "Percentage of food served with Alcohol",
+      "Distilled spirits, Beer and Wine",
+      "Often acquired by transfer from a held license",
+      "CUP may be required by tract. Active 'CUB' Conditional Use Beverage is a requirement within Los Angeles County",
+    ],
   },
 ];
 
