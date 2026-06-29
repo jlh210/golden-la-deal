@@ -258,6 +258,7 @@ function ListingDetail() {
             serviceNeeded={`Listing inquiry — ${l.location}`}
             title="Inquire about this listing"
             subtitle="Private inquiry. We respond same business day."
+            messagePlaceholder="Address of my current restaurant"
             extraFields={
               <>
                 <input type="hidden" name="listingId" value={l.id} />
