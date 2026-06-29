@@ -18,7 +18,9 @@ export const Route = createFileRoute("/grandfather-protection")({
         property: "og:description",
         content: "Protect older restaurant spaces. 90-day rule. ADA carve-outs. Don't move the floor plan.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/grandfather-protection" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/grandfather-protection" }],
   }),
   component: GrandfatherPage,
 });

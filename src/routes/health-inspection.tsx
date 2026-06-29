@@ -18,7 +18,9 @@ export const Route = createFileRoute("/health-inspection")({
         property: "og:description",
         content: "$2,700 flat. Blueprints included. Red tags cleared, doors reopened.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/health-inspection" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/health-inspection" }],
   }),
   component: HealthPage,
 });

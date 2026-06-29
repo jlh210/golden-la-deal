@@ -12,9 +12,10 @@ export const Route = createFileRoute("/restaurants-for-sale/$slug")({
     if (!listing) throw notFound();
     return { listing };
   },
-  head: ({ loaderData }) => {
+  head: ({ params, loaderData }) => {
     const l = loaderData?.listing;
-    if (!l) return { meta: [{ title: "Listing — Penthouse Advisors" }] };
+    const url = `https://www.penthouseadvisors.com/restaurants-for-sale/${params.slug}`;
+    if (!l) return { meta: [{ title: "Listing — Penthouse Advisors" }], links: [{ rel: "canonical", href: url }] };
     const desc = l.description ?? l.longDescription?.[0] ?? l.title;
     const image = l.images?.[0];
     return {
@@ -23,6 +24,8 @@ export const Route = createFileRoute("/restaurants-for-sale/$slug")({
         { name: "description", content: desc },
         { property: "og:title", content: l.title },
         { property: "og:description", content: desc },
+        { property: "og:url", content: url },
+        { property: "og:type", content: "article" },
         ...(image
           ? [
               { property: "og:image", content: image },
@@ -30,8 +33,10 @@ export const Route = createFileRoute("/restaurants-for-sale/$slug")({
             ]
           : []),
       ],
+      links: [{ rel: "canonical", href: url }],
     };
   },
+
   notFoundComponent: () => (
     <SiteLayout>
       <div className="container-x py-24 text-center">

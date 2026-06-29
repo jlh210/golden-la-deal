@@ -18,7 +18,9 @@ export const Route = createFileRoute("/business-investigations")({
         property: "og:description",
         content: "Verify the deal before you sign. Full pre-purchase restaurant investigation.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/business-investigations" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/business-investigations" }],
   }),
   component: InvestigationsPage,
 });

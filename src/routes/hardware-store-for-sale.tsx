@@ -22,7 +22,9 @@ export const Route = createFileRoute("/hardware-store-for-sale")({
       },
       { property: "og:image", content: storefront.url },
       { property: "twitter:image", content: storefront.url },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/hardware-store-for-sale" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/hardware-store-for-sale" }],
   }),
   component: HardwarePage,
 });

@@ -20,7 +20,9 @@ export const Route = createFileRoute("/restaurants-for-sale/")({
         property: "og:description",
         content: "Turnkey restaurants and asset sales across Los Angeles County.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/restaurants-for-sale/" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/restaurants-for-sale/" }],
   }),
   component: ListingsPage,
 });

@@ -19,7 +19,9 @@ export const Route = createFileRoute("/about")({
         content:
           "Sophisticated, full-service restaurant advisory and brokerage firm. Servicing Los Angeles County since 2021.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/about" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/about" }],
   }),
 
   component: AboutPage,

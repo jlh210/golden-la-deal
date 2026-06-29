@@ -18,7 +18,9 @@ export const Route = createFileRoute("/assignments-rent-abatement")({
         property: "og:description",
         content: "Lease assignments, guarantor positions, and rent abatement.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/assignments-rent-abatement" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/assignments-rent-abatement" }],
   }),
   component: AssignmentsPage,
 });

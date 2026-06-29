@@ -18,7 +18,9 @@ export const Route = createFileRoute("/residential")({
         property: "og:description",
         content: "Select residential listings in LA. Inquire for availability.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/residential" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/residential" }],
   }),
   component: ResidentialPage,
 });

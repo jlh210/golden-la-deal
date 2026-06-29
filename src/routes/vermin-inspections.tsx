@@ -18,7 +18,9 @@ export const Route = createFileRoute("/vermin-inspections")({
         property: "og:description",
         content: "Monthly compliance inspections for commercial property owners.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/vermin-inspections" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/vermin-inspections" }],
   }),
   component: VerminPage,
 });

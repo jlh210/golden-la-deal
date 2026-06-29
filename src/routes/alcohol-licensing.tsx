@@ -18,7 +18,9 @@ export const Route = createFileRoute("/alcohol-licensing")({
         property: "og:description",
         content: "Type 41 and Type 47 ABC licensing in LA County. Transparent pricing.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/alcohol-licensing" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/alcohol-licensing" }],
   }),
   component: LicensingPage,
 });
