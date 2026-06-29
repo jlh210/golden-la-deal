@@ -31,7 +31,7 @@ function SearchDoorKnockingPage() {
         eyebrow="Search Off-Market Restaurant"
         title="Restaurant door-knocking"
         accent="off-market campaign."
-        subtitle="$3,775 — good for one year or until a restaurant location is leased. We locate, negotiate, and permit the space so you can focus on opening."
+        subtitle="We locate the space, negotiate new lease terms and conditions, Options, Rent Abatement Allowances and set up the Health Department permit so you can focus on opening. We'll go over pricing during your consultation."
       />
 
       <section className="container-x py-10 md:py-14 border-b border-border">
