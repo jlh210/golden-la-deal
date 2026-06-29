@@ -94,12 +94,11 @@ function GrandfatherPage() {
         <div className="container-x py-16 md:py-20">
           <div className="flex items-center gap-3">
             <Accessibility className="h-6 w-6 text-gold" />
-            <p className="text-xs font-semibold uppercase tracking-widest text-gold">Still Required Under Grandfather</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-gold">Still Required After a 90-Day Closure</p>
           </div>
-          <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">ADA carve-outs apply even with protection.</h2>
+          <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">ADA carve-outs apply after a Restaurant 90 closure, even with protection.</h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">
-            Grandfather Protection does <span className="font-semibold text-foreground">not</span> exempt a restaurant from
-            baseline ADA compliance. These four items must be in place regardless of protected status:
+            Prior Grandfather Protection does <span className="font-semibold text-foreground">not</span> exempt a restaurant (if and when closed over 90 days) from baseline ADA compliance. These four items must be put in place regardless of any past protected status:
           </p>
           <ul className="mt-8 grid gap-3 md:grid-cols-2">
             {adaItems.map((item) => (
