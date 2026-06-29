@@ -308,10 +308,10 @@ function FloatingCTA() {
   return (
     <Link
       to="/contact"
-      aria-label="Request a consultation"
+      aria-label="Book a consultation"
       className="md:hidden fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-gold-gradient px-5 py-3 text-sm font-bold text-charcoal-deep shadow-gold"
     >
-      <Calendar className="h-4 w-4" /> Request a Consultation
+      <Calendar className="h-4 w-4" /> Book a Consultation
     </Link>
   );
 }
