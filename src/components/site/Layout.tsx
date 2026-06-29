@@ -254,6 +254,11 @@ function Footer() {
               </li>
             ))}
           </ul>
+
+          <h4 className="mt-8 text-sm font-semibold text-gold uppercase tracking-wider">Agents</h4>
+          <ul className="mt-4 space-y-2 text-sm">
+            <li><Link to="/agents" className="hover:text-gold">Meet our agents</Link></li>
+          </ul>
         </div>
 
         <div>
