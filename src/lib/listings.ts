@@ -23,6 +23,7 @@ export type Listing = {
   type: SaleType;
   title: string;
   location: string;
+  coords?: [number, number]; // [lat, lng]
   price?: string;
   priceNote?: string;
   sqft?: string;
