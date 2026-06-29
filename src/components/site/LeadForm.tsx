@@ -160,7 +160,7 @@ export function LeadForm({
   }
 
   if (stage === "calendly" && submitted) {
-    const prefillUrl = `${CALENDLY_URL}?hide_gdpr_banner=1&name=${encodeURIComponent(submitted.name)}&email=${encodeURIComponent(submitted.email)}&a1=${encodeURIComponent(submitted.phone)}&phone_number=${encodeURIComponent(submitted.phone)}`;
+    const prefillUrl = `${CALENDLY_URL}?hide_gdpr_banner=1&name=${encodeURIComponent(submitted.name)}&email=${encodeURIComponent(submitted.email)}&phone_number=${encodeURIComponent(submitted.phone)}`;
     return (
       <div className="rounded-2xl border border-gold/40 bg-card p-7 md:p-10 shadow-elegant animate-in fade-in slide-in-from-bottom-2 duration-500">
         <div className="text-center">
