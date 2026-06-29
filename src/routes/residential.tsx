@@ -57,6 +57,7 @@ function ResidentialPage() {
           serviceNeeded="Residential listing"
           title="Residential Inquiry"
           subtitle="Tell us what you're looking for. We respond same business day."
+          messagePlaceholder="Address of my property"
         />
       </section>
     </SiteLayout>

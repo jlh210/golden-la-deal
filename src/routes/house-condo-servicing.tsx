@@ -75,6 +75,7 @@ function HouseCondoServicingPage() {
           serviceNeeded="House/condo servicing"
           title="Request a Consultation"
           subtitle="Tell us about your house or condo. We respond same business day."
+          messagePlaceholder="Address of my property"
         />
       </section>
     </SiteLayout>

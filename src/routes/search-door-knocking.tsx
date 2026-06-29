@@ -93,6 +93,7 @@ function SearchDoorKnockingPage() {
           serviceNeeded="Search off-market restaurant"
           title="Start Your Off-Market Search"
           subtitle="Tell us the area and concept. We respond same business day."
+          messagePlaceholder="Address of my current restaurant"
         />
       </section>
     </SiteLayout>

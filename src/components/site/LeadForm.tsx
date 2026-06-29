@@ -19,11 +19,13 @@ export function LeadForm({
   serviceNeeded,
   title = "Book a Consultation",
   subtitle = "Tell us what you need. We respond same business day.",
+  messagePlaceholder = "A few details on your situation…",
   extraFields,
 }: {
   serviceNeeded?: string;
   title?: string;
   subtitle?: string;
+  messagePlaceholder?: string;
   extraFields?: React.ReactNode;
 }) {
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -130,7 +132,7 @@ export function LeadForm({
             name="message"
             rows={4}
             maxLength={1000}
-            placeholder="A few details on your situation…"
+            placeholder={messagePlaceholder}
             className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-gold focus:outline-none resize-none"
           />
         </div>

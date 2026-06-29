@@ -366,6 +366,7 @@ function E2Page() {
           serviceNeeded="E-2 visa (Europe)"
           title="E-2 Visa Consultation"
           subtitle="Tell us about your home country and the restaurant opportunity. We respond same business day."
+          messagePlaceholder="Address of my current restaurant"
         />
       </section>
     </SiteLayout>
