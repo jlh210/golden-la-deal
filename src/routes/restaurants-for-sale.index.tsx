@@ -41,23 +41,6 @@ function ListingsPage() {
       />
 
       <section className="container-x py-12 md:py-16">
-        <div className="mb-10">
-          <div className="flex items-end justify-between flex-wrap gap-3 mb-4">
-            <div>
-              <div className="text-xs uppercase tracking-[0.18em] text-gold/80 font-semibold">
-                Map View
-              </div>
-              <h2 className="mt-1 text-2xl md:text-3xl font-display font-bold">
-                Listings across Los Angeles
-              </h2>
-            </div>
-            <p className="text-sm text-muted-foreground max-w-sm">
-              Click a gold pin to preview a listing and jump to full details.
-            </p>
-          </div>
-          <ListingsMap />
-        </div>
-
         <div className="flex flex-wrap items-center gap-2">
           {filters.map((f) => (
             <button
@@ -195,6 +178,23 @@ function ListingsPage() {
               </div>
             </article>
           ))}
+        </div>
+
+        <div className="mt-16">
+          <div className="flex items-end justify-between flex-wrap gap-3 mb-4">
+            <div>
+              <div className="text-xs uppercase tracking-[0.18em] text-gold/80 font-semibold">
+                Map View
+              </div>
+              <h2 className="mt-1 text-2xl md:text-3xl font-display font-bold">
+                Listings across Los Angeles
+              </h2>
+            </div>
+            <p className="text-sm text-muted-foreground max-w-sm">
+              Click a gold pin to preview a listing and jump to full details.
+            </p>
+          </div>
+          <ListingsMap />
         </div>
 
         <div className="mt-14 rounded-2xl border border-gold/40 bg-card p-8 md:p-10 text-center">
