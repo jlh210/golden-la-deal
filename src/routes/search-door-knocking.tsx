@@ -11,13 +11,13 @@ export const Route = createFileRoute("/search-door-knocking")({
       {
         name: "description",
         content:
-          "Restaurant door-knocking off-market campaign. We locate vacant, equipped second-generation restaurant spaces, negotiate the lease, and handle health department plan-check for $3,775.",
+          "Restaurant door-knocking off-market campaign. We locate vacant, equipped second-generation restaurant spaces, negotiate the lease, and handle health department plan-check.",
       },
       { property: "og:title", content: "Search Off-Market Restaurant - Penthouse Advisors" },
       {
         property: "og:description",
         content:
-          "Door-knocking off-market campaign for restaurant operators. $3,775 good for one year or until a location is leased.",
+          "Door-knocking off-market campaign for restaurant operators. We locate the space, negotiate lease terms, and handle permitting so you can focus on opening.",
       },
     ],
   }),
@@ -31,7 +31,7 @@ function SearchDoorKnockingPage() {
         eyebrow="Search Off-Market Restaurant"
         title="Restaurant door-knocking"
         accent="off-market campaign."
-        subtitle="$3,775 — good for one year or until a restaurant location is leased. We locate, negotiate, and permit the space so you can focus on opening."
+        subtitle="We locate the space, negotiate new lease terms and conditions, Options, Rent Abatement Allowances and set up the Health Department permit so you can focus on opening. We'll go over pricing during your consultation."
       />
 
       <section className="container-x py-10 md:py-14 border-b border-border">
