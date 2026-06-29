@@ -30,7 +30,7 @@ const agents = [
     title: "CEO · Owner · Business Agent",
     dre: "DRE #02203003",
     bio: "As CEO, Roschard makes the major corporate decisions that shape Penthouse Advisors, drives the firm’s direction, supervises the executive team, and oversees growth plans.",
-    focus: ["Restaurant brokerage", "Off-market sourcing", "Residential listings"],
+    focus: ["Restaurant, Retail, Commercial Brokerage", "Off-market sourcing", "Residential listings"],
   },
   {
     name: "Rosanna Paticchio",
@@ -45,8 +45,8 @@ const agents = [
     dre: "DRE #02417938",
     phone: "(310) 432-3014",
     phoneHref: "tel:+13104323014",
-    bio: "Licensed business agent supporting restaurant sales, lease assignments, and buyer representation across Los Angeles County.",
-    focus: ["Restaurant sales", "Lease assignments", "Buyer representation"],
+    bio: "Licensed Business Agent supporting restaurant sales, commercial sales, seller and buyer representation across Los Angeles County.",
+    focus: ["Restaurant sales", "Commercial Sales", "Seller and Buyer representation"],
   },
   {
     name: "Jeremie Campbell",
@@ -54,8 +54,8 @@ const agents = [
     dre: "DRE #02223132",
     phone: "(310) 936-0854",
     phoneHref: "tel:+13109360854",
-    bio: "Licensed business agent supporting restaurant sales, lease assignments, and buyer representation across Los Angeles County.",
-    focus: ["Restaurant brokerage", "Asset sales", "Operator placement"],
+    bio: "Licensed Business Agent supporting restaurant sales, commercial sales, seller and buyer representation across Los Angeles County.",
+    focus: ["Restaurant sales", "Commercial Sales", "Seller and Buyer representation"],
   },
 ];
 
