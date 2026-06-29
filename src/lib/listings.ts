@@ -23,6 +23,7 @@ export type Listing = {
   type: SaleType;
   title: string;
   location: string;
+  coords?: [number, number]; // [lat, lng]
   price?: string;
   priceNote?: string;
   sqft?: string;
@@ -42,6 +43,7 @@ export const listings: Listing[] = [
     type: "Real Estate",
     title: "Jazzve Garden — Banquet Facility + Real Estate",
     location: "6500 Foothill Blvd, Tujunga, CA 91042",
+    coords: [34.2519, -118.2871],
     price: "Starting at $6,000,000",
     priceNote: "Reviewing All Offers",
     leaseType: "Real estate sale · APN 2564-012012",
@@ -97,6 +99,7 @@ export const listings: Listing[] = [
     type: "Asset Sale",
     title: "Santa Monica Restaurant — Turnkey Asset Sale",
     location: "Santa Monica (Los Angeles County)",
+    coords: [34.0195, -118.4912],
     price: "$145,000",
     priceNote: "Available — Open & Active",
     sqft: "≈ 950 sq ft",
@@ -163,6 +166,7 @@ export const listings: Listing[] = [
     type: "Business Sale",
     title: "New Lease — Second-Generation Equipped Restaurant",
     location: "2408 Wilshire Blvd, Santa Monica, CA",
+    coords: [34.0322, -118.4843],
     price: "$10,000 / month",
     priceNote: "New lease · Negotiable",
     leaseType: "Stand-alone building · New lease",
@@ -216,6 +220,7 @@ export const listings: Listing[] = [
     type: "Asset Sale",
     title: "Available Restaurant — Open Cooking",
     location: "West Los Angeles, CA",
+    coords: [34.0407, -118.4527],
     price: "$65,850",
     priceNote: "Non-negotiable · No co-brokering",
     sqft: "≈ 1,200 sq ft",
