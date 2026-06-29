@@ -4,6 +4,7 @@ import { ArrowLeft, MapPin, Ruler, Phone, ArrowRight, Sparkles, Check } from "lu
 import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
 import { LeadForm } from "@/components/site/LeadForm";
 import { getListingBySlug, listings, type Listing } from "@/lib/listings";
+import { ListingLocationMap } from "@/components/site/ListingLocationMap";
 
 export const Route = createFileRoute("/restaurants-for-sale/$slug")({
   loader: ({ params }) => {
@@ -217,6 +218,15 @@ function ListingDetail() {
               </a>
             </div>
           </div>
+          {l.coords && (
+            <div className="rounded-2xl border border-border bg-card p-4 space-y-3">
+              <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-gold font-semibold">
+                <MapPin className="h-3.5 w-3.5" /> Location
+              </div>
+              <ListingLocationMap coords={l.coords} title={l.title} location={l.location} />
+              <div className="text-xs text-muted-foreground">{l.location}</div>
+            </div>
+          )}
           <div className="rounded-2xl border border-border bg-card p-6 text-sm text-muted-foreground">
             Full financials and showings released after a signed NDA. Off-market opportunities
             available on request.
