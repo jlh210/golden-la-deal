@@ -39,7 +39,7 @@ export const agents = [
     title: "CFO · Broker of Record",
     dre: "DRE #02332697",
     bio: "Broker of Record and head of finance. Rosanna is responsible for compliance, trust accounting, and licensure oversight across the firm's brokerage and ABC licensing activity.",
-    focus: ["Broker of Record", "Compliance", "ABC licensing oversight"],
+    focus: ["Broker of Record", "Compliance", "residential buying/selling"],
   },
   {
     name: "Jamal Ali Joseph",
