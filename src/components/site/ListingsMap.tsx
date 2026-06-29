@@ -4,11 +4,11 @@ export function ListingsMap() {
   const points = listings.filter((l) => l.coords);
   if (points.length === 0) return null;
 
-  // Center on average of all points
   const avgLat = points.reduce((s, l) => s + (l.coords as [number, number])[0], 0) / points.length;
   const avgLng = points.reduce((s, l) => s + (l.coords as [number, number])[1], 0) / points.length;
 
-  const src = `https://www.google.com/maps?q=${avgLat},${avgLng}&z=10&output=embed`;
+  const key = import.meta.env.VITE_LOVABLE_CONNECTOR_GOOGLE_MAPS_BROWSER_KEY;
+  const src = `https://www.google.com/maps/embed/v1/view?key=${key}&center=${avgLat},${avgLng}&zoom=10`;
 
   return (
     <div className="relative rounded-xl border border-gold/40 overflow-hidden shadow-elegant bg-card">
