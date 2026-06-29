@@ -27,7 +27,13 @@ const types = [
   {
     name: "Type 41 - Beer & Wine",
     body: "On-sale Beer & Wine for bona-fide eating places. The standard license for restaurants that don't pour hard liquor. Lower fees, faster path, fewer protests.",
-    bullets: ["Restaurant required (kitchen + menu)", "Beer and wine, on-premise", "No public protests in most census tracts"],
+    bullets: [
+      "Restaurant required ADA Bathroom his/hers, (kitchen + menu)",
+      "Percentage of food served with Alcohol",
+      "Beer and wine, on-premise",
+      "No public protests in most census tracts",
+      "CUP may be required by tract. Active 'CUB' Conditional Use Beverage is a requirement within Los Angeles County",
+    ],
   },
   {
     name: "Type 47 - Hard Liquor",
