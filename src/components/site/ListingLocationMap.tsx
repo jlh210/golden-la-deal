@@ -19,15 +19,19 @@ export function ListingLocationMap({ coords, title, location, zoom = 13 }: Props
       if (cancelled || !containerRef.current) return;
 
       map = L.map(containerRef.current, {
-        scrollWheelZoom: false,
-        zoomControl: false,
+        scrollWheelZoom: true,
+        zoomControl: true,
         dragging: true,
+        doubleClickZoom: true,
+        touchZoom: true,
+        boxZoom: true,
         attributionControl: false,
+        minZoom: 8,
       }).setView(coords, zoom);
 
       L.tileLayer(
         "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
-        { subdomains: "abcd", maxZoom: 20 }
+        { subdomains: "abcd", maxZoom: 20, minZoom: 8 }
       ).addTo(map);
 
       const pinIcon = L.divIcon({
