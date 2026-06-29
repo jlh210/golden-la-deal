@@ -256,8 +256,14 @@ function Footer() {
           </ul>
 
           <h4 className="mt-8 text-sm font-semibold text-gold uppercase tracking-wider">Agents</h4>
-          <ul className="mt-4 space-y-2 text-sm">
-            <li><Link to="/agents" className="hover:text-gold">Meet our agents</Link></li>
+          <ul className="mt-4 space-y-4 text-sm">
+            {agents.map((a) => (
+              <li key={a.name}>
+                <div className="font-semibold">{a.name}</div>
+                <div className="text-muted-foreground">{a.title}</div>
+                {a.dre && <div className="text-xs text-gold/80 mt-0.5">{a.dre}</div>}
+              </li>
+            ))}
           </ul>
         </div>
 
