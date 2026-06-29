@@ -254,6 +254,11 @@ function Footer() {
               </li>
             ))}
           </ul>
+
+          <h4 className="mt-8 text-sm font-semibold text-gold uppercase tracking-wider">Agents</h4>
+          <ul className="mt-4 space-y-2 text-sm">
+            <li><Link to="/agents" className="hover:text-gold">Meet our agents</Link></li>
+          </ul>
         </div>
 
         <div>
@@ -279,7 +284,7 @@ function Footer() {
       </div>
       <div className="border-t border-border">
         <div className="container-x py-6 flex flex-wrap items-center justify-between gap-3 text-xs text-muted-foreground">
-          <span>© {new Date().getFullYear()} Penthouse Advisors Inc. · Agents · Servicing Los Angeles County, CA</span>
+          <span>© {new Date().getFullYear()} Penthouse Advisors Inc. · Servicing Los Angeles County, CA</span>
           <span className="font-display tracking-widest text-gold">DO IT NOW.</span>
         </div>
       </div>
