@@ -131,7 +131,7 @@ export function LeadForm({
     setLoading(true);
     try {
       await send({ data: { source: title, serviceNeeded: serviceNeeded ?? data.serviceNeeded, fields: data } });
-      setSubmitted({ name: data.name, email: data.email });
+      setSubmitted({ name: data.name, email: data.email, phone: data.phone });
       setStage("calendly");
     } catch (err) {
       console.error(err);
