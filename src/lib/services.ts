@@ -9,6 +9,7 @@ import {
   Lock,
   Search,
   Plane,
+  Building2,
   Store,
   Home,
   FileSearch,
