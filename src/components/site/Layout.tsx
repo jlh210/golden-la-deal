@@ -268,6 +268,9 @@ function Footer() {
                 </li>
               ))}
           </ul>
+          <div className="mt-4">
+            <Link to="/agents" className="text-sm font-semibold text-gold hover:underline">Meet all agents →</Link>
+          </div>
         </div>
 
         <div>
