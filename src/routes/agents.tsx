@@ -24,7 +24,7 @@ export const Route = createFileRoute("/agents")({
   component: AgentsPage,
 });
 
-const agents = [
+export const agents = [
   {
     name: "Roschard Paticchio-Stein",
     title: "CEO · Owner · Business Agent",
