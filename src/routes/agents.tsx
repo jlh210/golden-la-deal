@@ -57,7 +57,7 @@ export const agents = [
     phone: "(310) 936-0854",
     phoneHref: "tel:+13109360854",
     bio: "Licensed Business Agent supporting restaurant sales, commercial sales, seller and buyer representation across Los Angeles County.",
-    focus: ["Restaurant sales", "Commercial Sales", "Seller and Buyer representation"],
+    focus: ["restaurant sales", "commercial sales", "seller and buyer representation"],
   },
 ];
 
