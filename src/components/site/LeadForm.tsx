@@ -36,7 +36,7 @@ export function LeadForm({
   const [stage, setStage] = useState<Stage>("form");
   const [loading, setLoading] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
-  const [submitted, setSubmitted] = useState<{ name: string; email: string } | null>(null);
+  const [submitted, setSubmitted] = useState<{ name: string; email: string; phone: string } | null>(null);
   const [embedReady, setEmbedReady] = useState(false);
   const calendlyRef = useRef<HTMLDivElement>(null);
 
@@ -131,7 +131,7 @@ export function LeadForm({
     setLoading(true);
     try {
       await send({ data: { source: title, serviceNeeded: serviceNeeded ?? data.serviceNeeded, fields: data } });
-      setSubmitted({ name: data.name, email: data.email });
+      setSubmitted({ name: data.name, email: data.email, phone: data.phone });
       setStage("calendly");
     } catch (err) {
       console.error(err);
@@ -160,7 +160,7 @@ export function LeadForm({
   }
 
   if (stage === "calendly" && submitted) {
-    const prefillUrl = `${CALENDLY_URL}?hide_gdpr_banner=1&name=${encodeURIComponent(submitted.name)}&email=${encodeURIComponent(submitted.email)}`;
+    const prefillUrl = `${CALENDLY_URL}?hide_gdpr_banner=1&name=${encodeURIComponent(submitted.name)}&email=${encodeURIComponent(submitted.email)}&a1=${encodeURIComponent(submitted.phone)}&phone_number=${encodeURIComponent(submitted.phone)}`;
     return (
       <div className="rounded-2xl border border-gold/40 bg-card p-7 md:p-10 shadow-elegant animate-in fade-in slide-in-from-bottom-2 duration-500">
         <div className="text-center">
