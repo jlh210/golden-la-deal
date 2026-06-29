@@ -1,5 +1,3 @@
-import { useEffect, useRef } from "react";
-
 type Props = {
   coords: [number, number];
   title: string;
@@ -7,74 +5,22 @@ type Props = {
   zoom?: number;
 };
 
-export function ListingLocationMap({ coords, title, location, zoom = 13 }: Props) {
-  const containerRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    let cancelled = false;
-    let map: import("leaflet").Map | null = null;
-
-    (async () => {
-      const L = (await import("leaflet")).default;
-      if (cancelled || !containerRef.current) return;
-
-      map = L.map(containerRef.current, {
-        scrollWheelZoom: true,
-        zoomControl: true,
-        dragging: true,
-        doubleClickZoom: true,
-        touchZoom: true,
-        boxZoom: true,
-        attributionControl: false,
-        minZoom: 8,
-      }).setView(coords, zoom);
-
-      L.tileLayer(
-        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-        { subdomains: "abcd", maxZoom: 20, minZoom: 8 }
-      ).addTo(map);
-
-      const pinIcon = L.divIcon({
-        className: "penthouse-pin",
-        html: `<span class="ph-pin-dot"></span><span class="ph-pin-pulse"></span>`,
-        iconSize: [22, 22],
-        iconAnchor: [11, 11],
-      });
-
-      L.marker(coords, { icon: pinIcon })
-        .addTo(map)
-        .bindTooltip(`<strong>${escapeHtml(title)}</strong><br/>${escapeHtml(location)}`, {
-          direction: "top",
-          offset: [0, -10],
-          className: "ph-mini-tooltip",
-        });
-
-      setTimeout(() => map?.invalidateSize(), 150);
-    })();
-
-    return () => {
-      cancelled = true;
-      if (map) {
-        map.remove();
-        map = null;
-      }
-    };
-  }, [coords, title, location, zoom]);
+export function ListingLocationMap({ coords, title, location, zoom = 16 }: Props) {
+  const [lat, lng] = coords;
+  const src = `https://www.google.com/maps?q=${lat},${lng}&z=${zoom}&output=embed`;
 
   return (
-    <div
-      ref={containerRef}
-      className="h-48 w-full rounded-xl border border-gold/40 overflow-hidden shadow-elegant"
-      aria-label={`Map showing ${title} at ${location}`}
-    />
+    <div className="h-48 w-full rounded-xl border border-gold/40 overflow-hidden shadow-elegant bg-card">
+      <iframe
+        title={`Map showing ${title} at ${location}`}
+        src={src}
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        allowFullScreen
+      />
+    </div>
   );
-}
-
-function escapeHtml(s: string) {
-  return s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
 }
