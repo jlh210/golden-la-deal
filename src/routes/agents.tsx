@@ -48,7 +48,7 @@ export const agents = [
     phone: "(310) 432-3014",
     phoneHref: "tel:+13104323014",
     bio: "Licensed Business Agent supporting restaurant sales, commercial sales, seller and buyer representation across Los Angeles County.",
-    focus: ["Restaurant sales", "Commercial Sales", "Seller and Buyer representation"],
+    focus: ["restaurant sales", "commercial sales", "seller and buyer representation"],
   },
   {
     name: "Jeremie Campbell",
