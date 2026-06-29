@@ -34,6 +34,12 @@ function SearchDoorKnockingPage() {
         subtitle="$3,775 — good for one year or until a restaurant location is leased. We locate, negotiate, and permit the space so you can focus on opening."
       />
 
+      <section className="container-x py-10 md:py-14 border-b border-border">
+        <p className="max-w-2xl text-muted-foreground leading-relaxed">
+          Most of the best LA restaurant deals never get listed. Operators sell quietly, landlords push deals to a short list, and privately held businesses transfer hand-to-hand. Tell us what you're hunting - we'll find it.
+        </p>
+      </section>
+
       <section className="container-x py-12 md:py-20 grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-start">
         <div className="rounded-2xl border border-border bg-card p-8 shadow-elegant">
           <div className="grid h-12 w-12 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30">
