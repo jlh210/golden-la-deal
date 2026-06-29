@@ -39,7 +39,7 @@ export const agents = [
     title: "CFO · Broker of Record",
     dre: "DRE #02332697",
     bio: "Broker of Record and head of finance. Rosanna is responsible for compliance, trust accounting, and licensure oversight across the firm's brokerage and ABC licensing activity.",
-    focus: ["Broker of Record", "Compliance", "residential buying/selling"],
+    focus: ["broker of record", "compliance", "residential buying/selling"],
   },
   {
     name: "Jamal Ali Joseph",
@@ -48,7 +48,7 @@ export const agents = [
     phone: "(310) 432-3014",
     phoneHref: "tel:+13104323014",
     bio: "Licensed Business Agent supporting restaurant sales, commercial sales, seller and buyer representation across Los Angeles County.",
-    focus: ["Restaurant sales", "Commercial Sales", "Seller and Buyer representation"],
+    focus: ["restaurant sales", "commercial sales", "seller and buyer representation"],
   },
   {
     name: "Jeremie Campbell",
@@ -57,7 +57,7 @@ export const agents = [
     phone: "(310) 936-0854",
     phoneHref: "tel:+13109360854",
     bio: "Licensed Business Agent supporting restaurant sales, commercial sales, seller and buyer representation across Los Angeles County.",
-    focus: ["Restaurant sales", "Commercial Sales", "Seller and Buyer representation"],
+    focus: ["restaurant sales", "commercial sales", "seller and buyer representation"],
   },
 ];
 
