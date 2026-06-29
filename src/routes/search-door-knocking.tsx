@@ -11,13 +11,13 @@ export const Route = createFileRoute("/search-door-knocking")({
       {
         name: "description",
         content:
-          "Restaurant door-knocking off-market campaign. We locate vacant, equipped second-generation restaurant spaces, negotiate the lease, and handle health department plan-check for $3,775.",
+          "Restaurant door-knocking off-market campaign. We locate vacant, equipped second-generation restaurant spaces, negotiate the lease, and handle health department plan-check.",
       },
       { property: "og:title", content: "Search Off-Market Restaurant - Penthouse Advisors" },
       {
         property: "og:description",
         content:
-          "Door-knocking off-market campaign for restaurant operators. $3,775 good for one year or until a location is leased.",
+          "Door-knocking off-market campaign for restaurant operators. We locate the space, negotiate lease terms, and handle permitting so you can focus on opening.",
       },
     ],
   }),
