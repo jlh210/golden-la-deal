@@ -48,7 +48,7 @@ export const submitLead = createServerFn({ method: "POST" })
       "New Lead",
       f.timeline ?? "",
       f.financing ?? "",
-      new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles" }),
+      new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles" }).replace(", ", " - "),
       f.message ?? f.notes ?? "",
     ];
 
