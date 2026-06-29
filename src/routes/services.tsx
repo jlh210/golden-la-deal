@@ -19,7 +19,9 @@ export const Route = createFileRoute("/services")({
         property: "og:description",
         content: "Full-service restaurant advisory for Los Angeles County operators.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/services" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/services" }],
   }),
   component: ServicesPage,
 });

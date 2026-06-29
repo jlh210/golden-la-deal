@@ -22,7 +22,9 @@ export const Route = createFileRoute("/contact")({
         property: "og:description",
         content: "Book a consultation with LA's restaurant experts.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/contact" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/contact" }],
   }),
   component: ContactPage,
 });

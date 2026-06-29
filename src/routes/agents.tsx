@@ -19,7 +19,9 @@ export const Route = createFileRoute("/agents")({
         content:
           "Principal-led restaurant brokerage and advisory team serving Los Angeles County.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/agents" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/agents" }],
   }),
   component: AgentsPage,
 });

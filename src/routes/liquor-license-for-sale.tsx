@@ -18,7 +18,9 @@ export const Route = createFileRoute("/liquor-license-for-sale")({
         property: "og:description",
         content: "Active California ABC liquor licenses available for transfer.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/liquor-license-for-sale" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/liquor-license-for-sale" }],
   }),
   component: LiquorLicenseForSale,
 });

@@ -19,7 +19,9 @@ export const Route = createFileRoute("/e2-visa-europe")({
         content:
           "E-2 investor visa restaurant acquisitions for European entrepreneurs. Live and work in Los Angeles County through a qualifying US business investment.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/e2-visa-europe" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/e2-visa-europe" }],
   }),
   component: E2Page,
 });

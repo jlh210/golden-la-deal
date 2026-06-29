@@ -22,7 +22,9 @@ export const Route = createFileRoute("/")({
         property: "og:description",
         content: "Buy. Sell. License. Rescue. A modern, full-service LA restaurant advisory firm.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com" }],
 
   }),
   component: HomePage,

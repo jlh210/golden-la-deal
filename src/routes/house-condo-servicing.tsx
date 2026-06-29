@@ -19,7 +19,9 @@ export const Route = createFileRoute("/house-condo-servicing")({
         content:
           "Sell your house or condo with a disciplined, professional showing process. Inquire for a consultation.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/house-condo-servicing" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/house-condo-servicing" }],
   }),
   component: HouseCondoServicingPage,
 });

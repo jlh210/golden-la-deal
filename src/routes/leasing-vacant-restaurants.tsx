@@ -19,7 +19,9 @@ export const Route = createFileRoute("/leasing-vacant-restaurants")({
         content:
           "No-fee representation for vacant, equipped, second-generation restaurant leases. Call 310-663-3521.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/leasing-vacant-restaurants" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/leasing-vacant-restaurants" }],
   }),
   component: LeasingVacantRestaurantsPage,
 });

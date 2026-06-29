@@ -18,7 +18,9 @@ export const Route = createFileRoute("/health-permitting")({
         property: "og:description",
         content: "$3,700 flat. Blueprints, plan check, stamps, permit. Good 1 year.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/health-permitting" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/health-permitting" }],
   }),
   component: PermittingPage,
 });

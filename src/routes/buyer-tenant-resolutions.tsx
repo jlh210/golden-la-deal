@@ -18,7 +18,9 @@ export const Route = createFileRoute("/buyer-tenant-resolutions")({
         property: "og:description",
         content: "Stuck mid-deal? We resolve restaurant buyer and tenant dilemmas fast.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/buyer-tenant-resolutions" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/buyer-tenant-resolutions" }],
   }),
   component: ResolutionsPage,
 });

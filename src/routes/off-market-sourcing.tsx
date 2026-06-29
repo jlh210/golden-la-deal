@@ -21,7 +21,9 @@ export const Route = createFileRoute("/off-market-sourcing")({
         property: "og:description",
         content: "Source LA restaurants and businesses that never hit the open market.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/off-market-sourcing" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/off-market-sourcing" }],
   }),
   component: OffMarketPage,
 });

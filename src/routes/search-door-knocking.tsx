@@ -19,7 +19,9 @@ export const Route = createFileRoute("/search-door-knocking")({
         content:
           "Door-knocking off-market campaign for restaurant operators. We locate the space, negotiate lease terms, and handle permitting so you can focus on opening.",
       },
+      { property: "og:url", content: "https://www.penthouseadvisors.com/search-door-knocking" },
     ],
+    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/search-door-knocking" }],
   }),
   component: SearchDoorKnockingPage,
 });
