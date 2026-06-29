@@ -30,7 +30,7 @@ export function ListingLocationMap({ coords, title, location, zoom = 13 }: Props
       }).setView(coords, zoom);
 
       L.tileLayer(
-        "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
         { subdomains: "abcd", maxZoom: 20, minZoom: 8 }
       ).addTo(map);
 
