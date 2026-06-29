@@ -166,7 +166,7 @@ export const listings: Listing[] = [
     type: "Business Sale",
     title: "New Lease — Second-Generation Equipped Restaurant",
     location: "2408 Wilshire Blvd, Santa Monica, CA",
-    coords: [34.0380987, -118.4748954],
+    coords: [34.0329, -118.4842],
     price: "$10,000 / month",
     priceNote: "New lease · Negotiable",
     leaseType: "Stand-alone building · New lease",
