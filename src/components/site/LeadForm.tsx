@@ -36,7 +36,7 @@ export function LeadForm({
   const [stage, setStage] = useState<Stage>("form");
   const [loading, setLoading] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
-  const [submitted, setSubmitted] = useState<{ name: string; email: string } | null>(null);
+  const [submitted, setSubmitted] = useState<{ name: string; email: string; phone: string } | null>(null);
   const [embedReady, setEmbedReady] = useState(false);
   const calendlyRef = useRef<HTMLDivElement>(null);
 
