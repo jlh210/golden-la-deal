@@ -188,12 +188,6 @@ function ListingsPage() {
             we'll source it off-market.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <Link
-              to="/off-market-sourcing"
-              className="inline-flex items-center gap-2 rounded-md bg-gold-gradient px-6 py-3 text-sm font-bold text-charcoal-deep shadow-gold"
-            >
-              Off-Market Sourcing <ArrowRight className="h-4 w-4" />
-            </Link>
             <a
               href={PHONE_HREF}
               className="inline-flex items-center gap-2 rounded-md border border-gold/40 px-6 py-3 text-sm font-semibold hover:bg-gold/10"
