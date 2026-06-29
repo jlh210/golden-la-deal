@@ -76,8 +76,7 @@ function OffMarketPage() {
     <SiteLayout>
       <PageHero
         eyebrow="Off-Market Sourcing"
-        title="The deals that never"
-        accent="hit the market."
+        title="The deals that never hit the market."
         subtitle="Most of the best LA restaurant deals never get listed. Operators sell quietly, landlords push deals to a short list, and privately held businesses transfer hand-to-hand. Tell us what you're hunting - we'll find it."
       />
 

@@ -87,14 +87,6 @@ export const services: Service[] = [
     featured: true,
   },
   {
-    slug: "off-market",
-    to: "/off-market-sourcing",
-    title: "Off-Market Restaurants & Businesses",
-    short: "Source restaurants and businesses that never hit the open market.",
-    icon: Search,
-    featured: true,
-  },
-  {
     slug: "door-knocking",
     to: "/search-door-knocking",
     title: "Search Off-Market Restaurant",
@@ -174,7 +166,7 @@ export const serviceTopics = [
   "Lease assignment / rent abatement",
   "Pre-purchase business investigation",
   "Buyer / tenant resolution (deal stuck)",
-  "Off-market sourcing",
+  
   "Search off-market restaurant",
   "Leasing vacant restaurant",
   "E-2 visa (Europe)",
