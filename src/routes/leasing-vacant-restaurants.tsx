@@ -111,6 +111,7 @@ function LeasingVacantRestaurantsPage() {
           serviceNeeded="Leasing vacant restaurant"
           title="Lease a Vacant Restaurant"
           subtitle="Tell us about the space or your search. We respond same business day."
+          messagePlaceholder="Address of my current restaurant"
         />
       </section>
     </SiteLayout>

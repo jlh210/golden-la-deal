@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
-import { Plane, Check, ArrowRight, Phone } from "lucide-react";
+import { Plane, Check } from "lucide-react";
 import { SiteLayout, PHONE, PHONE_HREF, EMAIL, EMAIL_HREF, HOURS } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { LeadForm } from "@/components/site/LeadForm";
@@ -367,6 +366,7 @@ function E2Page() {
           serviceNeeded="E-2 visa (Europe)"
           title="E-2 Visa Consultation"
           subtitle="Tell us about your home country and the restaurant opportunity. We respond same business day."
+          messagePlaceholder="Address of my current restaurant"
         />
       </section>
     </SiteLayout>
