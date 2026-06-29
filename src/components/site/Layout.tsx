@@ -24,7 +24,6 @@ const primaryNav = [
 
 const servicesDropdown = [
   { to: "/restaurants-for-sale", label: "Restaurants For Sale" },
-  { to: "/second-generation-restaurants", label: "Second Generation Restaurants" },
   { to: "/alcohol-licensing", label: "Alcohol Licensing" },
   { to: "/liquor-license-for-sale", label: "Liquor License For Sale" },
   { to: "/health-inspection", label: "Health Dept Inspection" },
@@ -51,7 +50,7 @@ const fullNav = [
   { to: "/alcohol-licensing", label: "Licensing" },
   { to: "/contact", label: "Work With Us" },
   { to: "/agents", label: "Agents" },
-  { to: "/second-generation-restaurants", label: "Second Generation Restaurants" },
+  
   { to: "/liquor-license-for-sale", label: "Liquor License For Sale" },
   { to: "/health-inspection", label: "Health Dept Inspection" },
   { to: "/health-permitting", label: "Health Permitting & Plan Check" },
@@ -261,7 +260,7 @@ function Footer() {
           <h4 className="text-sm font-semibold text-gold uppercase tracking-wider">Services</h4>
           <ul className="mt-4 space-y-2 text-sm">
             <li><Link to="/restaurants-for-sale" className="hover:text-gold">Restaurants For Sale</Link></li>
-            <li><Link to="/second-generation-restaurants" className="hover:text-gold">2nd Generation Spaces</Link></li>
+            
             <li><Link to="/alcohol-licensing" className="hover:text-gold">Alcohol Licensing</Link></li>
             <li><Link to="/liquor-license-for-sale" className="hover:text-gold">Liquor License For Sale</Link></li>
             <li><Link to="/health-inspection" className="hover:text-gold">Health Inspection & Permitting</Link></li>
