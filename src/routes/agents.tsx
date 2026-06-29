@@ -33,13 +33,6 @@ const agents = [
     focus: ["Restaurant brokerage", "Off-market sourcing", "Residential listings"],
   },
   {
-    name: "Richard Stein",
-    title: "COO · Business Advisor · Owner",
-    dre: null,
-    bio: "As COO, Richard turns the firm’s strategy into everyday results, making sure execution across the company matches the direction set by leadership.",
-    focus: ["Deal structuring", "Distressed advisory", "Vendor coordination"],
-  },
-  {
     name: "Rosanna Paticchio",
     title: "CFO · Broker of Record",
     dre: "DRE #02332697",
