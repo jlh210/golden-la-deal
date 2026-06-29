@@ -12,7 +12,6 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as VerminInspectionsRouteImport } from './routes/vermin-inspections'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
-import { Route as SecondGenerationRestaurantsRouteImport } from './routes/second-generation-restaurants'
 import { Route as SearchDoorKnockingRouteImport } from './routes/search-door-knocking'
 import { Route as RestaurantsForSaleRouteImport } from './routes/restaurants-for-sale'
 import { Route as ResidentialRouteImport } from './routes/residential'
@@ -51,12 +50,6 @@ const ServicesRoute = ServicesRouteImport.update({
   path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SecondGenerationRestaurantsRoute =
-  SecondGenerationRestaurantsRouteImport.update({
-    id: '/second-generation-restaurants',
-    path: '/second-generation-restaurants',
-    getParentRoute: () => rootRouteImport,
-  } as any)
 const SearchDoorKnockingRoute = SearchDoorKnockingRouteImport.update({
   id: '/search-door-knocking',
   path: '/search-door-knocking',
@@ -191,7 +184,6 @@ export interface FileRoutesByFullPath {
   '/residential': typeof ResidentialRoute
   '/restaurants-for-sale': typeof RestaurantsForSaleRouteWithChildren
   '/search-door-knocking': typeof SearchDoorKnockingRoute
-  '/second-generation-restaurants': typeof SecondGenerationRestaurantsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vermin-inspections': typeof VerminInspectionsRoute
@@ -218,7 +210,6 @@ export interface FileRoutesByTo {
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
   '/search-door-knocking': typeof SearchDoorKnockingRoute
-  '/second-generation-restaurants': typeof SecondGenerationRestaurantsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vermin-inspections': typeof VerminInspectionsRoute
@@ -247,7 +238,6 @@ export interface FileRoutesById {
   '/residential': typeof ResidentialRoute
   '/restaurants-for-sale': typeof RestaurantsForSaleRouteWithChildren
   '/search-door-knocking': typeof SearchDoorKnockingRoute
-  '/second-generation-restaurants': typeof SecondGenerationRestaurantsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vermin-inspections': typeof VerminInspectionsRoute
@@ -277,7 +267,6 @@ export interface FileRouteTypes {
     | '/residential'
     | '/restaurants-for-sale'
     | '/search-door-knocking'
-    | '/second-generation-restaurants'
     | '/services'
     | '/sitemap.xml'
     | '/vermin-inspections'
@@ -304,7 +293,6 @@ export interface FileRouteTypes {
     | '/off-market-sourcing'
     | '/residential'
     | '/search-door-knocking'
-    | '/second-generation-restaurants'
     | '/services'
     | '/sitemap.xml'
     | '/vermin-inspections'
@@ -332,7 +320,6 @@ export interface FileRouteTypes {
     | '/residential'
     | '/restaurants-for-sale'
     | '/search-door-knocking'
-    | '/second-generation-restaurants'
     | '/services'
     | '/sitemap.xml'
     | '/vermin-inspections'
@@ -361,7 +348,6 @@ export interface RootRouteChildren {
   ResidentialRoute: typeof ResidentialRoute
   RestaurantsForSaleRoute: typeof RestaurantsForSaleRouteWithChildren
   SearchDoorKnockingRoute: typeof SearchDoorKnockingRoute
-  SecondGenerationRestaurantsRoute: typeof SecondGenerationRestaurantsRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   VerminInspectionsRoute: typeof VerminInspectionsRoute
@@ -388,13 +374,6 @@ declare module '@tanstack/react-router' {
       path: '/services'
       fullPath: '/services'
       preLoaderRoute: typeof ServicesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/second-generation-restaurants': {
-      id: '/second-generation-restaurants'
-      path: '/second-generation-restaurants'
-      fullPath: '/second-generation-restaurants'
-      preLoaderRoute: typeof SecondGenerationRestaurantsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/search-door-knocking': {
@@ -588,7 +567,6 @@ const rootRouteChildren: RootRouteChildren = {
   ResidentialRoute: ResidentialRoute,
   RestaurantsForSaleRoute: RestaurantsForSaleRouteWithChildren,
   SearchDoorKnockingRoute: SearchDoorKnockingRoute,
-  SecondGenerationRestaurantsRoute: SecondGenerationRestaurantsRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   VerminInspectionsRoute: VerminInspectionsRoute,
@@ -596,13 +574,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

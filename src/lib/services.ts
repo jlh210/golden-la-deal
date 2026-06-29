@@ -109,14 +109,6 @@ export const services: Service[] = [
     icon: Plane,
   },
   {
-    slug: "second-generation",
-    to: "/second-generation-restaurants",
-    title: "Second Generation Restaurants",
-    short: "Equipped 2nd-gen restaurant spaces - $0 key money, lawful terms.",
-    icon: Building2,
-    featured: true,
-  },
-  {
     slug: "hardware-store",
     to: "/hardware-store-for-sale",
     title: "Hardware Store For Sale",
