@@ -104,8 +104,9 @@ function HomePage() {
               className="mt-8 max-w-lg text-base sm:text-lg leading-relaxed text-charcoal/75 animate-fade-in"
               style={{ animationDelay: "320ms", animationFillMode: "both" }}
             >
-              Serving Los Angeles County with expert restaurant brokerage, licensing, leasing,
-              permitting, consulting, and transaction management—from first opportunity to final closing.
+              Full-service restaurant brokerage, licensing, leasing, permitting,
+              consulting, and transaction management for Los Angeles County—from first
+              opportunity to final closing.
             </p>
 
             <div
