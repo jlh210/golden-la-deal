@@ -115,20 +115,6 @@ export const services: Service[] = [
     icon: DoorOpen,
   },
   {
-    slug: "residential",
-    to: "/residential",
-    title: "Residential Requests",
-    short: "Select residential listings handled by Roschard Paticchio-Stein.",
-    icon: Home,
-  },
-  {
-    slug: "house-condo-servicing",
-    to: "/house-condo-servicing",
-    title: "House / Condo Servicing",
-    short: "Sell your house or condo with our disciplined, confidential showing process.",
-    icon: Building2,
-  },
-  {
     slug: "business-investigations",
     to: "/business-investigations",
     title: "Restaurant Business Investigations",

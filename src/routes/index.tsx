@@ -11,21 +11,23 @@ import { useEffect, useState } from "react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Penthouse Advisors - LA Restaurant Brokerage. Buy. Sell. License. Rescue." },
+      { title: "LA County's Premier Restaurant Advisory Firm | Penthouse Advisors" },
       {
         name: "description",
         content:
-          "LA County's sophisticated, full-service restaurant brokerage and advisory firm. Restaurant real estate, licensing, permits, leases, escrows, and distressed-asset resolution. Call 310-663-3521.",
+          "Penthouse Advisors is a full-service restaurant brokerage and advisory firm serving Los Angeles County. Restaurant sales, acquisitions, leasing, licensing, permitting, and consulting.",
       },
-      { property: "og:title", content: "Penthouse Advisors - LA Restaurant Experts" },
+      { property: "og:title", content: "LA County's Premier Restaurant Advisory Firm | Penthouse Advisors" },
       {
         property: "og:description",
-        content: "Buy. Sell. License. Rescue. A modern, full-service LA restaurant advisory firm.",
+        content:
+          "Full-service restaurant brokerage and advisory firm serving Los Angeles County. Sales, acquisitions, leasing, licensing, permitting, consulting.",
       },
       { property: "og:url", content: "https://www.penthouseadvisors.com" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com" }],
-
   }),
   component: HomePage,
 });
