@@ -86,7 +86,7 @@ function HomePage() {
               style={{ animationDelay: "0ms", animationFillMode: "both" }}
             >
               <span className="h-px w-8 bg-gold" />
-              Serving Los Angeles County
+              Full Service Los Angeles Restaurant Brokerage Firm
             </div>
 
             <h1
