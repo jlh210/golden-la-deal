@@ -12,13 +12,19 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as VerminInspectionsRouteImport } from './routes/vermin-inspections'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as SellYourRestaurantRouteImport } from './routes/sell-your-restaurant'
 import { Route as SearchDoorKnockingRouteImport } from './routes/search-door-knocking'
+import { Route as SamplePageRouteImport } from './routes/sample-page'
 import { Route as RestaurantsForSaleRouteImport } from './routes/restaurants-for-sale'
+import { Route as RestaurantLeasingRouteImport } from './routes/restaurant-leasing'
+import { Route as RestaurantConsultingRouteImport } from './routes/restaurant-consulting'
 import { Route as ResidentialRouteImport } from './routes/residential'
 import { Route as OffMarketSourcingRouteImport } from './routes/off-market-sourcing'
 import { Route as LiquorLicenseForSaleRouteImport } from './routes/liquor-license-for-sale'
+import { Route as LicensingAndPermitsRouteImport } from './routes/licensing-and-permits'
 import { Route as LeasingVacantRestaurantsRouteImport } from './routes/leasing-vacant-restaurants'
 import { Route as HouseCondoServicingRouteImport } from './routes/house-condo-servicing'
+import { Route as HelloWorldRouteImport } from './routes/hello-world'
 import { Route as HealthPermittingRouteImport } from './routes/health-permitting'
 import { Route as HealthInspectionRouteImport } from './routes/health-inspection'
 import { Route as HardwareStoreForSaleRouteImport } from './routes/hardware-store-for-sale'
@@ -26,6 +32,7 @@ import { Route as GrandfatherProtectionRouteImport } from './routes/grandfather-
 import { Route as E2VisaEuropeRouteImport } from './routes/e2-visa-europe'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BuyerTenantResolutionsRouteImport } from './routes/buyer-tenant-resolutions'
+import { Route as BuyARestaurantRouteImport } from './routes/buy-a-restaurant'
 import { Route as BusinessInvestigationsRouteImport } from './routes/business-investigations'
 import { Route as AssignmentsRentAbatementRouteImport } from './routes/assignments-rent-abatement'
 import { Route as AlcoholLicensingRouteImport } from './routes/alcohol-licensing'
@@ -50,14 +57,34 @@ const ServicesRoute = ServicesRouteImport.update({
   path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SellYourRestaurantRoute = SellYourRestaurantRouteImport.update({
+  id: '/sell-your-restaurant',
+  path: '/sell-your-restaurant',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SearchDoorKnockingRoute = SearchDoorKnockingRouteImport.update({
   id: '/search-door-knocking',
   path: '/search-door-knocking',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SamplePageRoute = SamplePageRouteImport.update({
+  id: '/sample-page',
+  path: '/sample-page',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RestaurantsForSaleRoute = RestaurantsForSaleRouteImport.update({
   id: '/restaurants-for-sale',
   path: '/restaurants-for-sale',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RestaurantLeasingRoute = RestaurantLeasingRouteImport.update({
+  id: '/restaurant-leasing',
+  path: '/restaurant-leasing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RestaurantConsultingRoute = RestaurantConsultingRouteImport.update({
+  id: '/restaurant-consulting',
+  path: '/restaurant-consulting',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ResidentialRoute = ResidentialRouteImport.update({
@@ -75,6 +102,11 @@ const LiquorLicenseForSaleRoute = LiquorLicenseForSaleRouteImport.update({
   path: '/liquor-license-for-sale',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LicensingAndPermitsRoute = LicensingAndPermitsRouteImport.update({
+  id: '/licensing-and-permits',
+  path: '/licensing-and-permits',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LeasingVacantRestaurantsRoute =
   LeasingVacantRestaurantsRouteImport.update({
     id: '/leasing-vacant-restaurants',
@@ -84,6 +116,11 @@ const LeasingVacantRestaurantsRoute =
 const HouseCondoServicingRoute = HouseCondoServicingRouteImport.update({
   id: '/house-condo-servicing',
   path: '/house-condo-servicing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HelloWorldRoute = HelloWorldRouteImport.update({
+  id: '/hello-world',
+  path: '/hello-world',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HealthPermittingRoute = HealthPermittingRouteImport.update({
@@ -119,6 +156,11 @@ const ContactRoute = ContactRouteImport.update({
 const BuyerTenantResolutionsRoute = BuyerTenantResolutionsRouteImport.update({
   id: '/buyer-tenant-resolutions',
   path: '/buyer-tenant-resolutions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BuyARestaurantRoute = BuyARestaurantRouteImport.update({
+  id: '/buy-a-restaurant',
+  path: '/buy-a-restaurant',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BusinessInvestigationsRoute = BusinessInvestigationsRouteImport.update({
@@ -170,6 +212,7 @@ export interface FileRoutesByFullPath {
   '/alcohol-licensing': typeof AlcoholLicensingRoute
   '/assignments-rent-abatement': typeof AssignmentsRentAbatementRoute
   '/business-investigations': typeof BusinessInvestigationsRoute
+  '/buy-a-restaurant': typeof BuyARestaurantRoute
   '/buyer-tenant-resolutions': typeof BuyerTenantResolutionsRoute
   '/contact': typeof ContactRoute
   '/e2-visa-europe': typeof E2VisaEuropeRoute
@@ -177,13 +220,19 @@ export interface FileRoutesByFullPath {
   '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
   '/health-inspection': typeof HealthInspectionRoute
   '/health-permitting': typeof HealthPermittingRoute
+  '/hello-world': typeof HelloWorldRoute
   '/house-condo-servicing': typeof HouseCondoServicingRoute
   '/leasing-vacant-restaurants': typeof LeasingVacantRestaurantsRoute
+  '/licensing-and-permits': typeof LicensingAndPermitsRoute
   '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
+  '/restaurant-consulting': typeof RestaurantConsultingRoute
+  '/restaurant-leasing': typeof RestaurantLeasingRoute
   '/restaurants-for-sale': typeof RestaurantsForSaleRouteWithChildren
+  '/sample-page': typeof SamplePageRoute
   '/search-door-knocking': typeof SearchDoorKnockingRoute
+  '/sell-your-restaurant': typeof SellYourRestaurantRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vermin-inspections': typeof VerminInspectionsRoute
@@ -197,6 +246,7 @@ export interface FileRoutesByTo {
   '/alcohol-licensing': typeof AlcoholLicensingRoute
   '/assignments-rent-abatement': typeof AssignmentsRentAbatementRoute
   '/business-investigations': typeof BusinessInvestigationsRoute
+  '/buy-a-restaurant': typeof BuyARestaurantRoute
   '/buyer-tenant-resolutions': typeof BuyerTenantResolutionsRoute
   '/contact': typeof ContactRoute
   '/e2-visa-europe': typeof E2VisaEuropeRoute
@@ -204,12 +254,18 @@ export interface FileRoutesByTo {
   '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
   '/health-inspection': typeof HealthInspectionRoute
   '/health-permitting': typeof HealthPermittingRoute
+  '/hello-world': typeof HelloWorldRoute
   '/house-condo-servicing': typeof HouseCondoServicingRoute
   '/leasing-vacant-restaurants': typeof LeasingVacantRestaurantsRoute
+  '/licensing-and-permits': typeof LicensingAndPermitsRoute
   '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
+  '/restaurant-consulting': typeof RestaurantConsultingRoute
+  '/restaurant-leasing': typeof RestaurantLeasingRoute
+  '/sample-page': typeof SamplePageRoute
   '/search-door-knocking': typeof SearchDoorKnockingRoute
+  '/sell-your-restaurant': typeof SellYourRestaurantRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vermin-inspections': typeof VerminInspectionsRoute
@@ -224,6 +280,7 @@ export interface FileRoutesById {
   '/alcohol-licensing': typeof AlcoholLicensingRoute
   '/assignments-rent-abatement': typeof AssignmentsRentAbatementRoute
   '/business-investigations': typeof BusinessInvestigationsRoute
+  '/buy-a-restaurant': typeof BuyARestaurantRoute
   '/buyer-tenant-resolutions': typeof BuyerTenantResolutionsRoute
   '/contact': typeof ContactRoute
   '/e2-visa-europe': typeof E2VisaEuropeRoute
@@ -231,13 +288,19 @@ export interface FileRoutesById {
   '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
   '/health-inspection': typeof HealthInspectionRoute
   '/health-permitting': typeof HealthPermittingRoute
+  '/hello-world': typeof HelloWorldRoute
   '/house-condo-servicing': typeof HouseCondoServicingRoute
   '/leasing-vacant-restaurants': typeof LeasingVacantRestaurantsRoute
+  '/licensing-and-permits': typeof LicensingAndPermitsRoute
   '/liquor-license-for-sale': typeof LiquorLicenseForSaleRoute
   '/off-market-sourcing': typeof OffMarketSourcingRoute
   '/residential': typeof ResidentialRoute
+  '/restaurant-consulting': typeof RestaurantConsultingRoute
+  '/restaurant-leasing': typeof RestaurantLeasingRoute
   '/restaurants-for-sale': typeof RestaurantsForSaleRouteWithChildren
+  '/sample-page': typeof SamplePageRoute
   '/search-door-knocking': typeof SearchDoorKnockingRoute
+  '/sell-your-restaurant': typeof SellYourRestaurantRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vermin-inspections': typeof VerminInspectionsRoute
@@ -253,6 +316,7 @@ export interface FileRouteTypes {
     | '/alcohol-licensing'
     | '/assignments-rent-abatement'
     | '/business-investigations'
+    | '/buy-a-restaurant'
     | '/buyer-tenant-resolutions'
     | '/contact'
     | '/e2-visa-europe'
@@ -260,13 +324,19 @@ export interface FileRouteTypes {
     | '/hardware-store-for-sale'
     | '/health-inspection'
     | '/health-permitting'
+    | '/hello-world'
     | '/house-condo-servicing'
     | '/leasing-vacant-restaurants'
+    | '/licensing-and-permits'
     | '/liquor-license-for-sale'
     | '/off-market-sourcing'
     | '/residential'
+    | '/restaurant-consulting'
+    | '/restaurant-leasing'
     | '/restaurants-for-sale'
+    | '/sample-page'
     | '/search-door-knocking'
+    | '/sell-your-restaurant'
     | '/services'
     | '/sitemap.xml'
     | '/vermin-inspections'
@@ -280,6 +350,7 @@ export interface FileRouteTypes {
     | '/alcohol-licensing'
     | '/assignments-rent-abatement'
     | '/business-investigations'
+    | '/buy-a-restaurant'
     | '/buyer-tenant-resolutions'
     | '/contact'
     | '/e2-visa-europe'
@@ -287,12 +358,18 @@ export interface FileRouteTypes {
     | '/hardware-store-for-sale'
     | '/health-inspection'
     | '/health-permitting'
+    | '/hello-world'
     | '/house-condo-servicing'
     | '/leasing-vacant-restaurants'
+    | '/licensing-and-permits'
     | '/liquor-license-for-sale'
     | '/off-market-sourcing'
     | '/residential'
+    | '/restaurant-consulting'
+    | '/restaurant-leasing'
+    | '/sample-page'
     | '/search-door-knocking'
+    | '/sell-your-restaurant'
     | '/services'
     | '/sitemap.xml'
     | '/vermin-inspections'
@@ -306,6 +383,7 @@ export interface FileRouteTypes {
     | '/alcohol-licensing'
     | '/assignments-rent-abatement'
     | '/business-investigations'
+    | '/buy-a-restaurant'
     | '/buyer-tenant-resolutions'
     | '/contact'
     | '/e2-visa-europe'
@@ -313,13 +391,19 @@ export interface FileRouteTypes {
     | '/hardware-store-for-sale'
     | '/health-inspection'
     | '/health-permitting'
+    | '/hello-world'
     | '/house-condo-servicing'
     | '/leasing-vacant-restaurants'
+    | '/licensing-and-permits'
     | '/liquor-license-for-sale'
     | '/off-market-sourcing'
     | '/residential'
+    | '/restaurant-consulting'
+    | '/restaurant-leasing'
     | '/restaurants-for-sale'
+    | '/sample-page'
     | '/search-door-knocking'
+    | '/sell-your-restaurant'
     | '/services'
     | '/sitemap.xml'
     | '/vermin-inspections'
@@ -334,6 +418,7 @@ export interface RootRouteChildren {
   AlcoholLicensingRoute: typeof AlcoholLicensingRoute
   AssignmentsRentAbatementRoute: typeof AssignmentsRentAbatementRoute
   BusinessInvestigationsRoute: typeof BusinessInvestigationsRoute
+  BuyARestaurantRoute: typeof BuyARestaurantRoute
   BuyerTenantResolutionsRoute: typeof BuyerTenantResolutionsRoute
   ContactRoute: typeof ContactRoute
   E2VisaEuropeRoute: typeof E2VisaEuropeRoute
@@ -341,13 +426,19 @@ export interface RootRouteChildren {
   HardwareStoreForSaleRoute: typeof HardwareStoreForSaleRoute
   HealthInspectionRoute: typeof HealthInspectionRoute
   HealthPermittingRoute: typeof HealthPermittingRoute
+  HelloWorldRoute: typeof HelloWorldRoute
   HouseCondoServicingRoute: typeof HouseCondoServicingRoute
   LeasingVacantRestaurantsRoute: typeof LeasingVacantRestaurantsRoute
+  LicensingAndPermitsRoute: typeof LicensingAndPermitsRoute
   LiquorLicenseForSaleRoute: typeof LiquorLicenseForSaleRoute
   OffMarketSourcingRoute: typeof OffMarketSourcingRoute
   ResidentialRoute: typeof ResidentialRoute
+  RestaurantConsultingRoute: typeof RestaurantConsultingRoute
+  RestaurantLeasingRoute: typeof RestaurantLeasingRoute
   RestaurantsForSaleRoute: typeof RestaurantsForSaleRouteWithChildren
+  SamplePageRoute: typeof SamplePageRoute
   SearchDoorKnockingRoute: typeof SearchDoorKnockingRoute
+  SellYourRestaurantRoute: typeof SellYourRestaurantRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   VerminInspectionsRoute: typeof VerminInspectionsRoute
@@ -376,6 +467,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sell-your-restaurant': {
+      id: '/sell-your-restaurant'
+      path: '/sell-your-restaurant'
+      fullPath: '/sell-your-restaurant'
+      preLoaderRoute: typeof SellYourRestaurantRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/search-door-knocking': {
       id: '/search-door-knocking'
       path: '/search-door-knocking'
@@ -383,11 +481,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SearchDoorKnockingRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sample-page': {
+      id: '/sample-page'
+      path: '/sample-page'
+      fullPath: '/sample-page'
+      preLoaderRoute: typeof SamplePageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/restaurants-for-sale': {
       id: '/restaurants-for-sale'
       path: '/restaurants-for-sale'
       fullPath: '/restaurants-for-sale'
       preLoaderRoute: typeof RestaurantsForSaleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/restaurant-leasing': {
+      id: '/restaurant-leasing'
+      path: '/restaurant-leasing'
+      fullPath: '/restaurant-leasing'
+      preLoaderRoute: typeof RestaurantLeasingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/restaurant-consulting': {
+      id: '/restaurant-consulting'
+      path: '/restaurant-consulting'
+      fullPath: '/restaurant-consulting'
+      preLoaderRoute: typeof RestaurantConsultingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/residential': {
@@ -411,6 +530,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LiquorLicenseForSaleRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/licensing-and-permits': {
+      id: '/licensing-and-permits'
+      path: '/licensing-and-permits'
+      fullPath: '/licensing-and-permits'
+      preLoaderRoute: typeof LicensingAndPermitsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/leasing-vacant-restaurants': {
       id: '/leasing-vacant-restaurants'
       path: '/leasing-vacant-restaurants'
@@ -423,6 +549,13 @@ declare module '@tanstack/react-router' {
       path: '/house-condo-servicing'
       fullPath: '/house-condo-servicing'
       preLoaderRoute: typeof HouseCondoServicingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hello-world': {
+      id: '/hello-world'
+      path: '/hello-world'
+      fullPath: '/hello-world'
+      preLoaderRoute: typeof HelloWorldRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/health-permitting': {
@@ -472,6 +605,13 @@ declare module '@tanstack/react-router' {
       path: '/buyer-tenant-resolutions'
       fullPath: '/buyer-tenant-resolutions'
       preLoaderRoute: typeof BuyerTenantResolutionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/buy-a-restaurant': {
+      id: '/buy-a-restaurant'
+      path: '/buy-a-restaurant'
+      fullPath: '/buy-a-restaurant'
+      preLoaderRoute: typeof BuyARestaurantRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/business-investigations': {
@@ -553,6 +693,7 @@ const rootRouteChildren: RootRouteChildren = {
   AlcoholLicensingRoute: AlcoholLicensingRoute,
   AssignmentsRentAbatementRoute: AssignmentsRentAbatementRoute,
   BusinessInvestigationsRoute: BusinessInvestigationsRoute,
+  BuyARestaurantRoute: BuyARestaurantRoute,
   BuyerTenantResolutionsRoute: BuyerTenantResolutionsRoute,
   ContactRoute: ContactRoute,
   E2VisaEuropeRoute: E2VisaEuropeRoute,
@@ -560,13 +701,19 @@ const rootRouteChildren: RootRouteChildren = {
   HardwareStoreForSaleRoute: HardwareStoreForSaleRoute,
   HealthInspectionRoute: HealthInspectionRoute,
   HealthPermittingRoute: HealthPermittingRoute,
+  HelloWorldRoute: HelloWorldRoute,
   HouseCondoServicingRoute: HouseCondoServicingRoute,
   LeasingVacantRestaurantsRoute: LeasingVacantRestaurantsRoute,
+  LicensingAndPermitsRoute: LicensingAndPermitsRoute,
   LiquorLicenseForSaleRoute: LiquorLicenseForSaleRoute,
   OffMarketSourcingRoute: OffMarketSourcingRoute,
   ResidentialRoute: ResidentialRoute,
+  RestaurantConsultingRoute: RestaurantConsultingRoute,
+  RestaurantLeasingRoute: RestaurantLeasingRoute,
   RestaurantsForSaleRoute: RestaurantsForSaleRouteWithChildren,
+  SamplePageRoute: SamplePageRoute,
   SearchDoorKnockingRoute: SearchDoorKnockingRoute,
+  SellYourRestaurantRoute: SellYourRestaurantRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   VerminInspectionsRoute: VerminInspectionsRoute,

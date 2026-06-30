@@ -14,44 +14,49 @@ const HOURS = "8:00am – 7:00pm · Mon–Sun";
 
 const primaryNav = [
   { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
   { to: "/services", label: "Services", hasDropdown: true },
   { to: "/restaurants-for-sale", label: "Listings" },
-  { to: "/alcohol-licensing", label: "Licensing" },
-  { to: "/contact", label: "Work With Us" },
-  { to: "/agents", label: "Agents" },
+  { to: "/buy-a-restaurant", label: "Buy" },
+  { to: "/sell-your-restaurant", label: "Sell" },
+  { to: "/about", label: "About" },
+  { to: "/contact", label: "Contact" },
 ] as const;
 
 
 const servicesDropdown = [
+  { to: "/buy-a-restaurant", label: "Buy a Restaurant" },
+  { to: "/sell-your-restaurant", label: "Sell Your Restaurant" },
   { to: "/restaurants-for-sale", label: "Restaurants For Sale" },
+  { to: "/restaurant-leasing", label: "Restaurant Leasing" },
+  { to: "/licensing-and-permits", label: "Licensing & Permits" },
+  { to: "/restaurant-consulting", label: "Restaurant Consulting" },
   { to: "/alcohol-licensing", label: "Alcohol Licensing" },
   { to: "/liquor-license-for-sale", label: "Liquor License For Sale" },
   { to: "/health-inspection", label: "Health Dept Inspection" },
-  { to: "/health-permitting", label: "Health Dept Permitting & Plan Check" },
-  { to: "/vermin-inspections", label: "Vermin Infestations" },
-  { to: "/grandfather-protection", label: "Grandfather Protection" },
+  { to: "/health-permitting", label: "Health Permitting & Plan Check" },
+  { to: "/leasing-vacant-restaurants", label: "Leasing Vacant Restaurants" },
   { to: "/assignments-rent-abatement", label: "Assignments & Rent Abatement" },
   { to: "/business-investigations", label: "Business Investigations" },
   { to: "/buyer-tenant-resolutions", label: "Buyer / Tenant Resolutions" },
-  
-  { to: "/search-door-knocking", label: "Search Off-Market Restaurant" },
+  { to: "/grandfather-protection", label: "Grandfather Protection" },
+  { to: "/vermin-inspections", label: "Vermin Inspections" },
+  { to: "/search-door-knocking", label: "Off-Market Door-Knocking" },
   { to: "/e2-visa-europe", label: "E-2 Visa (Europe)" },
-  { to: "/hardware-store-for-sale", label: "Hardware Store For Sale" },
-  { to: "/residential", label: "Residential Requests" },
-  { to: "/house-condo-servicing", label: "House / Condo Servicing" },
-  { to: "/leasing-vacant-restaurants", label: "Leasing Vacant Restaurants" },
 ];
 
 const fullNav = [
   { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
   { to: "/services", label: "All Services" },
-  { to: "/restaurants-for-sale", label: "Listings" },
-  { to: "/alcohol-licensing", label: "Licensing" },
-  { to: "/contact", label: "Work With Us" },
+  { to: "/buy-a-restaurant", label: "Buy a Restaurant" },
+  { to: "/sell-your-restaurant", label: "Sell Your Restaurant" },
+  { to: "/restaurants-for-sale", label: "Restaurant Listings" },
+  { to: "/restaurant-leasing", label: "Restaurant Leasing" },
+  { to: "/licensing-and-permits", label: "Licensing & Permits" },
+  { to: "/restaurant-consulting", label: "Restaurant Consulting" },
+  { to: "/about", label: "About" },
   { to: "/agents", label: "Agents" },
-  
+  { to: "/contact", label: "Contact / Book Consultation" },
+  { to: "/alcohol-licensing", label: "Alcohol Licensing" },
   { to: "/liquor-license-for-sale", label: "Liquor License For Sale" },
   { to: "/health-inspection", label: "Health Dept Inspection" },
   { to: "/health-permitting", label: "Health Permitting & Plan Check" },
@@ -60,12 +65,8 @@ const fullNav = [
   { to: "/assignments-rent-abatement", label: "Assignments & Rent Abatement" },
   { to: "/business-investigations", label: "Business Investigations" },
   { to: "/buyer-tenant-resolutions", label: "Buyer / Tenant Resolutions" },
-  
-  { to: "/search-door-knocking", label: "Search Off-Market Restaurant" },
+  { to: "/search-door-knocking", label: "Off-Market Door-Knocking" },
   { to: "/e2-visa-europe", label: "E-2 Visa (Europe)" },
-  { to: "/hardware-store-for-sale", label: "Hardware Store For Sale" },
-  { to: "/residential", label: "Residential Requests" },
-  { to: "/house-condo-servicing", label: "House / Condo Servicing" },
   { to: "/leasing-vacant-restaurants", label: "Leasing Vacant Restaurants" },
 ] as const;
 
@@ -276,20 +277,24 @@ function Footer() {
         <div>
           <h4 className="text-sm font-semibold text-gold uppercase tracking-wider">Services</h4>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><Link to="/restaurants-for-sale" className="hover:text-gold">Restaurants For Sale</Link></li>
-            
+            <li><Link to="/buy-a-restaurant" className="hover:text-gold">Buy a Restaurant</Link></li>
+            <li><Link to="/sell-your-restaurant" className="hover:text-gold">Sell Your Restaurant</Link></li>
+            <li><Link to="/restaurants-for-sale" className="hover:text-gold">Restaurant Listings</Link></li>
+            <li><Link to="/restaurant-leasing" className="hover:text-gold">Restaurant Leasing</Link></li>
+            <li><Link to="/licensing-and-permits" className="hover:text-gold">Licensing & Permits</Link></li>
+            <li><Link to="/restaurant-consulting" className="hover:text-gold">Restaurant Consulting</Link></li>
             <li><Link to="/alcohol-licensing" className="hover:text-gold">Alcohol Licensing</Link></li>
             <li><Link to="/liquor-license-for-sale" className="hover:text-gold">Liquor License For Sale</Link></li>
-            <li><Link to="/health-inspection" className="hover:text-gold">Health Inspection & Permitting</Link></li>
-            <li><Link to="/vermin-inspections" className="hover:text-gold">Vermin Inspections</Link></li>
-            <li><Link to="/assignments-rent-abatement" className="hover:text-gold">Assignments & Abatement</Link></li>
-            
-            <li><Link to="/search-door-knocking" className="hover:text-gold">Search Off-Market Restaurant</Link></li>
-            <li><Link to="/e2-visa-europe" className="hover:text-gold">E-2 Visa (Europe)</Link></li>
-            <li><Link to="/hardware-store-for-sale" className="hover:text-gold">Hardware Store</Link></li>
-            <li><Link to="/residential" className="hover:text-gold">Residential</Link></li>
-            <li><Link to="/house-condo-servicing" className="hover:text-gold">House / Condo Servicing</Link></li>
+            <li><Link to="/health-inspection" className="hover:text-gold">Health Inspection</Link></li>
+            <li><Link to="/health-permitting" className="hover:text-gold">Health Permitting & Plan Check</Link></li>
             <li><Link to="/leasing-vacant-restaurants" className="hover:text-gold">Leasing Vacant Restaurants</Link></li>
+            <li><Link to="/assignments-rent-abatement" className="hover:text-gold">Assignments & Abatement</Link></li>
+            <li><Link to="/business-investigations" className="hover:text-gold">Business Investigations</Link></li>
+            <li><Link to="/buyer-tenant-resolutions" className="hover:text-gold">Buyer / Tenant Resolutions</Link></li>
+            <li><Link to="/search-door-knocking" className="hover:text-gold">Off-Market Door-Knocking</Link></li>
+            <li><Link to="/e2-visa-europe" className="hover:text-gold">E-2 Visa (Europe)</Link></li>
+            <li><Link to="/grandfather-protection" className="hover:text-gold">Grandfather Protection</Link></li>
+            <li><Link to="/vermin-inspections" className="hover:text-gold">Vermin Inspections</Link></li>
             <li><Link to="/contact" className="hover:text-gold">Book a Consultation</Link></li>
           </ul>
         </div>
