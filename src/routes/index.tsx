@@ -86,7 +86,7 @@ function HomePage() {
               style={{ animationDelay: "0ms", animationFillMode: "both" }}
             >
               <span className="h-px w-8 bg-gold" />
-              Full Service Los Angeles Restaurant Brokerage Firm
+              Serving Los Angeles County
             </div>
 
             <h1
@@ -104,9 +104,8 @@ function HomePage() {
               className="mt-8 max-w-lg text-base sm:text-lg leading-relaxed text-charcoal/75 animate-fade-in"
               style={{ animationDelay: "320ms", animationFillMode: "both" }}
             >
-              Full-service restaurant brokerage, licensing, leasing, permitting,
-              consulting, and transaction management for Los Angeles County—from first
-              opportunity to final closing.
+              Serving Los Angeles County with expert restaurant brokerage, licensing, leasing,
+              permitting, consulting, and transaction management—from first opportunity to final closing.
             </p>
 
             <div
