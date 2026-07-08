@@ -100,7 +100,7 @@ function GrandfatherPage() {
           </div>
           <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">ADA carve-outs apply after a Restaurant 90 closure, even with protection.</h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">
-            Prior Grandfather Protection does <span className="font-semibold text-foreground">not</span> exempt a restaurant (if and when closed over 90 days) from baseline ADA compliance. These four items must be put in place regardless of any past protected status:
+            Prior Grandfather Protection does <span className="font-semibold text-foreground">not</span> exempt a restaurant (if and when the original floor plan is slightly altered or notification of closure with the Health Department exceeds the 90 day allowance) from baseline ADA compliance. These four items must be put in place regardless of any past protected status:
           </p>
           <ul className="mt-8 grid gap-3 md:grid-cols-2">
             {adaItems.map((item) => (
