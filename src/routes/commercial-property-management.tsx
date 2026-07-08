@@ -120,7 +120,6 @@ function CommercialPropertyManagementPage() {
       <section className="container-x py-12 md:py-16">
         <div className="max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-gold">Overview</p>
-          <h1 className="sr-only">Commercial Property Management Los Angeles</h1>
           <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold leading-tight">
             Full-service management for commercial assets.
           </h2>
