@@ -158,6 +158,7 @@ export const serviceTopics = [
   "E-2 visa (Europe)",
   "Second generation space",
   "Hardware store inquiry",
+  "Commercial property management",
   "Residential listing",
   "House/condo servicing",
   "Blueprint / plan check",
