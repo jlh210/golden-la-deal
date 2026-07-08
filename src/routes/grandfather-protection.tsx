@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Lock, AlertTriangle, Clock, Accessibility, Droplets } from "lucide-react";
+import { Lock, AlertTriangle, Clock, Accessibility } from "lucide-react";
 import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
@@ -110,14 +110,6 @@ function GrandfatherPage() {
             ))}
           </ul>
 
-          <div className="mt-6 flex items-start gap-3 rounded-xl border border-gold/40 bg-gold/5 p-5">
-            <Droplets className="mt-0.5 h-5 w-5 text-gold shrink-0" />
-            <p className="text-sm">
-              <span className="font-semibold text-gold">Grease trap:</span>{" "}
-              If the property is missing a grease trap under the 3-compartment sink, it will need to be installed -
-              this is enforced even under Grandfather Protection.
-            </p>
-          </div>
         </div>
       </section>
 
