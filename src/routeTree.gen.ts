@@ -31,6 +31,7 @@ import { Route as HardwareStoreForSaleRouteImport } from './routes/hardware-stor
 import { Route as GrandfatherProtectionRouteImport } from './routes/grandfather-protection'
 import { Route as E2VisaEuropeRouteImport } from './routes/e2-visa-europe'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CommercialPropertyManagementRouteImport } from './routes/commercial-property-management'
 import { Route as BuyerTenantResolutionsRouteImport } from './routes/buyer-tenant-resolutions'
 import { Route as BuyARestaurantRouteImport } from './routes/buy-a-restaurant'
 import { Route as BusinessInvestigationsRouteImport } from './routes/business-investigations'
@@ -153,6 +154,12 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CommercialPropertyManagementRoute =
+  CommercialPropertyManagementRouteImport.update({
+    id: '/commercial-property-management',
+    path: '/commercial-property-management',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BuyerTenantResolutionsRoute = BuyerTenantResolutionsRouteImport.update({
   id: '/buyer-tenant-resolutions',
   path: '/buyer-tenant-resolutions',
@@ -214,6 +221,7 @@ export interface FileRoutesByFullPath {
   '/business-investigations': typeof BusinessInvestigationsRoute
   '/buy-a-restaurant': typeof BuyARestaurantRoute
   '/buyer-tenant-resolutions': typeof BuyerTenantResolutionsRoute
+  '/commercial-property-management': typeof CommercialPropertyManagementRoute
   '/contact': typeof ContactRoute
   '/e2-visa-europe': typeof E2VisaEuropeRoute
   '/grandfather-protection': typeof GrandfatherProtectionRoute
@@ -248,6 +256,7 @@ export interface FileRoutesByTo {
   '/business-investigations': typeof BusinessInvestigationsRoute
   '/buy-a-restaurant': typeof BuyARestaurantRoute
   '/buyer-tenant-resolutions': typeof BuyerTenantResolutionsRoute
+  '/commercial-property-management': typeof CommercialPropertyManagementRoute
   '/contact': typeof ContactRoute
   '/e2-visa-europe': typeof E2VisaEuropeRoute
   '/grandfather-protection': typeof GrandfatherProtectionRoute
@@ -282,6 +291,7 @@ export interface FileRoutesById {
   '/business-investigations': typeof BusinessInvestigationsRoute
   '/buy-a-restaurant': typeof BuyARestaurantRoute
   '/buyer-tenant-resolutions': typeof BuyerTenantResolutionsRoute
+  '/commercial-property-management': typeof CommercialPropertyManagementRoute
   '/contact': typeof ContactRoute
   '/e2-visa-europe': typeof E2VisaEuropeRoute
   '/grandfather-protection': typeof GrandfatherProtectionRoute
@@ -318,6 +328,7 @@ export interface FileRouteTypes {
     | '/business-investigations'
     | '/buy-a-restaurant'
     | '/buyer-tenant-resolutions'
+    | '/commercial-property-management'
     | '/contact'
     | '/e2-visa-europe'
     | '/grandfather-protection'
@@ -352,6 +363,7 @@ export interface FileRouteTypes {
     | '/business-investigations'
     | '/buy-a-restaurant'
     | '/buyer-tenant-resolutions'
+    | '/commercial-property-management'
     | '/contact'
     | '/e2-visa-europe'
     | '/grandfather-protection'
@@ -385,6 +397,7 @@ export interface FileRouteTypes {
     | '/business-investigations'
     | '/buy-a-restaurant'
     | '/buyer-tenant-resolutions'
+    | '/commercial-property-management'
     | '/contact'
     | '/e2-visa-europe'
     | '/grandfather-protection'
@@ -420,6 +433,7 @@ export interface RootRouteChildren {
   BusinessInvestigationsRoute: typeof BusinessInvestigationsRoute
   BuyARestaurantRoute: typeof BuyARestaurantRoute
   BuyerTenantResolutionsRoute: typeof BuyerTenantResolutionsRoute
+  CommercialPropertyManagementRoute: typeof CommercialPropertyManagementRoute
   ContactRoute: typeof ContactRoute
   E2VisaEuropeRoute: typeof E2VisaEuropeRoute
   GrandfatherProtectionRoute: typeof GrandfatherProtectionRoute
@@ -600,6 +614,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/commercial-property-management': {
+      id: '/commercial-property-management'
+      path: '/commercial-property-management'
+      fullPath: '/commercial-property-management'
+      preLoaderRoute: typeof CommercialPropertyManagementRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/buyer-tenant-resolutions': {
       id: '/buyer-tenant-resolutions'
       path: '/buyer-tenant-resolutions'
@@ -695,6 +716,7 @@ const rootRouteChildren: RootRouteChildren = {
   BusinessInvestigationsRoute: BusinessInvestigationsRoute,
   BuyARestaurantRoute: BuyARestaurantRoute,
   BuyerTenantResolutionsRoute: BuyerTenantResolutionsRoute,
+  CommercialPropertyManagementRoute: CommercialPropertyManagementRoute,
   ContactRoute: ContactRoute,
   E2VisaEuropeRoute: E2VisaEuropeRoute,
   GrandfatherProtectionRoute: GrandfatherProtectionRoute,
