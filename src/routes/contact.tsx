@@ -36,9 +36,9 @@ function ContactPage() {
     <SiteLayout>
       <PageHero
         eyebrow="Get In Touch"
-        title="Tell us what you"
-        accent="need."
-        subtitle="We answer the phone. We respond to messages within the business day. Whether you're buying, selling, licensing, leasing, or in trouble - start here."
+        title="Speak with LA experts"
+        accent="for $35."
+        subtitle="A real consultation with specialists who solve business, city, and restaurant problems — buying, selling, licensing, leasing, permitting, and disputes."
       />
 
       <section className="container-x py-12 md:py-16">
