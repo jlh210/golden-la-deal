@@ -242,6 +242,58 @@ export const listings: Listing[] = [
     ],
     images: [wilshire3.url, wilshire1.url, wilshire2.url, wilshire4.url],
   },
+  {
+    id: "B-001",
+    slug: "hardware-store-for-sale",
+    type: "Business Sale",
+    title: "Hardware Store for Sale",
+    location: "Westwood Blvd, West LA",
+    price: "$190,000",
+    priceNote: "Negotiable + inventory",
+    leaseType: "Business sale · Retail",
+    badge: "Available",
+    description:
+      "Established hardware store for sale on Westwood Blvd, West LA. $190,000 negotiable plus inventory. Annual revenue $402,000. Established 2020.",
+    longDescription: [
+      "Established hardware store for sale on Westwood Blvd in West Los Angeles.",
+      "Asking $190,000 negotiable plus inventory. Annual revenue of approximately $402,000. Business established in 2020 with one full-time employee.",
+      "New lease to be negotiated with three 3-year extension options. Product categories include key duplication, tools, gardening, plumbing, electrical, home hardware, and more.",
+    ],
+    sections: [
+      {
+        heading: "Deal Highlights",
+        body: "Straightforward business sale with training and escrow support included.",
+        bullets: [
+          "Asking price: $190,000 negotiable + inventory",
+          "Annual revenue: approximately $402,000",
+          "Established: 2020",
+          "Employees: 1 full-time",
+          "4 weeks of support & training included",
+          "Co-brokering welcome",
+        ],
+      },
+      {
+        heading: "Lease Terms",
+        body: "Lease commenced October 9, 2020. New lease terms to be negotiated with the landlord.",
+        bullets: [
+          "Base rent at commencement: $3,082.56 / mo",
+          "Year 6 monthly base rent: $4,840.89 + CAM",
+          "Three (3) 3-year options to extend",
+          "Buyer reimburses Seller's security deposit through escrow",
+          "FF&E sold in as-is condition",
+        ],
+      },
+    ],
+    features: [
+      "Established hardware store",
+      "Westwood Blvd, West LA location",
+      "$190,000 + inventory",
+      "$402,000 annual revenue",
+      "Key duplication, tools, plumbing, electrical",
+      "New lease negotiable",
+    ],
+    images: [hardwareStorefront.url, hardwareAisle.url],
+  },
 ];
 
 export function getListingBySlug(slug: string): Listing | undefined {
