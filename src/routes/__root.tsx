@@ -10,9 +10,8 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import faviconAsset from "@/assets/favicon.png.asset.json";
-import appleTouchIconAsset from "@/assets/apple-touch-icon.png.asset.json";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+
 
 function NotFoundComponent() {
   return (
@@ -77,32 +76,28 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Penthouse Advisors Inc. - LA Restaurant Brokerage & Advisory" },
+      { title: "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors" },
       {
         name: "description",
         content:
-          "Los Angeles restaurant broker & advisory firm. Buy, sell, lease, and license restaurants in LA County. Liquor license transfers, commercial restaurant leasing, health permitting. Call 310-663-3521.",
+          "Penthouse Advisors: Los Angeles restaurant brokerage, consulting, permitting, licensing, and ADA compliance. Buy, sell, lease, license, and rescue restaurants across LA County. Call 310-663-3521.",
       },
       { name: "author", content: "Penthouse Advisors Inc." },
-      { name: "keywords", content: "Los Angeles restaurant broker, LA restaurant advisory firm, liquor license transfer LA, commercial restaurant leasing Los Angeles, restaurants for sale Los Angeles, Type 47 license LA" },
+      { name: "keywords", content: "Los Angeles restaurant broker, restaurant consulting LA, restaurant permits Los Angeles, restaurant licensing LA, ADA compliance restaurant, liquor license transfer LA, commercial restaurant leasing Los Angeles, restaurants for sale Los Angeles" },
       { name: "robots", content: "index, follow" },
+      { name: "theme-color", content: "#c9a24a" },
       { property: "og:site_name", content: "Penthouse Advisors Inc." },
-      { property: "og:title", content: "Penthouse Advisors Inc. - LA Restaurant Brokerage & Advisory" },
-      {
-        property: "og:description",
-        content: "LA's sophisticated, full-service restaurant brokerage and advisory firm. Buy. Sell. License. Lease. Rescue.",
-      },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_US" },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e3e30457-fc23-4af3-8298-0ca6c1ee0bc6/id-preview-8f27b450--0b604838-c031-4f20-b744-28614ecfedd1.lovable.app-1781650225814.png" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Penthouse Advisors Inc. - LA Restaurant Brokerage & Advisory" },
-      { name: "twitter:description", content: "LA's sophisticated, full-service restaurant brokerage and advisory firm. Buy. Sell. License. Lease. Rescue." },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e3e30457-fc23-4af3-8298-0ca6c1ee0bc6/id-preview-8f27b450--0b604838-c031-4f20-b744-28614ecfedd1.lovable.app-1781650225814.png" },
+      { name: "twitter:site", content: "@penthouseadv" },
     ],
     links: [
-      { rel: "icon", type: "image/png", href: faviconAsset.url },
-      { rel: "apple-touch-icon", sizes: "180x180", href: appleTouchIconAsset.url },
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
+      { rel: "icon", type: "image/png", sizes: "48x48", href: "/favicon-48x48.png" },
+      { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
       { rel: "manifest", href: "/site.webmanifest" },
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -124,8 +119,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               name: "Penthouse Advisors Inc.",
               alternateName: "Penthouse Advisors",
               description:
-                "Full-service restaurant brokerage and advisory firm serving Los Angeles County. Restaurant sales, acquisitions, leasing, licensing, permitting, and consulting.",
+                "Full-service restaurant brokerage, consulting, licensing, permitting, and ADA compliance advisory firm serving Los Angeles County.",
               url: "https://www.penthouseadvisors.com",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://www.penthouseadvisors.com/android-chrome-512x512.png",
+                width: 512,
+                height: 512,
+              },
+              image: "https://www.penthouseadvisors.com/android-chrome-512x512.png",
               telephone: "+1-310-663-3521",
               email: "PenthouseAdvisors@gmail.com",
               priceRange: "$$$",
@@ -139,14 +141,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
                 addressRegion: "CA",
                 addressCountry: "US",
               },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 34.0522,
+                longitude: -118.2437,
+              },
               foundingDate: "2021",
+              sameAs: [
+                "https://www.google.com/maps?q=Penthouse+Advisors+Los+Angeles",
+              ],
               knowsAbout: [
                 "Restaurant Brokerage",
+                "Restaurant Consulting",
                 "Restaurant Acquisitions",
                 "Restaurant Dispositions",
                 "Commercial Restaurant Leasing",
                 "Alcohol Licensing",
                 "Health Department Permitting",
+                "ADA Compliance",
                 "Hospitality Consulting",
               ],
               openingHoursSpecification: [
@@ -165,12 +177,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               name: "Penthouse Advisors",
               publisher: { "@id": "https://www.penthouseadvisors.com/#organization" },
               inLanguage: "en-US",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: "https://www.penthouseadvisors.com/restaurants-for-sale?q={search_term_string}",
+                },
+                "query-input": "required name=search_term_string",
+              },
             },
           ],
         }),
       },
     ],
   }),
+
 
   shellComponent: RootShell,
   component: RootComponent,
