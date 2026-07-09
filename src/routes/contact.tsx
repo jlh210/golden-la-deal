@@ -45,20 +45,20 @@ function ContactPage() {
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
           <div className="space-y-6">
             <div className="rounded-2xl border border-gold/40 bg-gradient-to-br from-gold/10 to-card p-6 shadow-elegant">
-              <div className="text-xs uppercase tracking-widest text-gold font-semibold">Paid consultation</div>
+              <div className="text-xs uppercase tracking-widest text-gold font-semibold">Consultation call</div>
               <div className="mt-2 text-2xl md:text-3xl font-display font-bold">
-                Real expert. Real answers.
+                $35 to speak with a real expert
               </div>
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                You’re not filing a generic form. You’ll speak with a specialist who handles real LA restaurant, business, and city issues.
+                A 30-minute call with a specialist who handles real LA restaurant, business, and city issues.
               </p>
             </div>
             <LeadForm
               serviceNeeded={prefill}
-              title="Book a Consultation"
+              title="Book a Consultation Call"
               subtitle={prefill ? "We pre-filled your topic below. Add a few details and we’ll respond same business day." : "Pick the topic you need help with and we’ll respond same business day."}
               messagePlaceholder={prefill ? "Address of my current restaurant" : "A few details on your situation…"}
-              note="This is a paid consultation to speak with a real expert on real LA business and restaurant problems."
+              note="This is a $35 consultation call to speak with a real expert on real LA business and restaurant problems."
             />
           </div>
 
