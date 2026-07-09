@@ -238,10 +238,10 @@ export function LeadForm({
             className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-gold focus:outline-none"
           >
             <option value="" disabled>Select one…</option>
-            <option value="Owner">Owner</option>
+            <option value="Property owner">Property owner</option>
+            <option value="Restaurant operator">Restaurant operator</option>
             <option value="Buyer">Buyer</option>
             <option value="Seller">Seller</option>
-            <option value="Operator">Operator</option>
           </select>
           {errors.role && <p className="mt-1.5 text-xs text-destructive">{errors.role}</p>}
         </div>
