@@ -42,6 +42,7 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as RestaurantsForSaleIndexRouteImport } from './routes/restaurants-for-sale.index'
 import { Route as RestaurantsForSaleSlugRouteImport } from './routes/restaurants-for-sale.$slug'
+import { Route as ApiPublicContactMapRouteImport } from './routes/api/public/contact-map'
 
 const VerminInspectionsRoute = VerminInspectionsRouteImport.update({
   id: '/vermin-inspections',
@@ -211,6 +212,11 @@ const RestaurantsForSaleSlugRoute = RestaurantsForSaleSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => RestaurantsForSaleRoute,
 } as any)
+const ApiPublicContactMapRoute = ApiPublicContactMapRouteImport.update({
+  id: '/api/public/contact-map',
+  path: '/api/public/contact-map',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -246,6 +252,7 @@ export interface FileRoutesByFullPath {
   '/vermin-inspections': typeof VerminInspectionsRoute
   '/restaurants-for-sale/$slug': typeof RestaurantsForSaleSlugRoute
   '/restaurants-for-sale/': typeof RestaurantsForSaleIndexRoute
+  '/api/public/contact-map': typeof ApiPublicContactMapRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -280,6 +287,7 @@ export interface FileRoutesByTo {
   '/vermin-inspections': typeof VerminInspectionsRoute
   '/restaurants-for-sale/$slug': typeof RestaurantsForSaleSlugRoute
   '/restaurants-for-sale': typeof RestaurantsForSaleIndexRoute
+  '/api/public/contact-map': typeof ApiPublicContactMapRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -316,6 +324,7 @@ export interface FileRoutesById {
   '/vermin-inspections': typeof VerminInspectionsRoute
   '/restaurants-for-sale/$slug': typeof RestaurantsForSaleSlugRoute
   '/restaurants-for-sale/': typeof RestaurantsForSaleIndexRoute
+  '/api/public/contact-map': typeof ApiPublicContactMapRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -353,6 +362,7 @@ export interface FileRouteTypes {
     | '/vermin-inspections'
     | '/restaurants-for-sale/$slug'
     | '/restaurants-for-sale/'
+    | '/api/public/contact-map'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -387,6 +397,7 @@ export interface FileRouteTypes {
     | '/vermin-inspections'
     | '/restaurants-for-sale/$slug'
     | '/restaurants-for-sale'
+    | '/api/public/contact-map'
   id:
     | '__root__'
     | '/'
@@ -422,6 +433,7 @@ export interface FileRouteTypes {
     | '/vermin-inspections'
     | '/restaurants-for-sale/$slug'
     | '/restaurants-for-sale/'
+    | '/api/public/contact-map'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -456,6 +468,7 @@ export interface RootRouteChildren {
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   VerminInspectionsRoute: typeof VerminInspectionsRoute
+  ApiPublicContactMapRoute: typeof ApiPublicContactMapRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -691,6 +704,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RestaurantsForSaleSlugRouteImport
       parentRoute: typeof RestaurantsForSaleRoute
     }
+    '/api/public/contact-map': {
+      id: '/api/public/contact-map'
+      path: '/api/public/contact-map'
+      fullPath: '/api/public/contact-map'
+      preLoaderRoute: typeof ApiPublicContactMapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -739,6 +759,7 @@ const rootRouteChildren: RootRouteChildren = {
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   VerminInspectionsRoute: VerminInspectionsRoute,
+  ApiPublicContactMapRoute: ApiPublicContactMapRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
