@@ -256,6 +256,11 @@ export function LeadForm({
             className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-gold focus:outline-none resize-none"
           />
         </div>
+        {note && (
+          <p className="text-xs text-gold text-center font-semibold leading-relaxed">
+            {note}
+          </p>
+        )}
         <button
           type="submit"
           disabled={loading}
