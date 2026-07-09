@@ -49,10 +49,10 @@ function ListingsPage() {
   return (
     <>
       <PageHero
-        eyebrow="Current Inventory"
-        title="Restaurants & Business' for Sale/Lease"
-        accent="in Los Angeles."
-        subtitle="A snapshot of what we're moving right now. Call for off-market opportunities not shown here."
+        eyebrow="Live Opportunities"
+        title="Restaurants & Businesses for Sale/Lease in Los Angeles"
+        accent=""
+        subtitle="A curated selection of active listings and off-market opportunities. Private inventory available by request."
       />
 
       <section className="container-x py-12 md:py-16">
