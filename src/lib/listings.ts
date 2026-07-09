@@ -8,6 +8,7 @@ import wilshire4 from "@/assets/wilshire-4.png.asset.json";
 import santaMonica1 from "@/assets/santa-monica-1.png.asset.json";
 import santaMonica2 from "@/assets/santa-monica-2.png.asset.json";
 import westLaOpenCooking from "@/assets/west-la-open-cooking.png.asset.json";
+import dentalOffice from "@/assets/dental-office-for-lease.png.asset.json";
 
 export type SaleType = "Business Sale" | "Asset Sale" | "Real Estate";
 
