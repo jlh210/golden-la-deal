@@ -25,12 +25,14 @@ export function LeadForm({
   subtitle = "Tell us what you need. We respond same business day.",
   messagePlaceholder = "A few details on your situation…",
   extraFields,
+  note,
 }: {
   serviceNeeded?: string;
   title?: string;
   subtitle?: string;
   messagePlaceholder?: string;
   extraFields?: React.ReactNode;
+  note?: string;
 }) {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [stage, setStage] = useState<Stage>("form");
