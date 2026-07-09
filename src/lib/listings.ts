@@ -10,7 +10,7 @@ import santaMonica2 from "@/assets/santa-monica-2.png.asset.json";
 import westLaOpenCooking from "@/assets/west-la-open-cooking.png.asset.json";
 import dentalOffice from "@/assets/dental-office-for-lease.png.asset.json";
 
-export type SaleType = "Business Sale" | "Asset Sale" | "Real Estate";
+export type SaleType = "Business Sale" | "Asset Sale" | "Real Estate" | "Medical / Dental";
 
 export type ListingSection = {
   heading: string;
@@ -41,7 +41,7 @@ export const listings: Listing[] = [
   {
     id: "RE-005",
     slug: "dental-office-for-lease",
-    type: "Real Estate",
+    type: "Medical / Dental",
     title: "Dental Office For Lease",
     location: "Los Angeles County, CA",
     price: "$4,700 / month",
