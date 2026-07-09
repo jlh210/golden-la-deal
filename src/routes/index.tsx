@@ -29,7 +29,10 @@ export const Route = createFileRoute("/")({
       { name: "twitter:title", content: "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors" },
       { name: "twitter:description", content: "Restaurant brokerage, consulting, licensing, permitting & ADA compliance for LA County." },
     ],
-    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com" }],
+    links: [
+      { rel: "canonical", href: "https://www.penthouseadvisors.com" },
+      { rel: "preload", as: "image", href: heroImage, fetchpriority: "high" } as unknown as { rel: string; href: string },
+    ],
   }),
 
   component: HomePage,
