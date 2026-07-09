@@ -4,6 +4,7 @@ import { SiteLayout, PHONE, PHONE_HREF, EMAIL, EMAIL_HREF } from "@/components/s
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
+import { breadcrumbScript } from "@/lib/seo";
 export const Route = createFileRoute("/agents")({
   head: () => ({
     meta: [
@@ -22,6 +23,9 @@ export const Route = createFileRoute("/agents")({
       { property: "og:url", content: "https://www.penthouseadvisors.com/agents" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/agents" }],
+    scripts: [
+      breadcrumbScript([{name:"Home",path:"/"},{name:'Agents',path:'/agents'}]),
+    ],
   }),
   component: AgentsPage,
 });

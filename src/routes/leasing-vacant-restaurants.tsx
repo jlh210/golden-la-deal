@@ -4,6 +4,7 @@ import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { LeadForm } from "@/components/site/LeadForm";
 
+import { breadcrumbScript } from "@/lib/seo";
 export const Route = createFileRoute("/leasing-vacant-restaurants")({
   head: () => ({
     meta: [
@@ -22,6 +23,9 @@ export const Route = createFileRoute("/leasing-vacant-restaurants")({
       { property: "og:url", content: "https://www.penthouseadvisors.com/leasing-vacant-restaurants" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/leasing-vacant-restaurants" }],
+    scripts: [
+      breadcrumbScript([{name:"Home",path:"/"},{name:'Leasing Vacant Restaurants',path:'/leasing-vacant-restaurants'}]),
+    ],
   }),
   component: LeasingVacantRestaurantsPage,
 });

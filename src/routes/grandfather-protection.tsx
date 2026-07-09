@@ -4,6 +4,7 @@ import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
+import { breadcrumbScript } from "@/lib/seo";
 export const Route = createFileRoute("/grandfather-protection")({
   head: () => ({
     meta: [
@@ -21,6 +22,9 @@ export const Route = createFileRoute("/grandfather-protection")({
       { property: "og:url", content: "https://www.penthouseadvisors.com/grandfather-protection" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/grandfather-protection" }],
+    scripts: [
+      breadcrumbScript([{name:"Home",path:"/"},{name:'Grandfather Protection',path:'/grandfather-protection'}]),
+    ],
   }),
   component: GrandfatherPage,
 });

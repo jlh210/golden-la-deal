@@ -4,6 +4,7 @@ import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
+import { breadcrumbScript } from "@/lib/seo";
 export const Route = createFileRoute("/business-investigations")({
   head: () => ({
     meta: [
@@ -21,6 +22,9 @@ export const Route = createFileRoute("/business-investigations")({
       { property: "og:url", content: "https://www.penthouseadvisors.com/business-investigations" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/business-investigations" }],
+    scripts: [
+      breadcrumbScript([{name:"Home",path:"/"},{name:'Business Investigations',path:'/business-investigations'}]),
+    ],
   }),
   component: InvestigationsPage,
 });

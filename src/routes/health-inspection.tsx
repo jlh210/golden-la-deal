@@ -4,6 +4,7 @@ import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
+import { breadcrumbScript, serviceScript } from "@/lib/seo";
 export const Route = createFileRoute("/health-inspection")({
   head: () => ({
     meta: [
@@ -21,6 +22,10 @@ export const Route = createFileRoute("/health-inspection")({
       { property: "og:url", content: "https://www.penthouseadvisors.com/health-inspection" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/health-inspection" }],
+    scripts: [
+      breadcrumbScript([{name:"Home",path:"/"},{name:'Health Inspection',path:'/health-inspection'}]),
+      serviceScript({ name: 'Health Department Pre-Inspection', description: 'LA County Health Department pre-inspection, red-tag remediation, and re-inspection coordination.', path: '/health-inspection', serviceType: 'Health Department Compliance' }),
+    ],
   }),
   component: HealthPage,
 });

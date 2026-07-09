@@ -4,6 +4,7 @@ import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
+import { breadcrumbScript } from "@/lib/seo";
 export const Route = createFileRoute("/vermin-inspections")({
   head: () => ({
     meta: [
@@ -21,6 +22,9 @@ export const Route = createFileRoute("/vermin-inspections")({
       { property: "og:url", content: "https://www.penthouseadvisors.com/vermin-inspections" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/vermin-inspections" }],
+    scripts: [
+      breadcrumbScript([{name:"Home",path:"/"},{name:'Vermin Inspections',path:'/vermin-inspections'}]),
+    ],
   }),
   component: VerminPage,
 });

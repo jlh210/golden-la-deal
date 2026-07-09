@@ -4,6 +4,7 @@ import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
+import { breadcrumbScript } from "@/lib/seo";
 export const Route = createFileRoute("/assignments-rent-abatement")({
   head: () => ({
     meta: [
@@ -21,6 +22,9 @@ export const Route = createFileRoute("/assignments-rent-abatement")({
       { property: "og:url", content: "https://www.penthouseadvisors.com/assignments-rent-abatement" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/assignments-rent-abatement" }],
+    scripts: [
+      breadcrumbScript([{name:"Home",path:"/"},{name:'Lease Assignments & Rent Abatement',path:'/assignments-rent-abatement'}]),
+    ],
   }),
   component: AssignmentsPage,
 });

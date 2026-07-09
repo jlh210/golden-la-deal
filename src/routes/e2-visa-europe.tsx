@@ -4,6 +4,7 @@ import { SiteLayout, PHONE, PHONE_HREF, EMAIL, EMAIL_HREF, HOURS } from "@/compo
 import { PageHero } from "@/components/site/PageHero";
 import { LeadForm } from "@/components/site/LeadForm";
 
+import { breadcrumbScript } from "@/lib/seo";
 export const Route = createFileRoute("/e2-visa-europe")({
   head: () => ({
     meta: [
@@ -22,6 +23,9 @@ export const Route = createFileRoute("/e2-visa-europe")({
       { property: "og:url", content: "https://www.penthouseadvisors.com/e2-visa-europe" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/e2-visa-europe" }],
+    scripts: [
+      breadcrumbScript([{name:"Home",path:"/"},{name:'E-2 Visa (Europe)',path:'/e2-visa-europe'}]),
+    ],
   }),
   component: E2Page,
 });

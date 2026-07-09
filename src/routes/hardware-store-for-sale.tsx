@@ -6,6 +6,7 @@ import { CTASection } from "@/components/site/CTASection";
 import storefront from "@/assets/hardware-storefront.png.asset.json";
 import aisle from "@/assets/hardware-aisle.png.asset.json";
 
+import { breadcrumbScript } from "@/lib/seo";
 export const Route = createFileRoute("/hardware-store-for-sale")({
   head: () => ({
     meta: [
@@ -25,6 +26,9 @@ export const Route = createFileRoute("/hardware-store-for-sale")({
       { property: "og:url", content: "https://www.penthouseadvisors.com/hardware-store-for-sale" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/hardware-store-for-sale" }],
+    scripts: [
+      breadcrumbScript([{name:"Home",path:"/"},{name:'Hardware Store For Sale',path:'/hardware-store-for-sale'}]),
+    ],
   }),
   component: HardwarePage,
 });
