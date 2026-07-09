@@ -53,12 +53,13 @@ export function ListingsMap() {
     const trackingId = import.meta.env.VITE_LOVABLE_CONNECTOR_GOOGLE_MAPS_TRACKING_ID;
 
     window.initListingsMap = () => {
-      if (!window.google || !mapRef.current) return;
+      const g = window.google;
+      if (!g || !mapRef.current) return;
 
       const avgLat = points.reduce((s, l) => s + (l.coords as [number, number])[0], 0) / points.length;
       const avgLng = points.reduce((s, l) => s + (l.coords as [number, number])[1], 0) / points.length;
 
-      const map = new window.google.maps.Map(mapRef.current, {
+      const map = new g.maps.Map(mapRef.current, {
         center: { lat: avgLat, lng: avgLng },
         zoom: 10,
         mapTypeControl: false,
@@ -66,19 +67,19 @@ export function ListingsMap() {
         fullscreenControl: false,
       });
 
-      const bounds = new window.google.maps.LatLngBounds();
+      const bounds = new g.maps.LatLngBounds();
 
       points.forEach((l) => {
         const [lat, lng] = l.coords as [number, number];
         const position = { lat, lng };
-        const marker = new window.google.maps.Marker({
+        const marker = new g.maps.Marker({
           position,
           map,
           title: l.title,
         });
         bounds.extend(position);
 
-        const infoWindow = new window.google.maps.InfoWindow({
+        const infoWindow = new g.maps.InfoWindow({
           content: `
             <div style="font-family: Inter, sans-serif; min-width: 180px;">
               <div style="font-weight: 700; font-size: 14px; color: #1a1a1a;">${l.title}</div>
