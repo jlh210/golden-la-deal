@@ -186,22 +186,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
                 "query-input": "required name=search_term_string",
               },
             },
-            {
-              "@type": "ItemList",
-              "@id": "https://www.penthouseadvisors.com/#primary-nav",
-              name: "Primary Navigation",
-              itemListOrder: "https://schema.org/ItemListOrderAscending",
-              itemListElement: [
-                { "@type": "SiteNavigationElement", position: 1, name: "Restaurant Brokerage", url: "https://www.penthouseadvisors.com/services" },
-                { "@type": "SiteNavigationElement", position: 2, name: "Restaurant Consulting", url: "https://www.penthouseadvisors.com/restaurant-consulting" },
-                { "@type": "SiteNavigationElement", position: 3, name: "Restaurant Permits", url: "https://www.penthouseadvisors.com/licensing-and-permits" },
-                { "@type": "SiteNavigationElement", position: 4, name: "Restaurant Listings", url: "https://www.penthouseadvisors.com/restaurants-for-sale" },
-                { "@type": "SiteNavigationElement", position: 5, name: "About", url: "https://www.penthouseadvisors.com/about" },
-                { "@type": "SiteNavigationElement", position: 6, name: "Contact", url: "https://www.penthouseadvisors.com/contact" },
-              ],
-            },
           ],
-
         }),
       },
     ],

@@ -14,14 +14,13 @@ const HOURS = "8:00am – 7:00pm · Mon–Sun";
 
 const primaryNav = [
   { to: "/", label: "Home" },
-  { to: "/restaurants-for-sale", label: "Restaurant Listings" },
-  { to: "/services", label: "Restaurant Brokerage", hasDropdown: true },
-  { to: "/restaurant-consulting", label: "Restaurant Consulting" },
-  { to: "/licensing-and-permits", label: "Restaurant Permits" },
+  { to: "/services", label: "Services", hasDropdown: true },
+  { to: "/restaurants-for-sale", label: "Listings" },
+  { to: "/buy-a-restaurant", label: "Buy" },
+  { to: "/sell-your-restaurant", label: "Sell" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ] as const;
-
 
 
 const servicesDropdown = [
