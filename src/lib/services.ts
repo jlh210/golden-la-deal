@@ -129,6 +129,13 @@ export const services: Service[] = [
     icon: Handshake,
   },
   {
+    slug: "commercial-property-management",
+    to: "/commercial-property-management",
+    title: "Commercial Property Management",
+    short: "Full-service commercial management for LA landlords and investors.",
+    icon: Building2,
+  },
+  {
     slug: "health-permitting",
     to: "/health-permitting",
     title: "Health Dept Permitting & Plan Check",
@@ -158,6 +165,7 @@ export const serviceTopics = [
   "E-2 visa (Europe)",
   "Second generation space",
   "Hardware store inquiry",
+  "Commercial property management",
   "Residential listing",
   "House/condo servicing",
   "Blueprint / plan check",

@@ -21,6 +21,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/restaurant-leasing", changefreq: "monthly", priority: "0.9" },
           { path: "/licensing-and-permits", changefreq: "monthly", priority: "0.9" },
           { path: "/restaurant-consulting", changefreq: "monthly", priority: "0.9" },
+          { path: "/commercial-property-management", changefreq: "monthly", priority: "0.9" },
 
           // Deep service pages
           { path: "/leasing-vacant-restaurants", changefreq: "monthly", priority: "0.8" },
