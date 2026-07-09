@@ -344,6 +344,6 @@ function ListingDetail() {
           </div>
         </section>
       )}
-    </SiteLayout>
+    </>
   );
 }
