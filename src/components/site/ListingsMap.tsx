@@ -4,7 +4,35 @@ import { listings } from "@/lib/listings";
 declare global {
   interface Window {
     initListingsMap?: () => void;
-    google?: typeof google;
+    google?: {
+      maps: {
+        Map: new (
+          container: HTMLElement,
+          options: {
+            center: { lat: number; lng: number };
+            zoom: number;
+            mapTypeControl?: boolean;
+            streetViewControl?: boolean;
+            fullscreenControl?: boolean;
+          },
+        ) => {
+          fitBounds: (bounds: unknown, padding?: number) => void;
+        };
+        LatLngBounds: new () => {
+          extend: (point: { lat: number; lng: number }) => void;
+        };
+        Marker: new (options: {
+          position: { lat: number; lng: number };
+          map: unknown;
+          title: string;
+        }) => {
+          addListener: (event: string, callback: () => void) => void;
+        };
+        InfoWindow: new (options: { content: string }) => {
+          open: (map: unknown, marker: unknown) => void;
+        };
+      };
+    };
   }
 }
 
