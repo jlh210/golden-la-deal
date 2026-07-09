@@ -52,7 +52,7 @@ function ListingsPage() {
         eyebrow="Live Opportunities"
         title="Restaurants & Businesses for Sale/Lease in Los Angeles"
         accent=""
-        subtitle="A curated selection of active listings and off-market opportunities. Private inventory available by request."
+        subtitle="Live restaurant and business listings across Los Angeles. Off-market deals available by direct request."
       />
 
       <section className="container-x py-12 md:py-16">
