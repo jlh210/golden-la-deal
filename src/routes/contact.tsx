@@ -58,6 +58,7 @@ function ContactPage() {
               title="Book a $35 Consultation"
               subtitle={prefill ? "Speak with our experts. We pre-filled your topic below — add details and we’ll respond same business day." : "Speak with our experts. Pick the topic you need help with and we’ll respond same business day."}
               messagePlaceholder={prefill ? "Address of my current restaurant" : "A few details on your situation…"}
+              note="This is a $35 consultation with specialists who solve real LA restaurant and city issues."
             />
           </div>
 
