@@ -7,7 +7,7 @@ import wilshire3 from "@/assets/wilshire-3.png.asset.json";
 import wilshire4 from "@/assets/wilshire-4.png.asset.json";
 import santaMonica1 from "@/assets/santa-monica-1.png.asset.json";
 import santaMonica2 from "@/assets/santa-monica-2.png.asset.json";
-import westLaOpenCooking from "@/assets/west-la-open-cooking.png.asset.json";
+import dentalOffice from "@/assets/dental-office-for-lease.png.asset.json";
 import dentalOffice from "@/assets/dental-office-for-lease.png.asset.json";
 
 export type SaleType = "Business Sale" | "Asset Sale" | "Real Estate" | "Medical / Dental";
@@ -240,68 +240,6 @@ export const listings: Listing[] = [
       "Ideal for pop-ups, dining, and events",
     ],
     images: [wilshire3.url, wilshire1.url, wilshire2.url, wilshire4.url],
-  },
-  {
-    id: "R-004",
-    slug: "west-la-open-cooking",
-    type: "Asset Sale",
-    title: "Available Restaurant — Open Cooking",
-    location: "West Los Angeles, CA",
-    coords: [34.0407, -118.4527],
-    price: "$65,850",
-    priceNote: "Non-negotiable · No co-brokering",
-    sqft: "≈ 1,200 sq ft",
-    leaseType: "Assignment of lease · Shopping center",
-    badge: "Available",
-    description:
-      "Fully equipped open restaurant in West Los Angeles. Active health department permit, all equipment in working condition, and all furniture, fixtures, and equipment included — delivered as-is.",
-    longDescription: [
-      "Fully equipped open restaurant in West Los Angeles, available as an asset sale.",
-      "Priced at $65,850 non-negotiable with no co-brokering. The 1,200 sq ft space is located in a shopping center off Santa Monica Blvd and includes an active health department permit.",
-      "All furniture, fixtures, and equipment are included in the sale and delivered in working condition.",
-    ],
-    sections: [
-      {
-        heading: "Lease Terms",
-        body: "Assignment of lease in a shopping center location with straightforward all-in monthly rent.",
-        bullets: [
-          "Rent: $5,650 all-in",
-          "Assignment of lease",
-          "Located in shopping center off Santa Monica Blvd",
-          "West Los Angeles location",
-        ],
-      },
-      {
-        heading: "Equipment & Permits",
-        body: "Ready for day-one operation with an active health permit and all equipment in working condition.",
-        bullets: [
-          "Health Department permit: active",
-          "All equipment in working condition",
-          "All furniture, fixtures, and equipment included",
-          "Delivered in 'as is' working condition",
-        ],
-      },
-      {
-        heading: "Details",
-        body: "Established in 2025 and open for tours by appointment.",
-        bullets: [
-          "Year established: 2025",
-          "Size: approximately 1,200 sq ft",
-          "Tours available per appointment",
-          "Priced: $65,850 non-negotiable",
-          "No co-brokering",
-        ],
-      },
-    ],
-    features: [
-      "≈ 1,200 sq ft open restaurant",
-      "Active health department permit",
-      "All equipment in working condition",
-      "All furniture, fixtures & equipment included",
-      "$5,650 all-in rent",
-      "West LA shopping center location",
-    ],
-    images: [westLaOpenCooking.url],
   },
 ];
 
