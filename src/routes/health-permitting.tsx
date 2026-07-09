@@ -4,6 +4,7 @@ import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
+import { breadcrumbScript, serviceScript } from "@/lib/seo";
 export const Route = createFileRoute("/health-permitting")({
   head: () => ({
     meta: [
@@ -21,6 +22,10 @@ export const Route = createFileRoute("/health-permitting")({
       { property: "og:url", content: "https://www.penthouseadvisors.com/health-permitting" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/health-permitting" }],
+    scripts: [
+      breadcrumbScript([{name:"Home",path:"/"},{name:'Health Permitting',path:'/health-permitting'}]),
+      serviceScript({ name: 'Health Department Permitting', description: 'LA County Health Department permitting, plan check, and hand-drafted restaurant blueprints.', path: '/health-permitting', serviceType: 'Health Department Permitting' }),
+    ],
   }),
   component: PermittingPage,
 });

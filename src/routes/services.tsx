@@ -5,6 +5,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 import { services } from "@/lib/services";
 
+import { breadcrumbScript } from "@/lib/seo";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
@@ -22,6 +23,9 @@ export const Route = createFileRoute("/services")({
       { property: "og:url", content: "https://www.penthouseadvisors.com/services" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/services" }],
+    scripts: [
+      breadcrumbScript([{name:"Home",path:"/"},{name:'Services',path:'/services'}]),
+    ],
   }),
   component: ServicesPage,
 });

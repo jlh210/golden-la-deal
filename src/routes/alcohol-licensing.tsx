@@ -4,6 +4,7 @@ import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
+import { breadcrumbScript, serviceScript } from "@/lib/seo";
 export const Route = createFileRoute("/alcohol-licensing")({
   head: () => ({
     meta: [
@@ -21,6 +22,10 @@ export const Route = createFileRoute("/alcohol-licensing")({
       { property: "og:url", content: "https://www.penthouseadvisors.com/alcohol-licensing" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/alcohol-licensing" }],
+    scripts: [
+      breadcrumbScript([{name:"Home",path:"/"},{name:'Alcohol Licensing',path:'/alcohol-licensing'}]),
+      serviceScript({ name: 'Alcohol Licensing (ABC)', description: 'Type 41, Type 47, and Type 48 ABC license applications and transfers in Los Angeles County.', path: '/alcohol-licensing', serviceType: 'Alcohol Licensing' }),
+    ],
   }),
   component: LicensingPage,
 });

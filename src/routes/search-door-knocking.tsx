@@ -4,6 +4,7 @@ import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { LeadForm } from "@/components/site/LeadForm";
 
+import { breadcrumbScript } from "@/lib/seo";
 export const Route = createFileRoute("/search-door-knocking")({
   head: () => ({
     meta: [
@@ -22,6 +23,9 @@ export const Route = createFileRoute("/search-door-knocking")({
       { property: "og:url", content: "https://www.penthouseadvisors.com/search-door-knocking" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/search-door-knocking" }],
+    scripts: [
+      breadcrumbScript([{name:"Home",path:"/"},{name:'Search & Door-Knocking',path:'/search-door-knocking'}]),
+    ],
   }),
   component: SearchDoorKnockingPage,
 });

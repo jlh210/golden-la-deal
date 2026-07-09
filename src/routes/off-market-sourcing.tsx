@@ -7,6 +7,7 @@ import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { submitLead } from "@/lib/leads.functions";
 
+import { breadcrumbScript } from "@/lib/seo";
 export const Route = createFileRoute("/off-market-sourcing")({
   head: () => ({
     meta: [
@@ -24,6 +25,9 @@ export const Route = createFileRoute("/off-market-sourcing")({
       { property: "og:url", content: "https://www.penthouseadvisors.com/off-market-sourcing" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/off-market-sourcing" }],
+    scripts: [
+      breadcrumbScript([{name:"Home",path:"/"},{name:'Off-Market Sourcing',path:'/off-market-sourcing'}]),
+    ],
   }),
   component: OffMarketPage,
 });

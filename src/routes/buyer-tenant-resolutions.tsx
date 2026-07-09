@@ -4,6 +4,7 @@ import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
+import { breadcrumbScript } from "@/lib/seo";
 export const Route = createFileRoute("/buyer-tenant-resolutions")({
   head: () => ({
     meta: [
@@ -21,6 +22,9 @@ export const Route = createFileRoute("/buyer-tenant-resolutions")({
       { property: "og:url", content: "https://www.penthouseadvisors.com/buyer-tenant-resolutions" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/buyer-tenant-resolutions" }],
+    scripts: [
+      breadcrumbScript([{name:"Home",path:"/"},{name:'Buyer / Tenant Resolutions',path:'/buyer-tenant-resolutions'}]),
+    ],
   }),
   component: ResolutionsPage,
 });

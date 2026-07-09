@@ -6,6 +6,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { LeadForm } from "@/components/site/LeadForm";
 import { serviceTopics } from "@/lib/services";
 
+import { breadcrumbScript } from "@/lib/seo";
 export const Route = createFileRoute("/contact")({
   validateSearch: (search) =>
     z.object({ service: z.string().optional() }).parse(search),
@@ -25,6 +26,9 @@ export const Route = createFileRoute("/contact")({
       { property: "og:url", content: "https://www.penthouseadvisors.com/contact" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/contact" }],
+    scripts: [
+      breadcrumbScript([{name:"Home",path:"/"},{name:'Contact',path:'/contact'}]),
+    ],
   }),
   component: ContactPage,
 });
