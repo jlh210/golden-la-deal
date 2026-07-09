@@ -45,8 +45,8 @@ function ContactPage() {
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
           <LeadForm
             serviceNeeded={prefill}
-            title="Book a Consultation"
-            subtitle={prefill ? "We've pre-filled your service need below. Add a few details and we'll respond same business day." : "Pick your Service Needed below - every category we offer is in the dropdown."}
+            title="Book a $35 Consultation"
+            subtitle={prefill ? "Speak with our experts. We pre-filled your topic below — add details and we’ll respond same business day." : "Speak with our experts. Pick the topic you need help with and we’ll respond same business day."}
             messagePlaceholder={prefill ? "Address of my current restaurant" : "A few details on your situation…"}
           />
 
