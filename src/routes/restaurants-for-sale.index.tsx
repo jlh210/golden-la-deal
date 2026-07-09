@@ -50,7 +50,7 @@ function ListingsPage() {
     <>
       <PageHero
         eyebrow="Current Inventory"
-        title="Restaurants for sale"
+        title="Restaurants & Business' for Sale/Lease"
         accent="in Los Angeles."
         subtitle="A snapshot of what we're moving right now. Call for off-market opportunities not shown here."
       />
