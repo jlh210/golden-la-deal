@@ -38,7 +38,7 @@ function ContactPage() {
         eyebrow="Get In Touch"
         title="Speak with a real"
         accent="LA expert."
-        subtitle="Book a paid consultation for business, restaurant, and city problems that actually need answers."
+        subtitle="Book a consultation call for real business, restaurant, and city problems."
       />
 
       <section className="container-x py-12 md:py-16">
