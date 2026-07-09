@@ -36,19 +36,30 @@ function ContactPage() {
     <SiteLayout>
       <PageHero
         eyebrow="Get In Touch"
-        title="Tell us what you"
-        accent="need."
-        subtitle="We answer the phone. We respond to messages within the business day. Whether you're buying, selling, licensing, leasing, or in trouble - start here."
+        title="Speak with LA experts"
+        accent="for $35."
+        subtitle="A real consultation with specialists who solve business, city, and restaurant problems — buying, selling, licensing, leasing, permitting, and disputes."
       />
 
       <section className="container-x py-12 md:py-16">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
-          <LeadForm
-            serviceNeeded={prefill}
-            title="Book a Consultation"
-            subtitle={prefill ? "We've pre-filled your service need below. Add a few details and we'll respond same business day." : "Pick your Service Needed below - every category we offer is in the dropdown."}
-            messagePlaceholder={prefill ? "Address of my current restaurant" : "A few details on your situation…"}
-          />
+          <div className="space-y-6">
+            <div className="rounded-2xl border border-gold/40 bg-gradient-to-br from-gold/10 to-card p-6 shadow-elegant">
+              <div className="text-xs uppercase tracking-widest text-gold font-semibold">Consultation</div>
+              <div className="mt-2 text-2xl md:text-3xl font-display font-bold">
+                $35 to speak with experts
+              </div>
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                Get answers from specialists who handle real business, city, and restaurant issues — not a generic call center.
+              </p>
+            </div>
+            <LeadForm
+              serviceNeeded={prefill}
+              title="Book a $35 Consultation"
+              subtitle={prefill ? "Speak with our experts. We pre-filled your topic below — add details and we’ll respond same business day." : "Speak with our experts. Pick the topic you need help with and we’ll respond same business day."}
+              messagePlaceholder={prefill ? "Address of my current restaurant" : "A few details on your situation…"}
+            />
+          </div>
 
           <div className="space-y-5">
             <a
