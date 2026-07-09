@@ -270,7 +270,7 @@ function ListingDetail() {
             </ul>
           </div>
           <LeadForm
-            serviceNeeded={`Listing inquiry — ${l.location}`}
+            serviceNeeded={`Listing inquiry — ${l.title}`}
             title="Inquire about this listing"
             subtitle="Private inquiry. We respond same business day."
             messagePlaceholder="Address of my current restaurant"
