@@ -41,13 +41,13 @@ export const listings: Listing[] = [
   {
     id: "RE-001",
     slug: "jazzve-garden-tujunga",
-    type: "Real Estate",
-    title: "Jazzve Garden — Banquet Facility + Real Estate",
+    type: "Business Sale",
+    title: "Jazzve Garden — Banquet Facility With Real Estate",
     location: "6500 Foothill Blvd, Tujunga, CA 91042",
     coords: [34.244886, -118.273479],
     price: "Starting at $6,000,000",
     priceNote: "Reviewing All Offers",
-    leaseType: "Real estate sale · APN 2564-012012",
+    leaseType: "Business sale with real estate · APN 2564-012012",
     badge: "Just Listed",
     description:
       "Built to host weddings and celebrations with a sense of ease and elegance. Turn-key banquet facility with multiple commercial kitchens, dining areas, and bars — sophistication and warmth in one venue.",
@@ -164,12 +164,12 @@ export const listings: Listing[] = [
   {
     id: "R-003",
     slug: "wilshire-second-gen-lease",
-    type: "Business Sale",
+    type: "Asset Sale",
     title: "New Lease — Second-Generation Equipped Restaurant",
     location: "2408 Wilshire Blvd, Santa Monica, CA",
     coords: [34.032541, -118.484189],
     price: "$10,000 / month",
-    priceNote: "New lease · Negotiable",
+    priceNote: "New lease · Negotiable · Zero $0 key money",
     leaseType: "Stand-alone building · New lease",
     description:
       "Second-generation equipped restaurant in a stand-alone building on Wilshire Blvd with a gated outdoor rear area for pop-ups, dining, birthday parties, and weddings.",
