@@ -119,7 +119,7 @@ function ContactPage() {
               </div>
               <iframe
                 title="Los Angeles County map"
-                src="https://www.google.com/maps?q=Los%20Angeles%20County%2C%20CA&output=embed"
+                src="/api/public/contact-map"
                 className="w-full h-72 border-0 grayscale-[40%] opacity-90"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
