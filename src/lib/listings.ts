@@ -39,6 +39,32 @@ export type Listing = {
 
 export const listings: Listing[] = [
   {
+    id: "RE-005",
+    slug: "dental-office-for-lease",
+    type: "Real Estate",
+    title: "Dental Office For Lease",
+    location: "Los Angeles County, CA",
+    price: "$4,700 / month",
+    priceNote: "Rent approximately",
+    leaseType: "Dental office lease · Medical use zoned",
+    badge: "New Listing",
+    description:
+      "Medical use zoned property. Ready-to-go dental office with several rooms supplied with air and water lines. Rent approximately $4,700 per month.",
+    longDescription: [
+      "Medical use zoned property available for lease. Ready-to-go dental office with several operator rooms already supplied with air and water lines.",
+      "Rent is approximately $4,700 per month. Ideal for a dentist or dental group looking for a compliant, move-in-ready medical space in Los Angeles County.",
+    ],
+    features: [
+      "Medical use zoned",
+      "Ready-to-go dental office",
+      "Air and water lines in rooms",
+      "Several operator rooms",
+      "Approx. $4,700/month rent",
+      "Los Angeles County location",
+    ],
+    images: [dentalOffice.url],
+  },
+  {
     id: "RE-001",
     slug: "jazzve-garden-tujunga",
     type: "Business Sale",
@@ -276,32 +302,6 @@ export const listings: Listing[] = [
       "West LA shopping center location",
     ],
     images: [westLaOpenCooking.url],
-  },
-  {
-    id: "RE-005",
-    slug: "dental-office-for-lease",
-    type: "Real Estate",
-    title: "Dental Office For Lease",
-    location: "Los Angeles County, CA",
-    price: "$4,700 / month",
-    priceNote: "Rent approximately",
-    leaseType: "Dental office lease · Medical use zoned",
-    badge: "New Listing",
-    description:
-      "Medical use zoned property. Ready-to-go dental office with several rooms supplied with air and water lines. Rent approximately $4,700 per month.",
-    longDescription: [
-      "Medical use zoned property available for lease. Ready-to-go dental office with several operator rooms already supplied with air and water lines.",
-      "Rent is approximately $4,700 per month. Ideal for a dentist or dental group looking for a compliant, move-in-ready medical space in Los Angeles County.",
-    ],
-    features: [
-      "Medical use zoned",
-      "Ready-to-go dental office",
-      "Air and water lines in rooms",
-      "Several operator rooms",
-      "Approx. $4,700/month rent",
-      "Los Angeles County location",
-    ],
-    images: [dentalOffice.url],
   },
 ];
 
