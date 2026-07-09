@@ -101,7 +101,7 @@ function HomePage() {
             >
               Los Angeles County's
               <br />
-              <span className="italic text-gradient-gold">Premier Restaurant</span>
+              <span className="italic text-gradient-gold">Premier Restaurant &amp; Business</span>
               <br />
               Advisory Firm.
             </h1>
