@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowLeft, MapPin, Ruler, Phone, ArrowRight, Sparkles, Check } from "lucide-react";
-import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
+import { PHONE, PHONE_HREF } from "@/components/site/Layout";
 import { LeadForm } from "@/components/site/LeadForm";
 import { getListingBySlug, listings, type Listing } from "@/lib/listings";
 import { ListingLocationMap } from "@/components/site/ListingLocationMap";
@@ -38,32 +38,28 @@ export const Route = createFileRoute("/restaurants-for-sale/$slug")({
   },
 
   notFoundComponent: () => (
-    <SiteLayout>
-      <div className="container-x py-24 text-center">
-        <h1 className="text-3xl font-display font-bold">Listing not found</h1>
-        <p className="mt-3 text-muted-foreground">This listing may have been sold or removed.</p>
-        <Link
-          to="/restaurants-for-sale"
-          className="mt-6 inline-flex items-center gap-2 rounded-md bg-gold-gradient px-6 py-3 text-sm font-bold text-charcoal-deep shadow-gold"
-        >
-          <ArrowLeft className="h-4 w-4" /> Back to listings
-        </Link>
-      </div>
-    </SiteLayout>
+    <div className="container-x py-24 text-center">
+      <h1 className="text-3xl font-display font-bold">Listing not found</h1>
+      <p className="mt-3 text-muted-foreground">This listing may have been sold or removed.</p>
+      <Link
+        to="/restaurants-for-sale"
+        className="mt-6 inline-flex items-center gap-2 rounded-md bg-gold-gradient px-6 py-3 text-sm font-bold text-charcoal-deep shadow-gold"
+      >
+        <ArrowLeft className="h-4 w-4" /> Back to listings
+      </Link>
+    </div>
   ),
   errorComponent: ({ error, reset }) => (
-    <SiteLayout>
-      <div className="container-x py-24 text-center">
-        <h1 className="text-2xl font-display font-bold">Something went wrong</h1>
-        <p className="mt-2 text-muted-foreground">{error.message}</p>
-        <button
-          onClick={() => reset()}
-          className="mt-6 rounded-md border border-gold/40 px-6 py-3 text-sm font-semibold hover:bg-gold/10"
-        >
-          Try again
-        </button>
-      </div>
-    </SiteLayout>
+    <div className="container-x py-24 text-center">
+      <h1 className="text-2xl font-display font-bold">Something went wrong</h1>
+      <p className="mt-2 text-muted-foreground">{error.message}</p>
+      <button
+        onClick={() => reset()}
+        className="mt-6 rounded-md border border-gold/40 px-6 py-3 text-sm font-semibold hover:bg-gold/10"
+      >
+        Try again
+      </button>
+    </div>
   ),
   component: ListingDetail,
 });
@@ -74,7 +70,7 @@ function ListingDetail() {
   const other = listings.filter((x) => x.slug !== l.slug).slice(0, 3);
 
   return (
-    <SiteLayout>
+    <>
       <section className="container-x pt-8 pb-4">
         <Link
           to="/restaurants-for-sale"
@@ -348,6 +344,6 @@ function ListingDetail() {
           </div>
         </section>
       )}
-    </SiteLayout>
+    </>
   );
 }
