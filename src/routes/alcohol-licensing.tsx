@@ -56,7 +56,7 @@ const types = [
 ];
 
 const fees = [
-  { label: "Penthouse Processing Fee", amount: "$7,000" },
+  { label: "Penthouse Processing Fee", amount: "$8,000" },
   { label: "California State Payment", amount: "$1,660" },
   { label: "ABC Mailing / Notification", amount: "$2,900" },
   { label: "Live Scan per person", amount: "$30–45" },
