@@ -123,7 +123,7 @@ function ContactPage() {
               </div>
               <iframe
                 title="Los Angeles County map"
-                src="/api/public/contact-map"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-118.9448%2C33.7037%2C-117.6462%2C34.8233&layer=mapnik"
                 className="w-full h-72 border-0 grayscale-[40%] opacity-90"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
