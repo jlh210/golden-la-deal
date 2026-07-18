@@ -40,9 +40,9 @@ function ContactPage() {
     <SiteLayout>
       <PageHero
         eyebrow="Reserve your advisory call"
-        title="Lock in your paid consultation with"
-        accent="COO Richard Stein for $35."
-        subtitle="A guaranteed, non-refundable one-on-one meeting. Your $35 secures direct time with our Chief Operating Officer and ensures you get immediate relief and expert business consultation for your restaurant, property, or city-related situation."
+        title="Book direct time with COO Richard Stein"
+        accent="for a $35 consultation."
+        subtitle="A guaranteed, non-refundable one-on-one call. Get immediate relief and expert business guidance for your restaurant, property, or city-related situation."
       />
 
       <section className="container-x py-12 md:py-16">
