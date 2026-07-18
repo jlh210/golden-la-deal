@@ -40,29 +40,29 @@ function ContactPage() {
     <SiteLayout>
       <PageHero
         eyebrow="Get In Touch"
-        title="Speak with a real"
-        accent="LA expert."
-        subtitle="Book a consultation call for real business, restaurant, and city problems."
+        title="Lock in your booked"
+        accent="consultation for $35."
+        subtitle="A guaranteed meeting to speak directly with COO Richard Stein about your restaurant, business, or city-related situation."
       />
 
       <section className="container-x py-12 md:py-16">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
           <div className="space-y-6">
             <div className="rounded-2xl border border-gold/40 bg-gradient-to-br from-gold/10 to-card p-6 shadow-elegant">
-              <div className="text-xs uppercase tracking-widest text-gold font-semibold">Consultation call</div>
+              <div className="text-xs uppercase tracking-widest text-gold font-semibold">Guaranteed meeting</div>
               <div className="mt-2 text-2xl md:text-3xl font-display font-bold">
-                $35 to speak with a real expert
+                Lock in your booked consultation for $35
               </div>
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                A 30-minute call with a specialist who handles real LA restaurant, business, and city issues.
+                Speak directly with COO Richard Stein. A confirmed, one-on-one session to solve real restaurant, business, and city-related problems.
               </p>
             </div>
             <LeadForm
               serviceNeeded={prefill}
-              title="Book a Consultation Call"
-              subtitle={prefill ? "We pre-filled your topic below. Add a few details and we’ll respond same business day." : "Pick the topic you need help with and we’ll respond same business day."}
+              title="Book Your $35 Consultation"
+              subtitle={prefill ? "We pre-filled your topic below. Add a few details and we’ll confirm your meeting with Richard Stein." : "Pick the topic you need help with and we’ll confirm your meeting with Richard Stein."}
               messagePlaceholder={prefill ? "Address of my current restaurant" : "A few details on your situation…"}
-              note="This is a $35 consultation call to speak with a real expert on real LA business and restaurant problems."
+              note="This is a $35 consultation to lock in a guaranteed meeting with COO Richard Stein."
             />
           </div>
 
