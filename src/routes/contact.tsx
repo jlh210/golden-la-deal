@@ -40,9 +40,9 @@ function ContactPage() {
     <SiteLayout>
       <PageHero
         eyebrow="Get In Touch"
-        title="Lock in your booked"
-        accent="consultation for $35."
-        subtitle="A guaranteed meeting to speak directly with Richard Stein, a professional business and restaurant advisor, about your restaurant, business, or city-related situation."
+        title="Lock in your paid consultation with"
+        accent="COO Richard Stein for $35."
+        subtitle="A guaranteed, non-refundable one-on-one meeting. Your $35 secures direct time with our Chief Operating Officer and ensures you get immediate relief and expert business consultation for your restaurant, property, or city-related situation."
       />
 
       <section className="container-x py-12 md:py-16">
