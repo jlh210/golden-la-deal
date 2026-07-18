@@ -42,7 +42,7 @@ function ContactPage() {
         eyebrow="Get In Touch"
         title="Lock in your booked"
         accent="consultation for $35."
-        subtitle="A guaranteed meeting to speak directly with COO Richard Stein about your restaurant, business, or city-related situation."
+        subtitle="A guaranteed meeting to speak directly with Richard Stein, a professional business and restaurant advisor, about your restaurant, business, or city-related situation."
       />
 
       <section className="container-x py-12 md:py-16">
