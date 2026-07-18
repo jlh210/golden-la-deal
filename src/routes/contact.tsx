@@ -53,9 +53,6 @@ function ContactPage() {
               <div className="mt-2 text-2xl md:text-3xl font-display font-bold">
                 Lock in your guaranteed meeting with COO Richard Stein for $35
               </div>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                This $35 locks in your appointment and guarantees you speak directly with Richard Stein, our Chief Operating Officer. You’ll get immediate relief, real answers, and focused business consultation.
-              </p>
             </div>
             <LeadForm
               serviceNeeded={prefill}
