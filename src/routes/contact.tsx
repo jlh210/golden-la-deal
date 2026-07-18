@@ -40,9 +40,9 @@ function ContactPage() {
     <SiteLayout>
       <PageHero
         eyebrow="Get In Touch"
-        title="Speak with a real"
-        accent="LA expert."
-        subtitle="Book a consultation call for real business, restaurant, and city problems."
+        title="Lock in your booked"
+        accent="consultation for $35."
+        subtitle="A guaranteed meeting to speak directly with COO Richard Stein about your restaurant, business, or city-related situation."
       />
 
       <section className="container-x py-12 md:py-16">
