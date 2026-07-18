@@ -39,7 +39,7 @@ function ContactPage() {
   return (
     <SiteLayout>
       <PageHero
-        eyebrow="Get In Touch"
+        eyebrow="Reserve your advisory call"
         title="Lock in your paid consultation with"
         accent="COO Richard Stein for $35."
         subtitle="A guaranteed, non-refundable one-on-one meeting. Your $35 secures direct time with our Chief Operating Officer and ensures you get immediate relief and expert business consultation for your restaurant, property, or city-related situation."
