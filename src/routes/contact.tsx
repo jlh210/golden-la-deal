@@ -54,7 +54,7 @@ function ContactPage() {
                 Lock in your booked consultation for $35
               </div>
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                Speak directly with COO Richard Stein. A confirmed, one-on-one session to solve real restaurant, business, and city-related problems.
+                Speak directly with Richard Stein, a professional business and restaurant advisor. A confirmed, one-on-one session to solve real restaurant, business, and city-related problems.
               </p>
             </div>
             <LeadForm
@@ -62,7 +62,7 @@ function ContactPage() {
               title="Book Your $35 Consultation"
               subtitle={prefill ? "We pre-filled your topic below. Add a few details and we’ll confirm your meeting with Richard Stein." : "Pick the topic you need help with and we’ll confirm your meeting with Richard Stein."}
               messagePlaceholder={prefill ? "Address of my current restaurant" : "A few details on your situation…"}
-              note="This is a $35 consultation to lock in a guaranteed meeting with COO Richard Stein."
+              note="This is a $35 consultation to lock in a guaranteed meeting with Richard Stein, a professional business and restaurant advisor."
             />
           </div>
 
