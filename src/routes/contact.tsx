@@ -59,8 +59,8 @@ function ContactPage() {
             </div>
             <LeadForm
               serviceNeeded={prefill}
-              title="Book a Consultation Call"
-              subtitle={prefill ? "We pre-filled your topic below. Add a few details and we’ll respond same business day." : "Pick the topic you need help with and we’ll respond same business day."}
+              title="Book Your $35 Consultation"
+              subtitle={prefill ? "We pre-filled your topic below. Add a few details and we’ll confirm your meeting with Richard Stein." : "Pick the topic you need help with and we’ll confirm your meeting with Richard Stein."}
               messagePlaceholder={prefill ? "Address of my current restaurant" : "A few details on your situation…"}
               note="This is a $35 consultation to lock in a guaranteed meeting with COO Richard Stein."
             />
