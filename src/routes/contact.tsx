@@ -40,8 +40,8 @@ function ContactPage() {
     <SiteLayout>
       <PageHero
         eyebrow="Reserve your advisory call"
-        title="Book direct time with COO Richard Stein"
-        accent="for a $35 consultation."
+        title="Speak directly with our COO, Richard Stein"
+        accent="$35 locked in time for immediate business advisory."
         subtitle="A guaranteed, non-refundable one-on-one call. Get immediate relief and expert business guidance for your restaurant, property, or city-related situation."
       />
 
