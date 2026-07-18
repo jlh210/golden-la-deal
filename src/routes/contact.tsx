@@ -59,8 +59,8 @@ function ContactPage() {
             </div>
             <LeadForm
               serviceNeeded={prefill}
-              title="Book Your $35 Consultation"
-              subtitle="Secure your guaranteed meeting with COO Richard Stein. Your $35 non-refundable payment locks in your time and ensures immediate, expert business consultation."
+              title="First, let’s get your information"
+              subtitle="Once we have your details, we’ll lock in your $35 non-refundable consultation with COO Richard Stein — a guaranteed one-on-one meeting for immediate business relief and expert guidance."
               messagePlaceholder={prefill ? "Address of my current restaurant" : "A few details on your situation…"}
               note="This is a paid, non-refundable $35 consultation that guarantees a one-on-one meeting with COO Richard Stein. Immediate relief and expert business consultation included."
             />
