@@ -49,12 +49,12 @@ function ContactPage() {
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
           <div className="space-y-6">
             <div className="rounded-2xl border border-gold/40 bg-gradient-to-br from-gold/10 to-card p-6 shadow-elegant">
-              <div className="text-xs uppercase tracking-widest text-gold font-semibold">Guaranteed meeting</div>
+              <div className="text-xs uppercase tracking-widest text-gold font-semibold">Paid consultation — non-refundable</div>
               <div className="mt-2 text-2xl md:text-3xl font-display font-bold">
-                Lock in your booked consultation for $35
+                Lock in your guaranteed meeting with COO Richard Stein for $35
               </div>
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                Speak directly with Richard Stein, a professional business and restaurant advisor. A confirmed, one-on-one session to solve real restaurant, business, and city-related problems.
+                This $35 locks in your appointment and guarantees you speak directly with Richard Stein, our Chief Operating Officer. You’ll get immediate relief, real answers, and focused business consultation — not a sales pitch.
               </p>
             </div>
             <LeadForm
