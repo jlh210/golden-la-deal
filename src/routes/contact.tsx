@@ -40,29 +40,29 @@ function ContactPage() {
     <SiteLayout>
       <PageHero
         eyebrow="Get In Touch"
-        title="Lock in your booked"
-        accent="consultation for $35."
-        subtitle="A guaranteed meeting to speak directly with Richard Stein, a professional business and restaurant advisor, about your restaurant, business, or city-related situation."
+        title="Lock in your paid consultation with"
+        accent="COO Richard Stein for $35."
+        subtitle="A guaranteed, non-refundable one-on-one meeting. Your $35 secures direct time with our Chief Operating Officer and ensures you get immediate relief and expert business consultation for your restaurant, property, or city-related situation."
       />
 
       <section className="container-x py-12 md:py-16">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
           <div className="space-y-6">
             <div className="rounded-2xl border border-gold/40 bg-gradient-to-br from-gold/10 to-card p-6 shadow-elegant">
-              <div className="text-xs uppercase tracking-widest text-gold font-semibold">Guaranteed meeting</div>
+              <div className="text-xs uppercase tracking-widest text-gold font-semibold">Paid consultation — non-refundable</div>
               <div className="mt-2 text-2xl md:text-3xl font-display font-bold">
-                Lock in your booked consultation for $35
+                Lock in your guaranteed meeting with COO Richard Stein for $35
               </div>
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                Speak directly with Richard Stein, a professional business and restaurant advisor. A confirmed, one-on-one session to solve real restaurant, business, and city-related problems.
+                This $35 locks in your appointment and guarantees you speak directly with Richard Stein, our Chief Operating Officer. You’ll get immediate relief, real answers, and focused business consultation — not a sales pitch.
               </p>
             </div>
             <LeadForm
               serviceNeeded={prefill}
               title="Book Your $35 Consultation"
-              subtitle={prefill ? "We pre-filled your topic below. Add a few details and we’ll confirm your meeting with Richard Stein." : "Pick the topic you need help with and we’ll confirm your meeting with Richard Stein."}
+              subtitle="Secure your guaranteed meeting with COO Richard Stein. Your $35 non-refundable payment locks in your time and ensures immediate, expert business consultation."
               messagePlaceholder={prefill ? "Address of my current restaurant" : "A few details on your situation…"}
-              note="This is a $35 consultation to lock in a guaranteed meeting with Richard Stein, a professional business and restaurant advisor."
+              note="This is a paid, non-refundable $35 consultation that guarantees a one-on-one meeting with COO Richard Stein. Immediate relief and expert business consultation included."
             />
           </div>
 
