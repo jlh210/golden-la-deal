@@ -40,9 +40,9 @@ function ContactPage() {
     <SiteLayout>
       <PageHero
         eyebrow="Reserve your advisory call"
-        title="Speak directly with our COO, Richard Stein"
-        accent="$35 locked in time for immediate business advisory."
-        subtitle="A guaranteed, non-refundable one-on-one call. Get immediate relief and expert business guidance for your restaurant, property, or city-related situation."
+        title="Speak directly with our COO, Richard Stein and or CEO Roschard Paticchio Stein for Immediate Business Resolutions."
+        accent="Zelle $35 to 310-460-9757 to lock in your guaranteed 30-minute consultation."
+        subtitle="A guaranteed, non-refundable one-on-one mobile-to-mobile call. Get immediate relief and expert business guidance for your restaurant, property, or city-related situation."
       />
 
       <section className="container-x py-12 md:py-16">
@@ -51,15 +51,18 @@ function ContactPage() {
             <div className="rounded-2xl border border-gold/40 bg-gradient-to-br from-gold/10 to-card p-6 shadow-elegant">
               <div className="text-xs uppercase tracking-widest text-gold font-semibold">Paid consultation — non-refundable</div>
               <div className="mt-2 text-2xl md:text-3xl font-display font-bold">
-                Lock in your guaranteed meeting with COO Richard Stein for $35
+                Lock in your guaranteed 30-minute mobile consultation with Richard Stein or Roschard Paticchio Stein for $35
               </div>
+              <p className="mt-3 text-sm text-muted-foreground">
+                Zelle $35 to <span className="text-gold font-semibold">310-460-9757</span> (Roschard Paticchio Stein). Once sent, submit your details below and we’ll confirm your call.
+              </p>
             </div>
             <LeadForm
               serviceNeeded={prefill}
               title="First, let’s get your information"
-              subtitle="Secure your guaranteed meeting with COO Richard Stein. Your $35 non-refundable payment locks in your time and ensures immediate, expert business consultation."
+              subtitle="Secure your guaranteed 30-minute mobile-to-mobile meeting with Richard Stein or Roschard Paticchio Stein. Your $35 non-refundable Zelle payment locks in your time and ensures immediate, expert business consultation."
               messagePlaceholder={prefill ? "Address of my current restaurant" : "A few details on your situation…"}
-              note="This is a paid, non-refundable $35 consultation that guarantees a one-on-one meeting with COO Richard Stein. Immediate relief and expert business consultation included."
+              note="This is a paid, non-refundable $35 consultation. Zelle $35 to 310-460-9757 (Roschard Paticchio Stein), then submit your details below to guarantee a one-on-one meeting with Richard Stein or Roschard Paticchio Stein. Immediate relief and expert business consultation included."
             />
           </div>
 
