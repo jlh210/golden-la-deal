@@ -54,7 +54,7 @@ function ContactPage() {
                 $35 secures your guaranteed advisory call.
               </div>
               <p className="mt-3 text-sm text-muted-foreground">
-                Zelle $35 to <span className="text-gold font-semibold">310-460-9757</span> (Roschard Paticchio Stein), then submit your details below.
+                Submit your details below and we'll confirm your appointment.
               </p>
             </div>
             <LeadForm
