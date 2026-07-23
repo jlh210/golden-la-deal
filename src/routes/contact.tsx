@@ -12,16 +12,16 @@ export const Route = createFileRoute("/contact")({
     z.object({ service: z.string().optional() }).parse(search),
   head: () => ({
     meta: [
-      { title: "Contact / Book a Consultation - Penthouse Advisors LA" },
+      { title: "Book a $35 Consultation - Penthouse Advisors LA" },
       {
         name: "description",
         content:
-          "Book a consultation with Penthouse Advisors. Call 310-663-3521, email PenthouseAdvisors@gmail.com, or send a message. Servicing Los Angeles County.",
+          "Book a paid consultation with Penthouse Advisors. Speak directly with Richard Stein or Roschard Paticchio Stein about your restaurant, business, or property in Los Angeles County.",
       },
-      { property: "og:title", content: "Contact Penthouse Advisors" },
+      { property: "og:title", content: "Book a Consultation - Penthouse Advisors" },
       {
         property: "og:description",
-        content: "Book a consultation with LA's restaurant experts.",
+        content: "Lock in your guaranteed advisory call with LA's restaurant experts.",
       },
       { property: "og:url", content: "https://www.penthouseadvisors.com/contact" },
     ],
@@ -40,9 +40,9 @@ function ContactPage() {
     <SiteLayout>
       <PageHero
         eyebrow="Reserve your advisory call"
-        title="Speak directly with our COO, Richard Stein and or CEO Roschard Paticchio Stein for Immediate Business Resolutions."
-        accent="Zelle $35 to 310-460-9757 to lock in your guaranteed 30-minute consultation."
-        subtitle="A guaranteed, non-refundable one-on-one mobile-to-mobile call. Get immediate relief and expert business guidance for your restaurant, property, or city-related situation."
+        title="Speak directly with our COO, Richard Stein or CEO Roschard Paticchio Stein."
+        accent="Lock in your $35 consultation."
+        subtitle="A guaranteed 30-minute mobile-to-mobile call for real answers on restaurants, properties, and city matters."
       />
 
       <section className="container-x py-12 md:py-16">
@@ -51,18 +51,18 @@ function ContactPage() {
             <div className="rounded-2xl border border-gold/40 bg-gradient-to-br from-gold/10 to-card p-6 shadow-elegant">
               <div className="text-xs uppercase tracking-widest text-gold font-semibold">Paid consultation — non-refundable</div>
               <div className="mt-2 text-2xl md:text-3xl font-display font-bold">
-                Lock in your guaranteed 30-minute mobile consultation with Richard Stein or Roschard Paticchio Stein for $35
+                $35 secures your guaranteed advisory call.
               </div>
               <p className="mt-3 text-sm text-muted-foreground">
-                Zelle $35 to <span className="text-gold font-semibold">310-460-9757</span> (Roschard Paticchio Stein). Once sent, submit your details below and we’ll confirm your call.
+                Zelle $35 to <span className="text-gold font-semibold">310-460-9757</span> (Roschard Paticchio Stein), then submit your details below.
               </p>
             </div>
             <LeadForm
               serviceNeeded={prefill}
-              title="First, let’s get your information"
-              subtitle="Secure your guaranteed 30-minute mobile-to-mobile meeting with Richard Stein or Roschard Paticchio Stein. Your $35 non-refundable Zelle payment locks in your time and ensures immediate, expert business consultation."
+              title="Book your $35 consultation"
+              subtitle="Fill in your details. Once payment is confirmed, we’ll lock in your time with Richard Stein or Roschard Paticchio Stein."
               messagePlaceholder={prefill ? "Address of my current restaurant" : "A few details on your situation…"}
-              note="This is a paid, non-refundable $35 consultation. Zelle $35 to 310-460-9757 (Roschard Paticchio Stein), then submit your details below to guarantee a one-on-one meeting with Richard Stein or Roschard Paticchio Stein. Immediate relief and expert business consultation included."
+              note="$35 non-refundable. Zelle 310-460-9757 before submitting."
             />
           </div>
 
