@@ -137,7 +137,7 @@ export const listings: Listing[] = [
       "Valet and on-site parking",
       "Starting at $6,000,000",
     ],
-    images: [tujunga1.url, tujunga2.url, tujunga3.url, tujunga4.url],
+    images: [jazzveCollage.url, jazzveStorefront.url, jazzveFlorals.url],
   },
   {
     id: "R-002",
