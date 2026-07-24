@@ -1,6 +1,3 @@
-import tujunga1 from "@/assets/jazzve-venue-collage.png.asset.json";
-import tujunga2 from "@/assets/jazzve-storefront.png.asset.json";
-import tujunga3 from "@/assets/jazzve-florals.png.asset.json";
 import wilshire1 from "@/assets/wilshire-1.png.asset.json";
 import wilshire2 from "@/assets/wilshire-2.png.asset.json";
 import wilshire3 from "@/assets/wilshire-3.png.asset.json";
