@@ -11,6 +11,9 @@ import tujunga1 from "@/assets/tujunga-1.jpg.asset.json";
 import tujunga2 from "@/assets/tujunga-2.jpg.asset.json";
 import tujunga3 from "@/assets/tujunga-3.jpg.asset.json";
 import tujunga4 from "@/assets/tujunga-4.jpg.asset.json";
+import jazzveCollage from "@/assets/jazzve-venue-collage.png.asset.json";
+import jazzveStorefront from "@/assets/jazzve-storefront.png.asset.json";
+import jazzveFlorals from "@/assets/jazzve-florals.png.asset.json";
 
 export type SaleType = "Business Sale" | "Asset Sale" | "Real Estate" | "Medical / Dental";
 
