@@ -7,6 +7,9 @@ import santaMonica2 from "@/assets/santa-monica-2.png.asset.json";
 import hardwareStorefront from "@/assets/hardware-storefront.png.asset.json";
 import hardwareAisle from "@/assets/hardware-aisle.png.asset.json";
 import dentalOffice from "@/assets/dental-office-for-lease.png.asset.json";
+import jazzveCollage from "@/assets/jazzve-venue-collage.png.asset.json";
+import jazzveStorefront from "@/assets/jazzve-storefront.png.asset.json";
+import jazzveFlorals from "@/assets/jazzve-florals.png.asset.json";
 
 export type SaleType = "Business Sale" | "Asset Sale" | "Real Estate" | "Medical / Dental";
 
