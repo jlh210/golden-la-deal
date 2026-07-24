@@ -4,6 +4,7 @@ import { SiteLayout } from "@/components/site/Layout";
 import { Breadcrumbs } from "@/components/help/Breadcrumbs";
 import { CTASection } from "@/components/site/CTASection";
 import { getCategory, categories } from "@/content/help";
+import type { Article } from "@/content/help/types";
 import {
   breadcrumbScript,
   collectionScript,
