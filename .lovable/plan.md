@@ -1,110 +1,138 @@
 
-# Penthouse Advisors — SEO, IA & Sitelinks Optimization Plan
+# Penthouse Advisors — Help-Center-Style SEO Hub
 
-Scope: technical SEO, information architecture, schema, redirects, and conversion polish. Visual design (black/white/gold, typography, hero) stays intact.
+Reference: squareup.com/help/us/en. That's a **help center** pattern: a search bar hero, category tiles, per-category article indexes, and clean article pages with breadcrumbs + related links. We'll adapt that pattern for SEO/AI-search authority.
 
-## 1. Information Architecture & Navigation
+Design language (black/white/gold, existing components) stays unchanged — we're mapping Square's IA onto our brand.
 
-Reorganize the header nav to the canonical sitelink-friendly set. New top-level routes will be created (thin, well-optimized pages that consolidate existing content):
+## 1. Information architecture (Square-style)
 
 ```
-Home                      /
-Services                  /services            (existing — refine)
-Restaurant Listings       /restaurants-for-sale  (existing)
-Buy a Restaurant          /buy-a-restaurant    (NEW — buyer-focused landing)
-Sell Your Restaurant      /sell-your-restaurant (NEW — seller-focused landing)
-Restaurant Leasing        /restaurant-leasing  (NEW — wraps leasing-vacant-restaurants)
-Licensing & Permits       /licensing-and-permits (NEW — wraps alcohol-licensing + health-permitting)
-Restaurant Consulting     /restaurant-consulting (NEW — advisory/E2/investigations hub)
-About                     /about               (existing)
-Contact                   /contact             (existing)
+/help                                     Hub — search bar + category tiles
+/help/<category>                          Category index — article list
+/help/<category>/<article-slug>           Article — long-form SEO content
 ```
 
-The new routes will internally link out to the existing deep service pages (alcohol-licensing, health-permitting, leasing-vacant-restaurants, off-market-sourcing, etc.). The deep pages stay live and indexable.
+Categories mirror our services (one per service they provide, as requested):
 
-Footer keeps the full deep-link map for crawl depth.
+- buying-a-restaurant
+- selling-a-restaurant
+- restaurant-leasing
+- alcohol-licensing
+- health-permitting
+- grandfather-protection
+- lease-assignments
+- business-investigations
+- buyer-tenant-resolutions
+- off-market-sourcing
+- e2-visa
+- commercial-property-management
+- medical-dental-leasing
+- restaurant-consulting
+- local-markets  (Beverly Hills, Glendale, Pasadena, Santa Monica, etc.)
 
-## 2. Homepage Metadata Rewrite
+Each category holds: the pillar overview + 4–8 focused articles + FAQ block.
 
-- Title: `Los Angeles County's Premier Restaurant Advisory Firm | Penthouse Advisors`
-- Meta description: as specified by the user.
-- One H1: `Los Angeles County's Premier Restaurant Advisory Firm`
-- Add a structured "Our Services" link grid pointing at all 7 canonical service routes above.
+## 2. Page templates (matching Square patterns)
 
-## 3. Per-Page SEO (every route)
+**Hub `/help`**
+- Big search input (client-side fuzzy search across article titles + tags)
+- 3-column grid of category tiles: icon, title, article count, short description
+- "Popular articles" strip below (top 6 hand-picked)
+- Contact/consultation CTA footer
 
-Every route's `head()` will define: unique `<title>` (<60 chars), `description` (<160), `og:title`, `og:description`, `og:url`, `twitter:card`, and a leaf `<link rel="canonical">`. One H1 per page enforced. Existing pages already have most of this — verify and fix any gaps.
+**Category `/help/<category>`**
+- Breadcrumb: Help › Category
+- Category hero: title + description
+- Article list grouped by subtopic (Overview, How-tos, FAQs, Guides)
+- Sidebar (desktop) / accordion (mobile): "Other categories"
 
-Service pages get a consistent template: Overview → Benefits → Process → FAQ → CTA, with internal links to 2–3 related services and to Contact.
+**Article `/help/<category>/<slug>`**
+- Breadcrumb: Help › Category › Article
+- H1 + last-updated
+- **Key Takeaways** callout (AI-extractable summary box)
+- Table of contents (auto from H2s, sticky on desktop)
+- Long-form body (sections, lists, tables, quotes, images)
+- FAQ accordion (feeds `FAQPage` schema)
+- "Related articles" cards (same category)
+- Consultation CTA + "Was this helpful?" (visual only, not tracked)
 
-## 4. Structured Data (JSON-LD)
+## 3. Content system
 
-- `__root.tsx`: keep `ProfessionalService` schema; extend with `LocalBusiness` + `Organization` fields (sameAs, logo, openingHours, geo).
-- Add `WebSite` schema with `SearchAction` on root.
-- Each service page: `Service` schema + `BreadcrumbList`.
-- FAQ-containing pages: `FAQPage`.
-- Listings detail pages already get product-ish data — add `BreadcrumbList`.
+Static, versioned in git. No CMS.
 
-## 5. Technical SEO
+```
+src/content/help/
+  types.ts                       shared types
+  index.ts                       registry (categories + articles)
+  buying-a-restaurant/
+    _category.ts                 title, description, order
+    how-to-buy-a-restaurant-in-los-angeles.ts
+    restaurant-due-diligence-checklist.ts
+    ...
+  selling-a-restaurant/
+    _category.ts
+    ...
+```
 
-- `public/robots.txt`: already points at sitemap — verify clean.
-- `sitemap.xml`: add 5 new routes, remove `/residential` (redirected), keep `lastmod`.
-- Canonicals on every leaf (already done in prior pass — verify new routes).
-- All `<img>` get descriptive alt text (audit).
-- `loading="lazy"` on non-hero images.
-- ARIA labels on icon-only buttons.
+Each article exports: `{ slug, title, seoTitle, description, keywords, updatedAt, keyTakeaways[], tableOfContents[], sections[], faqs[], related[] }`.
 
-## 6. Redirects (301 / 410)
+## 4. Components (new)
 
-TanStack route-level redirects via `beforeLoad` throwing `redirect()`:
+- `HelpLayout.tsx` — reuses `SiteLayout`, adds help-center sub-nav
+- `HelpSearch.tsx` — client-side fuzzy over registry
+- `CategoryTile.tsx`, `ArticleCard.tsx`
+- `ArticleTemplate.tsx` — TOC + body + FAQ + related + CTA
+- `KeyTakeaways.tsx` (gold accent box, AI-friendly)
+- `Breadcrumbs.tsx` (visual + `BreadcrumbList` JSON-LD)
+- `FAQAccordion.tsx` (visual + `FAQPage` JSON-LD)
 
-- `/residential` → 301 → `/` (currently an active page; per spec, deprecate)
-- `/assignments-rent-abatement` → 301 → `/restaurant-consulting`
-- `/house-condo-servicing` → 301 → `/` (off-brand for restaurant focus)
-- `/hello-world`, `/sample-page`, `/?p=*` etc → 410 via a catch-all `/wp-legacy/$` plus an `index` check (TanStack notFoundComponent handles unknown — we'll add explicit 410 routes for the known WP slugs).
+## 5. Schema markup
 
-Note: WordPress `?p=123` query URLs can't be 410'd cleanly in a SPA; we'll add them to robots.txt `Disallow` and rely on canonicals.
+Extend `src/lib/seo.ts`:
+- `articleScript()` → `Article` + `Person` (Richard Stein, author)
+- `faqScript()` → `FAQPage`
+- Reuse `breadcrumbScript()` + `serviceScript()`
 
-## 7. Conversion Components (reusable)
+Every article page emits Article + BreadcrumbList + FAQPage. Category pages emit BreadcrumbList + `CollectionPage`.
 
-Add a shared `<ConversionFooterCTA />` block (Book Consultation button + Call Now `tel:` button + short lead form) and include it at the bottom of every service/landing route. Floating "Book Consultation" mobile button already exists — keep it.
+## 6. Nav + discovery
 
-Add a lightweight `<TrustBar />` (credentials, est. year, area served) to all new service hubs.
+- Header: add **Help** link (top-level, matching Square)
+- Footer: add **Help Center** column with top categories
+- Sitemap: auto-include every category + article
+- Homepage: add "Popular guides" section linking into `/help`
 
-## 8. Files Changed / Created
+## 7. Phased delivery
 
-New routes:
-- `src/routes/buy-a-restaurant.tsx`
-- `src/routes/sell-your-restaurant.tsx`
-- `src/routes/restaurant-leasing.tsx`
-- `src/routes/licensing-and-permits.tsx`
-- `src/routes/restaurant-consulting.tsx`
+**Phase 1 (this turn) — foundation + proof**
+- Content system + registry
+- All three route files (`/help`, `/help/$category`, `/help/$category/$slug`)
+- All templates + components + schema helpers
+- 15 category shells (one per service) with intros written
+- **5 fully-written articles** proving the format:
+  - Buying: "How to Buy a Restaurant in Los Angeles"
+  - Selling: "How to Sell a Restaurant in Los Angeles"
+  - Leasing: "Restaurant Lease Assignment Guide"
+  - Licensing: "ABC License Transfer Guide"
+  - Local: "Restaurant Broker Beverly Hills"
+- Nav + sitemap + footer updates
 
-New components:
-- `src/components/site/ConversionFooterCTA.tsx`
-- `src/components/site/ServicePageTemplate.tsx` (Overview/Benefits/Process/FAQ wrapper with JSON-LD)
-- `src/components/site/Breadcrumbs.tsx` (+ JSON-LD)
+**Phase 2 (next turns, on approval)**
+- Write 10 more articles per turn across categories
+- Add remaining local-market pages (Glendale, Pasadena, Santa Monica, Culver City, Burbank, West Hollywood, Sherman Oaks, DTLA, Long Beach, Torrance, Woodland Hills, SFV)
+- Grow to 40–60 articles total
 
-Redirect routes:
-- `src/routes/residential.tsx` (replace with `beforeLoad` redirect)
-- `src/routes/assignments-rent-abatement.tsx` (replace with redirect)
-- `src/routes/house-condo-servicing.tsx` (replace with redirect)
-- `src/routes/hello-world.tsx`, `src/routes/sample-page.tsx` (410 stubs)
+## 8. Out of scope
 
-Edited:
-- `src/components/site/Layout.tsx` — new nav structure
-- `src/routes/__root.tsx` — expand JSON-LD (LocalBusiness + WebSite)
-- `src/routes/index.tsx` — title/description/H1 + service grid links
-- `src/routes/sitemap[.]xml.ts` — add new routes, remove redirected ones
-- `src/routes/services.tsx` — link to new hubs
-- `public/robots.txt` — disallow legacy WP query patterns
+- Visual redesign — reuses tokens
+- Backend/CMS — content is TS modules
+- Real client testimonials — will use conservative language until you supply
+- Won't invent transaction counts / years — placeholders you can edit
 
-## 9. Out of Scope
+## 9. Two things I still need
 
-- Visual redesign (colors/typography unchanged).
-- Backend changes (no DB/schema work).
-- Real testimonials content — placeholders if needed (will ask user for real ones later).
+1. **Trust facts**: years in business, approx. transactions closed, sectors served. If unsure, I'll ship conservative placeholders labeled `TODO`.
+2. **Confirm the 15 categories above** — trim or add before I scaffold.
 
----
-
-This is a large multi-file change. I'll execute it in batches: nav + new routes first, then schema + metadata, then redirects + sitemap last.
+Reply "go" and I'll ship Phase 1 in one batch.
