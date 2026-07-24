@@ -10,7 +10,7 @@ import {
   SITE_URL,
 } from "@/lib/seo";
 
-export const Route = createFileRoute("/help/$category")({
+export const Route = createFileRoute("/help/$category/")({
   loader: ({ params }) => {
     const category = getCategory(params.category);
     if (!category) throw notFound();

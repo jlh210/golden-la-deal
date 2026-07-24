@@ -5,7 +5,7 @@ import { HelpSearch } from "@/components/help/HelpSearch";
 import { categories, allArticles } from "@/content/help";
 import { breadcrumbScript, SITE_URL } from "@/lib/seo";
 
-export const Route = createFileRoute("/help")({
+export const Route = createFileRoute("/help/")({
   head: () => ({
     meta: [
       { title: "Help Center — Restaurant Advisory Guides | Penthouse Advisors" },
