@@ -126,7 +126,7 @@ function CategoryPage() {
               </div>
             ) : (
               <div className="mt-4 grid gap-3">
-                {category.articles.map((a) => (
+                {category.articles.map((a: Article) => (
                   <Link
                     key={a.slug}
                     to="/help/$category/$slug"
