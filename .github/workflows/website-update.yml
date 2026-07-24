@@ -1,0 +1,47 @@
+# Save this file to: .github/workflows/website-update.yml in the GitHub repo
+# your Lovable project is synced to.
+#
+# It listens for a "website_update_request" dispatch event (sent by your
+# Make.com scenario when Richard posts in Slack), hands the raw request to
+# Claude Code, and lets Claude Code make the edit and open a PR.
+#
+# Setup required before this works:
+#   1. Install the Claude GitHub App on this repo: https://github.com/apps/claude
+#   2. Add ANTHROPIC_API_KEY as a repository secret
+#      (Repo Settings > Secrets and variables > Actions > New repository secret)
+
+name: Website Update via Claude Code
+
+on:
+  repository_dispatch:
+    types: [website_update_request]
+
+jobs:
+  update-site:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run Claude Code on the request
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            A website update was requested via Slack.
+
+            Requested by: ${{ github.event.client_payload.requester }}
+            Request:
+            "${{ github.event.client_payload.request }}"
+
+            Read the codebase, figure out what needs to change to fulfill this
+            request, and make the edit. Keep the change scoped to exactly what
+            was asked — don't refactor unrelated code. Open a pull request with
+            a clear title and a description that restates the request and
+            summarizes what you changed, so Richard and Jackie can review it
+            before it merges and Lovable deploys it.
+          claude_args: |
+            --allowedTools "Read,Edit,Write,Bash,Grep,Glob"
