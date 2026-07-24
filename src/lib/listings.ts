@@ -1,6 +1,3 @@
-import tujunga1 from "@/assets/jazzve-venue-collage.png.asset.json";
-import tujunga2 from "@/assets/jazzve-storefront.png.asset.json";
-import tujunga3 from "@/assets/jazzve-florals.png.asset.json";
 import wilshire1 from "@/assets/wilshire-1.png.asset.json";
 import wilshire2 from "@/assets/wilshire-2.png.asset.json";
 import wilshire3 from "@/assets/wilshire-3.png.asset.json";
@@ -64,62 +61,6 @@ export const listings: Listing[] = [
       "Los Angeles County location",
     ],
     images: [dentalOffice.url],
-  },
-  {
-    id: "RE-001",
-    slug: "jazzve-garden-tujunga",
-    type: "Business Sale",
-    title: "Jazzve Garden — Banquet Facility With Real Estate",
-    location: "6500 Foothill Blvd, Tujunga, CA 91042",
-    coords: [34.244886, -118.273479],
-    price: "Starting at $6,000,000",
-    priceNote: "Reviewing All Offers",
-    leaseType: "Business sale with real estate · APN 2564-012012",
-    badge: "Just Listed",
-    description:
-      "Built to host weddings and celebrations with a sense of ease and elegance. Turn-key banquet facility with multiple commercial kitchens, dining areas, and bars — sophistication and warmth in one venue.",
-    longDescription: [
-      "Built to host weddings and celebrations with a sense of ease, and elegance.",
-      "Turn-Key Ready banquet facility with multiple commercial kitchens, dining areas, and bars — designed to bring people together in a setting that feels both elevated and welcoming.",
-      "The premises offers a harmonious balance between sophistication and warmth — making every occasion feel deeply personal and truly memorable.",
-    ],
-    sections: [
-      {
-        heading: "Top Floor (Street Level) — ±4,200 sq ft",
-        body: "Second-generation, vacant, equipped restaurant inside the Jazzve Garden. Great visibility for branding and perfect for hosting up to 300 customers.",
-        bullets: [
-          "Fully equipped commercial kitchen",
-          "Walk-in refrigerator and freezer",
-          "Dry storage area",
-          "Dining area",
-          "Permissible hookah lounge area",
-          "Outdoor kitchen at front for serving passing guests",
-          "Parking for up to 30 vehicles",
-        ],
-      },
-      {
-        heading: "Lower Level — ±9,000 sq ft",
-        body: "Event arena perfect for hosting up to 800 customers. Valet parking ensures customer convenience.",
-        bullets: [
-          "Office with private restroom",
-          "Two fully equipped commercial kitchens",
-          "Prep room",
-          "Large walk-in refrigerator and freezer",
-          "Dry storage area",
-          "Event arena (capacity up to 800)",
-          "Valet parking",
-        ],
-      },
-    ],
-    features: [
-      "±13,200 sq ft total (two levels)",
-      "Multiple commercial kitchens",
-      "Indoor + garden dining areas",
-      "Hosts up to 800 guests",
-      "Turn-key wedding & event venue",
-      "Premium real estate included",
-    ],
-    images: [tujunga2.url, tujunga1.url, tujunga3.url],
   },
   {
     id: "R-002",
