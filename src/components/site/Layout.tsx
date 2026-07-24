@@ -18,6 +18,7 @@ const primaryNav = [
   { to: "/restaurants-for-sale", label: "Listings" },
   { to: "/buy-a-restaurant", label: "Buy" },
   { to: "/sell-your-restaurant", label: "Sell" },
+  { to: "/help", label: "Help" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ] as const;
@@ -57,6 +58,7 @@ const fullNav = [
   { to: "/commercial-property-management", label: "Commercial Property Management" },
   { to: "/about", label: "About" },
   { to: "/agents", label: "Agents" },
+  { to: "/help", label: "Help Center" },
   { to: "/contact", label: "Contact / Book Consultation" },
   { to: "/alcohol-licensing", label: "Alcohol Licensing" },
   { to: "/liquor-license-for-sale", label: "Liquor License For Sale" },

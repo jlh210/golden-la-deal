@@ -41,7 +41,10 @@ import { Route as AgentsRouteImport } from './routes/agents'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as RestaurantsForSaleIndexRouteImport } from './routes/restaurants-for-sale.index'
+import { Route as HelpIndexRouteImport } from './routes/help.index'
 import { Route as RestaurantsForSaleSlugRouteImport } from './routes/restaurants-for-sale.$slug'
+import { Route as HelpCategoryIndexRouteImport } from './routes/help.$category.index'
+import { Route as HelpCategorySlugRouteImport } from './routes/help.$category.$slug'
 import { Route as ApiPublicContactMapRouteImport } from './routes/api/public/contact-map'
 
 const VerminInspectionsRoute = VerminInspectionsRouteImport.update({
@@ -207,10 +210,25 @@ const RestaurantsForSaleIndexRoute = RestaurantsForSaleIndexRouteImport.update({
   path: '/',
   getParentRoute: () => RestaurantsForSaleRoute,
 } as any)
+const HelpIndexRoute = HelpIndexRouteImport.update({
+  id: '/help/',
+  path: '/help/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RestaurantsForSaleSlugRoute = RestaurantsForSaleSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
   getParentRoute: () => RestaurantsForSaleRoute,
+} as any)
+const HelpCategoryIndexRoute = HelpCategoryIndexRouteImport.update({
+  id: '/help/$category/',
+  path: '/help/$category/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HelpCategorySlugRoute = HelpCategorySlugRouteImport.update({
+  id: '/help/$category/$slug',
+  path: '/help/$category/$slug',
+  getParentRoute: () => rootRouteImport,
 } as any)
 const ApiPublicContactMapRoute = ApiPublicContactMapRouteImport.update({
   id: '/api/public/contact-map',
@@ -251,8 +269,11 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vermin-inspections': typeof VerminInspectionsRoute
   '/restaurants-for-sale/$slug': typeof RestaurantsForSaleSlugRoute
+  '/help/': typeof HelpIndexRoute
   '/restaurants-for-sale/': typeof RestaurantsForSaleIndexRoute
   '/api/public/contact-map': typeof ApiPublicContactMapRoute
+  '/help/$category/$slug': typeof HelpCategorySlugRoute
+  '/help/$category/': typeof HelpCategoryIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -286,8 +307,11 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vermin-inspections': typeof VerminInspectionsRoute
   '/restaurants-for-sale/$slug': typeof RestaurantsForSaleSlugRoute
+  '/help': typeof HelpIndexRoute
   '/restaurants-for-sale': typeof RestaurantsForSaleIndexRoute
   '/api/public/contact-map': typeof ApiPublicContactMapRoute
+  '/help/$category/$slug': typeof HelpCategorySlugRoute
+  '/help/$category': typeof HelpCategoryIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -323,8 +347,11 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vermin-inspections': typeof VerminInspectionsRoute
   '/restaurants-for-sale/$slug': typeof RestaurantsForSaleSlugRoute
+  '/help/': typeof HelpIndexRoute
   '/restaurants-for-sale/': typeof RestaurantsForSaleIndexRoute
   '/api/public/contact-map': typeof ApiPublicContactMapRoute
+  '/help/$category/$slug': typeof HelpCategorySlugRoute
+  '/help/$category/': typeof HelpCategoryIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -361,8 +388,11 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/vermin-inspections'
     | '/restaurants-for-sale/$slug'
+    | '/help/'
     | '/restaurants-for-sale/'
     | '/api/public/contact-map'
+    | '/help/$category/$slug'
+    | '/help/$category/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -396,8 +426,11 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/vermin-inspections'
     | '/restaurants-for-sale/$slug'
+    | '/help'
     | '/restaurants-for-sale'
     | '/api/public/contact-map'
+    | '/help/$category/$slug'
+    | '/help/$category'
   id:
     | '__root__'
     | '/'
@@ -432,8 +465,11 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/vermin-inspections'
     | '/restaurants-for-sale/$slug'
+    | '/help/'
     | '/restaurants-for-sale/'
     | '/api/public/contact-map'
+    | '/help/$category/$slug'
+    | '/help/$category/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -468,7 +504,10 @@ export interface RootRouteChildren {
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   VerminInspectionsRoute: typeof VerminInspectionsRoute
+  HelpIndexRoute: typeof HelpIndexRoute
   ApiPublicContactMapRoute: typeof ApiPublicContactMapRoute
+  HelpCategorySlugRoute: typeof HelpCategorySlugRoute
+  HelpCategoryIndexRoute: typeof HelpCategoryIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -697,12 +736,33 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RestaurantsForSaleIndexRouteImport
       parentRoute: typeof RestaurantsForSaleRoute
     }
+    '/help/': {
+      id: '/help/'
+      path: '/help'
+      fullPath: '/help/'
+      preLoaderRoute: typeof HelpIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/restaurants-for-sale/$slug': {
       id: '/restaurants-for-sale/$slug'
       path: '/$slug'
       fullPath: '/restaurants-for-sale/$slug'
       preLoaderRoute: typeof RestaurantsForSaleSlugRouteImport
       parentRoute: typeof RestaurantsForSaleRoute
+    }
+    '/help/$category/': {
+      id: '/help/$category/'
+      path: '/help/$category'
+      fullPath: '/help/$category/'
+      preLoaderRoute: typeof HelpCategoryIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/help/$category/$slug': {
+      id: '/help/$category/$slug'
+      path: '/help/$category/$slug'
+      fullPath: '/help/$category/$slug'
+      preLoaderRoute: typeof HelpCategorySlugRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/api/public/contact-map': {
       id: '/api/public/contact-map'
@@ -759,18 +819,11 @@ const rootRouteChildren: RootRouteChildren = {
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   VerminInspectionsRoute: VerminInspectionsRoute,
+  HelpIndexRoute: HelpIndexRoute,
   ApiPublicContactMapRoute: ApiPublicContactMapRoute,
+  HelpCategorySlugRoute: HelpCategorySlugRoute,
+  HelpCategoryIndexRoute: HelpCategoryIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

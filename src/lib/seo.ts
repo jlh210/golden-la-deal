@@ -47,3 +47,67 @@ export function serviceScript(opts: {
     }),
   } as const;
 }
+
+/** Article JSON-LD for help-center content. */
+export function articleScript(opts: {
+  headline: string;
+  description: string;
+  path: string;
+  datePublished: string;
+  dateModified?: string;
+  authorName?: string;
+  image?: string;
+}) {
+  return {
+    type: "application/ld+json",
+    children: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: opts.headline,
+      description: opts.description,
+      mainEntityOfPage: `${SITE_URL}${opts.path}`,
+      url: `${SITE_URL}${opts.path}`,
+      datePublished: opts.datePublished,
+      dateModified: opts.dateModified ?? opts.datePublished,
+      author: {
+        "@type": "Person",
+        name: opts.authorName ?? "Richard Stein",
+        jobTitle: "COO, Penthouse Advisors",
+        worksFor: { "@id": ORG_ID },
+      },
+      publisher: { "@id": ORG_ID },
+      ...(opts.image ? { image: opts.image } : {}),
+    }),
+  } as const;
+}
+
+/** FAQPage JSON-LD from a Q/A list. */
+export function faqScript(faqs: { q: string; a: string }[]) {
+  return {
+    type: "application/ld+json",
+    children: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    }),
+  } as const;
+}
+
+/** CollectionPage JSON-LD for a help category index. */
+export function collectionScript(opts: { name: string; description: string; path: string }) {
+  return {
+    type: "application/ld+json",
+    children: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: opts.name,
+      description: opts.description,
+      url: `${SITE_URL}${opts.path}`,
+      isPartOf: { "@id": ORG_ID },
+    }),
+  } as const;
+}
