@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
+import { categories } from "@/content/help";
 
 const BASE_URL = "https://www.penthouseadvisors.com";
 
@@ -38,6 +39,21 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/off-market-sourcing", changefreq: "monthly", priority: "0.7" },
           { path: "/e2-visa-europe", changefreq: "monthly", priority: "0.6" },
           { path: "/hardware-store-for-sale", changefreq: "weekly", priority: "0.5" },
+
+          // Help Center
+          { path: "/help", changefreq: "weekly", priority: "0.8" },
+          ...categories.map((c) => ({
+            path: `/help/${c.slug}`,
+            changefreq: "monthly" as const,
+            priority: "0.7",
+          })),
+          ...categories.flatMap((c) =>
+            c.articles.map((a) => ({
+              path: `/help/${c.slug}/${a.slug}`,
+              changefreq: "monthly" as const,
+              priority: "0.6",
+            })),
+          ),
         ];
         const urls = entries.map(
           (e) =>
