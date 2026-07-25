@@ -208,7 +208,7 @@ function HomePage() {
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-gold">What We Do</p>
             <h2 className="mt-2 text-3xl md:text-5xl font-display font-bold">
-              Every move a restaurant owner needs.
+              One firm for every stage of your restaurant.
             </h2>
           </div>
           <Link to="/services" className="text-sm font-semibold text-gold hover:underline">
