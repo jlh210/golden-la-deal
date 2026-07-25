@@ -122,7 +122,7 @@ function HomePage() {
                 to="/contact"
                 className="group inline-flex items-center gap-3 bg-charcoal-deep px-7 py-4 text-[13px] font-medium uppercase tracking-[0.18em] text-cream hover:bg-gold hover:text-charcoal-deep transition-all duration-500"
               >
-                Book a Consultation
+                Speak Directly to an Expert Now!
                 <ArrowRight className="h-4 w-4 transition-transform duration-500 group-hover:translate-x-1" />
               </Link>
               <Link
