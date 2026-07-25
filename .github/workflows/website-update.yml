@@ -3,7 +3,9 @@
 #
 # It listens for a "website_update_request" dispatch event (sent by your
 # Make.com scenario when Richard posts in Slack), hands the raw request to
-# Claude Code, and lets Claude Code make the edit and open a PR.
+# Claude Code, has Claude Code make the edit, open a PR, merge it
+# immediately (no human review step — fully autonomous by design), and
+# notify Slack when it's done via a Make.com webhook.
 #
 # Setup required before this works:
 #   1. Install the Claude GitHub App on this repo: https://github.com/apps/claude
@@ -29,6 +31,8 @@ jobs:
 
       - name: Run Claude Code on the request
         uses: anthropics/claude-code-action@v1
+        env:
+          GH_TOKEN: ${{ github.token }}
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: |
@@ -40,9 +44,25 @@ jobs:
 
             Read the codebase, figure out what needs to change to fulfill this
             request, and make the edit. Keep the change scoped to exactly what
-            was asked — don't refactor unrelated code. Open a pull request with
-            a clear title and a description that restates the request and
-            summarizes what you changed, so Richard and Jackie can review it
-            before it merges and Lovable deploys it.
+            was asked — don't refactor unrelated code.
+
+            Then, fully autonomously (no human review step, by design):
+            1. Commit the change and open a pull request with a clear title
+               and a description that restates the request and summarizes
+               what you changed.
+            2. Immediately merge that pull request yourself using:
+               gh pr merge <PR_NUMBER> --merge --delete-branch
+            3. After a successful merge, notify Slack by running:
+               curl -s -X POST https://hook.us2.make.com/ghd2j1pst247qpox4mlymqudc1qxb6ta \
+                 -H "Content-Type: application/json" \
+                 -d "$(jq -n --arg s "<one-sentence plain-English summary of what you changed>" '{summary: $s}')"
+               Replace the placeholder with a real one-sentence summary of the
+               actual change you made (e.g. "Removed the dental office
+               listing from the homepage"). If jq is unavailable, use any
+               equivalent method to produce valid JSON with a "summary" key.
+
+            If at any point the request is unclear, unsafe, or you cannot
+            complete it, do not merge — leave the PR open, and still call the
+            Slack webhook with a summary explaining what happened instead.
           claude_args: |
             --allowedTools "Read,Edit,Write,Bash,Grep,Glob"
