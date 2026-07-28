@@ -78,7 +78,7 @@ export const listings: Listing[] = [
     id: "RE-001",
     slug: "jazzve-garden-tujunga",
     type: "Real Estate For Sale",
-    title: "Jazzve Garden — Banquet Facility With Real Estate",
+    title: "Fully Equipped Banquet Facility and Real Estate",
     location: "6500 Foothill Blvd, Tujunga, CA 91042",
     coords: [34.244886, -118.273479],
     price: "Starting at $6,000,000",
@@ -95,7 +95,7 @@ export const listings: Listing[] = [
     sections: [
       {
         heading: "Top Floor — Street Level",
-        body: "±4,200 sq ft of second-generation, vacant, equipped restaurant space inside Jazzve Garden with front-of-property outdoor kitchen.",
+        body: "±4,200 sq ft of second-generation, vacant, equipped restaurant space inside the banquet facility with front-of-property outdoor kitchen.",
         bullets: [
           "Fully equipped commercial kitchen",
           "Walk-in refrigerator and freezer",
