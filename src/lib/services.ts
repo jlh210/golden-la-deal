@@ -36,7 +36,7 @@ export const services: Service[] = [
   {
     slug: "brokerage",
     to: "/restaurants-for-sale",
-    title: "Restaurants For Sale",
+    title: "Restaurant, Medical Office, Hardware Store for Sale/Lease in Los Angeles",
     short: "Confidential buy/sell brokerage with full disclosure across LA County.",
     icon: ArrowRightLeft,
     featured: true,
