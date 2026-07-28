@@ -40,7 +40,13 @@ export const Route = createFileRoute("/restaurants-for-sale/")({
   component: ListingsPage,
 });
 
-const filters: Array<"All" | SaleType> = ["All", "Business Sale", "Asset Sale", "Medical / Dental"];
+const filters: Array<"All" | SaleType> = [
+  "All",
+  "Business Sale",
+  "Real Estate For Sale",
+  "Asset Sale",
+  "Medical / Dental",
+];
 
 function ListingsPage() {
   const [filter, setFilter] = useState<(typeof filters)[number]>("All");

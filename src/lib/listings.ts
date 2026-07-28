@@ -15,7 +15,12 @@ import jazzveCollage from "@/assets/jazzve-venue-collage.png.asset.json";
 import jazzveStorefront from "@/assets/jazzve-storefront.png.asset.json";
 import jazzveFlorals from "@/assets/jazzve-florals.png.asset.json";
 
-export type SaleType = "Business Sale" | "Asset Sale" | "Real Estate" | "Medical / Dental";
+export type SaleType =
+  | "Business Sale"
+  | "Asset Sale"
+  | "Real Estate"
+  | "Real Estate For Sale"
+  | "Medical / Dental";
 
 export type ListingSection = {
   heading: string;
@@ -72,7 +77,7 @@ export const listings: Listing[] = [
   {
     id: "RE-001",
     slug: "jazzve-garden-tujunga",
-    type: "Business Sale",
+    type: "Real Estate For Sale",
     title: "Jazzve Garden — Banquet Facility With Real Estate",
     location: "6500 Foothill Blvd, Tujunga, CA 91042",
     coords: [34.244886, -118.273479],
@@ -82,7 +87,7 @@ export const listings: Listing[] = [
     leaseType: "Fully Equipped Banquet Facility and real estate · APN 2564-012012",
     badge: "Available",
     description:
-      "Turn-key banquet facility built to host weddings and celebrations. Two-level venue with multiple commercial kitchens, dining areas, bars, and event arenas for up to 800 guests.",
+      "Banquet facility built to host weddings and celebrations. Two-level venue with multiple commercial kitchens, dining areas, bars, and event arenas for up to 800 guests.",
     longDescription: [
       "Built to host weddings and celebrations with ease and elegance. The premises offers a harmonious balance between sophistication and warmth—making every occasion feel deeply personal and truly memorable.",
       "Turn-key ready with multiple commercial kitchens, dining areas, bars, and flexible event spaces designed to bring people together in an elevated yet welcoming setting.",
@@ -128,7 +133,7 @@ export const listings: Listing[] = [
       },
     ],
     features: [
-      "Turn-key banquet facility",
+      "Banquet facility",
       "Fully Equipped Banquet Facility and real estate",
       "6500 Foothill Blvd, Tujunga",
       "±13,200 sq ft across two levels",
