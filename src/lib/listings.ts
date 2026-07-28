@@ -79,7 +79,7 @@ export const listings: Listing[] = [
     price: "Starting at $6,000,000",
     priceNote: "Reviewing all offers",
     sqft: "≈ 13,200 sq ft",
-    leaseType: "Business sale with real estate · APN 2564-012012",
+    leaseType: "Fully Equipped Banquet Facility and real estate · APN 2564-012012",
     badge: "Available",
     description:
       "Turn-key banquet facility built to host weddings and celebrations. Two-level venue with multiple commercial kitchens, dining areas, bars, and event arenas for up to 800 guests.",
@@ -120,7 +120,7 @@ export const listings: Listing[] = [
         body: "Fully Equipped Banquet Facility and real estate. APN 2564-012012. Reviewing all offers.",
         bullets: [
           "Starting at $6,000,000",
-          "Business sale with real estate",
+          "Fully Equipped Banquet Facility and real estate",
           "APN 2564-012012",
           "Combined ±13,200 sq ft",
           "Total capacity up to 1,100 guests",
@@ -129,7 +129,7 @@ export const listings: Listing[] = [
     ],
     features: [
       "Turn-key banquet facility",
-      "Business sale with real estate",
+      "Fully Equipped Banquet Facility and real estate",
       "6500 Foothill Blvd, Tujunga",
       "±13,200 sq ft across two levels",
       "Multiple commercial kitchens",
