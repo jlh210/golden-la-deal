@@ -117,7 +117,7 @@ export const listings: Listing[] = [
       },
       {
         heading: "Sale Highlights",
-        body: "Business sale with real estate. APN 2564-012012. Reviewing all offers.",
+        body: "Fully Equipped Banquet Facility and real estate. APN 2564-012012. Reviewing all offers.",
         bullets: [
           "Starting at $6,000,000",
           "Business sale with real estate",
