@@ -64,12 +64,12 @@ const fees = [
 ];
 
 const recent = [
-  { addr: "14120 Ventura Blvd. Unit E, Sherman Oaks", type: "Type 41", status: "Pending" },
   { addr: "7275 Melrose Ave", type: "Type 41", status: "Pending" },
   { addr: "6535 Melrose Ave", type: "Type 47", status: "Pending" },
   { addr: "5710 E Los Angeles Ave, Simi Valley", type: "Type 41", status: "Pending" },
   { addr: "8406 Topanga Canyon Blvd, Canoga Park", type: "Type 41", status: "Pending" },
   { addr: "1831 S La Cienega", type: "Type 41", status: "Pending" },
+  { addr: "14120 Ventura Blvd. Unit E, Sherman Oaks", type: "Type 41", status: "Issuance Activated" },
   { addr: "6015 W. Third Street", type: "Type 41", status: "Issuance Activated" },
   { addr: "6136 Venice Blvd", type: "Type 41", status: "Issuance Activated" },
   { addr: "14350 Ventura Blvd, Sherman Oaks", type: "Type 41", status: "Issuance Activated" },
