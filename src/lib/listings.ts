@@ -79,16 +79,16 @@ export const listings: Listing[] = [
     slug: "jazzve-garden-tujunga",
     type: "Real Estate For Sale",
     title: "Restaurant and Real Estate — Tujunga, CA For Sale",
-    location: "6500 Foothill Blvd., Tujunga, CA 91042",
+    location: "Tujunga, CA 91042",
     coords: [34.244886, -118.273479],
     price: "Starting at $5,000,000",
     sqft: "≈ 13,200 sq ft",
     leaseType: "Restaurant and real estate · Banquet facility",
     badge: "Available",
     description:
-      "Exceptional banquet facility with premium real estate located at 6500 Foothill Blvd., Tujunga, California 91042. Turn-key ready with multiple commercial kitchens, dining areas, and bars, built to host weddings and celebrations.",
+      "Exceptional banquet facility with premium real estate located in Tujunga, California 91042. Turn-key ready with multiple commercial kitchens, dining areas, and bars, built to host weddings and celebrations.",
     longDescription: [
-      "Restaurant and real estate for sale in Tujunga, CA — an exceptional banquet facility with premium real estate located at 6500 Foothill Blvd., Tujunga, California 91042. Built to host weddings and celebrations with a sense of ease and elegance.",
+      "Restaurant and real estate for sale in Tujunga, CA — an exceptional banquet facility with premium real estate located in Tujunga, California 91042. Built to host weddings and celebrations with a sense of ease and elegance.",
       "Call to tour this exceptional, turn-key ready banquet facility with multiple commercial kitchens, dining areas, and bars designed to bring people together in a setting that feels both elevated and welcoming.",
       "The premises offers a harmonious balance between sophistication and warmth—making every occasion feel deeply personal and truly memorable.",
     ],
@@ -123,7 +123,7 @@ export const listings: Listing[] = [
     ],
     features: [
       "Restaurant and real estate for sale",
-      "6500 Foothill Blvd., Tujunga, CA 91042",
+      "Tujunga, CA 91042",
       "±4,200 sq ft top floor, street level",
       "±9,000 sq ft lower level",
       "Multiple fully equipped commercial kitchens",
