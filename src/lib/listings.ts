@@ -205,17 +205,18 @@ export const listings: Listing[] = [
     id: "R-003",
     slug: "wilshire-second-gen-lease",
     type: "Asset Sale",
-    title: "Dispensary Inside a Second-Generation Restaurant",
+    title: "Dispensary Space For Lease Inside a Second-Generation Restaurant",
     location: "2408 Wilshire Blvd, Santa Monica, CA",
     coords: [34.032541, -118.484189],
     price: "$15,000 / month All-In",
-    priceNote: "Rent abatement allowance for permitting · New lease · $35k key money",
-    leaseType: "Stand-alone building · Dispensary inside a second-generation restaurant",
+    priceNote: "Rent abatement allowance for permitting · New lease",
+    leaseType:
+      "Stand-alone building · Dispensary space inside an equipped, second-generation restaurant",
     description:
-      "Dispensary inside a second-generation restaurant. Stand-alone building on Wilshire Blvd with a large rear open patio ideal for pop-ups, dining, and events, plus free rear parking on Wilshire Blvd and 24th Street.",
+      "Dispensary space for lease inside an equipped, second-generation restaurant. Stand-alone building on Wilshire Blvd with a large rear open patio ideal for pop-ups, dining, and events, plus free rear parking on Wilshire Blvd and 24th Street.",
     longDescription: [
-      "Dispensary inside a second-generation restaurant. Stand-alone building for lease with a large rear open patio at 2408 Wilshire Blvd., Santa Monica.",
-      "New lease at $15,000 per month all-in with a rent abatement allowance for permitting, plus $35k key money.",
+      "Dispensary space for lease, inside an equipped, second-generation restaurant. Stand-alone building with a large rear open patio located at 2408 Wilshire Blvd., Santa Monica.",
+      "New lease at $15,000 per month all-in with a rent abatement allowance for permitting.",
       "Compelling Santa Monica opportunity at 24th Street, positioned to serve the area north of Santa Monica Blvd. with strong visibility, free rear parking on Wilshire Blvd and 24th Street, and flexible event-driven use.",
     ],
     sections: [
@@ -225,7 +226,7 @@ export const listings: Listing[] = [
         bullets: [
           "Stand-alone building",
           "New lease structure",
-          "$15,000 per month all-in · $35k key money",
+          "$15,000 per month all-in",
           "Rent abatement allowance for permitting",
           "Large rear open patio",
           "Free rear parking on Wilshire Blvd and 24th Street",
@@ -249,7 +250,7 @@ export const listings: Listing[] = [
     ],
     features: [
       "Stand-alone building",
-      "Dispensary inside a second-generation restaurant",
+      "Dispensary space inside an equipped, second-generation restaurant",
       "12-foot Type 1 hood",
       "Fully equipped kitchen",
       "Large rear open patio",
