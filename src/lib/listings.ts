@@ -162,7 +162,7 @@ export const listings: Listing[] = [
     id: "R-003",
     slug: "wilshire-second-gen-lease",
     type: "Asset Sale",
-    title: "Dispensary Space For Lease Inside a Second-Generation Restaurant",
+    title: "Space For Lease use Dispensary",
     location: "2408 Wilshire Blvd, Santa Monica, CA",
     coords: [34.032541, -118.484189],
     price: "$15,000 / month All-In",
