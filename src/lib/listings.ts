@@ -52,16 +52,16 @@ export const listings: Listing[] = [
     leaseType: "Doctor, therapy & dental offices · Building zoned medical use",
     badge: "Available Now",
     description:
-      "Doctor, therapy and dental offices in a building zoned medical use, West LA. Available inside a beautiful building. The second floor has a 7 room medical office at $5,850 per month all-in, plus a 4 room, plumbed dental office at $4,800 per month all-in. Available now.",
+      "Doctor, therapy and dental offices in a building zoned medical use, West LA. Available inside a beautiful building. The second floor offices for lease are a 7 room doctor/therapy office at $5,850 per month all-in, plus a 4 room, plumbed dental office at $4,800 per month all-in. Available now.",
     longDescription: [
       "Doctor, Therapy & Dental Offices West LA — offices in a building zoned medical use, West LA, available inside a beautiful building.",
-      "The second floor has a 7 room medical office at $5,850 per month all-in, plus a 4 room, plumbed dental office at $4,800 per month all-in. Available now.",
+      "The second floor offices for lease are a 7 room doctor/therapy office at $5,850 per month all-in, plus a 4 room, plumbed dental office at $4,800 per month all-in. Available now.",
       "First & last month and security deposit.",
     ],
     sections: [
       {
-        heading: "Second Floor — Medical Office",
-        body: "Medical office with 7 rooms. Rent $5,850 per month, all-in. Available now.",
+        heading: "Second Floor — Doctor/Therapy Office",
+        body: "Doctor/therapy office with 7 rooms. Rent $5,850 per month, all-in. Available now.",
         bullets: [
           "7 rooms",
           "$5,850 per month, all-in",
@@ -82,7 +82,7 @@ export const listings: Listing[] = [
       "Building zoned medical use",
       "Doctor, therapy & dental offices",
       "Beautiful building, West LA",
-      "Second floor 7 room medical office",
+      "Second floor 7 room doctor/therapy office",
       "$5,850/month, all-in",
       "4 room, plumbed dental office",
       "$4,800/month, all-in",
