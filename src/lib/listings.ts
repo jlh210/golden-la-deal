@@ -172,7 +172,7 @@ export const listings: Listing[] = [
     description:
       "Dispensary space for lease inside an equipped, second-generation restaurant. Stand-alone building on Wilshire Blvd with a large rear open patio ideal for pop-ups, dining, and events, plus free rear parking on Wilshire Blvd and 24th Street.",
     longDescription: [
-      "Dispensary space for lease, inside an equipped, second-generation restaurant. Stand-alone building with a large rear open patio located at 2408 Wilshire Blvd., Santa Monica.",
+      "Space For Lease. Use Dispensary. Stand-alone building with a large rear open patio located at 2408 Wilshire Blvd., Santa Monica.",
       "New lease at $15,000 per month all-in with a rent abatement allowance for permitting.",
       "Compelling Santa Monica opportunity at 24th Street, positioned to serve the area north of Santa Monica Blvd. with strong visibility, free rear parking on Wilshire Blvd and 24th Street, and flexible event-driven use.",
     ],
