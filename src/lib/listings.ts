@@ -7,13 +7,6 @@ import santaMonica2 from "@/assets/santa-monica-2.png.asset.json";
 import hardwareStorefront from "@/assets/hardware-storefront.png.asset.json";
 import hardwareAisle from "@/assets/hardware-aisle.png.asset.json";
 import dentalOffice from "@/assets/dental-office-for-lease.png.asset.json";
-import tujunga1 from "@/assets/tujunga-1.jpg.asset.json";
-import tujunga2 from "@/assets/tujunga-2.jpg.asset.json";
-import tujunga3 from "@/assets/tujunga-3.jpg.asset.json";
-import tujunga4 from "@/assets/tujunga-4.jpg.asset.json";
-import jazzveCollage from "@/assets/jazzve-venue-collage.png.asset.json";
-import jazzveStorefront from "@/assets/jazzve-storefront.png.asset.json";
-import jazzveFlorals from "@/assets/jazzve-florals.png.asset.json";
 
 export type SaleType =
   | "Business Sale"
@@ -97,66 +90,6 @@ export const listings: Listing[] = [
       "First & last month and security deposit",
     ],
     images: [dentalOffice.url],
-  },
-  {
-    id: "RE-001",
-    slug: "jazzve-garden-tujunga",
-    type: "Real Estate For Sale",
-    title: "Restaurant and Real Estate — Tujunga, CA For Sale",
-    location: "Tujunga, CA 91042",
-    coords: [34.244886, -118.273479],
-    price: "Starting at $5,000,000",
-    sqft: "≈ 13,200 sq ft",
-    leaseType: "Restaurant and real estate · Banquet facility",
-    badge: "Available",
-    description:
-      "Exceptional banquet facility with premium real estate located in Tujunga, California 91042. Turn-key ready with multiple commercial kitchens, dining areas, and bars, built to host weddings and celebrations.",
-    longDescription: [
-      "Restaurant and real estate for sale in Tujunga, CA — an exceptional banquet facility with premium real estate located in Tujunga, California 91042. Built to host weddings and celebrations with a sense of ease and elegance.",
-      "Call to tour this exceptional, turn-key ready banquet facility with multiple commercial kitchens, dining areas, and bars designed to bring people together in a setting that feels both elevated and welcoming.",
-      "The premises offers a harmonious balance between sophistication and warmth—making every occasion feel deeply personal and truly memorable.",
-    ],
-    sections: [
-      {
-        heading: "Top Floor — Street Level",
-        body: "±4,200 sq ft of second-generation, vacant, equipped restaurant space with an outdoor kitchen at the front of the property for serving guests passing by.",
-        bullets: [
-          "Fully equipped commercial kitchen",
-          "Walk-in refrigerator and freezer",
-          "Dry storage area",
-          "Dining area and permissible hookah lounge area",
-          "Outdoor kitchen at the front of the property",
-          "Great visibility for branding",
-          "Hosts up to 300 customers",
-          "Parking for up to 30 vehicles",
-        ],
-      },
-      {
-        heading: "Lower Level",
-        body: "±9,000 sq ft of office, kitchen, prep, and event arena space with valet parking for customer convenience.",
-        bullets: [
-          "Office with private restroom",
-          "2 fully equipped commercial kitchens",
-          "Prep room",
-          "Large walk-in refrigerator and freezer",
-          "Dry storage area",
-          "Event arena for up to 800 customers",
-          "Valet parking for customer convenience",
-        ],
-      },
-    ],
-    features: [
-      "Restaurant and real estate for sale",
-      "Tujunga, CA 91042",
-      "±4,200 sq ft top floor, street level",
-      "±9,000 sq ft lower level",
-      "Multiple fully equipped commercial kitchens",
-      "Permissible hookah lounge area",
-      "Event arena for up to 800 customers",
-      "Parking for up to 30 vehicles plus valet",
-      "Starting at $5,000,000",
-    ],
-    images: [jazzveCollage.url, jazzveStorefront.url, jazzveFlorals.url],
   },
   {
     id: "R-002",
