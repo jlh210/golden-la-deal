@@ -162,7 +162,7 @@ export const listings: Listing[] = [
     id: "R-003",
     slug: "wilshire-second-gen-lease",
     type: "Asset Sale",
-    title: "Space For Lease use Dispensary",
+    title: "Dispensary Space For Lease",
     location: "2408 Wilshire Blvd, Santa Monica, CA",
     coords: [34.032541, -118.484189],
     price: "$15,000 / month All-In",
@@ -170,11 +170,11 @@ export const listings: Listing[] = [
     leaseType:
       "Stand-alone building · Dispensary space inside an equipped, second-generation restaurant",
     description:
-      "Dispensary space for lease inside an equipped, second-generation restaurant. Stand-alone building on Wilshire Blvd with a large rear open patio ideal for pop-ups, dining, and events, plus free rear parking on Wilshire Blvd and 24th Street.",
+      "Dispensary space for lease inside an equipped, second-generation restaurant. Stand-alone building on Wilshire Blvd with a large rear open patio ideal for pop-ups, dining, and events, plus free rear parking on Wilshire Blvd.",
     longDescription: [
-      "Space For Lease. Use Dispensary. Stand-alone building with a large rear open patio located at 2408 Wilshire Blvd., Santa Monica.",
+      "Dispensary Space For Lease. Stand-alone building with a large rear open patio located at 2408 Wilshire Blvd., Santa Monica.",
       "New lease at $15,000 per month all-in with a rent abatement allowance for permitting.",
-      "Compelling Santa Monica opportunity at 24th Street, positioned to serve the area north of Santa Monica Blvd. with strong visibility, free rear parking on Wilshire Blvd and 24th Street, and flexible event-driven use.",
+      "Compelling Santa Monica opportunity at 24th Street, positioned to serve the area north of Santa Monica Blvd. with strong visibility, free rear parking on Wilshire Blvd, and flexible event-driven use.",
     ],
     sections: [
       {
@@ -186,7 +186,7 @@ export const listings: Listing[] = [
           "$15,000 per month all-in",
           "Rent abatement allowance for permitting",
           "Large rear open patio",
-          "Free rear parking on Wilshire Blvd and 24th Street",
+          "Free rear parking on Wilshire Blvd",
           "Strong Wilshire Blvd visibility",
         ],
       },
@@ -212,7 +212,7 @@ export const listings: Listing[] = [
       "Fully equipped kitchen",
       "Large rear open patio",
       "Ideal for pop-ups, dining, and events",
-      "Free rear parking on Wilshire Blvd and 24th Street",
+      "Free rear parking on Wilshire Blvd",
       "Rent abatement allowance for permitting",
     ],
     images: [wilshire3.url, wilshire1.url, wilshire2.url, wilshire4.url],
