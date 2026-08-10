@@ -98,7 +98,7 @@ export const listings: Listing[] = [
     title: "Santa Monica Restaurant — Turnkey Asset Sale",
     location: "Santa Monica (Los Angeles County)",
     coords: [34.0195, -118.4912],
-    price: "$80,000",
+    price: "$125,000",
     priceNote: "Available — Open & Active",
     sqft: "≈ 950 sq ft",
     leaseType: "Assignment of lease · Shopping center",
@@ -112,7 +112,7 @@ export const listings: Listing[] = [
     sections: [
       {
         heading: "Deal Structure",
-        body: "Asset sale with assignment of lease. Allocation supports the $80,000 purchase price.",
+        body: "Asset sale with assignment of lease. Allocation supports the $125,000 purchase price.",
         bullets: [
           "Furniture, Fixtures & Equipment value: $35,000",
           "Buildout value: $60,000",
