@@ -18,6 +18,7 @@ const primaryNav = [
   { to: "/restaurants-for-sale", label: "Listings" },
   { to: "/buy-a-restaurant", label: "Buy" },
   { to: "/sell-your-restaurant", label: "Sell" },
+  { to: "/alcohol-licensing", label: "Restaurant Alcohol Licensing" },
   { to: "/help", label: "Help" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
@@ -32,7 +33,6 @@ const servicesDropdown = [
   { to: "/licensing-and-permits", label: "Licensing & Permits" },
   { to: "/restaurant-consulting", label: "Restaurant Consulting" },
   { to: "/commercial-property-management", label: "Commercial Property Management" },
-  { to: "/alcohol-licensing", label: "Alcohol Licensing" },
   { to: "/liquor-license-for-sale", label: "Liquor License For Sale" },
   { to: "/health-inspection", label: "Health Dept Inspection" },
   { to: "/health-permitting", label: "Health Permitting & Plan Check" },
@@ -51,6 +51,7 @@ const fullNav = [
   { to: "/services", label: "All Services" },
   { to: "/buy-a-restaurant", label: "Buy a Restaurant" },
   { to: "/sell-your-restaurant", label: "Sell Your Restaurant" },
+  { to: "/alcohol-licensing", label: "Restaurant Alcohol Licensing" },
   { to: "/restaurants-for-sale", label: "Restaurant Listings" },
   { to: "/restaurant-leasing", label: "Restaurant Leasing" },
   { to: "/licensing-and-permits", label: "Licensing & Permits" },
@@ -60,7 +61,6 @@ const fullNav = [
   { to: "/agents", label: "Agents" },
   { to: "/help", label: "Help Center" },
   { to: "/contact", label: "Contact / Book Consultation" },
-  { to: "/alcohol-licensing", label: "Alcohol Licensing" },
   { to: "/liquor-license-for-sale", label: "Liquor License For Sale" },
   { to: "/health-inspection", label: "Health Dept Inspection" },
   { to: "/health-permitting", label: "Health Permitting & Plan Check" },
@@ -287,7 +287,7 @@ function Footer() {
             <li><Link to="/restaurant-leasing" className="hover:text-gold">Restaurant Leasing</Link></li>
             <li><Link to="/licensing-and-permits" className="hover:text-gold">Licensing & Permits</Link></li>
             <li><Link to="/restaurant-consulting" className="hover:text-gold">Restaurant Consulting</Link></li>
-            <li><Link to="/alcohol-licensing" className="hover:text-gold">Alcohol Licensing</Link></li>
+            <li><Link to="/alcohol-licensing" className="hover:text-gold">Restaurant Alcohol Licensing</Link></li>
             <li><Link to="/liquor-license-for-sale" className="hover:text-gold">Liquor License For Sale</Link></li>
             <li><Link to="/health-inspection" className="hover:text-gold">Health Inspection</Link></li>
             <li><Link to="/health-permitting" className="hover:text-gold">Health Permitting & Plan Check</Link></li>

@@ -8,13 +8,13 @@ import { breadcrumbScript, serviceScript } from "@/lib/seo";
 export const Route = createFileRoute("/alcohol-licensing")({
   head: () => ({
     meta: [
-      { title: "Alcohol Licensing - Type 41 & Type 47 ABC Licenses | Penthouse Advisors" },
+      { title: "Restaurant Alcohol Licensing - Type 41 & Type 47 ABC Licenses | Penthouse Advisors" },
       {
         name: "description",
         content:
           "Type 41 Beer & Wine and Type 47 Hard Liquor licensing in Los Angeles. Transfers, new licenses, and CUB diversion permits. Transparent pricing.",
       },
-      { property: "og:title", content: "Alcohol Licensing - Penthouse Advisors" },
+      { property: "og:title", content: "Restaurant Alcohol Licensing - Penthouse Advisors" },
       {
         property: "og:description",
         content: "Type 41 and Type 47 ABC licensing in LA County. Transparent pricing.",
@@ -23,7 +23,7 @@ export const Route = createFileRoute("/alcohol-licensing")({
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/alcohol-licensing" }],
     scripts: [
-      breadcrumbScript([{name:"Home",path:"/"},{name:'Alcohol Licensing',path:'/alcohol-licensing'}]),
+      breadcrumbScript([{name:"Home",path:"/"},{name:'Restaurant Alcohol Licensing',path:'/alcohol-licensing'}]),
       serviceScript({ name: 'Alcohol Licensing (ABC)', description: 'Type 41, Type 47, and Type 48 ABC license applications and transfers in Los Angeles County.', path: '/alcohol-licensing', serviceType: 'Alcohol Licensing' }),
     ],
   }),
@@ -93,7 +93,7 @@ function LicensingPage() {
   return (
     <SiteLayout>
       <PageHero
-        eyebrow="Alcohol Licensing"
+        eyebrow="Restaurant Alcohol Licensing"
         title="Type 41 & Type 47 -"
         accent="done right."
         subtitle="ABC license transfers, new licenses, and CUB diversion in Los Angeles County. We handle paperwork, posting, protests, Live Scan, and notary - straight through to issuance."
