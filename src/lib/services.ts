@@ -44,7 +44,7 @@ export const services: Service[] = [
   {
     slug: "alcohol-licensing",
     to: "/alcohol-licensing",
-    title: "Alcohol Licensing",
+    title: "Restaurant Alcohol Licensing",
     short: "Type 41 Beer & Wine, Type 47 Hard Liquor - transfers, new, CUB diversion.",
     icon: Wine,
     featured: true,
