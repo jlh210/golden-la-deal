@@ -16,7 +16,7 @@ const primaryNav = [
   { to: "/", label: "Home" },
   { to: "/services", label: "Services", hasDropdown: true },
   { to: "/restaurants-for-sale", label: "Listings" },
-  { to: "/buy-a-restaurant", label: "Buy" },
+  { to: "/buy-a-restaurant", label: "Buy a Restaurant" },
   { to: "/sell-your-restaurant", label: "Sell" },
   { to: "/alcohol-licensing", label: "Restaurant Alcohol Licensing" },
   { to: "/help", label: "Help" },
