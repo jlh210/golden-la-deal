@@ -244,15 +244,15 @@ export const listings: Listing[] = [
     type: "Business Sale",
     title: "Hardware Store for Sale",
     location: "Westwood Blvd, West LA",
-    price: "$190,000",
-    priceNote: "Negotiable + inventory",
+    price: "$125,000",
+    priceNote: "Cash",
     leaseType: "Business sale · Retail",
     badge: "Available",
     description:
-      "Established hardware store for sale on Westwood Blvd, West LA. $190,000 negotiable plus inventory. Annual revenue $402,000. Established 2020.",
+      "Established hardware store for sale on Westwood Blvd, West LA. $125,000 cash. Annual revenue $402,000. Established 2020.",
     longDescription: [
       "Established hardware store for sale on Westwood Blvd in West Los Angeles.",
-      "Asking $190,000 negotiable plus inventory. Annual revenue of approximately $402,000. Business established in 2020 with one full-time employee.",
+      "Asking $125,000 cash. Annual revenue of approximately $402,000. Business established in 2020 with one full-time employee.",
       "New lease to be negotiated with three 3-year extension options. Product categories include key duplication, tools, gardening, plumbing, electrical, home hardware, and more.",
     ],
     sections: [
@@ -260,7 +260,7 @@ export const listings: Listing[] = [
         heading: "Deal Highlights",
         body: "Straightforward business sale with training and escrow support included.",
         bullets: [
-          "Asking price: $190,000 negotiable + inventory",
+          "Asking price: $125,000 cash",
           "Annual revenue: approximately $402,000",
           "Established: 2020",
           "Employees: 1 full-time",
@@ -283,7 +283,7 @@ export const listings: Listing[] = [
     features: [
       "Established hardware store",
       "Westwood Blvd, West LA location",
-      "$190,000 + inventory",
+      "$125,000 cash",
       "$402,000 annual revenue",
       "Key duplication, tools, plumbing, electrical",
       "New lease negotiable",
