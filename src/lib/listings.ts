@@ -42,6 +42,27 @@ export type Listing = {
 
 export const listings: Listing[] = [
   {
+    id: "R-004",
+    slug: "westwood-santa-monica-restaurant-asset-sale",
+    type: "Asset Sale",
+    title: "Restaurant Fully Equipped, Open, Permitted Asset Sale",
+    location: "NW corner of Westwood Blvd & Santa Monica Blvd, Los Angeles",
+    coords: [34.043, -118.4436],
+    leaseType: "Asset sale · Fully equipped, open & permitted restaurant",
+    description:
+      "Restaurant Fully Equipped, Open, Permitted Asset Sale Located in a vibrant commercial corridor on the northwest corner of Westwood and Santa Monica Boulevards. Charming building with restaurant on the ground floor. Off-street parking available for customers, and plenty of metered spots as well. Close to major public transportation routes with unobstructed exposure to the intersections of Santa Monica and Westwood (100,000 cars/day traffic count).",
+    features: [
+      "Fully equipped, open and permitted",
+      "Vibrant commercial corridor",
+      "Charming building with restaurant on the ground floor",
+      "Off-street parking for customers",
+      "Plenty of metered street parking",
+      "Close to major public transportation routes",
+      "Unobstructed exposure at Santa Monica & Westwood",
+      "100,000 cars/day traffic count",
+    ],
+  },
+  {
     id: "RE-005",
     slug: "dental-office-for-lease",
     type: "Medical / Dental",
