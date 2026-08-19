@@ -35,7 +35,7 @@ function ServicesPage() {
     <SiteLayout>
       <PageHero
         eyebrow="Services"
-        title="Everything a restaurant"
+        title="Penthouse Advisors Inc. Everything a restaurant"
         accent="owner needs."
         subtitle="One firm, one phone call. Built for LA County restaurant operators, buyers, landlords, and international investors who need answers - and execution - fast."
       />
