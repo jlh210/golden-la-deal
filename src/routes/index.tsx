@@ -99,6 +99,9 @@ function HomePage() {
               className="mt-8 font-display text-[2.75rem] sm:text-6xl lg:text-[4.5rem] font-normal leading-[1.02] tracking-[-0.01em] text-charcoal-deep animate-fade-in"
               style={{ animationDelay: "120ms", animationFillMode: "both" }}
             >
+              <span className="block text-[1.5rem] sm:text-[2rem] lg:text-[2.25rem] uppercase tracking-[0.14em] leading-tight">
+                Penthouse Advisors Inc.
+              </span>
               Los Angeles County's
               <br />
               <span className="italic text-gradient-gold">Premier Restaurant &amp; Business</span>
