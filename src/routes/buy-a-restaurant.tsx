@@ -42,8 +42,8 @@ function BuyARestaurantPage() {
   return (
     <ServiceLanding
       eyebrow="Buy a Restaurant"
-      title="Buy your next restaurant"
-      accent="in Los Angeles."
+      title="Buy your next restaurant in Los Angeles with"
+      accent="Penthouse Advisors Inc."
       subtitle="A disciplined acquisition process — sourcing, diligence, licensing, and lease — handled under one roof."
       h1="Buy a Restaurant in Los Angeles County"
       overview="Penthouse Advisors represents buyers across Los Angeles County — from first-time operators acquiring a single neighborhood restaurant to investors building a small portfolio. We source on-market and off-market opportunities, run full pre-purchase diligence, and shepherd liquor licensing, Health Dept clearance, lease assignment, and escrow to a clean close."
