@@ -42,7 +42,7 @@ function BuyARestaurantPage() {
   return (
     <ServiceLanding
       eyebrow="Buy a Restaurant"
-      title="Buy your next restaurant in Los Angeles with"
+      title="Buy your next restaurant in Los Angeles, with"
       accent="Penthouse Advisors Inc."
       subtitle="A disciplined acquisition process — sourcing, diligence, licensing, and lease — handled under one roof."
       h1="Buy a Restaurant in Los Angeles County"
