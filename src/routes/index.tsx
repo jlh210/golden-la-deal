@@ -100,12 +100,12 @@ function HomePage() {
               style={{ animationDelay: "120ms", animationFillMode: "both" }}
             >
               <span className="block text-[1.5rem] sm:text-[2rem] lg:text-[2.25rem] uppercase tracking-[0.14em] leading-tight">
-                Penthouse Advisors Inc.,
+                Penthouse Advisors Inc.
               </span>
               <span className="italic text-gradient-gold">
-                Restaurants &amp; Businesses
+                Los Angeles County’s Premier
                 <br />
-                for Sale/Lease in Los Angeles
+                Restaurant &amp; Business Advisory Firm
               </span>
             </h1>
 
