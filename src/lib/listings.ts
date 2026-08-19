@@ -68,7 +68,7 @@ export const listings: Listing[] = [
     id: "RE-005",
     slug: "dental-office-for-lease",
     type: "Medical / Dental",
-    title: "Doctor, Therapy, Dental, Offices, West LA",
+    title: "Therapy & Dental Space For Lease in West LA",
     location: "West LA",
     price: "$4,800 – $5,850 / month",
     priceNote: "All-in · First & last month and security deposit",
