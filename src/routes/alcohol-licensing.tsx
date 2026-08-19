@@ -94,8 +94,8 @@ function LicensingPage() {
     <SiteLayout>
       <PageHero
         eyebrow="Restaurant Alcohol Licensing"
-        title="Type 41 & Type 47 -"
-        accent="done right."
+        title="Type 41 & Type 47 - done right with"
+        accent="Penthouse Advisors Inc."
         subtitle="ABC license transfers, new licenses, and CUB diversion in Los Angeles County. We handle paperwork, posting, protests, Live Scan, and notary - straight through to issuance."
       />
 
