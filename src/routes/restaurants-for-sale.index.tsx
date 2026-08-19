@@ -56,7 +56,7 @@ function ListingsPage() {
     <>
       <PageHero
         eyebrow="Live Opportunities"
-        title="Restaurants & Businesses for Sale/Lease in Los Angeles"
+        title="Restaurants & Businesses for Sale/Lease in Los Angeles with"
         accent="Penthouse Advisors Inc."
         subtitle="Live restaurant and business listings across Los Angeles. Off-market deals available by direct request."
       />
