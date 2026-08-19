@@ -41,7 +41,7 @@ export const Route = createFileRoute("/buy-a-restaurant")({
 function BuyARestaurantPage() {
   return (
     <ServiceLanding
-      eyebrow="Buy a Restaurant"
+      eyebrow="Buy a Restaurant with Penthouse Advisors INC."
       title="Buy your next restaurant in Los Angeles, with"
       accent="Penthouse Advisors Inc."
       subtitle="A disciplined acquisition process — sourcing, diligence, licensing, and lease — handled under one roof."
