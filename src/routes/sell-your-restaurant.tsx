@@ -42,8 +42,8 @@ function SellPage() {
   return (
     <ServiceLanding
       eyebrow="Sell Your Restaurant"
-      title="Sell your restaurant"
-      accent="confidentially."
+      title="Sell your restaurant confidentially with"
+      accent="Penthouse Advisors Inc."
       subtitle="A premium disposition process built for operators who want to maximize value without disrupting service."
       h1="Sell My Restaurant in Los Angeles"
       overview="Selling a restaurant is not a yard-sign exercise. We position your business with a defensible valuation, market it confidentially to qualified operators and investors, and manage every moving piece — lease assignment, ABC license transfer, equipment schedules, escrow — all the way to funded close."
