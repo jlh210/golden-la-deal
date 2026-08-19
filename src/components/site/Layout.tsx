@@ -80,6 +80,13 @@ function Header() {
     <header
       className="sticky top-0 z-50 transition-all duration-500 bg-black border-b border-gold/40 shadow-[0_2px_24px_-12px_oklch(0.2_0.02_265/0.18)]"
     >
+      <div className="border-b border-gold/20 bg-charcoal-deep">
+        <div className="container-x flex h-8 items-center justify-center">
+          <span className="font-display text-[11px] sm:text-xs tracking-[0.3em] uppercase text-gold text-center truncate">
+            Penthouse Advisors Inc.
+          </span>
+        </div>
+      </div>
 
       <div className="container-x flex h-16 items-center justify-between gap-4 md:h-20">
         <Link to="/" className="flex items-center gap-3 min-w-0 text-white">
