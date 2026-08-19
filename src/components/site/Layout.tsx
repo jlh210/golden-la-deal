@@ -91,7 +91,7 @@ function Header() {
             height={512}
           />
           <span className="font-display text-base sm:text-lg tracking-[0.18em] uppercase truncate hidden sm:inline text-white drop-shadow-sm">
-            Penthouse <span className="text-gold">Advisors</span>
+            Penthouse <span className="text-gold">Advisors</span> Inc.
           </span>
         </Link>
 
@@ -225,7 +225,7 @@ function Footer() {
               className="h-11 w-auto shrink-0"
             />
             <span className="font-display text-lg tracking-[0.18em] uppercase">
-              Penthouse <span className="text-gold">Advisors</span>
+              Penthouse <span className="text-gold">Advisors</span> Inc.
             </span>
           </div>
 
