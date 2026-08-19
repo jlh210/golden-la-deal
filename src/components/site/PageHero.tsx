@@ -2,12 +2,14 @@ import type { ReactNode } from "react";
 
 export function PageHero({
   eyebrow,
+  lead,
   title,
   accent,
   subtitle,
   children,
 }: {
   eyebrow: string;
+  lead?: string;
   title: string;
   accent?: string;
   subtitle?: string;
@@ -18,6 +20,11 @@ export function PageHero({
       <div className="container-x py-14 md:py-20">
         <p className="text-xs font-semibold uppercase tracking-widest text-gold">{eyebrow}</p>
         <h1 className="mt-3 text-4xl md:text-6xl font-display font-extrabold leading-[1.05]">
+          {lead && (
+            <span className="block mb-3 text-xl md:text-3xl uppercase tracking-[0.12em] leading-snug text-gold">
+              {lead}
+            </span>
+          )}
           {title} {accent && <span className="text-gold whitespace-nowrap">{accent}</span>}
         </h1>
         {subtitle && (
