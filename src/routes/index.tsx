@@ -92,7 +92,7 @@ function HomePage() {
               style={{ animationDelay: "0ms", animationFillMode: "both" }}
             >
               <span className="h-px w-8 bg-gold" />
-              Serving Los Angeles County
+              Penthouse Advisors Inc., Serving Los Angeles County
             </div>
 
             <h1
