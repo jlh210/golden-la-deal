@@ -90,7 +90,7 @@ function Header() {
             width={512}
             height={512}
           />
-          <span className="font-display text-base sm:text-lg tracking-[0.18em] uppercase truncate hidden sm:inline text-white drop-shadow-sm">
+          <span className="font-display text-xs sm:text-lg tracking-[0.1em] sm:tracking-[0.18em] uppercase truncate text-white drop-shadow-sm">
             Penthouse <span className="text-gold">Advisors</span> Inc.
           </span>
         </Link>
