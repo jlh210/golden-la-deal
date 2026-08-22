@@ -185,7 +185,7 @@ export const listings: Listing[] = [
     id: "R-003",
     slug: "wilshire-second-gen-lease",
     type: "Asset Sale",
-    title: "Space For Lease",
+    title: "Space For Lease, Use Gym & Fitness Center",
     location: "2408 Wilshire Blvd, Santa Monica, CA",
     coords: [34.032541, -118.484189],
     price: "$10,000 / month All-In",
