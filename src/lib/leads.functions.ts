@@ -152,40 +152,56 @@ export const submitLead = createServerFn({ method: "POST" })
       return { ok: true };
     }
 
-    const headers = await sheetsHeaders();
+    // Wrapped end-to-end so every failure mode (missing config, bad auth,
+    // sheet write rejected) surfaces a console.error with real detail — the
+    // per-fetch checks below don't cover a throw from getGoogleAccessToken
+    // (e.g. missing env vars), which previously failed silently from a
+    // logging standpoint.
+    try {
+      const headers = await sheetsHeaders();
 
-    const row = [
-      f.name ?? "",
-      f.phone ?? "",
-      f.email ?? "",
-      data.source,
-      f.role ?? "",
-      data.serviceNeeded ?? f.serviceNeeded ?? "",
-      "New Lead",
-      f.timeline ?? "",
-      f.financing ?? "",
-      laNow(),
-      f.message ?? f.notes ?? "",
-      "",
-      "",
-      "",
-      "",
-    ];
+      const row = [
+        f.name ?? "",
+        f.phone ?? "",
+        f.email ?? "",
+        data.source,
+        f.role ?? "",
+        data.serviceNeeded ?? f.serviceNeeded ?? "",
+        "New Lead",
+        f.timeline ?? "",
+        f.financing ?? "",
+        laNow(),
+        f.message ?? f.notes ?? "",
+        "",
+        "",
+        "",
+        "",
+      ];
 
-    const url = `${SHEETS_API}/${SHEET_ID}/values/${RANGE}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`;
-    const res = await fetch(url, {
-      method: "POST",
-      headers,
-      body: JSON.stringify({ values: [row], majorDimension: "ROWS" }),
-    });
+      const url = `${SHEETS_API}/${SHEET_ID}/values/${RANGE}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`;
+      const res = await fetch(url, {
+        method: "POST",
+        headers,
+        body: JSON.stringify({ values: [row], majorDimension: "ROWS" }),
+      });
 
-    if (!res.ok) {
-      const body = await res.text();
-      console.error("Sheets append failed", res.status, body);
-      throw new Error(`Sheets append failed: ${res.status}`);
+      const bodyText = await res.text();
+
+      if (!res.ok) {
+        console.error("Sheets append failed", res.status, bodyText);
+        throw new Error(`Sheets append failed: ${res.status}`);
+      }
+
+      console.log("Sheets append succeeded", res.status, bodyText.slice(0, 300));
+      return { ok: true };
+    } catch (err) {
+      console.error(
+        "submitLead failed",
+        err instanceof Error ? err.message : String(err),
+        err instanceof Error ? err.stack : undefined,
+      );
+      throw err;
     }
-
-    return { ok: true };
   });
 
 const bookingSchema = z.object({
