@@ -1,0 +1,69 @@
+# Save this file to: .github/workflows/website-update.yml in the GitHub repo
+# your Lovable project is synced to.
+#
+# It listens for a "website_update_request" dispatch event (sent by your
+# Make.com scenario when Richard posts in Slack), hands the raw request to
+# Claude Code, has Claude Code make the edit, open a PR, merge it
+# immediately (no human review step — fully autonomous by design), and
+# notify Slack when it's done via a Make.com webhook.
+#
+# Setup required before this works:
+#   1. Install the Claude GitHub App on this repo: https://github.com/apps/claude
+#   2. Add ANTHROPIC_API_KEY as a repository secret
+#      (Repo Settings > Secrets and variables > Actions > New repository secret)
+
+name: Website Update via Claude Code
+
+on:
+  repository_dispatch:
+    types: [website_update_request]
+
+jobs:
+  update-site:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
+      actions: read
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run Claude Code on the request
+        uses: anthropics/claude-code-action@v1
+        env:
+          GH_TOKEN: ${{ github.token }}
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            A website update was requested via Slack.
+
+            Requested by: ${{ github.event.client_payload.requester }}
+            Request:
+            "${{ github.event.client_payload.request }}"
+
+            Read the codebase, figure out what needs to change to fulfill this
+            request, and make the edit. Keep the change scoped to exactly what
+            was asked — don't refactor unrelated code.
+
+            Then, fully autonomously (no human review step, by design):
+            1. Commit the change and open a pull request with a clear title
+               and a description that restates the request and summarizes
+               what you changed.
+            2. Immediately merge that pull request yourself using:
+               gh pr merge <PR_NUMBER> --merge --delete-branch
+            3. After a successful merge, notify Slack by running:
+               curl -s -X POST https://hook.us2.make.com/ghd2j1pst247qpox4mlymqudc1qxb6ta \
+                 -H "Content-Type: application/json" \
+                 -d "$(jq -n --arg s "<one-sentence plain-English summary of what you changed>" '{summary: $s}')"
+               Replace the placeholder with a real one-sentence summary of the
+               actual change you made (e.g. "Removed the dental office
+               listing from the homepage"). If jq is unavailable, use any
+               equivalent method to produce valid JSON with a "summary" key.
+
+            If at any point the request is unclear, unsafe, or you cannot
+            complete it, do not merge — leave the PR open, and still call the
+            Slack webhook with a summary explaining what happened instead.
+          claude_args: |
+            --allowedTools "Read,Edit,Write,Bash,Grep,Glob"

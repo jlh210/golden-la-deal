@@ -1,0 +1,14 @@
+import { createFileRoute, Outlet } from "@tanstack/react-router";
+import { SiteLayout } from "@/components/site/Layout";
+
+export const Route = createFileRoute("/restaurants-for-sale")({
+  component: ListingsLayout,
+});
+
+function ListingsLayout() {
+  return (
+    <SiteLayout>
+      <Outlet />
+    </SiteLayout>
+  );
+}
