@@ -142,10 +142,13 @@ export const submitLead = createServerFn({ method: "POST" })
   .handler(async ({ data }) => {
     const f = data.fields;
 
-    // Honeypot: the "website" input is visually hidden on the form, so real
-    // visitors leave it blank; bots that blindly fill every field trip it.
+    // Honeypot: this input is visually hidden on the form, so real visitors
+    // leave it blank; bots that blindly fill every field trip it. Deliberately
+    // named something autofill/password managers won't recognize (a field
+    // literally named "website" gets silently filled by Chrome/LastPass/etc,
+    // which caused real leads to be dropped as false-positive bot traffic).
     // Pretend success so bots don't learn anything, but skip the write.
-    if (f.website) {
+    if (f.hp_field_9f2) {
       return { ok: true };
     }
 
