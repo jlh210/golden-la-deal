@@ -38,7 +38,9 @@ export function LeadForm({
   const [stage, setStage] = useState<Stage>("form");
   const [loading, setLoading] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
-  const [submitted, setSubmitted] = useState<{ name: string; email: string; phone: string } | null>(null);
+  const [submitted, setSubmitted] = useState<{ name: string; email: string; phone: string } | null>(
+    null,
+  );
   const [embedReady, setEmbedReady] = useState(false);
   const calendlyRef = useRef<HTMLDivElement>(null);
 
@@ -132,7 +134,9 @@ export function LeadForm({
     setServerError(null);
     setLoading(true);
     try {
-      await send({ data: { source: title, serviceNeeded: serviceNeeded ?? data.serviceNeeded, fields: data } });
+      await send({
+        data: { source: title, serviceNeeded: serviceNeeded ?? data.serviceNeeded, fields: data },
+      });
       setSubmitted({ name: data.name, email: data.email, phone: data.phone });
       setStage("calendly");
     } catch (err) {
@@ -147,9 +151,12 @@ export function LeadForm({
     return (
       <div className="rounded-2xl border border-gold/40 bg-card p-10 text-center shadow-elegant animate-in fade-in slide-in-from-bottom-2 duration-500">
         <CheckCircle2 className="mx-auto h-12 w-12 text-gold" />
-        <h3 className="mt-4 text-3xl font-display font-bold">Your Advisory Call Has Been Scheduled.</h3>
+        <h3 className="mt-4 text-3xl font-display font-bold">
+          Your Advisory Call Has Been Scheduled.
+        </h3>
         <p className="mt-4 text-muted-foreground leading-relaxed">
-          Thank you. Your private advisory call has been booked, and our team will review your inquiry before the meeting.
+          Thank you. Your private advisory call has been booked, and our team will review your
+          inquiry before the meeting.
         </p>
         <a
           href={PHONE_HREF}
@@ -172,7 +179,8 @@ export function LeadForm({
             Your information has been received successfully.
           </p>
           <p className="mt-2 text-muted-foreground leading-relaxed max-w-xl mx-auto">
-            The next step is to schedule your 30-minute private advisory call so we can discuss your restaurant goals, answer your questions, and determine the best path forward.
+            The next step is to schedule your 30-minute private advisory call so we can discuss your
+            restaurant goals, answer your questions, and determine the best path forward.
           </p>
         </div>
 
@@ -204,13 +212,38 @@ export function LeadForm({
       <h3 className="text-2xl font-display font-bold">{title}</h3>
       <p className="mt-2 text-sm text-muted-foreground">{subtitle}</p>
       <form onSubmit={onSubmit} noValidate className="mt-6 space-y-5">
+        {/* Honeypot — visually and functionally hidden (clipped to 1px, not
+            display:none, so bots that skip hidden fields still fill it). A
+            bot filling every field trips it; a real visitor never sees it. */}
+        <div
+          className="absolute h-px w-px overflow-hidden whitespace-nowrap p-0 m-0 border-0"
+          style={{ clip: "rect(0,0,0,0)" }}
+          aria-hidden="true"
+        >
+          <label htmlFor="website">Leave this field blank</label>
+          <input type="text" id="website" name="website" tabIndex={-1} autoComplete="off" />
+        </div>
         <Field label="Name" name="name" error={errors.name} placeholder="Your full name" />
         <div className="grid gap-5 sm:grid-cols-2">
-          <Field label="Phone" name="phone" type="tel" error={errors.phone} placeholder="310-555-0123" />
-          <Field label="Email" name="email" type="email" error={errors.email} placeholder="you@email.com" />
+          <Field
+            label="Phone"
+            name="phone"
+            type="tel"
+            error={errors.phone}
+            placeholder="310-555-0123"
+          />
+          <Field
+            label="Email"
+            name="email"
+            type="email"
+            error={errors.email}
+            placeholder="you@email.com"
+          />
         </div>
         <div>
-          <label className="block text-sm font-semibold mb-2">Service Needed</label>
+          <label htmlFor="serviceNeeded" className="block text-sm font-semibold mb-2">
+            Service Needed
+          </label>
           {serviceNeeded ? (
             <>
               <input type="hidden" name="serviceNeeded" value={serviceNeeded} />
@@ -220,35 +253,70 @@ export function LeadForm({
             </>
           ) : (
             <select
+              id="serviceNeeded"
               name="serviceNeeded"
               defaultValue=""
-              className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-gold focus:outline-none"
+              aria-invalid={errors.serviceNeeded ? "true" : undefined}
+              aria-describedby={errors.serviceNeeded ? "serviceNeeded-error" : undefined}
+              className={`w-full rounded-md border bg-background px-4 py-3 text-sm focus:outline-none ${
+                errors.serviceNeeded
+                  ? "border-destructive focus:border-destructive"
+                  : "border-border focus:border-gold"
+              }`}
             >
-              <option value="" disabled>Select one…</option>
-              {serviceTopics.map((t) => <option key={t} value={t}>{t}</option>)}
+              <option value="" disabled>
+                Select one…
+              </option>
+              {serviceTopics.map((t) => (
+                <option key={t} value={t}>
+                  {t}
+                </option>
+              ))}
             </select>
           )}
-          {errors.serviceNeeded && <p className="mt-1.5 text-xs text-destructive">{errors.serviceNeeded}</p>}
+          {errors.serviceNeeded && (
+            <p id="serviceNeeded-error" role="alert" className="mt-1.5 text-xs text-destructive">
+              {errors.serviceNeeded}
+            </p>
+          )}
         </div>
         <div>
-          <label className="block text-sm font-semibold mb-2">Are you a</label>
+          <label htmlFor="role" className="block text-sm font-semibold mb-2">
+            Are you a
+          </label>
           <select
+            id="role"
             name="role"
             defaultValue=""
-            className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-gold focus:outline-none"
+            aria-invalid={errors.role ? "true" : undefined}
+            aria-describedby={errors.role ? "role-error" : undefined}
+            className={`w-full rounded-md border bg-background px-4 py-3 text-sm focus:outline-none ${
+              errors.role
+                ? "border-destructive focus:border-destructive"
+                : "border-border focus:border-gold"
+            }`}
           >
-            <option value="" disabled>Select one…</option>
+            <option value="" disabled>
+              Select one…
+            </option>
             <option value="Property owner">Property owner</option>
             <option value="Restaurant operator">Restaurant operator</option>
             <option value="Buyer">Buyer</option>
             <option value="Seller">Seller</option>
           </select>
-          {errors.role && <p className="mt-1.5 text-xs text-destructive">{errors.role}</p>}
+          {errors.role && (
+            <p id="role-error" role="alert" className="mt-1.5 text-xs text-destructive">
+              {errors.role}
+            </p>
+          )}
         </div>
         {extraFields}
         <div>
-          <label className="block text-sm font-semibold mb-2">Additional details</label>
+          <label htmlFor="message" className="block text-sm font-semibold mb-2">
+            Additional details
+          </label>
           <textarea
+            id="message"
             name="message"
             rows={4}
             maxLength={1000}
@@ -257,18 +325,28 @@ export function LeadForm({
           />
         </div>
         {note && (
-          <p className="text-xs text-gold text-center font-semibold leading-relaxed">
-            {note}
-          </p>
+          <p className="text-xs text-gold text-center font-semibold leading-relaxed">{note}</p>
         )}
         <button
           type="submit"
           disabled={loading}
           className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-charcoal-deep shadow-gold hover:opacity-95 transition disabled:opacity-60"
         >
-          {loading ? (<><Loader2 className="h-4 w-4 animate-spin" /> Sending…</>) : (<>Send Message <Send className="h-4 w-4" /></>)}
+          {loading ? (
+            <>
+              <Loader2 className="h-4 w-4 animate-spin" /> Sending…
+            </>
+          ) : (
+            <>
+              Send Message <Send className="h-4 w-4" />
+            </>
+          )}
         </button>
-        {serverError && <p className="text-xs text-destructive text-center">{serverError}</p>}
+        {serverError && (
+          <p role="alert" className="text-xs text-destructive text-center">
+            {serverError}
+          </p>
+        )}
         <p className="text-xs text-muted-foreground text-center">
           By submitting, you agree to be contacted by Penthouse Advisors.
         </p>
@@ -278,18 +356,41 @@ export function LeadForm({
 }
 
 function Field({
-  label, name, type = "text", error, placeholder,
-}: { label: string; name: string; type?: string; error?: string; placeholder?: string }) {
+  label,
+  name,
+  type = "text",
+  error,
+  placeholder,
+}: {
+  label: string;
+  name: string;
+  type?: string;
+  error?: string;
+  placeholder?: string;
+}) {
+  const errorId = `${name}-error`;
   return (
     <div>
-      <label className="block text-sm font-semibold mb-2">{label}</label>
+      <label htmlFor={name} className="block text-sm font-semibold mb-2">
+        {label}
+      </label>
       <input
+        id={name}
         type={type}
         name={name}
         placeholder={placeholder}
-        className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-gold focus:outline-none"
+        autoComplete={type === "email" ? "email" : type === "tel" ? "tel" : "name"}
+        aria-invalid={error ? "true" : undefined}
+        aria-describedby={error ? errorId : undefined}
+        className={`w-full rounded-md border bg-background px-4 py-3 text-sm focus:outline-none ${
+          error ? "border-destructive focus:border-destructive" : "border-border focus:border-gold"
+        }`}
       />
-      {error && <p className="mt-1.5 text-xs text-destructive">{error}</p>}
+      {error && (
+        <p id={errorId} role="alert" className="mt-1.5 text-xs text-destructive">
+          {error}
+        </p>
+      )}
     </div>
   );
 }
