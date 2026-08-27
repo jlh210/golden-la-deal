@@ -199,16 +199,30 @@ async function getGoogleAccessToken(): Promise<string> {
     // the bytes themselves. A correct 2048-bit RSA PKCS8 key decodes to
     // roughly 1190-1220 bytes; wildly different suggests the pasted secret
     // wasn't just the private_key value (e.g. the whole JSON key file got
-    // pasted in, or the paste was truncated).
+    // pasted in, or the paste was truncated). A valid PKCS8 PrivateKeyInfo
+    // always starts with 0x30 (an ASN.1 SEQUENCE tag) — if that tag instead
+    // appears a few bytes into the buffer, some fixed-size junk got prepended
+    // and can potentially be sliced off programmatically; if it never
+    // appears, the content itself is scrambled (e.g. a hand-retyped key with
+    // look-alike character substitutions), which no code fix can repair.
     const bytes = new Uint8Array(keyBuffer);
     const headerMatch = privateKeyPem.match(/-----BEGIN ([A-Z0-9 ]+)-----/);
+    const scanWindow = Array.from(bytes.slice(0, Math.min(64, bytes.length)));
+    const sequenceTagOffset = scanWindow.indexOf(0x30);
     console.error("getGoogleAccessToken: importKey(pkcs8) failed", {
       err: err instanceof Error ? err.message : String(err),
       decodedByteLength: bytes.length,
-      firstBytesHex: Array.from(bytes.slice(0, 8))
+      first64BytesHex: scanWindow.map((b) => b.toString(16).padStart(2, "0")).join(" "),
+      last16BytesHex: Array.from(bytes.slice(-16))
         .map((b) => b.toString(16).padStart(2, "0"))
         .join(" "),
+      sequenceTagOffsetIn64ByteWindow: sequenceTagOffset === -1 ? "not found" : sequenceTagOffset,
       detectedHeaderLabel: headerMatch?.[1] ?? null,
+      rawKeyLength: rawKey.length,
+      privateKeyPemLength: privateKeyPem.length,
+      rawKeyHadLiteralBackslashN: rawKey.includes("\\n"),
+      rawKeyDashCount: (rawKey.match(/-/g) ?? []).length,
+      rawKeyQuoteCount: (rawKey.match(/["']/g) ?? []).length,
     });
     throw err;
   }
