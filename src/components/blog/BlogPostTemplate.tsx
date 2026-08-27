@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Clock } from "lucide-react";
 import type { BlogPost, Section } from "@/content/blog/types";
@@ -6,6 +7,7 @@ import { Breadcrumbs } from "@/components/help/Breadcrumbs";
 import { KeyTakeaways } from "@/components/help/KeyTakeaways";
 import { FAQAccordion } from "@/components/help/FAQAccordion";
 import { CTASection } from "@/components/site/CTASection";
+import { ListingSpotlight } from "@/components/blog/ListingSpotlight";
 
 function renderSection(s: Section, i: number) {
   switch (s.type) {
@@ -64,6 +66,19 @@ function renderSection(s: Section, i: number) {
   }
 }
 
+function getSpotlightIndex(sections: Section[]): number {
+  const h2Indices = sections
+    .map((s, i) => (s.type === "h2" ? i : -1))
+    .filter((i) => i !== -1);
+  // Skip the first h2 (the intro heading) so the promo never lands before
+  // the reader has gotten into the actual content.
+  const candidates = h2Indices.slice(1);
+  if (candidates.length > 0) {
+    return candidates[Math.floor((candidates.length - 1) / 2)];
+  }
+  return Math.floor(sections.length / 2);
+}
+
 export function BlogPostTemplate({ post }: { post: BlogPost }) {
   const toc = post.sections
     .filter((s): s is Extract<Section, { type: "h2" }> => s.type === "h2")
@@ -81,6 +96,8 @@ export function BlogPostTemplate({ post }: { post: BlogPost }) {
   const related = (post.related ?? [])
     .map((r) => ({ ...r, post: getPost(r.slug) }))
     .filter((r) => r.post);
+
+  const spotlightIndex = getSpotlightIndex(post.sections);
 
   return (
     <article className="container-x py-10 md:py-14">
@@ -105,7 +122,12 @@ export function BlogPostTemplate({ post }: { post: BlogPost }) {
           <KeyTakeaways items={post.keyTakeaways} />
 
           <div className="mt-10 max-w-3xl">
-            {post.sections.map(renderSection)}
+            {post.sections.map((s, i) => (
+              <Fragment key={i}>
+                {i === spotlightIndex && i > 0 && <ListingSpotlight />}
+                {renderSection(s, i)}
+              </Fragment>
+            ))}
           </div>
 
           {post.faqs.length > 0 && (
