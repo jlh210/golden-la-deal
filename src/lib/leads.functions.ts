@@ -60,9 +60,23 @@ function pemToArrayBuffer(pem: string): ArrayBuffer {
 // Cached per-isolate; harmless if it doesn't survive a cold start.
 let cachedToken: { token: string; expiresAt: number } | null = null;
 
+// Cloudflare Workers (via Nitro's cloudflare_module preset) expose Worker
+// secrets/vars through globalThis.__env__ — set on every request in the
+// Cloudflare handler (see node_modules/nitro/dist/presets/cloudflare/runtime/
+// _module-handler.mjs). nodejs_compat provides a process.env *object*, but
+// Cloudflare/Nitro never populates it with binding values, so
+// process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL etc. are always undefined in
+// production regardless of what secrets are configured in the dashboard.
+// Falling back to process.env keeps local dev / non-Workers runs working.
+function getRuntimeEnv(): Record<string, string | undefined> {
+  const g = globalThis as unknown as { __env__?: Record<string, string | undefined> };
+  return g.__env__ ?? (process.env as Record<string, string | undefined>);
+}
+
 async function getGoogleAccessToken(): Promise<string> {
-  const email = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
-  const rawKey = process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY;
+  const env = getRuntimeEnv();
+  const email = env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
+  const rawKey = env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY;
   if (!email || !rawKey) {
     throw new Error(
       "Google Sheets is not configured (missing GOOGLE_SERVICE_ACCOUNT_EMAIL / GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY).",
