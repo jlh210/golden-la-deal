@@ -46,24 +46,77 @@ function base64UrlFromString(str: string): string {
   return base64UrlFromBytes(new TextEncoder().encode(str));
 }
 
+// DER length octets for a given content length (short or long form).
+function derLength(len: number): number[] {
+  if (len < 0x80) return [len];
+  const bytes: number[] = [];
+  let n = len;
+  while (n > 0) {
+    bytes.unshift(n & 0xff);
+    n >>= 8;
+  }
+  return [0x80 | bytes.length, ...bytes];
+}
+
+// Web Crypto's importKey(format: "pkcs8", ...) only accepts a PKCS8
+// PrivateKeyInfo structure. A traditional "-----BEGIN RSA PRIVATE KEY-----"
+// PEM (PKCS1) is a bare RSAPrivateKey DER, not PKCS8, and Google service
+// account JSON keys are normally PKCS8 already — but if this key came from
+// somewhere else (e.g. `openssl genrsa`) it may be PKCS1. Wrap it in the
+// fixed PKCS8 envelope (version + rsaEncryption AlgorithmIdentifier + the
+// PKCS1 bytes as an OCTET STRING) so either format works transparently.
+function wrapPkcs1AsPkcs8(pkcs1Der: Uint8Array): Uint8Array {
+  const version = new Uint8Array([0x02, 0x01, 0x00]); // INTEGER 0
+  // SEQUENCE { OID 1.2.840.113549.1.1.1 (rsaEncryption), NULL }
+  const algId = new Uint8Array([
+    0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00,
+  ]);
+  const octetHeader = new Uint8Array([0x04, ...derLength(pkcs1Der.length)]);
+  const octetString = new Uint8Array(octetHeader.length + pkcs1Der.length);
+  octetString.set(octetHeader, 0);
+  octetString.set(pkcs1Der, octetHeader.length);
+
+  const bodyLength = version.length + algId.length + octetString.length;
+  const bodyHeader = new Uint8Array([0x30, ...derLength(bodyLength)]);
+
+  const result = new Uint8Array(bodyHeader.length + bodyLength);
+  let offset = 0;
+  result.set(bodyHeader, offset);
+  offset += bodyHeader.length;
+  result.set(version, offset);
+  offset += version.length;
+  result.set(algId, offset);
+  offset += algId.length;
+  result.set(octetString, offset);
+  return result;
+}
+
 function pemToArrayBuffer(pem: string): ArrayBuffer {
-  // Strip PEM markers (all occurrences, in case the value was pasted twice),
-  // then defensively strip anything outside the base64 alphabet (not just
-  // whitespace). Dashboard secret UIs and copy/paste from a JSON key file
-  // can introduce stray characters — surrounding quotes, a trailing comma,
-  // smart quotes, etc — that survive a whitespace-only clean and break
-  // atob(). Any real PEM body only ever contains [A-Za-z0-9+/=], so
-  // stripping everything else is safe and makes this robust to whatever
-  // got pasted.
+  // Detect the PEM label before stripping so we know whether this is PKCS1
+  // ("RSA PRIVATE KEY") or PKCS8 ("PRIVATE KEY") — logged only as a label,
+  // never the key body.
+  const headerMatch = pem.match(/-----BEGIN ([A-Z0-9 ]+)-----/);
+  const isPkcs1 = headerMatch?.[1] === "RSA PRIVATE KEY";
+
+  // Strip ANY "-----BEGIN xxx-----" / "-----END xxx-----" marker (all
+  // occurrences, in case the value was pasted twice, and regardless of the
+  // exact label so PKCS1's "RSA PRIVATE KEY" doesn't leave "RSAPRIVATEKEY"
+  // letters mixed into the stream), then defensively strip anything outside
+  // the base64 alphabet (not just whitespace). Dashboard secret UIs and
+  // copy/paste from a JSON key file can introduce stray characters —
+  // surrounding quotes, a trailing comma, smart quotes, etc — that survive a
+  // whitespace-only clean and break atob(). Any real PEM body only ever
+  // contains [A-Za-z0-9+/=], so stripping everything else is safe.
   const clean = pem
-    .replace(/-----BEGIN PRIVATE KEY-----/g, "")
-    .replace(/-----END PRIVATE KEY-----/g, "")
+    .replace(/-----BEGIN [A-Z0-9 ]+-----/g, "")
+    .replace(/-----END [A-Z0-9 ]+-----/g, "")
     .replace(/[^A-Za-z0-9+/=]/g, "");
+
+  let bytes: Uint8Array;
   try {
     const binary = atob(clean);
-    const bytes = new Uint8Array(binary.length);
+    bytes = new Uint8Array(binary.length);
     for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
-    return bytes.buffer;
   } catch (err) {
     // Diagnostic-only: never log the key itself, just structural facts about
     // it, so we can tell a truncated/misaligned paste apart from a stray
@@ -75,14 +128,15 @@ function pemToArrayBuffer(pem: string): ArrayBuffer {
       cleanedLength: clean.length,
       cleanedLengthMod4: clean.length % 4,
       strippedCharCount: pem.length - clean.length,
-      beginMarkerOccurrences: (pem.match(/-----BEGIN/g) ?? []).length,
-      endMarkerOccurrences: (pem.match(/-----END/g) ?? []).length,
+      detectedHeaderLabel: headerMatch?.[1] ?? null,
       equalsCount: equalsPositions.length,
       equalsPositions,
       err: err instanceof Error ? err.message : String(err),
     });
     throw err;
   }
+
+  return (isPkcs1 ? wrapPkcs1AsPkcs8(bytes) : bytes).buffer as ArrayBuffer;
 }
 
 // Cached per-isolate; harmless if it doesn't survive a cold start.
@@ -130,13 +184,34 @@ async function getGoogleAccessToken(): Promise<string> {
 
   const signingInput = `${base64UrlFromString(JSON.stringify(header))}.${base64UrlFromString(JSON.stringify(claims))}`;
 
-  const cryptoKey = await crypto.subtle.importKey(
-    "pkcs8",
-    pemToArrayBuffer(privateKeyPem),
-    { name: "RSASSA-PKCS1-v1_5", hash: "SHA-256" },
-    false,
-    ["sign"],
-  );
+  const keyBuffer = pemToArrayBuffer(privateKeyPem);
+  let cryptoKey: CryptoKey;
+  try {
+    cryptoKey = await crypto.subtle.importKey(
+      "pkcs8",
+      keyBuffer,
+      { name: "RSASSA-PKCS1-v1_5", hash: "SHA-256" },
+      false,
+      ["sign"],
+    );
+  } catch (err) {
+    // Diagnostic-only: structural facts about the decoded key bytes, never
+    // the bytes themselves. A correct 2048-bit RSA PKCS8 key decodes to
+    // roughly 1190-1220 bytes; wildly different suggests the pasted secret
+    // wasn't just the private_key value (e.g. the whole JSON key file got
+    // pasted in, or the paste was truncated).
+    const bytes = new Uint8Array(keyBuffer);
+    const headerMatch = privateKeyPem.match(/-----BEGIN ([A-Z0-9 ]+)-----/);
+    console.error("getGoogleAccessToken: importKey(pkcs8) failed", {
+      err: err instanceof Error ? err.message : String(err),
+      decodedByteLength: bytes.length,
+      firstBytesHex: Array.from(bytes.slice(0, 8))
+        .map((b) => b.toString(16).padStart(2, "0"))
+        .join(" "),
+      detectedHeaderLabel: headerMatch?.[1] ?? null,
+    });
+    throw err;
+  }
   const signature = await crypto.subtle.sign(
     "RSASSA-PKCS1-v1_5",
     cryptoKey,
