@@ -3,7 +3,7 @@ import { Phone, Menu, X, Mail, Clock, ChevronDown, Calendar } from "lucide-react
 import { useState, type ReactNode } from "react";
 import { agents } from "@/routes/agents";
 import logoMarkDark from "@/assets/logo-mark-dark.png";
-import logoAsset from "@/assets/logo-mark.png.asset.json";
+import logoAsset from "@/assets/logo-mark.png";
 
 
 const PHONE = "310-663-3521";
@@ -234,7 +234,7 @@ function Footer() {
         <div>
           <div className="flex items-center gap-3">
             <img
-              src={logoAsset.url}
+              src={logoAsset}
               alt="Penthouse Advisors Inc."
               className="h-11 w-auto shrink-0"
             />
