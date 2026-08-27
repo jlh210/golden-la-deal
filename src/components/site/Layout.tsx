@@ -12,16 +12,12 @@ const EMAIL_HREF = "mailto:PenthouseAdvisors@gmail.com";
 const HOURS = "8:00am – 7:00pm · Mon–Sun";
 
 const primaryNav = [
-{ to: "/", label: "Home" },
-{ to: "/services", label: "Services", hasDropdown: true },
-{ to: "/restaurants-for-sale", label: "Restaurants & Businesses for Sale/Lease" },
-{ to: "/buy-a-restaurant", label: "Buy a Restaurant" },
-{ to: "/sell-your-restaurant", label: "Sell a Restaurant" },
-{ to: "/alcohol-licensing", label: "Restaurant Alcohol Licensing" },
-{ to: "/help", label: "Help" },
-{ to: "/blog", label: "Blog" },
-{ to: "/about", label: "About" },
-{ to: "/contact", label: "Contact" },
+  { to: "/", label: "Home" },
+  { to: "/services", label: "Services", hasDropdown: true },
+  { to: "/alcohol-licensing", label: "Restaurant Alcohol Licensing" },
+  { to: "/help", label: "Help" },
+  { to: "/about", label: "About" },
+  { to: "/contact", label: "Contact" },
 ] as const;
 
 const servicesDropdown = [
