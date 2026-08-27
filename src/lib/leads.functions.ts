@@ -282,10 +282,6 @@ export const submitLead = createServerFn({ method: "POST" })
         f.financing ?? "",
         laNow(),
         f.message ?? f.notes ?? "",
-        "",
-        "",
-        "",
-        "",
       ];
 
       const url = `${SHEETS_API}/${SHEET_ID}/values/${RANGE}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`;
