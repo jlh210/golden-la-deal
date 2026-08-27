@@ -47,10 +47,17 @@ function base64UrlFromString(str: string): string {
 }
 
 function pemToArrayBuffer(pem: string): ArrayBuffer {
+  // Strip PEM markers, then defensively strip anything outside the base64
+  // alphabet (not just whitespace). Dashboard secret UIs and copy/paste from
+  // a JSON key file can introduce stray characters — surrounding quotes, a
+  // trailing comma, smart quotes, etc — that survive a whitespace-only clean
+  // and break atob(). Any real PEM body only ever contains [A-Za-z0-9+/=],
+  // so stripping everything else is safe and makes this robust to whatever
+  // got pasted.
   const clean = pem
     .replace(/-----BEGIN PRIVATE KEY-----/, "")
     .replace(/-----END PRIVATE KEY-----/, "")
-    .replace(/\s+/g, "");
+    .replace(/[^A-Za-z0-9+/=]/g, "");
   const binary = atob(clean);
   const bytes = new Uint8Array(binary.length);
   for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
