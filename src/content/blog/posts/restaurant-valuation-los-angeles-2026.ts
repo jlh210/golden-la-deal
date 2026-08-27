@@ -20,8 +20,8 @@ export const post: BlogPost = {
     "LA restaurants are valued primarily on a multiple of Seller's Discretionary Earnings (SDE), not revenue.",
     "Lease term, license type, and how dependent the business is on the owner personally all move the multiple.",
     "Real estate (if you own the building) is valued and sold separately from the operating business.",
-    "A defensible valuation takes 24 months of reconciled financials — guessing from revenue alone undervalues most sellers.",
-    "Get a valuation before you make any changes to staffing, pricing, or hours — those changes affect the number.",
+    "A defensible valuation takes 24 months of reconciled financials. Guessing from revenue alone undervalues most sellers.",
+    "Get a valuation before you make any changes to staffing, pricing, or hours: those changes affect the number.",
   ],
   sections: [
     {
@@ -32,7 +32,7 @@ export const post: BlogPost = {
     {
       type: "p",
       text:
-        "Most independently owned Los Angeles restaurants sell for somewhere between 1.5 and 3 times Seller's Discretionary Earnings (SDE) — not revenue. Where a specific restaurant lands in that range depends mainly on lease term remaining, license type, how reconciled the books are, and how much the business depends on the current owner personally. A restaurant with a fresh 10-year lease, a Type 47 license, and a GM who isn't going anywhere sits at the high end. A month-to-month lease and an owner who is the entire operation sits at the low end, regardless of how good the food is.",
+        "Most independently owned Los Angeles restaurants sell for somewhere between 1.5 and 3 times Seller's Discretionary Earnings (SDE), not revenue. Where a specific restaurant lands in that range depends mainly on lease term remaining, license type, how reconciled the books are, and how much the business depends on the current owner personally. A restaurant with a fresh 10-year lease, a Type 47 license, and a GM who isn't going anywhere sits at the high end. A month-to-month lease and an owner who is the entire operation sits at the low end, regardless of how good the food is.",
     },
     {
       type: "h2",
@@ -58,11 +58,11 @@ export const post: BlogPost = {
     {
       type: "p",
       text:
-        "Every add-back needs a paper trail. Buyers and their accountants will ask for it, and an add-back you can't document gets thrown out of the calculation — which lowers your effective SDE and your price.",
+        "Every add-back needs a paper trail. Buyers and their accountants will ask for it, and an add-back you can't document gets thrown out of the calculation, which lowers your effective SDE and your price.",
     },
     {
       type: "h2",
-      text: "What moves your multiple up — and what pulls it down",
+      text: "What moves your multiple up, and what pulls it down",
       id: "what-moves-the-multiple",
     },
     {
@@ -80,7 +80,7 @@ export const post: BlogPost = {
       type: "callout",
       title: "If you own the real estate",
       text:
-        "The building and the operating business are two different assets with two different valuation methods. The restaurant business is valued on SDE; the real estate is valued like any commercial property, on comparable sales and cap rate. Don't let a buyer blend the two into one number — get each appraised separately.",
+        "The building and the operating business are two different assets with two different valuation methods. The restaurant business is valued on SDE; the real estate is valued like any commercial property, on comparable sales and cap rate. Don't let a buyer blend the two into one number. Get each appraised separately.",
     },
     {
       type: "h2",
@@ -100,7 +100,7 @@ export const post: BlogPost = {
     {
       type: "p",
       text:
-        "A real valuation starts with 24 months of POS reports, bank deposits, merchant processor statements, and sales-tax filings, reconciled against each other. From there, a broker who works LA restaurant deals specifically — not general small-business sales — applies current local comps for your license type, neighborhood, and lease structure. That local comp knowledge is the difference between a number a buyer's lender will actually underwrite and a number that just sounds good.",
+        "A real valuation starts with 24 months of POS reports, bank deposits, merchant processor statements, and sales-tax filings, reconciled against each other. From there, a broker who works LA restaurant deals specifically, not general small-business sales, applies current local comps for your license type, neighborhood, and lease structure. That local comp knowledge is the difference between a number a buyer's lender will actually underwrite and a number that just sounds good.",
     },
   ],
   faqs: [
@@ -110,7 +110,7 @@ export const post: BlogPost = {
     },
     {
       q: "Does revenue or profit matter more for valuation?",
-      a: "Profit — specifically Seller's Discretionary Earnings — is what buyers and lenders price the deal on. Two restaurants with identical revenue can have very different values if their profit margins, add-backs, or lease terms differ.",
+      a: "Profit, specifically Seller's Discretionary Earnings, is what buyers and lenders price the deal on. Two restaurants with identical revenue can have very different values if their profit margins, add-backs, or lease terms differ.",
     },
     {
       q: "Do I need a formal appraisal to sell my restaurant?",
@@ -122,7 +122,7 @@ export const post: BlogPost = {
     },
     {
       q: "Will renovating or changing my menu increase my sale price?",
-      a: "Sometimes, but proceed carefully before a sale — cosmetic renovations rarely pay for themselves in the final multiple, and menu or staffing changes made right before a listing can temporarily distort your trailing financials in ways that make buyers nervous rather than confident.",
+      a: "Sometimes, but proceed carefully before a sale: cosmetic renovations rarely pay for themselves in the final multiple, and menu or staffing changes made right before a listing can temporarily distort your trailing financials in ways that make buyers nervous rather than confident.",
     },
   ],
   related: [
