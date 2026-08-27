@@ -47,21 +47,42 @@ function base64UrlFromString(str: string): string {
 }
 
 function pemToArrayBuffer(pem: string): ArrayBuffer {
-  // Strip PEM markers, then defensively strip anything outside the base64
-  // alphabet (not just whitespace). Dashboard secret UIs and copy/paste from
-  // a JSON key file can introduce stray characters — surrounding quotes, a
-  // trailing comma, smart quotes, etc — that survive a whitespace-only clean
-  // and break atob(). Any real PEM body only ever contains [A-Za-z0-9+/=],
-  // so stripping everything else is safe and makes this robust to whatever
+  // Strip PEM markers (all occurrences, in case the value was pasted twice),
+  // then defensively strip anything outside the base64 alphabet (not just
+  // whitespace). Dashboard secret UIs and copy/paste from a JSON key file
+  // can introduce stray characters — surrounding quotes, a trailing comma,
+  // smart quotes, etc — that survive a whitespace-only clean and break
+  // atob(). Any real PEM body only ever contains [A-Za-z0-9+/=], so
+  // stripping everything else is safe and makes this robust to whatever
   // got pasted.
   const clean = pem
-    .replace(/-----BEGIN PRIVATE KEY-----/, "")
-    .replace(/-----END PRIVATE KEY-----/, "")
+    .replace(/-----BEGIN PRIVATE KEY-----/g, "")
+    .replace(/-----END PRIVATE KEY-----/g, "")
     .replace(/[^A-Za-z0-9+/=]/g, "");
-  const binary = atob(clean);
-  const bytes = new Uint8Array(binary.length);
-  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
-  return bytes.buffer;
+  try {
+    const binary = atob(clean);
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+    return bytes.buffer;
+  } catch (err) {
+    // Diagnostic-only: never log the key itself, just structural facts about
+    // it, so we can tell a truncated/misaligned paste apart from a stray
+    // character without ever exposing key material in the logs.
+    const equalsPositions: number[] = [];
+    for (let i = 0; i < clean.length; i++) if (clean[i] === "=") equalsPositions.push(i);
+    console.error("pemToArrayBuffer: atob failed on cleaned key", {
+      originalLength: pem.length,
+      cleanedLength: clean.length,
+      cleanedLengthMod4: clean.length % 4,
+      strippedCharCount: pem.length - clean.length,
+      beginMarkerOccurrences: (pem.match(/-----BEGIN/g) ?? []).length,
+      endMarkerOccurrences: (pem.match(/-----END/g) ?? []).length,
+      equalsCount: equalsPositions.length,
+      equalsPositions,
+      err: err instanceof Error ? err.message : String(err),
+    });
+    throw err;
+  }
 }
 
 // Cached per-isolate; harmless if it doesn't survive a cold start.
