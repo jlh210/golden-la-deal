@@ -1,12 +1,12 @@
-import wilshire1 from "@/assets/wilshire-1.png.asset.json";
-import wilshire2 from "@/assets/wilshire-2.png.asset.json";
-import wilshire3 from "@/assets/wilshire-3.png.asset.json";
-import wilshire4 from "@/assets/wilshire-4.png.asset.json";
-import santaMonica1 from "@/assets/santa-monica-1.png.asset.json";
-import santaMonica2 from "@/assets/santa-monica-2.png.asset.json";
-import hardwareStorefront from "@/assets/hardware-storefront.png.asset.json";
-import hardwareAisle from "@/assets/hardware-aisle.png.asset.json";
-import dentalOffice from "@/assets/dental-office-for-lease.png.asset.json";
+import wilshire1 from "@/assets/wilshire-1.png";
+import wilshire2 from "@/assets/wilshire-2.png";
+import wilshire3 from "@/assets/wilshire-3.png";
+import wilshire4 from "@/assets/wilshire-4.png";
+import santaMonica1 from "@/assets/santa-monica-1.png";
+import santaMonica2 from "@/assets/santa-monica-2.png";
+import hardwareStorefront from "@/assets/hardware-storefront.png";
+import hardwareAisle from "@/assets/hardware-aisle.png";
+import dentalOffice from "@/assets/dental-office-for-lease.png";
 
 export type SaleType =
   | "Business Sale"
@@ -112,7 +112,7 @@ export const listings: Listing[] = [
       "Available now",
       "First & last month and security deposit",
     ],
-    images: [dentalOffice.url],
+    images: [dentalOffice],
   },
   {
     id: "R-002",
@@ -179,7 +179,7 @@ export const listings: Listing[] = [
       "Open and active",
       "Shopping center location",
     ],
-    images: [santaMonica1.url, santaMonica2.url],
+    images: [santaMonica1, santaMonica2],
   },
   {
     id: "R-003",
@@ -222,7 +222,7 @@ export const listings: Listing[] = [
       "$10,000 per month all-in",
       "Wilshire at 24th Street, Santa Monica",
     ],
-    images: [wilshire3.url, wilshire1.url, wilshire2.url, wilshire4.url],
+    images: [wilshire3, wilshire1, wilshire2, wilshire4],
   },
   {
     id: "B-001",
@@ -274,7 +274,7 @@ export const listings: Listing[] = [
       "Key duplication, tools, plumbing, electrical",
       "New lease negotiable",
     ],
-    images: [hardwareStorefront.url, hardwareAisle.url],
+    images: [hardwareStorefront, hardwareAisle],
   },
 ];
 
