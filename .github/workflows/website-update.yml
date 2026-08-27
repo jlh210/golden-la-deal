@@ -4,8 +4,15 @@
 # It listens for a "website_update_request" dispatch event (sent by your
 # Make.com scenario when Richard posts in Slack), hands the raw request to
 # Claude Code, has Claude Code make the edit, open a PR, merge it
-# immediately (no human review step — fully autonomous by design), and
+# immediately (no human review step - fully autonomous by design), and
 # notify Slack when it's done via a Make.com webhook.
+#
+# Guardrail: a step after the merge checks main for the Lovable "asset.json"
+# image-reference pattern that broke the live site's photos in August 2026
+# (Lovable's own asset CDN only resolves on Lovable's hosting, not on this
+# site's Cloudflare deployment). If that pattern ever reaches main again,
+# this step automatically reverts the merge and posts to Slack explaining
+# why, instead of leaving a silently broken image on the live site.
 #
 # Setup required before this works:
 #   1. Install the Claude GitHub App on this repo: https://github.com/apps/claude
@@ -45,25 +52,72 @@ jobs:
 
             Read the codebase, figure out what needs to change to fulfill this
             request, and make the edit. Keep the change scoped to exactly what
-            was asked — don't refactor unrelated code.
+            was asked - don't refactor unrelated code.
+
+            IMPORTANT image safety rule: this site deploys from GitHub to
+            Cloudflare, not from Lovable's own hosting. Never add or keep an
+            image reference that imports a "*.asset.json" file or points at a
+            "/__l5e/" path - those only resolve on Lovable's hosting and will
+            show as a broken image here. Always reference images as a plain
+            file import instead, e.g.:
+              import photo from "@/assets/my-photo.png";
+              <img src={photo} />
+            If a request needs a new image and you don't have the actual image
+            file to add under src/assets/, say so in the PR description and in
+            the Slack summary rather than wiring up a Lovable-only reference.
 
             Then, fully autonomously (no human review step, by design):
+
             1. Commit the change and open a pull request with a clear title
                and a description that restates the request and summarizes
                what you changed.
-            2. Immediately merge that pull request yourself using:
+            2. Before merging, run this safety check from the repo root:
+               grep -rEn "from [\"'][^\"']*\.asset\.json[\"']|__l5e" src/ --include="*.ts" --include="*.tsx"
+               If it finds any matches, do NOT merge. Leave the PR open, and
+               in step 4 explain that the change was blocked because it would
+               have shown a broken image on the live site.
+            3. If the check finds nothing, merge the pull request yourself
+               using:
                gh pr merge <PR_NUMBER> --merge --delete-branch
-            3. After a successful merge, notify Slack by running:
+            4. Notify Slack by running:
                curl -s -X POST https://hook.us2.make.com/ghd2j1pst247qpox4mlymqudc1qxb6ta \
                  -H "Content-Type: application/json" \
-                 -d "$(jq -n --arg s "<one-sentence plain-English summary of what you changed>" '{summary: $s}')"
-               Replace the placeholder with a real one-sentence summary of the
-               actual change you made (e.g. "Removed the dental office
-               listing from the homepage"). If jq is unavailable, use any
-               equivalent method to produce valid JSON with a "summary" key.
+                 -d "$(jq -n --arg s "<one-sentence plain-English summary of what you changed, or of why it was blocked>" '{summary: $s}')"
+               If jq is unavailable, use any equivalent method to produce
+               valid JSON with a "summary" key.
 
             If at any point the request is unclear, unsafe, or you cannot
-            complete it, do not merge — leave the PR open, and still call the
+            complete it, do not merge - leave the PR open, and still call the
             Slack webhook with a summary explaining what happened instead.
           claude_args: |
             --allowedTools "Read,Edit,Write,Bash,Grep,Glob"
+
+      - name: Guardrail - revert if a broken Lovable image reference reached main
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git fetch origin main
+          git checkout main
+          git reset --hard origin/main
+
+          MATCHES=$(grep -rEn "from [\"'][^\"']*\.asset\.json[\"']|__l5e" src/ --include="*.ts" --include="*.tsx" || true)
+
+          if [ -n "$MATCHES" ]; then
+            echo "Forbidden Lovable-only image reference found on main:"
+            echo "$MATCHES"
+
+            BAD_COMMIT=$(git rev-parse HEAD)
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git revert --no-edit -m 1 "$BAD_COMMIT"
+            git push origin main
+
+            curl -s -X POST https://hook.us2.make.com/ghd2j1pst247qpox4mlymqudc1qxb6ta \
+              -H "Content-Type: application/json" \
+              -d '{"summary": "Auto-reverted the last website update: it referenced a Lovable-only image path that would show as a broken image on the live site. Nothing changed on the live site - please re-request the edit."}'
+
+            exit 1
+          else
+            echo "No forbidden Lovable image references found on main. OK."
+          fi
