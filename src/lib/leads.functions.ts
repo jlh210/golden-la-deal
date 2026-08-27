@@ -92,21 +92,9 @@ function wrapPkcs1AsPkcs8(pkcs1Der: Uint8Array): Uint8Array {
 }
 
 function pemToArrayBuffer(pem: string): ArrayBuffer {
-  // Detect the PEM label before stripping so we know whether this is PKCS1
-  // ("RSA PRIVATE KEY") or PKCS8 ("PRIVATE KEY") — logged only as a label,
-  // never the key body.
   const headerMatch = pem.match(/-----BEGIN ([A-Z0-9 ]+)-----/);
   const isPkcs1 = headerMatch?.[1] === "RSA PRIVATE KEY";
 
-  // Strip ANY "-----BEGIN xxx-----" / "-----END xxx-----" marker (all
-  // occurrences, in case the value was pasted twice, and regardless of the
-  // exact label so PKCS1's "RSA PRIVATE KEY" doesn't leave "RSAPRIVATEKEY"
-  // letters mixed into the stream), then defensively strip anything outside
-  // the base64 alphabet (not just whitespace). Dashboard secret UIs and
-  // copy/paste from a JSON key file can introduce stray characters —
-  // surrounding quotes, a trailing comma, smart quotes, etc — that survive a
-  // whitespace-only clean and break atob(). Any real PEM body only ever
-  // contains [A-Za-z0-9+/=], so stripping everything else is safe.
   const clean = pem
     .replace(/-----BEGIN [A-Z0-9 ]+-----/g, "")
     .replace(/-----END [A-Z0-9 ]+-----/g, "")
@@ -118,9 +106,6 @@ function pemToArrayBuffer(pem: string): ArrayBuffer {
     bytes = new Uint8Array(binary.length);
     for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
   } catch (err) {
-    // Diagnostic-only: never log the key itself, just structural facts about
-    // it, so we can tell a truncated/misaligned paste apart from a stray
-    // character without ever exposing key material in the logs.
     const equalsPositions: number[] = [];
     for (let i = 0; i < clean.length; i++) if (clean[i] === "=") equalsPositions.push(i);
     console.error("pemToArrayBuffer: atob failed on cleaned key", {
@@ -142,14 +127,6 @@ function pemToArrayBuffer(pem: string): ArrayBuffer {
 // Cached per-isolate; harmless if it doesn't survive a cold start.
 let cachedToken: { token: string; expiresAt: number } | null = null;
 
-// Cloudflare Workers (via Nitro's cloudflare_module preset) expose Worker
-// secrets/vars through globalThis.__env__ — set on every request in the
-// Cloudflare handler (see node_modules/nitro/dist/presets/cloudflare/runtime/
-// _module-handler.mjs). nodejs_compat provides a process.env *object*, but
-// Cloudflare/Nitro never populates it with binding values, so
-// process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL etc. are always undefined in
-// production regardless of what secrets are configured in the dashboard.
-// Falling back to process.env keeps local dev / non-Workers runs working.
 function getRuntimeEnv(): Record<string, string | undefined> {
   const g = globalThis as unknown as { __env__?: Record<string, string | undefined> };
   return g.__env__ ?? (process.env as Record<string, string | undefined>);
@@ -157,11 +134,34 @@ function getRuntimeEnv(): Record<string, string | undefined> {
 
 async function getGoogleAccessToken(): Promise<string> {
   const env = getRuntimeEnv();
-  const email = env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
-  const rawKey = env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY;
+
+  // Preferred path: one base64-encoded blob of the whole service-account
+  // JSON file, set as GOOGLE_SERVICE_ACCOUNT_JSON_B64. Pasting a multi-line
+  // PEM key into a dashboard text field is what kept corrupting the old
+  // GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY secret ("Invalid PKCS8 input") — a
+  // one-line base64 string can't be mangled the way a raw multi-line PEM can.
+  let email: string | undefined;
+  let rawKey: string | undefined;
+
+  const jsonB64 = env.GOOGLE_SERVICE_ACCOUNT_JSON_B64;
+  if (jsonB64) {
+    try {
+      const decoded = JSON.parse(atob(jsonB64.trim()));
+      email = decoded.client_email;
+      rawKey = decoded.private_key;
+    } catch (err) {
+      console.error("Failed to decode GOOGLE_SERVICE_ACCOUNT_JSON_B64", err);
+      throw new Error("GOOGLE_SERVICE_ACCOUNT_JSON_B64 is set but isn't valid base64 JSON.");
+    }
+  } else {
+    // Legacy fallback.
+    email = env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
+    rawKey = env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY;
+  }
+
   if (!email || !rawKey) {
     throw new Error(
-      "Google Sheets is not configured (missing GOOGLE_SERVICE_ACCOUNT_EMAIL / GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY).",
+      "Google Sheets is not configured (missing GOOGLE_SERVICE_ACCOUNT_JSON_B64 or the legacy email/key pair).",
     );
   }
 
@@ -195,16 +195,6 @@ async function getGoogleAccessToken(): Promise<string> {
       ["sign"],
     );
   } catch (err) {
-    // Diagnostic-only: structural facts about the decoded key bytes, never
-    // the bytes themselves. A correct 2048-bit RSA PKCS8 key decodes to
-    // roughly 1190-1220 bytes; wildly different suggests the pasted secret
-    // wasn't just the private_key value (e.g. the whole JSON key file got
-    // pasted in, or the paste was truncated). A valid PKCS8 PrivateKeyInfo
-    // always starts with 0x30 (an ASN.1 SEQUENCE tag) — if that tag instead
-    // appears a few bytes into the buffer, some fixed-size junk got prepended
-    // and can potentially be sliced off programmatically; if it never
-    // appears, the content itself is scrambled (e.g. a hand-retyped key with
-    // look-alike character substitutions), which no code fix can repair.
     const bytes = new Uint8Array(keyBuffer);
     const headerMatch = privateKeyPem.match(/-----BEGIN ([A-Z0-9 ]+)-----/);
     const scanWindow = Array.from(bytes.slice(0, Math.min(64, bytes.length)));
@@ -273,21 +263,10 @@ export const submitLead = createServerFn({ method: "POST" })
   .handler(async ({ data }) => {
     const f = data.fields;
 
-    // Honeypot: this input is visually hidden on the form, so real visitors
-    // leave it blank; bots that blindly fill every field trip it. Deliberately
-    // named something autofill/password managers won't recognize (a field
-    // literally named "website" gets silently filled by Chrome/LastPass/etc,
-    // which caused real leads to be dropped as false-positive bot traffic).
-    // Pretend success so bots don't learn anything, but skip the write.
     if (f.hp_field_9f2) {
       return { ok: true };
     }
 
-    // Wrapped end-to-end so every failure mode (missing config, bad auth,
-    // sheet write rejected) surfaces a console.error with real detail — the
-    // per-fetch checks below don't cover a throw from getGoogleAccessToken
-    // (e.g. missing env vars), which previously failed silently from a
-    // logging standpoint.
     try {
       const headers = await sheetsHeaders();
 
@@ -346,7 +325,6 @@ export const markLeadBooked = createServerFn({ method: "POST" })
   .handler(async ({ data }) => {
     const headers = await sheetsHeaders();
 
-    // Find the most recent row matching this email (column C).
     const readUrl = `${SHEETS_API}/${SHEET_ID}/values/'${SHEET_NAME}'!C:C`;
     const readRes = await fetch(readUrl, { headers });
     if (!readRes.ok) {
@@ -357,7 +335,7 @@ export const markLeadBooked = createServerFn({ method: "POST" })
     const readJson = (await readRes.json()) as { values?: string[][] };
     const values = readJson.values ?? [];
 
-    let rowIndex = -1; // 1-based sheet row
+    let rowIndex = -1;
     const target = data.email.trim().toLowerCase();
     for (let i = values.length - 1; i >= 0; i--) {
       const cell = (values[i]?.[0] ?? "").trim().toLowerCase();
