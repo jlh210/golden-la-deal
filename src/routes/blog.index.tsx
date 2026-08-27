@@ -7,7 +7,7 @@ import { breadcrumbScript, collectionScript, SITE_URL } from "@/lib/seo";
 export const Route = createFileRoute("/blog/")({
   head: () => ({
     meta: [
-      { title: "Blog — LA Restaurant Brokerage Insights | Penthouse Advisors" },
+      { title: "Blog: LA Restaurant Brokerage Insights | Penthouse Advisors" },
       {
         name: "description",
         content:
@@ -53,7 +53,7 @@ function BlogIndexPage() {
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-base md:text-lg text-white/75">
             Valuation, licensing, and market insight for anyone buying, selling, or leasing a
-            restaurant in Los Angeles County — written by the team that does these deals.
+            restaurant in Los Angeles County, written by the team that does these deals.
           </p>
         </div>
       </section>
