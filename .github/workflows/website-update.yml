@@ -87,4 +87,38 @@ jobs:
                valid JSON with a "summary" key.
 
             If at any point the request is unclear, unsafe, or you cannot
-            complete it, do not merge - leave the
+            complete it, do not merge - leave the PR open, and still call the
+            Slack webhook with a summary explaining what happened instead.
+          claude_args: |
+            --allowedTools "Read,Edit,Write,Bash,Grep,Glob"
+
+      - name: Guardrail - revert if a broken Lovable image reference reached main
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
+          git fetch origin main
+          git checkout main
+          git reset --hard origin/main
+
+          MATCHES=$(grep -rEn "from [\"'][^\"']*\.asset\.json[\"']|__l5e" src/ --include="*.ts" --include="*.tsx" || true)
+
+          if [ -n "$MATCHES" ]; then
+            echo "Forbidden Lovable-only image reference found on main:"
+            echo "$MATCHES"
+
+            BAD_COMMIT=$(git rev-parse HEAD)
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git revert --no-edit -m 1 "$BAD_COMMIT"
+            git push origin main
+
+            curl -s -X POST https://hook.us2.make.com/ghd2j1pst247qpox4mlymqudc1qxb6ta \
+              -H "Content-Type: application/json" \
+              -d '{"summary": "Auto-reverted the last website update: it referenced a Lovable-only image path that would show as a broken image on the live site. Nothing changed on the live site - please re-request the edit."}'
+
+            exit 1
+          else
+            echo "No forbidden Lovable image references found on main. OK."
+          fi
