@@ -23,7 +23,7 @@ const primaryNav = [
 const servicesDropdown = [
 { to: "/buy-a-restaurant", label: "Buy a Restaurant" },
 { to: "/sell-your-restaurant", label: "Sell Your Restaurant" },
-{ to: "/restaurants-for-sale", label: "Restaurant, Medical Office, Hardware Store for Sale/Lease in Los Angeles" },
+{ to: "/restaurants-for-sale", label: "For Sale/Lease Restaurant & Business, L A County" },
 { to: "/restaurant-leasing", label: "Restaurant Leasing" },
 { to: "/licensing-and-permits", label: "Licensing & Permits" },
 { to: "/restaurant-consulting", label: "Restaurant Consulting" },
@@ -77,7 +77,7 @@ return (
 className="sticky top-0 z-50 transition-all duration-500 bg-black border-b border-gold/40 shadow-[0_2px_24px_-12px_oklch(0.2_0.02_265/0.18)]"
 >
 <div className="border-b border-gold/20 bg-charcoal-deep">
-<div className="container-x flex h-8 items-center justify-center gap-2">
+<div className="container-x flex min-h-8 flex-wrap items-center justify-center gap-x-2 py-1">
 <span className="font-display text-[11px] sm:text-xs tracking-[0.2em] sm:tracking-[0.3em] uppercase text-gold text-center truncate min-w-0">
 Penthouse Advisors Inc.
 </span>
@@ -88,6 +88,10 @@ className="font-display text-[11px] sm:text-xs tracking-[0.2em] sm:tracking-[0.3
 >
 LA Restaurant Business Brokerage
 </a>
+<span className="text-[11px] sm:text-xs text-gold/40" aria-hidden="true">·</span>
+<span className="font-display text-[11px] sm:text-xs tracking-[0.2em] sm:tracking-[0.3em] uppercase text-gold text-center">
+Restaurant &amp; Business For Sale L A County
+</span>
 </div>
 </div>
 
