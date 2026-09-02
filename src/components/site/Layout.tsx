@@ -21,9 +21,9 @@ const primaryNav = [
 ] as const;
 
 const servicesDropdown = [
+{ to: "/restaurants-for-sale", label: "Restaurants & Businesses for Sale/Lease. L A County" },
 { to: "/buy-a-restaurant", label: "Buy a Restaurant" },
 { to: "/sell-your-restaurant", label: "Sell Your Restaurant" },
-{ to: "/restaurants-for-sale", label: "Restaurant, Medical Office, Hardware Store for Sale/Lease in Los Angeles" },
 { to: "/restaurant-leasing", label: "Restaurant Leasing" },
 { to: "/licensing-and-permits", label: "Licensing & Permits" },
 { to: "/restaurant-consulting", label: "Restaurant Consulting" },
