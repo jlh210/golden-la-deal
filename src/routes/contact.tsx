@@ -12,7 +12,7 @@ export const Route = createFileRoute("/contact")({
     z.object({ service: z.string().optional() }).parse(search),
   head: () => ({
     meta: [
-      { title: "Book a $35 Consultation - Penthouse Advisors LA" },
+      { title: "Book a $75 Consultation - Penthouse Advisors LA" },
       {
         name: "description",
         content:
@@ -41,7 +41,7 @@ function ContactPage() {
       <PageHero
         eyebrow="Reserve your advisory call"
         title="Speak directly with our COO, Richard Stein or CEO Roschard Paticchio Stein."
-        accent="Lock in your $35 consultation."
+        accent="Lock in your $75 consultation."
         subtitle="A guaranteed 30-minute mobile-to-mobile call for real answers on restaurants, properties, and city matters."
       />
 
@@ -51,7 +51,7 @@ function ContactPage() {
             <div className="rounded-2xl border border-gold/40 bg-gradient-to-br from-gold/10 to-card p-6 shadow-elegant">
               <div className="text-xs uppercase tracking-widest text-gold font-semibold">Paid consultation — non-refundable</div>
               <div className="mt-2 text-2xl md:text-3xl font-display font-bold">
-                $35 secures your guaranteed advisory call.
+                $75 secures your guaranteed advisory call.
               </div>
               <p className="mt-3 text-sm text-muted-foreground">
                 Submit your details below and we'll confirm your appointment.
@@ -59,10 +59,10 @@ function ContactPage() {
             </div>
             <LeadForm
               serviceNeeded={prefill}
-              title="Book your $35 consultation"
+              title="Book your $75 consultation"
               subtitle="Fill in your details. Once payment is confirmed, we’ll lock in your time with Richard Stein or Roschard Paticchio Stein."
               messagePlaceholder={prefill ? "Address of my current restaurant" : "A few details on your situation…"}
-              note="$35 non-refundable. Zelle 310-460-9757 before submitting."
+              note="$75 non-refundable. Zelle 310-460-9757 before submitting."
             />
           </div>
 
