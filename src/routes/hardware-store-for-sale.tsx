@@ -14,12 +14,12 @@ export const Route = createFileRoute("/hardware-store-for-sale")({
       {
         name: "description",
         content:
-          "Established hardware store for sale on Westwood Blvd, West LA. $125,000 cash. Revenue $402,000/yr. Established 2020.",
+          "Established hardware store for sale on Westwood Blvd, West LA. $175,000 cash. Revenue $402,000/yr. Established 2020.",
       },
       { property: "og:title", content: "Hardware Store For Sale - West LA" },
       {
         property: "og:description",
-        content: "Established hardware store on Westwood Blvd. $125k cash.",
+        content: "Established hardware store on Westwood Blvd. $175k cash.",
       },
       { property: "og:image", content: storefront },
       { property: "twitter:image", content: storefront },
@@ -34,7 +34,7 @@ export const Route = createFileRoute("/hardware-store-for-sale")({
 });
 
 const specs = [
-  { label: "Asking Price", value: "$125,000", note: "Cash" },
+  { label: "Asking Price", value: "$175,000", note: "Cash" },
   { label: "Annual Revenue", value: "$402,000 / yr" },
   { label: "Year Established", value: "2020" },
   { label: "Employees", value: "1 Full-Time" },
