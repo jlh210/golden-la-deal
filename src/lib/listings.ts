@@ -7,6 +7,7 @@ import santaMonica2 from "@/assets/santa-monica-2.png";
 import hardwareStorefront from "@/assets/hardware-storefront.png";
 import hardwareAisle from "@/assets/hardware-aisle.png";
 import dentalOffice from "@/assets/dental-office-for-lease.png";
+import westwoodRestaurant1 from "@/assets/westwood-santa-monica-restaurant-1.jpg";
 
 export type SaleType =
   | "Business Sale"
@@ -63,6 +64,7 @@ export const listings: Listing[] = [
       "Unobstructed exposure at Santa Monica & Westwood",
       "100,000 cars/day traffic count",
     ],
+    images: [westwoodRestaurant1],
   },
   {
     id: "RE-005",
