@@ -50,6 +50,31 @@ jobs:
             Request:
             "${{ github.event.client_payload.request }}"
 
+            Image(s) already committed to this repo for this request (may be
+            empty if none were attached in Slack):
+            ${{ toJSON(github.event.client_payload.imagePaths) }}
+
+            Each path listed above is a real image file already sitting in
+            src/assets/pending/ in this checkout - Slack's image upload was
+            already downloaded and committed by the penthouse-slack-webhook
+            Cloudflare Worker before this workflow ran. If the list is
+            non-empty, your job includes placing each image:
+              1. Read the request text above to figure out which listing it's
+                 for (match by name, address, or slug in src/lib/listings.ts).
+              2. Move the file from src/assets/pending/ to src/assets/, giving
+                 it a clear descriptive name (e.g. src/assets/robert-kim-listing-1.jpg)
+                 rather than keeping the pending/<timestamp>-<original-name> name.
+              3. Add or update the image field(s) on that listing's entry in
+                 src/lib/listings.ts using a plain file import, matching the
+                 existing pattern for every other listing photo:
+                   import photo from "@/assets/robert-kim-listing-1.jpg";
+                 and reference `photo` directly - never a ".url" accessor and
+                 never a "*.asset.json" import (see the image safety rule below).
+              4. If you can't confidently tell which listing an image belongs
+                 to from the request text, say so in the PR description and in
+                 the Slack summary instead of guessing - leave the file in
+                 src/assets/pending/ rather than wiring it to the wrong listing.
+
             Read the codebase, figure out what needs to change to fulfill this
             request, and make the edit. Keep the change scoped to exactly what
             was asked - don't refactor unrelated code.
@@ -65,6 +90,8 @@ jobs:
             If a request needs a new image and you don't have the actual image
             file to add under src/assets/, say so in the PR description and in
             the Slack summary rather than wiring up a Lovable-only reference.
+            This rule applies equally to any image you move out of
+            src/assets/pending/ above.
 
             Then, fully autonomously (no human review step, by design):
 
