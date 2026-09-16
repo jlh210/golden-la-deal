@@ -5,25 +5,48 @@
 # Make.com scenario when Richard posts in Slack), hands the raw request to
 # Claude Code, has Claude Code make the edit, open a PR, merge it
 # immediately (no human review step - fully autonomous by design), and
-# notify Slack when it's done via a Make.com webhook.
+# notify Slack once the change is actually confirmed live on Cloudflare.
 #
-# Guardrail: a step after the merge checks main for the Lovable "asset.json"
+# Guardrail #1: a step after the merge checks main for the Lovable "asset.json"
 # image-reference pattern that broke the live site's photos in August 2026
 # (Lovable's own asset CDN only resolves on Lovable's hosting, not on this
 # site's Cloudflare deployment). If that pattern ever reaches main again,
 # this step automatically reverts the merge and posts to Slack explaining
 # why, instead of leaving a silently broken image on the live site.
 #
+# Guardrail #2 (added 2026-09-16): a merged PR is not the same thing as a
+# live site. For at least a month, Cloudflare's git-triggered build was
+# silently failing on every push while this workflow kept reporting "Done"
+# to Slack the moment the GitHub merge succeeded - so the failure went
+# unnoticed. Now, after merging, this workflow polls the Cloudflare Workers
+# Builds API for the actual build/deploy outcome of the merged commit before
+# telling Slack anything succeeded. If the Cloudflare build fails, times out,
+# or can't be checked, Slack is told that explicitly instead of "Done".
+#
 # Setup required before this works:
 #   1. Install the Claude GitHub App on this repo: https://github.com/apps/claude
 #   2. Add ANTHROPIC_API_KEY as a repository secret
 #      (Repo Settings > Secrets and variables > Actions > New repository secret)
+#   3. Add CLOUDFLARE_API_TOKEN as a repository secret, for the Cloudflare
+#      deploy-status check (Guardrail #2) to work. Create a user-scoped API
+#      token at https://dash.cloudflare.com/profile/api-tokens with:
+#        - Account > Workers Builds Configuration > Edit
+#        - Account > Workers Scripts > Read
+#      scoped to the account this Worker lives in. Without this secret, the
+#      deploy-status check is skipped and Slack is told the deploy status
+#      could not be verified (the workflow still runs, it just can't confirm
+#      the deploy - it won't falsely report success).
 
 name: Website Update via Claude Code
 
 on:
   repository_dispatch:
     types: [website_update_request]
+
+env:
+  CLOUDFLARE_ACCOUNT_ID: e9e9f1ee7c7d7826e013d47be606ba94
+  CLOUDFLARE_WORKER_NAME: golden-la-deal
+  SLACK_WEBHOOK_URL: https://hook.us2.make.com/ghd2j1pst247qpox4mlymqudc1qxb6ta
 
 jobs:
   update-site:
@@ -72,7 +95,7 @@ jobs:
                  never a "*.asset.json" import (see the image safety rule below).
               4. If you can't confidently tell which listing an image belongs
                  to from the request text, say so in the PR description and in
-                 the Slack summary instead of guessing - leave the file in
+                 the result file below instead of guessing - leave the file in
                  src/assets/pending/ rather than wiring it to the wrong listing.
 
             Read the codebase, figure out what needs to change to fulfill this
@@ -89,8 +112,8 @@ jobs:
               <img src={photo} />
             If a request needs a new image and you don't have the actual image
             file to add under src/assets/, say so in the PR description and in
-            the Slack summary rather than wiring up a Lovable-only reference.
-            This rule applies equally to any image you move out of
+            the result file below rather than wiring up a Lovable-only
+            reference. This rule applies equally to any image you move out of
             src/assets/pending/ above.
 
             Then, fully autonomously (no human review step, by design):
@@ -101,26 +124,77 @@ jobs:
             2. Before merging, run this safety check from the repo root:
                grep -rEn "from [\"'][^\"']*\.asset\.json[\"']|__l5e" src/ --include="*.ts" --include="*.tsx"
                If it finds any matches, do NOT merge. Leave the PR open, and
-               in step 4 explain that the change was blocked because it would
-               have shown a broken image on the live site.
+               skip to step 4 below with merged=false, explaining that the
+               change was blocked because it would have shown a broken image
+               on the live site.
             3. If the check finds nothing, merge the pull request yourself
                using:
                gh pr merge <PR_NUMBER> --merge --delete-branch
-            4. Notify Slack by running:
-               curl -s -X POST https://hook.us2.make.com/ghd2j1pst247qpox4mlymqudc1qxb6ta \
-                 -H "Content-Type: application/json" \
-                 -d "$(jq -n --arg s "<one-sentence plain-English summary of what you changed, or of why it was blocked>" '{summary: $s}')"
+               Then get the resulting merge commit SHA on main:
+               git fetch origin main && git rev-parse origin/main
+
+            4. IMPORTANT - do NOT call the Slack webhook yourself. Instead,
+               write your result as JSON to /tmp/website-update-result.json
+               (a path outside the repo checkout, so it's never committed).
+               This file is how the rest of the workflow finds out what you
+               did and reports it to Slack - a later step polls Cloudflare to
+               confirm the change is actually live before anyone is told it
+               succeeded, so accuracy here matters.
+
+               If you merged (step 3 succeeded):
+                 {
+                   "merged": true,
+                   "commit_sha": "<the full commit SHA from `git rev-parse origin/main` above>",
+                   "summary": "<one-sentence plain-English summary of what you changed>"
+                 }
+
+               If you did NOT merge (blocked by the safety check, unclear
+               request, unsafe request, or you couldn't complete it):
+                 {
+                   "merged": false,
+                   "commit_sha": null,
+                   "summary": "<one-sentence plain-English explanation of why nothing was merged>"
+                 }
+
+               Write it with something like:
+                 jq -n --argjson merged true --arg sha "$SHA" --arg s "..." \
+                   '{merged: $merged, commit_sha: $sha, summary: $s}' \
+                   > /tmp/website-update-result.json
                If jq is unavailable, use any equivalent method to produce
-               valid JSON with a "summary" key.
+               that exact JSON shape at that exact path.
 
             If at any point the request is unclear, unsafe, or you cannot
-            complete it, do not merge - leave the PR open, and still call the
-            Slack webhook with a summary explaining what happened instead.
+            complete it, do not merge - follow the "did NOT merge" case above.
           claude_args: |
             --allowedTools "Read,Edit,Write,Bash,Grep,Glob"
 
-      - name: Guardrail - revert if a broken Lovable image reference reached main
+      - name: Read Claude Code result
+        id: result
         if: always()
+        run: |
+          if [ -f /tmp/website-update-result.json ]; then
+            echo "Claude Code result file:"
+            cat /tmp/website-update-result.json
+            MERGED=$(jq -r '.merged' /tmp/website-update-result.json)
+            SHA=$(jq -r '.commit_sha // empty' /tmp/website-update-result.json)
+            SUMMARY=$(jq -r '.summary' /tmp/website-update-result.json)
+          else
+            echo "No result file found at /tmp/website-update-result.json - treating as unmerged/unknown."
+            MERGED="false"
+            SHA=""
+            SUMMARY="The automation didn't finish cleanly (no result was reported), so nothing was confirmed merged. Please check the Actions log for this run."
+          fi
+          echo "merged=$MERGED" >> "$GITHUB_OUTPUT"
+          echo "sha=$SHA" >> "$GITHUB_OUTPUT"
+          {
+            echo "summary<<EOF_SUMMARY"
+            echo "$SUMMARY"
+            echo "EOF_SUMMARY"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Guardrail - revert if a broken Lovable image reference reached main
+        id: guardrail
+        if: always() && steps.result.outputs.merged == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -141,11 +215,98 @@ jobs:
             git revert --no-edit -m 1 "$BAD_COMMIT"
             git push origin main
 
-            curl -s -X POST https://hook.us2.make.com/ghd2j1pst247qpox4mlymqudc1qxb6ta \
-              -H "Content-Type: application/json" \
-              -d '{"summary": "Auto-reverted the last website update: it referenced a Lovable-only image path that would show as a broken image on the live site. Nothing changed on the live site - please re-request the edit."}'
-
-            exit 1
+            echo "reverted=true" >> "$GITHUB_OUTPUT"
           else
             echo "No forbidden Lovable image references found on main. OK."
+            echo "reverted=false" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Poll Cloudflare deploy status
+        id: deploy_check
+        if: always() && steps.result.outputs.merged == 'true' && steps.guardrail.outputs.reverted != 'true'
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          COMMIT_SHA: ${{ steps.result.outputs.sha }}
+        run: |
+          if [ -z "$CF_TOKEN" ]; then
+            echo "No CLOUDFLARE_API_TOKEN secret configured - skipping deploy verification."
+            echo "status=unverified" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [ -z "$COMMIT_SHA" ]; then
+            echo "No commit SHA reported by Claude Code - can't look up a build for it."
+            echo "status=unverified" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          TAG=$(curl -s "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/workers/scripts" \
+            -H "Authorization: Bearer ${CF_TOKEN}" \
+            | jq -r --arg name "$CLOUDFLARE_WORKER_NAME" '.result[]? | select(.id == $name) | .tag')
+
+          if [ -z "$TAG" ] || [ "$TAG" = "null" ]; then
+            echo "Could not resolve the Worker tag for ${CLOUDFLARE_WORKER_NAME} from the Cloudflare API."
+            echo "status=unverified" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "Polling Cloudflare builds for commit ${COMMIT_SHA} (worker tag ${TAG})..."
+          DEADLINE=$((SECONDS + 480))  # up to 8 minutes
+          OUTCOME=""
+          STATUS=""
+
+          while [ $SECONDS -lt $DEADLINE ]; do
+            RESPONSE=$(curl -s "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/builds/workers/${TAG}/builds" \
+              -H "Authorization: Bearer ${CF_TOKEN}")
+
+            BUILD=$(echo "$RESPONSE" | jq -c --arg sha "$COMMIT_SHA" \
+              '[.result[]? | select(.build_trigger_metadata.commit_hash == $sha)] | sort_by(.created_on) | last')
+
+            if [ "$BUILD" != "null" ] && [ -n "$BUILD" ]; then
+              STATUS=$(echo "$BUILD" | jq -r '.status // empty')
+              OUTCOME=$(echo "$BUILD" | jq -r '.build_outcome // empty')
+              echo "Latest build for ${COMMIT_SHA}: status=${STATUS} outcome=${OUTCOME}"
+              if [ -n "$OUTCOME" ] && [ "$OUTCOME" != "null" ]; then
+                break
+              fi
+            else
+              echo "No build found yet for ${COMMIT_SHA}, retrying..."
+            fi
+            sleep 15
+          done
+
+          if [ "$OUTCOME" = "success" ]; then
+            echo "status=success" >> "$GITHUB_OUTPUT"
+          elif [ -n "$OUTCOME" ] && [ "$OUTCOME" != "null" ]; then
+            echo "status=failed" >> "$GITHUB_OUTPUT"
+            echo "detail=Cloudflare build outcome: ${OUTCOME} (status: ${STATUS})" >> "$GITHUB_OUTPUT"
+          else
+            echo "status=timeout" >> "$GITHUB_OUTPUT"
+            echo "detail=No completed Cloudflare build was found for commit ${COMMIT_SHA} within 8 minutes." >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Notify Slack
+        if: always()
+        env:
+          MERGED: ${{ steps.result.outputs.merged }}
+          SUMMARY: ${{ steps.result.outputs.summary }}
+          REVERTED: ${{ steps.guardrail.outputs.reverted }}
+          DEPLOY_STATUS: ${{ steps.deploy_check.outputs.status }}
+          DEPLOY_DETAIL: ${{ steps.deploy_check.outputs.detail }}
+        run: |
+          if [ "$MERGED" != "true" ]; then
+            MESSAGE="Not merged: ${SUMMARY}"
+          elif [ "$REVERTED" = "true" ]; then
+            MESSAGE="Auto-reverted the last website update: it referenced a Lovable-only image path that would show as a broken image on the live site. Nothing changed on the live site - please re-request the edit."
+          elif [ "$DEPLOY_STATUS" = "success" ]; then
+            MESSAGE="Done: ${SUMMARY} (confirmed live on Cloudflare)"
+          elif [ "$DEPLOY_STATUS" = "failed" ]; then
+            MESSAGE="Merged but the Cloudflare deploy FAILED, so this is NOT live yet: ${SUMMARY} | ${DEPLOY_DETAIL}"
+          elif [ "$DEPLOY_STATUS" = "timeout" ]; then
+            MESSAGE="Merged but could not confirm the Cloudflare deploy finished in time (may still be running): ${SUMMARY} | ${DEPLOY_DETAIL}"
+          else
+            MESSAGE="Merged (deploy status could not be verified - check Cloudflare manually): ${SUMMARY}"
+          fi
+
+          curl -s -X POST "${SLACK_WEBHOOK_URL}" \
+            -H "Content-Type: application/json" \
+            -d "$(jq -n --arg s "$MESSAGE" '{summary: $s}')"
