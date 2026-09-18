@@ -110,12 +110,17 @@ function ListingDetail() {
 
       {l.images && l.images.length > 0 && (
         <section className="container-x pb-8">
-          <div className="overflow-hidden rounded-2xl border border-border bg-card">
+          <div className="relative overflow-hidden rounded-2xl border border-border bg-card">
             <img
               src={l.images[active]}
               alt={`${l.title} ${active + 1}`}
               className="w-full h-[280px] md:h-[560px] object-cover"
             />
+            {l.badge && (
+              <span className="absolute bottom-4 left-4 inline-flex items-center gap-1.5 rounded-full bg-gold-gradient text-charcoal-deep px-3.5 py-1.5 text-sm md:text-base font-bold uppercase tracking-wide shadow-gold">
+                <Sparkles className="h-4 w-4" /> {l.badge}
+              </span>
+            )}
           </div>
           {l.images.length > 1 && (
             <div className="mt-3 grid grid-cols-4 gap-2">
