@@ -52,6 +52,7 @@ export const listings: Listing[] = [
     price: "$125,000",
     priceNote: "Cash",
     leaseType: "Asset sale · Fully equipped, open & permitted restaurant",
+    badge: "Available Now",
     description:
       "Restaurant Fully Equipped, Open, Permitted Asset Sale Located in a vibrant commercial corridor on the northwest corner of Westwood and Santa Monica Boulevards. Charming building with restaurant on the ground floor. Off-street parking available for customers, and plenty of metered spots as well. Close to major public transportation routes with unobstructed exposure to the intersections of Santa Monica and Westwood (100,000 cars/day traffic count).",
     features: [
@@ -127,7 +128,7 @@ export const listings: Listing[] = [
     priceNote: "Available — Open & Active",
     sqft: "≈ 950 sq ft",
     leaseType: "Assignment of lease · Shopping center",
-    badge: "Available",
+    badge: "Available Now",
     description:
       "Health Department permitted, turnkey restaurant in a Santa Monica shopping center. Open and operating with a fully equipped kitchen, 18-foot hood, and extra-large walk-in refrigerator.",
     longDescription: [
@@ -193,6 +194,7 @@ export const listings: Listing[] = [
     price: "$10,000 / month All-In",
     priceNote: "New lease",
     leaseType: "Stand-alone building · Use: Gym & Fitness Center",
+    badge: "Available Now",
     description:
       "Space for lease with a gym and fitness center use. Stand-alone building on Wilshire Blvd with a large, rear, gated parking lot with additional parking.",
     longDescription: [
@@ -235,7 +237,7 @@ export const listings: Listing[] = [
     price: "$175,000",
     priceNote: "Cash",
     leaseType: "Business sale · Retail",
-    badge: "Available",
+    badge: "Available Now",
     description:
       "Established hardware store for sale on Westwood Blvd, West LA. $175,000 cash. Annual revenue $402,000. Established 2020.",
     longDescription: [
