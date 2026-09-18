@@ -42,7 +42,7 @@ function ContactPage() {
         eyebrow="Reserve your advisory call"
         title="Speak directly with our COO, Richard Stein or CEO Roschard Paticchio Stein."
         accent="Lock in your $75 consultation."
-        subtitle="A guaranteed 30-minute mobile-to-mobile call for real answers on restaurants, properties, and city matters."
+        subtitle="A guaranteed 45-minute mobile-to-mobile call for real answers on restaurants, properties, and city matters."
       />
 
       <section className="container-x py-12 md:py-16">
