@@ -6,7 +6,7 @@ import { CTASection } from "@/components/site/CTASection";
 import storefront from "@/assets/hardware-storefront.png";
 import aisle from "@/assets/hardware-aisle.png";
 
-import { breadcrumbScript } from "@/lib/seo";
+import { absoluteUrl, breadcrumbScript } from "@/lib/seo";
 export const Route = createFileRoute("/hardware-store-for-sale")({
   head: () => ({
     meta: [
@@ -21,8 +21,8 @@ export const Route = createFileRoute("/hardware-store-for-sale")({
         property: "og:description",
         content: "Established hardware store on Westwood Blvd. $175k cash.",
       },
-      { property: "og:image", content: storefront },
-      { property: "twitter:image", content: storefront },
+      { property: "og:image", content: absoluteUrl(storefront) },
+      { name: "twitter:image", content: absoluteUrl(storefront) },
       { property: "og:url", content: "https://www.penthouseadvisors.com/hardware-store-for-sale" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/hardware-store-for-sale" }],
