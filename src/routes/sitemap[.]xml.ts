@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 import { categories } from "@/content/help";
 import { allPosts } from "@/content/blog";
+import { listings } from "@/lib/listings";
 
 const BASE_URL = "https://www.penthouseadvisors.com";
 
@@ -18,6 +19,11 @@ const entries = [
 
 // Primary service hubs (sitelink targets)
 { path: "/restaurants-for-sale", changefreq: "weekly", priority: "0.95" },
+...listings.map((l) => ({
+path: `/restaurants-for-sale/${l.slug}`,
+changefreq: "weekly" as const,
+priority: "0.8",
+})),
 { path: "/buy-a-restaurant", changefreq: "weekly", priority: "0.95" },
 { path: "/sell-your-restaurant", changefreq: "weekly", priority: "0.95" },
 { path: "/restaurant-leasing", changefreq: "monthly", priority: "0.9" },

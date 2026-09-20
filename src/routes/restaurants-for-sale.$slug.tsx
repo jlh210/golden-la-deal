@@ -5,6 +5,7 @@ import { PHONE, PHONE_HREF } from "@/components/site/Layout";
 import { LeadForm } from "@/components/site/LeadForm";
 import { getListingBySlug, listings, type Listing } from "@/lib/listings";
 import { ListingLocationMap } from "@/components/site/ListingLocationMap";
+import { absoluteUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/restaurants-for-sale/$slug")({
   loader: ({ params }) => {
@@ -28,8 +29,8 @@ export const Route = createFileRoute("/restaurants-for-sale/$slug")({
         { property: "og:type", content: "article" },
         ...(image
           ? [
-              { property: "og:image", content: image },
-              { name: "twitter:image", content: image },
+              { property: "og:image", content: absoluteUrl(image) },
+              { name: "twitter:image", content: absoluteUrl(image) },
             ]
           : []),
       ],

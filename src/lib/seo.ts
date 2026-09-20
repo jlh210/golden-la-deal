@@ -5,6 +5,14 @@ export const ORG_ID = `${SITE_URL}/#organization`;
 
 export type Crumb = { name: string; path: string };
 
+/**
+ * Absolute URL for a bundled asset. og:image / twitter:image must be absolute —
+ * crawlers and social scrapers don't resolve root-relative paths.
+ */
+export function absoluteUrl(path: string) {
+  return /^https?:\/\//.test(path) ? path : `${SITE_URL}${path}`;
+}
+
 /** BreadcrumbList JSON-LD script entry for a route's head().scripts. */
 export function breadcrumbScript(crumbs: Crumb[]) {
   return {
