@@ -117,8 +117,8 @@ function ListingDetail() {
               className="w-full h-[280px] md:h-[560px] object-cover"
             />
             {l.badge && (
-              <span className="absolute bottom-4 left-4 inline-flex items-center gap-1.5 rounded-full bg-gold-gradient text-charcoal-deep px-3.5 py-1.5 text-sm md:text-base font-bold uppercase tracking-wide shadow-gold">
-                <Sparkles className="h-4 w-4" /> {l.badge}
+              <span className="absolute top-4 left-4 inline-flex items-center gap-2 rounded-full bg-gold-gradient text-charcoal-deep px-5 py-2.5 text-base md:text-xl font-extrabold uppercase tracking-wider shadow-gold ring-2 ring-charcoal-deep/25">
+                <Sparkles className="h-5 w-5 md:h-6 md:w-6" /> {l.badge}
               </span>
             )}
           </div>
