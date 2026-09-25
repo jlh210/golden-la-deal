@@ -6,11 +6,19 @@ import { listings } from "@/lib/listings";
 
 const BASE_URL = "https://www.penthouseadvisors.com";
 
+type Entry = { path: string; changefreq: string; priority: string; lastmod?: string };
+
+// Latest ISO date in a list — used so index pages report when their newest child changed.
+const latest = (dates: string[]) => dates.reduce((a, b) => (a > b ? a : b), dates[0]);
+
 export const Route = createFileRoute("/sitemap.xml")({
 server: {
 handlers: {
 GET: async () => {
-const entries = [
+const posts = allPosts();
+const postDate = (p: (typeof posts)[number]) => p.updatedAt ?? p.publishedAt;
+const helpDates = categories.flatMap((c) => c.articles.map((a) => a.updatedAt));
+const entries: Entry[] = [
 { path: "/", changefreq: "weekly", priority: "1.0" },
 { path: "/about", changefreq: "monthly", priority: "0.8" },
 { path: "/agents", changefreq: "monthly", priority: "0.7" },
@@ -48,31 +56,34 @@ priority: "0.8",
 { path: "/hardware-store-for-sale", changefreq: "weekly", priority: "0.5" },
 
 // Help Center
-{ path: "/help", changefreq: "weekly", priority: "0.8" },
+{ path: "/help", changefreq: "weekly", priority: "0.8", lastmod: latest(helpDates) },
 ...categories.map((c) => ({
 path: `/help/${c.slug}`,
 changefreq: "monthly" as const,
 priority: "0.7",
+lastmod: c.articles.length ? latest(c.articles.map((a) => a.updatedAt)) : undefined,
 })),
 ...categories.flatMap((c) =>
 c.articles.map((a) => ({
 path: `/help/${c.slug}/${a.slug}`,
 changefreq: "monthly" as const,
 priority: "0.6",
+lastmod: a.updatedAt,
 })),
 ),
 
 // Blog
-{ path: "/blog", changefreq: "weekly", priority: "0.8" },
-...allPosts().map((p) => ({
+{ path: "/blog", changefreq: "weekly", priority: "0.8", lastmod: latest(posts.map(postDate)) },
+...posts.map((p) => ({
 path: `/blog/${p.slug}`,
 changefreq: "monthly" as const,
 priority: "0.6",
+lastmod: postDate(p),
 })),
 ];
 const urls = entries.map(
 (e) =>
-` <url>\n <loc>${BASE_URL}${e.path}</loc>\n <changefreq>${e.changefreq}</changefreq>\n <priority>${e.priority}</priority>\n </url>`,
+` <url>\n <loc>${BASE_URL}${e.path}</loc>\n${e.lastmod ? ` <lastmod>${e.lastmod.slice(0, 10)}</lastmod>\n` : ""} <changefreq>${e.changefreq}</changefreq>\n <priority>${e.priority}</priority>\n </url>`,
 );
 const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>`;
 return new Response(xml, {
