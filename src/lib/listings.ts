@@ -196,10 +196,10 @@ export const listings: Listing[] = [
     leaseType: "Stand-alone building · Use: Gym & Fitness Center",
     badge: "Available Now",
     description:
-      "Dog & Cat grooming and food market For Lease, Located at 2408 Wilshire Blvd., Santa Monica. Stand-alone building with a large, rear, gated parking lot with additional parking.",
+      "Dog & Cat grooming and food market For Lease, Located at 2408 Wilshire Blvd., Santa Monica. Stand-alone building with a large, rear, gated lot with additional parking.",
     longDescription: [
       "Dog & Cat grooming and food market For Lease, Located at 2408 Wilshire Blvd., Santa Monica.",
-      "Stand-alone building with a large, rear, gated parking lot with additional parking.",
+      "Stand-alone building with a large, rear, gated lot with additional parking.",
       "New lease at $10,000 per month all-in,",
       "Santa Monica opportunity on Wilshire at 24th Street, positioned to serve the local area.",
     ],
