@@ -188,7 +188,7 @@ export const listings: Listing[] = [
     id: "R-003",
     slug: "wilshire-second-gen-lease",
     type: "Asset Sale",
-    title: "Space For Lease, Use Gym & Fitness Center",
+    title: "Dog & Cat Grooming Shop and Food Market",
     location: "2408 Wilshire Blvd, Santa Monica, CA",
     coords: [34.032541, -118.484189],
     price: "$10,000 / month All-In",
@@ -196,11 +196,12 @@ export const listings: Listing[] = [
     leaseType: "Stand-alone building · Use: Gym & Fitness Center",
     badge: "Available Now",
     description:
-      "Space for lease with a gym and fitness center use. Stand-alone building on Wilshire Blvd with a large, rear, gated parking lot with additional parking.",
+      "Dog & Cat grooming and food market For Lease, Located at 2408 Wilshire Blvd., Santa Monica. Stand-alone building with a large, rear, gated parking lot with additional parking.",
     longDescription: [
-      "Space For Lease, use Gym & Fitness Center. Stand-alone building with a large, rear, gated parking lot with additional parking, located at 2408 Wilshire Blvd., Santa Monica.",
-      "New lease at $10,000 per month all-in.",
-      "Compelling Santa Monica opportunity on Wilshire at 24th Street, positioned to serve the local area. Good visibility.",
+      "Dog & Cat grooming and food market For Lease, Located at 2408 Wilshire Blvd., Santa Monica.",
+      "Stand-alone building with a large, rear, gated parking lot with additional parking.",
+      "New lease at $10,000 per month all-in,",
+      "Santa Monica opportunity on Wilshire at 24th Street, positioned to serve the local area.",
     ],
     sections: [
       {
