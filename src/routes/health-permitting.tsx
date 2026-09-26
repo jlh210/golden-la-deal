@@ -75,10 +75,10 @@ function PermittingPage() {
           <div>
             <div className="text-xs font-semibold uppercase tracking-widest text-gold">Transparent Pricing</div>
             <h2 className="mt-1 text-2xl md:text-3xl font-display font-bold">
-              $4,750 flat - blueprints, plan check, and permit shepherding.
+              $4,750 flat - blueprints, plan-check, and permit shepherding.
             </h2>
             <p className="mt-2 text-sm text-muted-foreground max-w-2xl">
-              Good for 1 year, or until the restaurant is leased - whichever comes first.
+              Good to Open For Business
             </p>
           </div>
         </div>
