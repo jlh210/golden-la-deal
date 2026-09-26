@@ -8,16 +8,16 @@ import { breadcrumbScript, serviceScript } from "@/lib/seo";
 export const Route = createFileRoute("/health-permitting")({
   head: () => ({
     meta: [
-      { title: "Restaurant Health Dept Permitting & Plan Check - $3,750 | Penthouse Advisors" },
+      { title: "Restaurant Health Dept Permitting & Plan Check - $4,750 | Penthouse Advisors" },
       {
         name: "description",
         content:
-          "$3,750 flat - hand-drafted blueprints, Health Dept plan-check submittal, stamped approvals, permit issuance. Good for 1 year or until restaurant is leased.",
+          "$4,750 flat - hand-drafted blueprints, Health Dept plan-check submittal, stamped approvals, permit issuance. Good for 1 year or until restaurant is leased.",
       },
-      { property: "og:title", content: "Health Dept Permitting & Plan Check - $3,750" },
+      { property: "og:title", content: "Health Dept Permitting & Plan Check - $4,750" },
       {
         property: "og:description",
-        content: "$3,750 flat. Blueprints, plan check, stamps, permit. Good 1 year.",
+        content: "$4,750 flat. Blueprints, plan check, stamps, permit. Good 1 year.",
       },
       { property: "og:url", content: "https://www.penthouseadvisors.com/health-permitting" },
     ],
@@ -62,7 +62,7 @@ function PermittingPage() {
       <PageHero
         eyebrow="Health Dept Permitting & Plan Check"
         title="Blueprints, plan check, permits."
-        accent="$3,750 flat."
+        accent="$4,750 flat."
         subtitle="If your restaurant has been closed over 90 days, you're remodeling, or you've had equipment red-tagged - you need stamped Health Dept blueprints before a single gas line moves. We draft them by hand and push them through plan check."
       />
 
@@ -75,7 +75,7 @@ function PermittingPage() {
           <div>
             <div className="text-xs font-semibold uppercase tracking-widest text-gold">Transparent Pricing</div>
             <h2 className="mt-1 text-2xl md:text-3xl font-display font-bold">
-              $3,750 flat - blueprints, plan check, and permit shepherding.
+              $4,750 flat - blueprints, plan check, and permit shepherding.
             </h2>
             <p className="mt-2 text-sm text-muted-foreground max-w-2xl">
               Good for 1 year, or until the restaurant is leased - whichever comes first.
@@ -119,7 +119,7 @@ function PermittingPage() {
 
       <CTASection serviceNeeded={"Health Dept permitting / plan check"}
         title="Need stamped blueprints or a permit pushed through?"
-        body="$3,750 flat. We draft, submit, and walk it through plan check - start to permit issuance."
+        body="$4,750 flat. We draft, submit, and walk it through plan check - start to permit issuance."
       />
     </SiteLayout>
   );
