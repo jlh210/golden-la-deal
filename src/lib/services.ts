@@ -138,7 +138,7 @@ export const services: Service[] = [
   {
     slug: "health-permitting",
     to: "/health-permitting",
-    title: "Health Dept Permitting & Plan Check",
+    title: "Restaurant Health Dept Permitting",
     short: "Hand-drafted blueprints, plan-check submittal, stamped approvals, permits.",
     icon: Stamp,
   },

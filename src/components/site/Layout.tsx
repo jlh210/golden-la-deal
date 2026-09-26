@@ -30,7 +30,7 @@ const servicesDropdown = [
 { to: "/commercial-property-management", label: "Commercial Property Management" },
 { to: "/liquor-license-for-sale", label: "Liquor License For Sale" },
 { to: "/health-inspection", label: "Health Dept Inspection" },
-{ to: "/health-permitting", label: "Health Permitting & Plan Check" },
+{ to: "/health-permitting", label: "Restaurant Health Dept Permitting" },
 { to: "/leasing-vacant-restaurants", label: "Leasing Vacant Restaurants" },
 { to: "/assignments-rent-abatement", label: "Assignments & Rent Abatement" },
 { to: "/business-investigations", label: "Business Investigations" },
@@ -59,7 +59,7 @@ const fullNav = [
 { to: "/contact", label: "Contact / Book Consultation" },
 { to: "/liquor-license-for-sale", label: "Liquor License For Sale" },
 { to: "/health-inspection", label: "Health Dept Inspection" },
-{ to: "/health-permitting", label: "Health Permitting & Plan Check" },
+{ to: "/health-permitting", label: "Restaurant Health Dept Permitting" },
 { to: "/vermin-inspections", label: "Vermin Inspections" },
 { to: "/grandfather-protection", label: "Grandfather Protection" },
 { to: "/assignments-rent-abatement", label: "Assignments & Rent Abatement" },
@@ -303,7 +303,7 @@ Servicing Los Angeles County since 2021. <span className="text-gold font-semibol
 <li><Link to="/alcohol-licensing" className="hover:text-gold">Restaurant Alcohol Licensing</Link></li>
 <li><Link to="/liquor-license-for-sale" className="hover:text-gold">Liquor License For Sale</Link></li>
 <li><Link to="/health-inspection" className="hover:text-gold">Health Inspection</Link></li>
-<li><Link to="/health-permitting" className="hover:text-gold">Health Permitting & Plan Check</Link></li>
+<li><Link to="/health-permitting" className="hover:text-gold">Restaurant Health Dept Permitting</Link></li>
 <li><Link to="/leasing-vacant-restaurants" className="hover:text-gold">Leasing Vacant Restaurants</Link></li>
 <li><Link to="/assignments-rent-abatement" className="hover:text-gold">Assignments & Abatement</Link></li>
 <li><Link to="/business-investigations" className="hover:text-gold">Business Investigations</Link></li>
