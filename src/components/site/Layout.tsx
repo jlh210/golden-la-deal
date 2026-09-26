@@ -303,7 +303,7 @@ Servicing Los Angeles County since 2021. <span className="text-gold font-semibol
 <li><Link to="/alcohol-licensing" className="hover:text-gold">Restaurant Alcohol Licensing</Link></li>
 <li><Link to="/liquor-license-for-sale" className="hover:text-gold">Liquor License For Sale</Link></li>
 <li><Link to="/health-inspection" className="hover:text-gold">Health Inspection</Link></li>
-<li><Link to="/health-permitting" className="hover:text-gold">Restaurant Health Dept Permitting</Link></li>
+<li><Link to="/health-permitting" className="hover:text-gold">Restaurant, Cafe, Food Markets Health Dept Permitting</Link></li>
 <li><Link to="/leasing-vacant-restaurants" className="hover:text-gold">Leasing Vacant Restaurants</Link></li>
 <li><Link to="/assignments-rent-abatement" className="hover:text-gold">Assignments & Abatement</Link></li>
 <li><Link to="/business-investigations" className="hover:text-gold">Business Investigations</Link></li>
