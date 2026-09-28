@@ -36,6 +36,13 @@
 #      deploy-status check is skipped and Slack is told the deploy status
 #      could not be verified (the workflow still runs, it just can't confirm
 #      the deploy - it won't falsely report success).
+# 4. (added 2026-09-28) Add SLACK_BOT_TOKEN as a repository secret - the
+#    Bot User OAuth Token (xoxb-...) of the Slack app that posts in
+#    #website-updates-penthouse_advisors, with the chat:write scope and the
+#    bot invited to that channel. The Notify Slack step now posts straight
+#    to Slack with it, so replies no longer depend on Make.com. If the
+#    secret is missing or the Slack call fails, it falls back to the old
+#    Make webhook (SLACK_WEBHOOK_URL).
 
 name: Website Update via Claude Code
 
@@ -47,6 +54,7 @@ env:
   CLOUDFLARE_ACCOUNT_ID: e9e9f1ee7c7d7826e013d47be606ba94
   CLOUDFLARE_WORKER_NAME: golden-la-deal
   SLACK_WEBHOOK_URL: https://hook.us2.make.com/ghd2j1pst247qpox4mlymqudc1qxb6ta
+  SLACK_CHANNEL_ID: C0BKQNZLSD8
 
 jobs:
   update-site:
@@ -292,6 +300,10 @@ jobs:
           REVERTED: ${{ steps.guardrail.outputs.reverted }}
           DEPLOY_STATUS: ${{ steps.deploy_check.outputs.status }}
           DEPLOY_DETAIL: ${{ steps.deploy_check.outputs.detail }}
+          REQUEST_TEXT: ${{ github.event.client_payload.request }}
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_THREAD_CHANNEL: ${{ github.event.client_payload.channel }}
+          SLACK_THREAD_TS: ${{ github.event.client_payload.ts }}
         run: |
           if [ "$MERGED" != "true" ]; then
             MESSAGE="Not merged: ${SUMMARY}"
@@ -307,6 +319,39 @@ jobs:
             MESSAGE="Merged (deploy status could not be verified - check Cloudflare manually): ${SUMMARY}"
           fi
 
-          curl -s -X POST "${SLACK_WEBHOOK_URL}" \
-            -H "Content-Type: application/json" \
-            -d "$(jq -n --arg s "$MESSAGE" '{summary: $s}')"
+          # Quote the original request so each reply is easy to match to its message.
+          EXCERPT=$(printf '%s' "$REQUEST_TEXT" | tr '\n' ' ' | cut -c1-150)
+          if [ -n "$EXCERPT" ]; then
+            FULL_MESSAGE="${MESSAGE}"$'\n'"> Request: ${EXCERPT}"
+          else
+            FULL_MESSAGE="$MESSAGE"
+          fi
+
+          # Primary path: post straight to Slack with the bot token (no Make dependency).
+          # Replies in-thread when the dispatch payload carries channel + ts,
+          # otherwise posts to the website-updates channel.
+          POSTED=false
+          if [ -n "$SLACK_BOT_TOKEN" ]; then
+            CHANNEL="${SLACK_THREAD_CHANNEL:-$SLACK_CHANNEL_ID}"
+            BODY=$(jq -n --arg c "$CHANNEL" --arg t "$FULL_MESSAGE" --arg ts "$SLACK_THREAD_TS" \
+              '{channel: $c, text: $t, unfurl_links: false, unfurl_media: false} + (if $ts != "" then {thread_ts: $ts} else {} end)')
+            RESP=$(curl -s -X POST "https://slack.com/api/chat.postMessage" \
+              -H "Authorization: Bearer ${SLACK_BOT_TOKEN}" \
+              -H "Content-Type: application/json; charset=utf-8" \
+              -d "$BODY" || true)
+            if [ "$(echo "$RESP" | jq -r '.ok' 2>/dev/null)" = "true" ]; then
+              echo "Posted to Slack directly (channel ${CHANNEL})."
+              POSTED=true
+            else
+              echo "::warning::Direct Slack post failed ($(echo "$RESP" | jq -r '.error // "no response"' 2>/dev/null)). Falling back to the Make webhook."
+            fi
+          else
+            echo "::warning::No SLACK_BOT_TOKEN secret configured - falling back to the Make webhook."
+          fi
+
+          # Fallback path: the old Make webhook (only works while the Make org is active).
+          if [ "$POSTED" != "true" ]; then
+            curl -s -X POST "${SLACK_WEBHOOK_URL}" \
+              -H "Content-Type: application/json" \
+              -d "$(jq -n --arg s "$MESSAGE" '{summary: $s}')"
+          fi
