@@ -1,3 +1,4 @@
+import { serviceAuthority } from "@/content/service-authority";
 import { buildServiceJsonLd } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { TrendingUp, Lock, Handshake } from "lucide-react";
@@ -7,11 +8,11 @@ const URL = "https://www.penthouseadvisors.com/sell-your-restaurant";
 const FAQS = [
   {
     q: "How do you value my restaurant?",
-    a: "We blend a sales multiple, an SDE/EBITDA multiple, replacement cost on FF&E, and the option value of any transferable ABC license and grandfathered lease terms. You get a defensible range, not a guess.",
+    a: "We review sales and earnings, equipment value, remaining lease term, transfer conditions, and comparable evidence where available. The appropriate method depends on whether the sale is a going concern or primarily an asset sale. License and lease value depend on their terms and the approvals required.",
   },
   {
     q: "Will my staff and customers find out it's for sale?",
-    a: "No. We market confidentially — blind teasers, NDAs before any address or P&L, and qualified-buyer-only showings outside operating hours.",
+    a: "We use confidential marketing: blind teasers, NDAs before releasing identifying information, and qualified-buyer showings arranged around operations. These measures reduce disclosure risk, although no sale process can guarantee that staff, customers, or other parties will never learn about it.",
   },
   {
     q: "What's your commission?",
@@ -61,6 +62,7 @@ export const Route = createFileRoute("/sell-your-restaurant")({
 function SellPage() {
   return (
     <ServiceLanding
+      authority={serviceAuthority.sell}
       eyebrow="Sell Your Restaurant"
       title="Sell your restaurant confidentially with"
       accent="Penthouse Advisors Inc."

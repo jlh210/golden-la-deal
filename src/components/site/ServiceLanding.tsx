@@ -6,10 +6,17 @@ import { PageHero } from "./PageHero";
 import { CTASection } from "./CTASection";
 import { CONSULTATION_LABEL } from "@/lib/consultation";
 
+import {
+  ServiceAuthorityHero,
+  ServiceAuthorityDetails,
+  type ServiceAuthorityContent,
+} from "./ServiceAuthority";
+
 export type FAQ = { q: string; a: string };
 export type RelatedLink = { to: string; label: string };
 
 export interface ServiceLandingProps {
+  authority?: ServiceAuthorityContent;
   eyebrow: string;
   title: string;
   accent: string;
@@ -44,7 +51,11 @@ export function ServiceLanding(props: ServiceLandingProps) {
 
   return (
     <SiteLayout>
-      <PageHero eyebrow={eyebrow} title={h1} subtitle={subtitle} />
+      {props.authority ? (
+        <ServiceAuthorityHero content={props.authority} />
+      ) : (
+        <PageHero eyebrow={eyebrow} title={h1} subtitle={subtitle} />
+      )}
 
       {/* Overview */}
       <section className="container-x py-12 md:py-16">
@@ -95,6 +106,8 @@ export function ServiceLanding(props: ServiceLandingProps) {
           ))}
         </div>
       </section>
+
+      {props.authority && <ServiceAuthorityDetails content={props.authority} />}
 
       {/* FAQ */}
       <section className="container-x py-12 md:py-16 border-t border-border">

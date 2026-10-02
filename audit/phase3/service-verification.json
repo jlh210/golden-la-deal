@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "path": "buy-a-restaurant",
+      "answerWords": 55,
+      "faqs": 4,
+      "status": "PASS"
+    },
+    {
+      "path": "sell-your-restaurant",
+      "answerWords": 56,
+      "faqs": 4,
+      "status": "PASS"
+    },
+    {
+      "path": "restaurant-leasing",
+      "answerWords": 57,
+      "faqs": 4,
+      "status": "PASS"
+    },
+    {
+      "path": "restaurant-consulting",
+      "answerWords": 54,
+      "faqs": 4,
+      "status": "PASS"
+    },
+    {
+      "path": "alcohol-licensing",
+      "answerWords": 53,
+      "faqs": 2,
+      "status": "PASS"
+    },
+    {
+      "path": "health-permitting",
+      "answerWords": 55,
+      "faqs": 2,
+      "status": "PASS"
+    },
+    {
+      "path": "business-investigations",
+      "answerWords": 55,
+      "faqs": 2,
+      "status": "PASS"
+    }
+  ]
+}

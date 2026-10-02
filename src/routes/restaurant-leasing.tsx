@@ -1,3 +1,4 @@
+import { serviceAuthority } from "@/content/service-authority";
 import { buildServiceJsonLd } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { DoorOpen, FileSignature, Building2 } from "lucide-react";
@@ -7,11 +8,11 @@ const URL = "https://www.penthouseadvisors.com/restaurant-leasing";
 const FAQS = [
   {
     q: "What is a second-generation restaurant space?",
-    a: "A space that was previously built out as a restaurant — hood, grease trap, plumbing, gas, and Health-approved layout already in place. Reopening a 2nd gen space typically saves 6–12 months and hundreds of thousands of dollars vs. a vanilla shell.",
+    a: "A second-generation space previously operated as a restaurant and may retain kitchen infrastructure such as a hood, grease system, plumbing, and gas connections. Its usefulness depends on condition, records, and fit with your menu. Prior restaurant use does not establish that every existing installation is approved for your proposed operation.",
   },
   {
     q: "Do tenants pay you a fee?",
-    a: "No. Tenant representation is paid by the landlord at lease execution — there is no fee to the tenant.",
+    a: "Our stated tenant-representation arrangement is landlord-paid at lease execution, with no tenant representation fee. Confirm the compensation arrangement for the specific property in writing. The separate initial consultation is $35 for 30 minutes.",
   },
   {
     q: "Can you negotiate free rent during build-out?",
@@ -65,17 +66,18 @@ export const Route = createFileRoute("/restaurant-leasing")({
 function RestaurantLeasingPage() {
   return (
     <ServiceLanding
+      authority={serviceAuthority.lease}
       eyebrow="Restaurant Leasing"
       title="Restaurant leasing"
       accent="across LA County."
       subtitle="Second-generation equipped spaces, lease negotiation, and rent abatement — for tenants and landlords."
       h1="Commercial Restaurant Leasing in Los Angeles"
-      overview="We represent restaurant tenants and commercial landlords across Los Angeles County. For operators, we surface vacant, equipped, second-generation restaurant spaces — the kind that let you open in months instead of years. For landlords, we provide no-fee tenant placement with qualified operators only."
+      overview="We represent restaurant tenants and commercial landlords across Los Angeles County. For operators, we surface vacant, equipped, second-generation restaurant spaces — with existing infrastructure to evaluate against your concept and opening budget. For landlords, we provide no-fee tenant placement with qualified operators only."
       benefits={[
         {
           icon: DoorOpen,
           title: "2nd-Gen Inventory",
-          body: "Equipped restaurant spaces with hood, grease trap, and Health-approved layout already in place.",
+          body: "Existing restaurant infrastructure assessed for condition, available approval records, and compatibility with your proposed menu.",
         },
         {
           icon: FileSignature,
@@ -114,7 +116,7 @@ function RestaurantLeasingPage() {
       ]}
       serviceNeeded="Leasing vacant restaurant"
       ctaTitle="Looking for a restaurant lease — or a qualified tenant?"
-      ctaBody="One call. We move on the same business day."
+      ctaBody="Discuss the address, concept, lease terms, and practical next steps."
     />
   );
 }

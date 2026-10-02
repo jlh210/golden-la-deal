@@ -1,10 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Search, FileWarning, ShieldCheck } from "lucide-react";
 import { SiteLayout } from "@/components/site/Layout";
-import { PageHero } from "@/components/site/PageHero";
+import {
+  ServiceAuthorityFaq,
+  ServiceAuthorityHero,
+  ServiceAuthorityDetails,
+} from "@/components/site/ServiceAuthority";
+import { serviceAuthority, specialistFaqs } from "@/content/service-authority";
 import { CTASection } from "@/components/site/CTASection";
 
-import { breadcrumbScript } from "@/lib/seo";
+import { breadcrumbScript, serviceScript, faqScript } from "@/lib/seo";
 export const Route = createFileRoute("/business-investigations")({
   head: () => ({
     meta: [
@@ -21,9 +26,21 @@ export const Route = createFileRoute("/business-investigations")({
       },
       { property: "og:url", content: "https://www.penthouseadvisors.com/business-investigations" },
     ],
-    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/business-investigations" }],
+    links: [
+      { rel: "canonical", href: "https://www.penthouseadvisors.com/business-investigations" },
+    ],
     scripts: [
-      breadcrumbScript([{name:"Home",path:"/"},{name:'Business Investigations',path:'/business-investigations'}]),
+      serviceScript({
+        name: "Restaurant Business Investigations",
+        description: serviceAuthority.investigate.answer,
+        path: "/business-investigations",
+        serviceType: "Restaurant Due Diligence",
+      }),
+      faqScript(specialistFaqs.investigate),
+      breadcrumbScript([
+        { name: "Home", path: "/" },
+        { name: "Business Investigations", path: "/business-investigations" },
+      ]),
     ],
   }),
   component: InvestigationsPage,
@@ -32,12 +49,7 @@ export const Route = createFileRoute("/business-investigations")({
 function InvestigationsPage() {
   return (
     <SiteLayout>
-      <PageHero
-        eyebrow="Restaurant Business Investigations"
-        title="Know exactly what you're buying."
-        accent="Before you sign."
-        subtitle="Sellers and landlords don't always tell you everything. We dig - lease terms, permit history, code violations, sales numbers, ABC status, equipment condition - so you walk into the deal with eyes open."
-      />
+      <ServiceAuthorityHero content={serviceAuthority.investigate} />
 
       <section className="container-x py-16 md:py-20 grid gap-6 lg:grid-cols-3">
         {[
@@ -54,10 +66,13 @@ function InvestigationsPage() {
           {
             icon: ShieldCheck,
             title: "What you walk away with",
-            body: "A clear written report on the property, the business, and the seller's representations - plus a recommendation: proceed, renegotiate, or walk. One call can save six figures.",
+            body: "A clear written report on the property, the business, and the seller's representations - plus a recommendation: proceed, renegotiate, or walk. Findings distinguish available evidence from questions requiring further review.",
           },
         ].map((c) => (
-          <div key={c.title} className="rounded-2xl border border-border bg-card p-7 shadow-elegant">
+          <div
+            key={c.title}
+            className="rounded-2xl border border-border bg-card p-7 shadow-elegant"
+          >
             <div className="grid h-12 w-12 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30">
               <c.icon className="h-6 w-6" />
             </div>
@@ -67,9 +82,14 @@ function InvestigationsPage() {
         ))}
       </section>
 
-      <CTASection serviceNeeded={"Pre-purchase business investigation"}
+      <ServiceAuthorityDetails content={serviceAuthority.investigate} />
+
+      <ServiceAuthorityFaq faqs={specialistFaqs.investigate} />
+
+      <CTASection
+        serviceNeeded={"Pre-purchase business investigation"}
         title="Thinking about buying a restaurant?"
-        body="Get a full pre-purchase investigation before escrow opens. We move fast."
+        body="Discuss the available documents, diligence deadlines, and investigation scope before making your next commitment."
       />
     </SiteLayout>
   );

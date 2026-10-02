@@ -1,0 +1,81 @@
+{
+  "scope": "Seven core service pages; no deploy",
+  "decisions": [
+    {
+      "page": "All seven service URLs",
+      "action": "KEEP / EXPAND",
+      "detail": "Preserved URLs and canonicals; added unique 53\u201357 word answers, scoped consultation CTAs, preparation lists, and relevant services/guides. Existing detailed scope and process copy retained."
+    },
+    {
+      "page": "Buying",
+      "action": "REFINE",
+      "detail": "Replaced unsupported 60\u2013120 day closing expectation and before-any-payment promise; qualified visa acquisition language."
+    },
+    {
+      "page": "Selling",
+      "action": "REFINE",
+      "detail": "Removed absolute confidentiality guarantee and clarified valuation inputs and transfer-dependent value. No new valuation landing page."
+    },
+    {
+      "page": "Leasing",
+      "action": "REFINE",
+      "detail": "Removed blanket 6\u201312 month / hundreds-of-thousands savings claims and assumed Health approval. Distinguished representation compensation from paid consultation."
+    },
+    {
+      "page": "Consulting",
+      "action": "REFINE",
+      "detail": "Clarified transaction advisory and immigration counsel roles; removed visa-ready promise."
+    },
+    {
+      "page": "Alcohol licensing",
+      "action": "REFINE / EXPAND",
+      "detail": "Separated ABC license type from local authorization; added LA City RBP alternative and official sources. Replaced stale fixed government/third-party fees with current-schedule or quote references. Removed unsupported countywide CUB rules, six-week promise, fixed hours, 500-foot blanket notification statement, and categorical landlord disclosure exemption. Retained $8,000 non-refundable deposit and $2,900 notification service amount for written scope confirmation. Removed the unverified $5,500 CUB reinstatement amount; prior copy remains in Git history."
+    },
+    {
+      "page": "Health permitting",
+      "action": "REFINE / EXPAND",
+      "detail": "Clarified change-of-ownership versus remodel review, agency approval role, service jurisdiction, and service term versus permit validity. Preserved $3,750 service offer and detailed scope. Added two FAQs and official sources."
+    },
+    {
+      "page": "Investigations",
+      "action": "REFINE / EXPAND",
+      "detail": "Added Service schema, two FAQs, preparation guidance, and buyer/advisory links. Removed unsupported six-figure savings claim."
+    },
+    {
+      "page": "Published project activity",
+      "action": "REFINE",
+      "detail": "Preserved all addresses and recorded status labels; removed live/current framing because no live data feed or timestamp substantiates it."
+    },
+    {
+      "page": "Blog, Help, ancillary pages",
+      "action": "KEEP / DEFER",
+      "detail": "No content edits, consolidation, redirects, canonicals, or route changes. Search Console and backlink evidence are not available. Previously identified claims on those pages still require a later review."
+    }
+  ],
+  "officialSources": [
+    {
+      "title": "California ABC license types",
+      "url": "https://www.abc.ca.gov/licensing/license-types/"
+    },
+    {
+      "title": "ABC application fees",
+      "url": "https://www.abc.ca.gov/licensing/license-fees/application-fee-schedules/"
+    },
+    {
+      "title": "LA City Restaurant Beverage Program",
+      "url": "https://planning.lacity.gov/restaurant-beverage-program"
+    },
+    {
+      "title": "LA County restaurant permit process",
+      "url": "https://publichealth.lacounty.gov/eh/inspection/how-to-obtain-restaurant-food-facility-permit.htm"
+    },
+    {
+      "title": "LA County construction requirements",
+      "url": "https://publichealth.lacounty.gov/eh/inspection/construction-requirements-retail-food-facilities.htm"
+    },
+    {
+      "title": "LA County Plan Check service area",
+      "url": "https://admin.publichealth.lacounty.gov/eh/about/plan-check-program.htm"
+    }
+  ]
+}

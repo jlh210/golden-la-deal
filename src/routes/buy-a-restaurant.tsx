@@ -1,3 +1,4 @@
+import { serviceAuthority } from "@/content/service-authority";
 import { buildServiceJsonLd } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { Search, FileSearch, ShieldCheck } from "lucide-react";
@@ -11,7 +12,7 @@ const FAQS = [
   },
   {
     q: "How long does it take to buy a restaurant in LA?",
-    a: "From signed LOI to keys in hand typically runs 60–120 days depending on liquor license transfer (ABC), landlord consent, and Health Dept plan check. We sequence those in parallel to compress the timeline.",
+    a: "Timing depends on diligence, financing, landlord consent, escrow, and any required agency approvals. We identify those dependencies early and coordinate work where possible. A target closing date should be based on the specific transaction rather than treated as a guaranteed window.",
   },
   {
     q: "What due diligence do you run before I buy?",
@@ -19,7 +20,7 @@ const FAQS = [
   },
   {
     q: "Can I use an E-2 investor visa to buy a restaurant?",
-    a: "Yes. We package E-2-ready acquisitions for European entrepreneurs — see our E-2 Visa page.",
+    a: "We help European entrepreneurs assess restaurant acquisition opportunities and coordinate transaction information. Immigration eligibility and the visa application should be reviewed with qualified immigration counsel; buying a restaurant does not by itself establish eligibility or guarantee a visa.",
   },
 ];
 
@@ -61,6 +62,7 @@ export const Route = createFileRoute("/buy-a-restaurant")({
 function BuyARestaurantPage() {
   return (
     <ServiceLanding
+      authority={serviceAuthority.buy}
       eyebrow="Buy a Restaurant with Penthouse Advisors INC."
       title="Buy your next restaurant in Los Angeles, with"
       accent="Penthouse Advisors Inc."
@@ -76,7 +78,7 @@ function BuyARestaurantPage() {
         {
           icon: FileSearch,
           title: "Full Diligence",
-          body: "Lease, ABC license, code, sales, and equipment — investigated before you wire a dollar.",
+          body: "Lease, ABC license, code, sales, and equipment reviewed within the agreed diligence scope and contractual deadlines.",
         },
         {
           icon: ShieldCheck,

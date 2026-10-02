@@ -1,3 +1,4 @@
+import { serviceAuthority } from "@/content/service-authority";
 import { buildServiceJsonLd } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { FileSearch, Handshake, Plane } from "lucide-react";
@@ -7,7 +8,7 @@ const URL = "https://www.penthouseadvisors.com/restaurant-consulting";
 const FAQS = [
   {
     q: "What is a restaurant business investigation?",
-    a: "A pre-purchase diligence package: lease and assignment review, ABC license history, code and permit status, sales verification, equipment condition, vendor contracts, and prior Health inspection records — delivered before you wire a deposit.",
+    a: "A pre-purchase diligence package: lease and assignment review, ABC license history, code and permit status, sales verification, equipment condition, vendor contracts, and prior Health inspection records — scoped around the documents available and your contractual diligence deadlines.",
   },
   {
     q: "My deal is stuck. Can you help?",
@@ -15,7 +16,7 @@ const FAQS = [
   },
   {
     q: "Do you advise European investors using the E-2 visa?",
-    a: "Yes. We package E-2-ready restaurant acquisitions for European entrepreneurs — see our E-2 Visa (Europe) page.",
+    a: "We assist European investors with the restaurant acquisition side of a proposed investment. Immigration counsel should evaluate eligibility, application strategy, and supporting evidence. Our transaction work does not guarantee visa approval.",
   },
   {
     q: "How do you charge for advisory work?",
@@ -61,17 +62,18 @@ export const Route = createFileRoute("/restaurant-consulting")({
 function ConsultingPage() {
   return (
     <ServiceLanding
+      authority={serviceAuthority.consult}
       eyebrow="Restaurant Consulting"
       title="Hospitality advisory"
       accent="for serious operators."
       subtitle="Pre-purchase investigations, buyer/tenant resolutions, lease strategy, and E-2 visa advisory."
       h1="Restaurant Consulting in Los Angeles"
-      overview="Beyond brokerage, Penthouse Advisors operates as a working hospitality advisory firm. We're hired to run pre-purchase diligence on restaurants buyers are about to acquire, to resolve deals that have stalled mid-escrow, to structure lease assignments and guarantor terms, and to package E-2-ready acquisitions for European entrepreneurs."
+      overview="Beyond brokerage, Penthouse Advisors operates as a working hospitality advisory firm. We're hired to run pre-purchase diligence on restaurants buyers are about to acquire, to resolve deals that have stalled mid-escrow, to structure lease assignments and guarantor terms, and to coordinate restaurant acquisition information for European investors working with immigration counsel."
       benefits={[
         {
           icon: FileSearch,
           title: "Pre-Purchase Diligence",
-          body: "Lease, license, code, sales, and equipment — investigated before money moves.",
+          body: "Lease, license, code, sales, and equipment reviewed against the agreed scope and transaction deadlines.",
         },
         {
           icon: Handshake,
@@ -81,7 +83,7 @@ function ConsultingPage() {
         {
           icon: Plane,
           title: "E-2 Visa Advisory",
-          body: "Investment-visa-ready restaurant acquisitions for European entrepreneurs.",
+          body: "Restaurant acquisition coordination for European entrepreneurs, alongside their immigration counsel.",
         },
       ]}
       process={[

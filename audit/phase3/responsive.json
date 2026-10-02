@@ -1,0 +1,219 @@
+[
+  {
+    "path": "buy-a-restaurant",
+    "width": 390,
+    "h1": "Buy a Restaurant in Los Angeles County",
+    "scroll": 390,
+    "viewport": 390
+  },
+  {
+    "path": "sell-your-restaurant",
+    "width": 390,
+    "h1": "Sell Your Restaurant in Los Angeles",
+    "scroll": 390,
+    "viewport": 390
+  },
+  {
+    "path": "restaurant-leasing",
+    "width": 390,
+    "h1": "Restaurant Leasing in Los Angeles County",
+    "scroll": 390,
+    "viewport": 390
+  },
+  {
+    "path": "restaurant-consulting",
+    "width": 390,
+    "h1": "Restaurant Consulting in Los Angeles",
+    "scroll": 390,
+    "viewport": 390
+  },
+  {
+    "path": "alcohol-licensing",
+    "width": 390,
+    "h1": "Restaurant Alcohol Licensing in Los Angeles",
+    "scroll": 390,
+    "viewport": 390
+  },
+  {
+    "path": "health-permitting",
+    "width": 390,
+    "h1": "Restaurant Health Permitting & Plan Check in Los Angeles",
+    "scroll": 390,
+    "viewport": 390
+  },
+  {
+    "path": "business-investigations",
+    "width": 390,
+    "h1": "Restaurant Due Diligence in Los Angeles",
+    "scroll": 390,
+    "viewport": 390
+  },
+  {
+    "path": "buy-a-restaurant",
+    "width": 320,
+    "scroll": 320,
+    "viewport": 320
+  },
+  {
+    "path": "sell-your-restaurant",
+    "width": 320,
+    "scroll": 320,
+    "viewport": 320
+  },
+  {
+    "path": "restaurant-leasing",
+    "width": 320,
+    "scroll": 320,
+    "viewport": 320
+  },
+  {
+    "path": "restaurant-consulting",
+    "width": 320,
+    "scroll": 320,
+    "viewport": 320
+  },
+  {
+    "path": "alcohol-licensing",
+    "width": 320,
+    "scroll": 320,
+    "viewport": 320
+  },
+  {
+    "path": "health-permitting",
+    "width": 320,
+    "scroll": 320,
+    "viewport": 320
+  },
+  {
+    "path": "business-investigations",
+    "width": 320,
+    "scroll": 320,
+    "viewport": 320
+  },
+  {
+    "path": "buy-a-restaurant",
+    "width": 768,
+    "scroll": 768,
+    "viewport": 768
+  },
+  {
+    "path": "sell-your-restaurant",
+    "width": 768,
+    "scroll": 768,
+    "viewport": 768
+  },
+  {
+    "path": "restaurant-leasing",
+    "width": 768,
+    "scroll": 768,
+    "viewport": 768
+  },
+  {
+    "path": "restaurant-consulting",
+    "width": 768,
+    "scroll": 768,
+    "viewport": 768
+  },
+  {
+    "path": "alcohol-licensing",
+    "width": 768,
+    "scroll": 768,
+    "viewport": 768
+  },
+  {
+    "path": "health-permitting",
+    "width": 768,
+    "scroll": 768,
+    "viewport": 768
+  },
+  {
+    "path": "business-investigations",
+    "width": 768,
+    "scroll": 768,
+    "viewport": 768
+  },
+  {
+    "path": "buy-a-restaurant",
+    "width": 1024,
+    "scroll": 1024,
+    "viewport": 1024
+  },
+  {
+    "path": "sell-your-restaurant",
+    "width": 1024,
+    "scroll": 1024,
+    "viewport": 1024
+  },
+  {
+    "path": "restaurant-leasing",
+    "width": 1024,
+    "scroll": 1024,
+    "viewport": 1024
+  },
+  {
+    "path": "restaurant-consulting",
+    "width": 1024,
+    "scroll": 1024,
+    "viewport": 1024
+  },
+  {
+    "path": "alcohol-licensing",
+    "width": 1024,
+    "scroll": 1024,
+    "viewport": 1024
+  },
+  {
+    "path": "health-permitting",
+    "width": 1024,
+    "scroll": 1024,
+    "viewport": 1024
+  },
+  {
+    "path": "business-investigations",
+    "width": 1024,
+    "scroll": 1024,
+    "viewport": 1024
+  },
+  {
+    "path": "buy-a-restaurant",
+    "width": 1440,
+    "scroll": 1440,
+    "viewport": 1440
+  },
+  {
+    "path": "sell-your-restaurant",
+    "width": 1440,
+    "scroll": 1440,
+    "viewport": 1440
+  },
+  {
+    "path": "restaurant-leasing",
+    "width": 1440,
+    "scroll": 1440,
+    "viewport": 1440
+  },
+  {
+    "path": "restaurant-consulting",
+    "width": 1440,
+    "scroll": 1440,
+    "viewport": 1440
+  },
+  {
+    "path": "alcohol-licensing",
+    "width": 1440,
+    "scroll": 1440,
+    "viewport": 1440
+  },
+  {
+    "path": "health-permitting",
+    "width": 1440,
+    "scroll": 1440,
+    "viewport": 1440
+  },
+  {
+    "path": "business-investigations",
+    "width": 1440,
+    "scroll": 1440,
+    "viewport": 1440
+  }
+]

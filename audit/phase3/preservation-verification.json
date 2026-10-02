@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "allSiteInternalLinksChecked": 73,
+  "blog": [
+    {
+      "path": "/blog/best-la-neighborhoods-open-restaurant-2026",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog/best-la-neighborhoods-open-restaurant-2026",
+      "content": "PASS: complete text matches original except documented price sentence",
+      "metadata": "PASS",
+      "schema": "PASS",
+      "indexable": true
+    },
+    {
+      "path": "/blog",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog",
+      "content": "PASS: complete text matches original except documented price sentence",
+      "metadata": "PASS",
+      "schema": "PASS",
+      "indexable": true
+    },
+    {
+      "path": "/blog/restaurant-buyer-due-diligence-checklist",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog/restaurant-buyer-due-diligence-checklist",
+      "content": "PASS: complete text matches original except documented price sentence",
+      "metadata": "PASS",
+      "schema": "PASS",
+      "indexable": true
+    },
+    {
+      "path": "/blog/restaurant-valuation-los-angeles-2026",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog/restaurant-valuation-los-angeles-2026",
+      "content": "PASS: complete text matches original except documented price sentence",
+      "metadata": "PASS",
+      "schema": "PASS",
+      "indexable": true
+    },
+    {
+      "path": "/blog/second-generation-restaurant-space-explained",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog/second-generation-restaurant-space-explained",
+      "content": "PASS: complete text matches original except documented price sentence",
+      "metadata": "PASS",
+      "schema": "PASS",
+      "indexable": true
+    },
+    {
+      "path": "/blog/type-41-vs-type-47-liquor-license-california",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog/type-41-vs-type-47-liquor-license-california",
+      "content": "PASS: complete text matches original except documented price sentence",
+      "metadata": "PASS",
+      "schema": "PASS",
+      "indexable": true
+    }
+  ],
+  "liveSitemapUrls": 59,
+  "localSitemapUrls": 59,
+  "allKnownLiveSitemapRoutesPreserved": true,
+  "blogInternalLinksChecked": 9,
+  "unknownBlogStatus": 404
+}
