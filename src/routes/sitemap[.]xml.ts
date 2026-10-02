@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
+import { blogPaths } from "@/content/blog/paths";
 import { categories } from "@/content/help";
 
 import { listings, getListingBySlug } from "@/lib/listings";
@@ -49,6 +50,9 @@ export const Route = createFileRoute("/sitemap.xml")({
               changefreq: "weekly",
               priority: "0.8",
             })),
+
+          // Preserved production Blog routes; omit lastmod rather than infer it.
+          ...blogPaths.map((path) => ({ path, changefreq: "monthly", priority: "0.6" })),
 
           // Help Center
           { path: "/help", changefreq: "weekly", priority: "0.8" },

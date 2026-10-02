@@ -1,0 +1,1477 @@
+[
+  {
+    "path": "/",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/about",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/about",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/about",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/about",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/about",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/agents",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/agents",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/agents",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/agents",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/agents",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/services",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/services",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/services",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/services",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/services",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/contact",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/contact",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/contact",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/contact",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/contact",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/restaurants-for-sale",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/restaurants-for-sale",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/restaurants-for-sale",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/restaurants-for-sale",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/restaurants-for-sale",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/restaurants-for-sale/westwood-santa-monica-restaurant-asset-sale",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/restaurants-for-sale/westwood-santa-monica-restaurant-asset-sale",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/restaurants-for-sale/westwood-santa-monica-restaurant-asset-sale",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/restaurants-for-sale/westwood-santa-monica-restaurant-asset-sale",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/restaurants-for-sale/westwood-santa-monica-restaurant-asset-sale",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/restaurants-for-sale/dental-office-for-lease",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/restaurants-for-sale/dental-office-for-lease",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/restaurants-for-sale/dental-office-for-lease",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/restaurants-for-sale/dental-office-for-lease",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/restaurants-for-sale/dental-office-for-lease",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/restaurants-for-sale/santa-monica-asset-sale",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/restaurants-for-sale/santa-monica-asset-sale",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/restaurants-for-sale/santa-monica-asset-sale",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/restaurants-for-sale/santa-monica-asset-sale",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/restaurants-for-sale/santa-monica-asset-sale",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/restaurants-for-sale/wilshire-second-gen-lease",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/restaurants-for-sale/wilshire-second-gen-lease",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/restaurants-for-sale/wilshire-second-gen-lease",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/restaurants-for-sale/wilshire-second-gen-lease",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/restaurants-for-sale/wilshire-second-gen-lease",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/restaurants-for-sale/hardware-store-for-sale",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/restaurants-for-sale/hardware-store-for-sale",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/restaurants-for-sale/hardware-store-for-sale",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/restaurants-for-sale/hardware-store-for-sale",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/restaurants-for-sale/hardware-store-for-sale",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/buy-a-restaurant",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/buy-a-restaurant",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/buy-a-restaurant",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/buy-a-restaurant",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/buy-a-restaurant",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/sell-your-restaurant",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/sell-your-restaurant",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/sell-your-restaurant",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/sell-your-restaurant",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/sell-your-restaurant",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/restaurant-leasing",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/restaurant-leasing",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/restaurant-leasing",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/restaurant-leasing",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/restaurant-leasing",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/licensing-and-permits",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/licensing-and-permits",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/licensing-and-permits",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/licensing-and-permits",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/licensing-and-permits",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/restaurant-consulting",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/restaurant-consulting",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/restaurant-consulting",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/restaurant-consulting",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/restaurant-consulting",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/commercial-property-management",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/commercial-property-management",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/commercial-property-management",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/commercial-property-management",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/commercial-property-management",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/leasing-vacant-restaurants",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/leasing-vacant-restaurants",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/leasing-vacant-restaurants",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/leasing-vacant-restaurants",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/leasing-vacant-restaurants",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/alcohol-licensing",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/alcohol-licensing",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/alcohol-licensing",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/alcohol-licensing",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/alcohol-licensing",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/liquor-license-for-sale",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/liquor-license-for-sale",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/liquor-license-for-sale",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/liquor-license-for-sale",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/liquor-license-for-sale",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/health-inspection",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/health-inspection",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/health-inspection",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/health-inspection",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/health-inspection",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/health-permitting",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/health-permitting",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/health-permitting",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/health-permitting",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/health-permitting",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/vermin-inspections",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/vermin-inspections",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/vermin-inspections",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/vermin-inspections",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/vermin-inspections",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/grandfather-protection",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/grandfather-protection",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/grandfather-protection",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/grandfather-protection",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/grandfather-protection",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/assignments-rent-abatement",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/assignments-rent-abatement",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/assignments-rent-abatement",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/assignments-rent-abatement",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/assignments-rent-abatement",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/business-investigations",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/business-investigations",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/business-investigations",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/business-investigations",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/business-investigations",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/buyer-tenant-resolutions",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/buyer-tenant-resolutions",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/buyer-tenant-resolutions",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/buyer-tenant-resolutions",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/buyer-tenant-resolutions",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/search-door-knocking",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/search-door-knocking",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/search-door-knocking",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/search-door-knocking",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/search-door-knocking",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/off-market-sourcing",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/off-market-sourcing",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/off-market-sourcing",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/off-market-sourcing",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/off-market-sourcing",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/e2-visa-europe",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/e2-visa-europe",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/e2-visa-europe",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/e2-visa-europe",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/e2-visa-europe",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/hardware-store-for-sale",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/hardware-store-for-sale",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/hardware-store-for-sale",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/hardware-store-for-sale",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/hardware-store-for-sale",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/buying-a-restaurant",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/buying-a-restaurant",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/buying-a-restaurant",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/buying-a-restaurant",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/buying-a-restaurant",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/selling-a-restaurant",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/selling-a-restaurant",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/selling-a-restaurant",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/selling-a-restaurant",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/selling-a-restaurant",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/restaurant-leasing",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/restaurant-leasing",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/restaurant-leasing",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/restaurant-leasing",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/restaurant-leasing",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/alcohol-licensing",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/alcohol-licensing",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/alcohol-licensing",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/alcohol-licensing",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/alcohol-licensing",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/health-permitting",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/health-permitting",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/health-permitting",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/health-permitting",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/health-permitting",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/grandfather-protection",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/grandfather-protection",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/grandfather-protection",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/grandfather-protection",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/grandfather-protection",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/lease-assignments",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/lease-assignments",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/lease-assignments",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/lease-assignments",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/lease-assignments",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/business-investigations",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/business-investigations",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/business-investigations",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/business-investigations",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/business-investigations",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/buyer-tenant-resolutions",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/buyer-tenant-resolutions",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/buyer-tenant-resolutions",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/buyer-tenant-resolutions",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/buyer-tenant-resolutions",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/off-market-sourcing",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/off-market-sourcing",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/off-market-sourcing",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/off-market-sourcing",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/off-market-sourcing",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/e2-visa",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/e2-visa",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/e2-visa",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/e2-visa",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/e2-visa",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/commercial-property-management",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/commercial-property-management",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/commercial-property-management",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/commercial-property-management",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/commercial-property-management",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/medical-dental-leasing",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/medical-dental-leasing",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/medical-dental-leasing",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/medical-dental-leasing",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/medical-dental-leasing",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/restaurant-consulting",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/restaurant-consulting",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/restaurant-consulting",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/restaurant-consulting",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/restaurant-consulting",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/local-markets",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/local-markets",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/local-markets",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/local-markets",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/local-markets",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/alcohol-licensing/abc-license-transfer-guide",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/alcohol-licensing/abc-license-transfer-guide",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/alcohol-licensing/abc-license-transfer-guide",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/alcohol-licensing/abc-license-transfer-guide",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/alcohol-licensing/abc-license-transfer-guide",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/lease-assignments/restaurant-lease-assignment-guide",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/lease-assignments/restaurant-lease-assignment-guide",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/lease-assignments/restaurant-lease-assignment-guide",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/lease-assignments/restaurant-lease-assignment-guide",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/lease-assignments/restaurant-lease-assignment-guide",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/local-markets/restaurant-broker-beverly-hills",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/local-markets/restaurant-broker-beverly-hills",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/local-markets/restaurant-broker-beverly-hills",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/local-markets/restaurant-broker-beverly-hills",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/local-markets/restaurant-broker-beverly-hills",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/blog",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/blog",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/blog",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/blog",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/blog",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/blog/second-generation-restaurant-space-explained",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/blog/second-generation-restaurant-space-explained",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/blog/second-generation-restaurant-space-explained",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/blog/second-generation-restaurant-space-explained",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/blog/second-generation-restaurant-space-explained",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/blog/restaurant-buyer-due-diligence-checklist",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/blog/restaurant-buyer-due-diligence-checklist",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/blog/restaurant-buyer-due-diligence-checklist",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/blog/restaurant-buyer-due-diligence-checklist",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/blog/restaurant-buyer-due-diligence-checklist",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/blog/best-la-neighborhoods-open-restaurant-2026",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/blog/best-la-neighborhoods-open-restaurant-2026",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/blog/best-la-neighborhoods-open-restaurant-2026",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/blog/best-la-neighborhoods-open-restaurant-2026",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/blog/best-la-neighborhoods-open-restaurant-2026",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/blog/type-41-vs-type-47-liquor-license-california",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/blog/type-41-vs-type-47-liquor-license-california",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/blog/type-41-vs-type-47-liquor-license-california",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/blog/type-41-vs-type-47-liquor-license-california",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/blog/type-41-vs-type-47-liquor-license-california",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/blog/restaurant-valuation-los-angeles-2026",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/blog/restaurant-valuation-los-angeles-2026",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/blog/restaurant-valuation-los-angeles-2026",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/blog/restaurant-valuation-los-angeles-2026",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/blog/restaurant-valuation-los-angeles-2026",
+    "scroll": 1440,
+    "width": 1440
+  }
+]

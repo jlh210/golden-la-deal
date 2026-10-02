@@ -1172,3 +1172,62 @@ summary:focus-visible {
     font-size: 14px;
   }
 }
+
+/* Phase 2.5: preserve the compound phrase and keep recovered content resilient. */
+.pa-no-break {
+  white-space: nowrap;
+}
+.pa-preserved-blog {
+  overflow-wrap: anywhere;
+}
+.pa-preserved-blog table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.pa-preserved-blog .text-gold {
+  color: #806226;
+}
+.pa-preserved-blog .text-gold\/80 {
+  color: #806226;
+}
+.pa-preserved-blog section.text-white .text-gold {
+  color: #d4b67e;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .pa-intent-grid article {
+    padding-right: 28px;
+  }
+  .pa-intent-grid article + article {
+    padding-left: 28px;
+  }
+  .pa-process {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .pa-footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .pa-footer-grid > div:first-child {
+    grid-column: 1 / -1;
+  }
+}
+.pa-preserved-blog h1,
+.pa-preserved-blog h2,
+.pa-preserved-blog h3 {
+  font-family: var(--font-display);
+}
+@media (max-width: 479px) {
+  .pa-button {
+    font-size: 11px;
+    gap: 9px;
+    padding-inline: 12px;
+  }
+}
+#main-content {
+  scroll-margin-top: 92px;
+}
+/* Shared form columns must be allowed to shrink below native select intrinsic widths. */
+.container-x.grid > * {
+  min-width: 0;
+}

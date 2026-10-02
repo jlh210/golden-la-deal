@@ -9,8 +9,8 @@
     61
   ],
   "localWords": 180,
-  "internalLinksChecked": 27,
+  "internalLinksChecked": 28,
   "assetsChecked": 4,
   "checks": "SSR content, heading structure, canonical/title, FAQ parity, internal destinations, actual image assets, offer and Blog link",
-  "visualQA": "Blocked: browser and native UI connection timeouts; layout not screenshot-verified"
+  "visualQA": "See audit/phase25 visual QA evidence"
 }

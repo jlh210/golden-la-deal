@@ -25,11 +25,9 @@ export function PageHero({
               {lead}
             </span>
           )}
-          {title} {accent && <span className="text-gold whitespace-nowrap">{accent}</span>}
+          {title} {accent && <span className="text-gold">{accent}</span>}
         </h1>
-        {subtitle && (
-          <p className="mt-5 max-w-2xl text-muted-foreground">{subtitle}</p>
-        )}
+        {subtitle && <p className="mt-5 max-w-2xl text-muted-foreground">{subtitle}</p>}
         {children && <div className="mt-6">{children}</div>}
       </div>
     </section>

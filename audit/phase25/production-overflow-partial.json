@@ -1,0 +1,120 @@
+{
+  "status": "Partial repeat interrupted by browser evaluate timeouts; complete 295-check source-browser run recorded separately",
+  "checks": [
+    {
+      "path": "/",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "path": "/",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "path": "/",
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "path": "/",
+      "scroll": 1024,
+      "width": 1024
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "path": "/about",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "path": "/about",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "path": "/about",
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "path": "/about",
+      "scroll": 1024,
+      "width": 1024
+    },
+    {
+      "path": "/about",
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "path": "/agents",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "path": "/agents",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "path": "/agents",
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "path": "/agents",
+      "scroll": 1024,
+      "width": 1024
+    },
+    {
+      "path": "/agents",
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "path": "/services",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "path": "/services",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "path": "/services",
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "path": "/services",
+      "scroll": 1024,
+      "width": 1024
+    },
+    {
+      "path": "/services",
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "path": "/contact",
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "path": "/contact",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "path": "/contact",
+      "scroll": 768,
+      "width": 768
+    }
+  ]
+}

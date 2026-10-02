@@ -1,0 +1,44 @@
+[
+  {
+    "path": "/blog/best-la-neighborhoods-open-restaurant-2026",
+    "cluster": "LOCAL MARKETS / BUYING",
+    "commercialParent": "/buy-a-restaurant",
+    "context": "Context: /restaurant-leasing; no new neighborhood pages",
+    "status": "DEFERRED TO PHASE 3"
+  },
+  {
+    "path": "/blog",
+    "cluster": "OTHER / editorial archive",
+    "commercialParent": "Separate Blog archive",
+    "context": "Keep Blog and Help distinct.",
+    "status": "DEFERRED TO PHASE 3"
+  },
+  {
+    "path": "/blog/restaurant-buyer-due-diligence-checklist",
+    "cluster": "DUE DILIGENCE / BUYING",
+    "commercialParent": "/business-investigations",
+    "context": "Context: /buy-a-restaurant",
+    "status": "DEFERRED TO PHASE 3"
+  },
+  {
+    "path": "/blog/restaurant-valuation-los-angeles-2026",
+    "cluster": "VALUATION / SELLING",
+    "commercialParent": "/sell-your-restaurant",
+    "context": "No separate valuation landing page",
+    "status": "DEFERRED TO PHASE 3"
+  },
+  {
+    "path": "/blog/second-generation-restaurant-space-explained",
+    "cluster": "LEASES / BUYING",
+    "commercialParent": "/restaurant-leasing",
+    "context": "Context: /leasing-vacant-restaurants and /buy-a-restaurant",
+    "status": "DEFERRED TO PHASE 3"
+  },
+  {
+    "path": "/blog/type-41-vs-type-47-liquor-license-california",
+    "cluster": "LICENSING",
+    "commercialParent": "/alcohol-licensing",
+    "context": "Context: existing ABC transfer guide",
+    "status": "DEFERRED TO PHASE 3"
+  }
+]

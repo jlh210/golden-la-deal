@@ -1,3 +1,4 @@
+import { CONSULTATION_LABEL } from "@/lib/consultation";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Phone, Mail } from "lucide-react";
 import { SiteLayout, PHONE, PHONE_HREF, EMAIL, EMAIL_HREF } from "@/components/site/Layout";
@@ -123,11 +124,8 @@ function AgentsPage() {
         </div>
 
         <div className="mt-12">
-          <Link
-            to="/contact"
-            className="inline-flex items-center rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-charcoal-deep shadow-gold"
-          >
-            Book a Consultation
+          <Link to="/contact" className="pa-button">
+            {CONSULTATION_LABEL}
           </Link>
         </div>
       </section>

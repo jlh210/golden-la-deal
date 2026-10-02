@@ -1,0 +1,347 @@
+[
+  {
+    "file": "src/lib/consultation.ts",
+    "line": 2,
+    "contexts": [
+      "export const CONSULTATION_LABEL = \"Book a 30-Minute Consultation \u2014 $35\";"
+    ]
+  },
+  {
+    "file": "src/lib/consultation.ts",
+    "line": 3,
+    "contexts": [
+      "export const CONSULTATION_OFFER = \"30-Minute Consultation \u2014 $35\";"
+    ]
+  },
+  {
+    "file": "src/lib/listings.ts",
+    "line": 140,
+    "contexts": [
+      "\"Furniture, Fixtures & Equipment value: $35,000\","
+    ]
+  },
+  {
+    "file": "src/lib/leads.functions.ts",
+    "line": 246,
+    "contexts": [
+      "values: [[\"Consultation Booked\"]],"
+    ]
+  },
+  {
+    "file": "src/routes/index.tsx",
+    "line": 4,
+    "contexts": [
+      "import { CONSULTATION_LABEL } from \"@/lib/consultation\";"
+    ]
+  },
+  {
+    "file": "src/routes/index.tsx",
+    "line": 108,
+    "contexts": [
+      "\"Consultation & Strategy\","
+    ]
+  },
+  {
+    "file": "src/routes/index.tsx",
+    "line": 231,
+    "contexts": [
+      "{CONSULTATION_LABEL}"
+    ]
+  },
+  {
+    "file": "src/routes/index.tsx",
+    "line": 465,
+    "contexts": [
+      "{CONSULTATION_LABEL}"
+    ]
+  },
+  {
+    "file": "src/routes/search-door-knocking.tsx",
+    "line": 40,
+    "contexts": [
+      "subtitle=\"We locate the space, negotiate new lease terms and conditions, Options, Rent Abatement Allowances and set up the Health Department permit so you can focus on opening. We'll go over pricing during your consultation.\""
+    ]
+  },
+  {
+    "file": "src/routes/restaurant-consulting.tsx",
+    "line": 22,
+    "contexts": [
+      "a: \"Either a flat retainer for a defined scope or hourly. Quoted on the consultation call after we've reviewed the situation.\","
+    ]
+  },
+  {
+    "file": "src/routes/contact.tsx",
+    "line": 9,
+    "contexts": [
+      "import { CONSULTATION_OFFER } from \"@/lib/consultation\";"
+    ]
+  },
+  {
+    "file": "src/routes/contact.tsx",
+    "line": 15,
+    "contexts": [
+      "{ title: \"30-Minute Consultation \u2014 $35 | Penthouse Advisors\" },"
+    ]
+  },
+  {
+    "file": "src/routes/contact.tsx",
+    "line": 19,
+    "contexts": [
+      "\"Book a $35, 30-minute consultation with Penthouse Advisors. Speak directly with Richard Stein or Roschard Paticchio Stein about your restaurant, business, or property in Los Angeles County.\","
+    ]
+  },
+  {
+    "file": "src/routes/contact.tsx",
+    "line": 21,
+    "contexts": [
+      "{ property: \"og:title\", content: `${CONSULTATION_OFFER} | Penthouse Advisors` },"
+    ]
+  },
+  {
+    "file": "src/routes/contact.tsx",
+    "line": 25,
+    "contexts": [
+      "\"Discuss your restaurant in a $35, 30-minute consultation with Penthouse Advisors.\","
+    ]
+  },
+  {
+    "file": "src/routes/contact.tsx",
+    "line": 48,
+    "contexts": [
+      "accent={CONSULTATION_OFFER}"
+    ]
+  },
+  {
+    "file": "src/routes/contact.tsx",
+    "line": 49,
+    "contexts": [
+      "subtitle=\"A 30-minute mobile-to-mobile call for real answers on restaurants, properties, and city matters.\""
+    ]
+  },
+  {
+    "file": "src/routes/contact.tsx",
+    "line": 57,
+    "contexts": [
+      "Paid consultation \u2014 non-refundable"
+    ]
+  },
+  {
+    "file": "src/routes/contact.tsx",
+    "line": 60,
+    "contexts": [
+      "{CONSULTATION_OFFER}"
+    ]
+  },
+  {
+    "file": "src/routes/contact.tsx",
+    "line": 69,
+    "contexts": [
+      "title={CONSULTATION_OFFER}"
+    ]
+  },
+  {
+    "file": "src/routes/contact.tsx",
+    "line": 74,
+    "contexts": [
+      "note=\"$35 non-refundable. Zelle 310-460-9757 before submitting.\""
+    ]
+  },
+  {
+    "file": "src/routes/sell-your-restaurant.tsx",
+    "line": 18,
+    "contexts": [
+      "a: \"Discussed on the consultation call once we've reviewed your lease, P&L, and license posture. We quote a flat, transparent fee structure.\","
+    ]
+  },
+  {
+    "file": "src/routes/agents.tsx",
+    "line": 1,
+    "contexts": [
+      "import { CONSULTATION_LABEL } from \"@/lib/consultation\";"
+    ]
+  },
+  {
+    "file": "src/routes/agents.tsx",
+    "line": 128,
+    "contexts": [
+      "{CONSULTATION_LABEL}"
+    ]
+  },
+  {
+    "file": "src/routes/services.tsx",
+    "line": 1,
+    "contexts": [
+      "import { CONSULTATION_LABEL } from \"@/lib/consultation\";"
+    ]
+  },
+  {
+    "file": "src/routes/services.tsx",
+    "line": 73,
+    "contexts": [
+      "{CONSULTATION_LABEL} <ArrowRight className=\"h-4 w-4\" />"
+    ]
+  },
+  {
+    "file": "src/routes/help.$category.index.tsx",
+    "line": 1,
+    "contexts": [
+      "import { CONSULTATION_LABEL } from \"@/lib/consultation\";"
+    ]
+  },
+  {
+    "file": "src/routes/help.$category.index.tsx",
+    "line": 114,
+    "contexts": [
+      "{CONSULTATION_LABEL}"
+    ]
+  },
+  {
+    "file": "src/routes/help.$category.index.tsx",
+    "line": 164,
+    "contexts": [
+      "body=\"Book a consultation with the Penthouse Advisors team.\""
+    ]
+  },
+  {
+    "file": "src/routes/help.index.tsx",
+    "line": 55,
+    "contexts": [
+      "<p className=\"mx-auto mt-4 max-w-2xl text-base md:text-lg text-white/75\">"
+    ]
+  },
+  {
+    "file": "src/routes/e2-visa-europe.tsx",
+    "line": 373,
+    "contexts": [
+      "title=\"E-2 Visa Consultation\""
+    ]
+  },
+  {
+    "file": "src/components/site/CTASection.tsx",
+    "line": 4,
+    "contexts": [
+      "import { CONSULTATION_LABEL } from \"@/lib/consultation\";"
+    ]
+  },
+  {
+    "file": "src/components/site/CTASection.tsx",
+    "line": 28,
+    "contexts": [
+      "{CONSULTATION_LABEL}"
+    ]
+  },
+  {
+    "file": "src/components/site/ServiceLanding.tsx",
+    "line": 7,
+    "contexts": [
+      "import { CONSULTATION_LABEL } from \"@/lib/consultation\";"
+    ]
+  },
+  {
+    "file": "src/components/site/ServiceLanding.tsx",
+    "line": 141,
+    "contexts": [
+      "{CONSULTATION_LABEL} <ArrowRight className=\"h-4 w-4\" />"
+    ]
+  },
+  {
+    "file": "src/components/site/LeadForm.tsx",
+    "line": 1,
+    "contexts": [
+      "import { CONSULTATION_OFFER } from \"@/lib/consultation\";"
+    ]
+  },
+  {
+    "file": "src/components/site/LeadForm.tsx",
+    "line": 25,
+    "contexts": [
+      "title = CONSULTATION_OFFER,"
+    ]
+  },
+  {
+    "file": "src/components/site/LeadForm.tsx",
+    "line": 201,
+    "contexts": [
+      "Choose an available appointment in Calendly for your $35, 30-minute consultation. Follow"
+    ]
+  },
+  {
+    "file": "src/components/site/Layout.tsx",
+    "line": 4,
+    "contexts": [
+      "import { CONSULTATION_LABEL, CONSULTATION_OFFER } from \"@/lib/consultation\";"
+    ]
+  },
+  {
+    "file": "src/components/site/Layout.tsx",
+    "line": 134,
+    "contexts": [
+      "aria-label={`Book a Consultation \u2014 ${CONSULTATION_OFFER}`}"
+    ]
+  },
+  {
+    "file": "src/components/site/Layout.tsx",
+    "line": 136,
+    "contexts": [
+      "<span>Book a Consultation</span>"
+    ]
+  },
+  {
+    "file": "src/components/site/Layout.tsx",
+    "line": 137,
+    "contexts": [
+      "<small>{CONSULTATION_OFFER}</small>"
+    ]
+  },
+  {
+    "file": "src/components/site/Layout.tsx",
+    "line": 186,
+    "contexts": [
+      "{CONSULTATION_LABEL}"
+    ]
+  },
+  {
+    "file": "src/components/site/Layout.tsx",
+    "line": 237,
+    "contexts": [
+      "[\"/contact\", \"Contact & Consultation\"],"
+    ]
+  },
+  {
+    "file": "src/components/site/Layout.tsx",
+    "line": 266,
+    "contexts": [
+      "<Link to=\"/contact\">{CONSULTATION_OFFER}</Link>"
+    ]
+  },
+  {
+    "file": "src/content/blog/blog.html",
+    "line": 1,
+    "contexts": [
+      "</h1><p class=\"mx-auto mt-4 max-w-2xl text-base md:text-lg text-white/75\">Valuation, licensing, and market insight for anyone buying, selling, or leasing a restaurant in Los Angeles "
+    ]
+  },
+  {
+    "file": "src/content/blog/metadata.json",
+    "line": 499,
+    "contexts": [
+      "\"text\": \"Most independent LA restaurants sell for 1.5\u20133\u00d7 Seller's Discretionary Earnings, adjusted for lease term, license type, and how dependent the business is on the current owner. Discuss your restaurant in a $35, 30-minute consultation.\""
+    ]
+  },
+  {
+    "file": "src/content/blog/restaurant-valuation-los-angeles-2026.html",
+    "line": 1,
+    "contexts": [
+      "nt the business is on the current owner. Discuss your restaurant in a $35, 30-minute consultation.</p></details><details class=\"group rounded-xl border border-border bg-card p-5\"><sum",
+      "e business is on the current owner. Discuss your restaurant in a $35, 30-minute consultation.</p></details><details class=\"group rounded-xl border border-border bg-card p-5\"><summary class=",
+      " is on the current owner. Discuss your restaurant in a $35, 30-minute consultation.</p></details><details class=\"group rounded-xl border border-border bg-card p-5\"><summary class=\"flex cursor-"
+    ]
+  },
+  {
+    "file": "src/content/help/articles/selling-how-to-sell.ts",
+    "line": 91,
+    "contexts": [
+      "a: \"In LA, independent restaurants typically sell at 1.5\u20133\u00d7 Seller's Discretionary Earnings, adjusted for lease term, license type, and neighborhood. Discuss your restaurant in a $35, 30-minute consultation.\","
+    ]
+  }
+]

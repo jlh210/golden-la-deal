@@ -67,7 +67,7 @@ for path, page in pages.items():
     for node in walk(page.schemas):
         assert node.get('@type') != 'SearchAction', path
         if node.get('@type') == 'Service': assert node['provider'] == {'@id': ORG}, path
-        if node.get('@type') == 'Article':
+        if node.get('@type') == 'Article' and path.startswith('/help/'):
             assert node['publisher'] == {'@id': ORG}
             assert 'datePublished' not in node, path
             assert node.get('dateModified') == '2026-07-24', path

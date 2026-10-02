@@ -217,7 +217,9 @@ function HomePage() {
               <p className="pa-kicker">Los Angeles Restaurant Brokerage &amp; Advisory</p>
               <h1 id="home-title">
                 Restaurant Transactions, <br />
-                <em>Handled End-to-End.</em>
+                <em>
+                  Handled <span className="pa-no-break">End-to-End.</span>
+                </em>
               </h1>
               <p className="pa-hero-description">
                 Penthouse Advisors helps restaurant owners, buyers, sellers and operators navigate
@@ -235,8 +237,8 @@ function HomePage() {
             </div>
             <figure className="pa-hero-image">
               <img
-                src="/images/los-angeles-960.jpg"
-                srcSet="/images/los-angeles-640.jpg 426w, /images/los-angeles-960.jpg 640w"
+                src="/images/los-angeles-960.webp"
+                srcSet="/images/los-angeles-640.webp 426w, /images/los-angeles-960.webp 640w"
                 sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1199px) 38vw, 440px"
                 width={640}
                 height={960}

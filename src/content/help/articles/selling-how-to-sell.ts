@@ -88,7 +88,7 @@ export const article: Article = {
     },
     {
       q: "What is my restaurant worth?",
-      a: "In LA, independent restaurants typically sell at 1.5–3× Seller's Discretionary Earnings, adjusted for lease term, license type, and neighborhood. A no-cost valuation call gets you a defensible range.",
+      a: "In LA, independent restaurants typically sell at 1.5–3× Seller's Discretionary Earnings, adjusted for lease term, license type, and neighborhood. Discuss your restaurant in a $35, 30-minute consultation.",
     },
     {
       q: "Can I sell my restaurant without owning the building?",

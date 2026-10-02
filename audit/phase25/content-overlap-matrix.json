@@ -1,0 +1,102 @@
+[
+  {
+    "urlA": "/blog/second-generation-restaurant-space-explained",
+    "urlB": "/leasing-vacant-restaurants",
+    "intentA": "Explain second-generation premises and infrastructure checks",
+    "intentB": "Commercial representation for vacant restaurant leases",
+    "overlapAndRisk": "Medium / moderate",
+    "uniqueValue": "Blog: definition and equipment questions. Service: representation and inquiry.",
+    "futureRecommendation": "Define informational versus commercial targeting; retain both pending evidence.",
+    "decision": "DEFERRED TO PHASE 3"
+  },
+  {
+    "urlA": "/blog/second-generation-restaurant-space-explained",
+    "urlB": "/help/lease-assignments/restaurant-lease-assignment-guide",
+    "intentA": "Evaluate an existing restaurant space",
+    "intentB": "Understand lease assignment during a transaction",
+    "overlapAndRisk": "Low\u2013medium / low",
+    "uniqueValue": "Blog: physical premises. Help: contractual transfer and landlord coordination.",
+    "futureRecommendation": "Keep distinct intent; consider contextual cross-links later.",
+    "decision": "DEFERRED TO PHASE 3"
+  },
+  {
+    "urlA": "/blog/restaurant-buyer-due-diligence-checklist",
+    "urlB": "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+    "intentA": "Buyer pre-signing checklist",
+    "intentB": "Detailed acquisition due diligence checklist",
+    "overlapAndRisk": "High / high",
+    "uniqueValue": "Blog: narrative financial, equipment and health-history checks. Help: structured checklist and specific deal risks.",
+    "futureRecommendation": "Review Search Console queries, backlinks and unique sections before selecting a ranking owner.",
+    "decision": "DEFERRED TO PHASE 3"
+  },
+  {
+    "urlA": "/blog/restaurant-buyer-due-diligence-checklist",
+    "urlB": "/business-investigations",
+    "intentA": "Learn what to check before committing",
+    "intentB": "Engage investigative/advisory support",
+    "overlapAndRisk": "Medium / moderate",
+    "uniqueValue": "Blog: education. Commercial page: service scope and inquiry.",
+    "futureRecommendation": "Differentiate informational and hiring intent; propose parent link only in Phase 3.",
+    "decision": "DEFERRED TO PHASE 3"
+  },
+  {
+    "urlA": "/blog/type-41-vs-type-47-liquor-license-california",
+    "urlB": "/help/alcohol-licensing/abc-license-transfer-guide",
+    "intentA": "Compare license types and privileges",
+    "intentB": "Understand transfer workflow",
+    "overlapAndRisk": "Medium / moderate",
+    "uniqueValue": "Blog: license comparison and local approval context. Help: transfer process, timing and coordination.",
+    "futureRecommendation": "Retain distinct questions while reviewing overlapping regulatory assertions.",
+    "decision": "DEFERRED TO PHASE 3"
+  },
+  {
+    "urlA": "/blog/type-41-vs-type-47-liquor-license-california",
+    "urlB": "/alcohol-licensing",
+    "intentA": "Choose or understand a license type",
+    "intentB": "Seek licensing assistance",
+    "overlapAndRisk": "Medium / moderate",
+    "uniqueValue": "Blog: educational comparison. Service: commercial assistance.",
+    "futureRecommendation": "Assign comparison queries to the article and service queries to commercial page, subject to data.",
+    "decision": "DEFERRED TO PHASE 3"
+  },
+  {
+    "urlA": "/blog/restaurant-valuation-los-angeles-2026",
+    "urlB": "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+    "intentA": "Understand SDE valuation and value drivers",
+    "intentB": "Plan the complete sale process",
+    "overlapAndRisk": "Medium\u2013high / moderate",
+    "uniqueValue": "Blog: add-backs, worked valuation example and lease factors. Help: complete seller sequence.",
+    "futureRecommendation": "Keep valuation depth distinct from broad sale planning pending query analysis.",
+    "decision": "DEFERRED TO PHASE 3"
+  },
+  {
+    "urlA": "/blog/restaurant-valuation-los-angeles-2026",
+    "urlB": "/sell-your-restaurant",
+    "intentA": "Research valuation method and price range",
+    "intentB": "Hire restaurant sale representation",
+    "overlapAndRisk": "Medium\u2013high / moderate",
+    "uniqueValue": "Blog: valuation explanation. Service: sale preparation and representation.",
+    "futureRecommendation": "Use the seller page as commercial parent; no new valuation page.",
+    "decision": "DEFERRED TO PHASE 3"
+  },
+  {
+    "urlA": "/blog/best-la-neighborhoods-open-restaurant-2026",
+    "urlB": "/help/local-markets/restaurant-broker-beverly-hills",
+    "intentA": "Compare LA submarkets and concept fit",
+    "intentB": "Evaluate Beverly Hills acquisition considerations",
+    "overlapAndRisk": "Partial / low\u2013moderate",
+    "uniqueValue": "Blog: broad cross-market comparison. Help: one-market detail.",
+    "futureRecommendation": "Verify the specific Help destination against route inventory before future linking; no city-page expansion.",
+    "decision": "DEFERRED TO PHASE 3"
+  },
+  {
+    "urlA": "/blog/best-la-neighborhoods-open-restaurant-2026",
+    "urlB": "/buy-a-restaurant",
+    "intentA": "Research where to locate a concept",
+    "intentB": "Engage acquisition representation",
+    "overlapAndRisk": "Low\u2013medium / low",
+    "uniqueValue": "Blog: neighborhood comparison. Commercial page: buyer engagement.",
+    "futureRecommendation": "Use buyer service as future commercial parent.",
+    "decision": "DEFERRED TO PHASE 3"
+  }
+]

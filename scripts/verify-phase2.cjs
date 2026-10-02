@@ -39,7 +39,7 @@ const { JSDOM } = toolRequire("jsdom");
   assert.equal(doc.querySelectorAll(".pa-service-index article").length, 6);
   assert.equal(doc.querySelectorAll(".pa-process > li").length, 6);
   assert.equal(doc.querySelectorAll(".pa-guides article").length, 4);
-  assert(doc.querySelector('a[href="https://www.penthouseadvisors.com/blog"]'));
+  assert(doc.querySelector('a[href="/blog"]'));
   assert(!/\$75|45.minute/i.test(text(doc.body)));
   for (const selector of [".pa-hero .pa-button", ".pa-final .pa-button"]) {
     assert.equal(text(doc.querySelector(selector)), "Book a 30-Minute Consultation — $35");
@@ -50,7 +50,7 @@ const { JSDOM } = toolRequire("jsdom");
   ];
   for (const target of targets) assert.equal((await fetch(base + target)).status, 200, target);
   const assets = [...new Set([...doc.querySelectorAll("img")].map((i) => i.getAttribute("src")))];
-  assets.push("/images/los-angeles-640.jpg", "/android-chrome-512x512.png");
+  assets.push("/images/los-angeles-640.webp", "/android-chrome-512x512.png");
   for (const asset of assets) assert.equal((await fetch(base + asset)).status, 200, asset);
   const result = {
     result: "PASS",
@@ -61,7 +61,7 @@ const { JSDOM } = toolRequire("jsdom");
     assetsChecked: assets.length,
     checks:
       "SSR content, heading structure, canonical/title, FAQ parity, internal destinations, actual image assets, offer and Blog link",
-    visualQA: "Blocked: browser and native UI connection timeouts; layout not screenshot-verified",
+    visualQA: "See audit/phase25 visual QA evidence",
   };
   writeFileSync("audit/phase2-verification.json", JSON.stringify(result, null, 2) + "\n");
   console.log(JSON.stringify(result, null, 2));

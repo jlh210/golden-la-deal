@@ -1,0 +1,77 @@
+[
+  {
+    "path": "/agents",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/agents",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/agents",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/agents",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/agents",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/services",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/services",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/services",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/services",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/services",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "path": "/help/restaurant-leasing",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "path": "/help/restaurant-leasing",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "path": "/help/restaurant-leasing",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "path": "/help/restaurant-leasing",
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "path": "/help/restaurant-leasing",
+    "scroll": 1440,
+    "width": 1440
+  }
+]

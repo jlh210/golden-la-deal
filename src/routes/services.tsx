@@ -1,3 +1,4 @@
+import { CONSULTATION_LABEL } from "@/lib/consultation";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Phone } from "lucide-react";
 import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
@@ -24,7 +25,10 @@ export const Route = createFileRoute("/services")({
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/services" }],
     scripts: [
-      breadcrumbScript([{name:"Home",path:"/"},{name:'Services',path:'/services'}]),
+      breadcrumbScript([
+        { name: "Home", path: "/" },
+        { name: "Services", path: "/services" },
+      ]),
     ],
   }),
   component: ServicesPage,
@@ -43,7 +47,7 @@ function ServicesPage() {
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => (
             <Link
-              key={s.slug}
+              key={s.to}
               to={s.to}
               className="group rounded-xl border border-border bg-card p-7 hover:border-gold/60 transition shadow-elegant flex flex-col"
             >
@@ -65,11 +69,8 @@ function ServicesPage() {
         </div>
 
         <div className="mt-12 flex flex-wrap gap-3">
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-charcoal-deep shadow-gold"
-          >
-            Book a Consultation <ArrowRight className="h-4 w-4" />
+          <Link to="/contact" className="pa-button">
+            {CONSULTATION_LABEL} <ArrowRight className="h-4 w-4" />
           </Link>
           <a
             href={PHONE_HREF}

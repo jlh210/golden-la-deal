@@ -1,0 +1,27 @@
+{
+  "build": "PASS",
+  "typescript": "PASS",
+  "changedLintErrors": 0,
+  "changedLintWarnings": 1,
+  "fullLintErrors": 244,
+  "fullLintWarnings": 7,
+  "phase1ComponentTests": "PASS",
+  "productionSSRRoutes": 59,
+  "blogRoutes": 6,
+  "allRouteViewportChecks": 295,
+  "horizontalOverflowFailuresAfterFixes": 0,
+  "activeImageAssetsRestored": 9,
+  "lighthouseMobile": {
+    "performance": 86,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100
+  },
+  "fieldCoreWebVitals": "NOT VERIFIED",
+  "actualPaymentOrLiveBookingSubmission": "NOT VERIFIED \u2014 intentionally not performed",
+  "runtimeReducedMotionEmulation": "NOT VERIFIED; CSS rule reviewed",
+  "runtimeJavaScriptDisabled": "NOT VERIFIED; native details and SSR content checked",
+  "allSiteInternalLinksChecked": 73,
+  "supplementaryProductionOverflowRepeat": "NOT COMPLETE: 23 checks before browser timeouts; full source-browser run passed 295"
+}

@@ -1,3 +1,4 @@
+import { CONSULTATION_OFFER } from "@/lib/consultation";
 import { useEffect, useRef, useState } from "react";
 import { z } from "zod";
 import { Send, CheckCircle2, Phone, Loader2, Calendar } from "lucide-react";
@@ -21,7 +22,7 @@ type Stage = "form" | "calendly" | "booked";
 
 export function LeadForm({
   serviceNeeded,
-  title = "Book a Consultation",
+  title = CONSULTATION_OFFER,
   subtitle = "Tell us what you need. We respond same business day.",
   messagePlaceholder = "A few details on your situation…",
   extraFields,
@@ -197,8 +198,8 @@ export function LeadForm({
             Your inquiry has been received. An appointment has not yet been booked.
           </p>
           <p className="mt-2 text-muted-foreground leading-relaxed max-w-xl mx-auto">
-            Choose an available appointment in Calendly. If a consultation fee applies, follow the
-            payment instructions provided by Penthouse Advisors. This website does not verify
+            Choose an available appointment in Calendly for your $35, 30-minute consultation. Follow
+            the payment instructions provided by Penthouse Advisors. This website does not verify
             payment.
           </p>
         </div>
@@ -207,7 +208,7 @@ export function LeadForm({
           ref={calendlyRef}
           className="calendly-inline-widget mt-8 rounded-lg overflow-hidden border border-border"
           data-url={prefillUrl}
-          style={{ minWidth: 320, height: 700 }}
+          style={{ width: "100%", minWidth: 0, height: 700 }}
         />
 
         {!embedReady && (

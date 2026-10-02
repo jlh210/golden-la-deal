@@ -1,0 +1,92 @@
+[
+  {
+    "manifest": "dental-office-for-lease.png.asset.json",
+    "productionSource": "https://www.penthouseadvisors.com/assets/dental-office-for-lease-D929-QbN.png",
+    "localPath": "public/__l5e/assets-v1/74fb9b75-76ee-4c62-87de-86c044bf5038/dental-office-for-lease.png",
+    "url": "/__l5e/assets-v1/74fb9b75-76ee-4c62-87de-86c044bf5038/dental-office-for-lease.png",
+    "bytes": 796358,
+    "sha256": "39e51b126c284d48b319c12e9378d521b99184b9bb6c5b564f0c1d3068681fb1",
+    "verifiedStatus": 200,
+    "verifiedContentType": "image/png"
+  },
+  {
+    "manifest": "hardware-aisle.png.asset.json",
+    "productionSource": "https://www.penthouseadvisors.com/assets/hardware-aisle-B0yEA4tK.png",
+    "localPath": "public/__l5e/assets-v1/a00ce87b-dc9b-4b81-ba07-109d2135d548/hardware-aisle.png",
+    "url": "/__l5e/assets-v1/a00ce87b-dc9b-4b81-ba07-109d2135d548/hardware-aisle.png",
+    "bytes": 1356104,
+    "sha256": "287de6ee4e6ca178f11e548a95dbe2b1b50372b0c34765f56752c5e75fc0792f",
+    "verifiedStatus": 200,
+    "verifiedContentType": "image/png"
+  },
+  {
+    "manifest": "hardware-storefront.png.asset.json",
+    "productionSource": "https://www.penthouseadvisors.com/assets/hardware-storefront-BAAj8CBk.png",
+    "localPath": "public/__l5e/assets-v1/e723f71a-0cda-49a6-a63d-80944a78f1f3/hardware-storefront.png",
+    "url": "/__l5e/assets-v1/e723f71a-0cda-49a6-a63d-80944a78f1f3/hardware-storefront.png",
+    "bytes": 1173949,
+    "sha256": "277bb8335a8684fa61fc31d2dc3ddaaecad0cfb31d4c6c77963e5d9b70312ace",
+    "verifiedStatus": 200,
+    "verifiedContentType": "image/png"
+  },
+  {
+    "manifest": "santa-monica-1.png.asset.json",
+    "productionSource": "https://www.penthouseadvisors.com/assets/santa-monica-1-BuxnW7n7.png",
+    "localPath": "public/__l5e/assets-v1/394331f4-696d-4d9c-8db8-88db9b99b4d4/santa-monica-1.png",
+    "url": "/__l5e/assets-v1/394331f4-696d-4d9c-8db8-88db9b99b4d4/santa-monica-1.png",
+    "bytes": 938782,
+    "sha256": "4fcb15f090df4c241872d4515f7c1208016758f261457eb32f93544937fcd9bc",
+    "verifiedStatus": 200,
+    "verifiedContentType": "image/png"
+  },
+  {
+    "manifest": "santa-monica-2.png.asset.json",
+    "productionSource": "https://www.penthouseadvisors.com/assets/santa-monica-2-Kz3I5-aZ.png",
+    "localPath": "public/__l5e/assets-v1/c04c32bc-a3ca-429d-b468-e7ad0b2e1ef5/santa-monica-2.png",
+    "url": "/__l5e/assets-v1/c04c32bc-a3ca-429d-b468-e7ad0b2e1ef5/santa-monica-2.png",
+    "bytes": 1101959,
+    "sha256": "fd919301002e286916f160ff9d68b937be3ff3a64c49d9b6ed5817c0d1e12127",
+    "verifiedStatus": 200,
+    "verifiedContentType": "image/png"
+  },
+  {
+    "manifest": "wilshire-1.png.asset.json",
+    "productionSource": "https://www.penthouseadvisors.com/assets/wilshire-1-CwhkyxGJ.png",
+    "localPath": "public/__l5e/assets-v1/4616d007-94f4-44e9-b3af-28bfa3f0aa44/wilshire-1.png",
+    "url": "/__l5e/assets-v1/4616d007-94f4-44e9-b3af-28bfa3f0aa44/wilshire-1.png",
+    "bytes": 1699753,
+    "sha256": "ee184a8260a668bacd32da915c6a42b742d167a4f755d1938a18232e75755c9d",
+    "verifiedStatus": 200,
+    "verifiedContentType": "image/png"
+  },
+  {
+    "manifest": "wilshire-2.png.asset.json",
+    "productionSource": "https://www.penthouseadvisors.com/assets/wilshire-2-Da7hldQq.png",
+    "localPath": "public/__l5e/assets-v1/d4007413-d0c2-4def-9c26-a773eaae0ffc/wilshire-2.png",
+    "url": "/__l5e/assets-v1/d4007413-d0c2-4def-9c26-a773eaae0ffc/wilshire-2.png",
+    "bytes": 2026580,
+    "sha256": "7ce6246af5bb19d8f8f579819525aa514f0810f76022fb7908d79a34815cb2b1",
+    "verifiedStatus": 200,
+    "verifiedContentType": "image/png"
+  },
+  {
+    "manifest": "wilshire-3.png.asset.json",
+    "productionSource": "https://www.penthouseadvisors.com/assets/wilshire-3-BMdDSqQH.png",
+    "localPath": "public/__l5e/assets-v1/c297f29c-8b36-4f9f-8d2a-888f9b5cc29a/wilshire-3.png",
+    "url": "/__l5e/assets-v1/c297f29c-8b36-4f9f-8d2a-888f9b5cc29a/wilshire-3.png",
+    "bytes": 2136512,
+    "sha256": "cc99d43913ca1b9af01355f847de17469c78557cb71b401e862dac2a763c5818",
+    "verifiedStatus": 200,
+    "verifiedContentType": "image/png"
+  },
+  {
+    "manifest": "wilshire-4.png.asset.json",
+    "productionSource": "https://www.penthouseadvisors.com/assets/wilshire-4-8CLY3-Jf.png",
+    "localPath": "public/__l5e/assets-v1/f27b994a-6f7b-4c9c-96f9-6ce991f41f69/wilshire-4.png",
+    "url": "/__l5e/assets-v1/f27b994a-6f7b-4c9c-96f9-6ce991f41f69/wilshire-4.png",
+    "bytes": 2587540,
+    "sha256": "81f90d62db5ce3df47cead055937b47780362d866586008308191815610c7eaf",
+    "verifiedStatus": 200,
+    "verifiedContentType": "image/png"
+  }
+]

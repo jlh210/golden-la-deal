@@ -1,3 +1,4 @@
+import { CONSULTATION_LABEL } from "@/lib/consultation";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import * as Lucide from "lucide-react";
 import { SiteLayout } from "@/components/site/Layout";
@@ -5,11 +6,7 @@ import { Breadcrumbs } from "@/components/help/Breadcrumbs";
 import { CTASection } from "@/components/site/CTASection";
 import { getCategory, categories } from "@/content/help";
 import type { Article } from "@/content/help/types";
-import {
-  breadcrumbScript,
-  collectionScript,
-  SITE_URL,
-} from "@/lib/seo";
+import { breadcrumbScript, collectionScript, SITE_URL } from "@/lib/seo";
 
 export const Route = createFileRoute("/help/$category/")({
   loader: ({ params }) => {
@@ -87,12 +84,7 @@ function CategoryPage() {
   return (
     <SiteLayout>
       <div className="container-x py-10 md:py-14">
-        <Breadcrumbs
-          crumbs={[
-            { label: "Help Center", to: "/help" },
-            { label: category.title },
-          ]}
-        />
+        <Breadcrumbs crumbs={[{ label: "Help Center", to: "/help" }, { label: category.title }]} />
 
         <header className="mt-6 flex items-start gap-5 max-w-3xl">
           <div className="grid h-14 w-14 shrink-0 place-items-center rounded-md border border-gold/30 bg-gold/10 text-gold">
@@ -115,14 +107,11 @@ function CategoryPage() {
             {category.articles.length === 0 ? (
               <div className="mt-4 rounded-xl border border-dashed border-border bg-card p-8 text-center">
                 <p className="text-sm text-muted-foreground">
-                  Guides on this topic are being published. In the meantime, our team is
-                  the fastest way to get answers.
+                  Guides on this topic are being published. In the meantime, our team is the fastest
+                  way to get answers.
                 </p>
-                <Link
-                  to="/contact"
-                  className="mt-5 inline-flex items-center gap-2 rounded-md bg-gold-gradient px-5 py-2.5 text-sm font-bold text-charcoal-deep shadow-gold"
-                >
-                  Book a Consultation
+                <Link to="/contact" className="mt-5 pa-button">
+                  {CONSULTATION_LABEL}
                 </Link>
               </div>
             ) : (
@@ -139,9 +128,7 @@ function CategoryPage() {
                       <p className="mt-1.5 text-sm text-muted-foreground line-clamp-2">
                         {a.description}
                       </p>
-                      <p className="mt-2 text-xs text-muted-foreground">
-                        {a.readMinutes} min read
-                      </p>
+                      <p className="mt-2 text-xs text-muted-foreground">{a.readMinutes} min read</p>
                     </div>
                     <Lucide.ArrowRight className="h-4 w-4 shrink-0 mt-1 text-gold transition group-hover:translate-x-0.5" />
                   </Link>

@@ -48,9 +48,9 @@ const serviceGroups = [
 function Brand() {
   return (
     <Link to="/" className="pa-brand" aria-label="Penthouse Advisors — Home">
-      <img src="/images/brand-mark.png" width={96} height={96} alt="" />
+      <img src="/images/brand-mark.webp" width={96} height={96} alt="" />
       <span>
-        Penthouse<span>Advisors</span>
+        Penthouse <span>Advisors</span>
       </span>
     </Link>
   );
@@ -128,7 +128,11 @@ function Header() {
             ),
           )}
         </nav>
-        <Link to="/contact" className="pa-header-book" aria-label={CONSULTATION_LABEL}>
+        <Link
+          to="/contact"
+          className="pa-header-book"
+          aria-label={`Book a Consultation — ${CONSULTATION_OFFER}`}
+        >
           <span>Book a Consultation</span>
           <small>{CONSULTATION_OFFER}</small>
         </Link>
@@ -237,7 +241,7 @@ function Footer() {
                 </li>
               ))}
               <li>
-                <a href="https://www.penthouseadvisors.com/blog">
+                <a href="/blog">
                   Restaurant Insights / Blog <ArrowUpRight size={13} aria-hidden="true" />
                 </a>
               </li>
