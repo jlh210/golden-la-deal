@@ -26,20 +26,17 @@ export const article: Article = {
     { type: "h2", text: "What a lease assignment actually is" },
     {
       type: "p",
-      text:
-        "An assignment transfers the existing lease from the seller (assignor) to the buyer (assignee). The lease terms usually stay the same — rent, term, use clause, options — but the tenant on the paper changes. Assignments are different from a sublease (where the seller stays on the hook) and different from a brand-new lease (where you negotiate everything from scratch).",
+      text: "An assignment transfers the existing lease from the seller (assignor) to the buyer (assignee). The lease terms usually stay the same — rent, term, use clause, options — but the tenant on the paper changes. Assignments are different from a sublease (where the seller stays on the hook) and different from a brand-new lease (where you negotiate everything from scratch).",
     },
     { type: "h2", text: "Why landlords slow assignments down" },
     {
       type: "p",
-      text:
-        "Consent gives the landlord a rare chance to reprice or reshape the lease mid-term. Expect requests for a rent increase, an extended term, a stronger personal guaranty, additional security deposit, or a share of the sale proceeds ('recapture' or 'profit participation'). Every one of these is negotiable.",
+      text: "Consent gives the landlord a rare chance to reprice or reshape the lease mid-term. Expect requests for a rent increase, an extended term, a stronger personal guaranty, additional security deposit, or a share of the sale proceeds ('recapture' or 'profit participation'). Every one of these is negotiable.",
     },
     { type: "h2", text: "The assignment package" },
     {
       type: "p",
-      text:
-        "Landlords will ask for a package on the assignee. A tight package speeds consent:",
+      text: "Landlords will ask for a package on the assignee. A tight package speeds consent:",
     },
     {
       type: "ul",
@@ -65,8 +62,7 @@ export const article: Article = {
     { type: "h2", text: "Rent abatement during build-out" },
     {
       type: "p",
-      text:
-        "If you're renovating, permitting, or waiting on ABC, negotiate abated or reduced rent tied to real milestones — Health Dept permit issuance, ABC license issuance, or doors-open day. Landlords grant abatement more readily than a permanent rent reduction because the loss is defined.",
+      text: "If you're renovating, permitting, or waiting on ABC, negotiate abated or reduced rent tied to real milestones — Health Dept permit issuance, ABC license issuance, or doors-open day. Landlords grant abatement more readily than a permanent rent reduction because the loss is defined.",
     },
     { type: "h2", text: "Consent conditions to watch" },
     {
@@ -97,9 +93,16 @@ export const article: Article = {
       a: "Yes. Abatement is granted in the assignment consent document, not the original lease. If you're bringing a qualified tenant to a landlord who wants the deal done, abatement tied to permit milestones is one of the most successful asks we make.",
     },
   ],
+  commercialParent: {
+    to: "/assignments-rent-abatement",
+    title: "Lease assignment and rent abatement support",
+  },
   related: [
-    { category: "buying-a-restaurant", slug: "how-to-buy-a-restaurant-in-los-angeles", title: "How to Buy a Restaurant in Los Angeles" },
-    { category: "lease-assignments", slug: "restaurant-lease-assignment-guide", title: "Restaurant Lease Assignment Guide" },
-    { category: "restaurant-leasing", slug: "restaurant-leasing-overview", title: "Restaurant Leasing in Los Angeles" },
+    {
+      to: "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+      title: "How to Buy a Restaurant in Los Angeles",
+    },
+
+    { to: "/restaurant-leasing", title: "Restaurant Leasing in Los Angeles" },
   ],
 };

@@ -1,22 +1,42 @@
+import { buildServiceJsonLd } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { TrendingUp, Lock, Handshake } from "lucide-react";
-import { ServiceLanding, buildServiceJsonLd } from "@/components/site/ServiceLanding";
+import { ServiceLanding } from "@/components/site/ServiceLanding";
 
 const URL = "https://www.penthouseadvisors.com/sell-your-restaurant";
 const FAQS = [
-  { q: "How do you value my restaurant?", a: "We blend a sales multiple, an SDE/EBITDA multiple, replacement cost on FF&E, and the option value of any transferable ABC license and grandfathered lease terms. You get a defensible range, not a guess." },
-  { q: "Will my staff and customers find out it's for sale?", a: "No. We market confidentially — blind teasers, NDAs before any address or P&L, and qualified-buyer-only showings outside operating hours." },
-  { q: "What's your commission?", a: "Discussed on the consultation call once we've reviewed your lease, P&L, and license posture. We quote a flat, transparent fee structure." },
-  { q: "Can you sell the liquor license separately?", a: "Often yes. If the business doesn't sell as a whole, a Type 41/47 can be transferred to a separate buyer — see our Liquor License For Sale page." },
+  {
+    q: "How do you value my restaurant?",
+    a: "We blend a sales multiple, an SDE/EBITDA multiple, replacement cost on FF&E, and the option value of any transferable ABC license and grandfathered lease terms. You get a defensible range, not a guess.",
+  },
+  {
+    q: "Will my staff and customers find out it's for sale?",
+    a: "No. We market confidentially — blind teasers, NDAs before any address or P&L, and qualified-buyer-only showings outside operating hours.",
+  },
+  {
+    q: "What's your commission?",
+    a: "Discussed on the consultation call once we've reviewed your lease, P&L, and license posture. We quote a flat, transparent fee structure.",
+  },
+  {
+    q: "Can you sell the liquor license separately?",
+    a: "Often yes. If the business doesn't sell as a whole, a Type 41/47 can be transferred to a separate buyer — see our Liquor License For Sale page.",
+  },
 ];
 
 export const Route = createFileRoute("/sell-your-restaurant")({
   head: () => ({
     meta: [
       { title: "Sell My Restaurant in Los Angeles | Penthouse Advisors" },
-      { name: "description", content: "Sell your restaurant in Los Angeles County confidentially. Valuation, qualified-buyer marketing, lease assignment, ABC transfer, and escrow — handled end to end." },
+      {
+        name: "description",
+        content:
+          "Sell your restaurant in Los Angeles County confidentially. Valuation, qualified-buyer marketing, lease assignment, ABC transfer, and escrow — handled end to end.",
+      },
       { property: "og:title", content: "Sell My Restaurant in Los Angeles | Penthouse Advisors" },
-      { property: "og:description", content: "Confidential restaurant dispositions across LA County." },
+      {
+        property: "og:description",
+        content: "Confidential restaurant dispositions across LA County.",
+      },
       { property: "og:url", content: URL },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -48,14 +68,38 @@ function SellPage() {
       h1="Sell My Restaurant in Los Angeles"
       overview="Selling a restaurant is not a yard-sign exercise. We position your business with a defensible valuation, market it confidentially to qualified operators and investors, and manage every moving piece — lease assignment, ABC license transfer, equipment schedules, escrow — all the way to funded close."
       benefits={[
-        { icon: TrendingUp, title: "Defensible Valuation", body: "Multiple methodologies blended — not a single number pulled out of the air." },
-        { icon: Lock, title: "Confidential Marketing", body: "Blind teasers, NDAs, qualified-buyer showings. Your staff and customers stay focused on running the business." },
-        { icon: Handshake, title: "Clean Close", body: "Lease assignment, ABC transfer, escrow, and Health clearance — sequenced in parallel." },
+        {
+          icon: TrendingUp,
+          title: "Defensible Valuation",
+          body: "Multiple methodologies blended — not a single number pulled out of the air.",
+        },
+        {
+          icon: Lock,
+          title: "Confidential Marketing",
+          body: "Blind teasers, NDAs, qualified-buyer showings. Your staff and customers stay focused on running the business.",
+        },
+        {
+          icon: Handshake,
+          title: "Clean Close",
+          body: "Lease assignment, ABC transfer, escrow, and Health clearance — sequenced in parallel.",
+        },
       ]}
       process={[
-        { step: "01", title: "Valuation", body: "We review lease, P&L, license posture, equipment, and lease term remaining. You get a defensible price range." },
-        { step: "02", title: "Confidential Marketing", body: "Blind teaser to our buyer network. NDA-gated information memorandum. Qualified showings only." },
-        { step: "03", title: "Close", body: "Negotiate, escrow, transfer license, assign lease, deliver keys — funded." },
+        {
+          step: "01",
+          title: "Valuation",
+          body: "We review lease, P&L, license posture, equipment, and lease term remaining. You get a defensible price range.",
+        },
+        {
+          step: "02",
+          title: "Confidential Marketing",
+          body: "Blind teaser to our buyer network. NDA-gated information memorandum. Qualified showings only.",
+        },
+        {
+          step: "03",
+          title: "Close",
+          body: "Negotiate, escrow, transfer license, assign lease, deliver keys — funded.",
+        },
       ]}
       faqs={FAQS}
       related={[

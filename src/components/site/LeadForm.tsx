@@ -42,6 +42,8 @@ export function LeadForm({
     null,
   );
   const [embedReady, setEmbedReady] = useState(false);
+  const [bookingSyncFailed, setBookingSyncFailed] = useState(false);
+  const bookingHandled = useRef(false);
   const calendlyRef = useRef<HTMLDivElement>(null);
 
   const send = useServerFn(submitLead);
@@ -76,6 +78,8 @@ export function LeadForm({
 
     function isCalendlyEvent(e: MessageEvent) {
       return (
+        e.origin === "https://calendly.com" &&
+        e.source === calendlyRef.current?.querySelector("iframe")?.contentWindow &&
         typeof e.data === "object" &&
         e.data !== null &&
         "event" in e.data &&
@@ -93,17 +97,25 @@ export function LeadForm({
           invitee?: { uri?: string };
         };
       };
-      if (payload.event === "calendly.event_scheduled" && submitted) {
+      if (
+        payload.event === "calendly.event_scheduled" &&
+        submitted &&
+        payload.payload?.event?.uri &&
+        !bookingHandled.current
+      ) {
+        bookingHandled.current = true;
         try {
-          await mark({
+          const result = await mark({
             data: {
               email: submitted.email,
               eventUri: payload.payload?.event?.uri ?? "",
               startTime: payload.payload?.event?.start_time ?? "",
             },
           });
+          setBookingSyncFailed(!result.ok);
         } catch (err) {
           console.error("Failed to mark lead booked", err);
+          setBookingSyncFailed(true);
         }
         setStage("booked");
       }
@@ -152,12 +164,18 @@ export function LeadForm({
       <div className="rounded-2xl border border-gold/40 bg-card p-10 text-center shadow-elegant animate-in fade-in slide-in-from-bottom-2 duration-500">
         <CheckCircle2 className="mx-auto h-12 w-12 text-gold" />
         <h3 className="mt-4 text-3xl font-display font-bold">
-          Your Advisory Call Has Been Scheduled.
+          Calendly Has Confirmed Your Appointment.
         </h3>
         <p className="mt-4 text-muted-foreground leading-relaxed">
-          Thank you. Your private advisory call has been booked, and our team will review your
-          inquiry before the meeting.
+          Check your Calendly confirmation for appointment details. Scheduling does not confirm
+          payment; this website cannot verify a payment.
         </p>
+        {bookingSyncFailed && (
+          <p role="status" className="mt-4 text-sm">
+            Your appointment was scheduled in Calendly, but we could not update the inquiry record.
+            Please call us to confirm the team has your appointment details.
+          </p>
+        )}
         <a
           href={PHONE_HREF}
           className="mt-6 inline-flex items-center gap-2 rounded-md bg-gold-gradient px-6 py-3 text-sm font-bold text-charcoal-deep shadow-gold"
@@ -176,11 +194,12 @@ export function LeadForm({
           <CheckCircle2 className="mx-auto h-10 w-10 text-gold" />
           <h3 className="mt-3 text-3xl font-display font-bold">Thank You for Your Inquiry.</h3>
           <p className="mt-3 text-muted-foreground leading-relaxed max-w-xl mx-auto">
-            Your information has been received successfully.
+            Your inquiry has been received. An appointment has not yet been booked.
           </p>
           <p className="mt-2 text-muted-foreground leading-relaxed max-w-xl mx-auto">
-            The next step is to schedule your 30-minute private advisory call so we can discuss your
-            restaurant goals, answer your questions, and determine the best path forward.
+            Choose an available appointment in Calendly. If a consultation fee applies, follow the
+            payment instructions provided by Penthouse Advisors. This website does not verify
+            payment.
           </p>
         </div>
 

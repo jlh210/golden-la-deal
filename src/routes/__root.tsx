@@ -1,3 +1,4 @@
+import { SITE_URL, ORG_ID, WEBSITE_ID } from "@/lib/seo";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
@@ -11,7 +12,6 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-
 
 function NotFoundComponent() {
   return (
@@ -59,10 +59,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
           >
             Try again
           </button>
-          <a
-            href="/"
-            className="rounded-md border border-border px-4 py-2 text-sm font-medium"
-          >
+          <a href="/" className="rounded-md border border-border px-4 py-2 text-sm font-medium">
             Go home
           </a>
         </div>
@@ -83,7 +80,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Penthouse Advisors: Los Angeles restaurant brokerage, consulting, permitting, licensing, and ADA compliance. Buy, sell, lease, license, and rescue restaurants across LA County. Call 310-663-3521.",
       },
       { name: "author", content: "Penthouse Advisors Inc." },
-      { name: "keywords", content: "Los Angeles restaurant broker, restaurant consulting LA, restaurant permits Los Angeles, restaurant licensing LA, ADA compliance restaurant, liquor license transfer LA, commercial restaurant leasing Los Angeles, restaurants for sale Los Angeles" },
+      {
+        name: "keywords",
+        content:
+          "Los Angeles restaurant broker, restaurant consulting LA, restaurant permits Los Angeles, restaurant licensing LA, ADA compliance restaurant, liquor license transfer LA, commercial restaurant leasing Los Angeles, restaurants for sale Los Angeles",
+      },
       { name: "robots", content: "index, follow" },
       { name: "theme-color", content: "#c9a24a" },
       { property: "og:site_name", content: "Penthouse Advisors Inc." },
@@ -115,12 +116,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@graph": [
             {
               "@type": ["Organization", "ProfessionalService", "LocalBusiness"],
-              "@id": "https://www.penthouseadvisors.com/#organization",
+              "@id": ORG_ID,
               name: "Penthouse Advisors Inc.",
               alternateName: "Penthouse Advisors",
               description:
                 "Full-service restaurant brokerage, consulting, licensing, permitting, and ADA compliance advisory firm serving Los Angeles County.",
-              url: "https://www.penthouseadvisors.com",
+              url: SITE_URL,
               logo: {
                 "@type": "ImageObject",
                 url: "https://www.penthouseadvisors.com/android-chrome-512x512.png",
@@ -130,26 +131,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               image: "https://www.penthouseadvisors.com/android-chrome-512x512.png",
               telephone: "+1-310-663-3521",
               email: "PenthouseAdvisors@gmail.com",
-              priceRange: "$$$",
               areaServed: [
                 { "@type": "AdministrativeArea", name: "Los Angeles County" },
                 { "@type": "City", name: "Los Angeles" },
               ],
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Los Angeles",
-                addressRegion: "CA",
-                addressCountry: "US",
-              },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: 34.0522,
-                longitude: -118.2437,
-              },
               foundingDate: "2021",
-              sameAs: [
-                "https://www.google.com/maps?q=Penthouse+Advisors+Los+Angeles",
-              ],
               knowsAbout: [
                 "Restaurant Brokerage",
                 "Restaurant Consulting",
@@ -164,7 +150,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               openingHoursSpecification: [
                 {
                   "@type": "OpeningHoursSpecification",
-                  dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday",
+                  ],
                   opens: "08:00",
                   closes: "19:00",
                 },
@@ -172,26 +166,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             },
             {
               "@type": "WebSite",
-              "@id": "https://www.penthouseadvisors.com/#website",
-              url: "https://www.penthouseadvisors.com",
+              "@id": WEBSITE_ID,
+              url: SITE_URL,
               name: "Penthouse Advisors",
-              publisher: { "@id": "https://www.penthouseadvisors.com/#organization" },
+              publisher: { "@id": ORG_ID },
               inLanguage: "en-US",
-              potentialAction: {
-                "@type": "SearchAction",
-                target: {
-                  "@type": "EntryPoint",
-                  urlTemplate: "https://www.penthouseadvisors.com/restaurants-for-sale?q={search_term_string}",
-                },
-                "query-input": "required name=search_term_string",
-              },
             },
           ],
         }),
       },
     ],
   }),
-
 
   shellComponent: RootShell,
   component: RootComponent,

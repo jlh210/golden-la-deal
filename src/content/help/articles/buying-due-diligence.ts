@@ -25,8 +25,7 @@ export const article: Article = {
     { type: "h2", text: "Why due diligence matters" },
     {
       type: "p",
-      text:
-        "A restaurant looks the same from the sidewalk whether it's clean or riddled with liabilities. Due diligence is the process of getting behind the sidewalk view — verifying the lease, the license, the permits, the numbers, and the equipment — before your deposit becomes non-refundable.",
+      text: "A restaurant looks the same from the sidewalk whether it's clean or riddled with liabilities. Due diligence is the process of getting behind the sidewalk view — verifying the lease, the license, the permits, the numbers, and the equipment — before your deposit becomes non-refundable.",
     },
     { type: "h2", text: "1. Lease review" },
     {
@@ -122,9 +121,16 @@ export const article: Article = {
       a: "You can pull most public records yourself, but the interpretation — what a CUB condition actually forbids, whether a lease's assignment clause is workable, whether the sales numbers reconcile — is where experienced advisors save buyers six figures.",
     },
   ],
+  commercialParent: { to: "/business-investigations", title: "Restaurant due diligence services" },
   related: [
-    { category: "buying-a-restaurant", slug: "how-to-buy-a-restaurant-in-los-angeles", title: "How to Buy a Restaurant in Los Angeles" },
-    { category: "business-investigations", slug: "what-is-a-restaurant-business-investigation", title: "What Is a Restaurant Business Investigation?" },
-    { category: "lease-assignments", slug: "restaurant-lease-assignment-guide", title: "Restaurant Lease Assignment Guide" },
+    {
+      to: "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+      title: "How to Buy a Restaurant in Los Angeles",
+    },
+    { to: "/buy-a-restaurant", title: "Restaurant acquisition advisory" },
+    {
+      to: "/help/lease-assignments/restaurant-lease-assignment-guide",
+      title: "Restaurant Lease Assignment Guide",
+    },
   ],
 };

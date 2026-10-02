@@ -2,12 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/Layout";
 import { ArticleTemplate } from "@/components/help/ArticleTemplate";
 import { getArticle } from "@/content/help";
-import {
-  articleScript,
-  breadcrumbScript,
-  faqScript,
-  SITE_URL,
-} from "@/lib/seo";
+import { articleScript, breadcrumbScript, faqScript, SITE_URL } from "@/lib/seo";
 
 export const Route = createFileRoute("/help/$category/$slug")({
   loader: ({ params }) => {
@@ -49,7 +44,8 @@ export const Route = createFileRoute("/help/$category/$slug")({
           headline: article.title,
           description: article.description,
           path,
-          datePublished: article.updatedAt,
+          datePublished: article.publishedAt,
+          dateModified: article.updatedAt,
         }),
         ...(article.faqs.length ? [faqScript(article.faqs)] : []),
       ],

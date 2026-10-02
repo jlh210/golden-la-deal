@@ -15,12 +15,14 @@ export type Article = {
   seoTitle: string;
   description: string;
   keywords: string[];
-  updatedAt: string; // ISO date
+  publishedAt?: string; // Only when the original publication date is known.
+  updatedAt: string; // Recorded editorial update date; never inferred as publication.
   readMinutes: number;
   keyTakeaways: string[];
   sections: Section[];
   faqs: FAQ[];
-  related?: { category: string; slug: string; title: string }[];
+  commercialParent: { to: string; title: string };
+  related?: { to: string; title: string }[];
 };
 
 export type Category = {

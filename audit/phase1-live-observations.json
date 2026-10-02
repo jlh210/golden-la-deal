@@ -1,0 +1,2664 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "finalUrl": "https://www.penthouseadvisors.com/",
+    "links": [
+      "https://penthouseadvisors.com/",
+      "/",
+      "/",
+      "/services",
+      "/restaurants-for-sale",
+      "/buy-a-restaurant",
+      "/sell-your-restaurant",
+      "/restaurant-leasing",
+      "/licensing-and-permits",
+      "/restaurant-consulting",
+      "/commercial-property-management",
+      "/liquor-license-for-sale",
+      "/health-inspection",
+      "/health-permitting",
+      "/leasing-vacant-restaurants",
+      "/assignments-rent-abatement",
+      "/business-investigations",
+      "/buyer-tenant-resolutions",
+      "/grandfather-protection",
+      "/vermin-inspections",
+      "/search-door-knocking",
+      "/e2-visa-europe",
+      "/alcohol-licensing",
+      "/help",
+      "/about",
+      "/contact",
+      "tel:+13106633521",
+      "/contact",
+      "/contact",
+      "/services",
+      "/services",
+      "/restaurants-for-sale",
+      "/alcohol-licensing",
+      "/health-inspection",
+      "/assignments-rent-abatement",
+      "/contact",
+      "/contact",
+      "tel:+13106633521",
+      "tel:+13106633521",
+      "mailto:PenthouseAdvisors@gmail.com",
+      "/agents",
+      "/buy-a-restaurant",
+      "/sell-your-restaurant",
+      "/restaurants-for-sale",
+      "/restaurant-leasing",
+      "/licensing-and-permits",
+      "/restaurant-consulting",
+      "/alcohol-licensing",
+      "/liquor-license-for-sale",
+      "/health-inspection",
+      "/health-permitting",
+      "/leasing-vacant-restaurants",
+      "/assignments-rent-abatement",
+      "/business-investigations",
+      "/buyer-tenant-resolutions",
+      "/search-door-knocking",
+      "/e2-visa-europe",
+      "/grandfather-protection",
+      "/vermin-inspections",
+      "/blog",
+      "/contact",
+      "/contact"
+    ],
+    "meta": [
+      {
+        "charset": "utf-8"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1"
+      },
+      {
+        "name": "author",
+        "content": "Penthouse Advisors Inc."
+      },
+      {
+        "name": "keywords",
+        "content": "Los Angeles restaurant broker, restaurant consulting LA, restaurant permits Los Angeles, restaurant licensing LA, ADA compliance restaurant, liquor license transfer LA, commercial restaurant leasing Los Angeles, restaurants for sale Los Angeles"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow"
+      },
+      {
+        "name": "theme-color",
+        "content": "#c9a24a"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Penthouse Advisors Inc."
+      },
+      {
+        "property": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "name": "twitter:site",
+        "content": "@penthouseadv"
+      },
+      {
+        "name": "description",
+        "content": "Los Angeles restaurant brokerage, consulting, permitting, licensing, and ADA compliance. Buy, sell, lease, and license restaurants across LA County under one roof."
+      },
+      {
+        "property": "og:title",
+        "content": "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors"
+      },
+      {
+        "property": "og:description",
+        "content": "Restaurant brokerage, consulting, licensing, permitting, and ADA compliance for Los Angeles County. One firm, full service."
+      },
+      {
+        "property": "og:url",
+        "content": "https://www.penthouseadvisors.com"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors"
+      },
+      {
+        "name": "twitter:description",
+        "content": "Restaurant brokerage, consulting, licensing, permitting & ADA compliance for LA County."
+      }
+    ],
+    "canonical": [
+      "https://www.penthouseadvisors.com"
+    ],
+    "headings": [
+      "Penthouse Advisors Inc.Los Angeles County\u2019s PremierRestaurant & Business Advisory Firm"
+    ],
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": [
+              "Organization",
+              "ProfessionalService",
+              "LocalBusiness"
+            ],
+            "@id": "https://www.penthouseadvisors.com/#organization",
+            "name": "Penthouse Advisors Inc.",
+            "alternateName": "Penthouse Advisors",
+            "description": "Full-service restaurant brokerage, consulting, licensing, permitting, and ADA compliance advisory firm serving Los Angeles County.",
+            "url": "https://www.penthouseadvisors.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.penthouseadvisors.com/android-chrome-512x512.png",
+              "width": 512,
+              "height": 512
+            },
+            "image": "https://www.penthouseadvisors.com/android-chrome-512x512.png",
+            "telephone": "+1-310-663-3521",
+            "email": "PenthouseAdvisors@gmail.com",
+            "priceRange": "$$$",
+            "areaServed": [
+              {
+                "@type": "AdministrativeArea",
+                "name": "Los Angeles County"
+              },
+              {
+                "@type": "City",
+                "name": "Los Angeles"
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Los Angeles",
+              "addressRegion": "CA",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 34.0522,
+              "longitude": -118.2437
+            },
+            "foundingDate": "2021",
+            "sameAs": [
+              "https://www.google.com/maps?q=Penthouse+Advisors+Los+Angeles"
+            ],
+            "knowsAbout": [
+              "Restaurant Brokerage",
+              "Restaurant Consulting",
+              "Restaurant Acquisitions",
+              "Restaurant Dispositions",
+              "Commercial Restaurant Leasing",
+              "Alcohol Licensing",
+              "Health Department Permitting",
+              "ADA Compliance",
+              "Hospitality Consulting"
+            ],
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "08:00",
+                "closes": "19:00"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.penthouseadvisors.com/#website",
+            "url": "https://www.penthouseadvisors.com",
+            "name": "Penthouse Advisors",
+            "publisher": {
+              "@id": "https://www.penthouseadvisors.com/#organization"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.penthouseadvisors.com/restaurants-for-sale?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      }
+    ],
+    "text": [
+      "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors",
+      "Penthouse Advisors Inc.",
+      "\u00b7",
+      "LA Restaurant Business Brokerage",
+      "\u00b7",
+      "Restaurant & Business For Sale L A County",
+      "Penthouse",
+      "Advisors",
+      "Inc.",
+      "Home",
+      "Services",
+      "Restaurants & Businesses for Sale/Lease, L A County",
+      "Buy a Restaurant",
+      "Sell Your Restaurant",
+      "Restaurant Leasing",
+      "Licensing & Permits",
+      "Restaurant Consulting",
+      "Commercial Property Management",
+      "Liquor License For Sale",
+      "Health Dept Inspection",
+      "Blueprints, Plan-Check Approval, Permits",
+      "Leasing Vacant Restaurants",
+      "Assignments & Rent Abatement",
+      "Business Investigations",
+      "Buyer / Tenant Resolutions",
+      "Grandfather Protection",
+      "Vermin Inspections",
+      "Off-Market Door-Knocking",
+      "E-2 Visa (Europe)",
+      "Restaurant Alcohol Licensing",
+      "Help",
+      "About",
+      "Contact",
+      "310-663-3521",
+      "Book a Consultation",
+      "Penthouse Advisors Inc., Serving Los Angeles County",
+      "Penthouse Advisors Inc.",
+      "Los Angeles County\u2019s Premier",
+      "Restaurant & Business Advisory Firm",
+      "Serving Los Angeles County with expert restaurant brokerage, licensing, leasing, permitting, consulting, and transaction management\u2014from first opportunity to final closing.",
+      "Speak Directly to an Expert Now!",
+      "Explore Our Services",
+      "2021",
+      "Established",
+      "3",
+      "Principal Owners",
+      "LA County",
+      "Exclusively Served",
+      "One Roof",
+      "Full-Service Firm",
+      "Trusted Advisory",
+      "\"One trusted partner for every stage of the restaurant lifecycle.\"",
+      "Est. 2021",
+      "Licensed Brokers",
+      "LA County",
+      "Principal-Led",
+      "What We Do",
+      "One firm for every stage of your restaurant.",
+      "See all services \u2192",
+      "For Sale/Lease Restaurant & Business, L A County",
+      "Confidential buy/sell brokerage with full disclosure across LA County.",
+      "Learn more",
+      "Restaurant Alcohol Licensing",
+      "Type 41 Beer & Wine, Type 47 Hard Liquor - transfers, new, CUB diversion.",
+      "Learn more",
+      "Health Dept Inspection & Permitting",
+      "Pre-inspections, red-tag removal, blueprints, hood cleaning, reopen.",
+      "Learn more",
+      "Assignments & Rent Abatement",
+      "Lease assignments and rent-relief tied to permits or opening day.",
+      "Learn more",
+      "How It Works",
+      "Three steps. No runaround.",
+      "01",
+      "Consult",
+      "Tell us where you are - buying, selling, opening, or in trouble. We listen, we diagnose, we quote a plan.",
+      "02",
+      "Strategy",
+      "We build the move: valuation, licensing path, lease angle, or rescue plan. Clear timeline. Real numbers.",
+      "03",
+      "Done",
+      "We execute. Escrow closes, license issues, doors open, red tag comes down. You run your restaurant.",
+      "Book a consultation",
+      "Are you a restaurant owner in need of assistance with a real restaurant problem?",
+      "We buy, sell, lease, license, and rescue restaurants across LA County. One call. One team. Start to close.",
+      "Book a Consultation",
+      "310-663-3521",
+      "Penthouse",
+      "Advisors",
+      "Inc.",
+      "A sophisticated, full-service restaurant advisory and brokerage firm. Servicing Los Angeles County since 2021.",
+      "Do It Now.",
+      "310-663-3521",
+      "PenthouseAdvisors@gmail.com",
+      "8:00am \u2013 7:00pm \u00b7 Mon\u2013Sun",
+      "Ownership",
+      "Roschard Paticchio-Stein",
+      "CEO / Owner / Business Agent",
+      "DRE #02203003",
+      "Richard Stein",
+      "COO / Business Advisor / Owner",
+      "Rosanna Paticchio",
+      "CFO / Broker of Record",
+      "DRE #02332697",
+      "Agents",
+      "Roschard Paticchio-Stein",
+      "CEO \u00b7 Owner \u00b7 Business Agent",
+      "DRE #02203003",
+      "Jamal Ali Joseph",
+      "Business Agent",
+      "DRE #02417938",
+      "Jeremie Campbell",
+      "Business Agent",
+      "DRE #02223132",
+      "Meet all agents \u2192",
+      "Services",
+      "Buy a Restaurant",
+      "Sell Your Restaurant",
+      "Restaurant Listings",
+      "Restaurant Leasing",
+      "Licensing & Permits",
+      "Restaurant Consulting",
+      "Restaurant Alcohol Licensing",
+      "Liquor License For Sale",
+      "Health Inspection",
+      "Restaurant, Cafe, Food Markets Health Dept Permitting",
+      "Leasing Vacant Restaurants",
+      "Assignments & Abatement",
+      "Business Investigations",
+      "Buyer / Tenant Resolutions",
+      "Off-Market Door-Knocking",
+      "E-2 Visa (Europe)",
+      "Grandfather Protection",
+      "Vermin Inspections",
+      "Blog",
+      "Book a Consultation",
+      "\u00a9",
+      "2026",
+      "Penthouse Advisors Inc. \u00b7 Servicing Los Angeles County, CA",
+      "DO IT NOW.",
+      "Book a Consultation"
+    ],
+    "title": "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors"
+  },
+  {
+    "path": "/blog",
+    "status": 200,
+    "finalUrl": "https://www.penthouseadvisors.com/blog",
+    "links": [
+      "https://penthouseadvisors.com/",
+      "/",
+      "/",
+      "/services",
+      "/restaurants-for-sale",
+      "/buy-a-restaurant",
+      "/sell-your-restaurant",
+      "/restaurant-leasing",
+      "/licensing-and-permits",
+      "/restaurant-consulting",
+      "/commercial-property-management",
+      "/liquor-license-for-sale",
+      "/health-inspection",
+      "/health-permitting",
+      "/leasing-vacant-restaurants",
+      "/assignments-rent-abatement",
+      "/business-investigations",
+      "/buyer-tenant-resolutions",
+      "/grandfather-protection",
+      "/vermin-inspections",
+      "/search-door-knocking",
+      "/e2-visa-europe",
+      "/alcohol-licensing",
+      "/help",
+      "/about",
+      "/contact",
+      "tel:+13106633521",
+      "/contact",
+      "/blog/second-generation-restaurant-space-explained",
+      "/blog/restaurant-buyer-due-diligence-checklist",
+      "/blog/best-la-neighborhoods-open-restaurant-2026",
+      "/blog/type-41-vs-type-47-liquor-license-california",
+      "/blog/restaurant-valuation-los-angeles-2026",
+      "tel:+13106633521",
+      "mailto:PenthouseAdvisors@gmail.com",
+      "/agents",
+      "/buy-a-restaurant",
+      "/sell-your-restaurant",
+      "/restaurants-for-sale",
+      "/restaurant-leasing",
+      "/licensing-and-permits",
+      "/restaurant-consulting",
+      "/alcohol-licensing",
+      "/liquor-license-for-sale",
+      "/health-inspection",
+      "/health-permitting",
+      "/leasing-vacant-restaurants",
+      "/assignments-rent-abatement",
+      "/business-investigations",
+      "/buyer-tenant-resolutions",
+      "/search-door-knocking",
+      "/e2-visa-europe",
+      "/grandfather-protection",
+      "/vermin-inspections",
+      "/blog",
+      "/contact",
+      "/contact"
+    ],
+    "meta": [
+      {
+        "charset": "utf-8"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1"
+      },
+      {
+        "name": "author",
+        "content": "Penthouse Advisors Inc."
+      },
+      {
+        "name": "keywords",
+        "content": "Los Angeles restaurant broker, restaurant consulting LA, restaurant permits Los Angeles, restaurant licensing LA, ADA compliance restaurant, liquor license transfer LA, commercial restaurant leasing Los Angeles, restaurants for sale Los Angeles"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow"
+      },
+      {
+        "name": "theme-color",
+        "content": "#c9a24a"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Penthouse Advisors Inc."
+      },
+      {
+        "property": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "name": "twitter:site",
+        "content": "@penthouseadv"
+      },
+      {
+        "name": "description",
+        "content": "Guides, market insight, and licensing explainers for buying, selling, and leasing restaurants in Los Angeles County, from the team at Penthouse Advisors."
+      },
+      {
+        "property": "og:title",
+        "content": "Penthouse Advisors Blog"
+      },
+      {
+        "property": "og:description",
+        "content": "Guides, market insight, and licensing explainers for buying, selling, and leasing restaurants in Los Angeles."
+      },
+      {
+        "property": "og:url",
+        "content": "https://www.penthouseadvisors.com/blog"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      }
+    ],
+    "canonical": [
+      "https://www.penthouseadvisors.com/blog"
+    ],
+    "headings": [
+      "Restaurant brokerage, explained."
+    ],
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": [
+              "Organization",
+              "ProfessionalService",
+              "LocalBusiness"
+            ],
+            "@id": "https://www.penthouseadvisors.com/#organization",
+            "name": "Penthouse Advisors Inc.",
+            "alternateName": "Penthouse Advisors",
+            "description": "Full-service restaurant brokerage, consulting, licensing, permitting, and ADA compliance advisory firm serving Los Angeles County.",
+            "url": "https://www.penthouseadvisors.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.penthouseadvisors.com/android-chrome-512x512.png",
+              "width": 512,
+              "height": 512
+            },
+            "image": "https://www.penthouseadvisors.com/android-chrome-512x512.png",
+            "telephone": "+1-310-663-3521",
+            "email": "PenthouseAdvisors@gmail.com",
+            "priceRange": "$$$",
+            "areaServed": [
+              {
+                "@type": "AdministrativeArea",
+                "name": "Los Angeles County"
+              },
+              {
+                "@type": "City",
+                "name": "Los Angeles"
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Los Angeles",
+              "addressRegion": "CA",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 34.0522,
+              "longitude": -118.2437
+            },
+            "foundingDate": "2021",
+            "sameAs": [
+              "https://www.google.com/maps?q=Penthouse+Advisors+Los+Angeles"
+            ],
+            "knowsAbout": [
+              "Restaurant Brokerage",
+              "Restaurant Consulting",
+              "Restaurant Acquisitions",
+              "Restaurant Dispositions",
+              "Commercial Restaurant Leasing",
+              "Alcohol Licensing",
+              "Health Department Permitting",
+              "ADA Compliance",
+              "Hospitality Consulting"
+            ],
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "08:00",
+                "closes": "19:00"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.penthouseadvisors.com/#website",
+            "url": "https://www.penthouseadvisors.com",
+            "name": "Penthouse Advisors",
+            "publisher": {
+              "@id": "https://www.penthouseadvisors.com/#organization"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.penthouseadvisors.com/restaurants-for-sale?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.penthouseadvisors.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://www.penthouseadvisors.com/blog"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Penthouse Advisors Blog",
+        "description": "Guides, market insight, and licensing explainers for buying, selling, and leasing restaurants in Los Angeles County.",
+        "url": "https://www.penthouseadvisors.com/blog",
+        "isPartOf": {
+          "@id": "https://www.penthouseadvisors.com/#organization"
+        }
+      }
+    ],
+    "text": [
+      "Blog: LA Restaurant Brokerage Insights | Penthouse Advisors",
+      "Penthouse Advisors Inc.",
+      "\u00b7",
+      "LA Restaurant Business Brokerage",
+      "\u00b7",
+      "Restaurant & Business For Sale L A County",
+      "Penthouse",
+      "Advisors",
+      "Inc.",
+      "Home",
+      "Services",
+      "Restaurants & Businesses for Sale/Lease, L A County",
+      "Buy a Restaurant",
+      "Sell Your Restaurant",
+      "Restaurant Leasing",
+      "Licensing & Permits",
+      "Restaurant Consulting",
+      "Commercial Property Management",
+      "Liquor License For Sale",
+      "Health Dept Inspection",
+      "Blueprints, Plan-Check Approval, Permits",
+      "Leasing Vacant Restaurants",
+      "Assignments & Rent Abatement",
+      "Business Investigations",
+      "Buyer / Tenant Resolutions",
+      "Grandfather Protection",
+      "Vermin Inspections",
+      "Off-Market Door-Knocking",
+      "E-2 Visa (Europe)",
+      "Restaurant Alcohol Licensing",
+      "Help",
+      "About",
+      "Contact",
+      "310-663-3521",
+      "Book a Consultation",
+      "Blog",
+      "Restaurant brokerage,",
+      "explained.",
+      "Valuation, licensing, and market insight for anyone buying, selling, or leasing a restaurant in Los Angeles County, written by the team that does these deals.",
+      "Latest",
+      "Recent posts.",
+      "5",
+      "post",
+      "s",
+      "Buying",
+      "What Is a Second-Generation Restaurant Space? (And Why It Can Save You Six Figures)",
+      "A second-generation restaurant space already has a hood, grease trap, and kitchen infrastructure in place. Here's what it means, what to still verify, and where to find one in LA.",
+      "6",
+      "min read",
+      "Aug 27, 2026",
+      "Read post",
+      "Buying",
+      "The Restaurant Buyer's Due Diligence Checklist: What to Check Before You Sign",
+      "What to check before your deposit becomes non-refundable: financials, lease, licenses, equipment, and health department history. A buyer's due diligence checklist for LA restaurant deals.",
+      "8",
+      "min read",
+      "Aug 27, 2026",
+      "Read post",
+      "LA Market",
+      "Best LA Neighborhoods to Open a Restaurant in 2026",
+      "A broker's-eye view of where to open a restaurant in Los Angeles in 2026, by foot traffic, price point, concept fit, and what to expect from landlords in each submarket.",
+      "9",
+      "min read",
+      "Aug 27, 2026",
+      "Read post",
+      "Licensing",
+      "Type 41 vs. Type 47 Liquor License: What's the Difference?",
+      "Type 41 covers beer and wine only. Type 47 covers full liquor. Here's what each California ABC license actually allows, what they cost to acquire, and which one your restaurant needs.",
+      "7",
+      "min read",
+      "Aug 27, 2026",
+      "Read post",
+      "Selling",
+      "How Much Is My LA Restaurant Worth? A 2026 Valuation Guide",
+      "How restaurant valuation actually works in Los Angeles: the SDE multiple method, what moves your multiple up or down, and how to get a defensible number before you list.",
+      "8",
+      "min read",
+      "Aug 27, 2026",
+      "Read post",
+      "Penthouse",
+      "Advisors",
+      "Inc.",
+      "A sophisticated, full-service restaurant advisory and brokerage firm. Servicing Los Angeles County since 2021.",
+      "Do It Now.",
+      "310-663-3521",
+      "PenthouseAdvisors@gmail.com",
+      "8:00am \u2013 7:00pm \u00b7 Mon\u2013Sun",
+      "Ownership",
+      "Roschard Paticchio-Stein",
+      "CEO / Owner / Business Agent",
+      "DRE #02203003",
+      "Richard Stein",
+      "COO / Business Advisor / Owner",
+      "Rosanna Paticchio",
+      "CFO / Broker of Record",
+      "DRE #02332697",
+      "Agents",
+      "Roschard Paticchio-Stein",
+      "CEO \u00b7 Owner \u00b7 Business Agent",
+      "DRE #02203003",
+      "Jamal Ali Joseph",
+      "Business Agent",
+      "DRE #02417938",
+      "Jeremie Campbell",
+      "Business Agent",
+      "DRE #02223132",
+      "Meet all agents \u2192",
+      "Services",
+      "Buy a Restaurant",
+      "Sell Your Restaurant",
+      "Restaurant Listings",
+      "Restaurant Leasing",
+      "Licensing & Permits",
+      "Restaurant Consulting",
+      "Restaurant Alcohol Licensing",
+      "Liquor License For Sale",
+      "Health Inspection",
+      "Restaurant, Cafe, Food Markets Health Dept Permitting",
+      "Leasing Vacant Restaurants",
+      "Assignments & Abatement",
+      "Business Investigations",
+      "Buyer / Tenant Resolutions",
+      "Off-Market Door-Knocking",
+      "E-2 Visa (Europe)",
+      "Grandfather Protection",
+      "Vermin Inspections",
+      "Blog",
+      "Book a Consultation",
+      "\u00a9",
+      "2026",
+      "Penthouse Advisors Inc. \u00b7 Servicing Los Angeles County, CA",
+      "DO IT NOW.",
+      "Book a Consultation"
+    ],
+    "title": "Blog: LA Restaurant Brokerage Insights | Penthouse Advisors"
+  },
+  {
+    "path": "/contact",
+    "status": 200,
+    "finalUrl": "https://www.penthouseadvisors.com/contact",
+    "links": [
+      "https://penthouseadvisors.com/",
+      "/",
+      "/",
+      "/services",
+      "/restaurants-for-sale",
+      "/buy-a-restaurant",
+      "/sell-your-restaurant",
+      "/restaurant-leasing",
+      "/licensing-and-permits",
+      "/restaurant-consulting",
+      "/commercial-property-management",
+      "/liquor-license-for-sale",
+      "/health-inspection",
+      "/health-permitting",
+      "/leasing-vacant-restaurants",
+      "/assignments-rent-abatement",
+      "/business-investigations",
+      "/buyer-tenant-resolutions",
+      "/grandfather-protection",
+      "/vermin-inspections",
+      "/search-door-knocking",
+      "/e2-visa-europe",
+      "/alcohol-licensing",
+      "/help",
+      "/about",
+      "/contact",
+      "tel:+13106633521",
+      "/contact",
+      "tel:+13106633521",
+      "mailto:PenthouseAdvisors@gmail.com",
+      "tel:+13106633521",
+      "mailto:PenthouseAdvisors@gmail.com",
+      "/agents",
+      "/buy-a-restaurant",
+      "/sell-your-restaurant",
+      "/restaurants-for-sale",
+      "/restaurant-leasing",
+      "/licensing-and-permits",
+      "/restaurant-consulting",
+      "/alcohol-licensing",
+      "/liquor-license-for-sale",
+      "/health-inspection",
+      "/health-permitting",
+      "/leasing-vacant-restaurants",
+      "/assignments-rent-abatement",
+      "/business-investigations",
+      "/buyer-tenant-resolutions",
+      "/search-door-knocking",
+      "/e2-visa-europe",
+      "/grandfather-protection",
+      "/vermin-inspections",
+      "/blog",
+      "/contact",
+      "/contact"
+    ],
+    "meta": [
+      {
+        "charset": "utf-8"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1"
+      },
+      {
+        "name": "author",
+        "content": "Penthouse Advisors Inc."
+      },
+      {
+        "name": "keywords",
+        "content": "Los Angeles restaurant broker, restaurant consulting LA, restaurant permits Los Angeles, restaurant licensing LA, ADA compliance restaurant, liquor license transfer LA, commercial restaurant leasing Los Angeles, restaurants for sale Los Angeles"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow"
+      },
+      {
+        "name": "theme-color",
+        "content": "#c9a24a"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Penthouse Advisors Inc."
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "property": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:site",
+        "content": "@penthouseadv"
+      },
+      {
+        "name": "description",
+        "content": "Book a paid consultation with Penthouse Advisors. Speak directly with Richard Stein or Roschard Paticchio Stein about your restaurant, business, or property in Los Angeles County."
+      },
+      {
+        "property": "og:title",
+        "content": "Book a Consultation - Penthouse Advisors"
+      },
+      {
+        "property": "og:description",
+        "content": "Lock in your guaranteed advisory call with LA's restaurant experts."
+      },
+      {
+        "property": "og:url",
+        "content": "https://www.penthouseadvisors.com/contact"
+      }
+    ],
+    "canonical": [
+      "https://www.penthouseadvisors.com/contact"
+    ],
+    "headings": [
+      "Speak directly with our COO, Richard Stein or CEO Roschard Paticchio Stein. Lock in your $75 consultation."
+    ],
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": [
+              "Organization",
+              "ProfessionalService",
+              "LocalBusiness"
+            ],
+            "@id": "https://www.penthouseadvisors.com/#organization",
+            "name": "Penthouse Advisors Inc.",
+            "alternateName": "Penthouse Advisors",
+            "description": "Full-service restaurant brokerage, consulting, licensing, permitting, and ADA compliance advisory firm serving Los Angeles County.",
+            "url": "https://www.penthouseadvisors.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.penthouseadvisors.com/android-chrome-512x512.png",
+              "width": 512,
+              "height": 512
+            },
+            "image": "https://www.penthouseadvisors.com/android-chrome-512x512.png",
+            "telephone": "+1-310-663-3521",
+            "email": "PenthouseAdvisors@gmail.com",
+            "priceRange": "$$$",
+            "areaServed": [
+              {
+                "@type": "AdministrativeArea",
+                "name": "Los Angeles County"
+              },
+              {
+                "@type": "City",
+                "name": "Los Angeles"
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Los Angeles",
+              "addressRegion": "CA",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 34.0522,
+              "longitude": -118.2437
+            },
+            "foundingDate": "2021",
+            "sameAs": [
+              "https://www.google.com/maps?q=Penthouse+Advisors+Los+Angeles"
+            ],
+            "knowsAbout": [
+              "Restaurant Brokerage",
+              "Restaurant Consulting",
+              "Restaurant Acquisitions",
+              "Restaurant Dispositions",
+              "Commercial Restaurant Leasing",
+              "Alcohol Licensing",
+              "Health Department Permitting",
+              "ADA Compliance",
+              "Hospitality Consulting"
+            ],
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "08:00",
+                "closes": "19:00"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.penthouseadvisors.com/#website",
+            "url": "https://www.penthouseadvisors.com",
+            "name": "Penthouse Advisors",
+            "publisher": {
+              "@id": "https://www.penthouseadvisors.com/#organization"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.penthouseadvisors.com/restaurants-for-sale?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.penthouseadvisors.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact",
+            "item": "https://www.penthouseadvisors.com/contact"
+          }
+        ]
+      }
+    ],
+    "text": [
+      "Book a $75 Consultation - Penthouse Advisors LA",
+      "Penthouse Advisors Inc.",
+      "\u00b7",
+      "LA Restaurant Business Brokerage",
+      "\u00b7",
+      "Restaurant & Business For Sale L A County",
+      "Penthouse",
+      "Advisors",
+      "Inc.",
+      "Home",
+      "Services",
+      "Restaurants & Businesses for Sale/Lease, L A County",
+      "Buy a Restaurant",
+      "Sell Your Restaurant",
+      "Restaurant Leasing",
+      "Licensing & Permits",
+      "Restaurant Consulting",
+      "Commercial Property Management",
+      "Liquor License For Sale",
+      "Health Dept Inspection",
+      "Blueprints, Plan-Check Approval, Permits",
+      "Leasing Vacant Restaurants",
+      "Assignments & Rent Abatement",
+      "Business Investigations",
+      "Buyer / Tenant Resolutions",
+      "Grandfather Protection",
+      "Vermin Inspections",
+      "Off-Market Door-Knocking",
+      "E-2 Visa (Europe)",
+      "Restaurant Alcohol Licensing",
+      "Help",
+      "About",
+      "Contact",
+      "310-663-3521",
+      "Book a Consultation",
+      "Reserve your advisory call",
+      "Speak directly with our COO, Richard Stein or CEO Roschard Paticchio Stein.",
+      "Lock in your $75 consultation.",
+      "A guaranteed 45-minute mobile-to-mobile call for real answers on restaurants, properties, and city matters.",
+      "Paid consultation \u2014 non-refundable",
+      "$75 secures your guaranteed advisory call.",
+      "Submit your details below and we'll confirm your appointment.",
+      "Book your $75 consultation",
+      "Fill in your details. Once payment is confirmed, we\u2019ll lock in your time with Richard Stein or Roschard Paticchio Stein.",
+      "Leave this field blank",
+      "Name",
+      "Phone",
+      "Email",
+      "Service Needed",
+      "Select one\u2026",
+      "Buying a restaurant",
+      "Selling my restaurant",
+      "Alcohol licensing (Type 41 / 47)",
+      "Liquor license for sale",
+      "Health department / inspection",
+      "Health Dept permitting / plan check",
+      "Vermin / compliance inspection",
+      "Grandfather protection question",
+      "Lease assignment / rent abatement",
+      "Pre-purchase business investigation",
+      "Buyer / tenant resolution (deal stuck)",
+      "Search off-market restaurant",
+      "Leasing vacant restaurant",
+      "E-2 visa (Europe)",
+      "Second generation space",
+      "Hardware store inquiry",
+      "Commercial property management",
+      "Residential listing",
+      "House/condo servicing",
+      "Blueprint / plan check",
+      "Red tag / emergency rescue",
+      "Something else",
+      "Are you a",
+      "Select one\u2026",
+      "Property owner",
+      "Restaurant operator",
+      "Buyer",
+      "Seller",
+      "Additional details",
+      "$75 non-refundable. Zelle 310-460-9757 before submitting.",
+      "Send Message",
+      "By submitting, you agree to be contacted by Penthouse Advisors.",
+      "Office",
+      "310-663-3521",
+      "Email",
+      "PenthouseAdvisors@gmail.com",
+      "Hours",
+      "8:00am \u2013 7:00pm \u00b7 Mon\u2013Sun",
+      "Service area",
+      "Los Angeles County, CA",
+      "Penthouse",
+      "Advisors",
+      "Inc.",
+      "A sophisticated, full-service restaurant advisory and brokerage firm. Servicing Los Angeles County since 2021.",
+      "Do It Now.",
+      "310-663-3521",
+      "PenthouseAdvisors@gmail.com",
+      "8:00am \u2013 7:00pm \u00b7 Mon\u2013Sun",
+      "Ownership",
+      "Roschard Paticchio-Stein",
+      "CEO / Owner / Business Agent",
+      "DRE #02203003",
+      "Richard Stein",
+      "COO / Business Advisor / Owner",
+      "Rosanna Paticchio",
+      "CFO / Broker of Record",
+      "DRE #02332697",
+      "Agents",
+      "Roschard Paticchio-Stein",
+      "CEO \u00b7 Owner \u00b7 Business Agent",
+      "DRE #02203003",
+      "Jamal Ali Joseph",
+      "Business Agent",
+      "DRE #02417938",
+      "Jeremie Campbell",
+      "Business Agent",
+      "DRE #02223132",
+      "Meet all agents \u2192",
+      "Services",
+      "Buy a Restaurant",
+      "Sell Your Restaurant",
+      "Restaurant Listings",
+      "Restaurant Leasing",
+      "Licensing & Permits",
+      "Restaurant Consulting",
+      "Restaurant Alcohol Licensing",
+      "Liquor License For Sale",
+      "Health Inspection",
+      "Restaurant, Cafe, Food Markets Health Dept Permitting",
+      "Leasing Vacant Restaurants",
+      "Assignments & Abatement",
+      "Business Investigations",
+      "Buyer / Tenant Resolutions",
+      "Off-Market Door-Knocking",
+      "E-2 Visa (Europe)",
+      "Grandfather Protection",
+      "Vermin Inspections",
+      "Blog",
+      "Book a Consultation",
+      "\u00a9",
+      "2026",
+      "Penthouse Advisors Inc. \u00b7 Servicing Los Angeles County, CA",
+      "DO IT NOW.",
+      "Book a Consultation"
+    ],
+    "title": "Book a $75 Consultation - Penthouse Advisors LA"
+  },
+  {
+    "path": "/buy-a-restaurant",
+    "status": 200,
+    "finalUrl": "https://www.penthouseadvisors.com/buy-a-restaurant",
+    "links": [
+      "https://penthouseadvisors.com/",
+      "/",
+      "/",
+      "/services",
+      "/restaurants-for-sale",
+      "/buy-a-restaurant",
+      "/sell-your-restaurant",
+      "/restaurant-leasing",
+      "/licensing-and-permits",
+      "/restaurant-consulting",
+      "/commercial-property-management",
+      "/liquor-license-for-sale",
+      "/health-inspection",
+      "/health-permitting",
+      "/leasing-vacant-restaurants",
+      "/assignments-rent-abatement",
+      "/business-investigations",
+      "/buyer-tenant-resolutions",
+      "/grandfather-protection",
+      "/vermin-inspections",
+      "/search-door-knocking",
+      "/e2-visa-europe",
+      "/alcohol-licensing",
+      "/help",
+      "/about",
+      "/contact",
+      "tel:+13106633521",
+      "/contact",
+      "/restaurants-for-sale",
+      "/search-door-knocking",
+      "/business-investigations",
+      "/alcohol-licensing",
+      "/e2-visa-europe",
+      "/contact?service=Buying+a+restaurant",
+      "tel:+13106633521",
+      "/contact?service=Buying+a+restaurant",
+      "tel:+13106633521",
+      "tel:+13106633521",
+      "mailto:PenthouseAdvisors@gmail.com",
+      "/agents",
+      "/buy-a-restaurant",
+      "/sell-your-restaurant",
+      "/restaurants-for-sale",
+      "/restaurant-leasing",
+      "/licensing-and-permits",
+      "/restaurant-consulting",
+      "/alcohol-licensing",
+      "/liquor-license-for-sale",
+      "/health-inspection",
+      "/health-permitting",
+      "/leasing-vacant-restaurants",
+      "/assignments-rent-abatement",
+      "/business-investigations",
+      "/buyer-tenant-resolutions",
+      "/search-door-knocking",
+      "/e2-visa-europe",
+      "/grandfather-protection",
+      "/vermin-inspections",
+      "/blog",
+      "/contact",
+      "/contact"
+    ],
+    "meta": [
+      {
+        "charset": "utf-8"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1"
+      },
+      {
+        "name": "author",
+        "content": "Penthouse Advisors Inc."
+      },
+      {
+        "name": "keywords",
+        "content": "Los Angeles restaurant broker, restaurant consulting LA, restaurant permits Los Angeles, restaurant licensing LA, ADA compliance restaurant, liquor license transfer LA, commercial restaurant leasing Los Angeles, restaurants for sale Los Angeles"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow"
+      },
+      {
+        "name": "theme-color",
+        "content": "#c9a24a"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Penthouse Advisors Inc."
+      },
+      {
+        "property": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "name": "twitter:site",
+        "content": "@penthouseadv"
+      },
+      {
+        "name": "description",
+        "content": "Buy a restaurant in Los Angeles County with a full-service brokerage. Off-market sourcing, ABC license transfers, lease review, and Health Dept clearance."
+      },
+      {
+        "property": "og:title",
+        "content": "Buy a Restaurant in Los Angeles | Penthouse Advisors"
+      },
+      {
+        "property": "og:description",
+        "content": "Full-service restaurant acquisitions across LA County."
+      },
+      {
+        "property": "og:url",
+        "content": "https://www.penthouseadvisors.com/buy-a-restaurant"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      }
+    ],
+    "canonical": [
+      "https://www.penthouseadvisors.com/buy-a-restaurant"
+    ],
+    "headings": [
+      "Buy your next restaurant in Los Angeles, with Penthouse Advisors Inc.",
+      "Buy a Restaurant in Los Angeles County"
+    ],
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": [
+              "Organization",
+              "ProfessionalService",
+              "LocalBusiness"
+            ],
+            "@id": "https://www.penthouseadvisors.com/#organization",
+            "name": "Penthouse Advisors Inc.",
+            "alternateName": "Penthouse Advisors",
+            "description": "Full-service restaurant brokerage, consulting, licensing, permitting, and ADA compliance advisory firm serving Los Angeles County.",
+            "url": "https://www.penthouseadvisors.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.penthouseadvisors.com/android-chrome-512x512.png",
+              "width": 512,
+              "height": 512
+            },
+            "image": "https://www.penthouseadvisors.com/android-chrome-512x512.png",
+            "telephone": "+1-310-663-3521",
+            "email": "PenthouseAdvisors@gmail.com",
+            "priceRange": "$$$",
+            "areaServed": [
+              {
+                "@type": "AdministrativeArea",
+                "name": "Los Angeles County"
+              },
+              {
+                "@type": "City",
+                "name": "Los Angeles"
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Los Angeles",
+              "addressRegion": "CA",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 34.0522,
+              "longitude": -118.2437
+            },
+            "foundingDate": "2021",
+            "sameAs": [
+              "https://www.google.com/maps?q=Penthouse+Advisors+Los+Angeles"
+            ],
+            "knowsAbout": [
+              "Restaurant Brokerage",
+              "Restaurant Consulting",
+              "Restaurant Acquisitions",
+              "Restaurant Dispositions",
+              "Commercial Restaurant Leasing",
+              "Alcohol Licensing",
+              "Health Department Permitting",
+              "ADA Compliance",
+              "Hospitality Consulting"
+            ],
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "08:00",
+                "closes": "19:00"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.penthouseadvisors.com/#website",
+            "url": "https://www.penthouseadvisors.com",
+            "name": "Penthouse Advisors",
+            "publisher": {
+              "@id": "https://www.penthouseadvisors.com/#organization"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.penthouseadvisors.com/restaurants-for-sale?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Restaurant Acquisitions \u2014 Los Angeles",
+        "serviceType": "Restaurant Business Broker",
+        "description": "Full-service restaurant buyer representation across Los Angeles County.",
+        "url": "https://www.penthouseadvisors.com/buy-a-restaurant",
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "Los Angeles County"
+        },
+        "provider": {
+          "@type": "ProfessionalService",
+          "name": "Penthouse Advisors Inc.",
+          "telephone": "+1-310-663-3521",
+          "url": "https://www.penthouseadvisors.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.penthouseadvisors.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://www.penthouseadvisors.com/services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Buy a Restaurant",
+            "item": "https://www.penthouseadvisors.com/buy-a-restaurant"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you have off-market restaurants for sale in Los Angeles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A large share of our deal flow is off-market \u2014 sourced via door-knocking, owner outreach, and broker relationships across LA County. Tell us your criteria and we'll match you against current and pending opportunities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to buy a restaurant in LA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "From signed LOI to keys in hand typically runs 60\u2013120 days depending on liquor license transfer (ABC), landlord consent, and Health Dept plan check. We sequence those in parallel to compress the timeline."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What due diligence do you run before I buy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lease review, ABC license history, code/permit status, sales verification, equipment condition, vendor contracts, and prior Health inspection records. See our Restaurant Business Investigations page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use an E-2 investor visa to buy a restaurant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We package E-2-ready acquisitions for European entrepreneurs \u2014 see our E-2 Visa page."
+            }
+          }
+        ]
+      }
+    ],
+    "text": [
+      "Buy a Restaurant in Los Angeles | Penthouse Advisors",
+      "Penthouse Advisors Inc.",
+      "\u00b7",
+      "LA Restaurant Business Brokerage",
+      "\u00b7",
+      "Restaurant & Business For Sale L A County",
+      "Penthouse",
+      "Advisors",
+      "Inc.",
+      "Home",
+      "Services",
+      "Restaurants & Businesses for Sale/Lease, L A County",
+      "Buy a Restaurant",
+      "Sell Your Restaurant",
+      "Restaurant Leasing",
+      "Licensing & Permits",
+      "Restaurant Consulting",
+      "Commercial Property Management",
+      "Liquor License For Sale",
+      "Health Dept Inspection",
+      "Blueprints, Plan-Check Approval, Permits",
+      "Leasing Vacant Restaurants",
+      "Assignments & Rent Abatement",
+      "Business Investigations",
+      "Buyer / Tenant Resolutions",
+      "Grandfather Protection",
+      "Vermin Inspections",
+      "Off-Market Door-Knocking",
+      "E-2 Visa (Europe)",
+      "Restaurant Alcohol Licensing",
+      "Help",
+      "About",
+      "Contact",
+      "310-663-3521",
+      "Book a Consultation",
+      "Buy a Restaurant with Penthouse Advisors INC.",
+      "Buy your next restaurant in Los Angeles, with",
+      "Penthouse Advisors Inc.",
+      "A disciplined acquisition process \u2014 sourcing, diligence, licensing, and lease \u2014 handled under one roof.",
+      "Buy a Restaurant in Los Angeles County",
+      "Overview",
+      "Buy a Restaurant in Los Angeles County",
+      "Penthouse Advisors represents buyers across Los Angeles County \u2014 from first-time operators acquiring a single neighborhood restaurant to investors building a small portfolio. We source on-market and off-market opportunities, run full pre-purchase diligence, and shepherd liquor licensing, Health Dept clearance, lease assignment, and escrow to a clean close.",
+      "Why Penthouse Advisors",
+      "What you get.",
+      "Off-Market Access",
+      "Our door-knocking and owner-direct network surfaces opportunities you won't see on any listing portal.",
+      "Full Diligence",
+      "Lease, ABC license, code, sales, and equipment \u2014 investigated before you wire a dollar.",
+      "Licensing & Permits",
+      "ABC transfer, Health permit, and landlord consent run in parallel to compress timelines.",
+      "Our Process",
+      "How we move.",
+      "01",
+      "Criteria",
+      "Neighborhood, size, license type, capex tolerance. We translate your goals into a buy box.",
+      "02",
+      "Sourcing & Diligence",
+      "On- and off-market matches. Lease, license, sales, code, and equipment audit on every shortlist candidate.",
+      "03",
+      "Close & Open",
+      "Escrow, ABC transfer, Health clearance, landlord consent \u2014 managed start-to-finish.",
+      "FAQ",
+      "Questions answered.",
+      "Do you have off-market restaurants for sale in Los Angeles?",
+      "+",
+      "Yes. A large share of our deal flow is off-market \u2014 sourced via door-knocking, owner outreach, and broker relationships across LA County. Tell us your criteria and we'll match you against current and pending opportunities.",
+      "How long does it take to buy a restaurant in LA?",
+      "+",
+      "From signed LOI to keys in hand typically runs 60\u2013120 days depending on liquor license transfer (ABC), landlord consent, and Health Dept plan check. We sequence those in parallel to compress the timeline.",
+      "What due diligence do you run before I buy?",
+      "+",
+      "Lease review, ABC license history, code/permit status, sales verification, equipment condition, vendor contracts, and prior Health inspection records. See our Restaurant Business Investigations page.",
+      "Can I use an E-2 investor visa to buy a restaurant?",
+      "+",
+      "Yes. We package E-2-ready acquisitions for European entrepreneurs \u2014 see our E-2 Visa page.",
+      "Related Services",
+      "Explore more.",
+      "Browse Restaurants For Sale",
+      "Off-Market Door-Knocking",
+      "Pre-Purchase Investigations",
+      "Alcohol Licensing",
+      "E-2 Visa (Europe)",
+      "Book a Consultation",
+      "Call",
+      "310-663-3521",
+      "Ready to buy your next restaurant?",
+      "Tell us your buy box. We'll come back with real opportunities \u2014 on- and off-market.",
+      "Book a Consultation",
+      "310-663-3521",
+      "Penthouse",
+      "Advisors",
+      "Inc.",
+      "A sophisticated, full-service restaurant advisory and brokerage firm. Servicing Los Angeles County since 2021.",
+      "Do It Now.",
+      "310-663-3521",
+      "PenthouseAdvisors@gmail.com",
+      "8:00am \u2013 7:00pm \u00b7 Mon\u2013Sun",
+      "Ownership",
+      "Roschard Paticchio-Stein",
+      "CEO / Owner / Business Agent",
+      "DRE #02203003",
+      "Richard Stein",
+      "COO / Business Advisor / Owner",
+      "Rosanna Paticchio",
+      "CFO / Broker of Record",
+      "DRE #02332697",
+      "Agents",
+      "Roschard Paticchio-Stein",
+      "CEO \u00b7 Owner \u00b7 Business Agent",
+      "DRE #02203003",
+      "Jamal Ali Joseph",
+      "Business Agent",
+      "DRE #02417938",
+      "Jeremie Campbell",
+      "Business Agent",
+      "DRE #02223132",
+      "Meet all agents \u2192",
+      "Services",
+      "Buy a Restaurant",
+      "Sell Your Restaurant",
+      "Restaurant Listings",
+      "Restaurant Leasing",
+      "Licensing & Permits",
+      "Restaurant Consulting",
+      "Restaurant Alcohol Licensing",
+      "Liquor License For Sale",
+      "Health Inspection",
+      "Restaurant, Cafe, Food Markets Health Dept Permitting",
+      "Leasing Vacant Restaurants",
+      "Assignments & Abatement",
+      "Business Investigations",
+      "Buyer / Tenant Resolutions",
+      "Off-Market Door-Knocking",
+      "E-2 Visa (Europe)",
+      "Grandfather Protection",
+      "Vermin Inspections",
+      "Blog",
+      "Book a Consultation",
+      "\u00a9",
+      "2026",
+      "Penthouse Advisors Inc. \u00b7 Servicing Los Angeles County, CA",
+      "DO IT NOW.",
+      "Book a Consultation"
+    ],
+    "title": "Buy a Restaurant in Los Angeles | Penthouse Advisors"
+  },
+  {
+    "path": "/robots.txt",
+    "status": 200,
+    "finalUrl": "https://www.penthouseadvisors.com/robots.txt",
+    "links": [],
+    "meta": [],
+    "canonical": [],
+    "headings": [],
+    "schema": [],
+    "text": [
+      "User-agent: *\nAllow: /\nDisallow: /wp-admin/\nDisallow: /wp-login.php\nDisallow: /?p=\nDisallow: /*?p=\nDisallow: /*?replytocom=\n\nSitemap: https://www.penthouseadvisors.com/sitemap.xml"
+    ],
+    "body": "User-agent: *\nAllow: /\nDisallow: /wp-admin/\nDisallow: /wp-login.php\nDisallow: /?p=\nDisallow: /*?p=\nDisallow: /*?replytocom=\n\nSitemap: https://www.penthouseadvisors.com/sitemap.xml\n"
+  },
+  {
+    "path": "/sitemap.xml",
+    "status": 200,
+    "finalUrl": "https://www.penthouseadvisors.com/sitemap.xml",
+    "links": [],
+    "meta": [],
+    "canonical": [],
+    "headings": [],
+    "schema": [],
+    "text": [
+      "https://www.penthouseadvisors.com/",
+      "weekly",
+      "1.0",
+      "https://www.penthouseadvisors.com/about",
+      "monthly",
+      "0.8",
+      "https://www.penthouseadvisors.com/agents",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/services",
+      "monthly",
+      "0.9",
+      "https://www.penthouseadvisors.com/contact",
+      "monthly",
+      "0.9",
+      "https://www.penthouseadvisors.com/restaurants-for-sale",
+      "weekly",
+      "0.95",
+      "https://www.penthouseadvisors.com/restaurants-for-sale/westwood-santa-monica-restaurant-asset-sale",
+      "weekly",
+      "0.8",
+      "https://www.penthouseadvisors.com/restaurants-for-sale/dental-office-for-lease",
+      "weekly",
+      "0.8",
+      "https://www.penthouseadvisors.com/restaurants-for-sale/santa-monica-asset-sale",
+      "weekly",
+      "0.8",
+      "https://www.penthouseadvisors.com/restaurants-for-sale/wilshire-second-gen-lease",
+      "weekly",
+      "0.8",
+      "https://www.penthouseadvisors.com/restaurants-for-sale/hardware-store-for-sale",
+      "weekly",
+      "0.8",
+      "https://www.penthouseadvisors.com/buy-a-restaurant",
+      "weekly",
+      "0.95",
+      "https://www.penthouseadvisors.com/sell-your-restaurant",
+      "weekly",
+      "0.95",
+      "https://www.penthouseadvisors.com/restaurant-leasing",
+      "monthly",
+      "0.9",
+      "https://www.penthouseadvisors.com/licensing-and-permits",
+      "monthly",
+      "0.9",
+      "https://www.penthouseadvisors.com/restaurant-consulting",
+      "monthly",
+      "0.9",
+      "https://www.penthouseadvisors.com/commercial-property-management",
+      "monthly",
+      "0.9",
+      "https://www.penthouseadvisors.com/leasing-vacant-restaurants",
+      "monthly",
+      "0.8",
+      "https://www.penthouseadvisors.com/alcohol-licensing",
+      "monthly",
+      "0.8",
+      "https://www.penthouseadvisors.com/liquor-license-for-sale",
+      "weekly",
+      "0.8",
+      "https://www.penthouseadvisors.com/health-inspection",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/health-permitting",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/vermin-inspections",
+      "monthly",
+      "0.6",
+      "https://www.penthouseadvisors.com/grandfather-protection",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/assignments-rent-abatement",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/business-investigations",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/buyer-tenant-resolutions",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/search-door-knocking",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/off-market-sourcing",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/e2-visa-europe",
+      "monthly",
+      "0.6",
+      "https://www.penthouseadvisors.com/hardware-store-for-sale",
+      "weekly",
+      "0.5",
+      "https://www.penthouseadvisors.com/help",
+      "2026-07-24",
+      "weekly",
+      "0.8",
+      "https://www.penthouseadvisors.com/help/buying-a-restaurant",
+      "2026-07-24",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/help/selling-a-restaurant",
+      "2026-07-24",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/help/restaurant-leasing",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/help/alcohol-licensing",
+      "2026-07-24",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/help/health-permitting",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/help/grandfather-protection",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/help/lease-assignments",
+      "2026-07-24",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/help/business-investigations",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/help/buyer-tenant-resolutions",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/help/off-market-sourcing",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/help/e2-visa",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/help/commercial-property-management",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/help/medical-dental-leasing",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/help/restaurant-consulting",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/help/local-markets",
+      "2026-07-24",
+      "monthly",
+      "0.7",
+      "https://www.penthouseadvisors.com/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+      "2026-07-24",
+      "monthly",
+      "0.6",
+      "https://www.penthouseadvisors.com/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+      "2026-07-24",
+      "monthly",
+      "0.6",
+      "https://www.penthouseadvisors.com/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+      "2026-07-24",
+      "monthly",
+      "0.6",
+      "https://www.penthouseadvisors.com/help/alcohol-licensing/abc-license-transfer-guide",
+      "2026-07-24",
+      "monthly",
+      "0.6",
+      "https://www.penthouseadvisors.com/help/lease-assignments/restaurant-lease-assignment-guide",
+      "2026-07-24",
+      "monthly",
+      "0.6",
+      "https://www.penthouseadvisors.com/help/local-markets/restaurant-broker-beverly-hills",
+      "2026-07-24",
+      "monthly",
+      "0.6",
+      "https://www.penthouseadvisors.com/blog",
+      "2026-08-27",
+      "weekly",
+      "0.8",
+      "https://www.penthouseadvisors.com/blog/second-generation-restaurant-space-explained",
+      "2026-08-27",
+      "monthly",
+      "0.6",
+      "https://www.penthouseadvisors.com/blog/restaurant-buyer-due-diligence-checklist",
+      "2026-08-27",
+      "monthly",
+      "0.6",
+      "https://www.penthouseadvisors.com/blog/best-la-neighborhoods-open-restaurant-2026",
+      "2026-08-27",
+      "monthly",
+      "0.6",
+      "https://www.penthouseadvisors.com/blog/type-41-vs-type-47-liquor-license-california",
+      "2026-08-27",
+      "monthly",
+      "0.6",
+      "https://www.penthouseadvisors.com/blog/restaurant-valuation-los-angeles-2026",
+      "2026-08-27",
+      "monthly",
+      "0.6"
+    ],
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n <url>\n <loc>https://www.penthouseadvisors.com/</loc>\n <changefreq>weekly</changefreq>\n <priority>1.0</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/about</loc>\n <changefreq>monthly</changefreq>\n <priority>0.8</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/agents</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/services</loc>\n <changefreq>monthly</changefreq>\n <priority>0.9</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/contact</loc>\n <changefreq>monthly</changefreq>\n <priority>0.9</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/restaurants-for-sale</loc>\n <changefreq>weekly</changefreq>\n <priority>0.95</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/restaurants-for-sale/westwood-santa-monica-restaurant-asset-sale</loc>\n <changefreq>weekly</changefreq>\n <priority>0.8</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/restaurants-for-sale/dental-office-for-lease</loc>\n <changefreq>weekly</changefreq>\n <priority>0.8</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/restaurants-for-sale/santa-monica-asset-sale</loc>\n <changefreq>weekly</changefreq>\n <priority>0.8</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/restaurants-for-sale/wilshire-second-gen-lease</loc>\n <changefreq>weekly</changefreq>\n <priority>0.8</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/restaurants-for-sale/hardware-store-for-sale</loc>\n <changefreq>weekly</changefreq>\n <priority>0.8</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/buy-a-restaurant</loc>\n <changefreq>weekly</changefreq>\n <priority>0.95</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/sell-your-restaurant</loc>\n <changefreq>weekly</changefreq>\n <priority>0.95</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/restaurant-leasing</loc>\n <changefreq>monthly</changefreq>\n <priority>0.9</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/licensing-and-permits</loc>\n <changefreq>monthly</changefreq>\n <priority>0.9</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/restaurant-consulting</loc>\n <changefreq>monthly</changefreq>\n <priority>0.9</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/commercial-property-management</loc>\n <changefreq>monthly</changefreq>\n <priority>0.9</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/leasing-vacant-restaurants</loc>\n <changefreq>monthly</changefreq>\n <priority>0.8</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/alcohol-licensing</loc>\n <changefreq>monthly</changefreq>\n <priority>0.8</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/liquor-license-for-sale</loc>\n <changefreq>weekly</changefreq>\n <priority>0.8</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/health-inspection</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/health-permitting</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/vermin-inspections</loc>\n <changefreq>monthly</changefreq>\n <priority>0.6</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/grandfather-protection</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/assignments-rent-abatement</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/business-investigations</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/buyer-tenant-resolutions</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/search-door-knocking</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/off-market-sourcing</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/e2-visa-europe</loc>\n <changefreq>monthly</changefreq>\n <priority>0.6</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/hardware-store-for-sale</loc>\n <changefreq>weekly</changefreq>\n <priority>0.5</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help</loc>\n <lastmod>2026-07-24</lastmod>\n <changefreq>weekly</changefreq>\n <priority>0.8</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/buying-a-restaurant</loc>\n <lastmod>2026-07-24</lastmod>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/selling-a-restaurant</loc>\n <lastmod>2026-07-24</lastmod>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/restaurant-leasing</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/alcohol-licensing</loc>\n <lastmod>2026-07-24</lastmod>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/health-permitting</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/grandfather-protection</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/lease-assignments</loc>\n <lastmod>2026-07-24</lastmod>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/business-investigations</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/buyer-tenant-resolutions</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/off-market-sourcing</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/e2-visa</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/commercial-property-management</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/medical-dental-leasing</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/restaurant-consulting</loc>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/local-markets</loc>\n <lastmod>2026-07-24</lastmod>\n <changefreq>monthly</changefreq>\n <priority>0.7</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles</loc>\n <lastmod>2026-07-24</lastmod>\n <changefreq>monthly</changefreq>\n <priority>0.6</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/buying-a-restaurant/restaurant-due-diligence-checklist</loc>\n <lastmod>2026-07-24</lastmod>\n <changefreq>monthly</changefreq>\n <priority>0.6</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles</loc>\n <lastmod>2026-07-24</lastmod>\n <changefreq>monthly</changefreq>\n <priority>0.6</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/alcohol-licensing/abc-license-transfer-guide</loc>\n <lastmod>2026-07-24</lastmod>\n <changefreq>monthly</changefreq>\n <priority>0.6</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/lease-assignments/restaurant-lease-assignment-guide</loc>\n <lastmod>2026-07-24</lastmod>\n <changefreq>monthly</changefreq>\n <priority>0.6</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/help/local-markets/restaurant-broker-beverly-hills</loc>\n <lastmod>2026-07-24</lastmod>\n <changefreq>monthly</changefreq>\n <priority>0.6</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/blog</loc>\n <lastmod>2026-08-27</lastmod>\n <changefreq>weekly</changefreq>\n <priority>0.8</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/blog/second-generation-restaurant-space-explained</loc>\n <lastmod>2026-08-27</lastmod>\n <changefreq>monthly</changefreq>\n <priority>0.6</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/blog/restaurant-buyer-due-diligence-checklist</loc>\n <lastmod>2026-08-27</lastmod>\n <changefreq>monthly</changefreq>\n <priority>0.6</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/blog/best-la-neighborhoods-open-restaurant-2026</loc>\n <lastmod>2026-08-27</lastmod>\n <changefreq>monthly</changefreq>\n <priority>0.6</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/blog/type-41-vs-type-47-liquor-license-california</loc>\n <lastmod>2026-08-27</lastmod>\n <changefreq>monthly</changefreq>\n <priority>0.6</priority>\n </url>\n <url>\n <loc>https://www.penthouseadvisors.com/blog/restaurant-valuation-los-angeles-2026</loc>\n <lastmod>2026-08-27</lastmod>\n <changefreq>monthly</changefreq>\n <priority>0.6</priority>\n </url>\n</urlset>"
+  },
+  {
+    "path": "/hello-world",
+    "status": 200,
+    "finalUrl": "https://www.penthouseadvisors.com/",
+    "links": [
+      "https://penthouseadvisors.com/",
+      "/",
+      "/",
+      "/services",
+      "/restaurants-for-sale",
+      "/buy-a-restaurant",
+      "/sell-your-restaurant",
+      "/restaurant-leasing",
+      "/licensing-and-permits",
+      "/restaurant-consulting",
+      "/commercial-property-management",
+      "/liquor-license-for-sale",
+      "/health-inspection",
+      "/health-permitting",
+      "/leasing-vacant-restaurants",
+      "/assignments-rent-abatement",
+      "/business-investigations",
+      "/buyer-tenant-resolutions",
+      "/grandfather-protection",
+      "/vermin-inspections",
+      "/search-door-knocking",
+      "/e2-visa-europe",
+      "/alcohol-licensing",
+      "/help",
+      "/about",
+      "/contact",
+      "tel:+13106633521",
+      "/contact",
+      "/contact",
+      "/services",
+      "/services",
+      "/restaurants-for-sale",
+      "/alcohol-licensing",
+      "/health-inspection",
+      "/assignments-rent-abatement",
+      "/contact",
+      "/contact",
+      "tel:+13106633521",
+      "tel:+13106633521",
+      "mailto:PenthouseAdvisors@gmail.com",
+      "/agents",
+      "/buy-a-restaurant",
+      "/sell-your-restaurant",
+      "/restaurants-for-sale",
+      "/restaurant-leasing",
+      "/licensing-and-permits",
+      "/restaurant-consulting",
+      "/alcohol-licensing",
+      "/liquor-license-for-sale",
+      "/health-inspection",
+      "/health-permitting",
+      "/leasing-vacant-restaurants",
+      "/assignments-rent-abatement",
+      "/business-investigations",
+      "/buyer-tenant-resolutions",
+      "/search-door-knocking",
+      "/e2-visa-europe",
+      "/grandfather-protection",
+      "/vermin-inspections",
+      "/blog",
+      "/contact",
+      "/contact"
+    ],
+    "meta": [
+      {
+        "charset": "utf-8"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1"
+      },
+      {
+        "name": "author",
+        "content": "Penthouse Advisors Inc."
+      },
+      {
+        "name": "keywords",
+        "content": "Los Angeles restaurant broker, restaurant consulting LA, restaurant permits Los Angeles, restaurant licensing LA, ADA compliance restaurant, liquor license transfer LA, commercial restaurant leasing Los Angeles, restaurants for sale Los Angeles"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow"
+      },
+      {
+        "name": "theme-color",
+        "content": "#c9a24a"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Penthouse Advisors Inc."
+      },
+      {
+        "property": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "name": "twitter:site",
+        "content": "@penthouseadv"
+      },
+      {
+        "name": "description",
+        "content": "Los Angeles restaurant brokerage, consulting, permitting, licensing, and ADA compliance. Buy, sell, lease, and license restaurants across LA County under one roof."
+      },
+      {
+        "property": "og:title",
+        "content": "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors"
+      },
+      {
+        "property": "og:description",
+        "content": "Restaurant brokerage, consulting, licensing, permitting, and ADA compliance for Los Angeles County. One firm, full service."
+      },
+      {
+        "property": "og:url",
+        "content": "https://www.penthouseadvisors.com"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "content": "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors"
+      },
+      {
+        "name": "twitter:description",
+        "content": "Restaurant brokerage, consulting, licensing, permitting & ADA compliance for LA County."
+      }
+    ],
+    "canonical": [
+      "https://www.penthouseadvisors.com"
+    ],
+    "headings": [
+      "Penthouse Advisors Inc.Los Angeles County\u2019s PremierRestaurant & Business Advisory Firm"
+    ],
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": [
+              "Organization",
+              "ProfessionalService",
+              "LocalBusiness"
+            ],
+            "@id": "https://www.penthouseadvisors.com/#organization",
+            "name": "Penthouse Advisors Inc.",
+            "alternateName": "Penthouse Advisors",
+            "description": "Full-service restaurant brokerage, consulting, licensing, permitting, and ADA compliance advisory firm serving Los Angeles County.",
+            "url": "https://www.penthouseadvisors.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.penthouseadvisors.com/android-chrome-512x512.png",
+              "width": 512,
+              "height": 512
+            },
+            "image": "https://www.penthouseadvisors.com/android-chrome-512x512.png",
+            "telephone": "+1-310-663-3521",
+            "email": "PenthouseAdvisors@gmail.com",
+            "priceRange": "$$$",
+            "areaServed": [
+              {
+                "@type": "AdministrativeArea",
+                "name": "Los Angeles County"
+              },
+              {
+                "@type": "City",
+                "name": "Los Angeles"
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Los Angeles",
+              "addressRegion": "CA",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 34.0522,
+              "longitude": -118.2437
+            },
+            "foundingDate": "2021",
+            "sameAs": [
+              "https://www.google.com/maps?q=Penthouse+Advisors+Los+Angeles"
+            ],
+            "knowsAbout": [
+              "Restaurant Brokerage",
+              "Restaurant Consulting",
+              "Restaurant Acquisitions",
+              "Restaurant Dispositions",
+              "Commercial Restaurant Leasing",
+              "Alcohol Licensing",
+              "Health Department Permitting",
+              "ADA Compliance",
+              "Hospitality Consulting"
+            ],
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "08:00",
+                "closes": "19:00"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.penthouseadvisors.com/#website",
+            "url": "https://www.penthouseadvisors.com",
+            "name": "Penthouse Advisors",
+            "publisher": {
+              "@id": "https://www.penthouseadvisors.com/#organization"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.penthouseadvisors.com/restaurants-for-sale?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      }
+    ],
+    "text": [
+      "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors",
+      "Penthouse Advisors Inc.",
+      "\u00b7",
+      "LA Restaurant Business Brokerage",
+      "\u00b7",
+      "Restaurant & Business For Sale L A County",
+      "Penthouse",
+      "Advisors",
+      "Inc.",
+      "Home",
+      "Services",
+      "Restaurants & Businesses for Sale/Lease, L A County",
+      "Buy a Restaurant",
+      "Sell Your Restaurant",
+      "Restaurant Leasing",
+      "Licensing & Permits",
+      "Restaurant Consulting",
+      "Commercial Property Management",
+      "Liquor License For Sale",
+      "Health Dept Inspection",
+      "Blueprints, Plan-Check Approval, Permits",
+      "Leasing Vacant Restaurants",
+      "Assignments & Rent Abatement",
+      "Business Investigations",
+      "Buyer / Tenant Resolutions",
+      "Grandfather Protection",
+      "Vermin Inspections",
+      "Off-Market Door-Knocking",
+      "E-2 Visa (Europe)",
+      "Restaurant Alcohol Licensing",
+      "Help",
+      "About",
+      "Contact",
+      "310-663-3521",
+      "Book a Consultation",
+      "Penthouse Advisors Inc., Serving Los Angeles County",
+      "Penthouse Advisors Inc.",
+      "Los Angeles County\u2019s Premier",
+      "Restaurant & Business Advisory Firm",
+      "Serving Los Angeles County with expert restaurant brokerage, licensing, leasing, permitting, consulting, and transaction management\u2014from first opportunity to final closing.",
+      "Speak Directly to an Expert Now!",
+      "Explore Our Services",
+      "2021",
+      "Established",
+      "3",
+      "Principal Owners",
+      "LA County",
+      "Exclusively Served",
+      "One Roof",
+      "Full-Service Firm",
+      "Trusted Advisory",
+      "\"One trusted partner for every stage of the restaurant lifecycle.\"",
+      "Est. 2021",
+      "Licensed Brokers",
+      "LA County",
+      "Principal-Led",
+      "What We Do",
+      "One firm for every stage of your restaurant.",
+      "See all services \u2192",
+      "For Sale/Lease Restaurant & Business, L A County",
+      "Confidential buy/sell brokerage with full disclosure across LA County.",
+      "Learn more",
+      "Restaurant Alcohol Licensing",
+      "Type 41 Beer & Wine, Type 47 Hard Liquor - transfers, new, CUB diversion.",
+      "Learn more",
+      "Health Dept Inspection & Permitting",
+      "Pre-inspections, red-tag removal, blueprints, hood cleaning, reopen.",
+      "Learn more",
+      "Assignments & Rent Abatement",
+      "Lease assignments and rent-relief tied to permits or opening day.",
+      "Learn more",
+      "How It Works",
+      "Three steps. No runaround.",
+      "01",
+      "Consult",
+      "Tell us where you are - buying, selling, opening, or in trouble. We listen, we diagnose, we quote a plan.",
+      "02",
+      "Strategy",
+      "We build the move: valuation, licensing path, lease angle, or rescue plan. Clear timeline. Real numbers.",
+      "03",
+      "Done",
+      "We execute. Escrow closes, license issues, doors open, red tag comes down. You run your restaurant.",
+      "Book a consultation",
+      "Are you a restaurant owner in need of assistance with a real restaurant problem?",
+      "We buy, sell, lease, license, and rescue restaurants across LA County. One call. One team. Start to close.",
+      "Book a Consultation",
+      "310-663-3521",
+      "Penthouse",
+      "Advisors",
+      "Inc.",
+      "A sophisticated, full-service restaurant advisory and brokerage firm. Servicing Los Angeles County since 2021.",
+      "Do It Now.",
+      "310-663-3521",
+      "PenthouseAdvisors@gmail.com",
+      "8:00am \u2013 7:00pm \u00b7 Mon\u2013Sun",
+      "Ownership",
+      "Roschard Paticchio-Stein",
+      "CEO / Owner / Business Agent",
+      "DRE #02203003",
+      "Richard Stein",
+      "COO / Business Advisor / Owner",
+      "Rosanna Paticchio",
+      "CFO / Broker of Record",
+      "DRE #02332697",
+      "Agents",
+      "Roschard Paticchio-Stein",
+      "CEO \u00b7 Owner \u00b7 Business Agent",
+      "DRE #02203003",
+      "Jamal Ali Joseph",
+      "Business Agent",
+      "DRE #02417938",
+      "Jeremie Campbell",
+      "Business Agent",
+      "DRE #02223132",
+      "Meet all agents \u2192",
+      "Services",
+      "Buy a Restaurant",
+      "Sell Your Restaurant",
+      "Restaurant Listings",
+      "Restaurant Leasing",
+      "Licensing & Permits",
+      "Restaurant Consulting",
+      "Restaurant Alcohol Licensing",
+      "Liquor License For Sale",
+      "Health Inspection",
+      "Restaurant, Cafe, Food Markets Health Dept Permitting",
+      "Leasing Vacant Restaurants",
+      "Assignments & Abatement",
+      "Business Investigations",
+      "Buyer / Tenant Resolutions",
+      "Off-Market Door-Knocking",
+      "E-2 Visa (Europe)",
+      "Grandfather Protection",
+      "Vermin Inspections",
+      "Blog",
+      "Book a Consultation",
+      "\u00a9",
+      "2026",
+      "Penthouse Advisors Inc. \u00b7 Servicing Los Angeles County, CA",
+      "DO IT NOW.",
+      "Book a Consultation"
+    ],
+    "title": "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors"
+  },
+  {
+    "path": "/restaurants-for-sale/hardware-store-for-sale",
+    "status": 200,
+    "finalUrl": "https://www.penthouseadvisors.com/restaurants-for-sale/hardware-store-for-sale",
+    "links": [
+      "https://penthouseadvisors.com/",
+      "/",
+      "/",
+      "/services",
+      "/restaurants-for-sale",
+      "/buy-a-restaurant",
+      "/sell-your-restaurant",
+      "/restaurant-leasing",
+      "/licensing-and-permits",
+      "/restaurant-consulting",
+      "/commercial-property-management",
+      "/liquor-license-for-sale",
+      "/health-inspection",
+      "/health-permitting",
+      "/leasing-vacant-restaurants",
+      "/assignments-rent-abatement",
+      "/business-investigations",
+      "/buyer-tenant-resolutions",
+      "/grandfather-protection",
+      "/vermin-inspections",
+      "/search-door-knocking",
+      "/e2-visa-europe",
+      "/alcohol-licensing",
+      "/help",
+      "/about",
+      "/contact",
+      "tel:+13106633521",
+      "/contact",
+      "/restaurants-for-sale",
+      "#inquire",
+      "tel:+13106633521",
+      "/restaurants-for-sale/westwood-santa-monica-restaurant-asset-sale",
+      "/restaurants-for-sale/dental-office-for-lease",
+      "/restaurants-for-sale/santa-monica-asset-sale",
+      "tel:+13106633521",
+      "mailto:PenthouseAdvisors@gmail.com",
+      "/agents",
+      "/buy-a-restaurant",
+      "/sell-your-restaurant",
+      "/restaurants-for-sale",
+      "/restaurant-leasing",
+      "/licensing-and-permits",
+      "/restaurant-consulting",
+      "/alcohol-licensing",
+      "/liquor-license-for-sale",
+      "/health-inspection",
+      "/health-permitting",
+      "/leasing-vacant-restaurants",
+      "/assignments-rent-abatement",
+      "/business-investigations",
+      "/buyer-tenant-resolutions",
+      "/search-door-knocking",
+      "/e2-visa-europe",
+      "/grandfather-protection",
+      "/vermin-inspections",
+      "/blog",
+      "/contact",
+      "/contact"
+    ],
+    "meta": [
+      {
+        "charset": "utf-8"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1"
+      },
+      {
+        "name": "author",
+        "content": "Penthouse Advisors Inc."
+      },
+      {
+        "name": "keywords",
+        "content": "Los Angeles restaurant broker, restaurant consulting LA, restaurant permits Los Angeles, restaurant licensing LA, ADA compliance restaurant, liquor license transfer LA, commercial restaurant leasing Los Angeles, restaurants for sale Los Angeles"
+      },
+      {
+        "name": "robots",
+        "content": "index, follow"
+      },
+      {
+        "name": "theme-color",
+        "content": "#c9a24a"
+      },
+      {
+        "property": "og:site_name",
+        "content": "Penthouse Advisors Inc."
+      },
+      {
+        "property": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:site",
+        "content": "@penthouseadv"
+      },
+      {
+        "name": "description",
+        "content": "Established hardware store for sale on Westwood Blvd, West LA. $175,000 cash. Annual revenue $402,000. Established 2020."
+      },
+      {
+        "property": "og:title",
+        "content": "Hardware Store for Sale"
+      },
+      {
+        "property": "og:description",
+        "content": "Established hardware store for sale on Westwood Blvd, West LA. $175,000 cash. Annual revenue $402,000. Established 2020."
+      },
+      {
+        "property": "og:url",
+        "content": "https://www.penthouseadvisors.com/restaurants-for-sale/hardware-store-for-sale"
+      },
+      {
+        "property": "og:type",
+        "content": "article"
+      },
+      {
+        "property": "og:image",
+        "content": "https://www.penthouseadvisors.com/assets/hardware-storefront-BAAj8CBk.png"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://www.penthouseadvisors.com/assets/hardware-storefront-BAAj8CBk.png"
+      }
+    ],
+    "canonical": [
+      "https://www.penthouseadvisors.com/restaurants-for-sale/hardware-store-for-sale"
+    ],
+    "headings": [
+      "Hardware Store for Sale"
+    ],
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": [
+              "Organization",
+              "ProfessionalService",
+              "LocalBusiness"
+            ],
+            "@id": "https://www.penthouseadvisors.com/#organization",
+            "name": "Penthouse Advisors Inc.",
+            "alternateName": "Penthouse Advisors",
+            "description": "Full-service restaurant brokerage, consulting, licensing, permitting, and ADA compliance advisory firm serving Los Angeles County.",
+            "url": "https://www.penthouseadvisors.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.penthouseadvisors.com/android-chrome-512x512.png",
+              "width": 512,
+              "height": 512
+            },
+            "image": "https://www.penthouseadvisors.com/android-chrome-512x512.png",
+            "telephone": "+1-310-663-3521",
+            "email": "PenthouseAdvisors@gmail.com",
+            "priceRange": "$$$",
+            "areaServed": [
+              {
+                "@type": "AdministrativeArea",
+                "name": "Los Angeles County"
+              },
+              {
+                "@type": "City",
+                "name": "Los Angeles"
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Los Angeles",
+              "addressRegion": "CA",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 34.0522,
+              "longitude": -118.2437
+            },
+            "foundingDate": "2021",
+            "sameAs": [
+              "https://www.google.com/maps?q=Penthouse+Advisors+Los+Angeles"
+            ],
+            "knowsAbout": [
+              "Restaurant Brokerage",
+              "Restaurant Consulting",
+              "Restaurant Acquisitions",
+              "Restaurant Dispositions",
+              "Commercial Restaurant Leasing",
+              "Alcohol Licensing",
+              "Health Department Permitting",
+              "ADA Compliance",
+              "Hospitality Consulting"
+            ],
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "08:00",
+                "closes": "19:00"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.penthouseadvisors.com/#website",
+            "url": "https://www.penthouseadvisors.com",
+            "name": "Penthouse Advisors",
+            "publisher": {
+              "@id": "https://www.penthouseadvisors.com/#organization"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.penthouseadvisors.com/restaurants-for-sale?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      }
+    ],
+    "text": [
+      "Hardware Store for Sale \u2014 Penthouse Advisors",
+      "Penthouse Advisors Inc.",
+      "\u00b7",
+      "LA Restaurant Business Brokerage",
+      "\u00b7",
+      "Restaurant & Business For Sale L A County",
+      "Penthouse",
+      "Advisors",
+      "Inc.",
+      "Home",
+      "Services",
+      "Restaurants & Businesses for Sale/Lease, L A County",
+      "Buy a Restaurant",
+      "Sell Your Restaurant",
+      "Restaurant Leasing",
+      "Licensing & Permits",
+      "Restaurant Consulting",
+      "Commercial Property Management",
+      "Liquor License For Sale",
+      "Health Dept Inspection",
+      "Blueprints, Plan-Check Approval, Permits",
+      "Leasing Vacant Restaurants",
+      "Assignments & Rent Abatement",
+      "Business Investigations",
+      "Buyer / Tenant Resolutions",
+      "Grandfather Protection",
+      "Vermin Inspections",
+      "Off-Market Door-Knocking",
+      "E-2 Visa (Europe)",
+      "Restaurant Alcohol Licensing",
+      "Help",
+      "About",
+      "Contact",
+      "310-663-3521",
+      "Book a Consultation",
+      "All listings",
+      "Business Sale",
+      "Available Now",
+      "B-001",
+      "Hardware Store for Sale",
+      "Westwood Blvd, West LA",
+      "Business sale \u00b7 Retail",
+      "Available Now",
+      "Established hardware store for sale on Westwood Blvd in West Los Angeles.",
+      "Asking $175,000 cash. Annual revenue of approximately $402,000. Business established in 2020 with one full-time employee.",
+      "New lease to be negotiated with three 3-year extension options. Product categories include key duplication, tools, gardening, plumbing, electrical, home hardware, and more.",
+      "Deal Highlights",
+      "Straightforward business sale with training and escrow support included.",
+      "Asking price: $175,000 cash",
+      "Annual revenue: approximately $402,000",
+      "Established: 2020",
+      "Employees: 1 full-time",
+      "4 weeks of support & training included",
+      "Co-brokering welcome",
+      "Lease Terms",
+      "Lease commenced October 9, 2020. New lease terms to be negotiated with the landlord.",
+      "Base rent at commencement: $3,082.56 / mo",
+      "Year 6 monthly base rent: $4,840.89 + CAM",
+      "Three (3) 3-year options to extend",
+      "Buyer reimburses Seller's security deposit through escrow",
+      "FF&E sold in as-is condition",
+      "Highlights",
+      "Established hardware store",
+      "Westwood Blvd, West LA location",
+      "$175,000 cash",
+      "$402,000 annual revenue",
+      "Key duplication, tools, plumbing, electrical",
+      "New lease negotiable",
+      "Price",
+      "$175,000",
+      "Cash",
+      "Inquire About This Listing",
+      "310-663-3521",
+      "Full financials and showings released after a signed NDA. Off-market opportunities available on request.",
+      "Listing",
+      "B-001",
+      "Inquire about",
+      "Hardware Store for Sale",
+      "Send a private inquiry on this specific property. We'll respond same business day with next steps, NDA, and any financials available.",
+      "Westwood Blvd, West LA",
+      "$175,000",
+      "\u00b7 Cash",
+      "Business sale \u00b7 Retail",
+      "Inquire about this listing",
+      "Private inquiry. We respond same business day.",
+      "Leave this field blank",
+      "Name",
+      "Phone",
+      "Email",
+      "Service Needed",
+      "Listing inquiry \u2014 Hardware Store for Sale",
+      "Are you a",
+      "Select one\u2026",
+      "Property owner",
+      "Restaurant operator",
+      "Buyer",
+      "Seller",
+      "Timeline",
+      "Select one\u2026",
+      "Ready now",
+      "30-60 days",
+      "60-90 days",
+      "Just exploring",
+      "Financing",
+      "Select one\u2026",
+      "Cash",
+      "SBA / bank",
+      "Seller financing needed",
+      "Undecided",
+      "Additional details",
+      "Send Message",
+      "By submitting, you agree to be contacted by Penthouse Advisors.",
+      "More listings",
+      "Asset Sale",
+      "Restaurant Fully Equipped, Open, Permitted Asset Sale",
+      "NW corner of Westwood Blvd & Santa Monica Blvd, Los Angeles",
+      "Medical / Dental",
+      "Therapy & Dental Space For Lease",
+      "West LA",
+      "Asset Sale",
+      "Santa Monica Restaurant \u2014 Turnkey Asset Sale",
+      "Santa Monica (Los Angeles County)",
+      "Penthouse",
+      "Advisors",
+      "Inc.",
+      "A sophisticated, full-service restaurant advisory and brokerage firm. Servicing Los Angeles County since 2021.",
+      "Do It Now.",
+      "310-663-3521",
+      "PenthouseAdvisors@gmail.com",
+      "8:00am \u2013 7:00pm \u00b7 Mon\u2013Sun",
+      "Ownership",
+      "Roschard Paticchio-Stein",
+      "CEO / Owner / Business Agent",
+      "DRE #02203003",
+      "Richard Stein",
+      "COO / Business Advisor / Owner",
+      "Rosanna Paticchio",
+      "CFO / Broker of Record",
+      "DRE #02332697",
+      "Agents",
+      "Roschard Paticchio-Stein",
+      "CEO \u00b7 Owner \u00b7 Business Agent",
+      "DRE #02203003",
+      "Jamal Ali Joseph",
+      "Business Agent",
+      "DRE #02417938",
+      "Jeremie Campbell",
+      "Business Agent",
+      "DRE #02223132",
+      "Meet all agents \u2192",
+      "Services",
+      "Buy a Restaurant",
+      "Sell Your Restaurant",
+      "Restaurant Listings",
+      "Restaurant Leasing",
+      "Licensing & Permits",
+      "Restaurant Consulting",
+      "Restaurant Alcohol Licensing",
+      "Liquor License For Sale",
+      "Health Inspection",
+      "Restaurant, Cafe, Food Markets Health Dept Permitting",
+      "Leasing Vacant Restaurants",
+      "Assignments & Abatement",
+      "Business Investigations",
+      "Buyer / Tenant Resolutions",
+      "Off-Market Door-Knocking",
+      "E-2 Visa (Europe)",
+      "Grandfather Protection",
+      "Vermin Inspections",
+      "Blog",
+      "Book a Consultation",
+      "\u00a9",
+      "2026",
+      "Penthouse Advisors Inc. \u00b7 Servicing Los Angeles County, CA",
+      "DO IT NOW.",
+      "Book a Consultation"
+    ],
+    "title": "Hardware Store for Sale \u2014 Penthouse Advisors"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "sitemapUrls": 53,
+  "renderedPagesChecked": 53,
+  "articlesChecked": 6,
+  "listingDetailsChecked": 5,
+  "checks": "HTTP 200, one H1, canonicals, JSON-LD parsing/entity/date/FAQ invariants, rendered article links, query canonical",
+  "result": "PASS"
+}

@@ -6,8 +6,6 @@ import { featuredServices } from "@/lib/services";
 import heroImage from "@/assets/hero-downtown-la.jpg";
 import { useEffect, useState } from "react";
 
-
-
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -17,7 +15,10 @@ export const Route = createFileRoute("/")({
         content:
           "Los Angeles restaurant brokerage, consulting, permitting, licensing, and ADA compliance. Buy, sell, lease, and license restaurants across LA County under one roof.",
       },
-      { property: "og:title", content: "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors" },
+      {
+        property: "og:title",
+        content: "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors",
+      },
       {
         property: "og:description",
         content:
@@ -26,12 +27,22 @@ export const Route = createFileRoute("/")({
       { property: "og:url", content: "https://www.penthouseadvisors.com" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors" },
-      { name: "twitter:description", content: "Restaurant brokerage, consulting, licensing, permitting & ADA compliance for LA County." },
+      {
+        name: "twitter:title",
+        content: "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Restaurant brokerage, consulting, licensing, permitting & ADA compliance for LA County.",
+      },
     ],
     links: [
       { rel: "canonical", href: "https://www.penthouseadvisors.com" },
-      { rel: "preload", as: "image", href: heroImage, fetchpriority: "high" } as unknown as { rel: string; href: string },
+      { rel: "preload", as: "image", href: heroImage, fetchpriority: "high" } as unknown as {
+        rel: string;
+        href: string;
+      },
     ],
   }),
 
@@ -52,7 +63,6 @@ const trust = [
   { icon: Star, label: "Principal-Led" },
 ];
 
-
 const steps = [
   {
     n: "01",
@@ -71,13 +81,17 @@ const steps = [
   },
 ];
 
-
 function HomePage() {
   const [scrollY, setScrollY] = useState(0);
   useEffect(() => {
-    const onScroll = () => setScrollY(window.scrollY);
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const onScroll = () => setScrollY(motion.matches ? 0 : window.scrollY);
+    motion.addEventListener("change", onScroll);
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      motion.removeEventListener("change", onScroll);
+    };
   }, []);
 
   return (
@@ -114,7 +128,8 @@ function HomePage() {
               style={{ animationDelay: "320ms", animationFillMode: "both" }}
             >
               Serving Los Angeles County with expert restaurant brokerage, licensing, leasing,
-              permitting, consulting, and transaction management—from first opportunity to final closing.
+              permitting, consulting, and transaction management—from first opportunity to final
+              closing.
             </p>
 
             <div
@@ -176,8 +191,13 @@ function HomePage() {
             </div>
 
             {/* floating credential card */}
-            <div className="absolute -bottom-6 -left-6 lg:bottom-10 lg:-left-10 max-w-[260px] bg-cream/95 backdrop-blur-sm border border-gold/20 p-6 shadow-elegant animate-fade-in" style={{ animationDelay: "900ms", animationFillMode: "both" }}>
-              <div className="text-[10px] font-medium uppercase tracking-[0.24em] text-gold">Trusted Advisory</div>
+            <div
+              className="absolute -bottom-6 -left-6 lg:bottom-10 lg:-left-10 max-w-[260px] bg-cream/95 backdrop-blur-sm border border-gold/20 p-6 shadow-elegant animate-fade-in"
+              style={{ animationDelay: "900ms", animationFillMode: "both" }}
+            >
+              <div className="text-[10px] font-medium uppercase tracking-[0.24em] text-gold">
+                Trusted Advisory
+              </div>
               <p className="mt-3 font-display text-lg leading-snug text-charcoal-deep">
                 "One trusted partner for every stage of the restaurant lifecycle."
               </p>
@@ -203,7 +223,6 @@ function HomePage() {
           </div>
         </div>
       </section>
-
 
       {/* SERVICES */}
       <section className="container-x py-20 md:py-28">
@@ -243,7 +262,9 @@ function HomePage() {
       <section className="border-y border-border bg-card">
         <div className="container-x py-20 md:py-28">
           <div className="max-w-2xl">
-            <p className="text-xs font-semibold uppercase tracking-widest text-gold">How It Works</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-gold">
+              How It Works
+            </p>
             <h2 className="mt-2 text-3xl md:text-5xl font-display font-bold">
               Three steps. No runaround.
             </h2>
@@ -267,7 +288,6 @@ function HomePage() {
           </div>
         </div>
       </section>
-
 
       <CTASection
         title="Are you a restaurant owner in need of assistance with a real restaurant problem?"

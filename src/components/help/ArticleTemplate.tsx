@@ -12,7 +12,13 @@ function renderSection(s: Section, i: number) {
       return (
         <h2
           key={i}
-          id={s.id ?? s.text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}
+          id={
+            s.id ??
+            s.text
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, "-")
+              .replace(/^-|-$/g, "")
+          }
           className="mt-12 text-2xl md:text-3xl font-display font-bold scroll-mt-24"
         >
           {s.text}
@@ -34,15 +40,22 @@ function renderSection(s: Section, i: number) {
       return (
         <ul key={i} className="mt-4 space-y-2 pl-5 list-disc marker:text-gold text-foreground/85">
           {s.items.map((it, j) => (
-            <li key={j} className="leading-relaxed">{it}</li>
+            <li key={j} className="leading-relaxed">
+              {it}
+            </li>
           ))}
         </ul>
       );
     case "ol":
       return (
-        <ol key={i} className="mt-4 space-y-2 pl-5 list-decimal marker:text-gold marker:font-bold text-foreground/85">
+        <ol
+          key={i}
+          className="mt-4 space-y-2 pl-5 list-decimal marker:text-gold marker:font-bold text-foreground/85"
+        >
           {s.items.map((it, j) => (
-            <li key={j} className="leading-relaxed">{it}</li>
+            <li key={j} className="leading-relaxed">
+              {it}
+            </li>
           ))}
         </ol>
       );
@@ -50,7 +63,9 @@ function renderSection(s: Section, i: number) {
       return (
         <blockquote key={i} className="mt-6 border-l-4 border-gold pl-5 italic text-foreground/80">
           {s.text}
-          {s.cite && <cite className="mt-2 block text-xs not-italic text-muted-foreground">— {s.cite}</cite>}
+          {s.cite && (
+            <cite className="mt-2 block text-xs not-italic text-muted-foreground">— {s.cite}</cite>
+          )}
         </blockquote>
       );
     case "callout":
@@ -63,24 +78,24 @@ function renderSection(s: Section, i: number) {
   }
 }
 
-export function ArticleTemplate({
-  article,
-  category,
-}: {
-  article: Article;
-  category: Category;
-}) {
+export function ArticleTemplate({ article, category }: { article: Article; category: Category }) {
   const toc = article.sections
     .filter((s): s is Extract<Section, { type: "h2" }> => s.type === "h2")
     .map((s) => ({
       text: s.text,
-      id: s.id ?? s.text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""),
+      id:
+        s.id ??
+        s.text
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/^-|-$/g, ""),
     }));
 
   const updated = new Date(article.updatedAt).toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
+    timeZone: "UTC",
   });
 
   return (
@@ -113,9 +128,7 @@ export function ArticleTemplate({
         <div className="min-w-0">
           <KeyTakeaways items={article.keyTakeaways} />
 
-          <div className="mt-10 max-w-3xl">
-            {article.sections.map(renderSection)}
-          </div>
+          <div className="mt-10 max-w-3xl">{article.sections.map(renderSection)}</div>
 
           {article.faqs.length > 0 && (
             <section className="mt-14 max-w-3xl">
@@ -131,20 +144,23 @@ export function ArticleTemplate({
             </section>
           )}
 
+          <p className="mt-10 max-w-3xl text-base">
+            For help with your transaction, explore{" "}
+            <Link to={article.commercialParent.to} className="underline underline-offset-4">
+              {article.commercialParent.title}
+            </Link>
+            .
+          </p>
+
           {article.related && article.related.length > 0 && (
             <section className="mt-14 max-w-3xl">
-              <p className="text-xs font-semibold uppercase tracking-widest text-gold">
-                Related
-              </p>
-              <h2 className="mt-2 text-2xl md:text-3xl font-display font-bold">
-                Keep reading.
-              </h2>
+              <p className="text-xs font-semibold uppercase tracking-widest text-gold">Related</p>
+              <h2 className="mt-2 text-2xl md:text-3xl font-display font-bold">Keep reading.</h2>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 {article.related.map((r) => (
                   <Link
-                    key={`${r.category}/${r.slug}`}
-                    to="/help/$category/$slug"
-                    params={{ category: r.category, slug: r.slug }}
+                    key={r.to}
+                    to={r.to}
                     className="group flex items-center justify-between gap-3 rounded-xl border border-border bg-card p-4 text-sm font-semibold hover:border-gold/60 hover:bg-gold/5 transition"
                   >
                     <span>{r.title}</span>

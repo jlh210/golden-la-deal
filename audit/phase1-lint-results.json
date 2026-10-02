@@ -1,0 +1,15 @@
+{
+  "baseline": {
+    "errors": 465,
+    "warnings": 8
+  },
+  "final": {
+    "errors": 259,
+    "warnings": 7
+  },
+  "changedFiles": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "remaining": "Pre-existing formatting errors and two ListingsMap no-explicit-any errors; no unrelated cleanup."
+}

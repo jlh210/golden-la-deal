@@ -26,14 +26,12 @@ export const article: Article = {
     { type: "h2", text: "Get your numbers ready" },
     {
       type: "p",
-      text:
-        "Buyers pay for verified cash flow, not stories. Before you list, reconcile 24 months of POS reports, bank deposits, merchant statements, and sales-tax filings so a serious buyer can trace revenue in under an hour. Owners who can't produce these lose 20–40% of their theoretical price during due diligence.",
+      text: "Buyers pay for verified cash flow, not stories. Before you list, reconcile 24 months of POS reports, bank deposits, merchant statements, and sales-tax filings so a serious buyer can trace revenue in under an hour. Owners who can't produce these lose 20–40% of their theoretical price during due diligence.",
     },
     { type: "h2", text: "Understand what your restaurant is worth" },
     {
       type: "p",
-      text:
-        "In LA County, independent restaurants typically sell on a multiple of Seller's Discretionary Earnings (SDE): revenue minus real operating costs, added back with the owner's compensation and one-time expenses. The multiple depends on lease term remaining, license type, neighborhood, and how much of the operation depends on the owner personally.",
+      text: "In LA County, independent restaurants typically sell on a multiple of Seller's Discretionary Earnings (SDE): revenue minus real operating costs, added back with the owner's compensation and one-time expenses. The multiple depends on lease term remaining, license type, neighborhood, and how much of the operation depends on the owner personally.",
     },
     { type: "h3", text: "What moves the multiple up" },
     {
@@ -60,32 +58,27 @@ export const article: Article = {
     { type: "h2", text: "List confidentially" },
     {
       type: "p",
-      text:
-        "Public listings tell your staff, vendors, competitors, and regulars that you're leaving — before you have a buyer. A professional restaurant broker markets under a blind profile (neighborhood, cuisine, revenue range) and only reveals identity after a buyer signs an NDA and financial qualification.",
+      text: "Public listings tell your staff, vendors, competitors, and regulars that you're leaving — before you have a buyer. A professional restaurant broker markets under a blind profile (neighborhood, cuisine, revenue range) and only reveals identity after a buyer signs an NDA and financial qualification.",
     },
     { type: "h2", text: "Qualify buyers before the tour" },
     {
       type: "p",
-      text:
-        "Every buyer inquiry should clear three gates before they walk your dining room: proof of funds or lender pre-approval, hospitality experience the landlord will accept, and no ABC disqualifiers (felony history, prior license discipline). This filter saves you weeks and protects the confidentiality of your listing.",
+      text: "Every buyer inquiry should clear three gates before they walk your dining room: proof of funds or lender pre-approval, hospitality experience the landlord will accept, and no ABC disqualifiers (felony history, prior license discipline). This filter saves you weeks and protects the confidentiality of your listing.",
     },
     { type: "h2", text: "Negotiate the LOI" },
     {
       type: "p",
-      text:
-        "A strong LOI locks in price, deposit size, due-diligence window, lease-assignment contingency, ABC transfer terms, and closing conditions. The deposit should hit an independent escrow, not the buyer's attorney's trust account.",
+      text: "A strong LOI locks in price, deposit size, due-diligence window, lease-assignment contingency, ABC transfer terms, and closing conditions. The deposit should hit an independent escrow, not the buyer's attorney's trust account.",
     },
     { type: "h2", text: "Escrow, transfers, and closing" },
     {
       type: "p",
-      text:
-        "The buyer opens a California bulk-sale escrow, publishes the Bulk Sale Notice, and runs due diligence. In parallel, the ABC license transfer and Health Dept change of ownership run on their own clocks. Expect 60–120 days from accepted LOI to keys.",
+      text: "The buyer opens a California bulk-sale escrow, publishes the Bulk Sale Notice, and runs due diligence. In parallel, the ABC license transfer and Health Dept change of ownership run on their own clocks. Expect 60–120 days from accepted LOI to keys.",
     },
     { type: "h2", text: "After the close" },
     {
       type: "p",
-      text:
-        "Most LA restaurant sales include 1–4 weeks of seller training. Structure it in writing — hours per day, coverage of key relationships (vendors, landlord, health inspector), and any earn-out or seller-note terms.",
+      text: "Most LA restaurant sales include 1–4 weeks of seller training. Structure it in writing — hours per day, coverage of key relationships (vendors, landlord, health inspector), and any earn-out or seller-note terms.",
     },
   ],
   faqs: [
@@ -110,9 +103,19 @@ export const article: Article = {
       a: "Asset sales, stock sales, and installment sales are taxed very differently in California. Involve your CPA before you accept an LOI — allocation of purchase price to equipment vs. goodwill materially changes your tax bill.",
     },
   ],
+  commercialParent: { to: "/sell-your-restaurant", title: "Restaurant seller advisory" },
   related: [
-    { category: "buying-a-restaurant", slug: "how-to-buy-a-restaurant-in-los-angeles", title: "How to Buy a Restaurant in Los Angeles" },
-    { category: "lease-assignments", slug: "restaurant-lease-assignment-guide", title: "Restaurant Lease Assignment Guide" },
-    { category: "alcohol-licensing", slug: "abc-license-transfer-guide", title: "ABC License Transfer Guide" },
+    {
+      to: "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+      title: "How to Buy a Restaurant in Los Angeles",
+    },
+    {
+      to: "/help/lease-assignments/restaurant-lease-assignment-guide",
+      title: "Restaurant Lease Assignment Guide",
+    },
+    {
+      to: "/help/alcohol-licensing/abc-license-transfer-guide",
+      title: "ABC License Transfer Guide",
+    },
   ],
 };

@@ -17,14 +17,16 @@ export const Route = createFileRoute("/agents")({
       { property: "og:title", content: "Agents - Penthouse Advisors Inc." },
       {
         property: "og:description",
-        content:
-          "Principal-led restaurant brokerage and advisory team serving Los Angeles County.",
+        content: "Principal-led restaurant brokerage and advisory team serving Los Angeles County.",
       },
       { property: "og:url", content: "https://www.penthouseadvisors.com/agents" },
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/agents" }],
     scripts: [
-      breadcrumbScript([{name:"Home",path:"/"},{name:'Agents',path:'/agents'}]),
+      breadcrumbScript([
+        { name: "Home", path: "/" },
+        { name: "Agents", path: "/agents" },
+      ]),
     ],
   }),
   component: AgentsPage,
@@ -80,9 +82,16 @@ function AgentsPage() {
       <section className="container-x py-16 md:py-24">
         <div className="grid gap-6 md:grid-cols-3">
           {agents.map((a) => (
-            <article key={a.name} className="rounded-2xl border border-border bg-card p-7 shadow-elegant flex flex-col">
+            <article
+              key={a.name}
+              className="rounded-2xl border border-border bg-card p-7 shadow-elegant flex flex-col"
+            >
               <div className="grid h-16 w-16 place-items-center rounded-full bg-gold-gradient text-charcoal-deep font-display text-2xl font-black">
-                {a.name.split(" ").map((w) => w[0]).slice(0, 2).join("")}
+                {a.name
+                  .split(" ")
+                  .map((w) => w[0])
+                  .slice(0, 2)
+                  .join("")}
               </div>
               <h2 className="mt-5 text-xl font-display font-bold">{a.name}</h2>
               <p className="mt-1 text-sm font-semibold text-gold">{a.title}</p>
@@ -90,14 +99,22 @@ function AgentsPage() {
               <p className="mt-4 text-sm text-foreground/85 leading-relaxed">{a.bio}</p>
               <ul className="mt-5 space-y-1.5">
                 {a.focus.map((f) => (
-                  <li key={f} className="text-xs text-muted-foreground">- {f}</li>
+                  <li key={f} className="text-xs text-muted-foreground">
+                    - {f}
+                  </li>
                 ))}
               </ul>
               <div className="mt-6 pt-5 border-t border-border flex flex-col gap-2 text-sm">
-                <a href={a.phoneHref || PHONE_HREF} className="inline-flex items-center gap-2 hover:text-gold">
+                <a
+                  href={a.phoneHref || PHONE_HREF}
+                  className="inline-flex items-center gap-2 hover:text-gold"
+                >
                   <Phone className="h-4 w-4 text-gold" /> {a.phone || PHONE}
                 </a>
-                <a href={EMAIL_HREF} className="inline-flex items-center gap-2 hover:text-gold break-all">
+                <a
+                  href={EMAIL_HREF}
+                  className="inline-flex items-center gap-2 hover:text-gold break-all"
+                >
                   <Mail className="h-4 w-4 text-gold" /> {EMAIL}
                 </a>
               </div>
@@ -115,7 +132,10 @@ function AgentsPage() {
         </div>
       </section>
 
-      <CTASection title="Speak directly with a principal." body="Every call routes to an owner-partner. No intake forms, no junior associates." />
+      <CTASection
+        title="Speak directly with a principal."
+        body="Submit your details to discuss your restaurant with an advisor."
+      />
     </SiteLayout>
   );
 }

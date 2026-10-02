@@ -2,6 +2,15 @@
 // Site canonical origin — must match sitemap.xml BASE_URL and __root.tsx.
 export const SITE_URL = "https://www.penthouseadvisors.com";
 export const ORG_ID = `${SITE_URL}/#organization`;
+export const WEBSITE_ID = `${SITE_URL}/#website`;
+
+/** Canonical origin and path; query parameters do not define indexable pages. */
+export function canonicalUrl(path: string) {
+  const url = new URL(path, `${SITE_URL}/`);
+  if (url.origin !== SITE_URL) throw new Error("Canonical URL must belong to this site");
+  const pathname = url.pathname.replace(/\/+$/, "");
+  return `${SITE_URL}${pathname}`;
+}
 
 export type Crumb = { name: string; path: string };
 
@@ -16,7 +25,7 @@ export function breadcrumbScript(crumbs: Crumb[]) {
         "@type": "ListItem",
         position: i + 1,
         name: c.name,
-        item: `${SITE_URL}${c.path}`,
+        item: canonicalUrl(c.path),
       })),
     }),
   } as const;
@@ -37,7 +46,7 @@ export function serviceScript(opts: {
       "@type": "Service",
       name: opts.name,
       description: opts.description,
-      url: `${SITE_URL}${opts.path}`,
+      url: canonicalUrl(opts.path),
       serviceType: opts.serviceType ?? opts.name,
       provider: { "@id": ORG_ID },
       areaServed: {
@@ -53,7 +62,7 @@ export function articleScript(opts: {
   headline: string;
   description: string;
   path: string;
-  datePublished: string;
+  datePublished?: string;
   dateModified?: string;
   authorName?: string;
   image?: string;
@@ -65,10 +74,10 @@ export function articleScript(opts: {
       "@type": "Article",
       headline: opts.headline,
       description: opts.description,
-      mainEntityOfPage: `${SITE_URL}${opts.path}`,
-      url: `${SITE_URL}${opts.path}`,
-      datePublished: opts.datePublished,
-      dateModified: opts.dateModified ?? opts.datePublished,
+      mainEntityOfPage: canonicalUrl(opts.path),
+      url: canonicalUrl(opts.path),
+      ...(opts.datePublished ? { datePublished: opts.datePublished } : {}),
+      ...(opts.dateModified ? { dateModified: opts.dateModified } : {}),
       author: {
         "@type": "Person",
         name: opts.authorName ?? "Richard Stein",
@@ -106,8 +115,24 @@ export function collectionScript(opts: { name: string; description: string; path
       "@type": "CollectionPage",
       name: opts.name,
       description: opts.description,
-      url: `${SITE_URL}${opts.path}`,
-      isPartOf: { "@id": ORG_ID },
+      url: canonicalUrl(opts.path),
+      isPartOf: { "@id": WEBSITE_ID },
     }),
   } as const;
+}
+
+/** Shared service graph: one provider identity and one visible FAQ source. */
+export function buildServiceJsonLd(opts: {
+  name: string;
+  description: string;
+  url: string;
+  serviceType: string;
+  breadcrumbs: { name: string; url: string }[];
+  faqs: { q: string; a: string }[];
+}) {
+  return [
+    serviceScript({ ...opts, path: opts.url }),
+    breadcrumbScript(opts.breadcrumbs.map((b) => ({ name: b.name, path: b.url }))),
+    ...(opts.faqs.length ? [faqScript(opts.faqs)] : []),
+  ];
 }

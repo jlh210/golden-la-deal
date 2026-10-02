@@ -46,8 +46,7 @@ export const article: Article = {
     { type: "h2", text: "Temporary retail permit" },
     {
       type: "p",
-      text:
-        "The buyer can apply for a temporary retail permit at the same time as the transfer. Cost is modest, timeline is fast (often within a week), and it lets you operate under your name during the transfer window. Almost every LA restaurant closing uses one.",
+      text: "The buyer can apply for a temporary retail permit at the same time as the transfer. Cost is modest, timeline is fast (often within a week), and it lets you operate under your name during the transfer window. Almost every LA restaurant closing uses one.",
     },
     { type: "h2", text: "What can block or slow the transfer" },
     {
@@ -64,14 +63,12 @@ export const article: Article = {
     { type: "h2", text: "CUB conditions — read them" },
     {
       type: "p",
-      text:
-        "A Conditional Use Beverage permit is a list of local restrictions attached to the license: hours of sale, whether entertainment is allowed, food-service-to-alcohol ratio, no karaoke, no happy hour, and so on. CUBs travel with the license. Before you close, pull the ABC file and read the full CUB — a restriction you didn't know about can gut your concept.",
+      text: "A Conditional Use Beverage permit is a list of local restrictions attached to the license: hours of sale, whether entertainment is allowed, food-service-to-alcohol ratio, no karaoke, no happy hour, and so on. CUBs travel with the license. Before you close, pull the ABC file and read the full CUB — a restriction you didn't know about can gut your concept.",
     },
     { type: "h2", text: "Escrow release" },
     {
       type: "p",
-      text:
-        "California requires the license transfer to be complete (or in defined final steps) before escrow funds are released to the seller. This protects both sides — the seller doesn't lose the license without payment, the buyer doesn't pay for a license they don't own.",
+      text: "California requires the license transfer to be complete (or in defined final steps) before escrow funds are released to the seller. This protects both sides — the seller doesn't lose the license without payment, the buyer doesn't pay for a license they don't own.",
     },
   ],
   faqs: [
@@ -92,9 +89,12 @@ export const article: Article = {
       a: "For a clean person-to-person transfer with no CUB complications, many buyers file themselves. For anything involving CUB modifications, new licenses, disciplinary history, or protests, a specialized consultant is worth the fee.",
     },
   ],
+  commercialParent: { to: "/alcohol-licensing", title: "Restaurant ABC licensing support" },
   related: [
-    { category: "alcohol-licensing", slug: "abc-license-transfer-guide", title: "ABC License Transfer Guide" },
-    { category: "buying-a-restaurant", slug: "how-to-buy-a-restaurant-in-los-angeles", title: "How to Buy a Restaurant in Los Angeles" },
-    { category: "health-permitting", slug: "restaurant-health-permit-transfer", title: "Restaurant Health Permit Transfer" },
+    {
+      to: "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+      title: "How to Buy a Restaurant in Los Angeles",
+    },
+    { to: "/health-permitting", title: "Restaurant health permitting support" },
   ],
 };

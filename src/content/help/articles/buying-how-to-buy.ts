@@ -26,14 +26,12 @@ export const article: Article = {
     { type: "h2", text: "Decide what you're actually buying" },
     {
       type: "p",
-      text:
-        "Restaurant deals in Los Angeles come in three shapes: an asset sale (equipment, goodwill, and the lease assignment), a business/stock sale (the operating entity with its liabilities), or a real-estate purchase where you buy the building along with the operation. The tax, licensing, and liability profile of each is very different — decide with your CPA before you write an offer.",
+      text: "Restaurant deals in Los Angeles come in three shapes: an asset sale (equipment, goodwill, and the lease assignment), a business/stock sale (the operating entity with its liabilities), or a real-estate purchase where you buy the building along with the operation. The tax, licensing, and liability profile of each is very different — decide with your CPA before you write an offer.",
     },
     { type: "h2", text: "Set your budget and financing" },
     {
       type: "p",
-      text:
-        "Independent LA restaurants change hands between roughly $150,000 for a small turnkey space and $2M+ for a full liquor concept in a prime submarket. Plan for the purchase price, working capital for 90 days, a security deposit and first month's rent for the landlord, ABC transfer costs, Health Dept plan-check fees, and a reserve for surprises found during inspection.",
+      text: "Independent LA restaurants change hands between roughly $150,000 for a small turnkey space and $2M+ for a full liquor concept in a prime submarket. Plan for the purchase price, working capital for 90 days, a security deposit and first month's rent for the landlord, ABC transfer costs, Health Dept plan-check fees, and a reserve for surprises found during inspection.",
     },
     { type: "h3", text: "Common financing paths" },
     {
@@ -48,20 +46,17 @@ export const article: Article = {
     { type: "h2", text: "Find qualified listings" },
     {
       type: "p",
-      text:
-        "Public listings surface a fraction of LA's real inventory. Most serious deals move off-market through brokers who know which operators are quietly tired, which landlords want a new tenant, and which spaces are about to be listed. That's why buyers work with a specialized restaurant broker rather than a generalist commercial broker.",
+      text: "Public listings surface a fraction of LA's real inventory. Most serious deals move off-market through brokers who know which operators are quietly tired, which landlords want a new tenant, and which spaces are about to be listed. That's why buyers work with a specialized restaurant broker rather than a generalist commercial broker.",
     },
     { type: "h2", text: "Write the LOI and open escrow" },
     {
       type: "p",
-      text:
-        "A Letter of Intent locks in price, deposit, contingencies, and a due-diligence window (typically 21–45 days). Once accepted, escrow opens at a licensed California bulk-sale escrow house — a Bulk Sale Notice is published to protect you from the seller's creditors, which alone takes 12–15 business days.",
+      text: "A Letter of Intent locks in price, deposit, contingencies, and a due-diligence window (typically 21–45 days). Once accepted, escrow opens at a licensed California bulk-sale escrow house — a Bulk Sale Notice is published to protect you from the seller's creditors, which alone takes 12–15 business days.",
     },
     { type: "h2", text: "Run real due diligence" },
     {
       type: "p",
-      text:
-        "This is where deals live or die. A thorough pre-purchase investigation covers:",
+      text: "This is where deals live or die. A thorough pre-purchase investigation covers:",
     },
     {
       type: "ul",
@@ -77,26 +72,22 @@ export const article: Article = {
     { type: "h2", text: "Handle the lease assignment" },
     {
       type: "p",
-      text:
-        "Every LA restaurant lease requires landlord consent to assign. Landlords use this leverage to raise rent, extend the term, tighten the guaranty, or refuse entirely. Start the assignment conversation with the landlord within the first week of escrow — a stalled assignment is the number-one reason LA restaurant deals collapse.",
+      text: "Every LA restaurant lease requires landlord consent to assign. Landlords use this leverage to raise rent, extend the term, tighten the guaranty, or refuse entirely. Start the assignment conversation with the landlord within the first week of escrow — a stalled assignment is the number-one reason LA restaurant deals collapse.",
     },
     { type: "h2", text: "Transfer the ABC license" },
     {
       type: "p",
-      text:
-        "If the restaurant sells beer, wine, or spirits, you'll file a person-to-person transfer with the California Department of Alcoholic Beverage Control. Expect 60–90 days for ABC to post, investigate, and issue. During that window, most buyers operate under a temporary retail permit for continuity.",
+      text: "If the restaurant sells beer, wine, or spirits, you'll file a person-to-person transfer with the California Department of Alcoholic Beverage Control. Expect 60–90 days for ABC to post, investigate, and issue. During that window, most buyers operate under a temporary retail permit for continuity.",
     },
     { type: "h2", text: "Change the Health permit" },
     {
       type: "p",
-      text:
-        "Los Angeles County Environmental Health requires a Change of Ownership application and inspection before you can operate under your name. If you alter the layout, add cooking equipment, or change the menu category, you may also trigger a full plan check — that adds 4–12 weeks and requires stamped blueprints.",
+      text: "Los Angeles County Environmental Health requires a Change of Ownership application and inspection before you can operate under your name. If you alter the layout, add cooking equipment, or change the menu category, you may also trigger a full plan check — that adds 4–12 weeks and requires stamped blueprints.",
     },
     { type: "h2", text: "Close and take possession" },
     {
       type: "p",
-      text:
-        "At closing, escrow disburses funds, records the bill of sale, and hands you keys. On day one you should have a working POS, a payroll provider, a food distributor account, a permit board posted, and your ABC temporary in the register drawer.",
+      text: "At closing, escrow disburses funds, records the bill of sale, and hands you keys. On day one you should have a working POS, a payroll provider, a food distributor account, a permit board posted, and your ABC temporary in the register drawer.",
     },
   ],
   faqs: [
@@ -121,9 +112,19 @@ export const article: Article = {
       a: "The deal doesn't close unless your LOI made landlord consent a contingency (it should have). We negotiate directly with landlords daily and know which levers to pull — rent bumps, extended terms, or additional guaranty language usually break the logjam.",
     },
   ],
+  commercialParent: { to: "/buy-a-restaurant", title: "Restaurant acquisition advisory" },
   related: [
-    { category: "buying-a-restaurant", slug: "restaurant-due-diligence-checklist", title: "Restaurant Due Diligence Checklist" },
-    { category: "alcohol-licensing", slug: "abc-license-transfer-guide", title: "ABC License Transfer Guide" },
-    { category: "lease-assignments", slug: "restaurant-lease-assignment-guide", title: "Restaurant Lease Assignment Guide" },
+    {
+      to: "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+      title: "Restaurant Due Diligence Checklist",
+    },
+    {
+      to: "/help/alcohol-licensing/abc-license-transfer-guide",
+      title: "ABC License Transfer Guide",
+    },
+    {
+      to: "/help/lease-assignments/restaurant-lease-assignment-guide",
+      title: "Restaurant Lease Assignment Guide",
+    },
   ],
 };

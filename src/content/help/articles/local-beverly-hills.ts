@@ -24,8 +24,7 @@ export const article: Article = {
     { type: "h2", text: "The Beverly Hills market" },
     {
       type: "p",
-      text:
-        "Beverly Hills is one of the highest-priced and most tightly regulated restaurant markets in Los Angeles County. Rents on the Rodeo, Canon, and Beverly corridors reflect luxury retail demand. Landlords are selective, the Planning Commission is active, and the ABC treats new hours or entertainment as a full public process.",
+      text: "Beverly Hills is one of the highest-priced and most tightly regulated restaurant markets in Los Angeles County. Rents on the Rodeo, Canon, and Beverly corridors reflect luxury retail demand. Landlords are selective, the Planning Commission is active, and the ABC treats new hours or entertainment as a full public process.",
     },
     { type: "h2", text: "Where transactions actually happen" },
     {
@@ -50,8 +49,7 @@ export const article: Article = {
     { type: "h2", text: "How Penthouse Advisors works in 90210" },
     {
       type: "p",
-      text:
-        "We work every side of Beverly Hills transactions — representing sellers confidentially, sourcing off-market space for tenants, and pairing buyers with the qualified LA operators our landlords will actually approve. If you're considering an entry, an exit, or a lease in Beverly Hills, one call is the fastest way to see what's really available.",
+      text: "We work every side of Beverly Hills transactions — representing sellers confidentially, sourcing off-market space for tenants, and pairing buyers with the qualified LA operators our landlords will actually approve. If you're considering an entry, an exit, or a lease in Beverly Hills, one call is the fastest way to see what's really available.",
     },
   ],
   faqs: [
@@ -68,9 +66,19 @@ export const article: Article = {
       a: "Yes. Beverly Hills reviews outdoor dining, entertainment, extended hours, and any exterior signage as separate city processes. Build these into your timeline.",
     },
   ],
+  commercialParent: {
+    to: "/buy-a-restaurant",
+    title: "Buying a restaurant with Penthouse Advisors",
+  },
   related: [
-    { category: "buying-a-restaurant", slug: "how-to-buy-a-restaurant-in-los-angeles", title: "How to Buy a Restaurant in Los Angeles" },
-    { category: "restaurant-leasing", slug: "restaurant-leasing-overview", title: "Restaurant Leasing in Los Angeles" },
-    { category: "alcohol-licensing", slug: "abc-license-transfer-guide", title: "ABC License Transfer Guide" },
+    {
+      to: "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+      title: "How to Buy a Restaurant in Los Angeles",
+    },
+    { to: "/restaurant-leasing", title: "Restaurant Leasing in Los Angeles" },
+    {
+      to: "/help/alcohol-licensing/abc-license-transfer-guide",
+      title: "ABC License Transfer Guide",
+    },
   ],
 };

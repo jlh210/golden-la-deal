@@ -1,5 +1,16 @@
+import { ORG_ID } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
-import { Building2, ShieldCheck, Wrench, FileText, Phone, Users, Clock, Home, CheckCircle2 } from "lucide-react";
+import {
+  Building2,
+  ShieldCheck,
+  Wrench,
+  FileText,
+  Phone,
+  Users,
+  Clock,
+  Home,
+  CheckCircle2,
+} from "lucide-react";
 import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { LeadForm } from "@/components/site/LeadForm";
@@ -38,12 +49,7 @@ export const Route = createFileRoute("/commercial-property-management")({
             "Full-service commercial property management and property management solutions in Los Angeles County.",
           url: URL,
           areaServed: { "@type": "AdministrativeArea", name: "Los Angeles County" },
-          provider: {
-            "@type": "ProfessionalService",
-            name: "Penthouse Advisors Inc.",
-            telephone: "+1-310-663-3521",
-            url: "https://www.penthouseadvisors.com",
-          },
+          provider: { "@id": ORG_ID },
         }),
       },
       {
@@ -52,8 +58,18 @@ export const Route = createFileRoute("/commercial-property-management")({
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://www.penthouseadvisors.com" },
-            { "@type": "ListItem", position: 2, name: "Services", item: "https://www.penthouseadvisors.com/services" },
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.penthouseadvisors.com",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Services",
+              item: "https://www.penthouseadvisors.com/services",
+            },
             { "@type": "ListItem", position: 3, name: "Commercial Property Management", item: URL },
           ],
         }),
@@ -64,22 +80,52 @@ export const Route = createFileRoute("/commercial-property-management")({
 });
 
 const managementServices = [
-  { icon: ShieldCheck, text: "Managing the commercial property with rules and regulations that keep you in compliance with local ordinances." },
-  { icon: Users, text: "Fewer vacancies. We market, show, and fill commercial spaces across Los Angeles." },
-  { icon: Building2, text: "Oversee the buildings, tenants, and invitees working on or inside the property." },
-  { icon: FileText, text: "Move-in and move-out property inspections with documented condition reports." },
+  {
+    icon: ShieldCheck,
+    text: "Managing the commercial property with rules and regulations that keep you in compliance with local ordinances.",
+  },
+  {
+    icon: Users,
+    text: "Fewer vacancies. We market, show, and fill commercial spaces across Los Angeles.",
+  },
+  {
+    icon: Building2,
+    text: "Oversee the buildings, tenants, and invitees working on or inside the property.",
+  },
+  {
+    icon: FileText,
+    text: "Move-in and move-out property inspections with documented condition reports.",
+  },
   { icon: CheckCircle2, text: "Rigorous tenant screening including background checks." },
   { icon: FileText, text: "Prepare new leases and draft assignments." },
-  { icon: HandshakeIcon, text: "Negotiate prior and current month-to-month lease obligations, written or verbal business agreements, and agreed financial obligations." },
-  { icon: ShieldCheck, text: "Secure and reimburse security deposits in accordance with the lease." },
+  {
+    icon: HandshakeIcon,
+    text: "Negotiate prior and current month-to-month lease obligations, written or verbal business agreements, and agreed financial obligations.",
+  },
+  {
+    icon: ShieldCheck,
+    text: "Secure and reimburse security deposits in accordance with the lease.",
+  },
   { icon: ShieldCheck, text: "Maintaining property insurance coverage." },
   { icon: Phone, text: "Prompt rent collection with options to pay online." },
   { icon: FileText, text: "Supply late rent notices and 3-day pay or quit slips." },
   { icon: Wrench, text: "Arrange legal action to prepare an unlawful detainer when necessary." },
-  { icon: Wrench, text: "Contract negotiations with our in-house licensed, bonded, and insured general contractor, including competitive bids for property services paid through NNN charges." },
-  { icon: Home, text: "Pay monthly property tax, power, water, gas, and common-area maintenance from the NNN collected — exterior, interior, and roof repair included." },
-  { icon: Wrench, text: "Manage maintenance and repair requests from tenants and tenant complaints." },
-  { icon: ShieldCheck, text: "Inspect for vermin control within all leased restaurant spaces and coach tenants on corrective steps to maintain public safety compliance." },
+  {
+    icon: Wrench,
+    text: "Contract negotiations with our in-house licensed, bonded, and insured general contractor, including competitive bids for property services paid through NNN charges.",
+  },
+  {
+    icon: Home,
+    text: "Pay monthly property tax, power, water, gas, and common-area maintenance from the NNN collected — exterior, interior, and roof repair included.",
+  },
+  {
+    icon: Wrench,
+    text: "Manage maintenance and repair requests from tenants and tenant complaints.",
+  },
+  {
+    icon: ShieldCheck,
+    text: "Inspect for vermin control within all leased restaurant spaces and coach tenants on corrective steps to maintain public safety compliance.",
+  },
   { icon: FileText, text: "Manage accounts payable." },
   { icon: ShieldCheck, text: "Ensure compliance with local ordinances." },
   { icon: Home, text: "Homeless permanent removal and protection of the location." },
@@ -124,19 +170,24 @@ function CommercialPropertyManagementPage() {
             Full-service management for commercial assets.
           </h2>
           <p className="mt-5 text-base md:text-lg text-muted-foreground leading-relaxed">
-            Penthouse Advisors provides a full range of commercial management services and property management
-            solutions. Our fee is based on $600 per door, or if the building has limited doors, 10% of the total
-            monthly gross rent collected.
+            Penthouse Advisors provides a full range of commercial management services and property
+            management solutions. Our fee is based on $600 per door, or if the building has limited
+            doors, 10% of the total monthly gross rent collected.
           </p>
         </div>
       </section>
 
       <section className="container-x py-10 md:py-14 border-t border-border">
         <p className="text-xs font-semibold uppercase tracking-widest text-gold">What we manage</p>
-        <h2 className="mt-2 text-2xl md:text-4xl font-display font-bold">Penthouse Advisors Inc. services include.</h2>
+        <h2 className="mt-2 text-2xl md:text-4xl font-display font-bold">
+          Penthouse Advisors Inc. services include.
+        </h2>
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {managementServices.map((s, i) => (
-            <div key={i} className="flex items-start gap-4 rounded-xl border border-border bg-card p-5 shadow-elegant">
+            <div
+              key={i}
+              className="flex items-start gap-4 rounded-xl border border-border bg-card p-5 shadow-elegant"
+            >
               <div className="grid h-10 w-10 shrink-0 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30">
                 <s.icon className="h-5 w-5" />
               </div>
@@ -153,8 +204,8 @@ function CommercialPropertyManagementPage() {
             Property management starts with relationships.
           </h2>
           <p className="mt-4 text-base text-muted-foreground leading-relaxed">
-            We understand that successful property management starts with a workable relationship with the property
-            owners. We maintain such relationships as a top priority.
+            We understand that successful property management starts with a workable relationship
+            with the property owners. We maintain such relationships as a top priority.
           </p>
         </div>
       </section>
@@ -174,7 +225,9 @@ function CommercialPropertyManagementPage() {
                   <Phone className="h-5 w-5" />
                 </span>
                 <div>
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground">Call us</div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground">
+                    Call us
+                  </div>
                   <div className="text-xl font-display font-bold text-gold">310-663-3521</div>
                 </div>
               </div>

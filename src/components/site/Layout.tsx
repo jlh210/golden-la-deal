@@ -1,10 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Menu, X, Mail, Clock, ChevronDown, Calendar } from "lucide-react";
-import { useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { agents } from "@/routes/agents";
 import logoMarkDark from "@/assets/logo-mark-dark.png";
 import logoAsset from "@/assets/logo-mark.png.asset.json";
-
 
 const PHONE = "310-663-3521";
 const PHONE_HREF = "tel:+13106633521";
@@ -24,11 +23,13 @@ const primaryNav = [
   { to: "/contact", label: "Contact" },
 ] as const;
 
-
 const servicesDropdown = [
   { to: "/buy-a-restaurant", label: "Buy a Restaurant" },
   { to: "/sell-your-restaurant", label: "Sell Your Restaurant" },
-  { to: "/restaurants-for-sale", label: "Restaurant, Medical Office, Hardware Store for Sale/Lease in Los Angeles" },
+  {
+    to: "/restaurants-for-sale",
+    label: "Restaurant, Medical Office, Hardware Store for Sale/Lease in Los Angeles",
+  },
   { to: "/restaurant-leasing", label: "Restaurant Leasing" },
   { to: "/licensing-and-permits", label: "Licensing & Permits" },
   { to: "/restaurant-consulting", label: "Restaurant Consulting" },
@@ -76,18 +77,36 @@ const fullNav = [
 
 function Header() {
   const [open, setOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const mobileToggle = useRef<HTMLButtonElement>(null);
+  const mobilePanel = useRef<HTMLDivElement>(null);
+  const servicesToggle = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (open) mobilePanel.current?.querySelector<HTMLAnchorElement>("a")?.focus();
+  }, [open]);
+
+  useEffect(() => {
+    const desktop = window.matchMedia("(min-width: 1024px)");
+    const onChange = () => {
+      setOpen(false);
+      setServicesOpen(false);
+    };
+    desktop.addEventListener("change", onChange);
+    return () => desktop.removeEventListener("change", onChange);
+  }, []);
   return (
-    <header
-      className="sticky top-0 z-50 transition-all duration-500 bg-black border-b border-gold/40 shadow-[0_2px_24px_-12px_oklch(0.2_0.02_265/0.18)]"
-    >
+    <header className="sticky top-0 z-50 transition-all duration-500 bg-black border-b border-gold/40 shadow-[0_2px_24px_-12px_oklch(0.2_0.02_265/0.18)]">
       <div className="border-b border-gold/20 bg-charcoal-deep">
         <div className="container-x flex h-8 items-center justify-center gap-2">
           <span className="font-display text-[11px] sm:text-xs tracking-[0.2em] sm:tracking-[0.3em] uppercase text-gold text-center truncate min-w-0">
             Penthouse Advisors Inc.
           </span>
-          <span className="text-[11px] sm:text-xs text-gold/40" aria-hidden="true">·</span>
+          <span className="text-[11px] sm:text-xs text-gold/40" aria-hidden="true">
+            ·
+          </span>
           <a
-            href="https://penthouseadvisors.com/"
+            href="https://www.penthouseadvisors.com"
             className="font-display text-[11px] sm:text-xs tracking-[0.2em] sm:tracking-[0.3em] uppercase text-gold/80 hover:text-gold transition-colors text-center truncate min-w-0"
           >
             LA Restaurant Business Brokerage
@@ -109,20 +128,49 @@ function Header() {
           </span>
         </Link>
 
-
-        <nav className="hidden lg:flex items-center gap-6">
+        <nav aria-label="Primary" className="hidden lg:flex items-center gap-6">
           {primaryNav.map((n) =>
             n.to === "/services" ? (
-              <div key={n.to} className="relative group">
+              <div
+                key={n.to}
+                className="relative"
+                onMouseEnter={() => setServicesOpen(true)}
+                onMouseLeave={(event) => {
+                  if (!event.currentTarget.contains(document.activeElement)) setServicesOpen(false);
+                }}
+                onBlur={(event) => {
+                  if (!event.currentTarget.contains(event.relatedTarget)) setServicesOpen(false);
+                }}
+                onKeyDown={(event) => {
+                  if (event.key === "Escape") {
+                    setServicesOpen(false);
+                    servicesToggle.current?.focus();
+                  }
+                }}
+              >
                 <Link
                   to={n.to}
                   className="text-sm font-medium text-white/80 hover:text-gold transition-colors inline-flex items-center gap-1 py-5"
                   activeProps={{ className: "text-gold" }}
                 >
                   {n.label}
-                  <ChevronDown className="h-3.5 w-3.5 transition-transform group-hover:rotate-180" />
                 </Link>
-                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <button
+                  ref={servicesToggle}
+                  type="button"
+                  aria-label="Toggle services navigation"
+                  aria-expanded={servicesOpen}
+                  aria-controls="services-navigation"
+                  onClick={() => setServicesOpen((value) => !value)}
+                  className="ml-1 p-1 text-white/80 hover:text-gold"
+                >
+                  <ChevronDown aria-hidden="true" className="h-3.5 w-3.5" />
+                </button>
+                <div
+                  id="services-navigation"
+                  hidden={!servicesOpen}
+                  className="absolute top-full left-1/2 -translate-x-1/2 pt-2"
+                >
                   <div className="w-[560px] rounded-lg border border-border bg-card/95 backdrop-blur-xl shadow-elegant p-5 grid grid-cols-2 gap-x-6 gap-y-2.5">
                     {servicesDropdown.map((s) => (
                       <Link
@@ -144,10 +192,9 @@ function Header() {
                 className="text-sm font-medium text-white/80 hover:text-gold transition-colors"
                 activeProps={{ className: "text-gold" }}
               >
-
                 {n.label}
               </Link>
-            )
+            ),
           )}
         </nav>
 
@@ -165,7 +212,11 @@ function Header() {
             Book a Consultation
           </Link>
           <button
+            ref={mobileToggle}
+            type="button"
             aria-label="Toggle menu"
+            aria-expanded={open}
+            aria-controls="mobile-navigation"
             className="lg:hidden grid h-10 w-10 place-items-center rounded-md border border-gold/40 text-white"
             onClick={() => setOpen((v) => !v)}
           >
@@ -174,37 +225,46 @@ function Header() {
         </div>
       </div>
 
-      {open && (
-        <div className="lg:hidden border-t border-border bg-card max-h-[80vh] overflow-y-auto">
-          <div className="container-x py-4 flex flex-col gap-1">
-            {fullNav.map((n) => (
-              <Link
-                key={n.to}
-                to={n.to}
-                onClick={() => setOpen(false)}
-                className="text-base font-medium text-foreground/90 hover:text-gold py-2 border-b border-border/80"
-                activeProps={{ className: "text-gold" }}
-                activeOptions={{ exact: n.to === "/" }}
-              >
-                {n.label}
-              </Link>
-            ))}
-            <a
-              href={PHONE_HREF}
-              className="inline-flex items-center gap-2 text-base font-semibold pt-4 text-foreground"
-            >
-              <Phone className="h-4 w-4 text-gold" /> {PHONE}
-            </a>
+      <div
+        ref={mobilePanel}
+        id="mobile-navigation"
+        hidden={!open}
+        onKeyDown={(event) => {
+          if (event.key === "Escape") {
+            setOpen(false);
+            mobileToggle.current?.focus();
+          }
+        }}
+        className="lg:hidden border-t border-border bg-card max-h-[80vh] overflow-y-auto"
+      >
+        <nav aria-label="Mobile" className="container-x py-4 flex flex-col gap-1">
+          {fullNav.map((n) => (
             <Link
-              to="/contact"
+              key={n.to}
+              to={n.to}
               onClick={() => setOpen(false)}
-              className="mt-3 mb-2 inline-flex justify-center rounded-md bg-gold-gradient px-4 py-3 text-sm font-semibold text-charcoal-deep"
+              className="text-base font-medium text-foreground/90 hover:text-gold py-2 border-b border-border/80"
+              activeProps={{ className: "text-gold" }}
+              activeOptions={{ exact: n.to === "/" }}
             >
-              Book a Consultation
+              {n.label}
             </Link>
-          </div>
-        </div>
-      )}
+          ))}
+          <a
+            href={PHONE_HREF}
+            className="inline-flex items-center gap-2 text-base font-semibold pt-4 text-foreground"
+          >
+            <Phone className="h-4 w-4 text-gold" /> {PHONE}
+          </a>
+          <Link
+            to="/contact"
+            onClick={() => setOpen(false)}
+            className="mt-3 mb-2 inline-flex justify-center rounded-md bg-gold-gradient px-4 py-3 text-sm font-semibold text-charcoal-deep"
+          >
+            Book a Consultation
+          </Link>
+        </nav>
+      </div>
     </header>
   );
 }
@@ -244,18 +304,22 @@ function Footer() {
           </div>
 
           <p className="mt-4 text-sm text-muted-foreground max-w-sm">
-            A sophisticated, full-service restaurant advisory and brokerage firm.
-            Servicing Los Angeles County since 2021. <span className="text-gold font-semibold">Do It Now.</span>
+            A sophisticated, full-service restaurant advisory and brokerage firm. Servicing Los
+            Angeles County since 2021. <span className="text-gold font-semibold">Do It Now.</span>
           </p>
 
           <ul className="mt-5 space-y-2 text-sm">
             <li className="flex items-center gap-2">
               <Phone className="h-4 w-4 text-gold" />
-              <a href={PHONE_HREF} className="hover:text-gold">{PHONE}</a>
+              <a href={PHONE_HREF} className="hover:text-gold">
+                {PHONE}
+              </a>
             </li>
             <li className="flex items-center gap-2">
               <Mail className="h-4 w-4 text-gold" />
-              <a href={EMAIL_HREF} className="hover:text-gold break-all">{EMAIL}</a>
+              <a href={EMAIL_HREF} className="hover:text-gold break-all">
+                {EMAIL}
+              </a>
             </li>
             <li className="flex items-center gap-2 text-muted-foreground">
               <Clock className="h-4 w-4 text-gold" /> {HOURS}
@@ -264,7 +328,7 @@ function Footer() {
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold text-gold uppercase tracking-wider">Ownership</h4>
+          <h2 className="text-sm font-semibold text-gold uppercase tracking-wider">Ownership</h2>
           <ul className="mt-4 space-y-4 text-sm">
             {OWNERS.map((o) => (
               <li key={o.name}>
@@ -275,7 +339,7 @@ function Footer() {
             ))}
           </ul>
 
-          <h4 className="mt-8 text-sm font-semibold text-gold uppercase tracking-wider">Agents</h4>
+          <h2 className="mt-8 text-sm font-semibold text-gold uppercase tracking-wider">Agents</h2>
           <ul className="mt-4 space-y-4 text-sm">
             {agents
               .filter((a) => a.name !== "Rosanna Paticchio")
@@ -288,38 +352,118 @@ function Footer() {
               ))}
           </ul>
           <div className="mt-4">
-            <Link to="/agents" className="text-sm font-semibold text-gold hover:underline">Meet all agents →</Link>
+            <Link to="/agents" className="text-sm font-semibold text-gold hover:underline">
+              Meet all agents →
+            </Link>
           </div>
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold text-gold uppercase tracking-wider">Services</h4>
+          <h2 className="text-sm font-semibold text-gold uppercase tracking-wider">Services</h2>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><Link to="/buy-a-restaurant" className="hover:text-gold">Buy a Restaurant</Link></li>
-            <li><Link to="/sell-your-restaurant" className="hover:text-gold">Sell Your Restaurant</Link></li>
-            <li><Link to="/restaurants-for-sale" className="hover:text-gold">Restaurant Listings</Link></li>
-            <li><Link to="/restaurant-leasing" className="hover:text-gold">Restaurant Leasing</Link></li>
-            <li><Link to="/licensing-and-permits" className="hover:text-gold">Licensing & Permits</Link></li>
-            <li><Link to="/restaurant-consulting" className="hover:text-gold">Restaurant Consulting</Link></li>
-            <li><Link to="/alcohol-licensing" className="hover:text-gold">Restaurant Alcohol Licensing</Link></li>
-            <li><Link to="/liquor-license-for-sale" className="hover:text-gold">Liquor License For Sale</Link></li>
-            <li><Link to="/health-inspection" className="hover:text-gold">Health Inspection</Link></li>
-            <li><Link to="/health-permitting" className="hover:text-gold">Health Permitting & Plan Check</Link></li>
-            <li><Link to="/leasing-vacant-restaurants" className="hover:text-gold">Leasing Vacant Restaurants</Link></li>
-            <li><Link to="/assignments-rent-abatement" className="hover:text-gold">Assignments & Abatement</Link></li>
-            <li><Link to="/business-investigations" className="hover:text-gold">Business Investigations</Link></li>
-            <li><Link to="/buyer-tenant-resolutions" className="hover:text-gold">Buyer / Tenant Resolutions</Link></li>
-            <li><Link to="/search-door-knocking" className="hover:text-gold">Off-Market Door-Knocking</Link></li>
-            <li><Link to="/e2-visa-europe" className="hover:text-gold">E-2 Visa (Europe)</Link></li>
-            <li><Link to="/grandfather-protection" className="hover:text-gold">Grandfather Protection</Link></li>
-            <li><Link to="/vermin-inspections" className="hover:text-gold">Vermin Inspections</Link></li>
-            <li><Link to="/contact" className="hover:text-gold">Book a Consultation</Link></li>
+            <li>
+              <Link to="/buy-a-restaurant" className="hover:text-gold">
+                Buy a Restaurant
+              </Link>
+            </li>
+            <li>
+              <Link to="/sell-your-restaurant" className="hover:text-gold">
+                Sell Your Restaurant
+              </Link>
+            </li>
+            <li>
+              <Link to="/restaurants-for-sale" className="hover:text-gold">
+                Restaurant Listings
+              </Link>
+            </li>
+            <li>
+              <Link to="/restaurant-leasing" className="hover:text-gold">
+                Restaurant Leasing
+              </Link>
+            </li>
+            <li>
+              <Link to="/licensing-and-permits" className="hover:text-gold">
+                Licensing & Permits
+              </Link>
+            </li>
+            <li>
+              <Link to="/restaurant-consulting" className="hover:text-gold">
+                Restaurant Consulting
+              </Link>
+            </li>
+            <li>
+              <Link to="/alcohol-licensing" className="hover:text-gold">
+                Restaurant Alcohol Licensing
+              </Link>
+            </li>
+            <li>
+              <Link to="/liquor-license-for-sale" className="hover:text-gold">
+                Liquor License For Sale
+              </Link>
+            </li>
+            <li>
+              <Link to="/health-inspection" className="hover:text-gold">
+                Health Inspection
+              </Link>
+            </li>
+            <li>
+              <Link to="/health-permitting" className="hover:text-gold">
+                Health Permitting & Plan Check
+              </Link>
+            </li>
+            <li>
+              <Link to="/leasing-vacant-restaurants" className="hover:text-gold">
+                Leasing Vacant Restaurants
+              </Link>
+            </li>
+            <li>
+              <Link to="/assignments-rent-abatement" className="hover:text-gold">
+                Assignments & Abatement
+              </Link>
+            </li>
+            <li>
+              <Link to="/business-investigations" className="hover:text-gold">
+                Business Investigations
+              </Link>
+            </li>
+            <li>
+              <Link to="/buyer-tenant-resolutions" className="hover:text-gold">
+                Buyer / Tenant Resolutions
+              </Link>
+            </li>
+            <li>
+              <Link to="/search-door-knocking" className="hover:text-gold">
+                Off-Market Door-Knocking
+              </Link>
+            </li>
+            <li>
+              <Link to="/e2-visa-europe" className="hover:text-gold">
+                E-2 Visa (Europe)
+              </Link>
+            </li>
+            <li>
+              <Link to="/grandfather-protection" className="hover:text-gold">
+                Grandfather Protection
+              </Link>
+            </li>
+            <li>
+              <Link to="/vermin-inspections" className="hover:text-gold">
+                Vermin Inspections
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-gold">
+                Book a Consultation
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
       <div className="border-t border-border">
         <div className="container-x py-6 flex flex-wrap items-center justify-between gap-3 text-xs text-muted-foreground">
-          <span>© {new Date().getFullYear()} Penthouse Advisors Inc. · Servicing Los Angeles County, CA</span>
+          <span>
+            © {new Date().getFullYear()} Penthouse Advisors Inc. · Servicing Los Angeles County, CA
+          </span>
           <span className="font-display tracking-widest text-gold">DO IT NOW.</span>
         </div>
       </div>
@@ -339,11 +483,22 @@ function FloatingCTA() {
   );
 }
 
-export function SiteLayout({ children, transparentHeader = false }: { children: ReactNode; transparentHeader?: boolean }) {
+export function SiteLayout({
+  children,
+  transparentHeader = false,
+}: {
+  children: ReactNode;
+  transparentHeader?: boolean;
+}) {
   return (
     <div className="min-h-screen flex flex-col">
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
       <Header />
-      <main className="flex-1">{children}</main>
+      <main id="main-content" tabIndex={-1} className="flex-1">
+        {children}
+      </main>
       <Footer />
 
       <FloatingCTA />

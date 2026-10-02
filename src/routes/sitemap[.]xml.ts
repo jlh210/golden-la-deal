@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 import { categories } from "@/content/help";
 
-const BASE_URL = "https://www.penthouseadvisors.com";
+import { listings, getListingBySlug } from "@/lib/listings";
+import { canonicalUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {
@@ -40,6 +41,15 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/e2-visa-europe", changefreq: "monthly", priority: "0.6" },
           { path: "/hardware-store-for-sale", changefreq: "weekly", priority: "0.5" },
 
+          // Both hardware-store destinations are retained pending equity review.
+          ...listings
+            .filter((listing) => getListingBySlug(listing.slug) === listing)
+            .map((listing) => ({
+              path: `/restaurants-for-sale/${listing.slug}`,
+              changefreq: "weekly",
+              priority: "0.8",
+            })),
+
           // Help Center
           { path: "/help", changefreq: "weekly", priority: "0.8" },
           ...categories.map((c) => ({
@@ -57,7 +67,7 @@ export const Route = createFileRoute("/sitemap.xml")({
         ];
         const urls = entries.map(
           (e) =>
-            `  <url>\n    <loc>${BASE_URL}${e.path}</loc>\n    <changefreq>${e.changefreq}</changefreq>\n    <priority>${e.priority}</priority>\n  </url>`,
+            `  <url>\n    <loc>${canonicalUrl(e.path)}</loc>\n    <changefreq>${e.changefreq}</changefreq>\n    <priority>${e.priority}</priority>\n  </url>`,
         );
         const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>`;
         return new Response(xml, {
