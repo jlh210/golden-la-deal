@@ -1,298 +1,474 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Star, ShieldCheck, MapPin, Calendar } from "lucide-react";
-import { SiteLayout } from "@/components/site/Layout";
-import { CTASection } from "@/components/site/CTASection";
-import { featuredServices } from "@/lib/services";
-import heroImage from "@/assets/hero-downtown-la.jpg";
-import { useEffect, useState } from "react";
+import { ArrowUpRight } from "lucide-react";
+import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
+import { CONSULTATION_LABEL } from "@/lib/consultation";
+import { SITE_URL, ORG_ID, WEBSITE_ID, faqScript } from "@/lib/seo";
 
+const title = "Los Angeles Restaurant Advisors | Penthouse Advisors";
+const description =
+  "Buy, sell and navigate restaurant transactions in Los Angeles County. Penthouse Advisors coordinates acquisitions, leasing, licensing and permitting.";
+const faqs = [
+  {
+    q: "What does a restaurant broker or advisor help coordinate?",
+    a: "A restaurant broker or advisor helps buyers and sellers organize the commercial details of a restaurant transaction: opportunity assessment or valuation, preparation, negotiation, due diligence and closing coordination. Penthouse Advisors also helps clients navigate the connections between the restaurant lease, licensing and permitting. The work depends on the engagement; landlords, agencies and other transaction professionals retain their own responsibilities.",
+    to: "/services",
+    label: "Explore restaurant advisory services",
+  },
+  {
+    q: "How do I prepare to sell a restaurant in Los Angeles?",
+    a: "Prepare to sell a restaurant by organizing financial records, the lease and amendments, equipment ownership information, and current license and permit records. Identify unresolved issues before presenting the business to buyers. Penthouse Advisors helps Los Angeles restaurant owners assess sale readiness, consider valuation and plan a confidential marketing approach with buyer qualification and transaction coordination.",
+    to: "/sell-your-restaurant",
+    label: "Plan your restaurant sale",
+  },
+  {
+    q: "How is a restaurant valued?",
+    a: "Restaurant valuation considers documented earnings, assets included in the sale, equipment condition, lease terms and the status of licenses and permits. An operating business and an equipment-focused asset sale may call for different approaches. Penthouse Advisors reviews these details with sellers to develop a price range that reflects the restaurant and the proposed transaction, rather than applying one universal multiple.",
+    to: "/sell-your-restaurant",
+    label: "Discuss restaurant valuation",
+  },
+  {
+    q: "What happens to the lease when a restaurant is sold?",
+    a: "The restaurant lease needs its own review during a sale. The parties should establish whether the proposed transaction involves a lease assignment or a new lease, what the existing agreement requires and what the landlord will need to evaluate. Penthouse Advisors helps coordinate these discussions alongside the business transaction so lease questions are addressed before closing decisions are made.",
+    to: "/assignments-rent-abatement",
+    label: "Explore lease assignment support",
+  },
+  {
+    q: "Can a liquor license transfer when a restaurant is sold?",
+    a: "A liquor license may be part of a restaurant transaction, but buyers and sellers should not assume it transfers automatically with the business. The proposed transfer needs review with California ABC, and local alcohol-use approvals require separate consideration. Penthouse Advisors helps coordinate the licensing work with the broader transaction; eligibility, conditions and approval depend on the specific application and authorities involved.",
+    to: "/alcohol-licensing",
+    label: "Explore ABC transfer support",
+  },
+];
+const services = [
+  {
+    title: "Restaurant Acquisitions",
+    body: "Assess opportunities, prepare as a buyer and coordinate due diligence, lease considerations and the path to closing.",
+    to: "/buy-a-restaurant",
+    label: "Explore acquisition advisory",
+  },
+  {
+    title: "Restaurant Dispositions",
+    body: "Prepare your restaurant for sale with valuation, confidential positioning, buyer qualification and transaction coordination.",
+    to: "/sell-your-restaurant",
+    label: "Explore seller advisory",
+  },
+  {
+    title: "Restaurant Leasing",
+    body: "Evaluate restaurant spaces and lease terms, from second-generation premises to landlord discussions and assignment considerations.",
+    to: "/restaurant-leasing",
+    label: "Explore restaurant leasing",
+  },
+  {
+    title: "Restaurant Consulting",
+    body: "Work through acquisition questions, transaction obstacles and decisions affecting your restaurant with a defined advisory scope.",
+    to: "/restaurant-consulting",
+    label: "Explore restaurant consulting",
+  },
+  {
+    title: "ABC / Liquor License Transfers",
+    body: "Coordinate restaurant license applications and transfers while identifying the state and local approvals relevant to your plans.",
+    to: "/alcohol-licensing",
+    label: "Explore licensing support",
+  },
+  {
+    title: "Restaurant Permitting",
+    body: "Navigate health permitting, ownership-change requirements, plan check and inspection coordination for restaurant premises.",
+    to: "/health-permitting",
+    label: "Explore permitting support",
+  },
+];
+const capabilities = [
+  {
+    title: "Buyer & Seller Representation",
+    body: "Acquisition and disposition guidance shaped around the restaurant, the parties and their objectives.",
+    to: "/buy-a-restaurant",
+    label: "Buyer representation",
+  },
+  {
+    title: "Lease & Landlord Coordination",
+    body: "Restaurant leasing, assignments and landlord requirements considered alongside the business transaction.",
+    to: "/assignments-rent-abatement",
+    label: "Lease coordination",
+  },
+  {
+    title: "Licensing & Permitting",
+    body: "ABC licensing, health permitting and restaurant approval processes coordinated with the wider transaction.",
+    to: "/licensing-and-permits",
+    label: "Licenses and permits",
+  },
+  {
+    title: "Due Diligence & Closing Support",
+    body: "Review of business records and transaction details, with the relevant parties kept connected before closing.",
+    to: "/business-investigations",
+    label: "Due diligence support",
+  },
+];
+const steps = [
+  [
+    "Consultation & Strategy",
+    "Clarify your objectives, the restaurant involved and the advisory work needed.",
+  ],
+  [
+    "Valuation or Opportunity Assessment",
+    "Review the business, its records and the factors shaping a sale or acquisition.",
+  ],
+  [
+    "Seller Preparation or Buyer Qualification",
+    "Organize seller information or establish the buyer’s criteria, resources and readiness.",
+  ],
+  [
+    "Offer & Due Diligence",
+    "Work through proposed terms and investigate the financial, lease and operating details.",
+  ],
+  [
+    "Lease, Licensing & Permitting Coordination",
+    "Coordinate landlord discussions and the applicable agency processes with other workstreams.",
+  ],
+  [
+    "Escrow & Closing",
+    "Coordinate outstanding transaction items with the parties and escrow provider toward an agreed closing.",
+  ],
+];
+const guides = [
+  {
+    category: "Buying",
+    title: "How to Buy a Restaurant in Los Angeles",
+    body: "Understand the acquisition process, from defining your criteria to reviewing the business and preparing for closing.",
+    to: "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+    label: "Explore the buying guide",
+  },
+  {
+    category: "Selling",
+    title: "How to Sell a Restaurant in Los Angeles",
+    body: "Consider the records, preparation, confidentiality and buyer qualification involved in bringing a restaurant to market.",
+    to: "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+    label: "Explore the selling guide",
+  },
+  {
+    category: "Leases",
+    title: "Restaurant Lease Assignment Guide",
+    body: "Understand the lease questions and landlord discussions that can shape a restaurant sale or acquisition.",
+    to: "/help/lease-assignments/restaurant-lease-assignment-guide",
+    label: "Learn how lease assignments work",
+  },
+  {
+    category: "Licensing",
+    title: "ABC License Transfer Guide",
+    body: "Explore the licensing considerations buyers and sellers should review as part of a restaurant transaction.",
+    to: "/help/alcohol-licensing/abc-license-transfer-guide",
+    label: "Understand the ABC transfer process",
+  },
+];
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors" },
-      {
-        name: "description",
-        content:
-          "Los Angeles restaurant brokerage, consulting, permitting, licensing, and ADA compliance. Buy, sell, lease, and license restaurants across LA County under one roof.",
-      },
-      {
-        property: "og:title",
-        content: "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors",
-      },
-      {
-        property: "og:description",
-        content:
-          "Restaurant brokerage, consulting, licensing, permitting, and ADA compliance for Los Angeles County. One firm, full service.",
-      },
-      { property: "og:url", content: "https://www.penthouseadvisors.com" },
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:url", content: SITE_URL },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-      {
-        name: "twitter:title",
-        content: "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors",
-      },
-      {
-        name: "twitter:description",
-        content:
-          "Restaurant brokerage, consulting, licensing, permitting & ADA compliance for LA County.",
-      },
+      { property: "og:image", content: `${SITE_URL}/android-chrome-512x512.png` },
+      { property: "og:image:width", content: "512" },
+      { property: "og:image:height", content: "512" },
+      { property: "og:image:alt", content: "Penthouse Advisors brand mark" },
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
+      { name: "twitter:image", content: `${SITE_URL}/android-chrome-512x512.png` },
+      { name: "twitter:image:alt", content: "Penthouse Advisors brand mark" },
     ],
-    links: [
-      { rel: "canonical", href: "https://www.penthouseadvisors.com" },
-      { rel: "preload", as: "image", href: heroImage, fetchpriority: "high" } as unknown as {
-        rel: string;
-        href: string;
+    links: [{ rel: "canonical", href: SITE_URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": `${SITE_URL}/#webpage`,
+          url: SITE_URL,
+          name: title,
+          description,
+          isPartOf: { "@id": WEBSITE_ID },
+          about: { "@id": ORG_ID },
+          mainEntity: { "@id": ORG_ID },
+        }),
       },
+      faqScript(faqs),
     ],
   }),
-
   component: HomePage,
 });
-
-const trustMetrics = [
-  { value: "2021", label: "Established" },
-  { value: "3", label: "Principal Owners" },
-  { value: "LA County", label: "Exclusively Served" },
-  { value: "One Roof", label: "Full-Service Firm" },
-];
-
-const trust = [
-  { icon: Calendar, label: "Est. 2021" },
-  { icon: ShieldCheck, label: "Licensed Brokers" },
-  { icon: MapPin, label: "LA County" },
-  { icon: Star, label: "Principal-Led" },
-];
-
-const steps = [
-  {
-    n: "01",
-    title: "Consult",
-    body: "Tell us where you are - buying, selling, opening, or in trouble. We listen, we diagnose, we quote a plan.",
-  },
-  {
-    n: "02",
-    title: "Strategy",
-    body: "We build the move: valuation, licensing path, lease angle, or rescue plan. Clear timeline. Real numbers.",
-  },
-  {
-    n: "03",
-    title: "Done",
-    body: "We execute. Escrow closes, license issues, doors open, red tag comes down. You run your restaurant.",
-  },
-];
-
-function HomePage() {
-  const [scrollY, setScrollY] = useState(0);
-  useEffect(() => {
-    const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const onScroll = () => setScrollY(motion.matches ? 0 : window.scrollY);
-    motion.addEventListener("change", onScroll);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      motion.removeEventListener("change", onScroll);
-    };
-  }, []);
-
+function EditorialLink({ to, children }: { to: string; children: React.ReactNode }) {
   return (
-    <SiteLayout transparentHeader>
-      {/* HERO */}
-      <section className="relative bg-cream -mt-16 md:-mt-20 pt-16 md:pt-20 overflow-hidden">
-        <div className="container-x relative grid lg:grid-cols-[1.05fr_1fr] gap-12 lg:gap-16 items-center min-h-[calc(100vh-5rem)] py-16 lg:py-24">
-          {/* LEFT */}
-          <div className="relative z-10 max-w-xl">
-            <div
-              className="inline-flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.28em] text-charcoal-deep/70 animate-fade-in"
-              style={{ animationDelay: "0ms", animationFillMode: "both" }}
-            >
-              <span className="h-px w-8 bg-gold" />
-              Penthouse Advisors Inc., Serving Los Angeles County
+    <Link to={to} className="pa-text-link">
+      {children}
+      <ArrowUpRight size={17} aria-hidden="true" />
+    </Link>
+  );
+}
+function HomePage() {
+  return (
+    <SiteLayout>
+      <div className="pa-home">
+        <section className="pa-hero" aria-labelledby="home-title">
+          <div className="pa-shell pa-hero-grid">
+            <div className="pa-hero-copy">
+              <p className="pa-kicker">Los Angeles Restaurant Brokerage &amp; Advisory</p>
+              <h1 id="home-title">
+                Restaurant Transactions, <br />
+                <em>Handled End-to-End.</em>
+              </h1>
+              <p className="pa-hero-description">
+                Penthouse Advisors helps restaurant owners, buyers, sellers and operators navigate
+                acquisitions, dispositions, leasing, licensing, permitting and complex restaurant
+                transactions throughout Los Angeles County.
+              </p>
+              <div className="pa-hero-actions">
+                <Link to="/contact" className="pa-button">
+                  {CONSULTATION_LABEL}
+                  <ArrowUpRight size={18} aria-hidden="true" />
+                </Link>
+                <EditorialLink to="/services">Explore Services</EditorialLink>
+              </div>
+              <p className="pa-hero-note">From the first decision to the details of closing.</p>
             </div>
-
-            <h1
-              className="mt-8 font-display text-[2.75rem] sm:text-6xl lg:text-[4.5rem] font-normal leading-[1.02] tracking-[-0.01em] text-charcoal-deep animate-fade-in"
-              style={{ animationDelay: "120ms", animationFillMode: "both" }}
-            >
-              <span className="block text-[1.5rem] sm:text-[2rem] lg:text-[2.25rem] uppercase tracking-[0.14em] leading-tight">
-                Penthouse Advisors Inc.
-              </span>
-              <span className="italic text-gradient-gold">
-                Los Angeles County’s Premier
-                <br />
-                Restaurant &amp; Business Advisory Firm
-              </span>
-            </h1>
-
-            <p
-              className="mt-8 max-w-lg text-base sm:text-lg leading-relaxed text-charcoal/75 animate-fade-in"
-              style={{ animationDelay: "320ms", animationFillMode: "both" }}
-            >
-              Serving Los Angeles County with expert restaurant brokerage, licensing, leasing,
-              permitting, consulting, and transaction management—from first opportunity to final
-              closing.
-            </p>
-
-            <div
-              className="mt-10 flex flex-wrap items-center gap-4 animate-fade-in"
-              style={{ animationDelay: "480ms", animationFillMode: "both" }}
-            >
-              <Link
-                to="/contact"
-                className="group inline-flex items-center gap-3 bg-charcoal-deep px-7 py-4 text-[13px] font-medium uppercase tracking-[0.18em] text-cream hover:bg-gold hover:text-charcoal-deep transition-all duration-500"
-              >
-                Speak Directly to an Expert Now!
-                <ArrowRight className="h-4 w-4 transition-transform duration-500 group-hover:translate-x-1" />
-              </Link>
-              <Link
-                to="/services"
-                className="group inline-flex items-center gap-2 px-2 py-4 text-[13px] font-medium uppercase tracking-[0.18em] text-charcoal-deep border-b border-charcoal-deep/30 hover:border-gold hover:text-gold transition-colors duration-500"
-              >
-                Explore Our Services
-                <ArrowRight className="h-3.5 w-3.5 transition-transform duration-500 group-hover:translate-x-1" />
-              </Link>
+            <figure className="pa-hero-image">
+              <img
+                src="/images/los-angeles-960.jpg"
+                srcSet="/images/los-angeles-640.jpg 426w, /images/los-angeles-960.jpg 640w"
+                sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1199px) 38vw, 440px"
+                width={640}
+                height={960}
+                fetchPriority="high"
+                alt="Downtown Los Angeles skyline in warm evening light"
+              />
+              <figcaption>
+                Los Angeles County <span>Our market. Your next chapter.</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <section className="pa-section pa-shell" aria-labelledby="authority-title">
+          <div className="pa-section-head">
+            <p className="pa-kicker">01 / The advisory perspective</p>
+            <h2 id="authority-title">Advisory grounded in restaurant transaction details</h2>
+          </div>
+          <div className="pa-capabilities">
+            {capabilities.map((c, i) => (
+              <article key={c.title}>
+                <span className="pa-index">0{i + 1}</span>
+                <h3>{c.title}</h3>
+                <p>{c.body}</p>
+                <EditorialLink to={c.to}>{c.label}</EditorialLink>
+              </article>
+            ))}
+          </div>
+          <div className="pa-authority-links">
+            <EditorialLink to="/agents">Meet the Advisors</EditorialLink>
+            <EditorialLink to="/about">About Penthouse Advisors</EditorialLink>
+          </div>
+        </section>
+        <section className="pa-intent-section" aria-labelledby="intent-title">
+          <div className="pa-shell">
+            <div className="pa-section-head">
+              <p className="pa-kicker">02 / Your next move</p>
+              <h2 id="intent-title">Buying or selling a restaurant?</h2>
             </div>
-
-            {/* Trust metrics */}
-            <div
-              className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-6 pt-10 border-t border-charcoal-deep/10 animate-fade-in"
-              style={{ animationDelay: "640ms", animationFillMode: "both" }}
-            >
-              {trustMetrics.map((m) => (
-                <div key={m.label} className="group">
-                  <div className="font-display text-2xl sm:text-[1.7rem] font-normal text-charcoal-deep leading-none">
-                    {m.value}
-                  </div>
-                  <div className="mt-2 text-[10.5px] font-medium uppercase tracking-[0.18em] text-charcoal/55 leading-snug">
-                    {m.label}
-                  </div>
-                </div>
-              ))}
+            <div className="pa-intent-grid">
+              <article>
+                <p className="pa-kicker">For buyers</p>
+                <h3>
+                  Find the opportunity.
+                  <br />
+                  <em>Understand the details.</em>
+                </h3>
+                <p>
+                  A restaurant purchase starts with the right questions. Assess opportunities,
+                  prepare your buyer profile and review the business, lease and licensing
+                  considerations before committing to the next step.
+                </p>
+                <ul>
+                  <li>Opportunity assessment and buyer qualification</li>
+                  <li>Due diligence, lease and licensing coordination</li>
+                  <li>Transaction and closing support</li>
+                </ul>
+                <EditorialLink to="/buy-a-restaurant">Explore Buying a Restaurant</EditorialLink>
+                <Link to="/restaurants-for-sale" className="pa-secondary-link">
+                  View available opportunities
+                </Link>
+              </article>
+              <article>
+                <p className="pa-kicker">For sellers</p>
+                <h3>
+                  Prepare your exit.
+                  <br />
+                  <em>Protect the process.</em>
+                </h3>
+                <p>
+                  Bring your restaurant to market with a considered valuation and a clear plan.
+                  Prepare the information buyers need, approach marketing confidentially and
+                  coordinate the details that connect an offer to closing.
+                </p>
+                <ul>
+                  <li>Valuation and sale preparation</li>
+                  <li>Confidential positioning and buyer qualification</li>
+                  <li>Lease assignment, licensing and closing coordination</li>
+                </ul>
+                <EditorialLink to="/sell-your-restaurant">
+                  Explore Selling a Restaurant
+                </EditorialLink>
+                <Link
+                  to="/contact"
+                  search={{ service: "Selling my restaurant" }}
+                  className="pa-secondary-link"
+                >
+                  Discuss selling your restaurant
+                </Link>
+              </article>
             </div>
           </div>
-
-          {/* RIGHT — cinematic visual */}
-          <div className="relative h-[60vh] lg:h-[78vh] w-full">
-            <div
-              className="absolute inset-0 overflow-hidden shadow-elegant"
-              style={{ transform: `translateY(${scrollY * 0.08}px)` }}
-            >
-              <img
-                src={heroImage}
-                alt="Downtown Los Angeles skyline at golden hour with warm architectural light"
-                width={1024}
-                height={1536}
-                className="absolute inset-0 h-full w-full object-cover scale-105 transition-transform duration-[1500ms]"
-                style={{ transform: `scale(1.05) translateY(${scrollY * -0.04}px)` }}
-              />
-              {/* brand gold overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-gold/30 via-gold/10 to-amber-500/15 mix-blend-overlay pointer-events-none" />
-              <div className="absolute inset-0 bg-gradient-to-tr from-cream/60 via-cream/20 to-transparent pointer-events-none" />
-              <div className="absolute inset-0 bg-gradient-to-b from-cream/35 via-transparent to-cream/45 pointer-events-none" />
+        </section>
+        <section className="pa-section pa-shell" aria-labelledby="services-title">
+          <div className="pa-section-head pa-split-head">
+            <div>
+              <p className="pa-kicker">03 / Areas of focus</p>
+              <h2 id="services-title">Restaurant Advisory Services</h2>
             </div>
-
-            {/* floating credential card */}
-            <div
-              className="absolute -bottom-6 -left-6 lg:bottom-10 lg:-left-10 max-w-[260px] bg-cream/95 backdrop-blur-sm border border-gold/20 p-6 shadow-elegant animate-fade-in"
-              style={{ animationDelay: "900ms", animationFillMode: "both" }}
-            >
-              <div className="text-[10px] font-medium uppercase tracking-[0.24em] text-gold">
-                Trusted Advisory
+            <p>
+              A restaurant transaction is a collection of connected decisions. Get support where the
+              details matter.
+            </p>
+          </div>
+          <div className="pa-service-index">
+            {services.map((s, i) => (
+              <article key={s.to}>
+                <span className="pa-index">0{i + 1}</span>
+                <div>
+                  <h3>{s.title}</h3>
+                  <p>{s.body}</p>
+                  <EditorialLink to={s.to}>{s.label}</EditorialLink>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+        <section className="pa-process-section" aria-labelledby="process-title">
+          <div className="pa-shell">
+            <div className="pa-section-head pa-split-head">
+              <div>
+                <p className="pa-kicker">04 / From strategy to closing</p>
+                <h2 id="process-title">What happens during a restaurant transaction?</h2>
               </div>
-              <p className="mt-3 font-display text-lg leading-snug text-charcoal-deep">
-                "One trusted partner for every stage of the restaurant lifecycle."
+              <p>
+                Each transaction has its own sequence. Due diligence, landlord discussions and
+                agency processes can overlap, and third-party approvals influence the path forward.
               </p>
             </div>
-
-            {/* corner ornaments */}
-            <div className="absolute top-0 right-0 h-16 w-16 border-t border-r border-gold/60 pointer-events-none" />
-            <div className="absolute bottom-0 left-0 h-16 w-16 border-b border-l border-gold/60 pointer-events-none hidden lg:block" />
+            <ol className="pa-process">
+              {steps.map(([name, body], i) => (
+                <li key={name}>
+                  <span className="pa-index">0{i + 1}</span>
+                  <h3>{name}</h3>
+                  <p>{body}</p>
+                </li>
+              ))}
+            </ol>
           </div>
-        </div>
-
-        {/* faint trust strip */}
-        <div className="relative border-t border-charcoal-deep/10">
-          <div className="container-x py-5 flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
-            {trust.map((t) => (
-              <div key={t.label} className="flex items-center gap-2.5">
-                <t.icon className="h-3.5 w-3.5 text-gold shrink-0" />
-                <span className="text-[11px] font-medium uppercase tracking-[0.22em] text-charcoal/65">
-                  {t.label}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SERVICES */}
-      <section className="container-x py-20 md:py-28">
-        <div className="flex flex-wrap items-end justify-between gap-6">
+        </section>
+        <section className="pa-section pa-shell pa-local" aria-labelledby="local-title">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-gold">What We Do</p>
-            <h2 className="mt-2 text-3xl md:text-5xl font-display font-bold">
-              One firm for every stage of your restaurant.
-            </h2>
+            <p className="pa-kicker">05 / Los Angeles, in detail</p>
+            <h2 id="local-title">The Details That Shape a Los Angeles Restaurant Deal</h2>
+            <span className="pa-local-rule" aria-hidden="true" />
           </div>
-          <Link to="/services" className="text-sm font-semibold text-gold hover:underline">
-            See all services →
-          </Link>
-        </div>
-
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {featuredServices.map((s) => (
-            <Link
-              key={s.slug}
-              to={s.to}
-              className="group relative rounded-xl border border-border bg-card p-7 hover:border-gold/60 hover:-translate-y-0.5 transition shadow-elegant"
-            >
-              <div className="grid h-12 w-12 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30">
-                <s.icon className="h-6 w-6" />
-              </div>
-              <h3 className="mt-5 text-lg font-display font-bold">{s.title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{s.short}</p>
-              <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-gold opacity-0 group-hover:opacity-100 transition">
-                Learn more <ArrowRight className="h-3.5 w-3.5" />
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* HOW IT WORKS */}
-      <section className="border-y border-border bg-card">
-        <div className="container-x py-20 md:py-28">
-          <div className="max-w-2xl">
-            <p className="text-xs font-semibold uppercase tracking-widest text-gold">
-              How It Works
+          <div className="pa-prose">
+            <p>
+              A restaurant transaction in Los Angeles is more than an agreement on price. The
+              business, the premises and the buyer’s plans need to be considered together. Financial
+              records help explain how the restaurant operates; equipment ownership helps define
+              what is actually included in the sale.{" "}
+              <Link to="/business-investigations">Restaurant due diligence</Link> brings those
+              details into the conversation early.
             </p>
-            <h2 className="mt-2 text-3xl md:text-5xl font-display font-bold">
-              Three steps. No runaround.
-            </h2>
+            <p>
+              The lease is another workstream. Remaining term, assignment provisions and landlord
+              requirements can influence the transaction.{" "}
+              <Link to="/assignments-rent-abatement">Lease assignment coordination</Link> helps the
+              parties identify the questions to address with the landlord before relying on a
+              proposed arrangement.
+            </p>
+            <p>
+              Licensing and permitting deserve their own attention. California ABC handles state
+              alcohol licensing, while city or other local authorities may have separate alcohol-use
+              approvals. <Link to="/alcohol-licensing">ABC transfer support</Link> should account
+              for those distinct processes. Health permitting and ownership-change requirements also
+              depend on the premises and the responsible agency;{" "}
+              <Link to="/health-permitting">restaurant permitting support</Link> helps organize that
+              review.
+            </p>
+            <p>
+              Penthouse Advisors connects these workstreams with the business negotiations, escrow
+              and closing coordination. The aim is a clearer picture of the restaurant transaction:
+              what is known, what needs review and which party is responsible for the next step.
+            </p>
           </div>
-          <div className="mt-14 grid gap-8 md:grid-cols-3">
-            {steps.map((s) => (
-              <div key={s.n} className="relative">
-                <div className="text-6xl font-display font-extrabold text-gold/25">{s.n}</div>
-                <h3 className="mt-3 text-2xl font-display font-bold">{s.title}</h3>
-                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{s.body}</p>
-              </div>
+        </section>
+        <section className="pa-guides-section" aria-labelledby="guides-title">
+          <div className="pa-shell">
+            <div className="pa-section-head">
+              <p className="pa-kicker">06 / Informed decisions</p>
+              <h2 id="guides-title">Restaurant Transaction Guides</h2>
+            </div>
+            <div className="pa-guides">
+              {guides.map((g) => (
+                <article key={g.to}>
+                  <p className="pa-kicker">{g.category}</p>
+                  <h3>{g.title}</h3>
+                  <p>{g.body}</p>
+                  <EditorialLink to={g.to}>{g.label}</EditorialLink>
+                </article>
+              ))}
+            </div>
+            <EditorialLink to="/help">Explore the Help Center</EditorialLink>
+          </div>
+        </section>
+        <section className="pa-section pa-shell pa-faq-section" aria-labelledby="faq-title">
+          <div>
+            <p className="pa-kicker">07 / Questions worth asking</p>
+            <h2 id="faq-title">Questions About Buying and Selling Restaurants</h2>
+          </div>
+          <div className="pa-faq">
+            {faqs.map((f, i) => (
+              <details key={f.q} open={i === 0}>
+                <summary>
+                  <h3>{f.q}</h3>
+                  <span aria-hidden="true">+</span>
+                </summary>
+                <p>{f.a}</p>
+                <EditorialLink to={f.to}>{f.label}</EditorialLink>
+              </details>
             ))}
           </div>
-          <div className="mt-12">
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-charcoal-deep shadow-gold"
-            >
-              Book a consultation <ArrowRight className="h-4 w-4" />
+        </section>
+        <section className="pa-final" aria-labelledby="final-title">
+          <div className="pa-shell">
+            <p className="pa-kicker">Your restaurant. Your next decision.</p>
+            <h2 id="final-title">Planning to Buy, Sell or Navigate a Restaurant Transaction?</h2>
+            <p>
+              Discuss your restaurant, acquisition, sale, lease or transaction obstacle with
+              Penthouse Advisors.
+            </p>
+            <Link to="/contact" className="pa-button">
+              {CONSULTATION_LABEL}
+              <ArrowUpRight size={18} aria-hidden="true" />
             </Link>
+            <a href={PHONE_HREF} className="pa-final-phone">
+              Or call {PHONE}
+            </a>
           </div>
-        </div>
-      </section>
-
-      <CTASection
-        title="Are you a restaurant owner in need of assistance with a real restaurant problem?"
-        body="We buy, sell, lease, license, and rescue restaurants across LA County. One call. One team. Start to close."
-      />
+        </section>
+      </div>
     </SiteLayout>
   );
 }

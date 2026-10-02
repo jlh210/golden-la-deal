@@ -4,6 +4,7 @@ import type { LucideIcon } from "lucide-react";
 import { SiteLayout, PHONE, PHONE_HREF } from "./Layout";
 import { PageHero } from "./PageHero";
 import { CTASection } from "./CTASection";
+import { CONSULTATION_LABEL } from "@/lib/consultation";
 
 export type FAQ = { q: string; a: string };
 export type RelatedLink = { to: string; label: string };
@@ -135,9 +136,9 @@ export function ServiceLanding(props: ServiceLandingProps) {
           <Link
             to="/contact"
             search={serviceNeeded ? { service: serviceNeeded } : undefined}
-            className="inline-flex items-center gap-2 rounded-md bg-gold-gradient px-6 py-3.5 text-sm font-bold text-charcoal-deep shadow-gold"
+            className="pa-button"
           >
-            Book a Consultation <ArrowRight className="h-4 w-4" />
+            {CONSULTATION_LABEL} <ArrowRight className="h-4 w-4" />
           </Link>
           <a
             href={PHONE_HREF}
