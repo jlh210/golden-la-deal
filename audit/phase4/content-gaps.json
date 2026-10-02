@@ -1,0 +1,70 @@
+[
+  {
+    "intent": "Health permit change of ownership",
+    "parent": "/health-permitting",
+    "gap": "Existing buying guide can summarize but does not explain agency routing, unchanged premises versus remodel, jurisdiction, documentation, corrections and final approvals.",
+    "recommendation": "Distinct procedural guide; first future priority.",
+    "links": [
+      "buying guide",
+      "second-generation explainer",
+      "due diligence checklist"
+    ],
+    "review": "LA County plus Pasadena, Long Beach and Vernon jurisdiction; construction and operating permit distinctions",
+    "status": "PROPOSED ONLY — no new page created",
+    "expectedUniqueValue": "Existing buying guide can summarize but does not explain agency routing, unchanged premises versus remodel, jurisdiction, documentation, corrections and final approvals."
+  },
+  {
+    "intent": "Restaurant escrow process",
+    "parent": "/buy-a-restaurant",
+    "gap": "Buying and selling guides cover sequence, not a full explanation of escrow instructions, contingencies, license coordination and release.",
+    "recommendation": "Only after legal/source review; avoid formula timelines.",
+    "links": [
+      "buying guide",
+      "selling guide",
+      "ABC transfer"
+    ],
+    "review": "ABC and California bulk-sale law, tax clearances; distinguish transaction structures",
+    "status": "PROPOSED ONLY — no new page created",
+    "expectedUniqueValue": "Buying and selling guides cover sequence, not a full explanation of escrow instructions, contingencies, license coordination and release."
+  },
+  {
+    "intent": "Buying versus starting a restaurant",
+    "parent": "/buy-a-restaurant",
+    "gap": "Second-generation explainer addresses infrastructure rather than full acquisition/startup decision.",
+    "recommendation": "Decision matrix using illustrative cost categories, not market averages.",
+    "links": [
+      "second-generation explainer",
+      "valuation",
+      "buying guide"
+    ],
+    "review": "Permitting, local planning and business acquisition finance",
+    "status": "PROPOSED ONLY — no new page created",
+    "expectedUniqueValue": "Second-generation explainer addresses infrastructure rather than full acquisition/startup decision."
+  },
+  {
+    "intent": "Buyer qualification",
+    "parent": "/sell-your-restaurant",
+    "gap": "Seller guide can cover essential scope for now.",
+    "recommendation": "Defer standalone; improve existing seller section first.",
+    "links": [
+      "selling guide",
+      "lease assignment"
+    ],
+    "review": "Privacy, employment/financial records, ABC eligibility; no automatic criminal-history rules",
+    "status": "DEFER standalone; essential qualification content expanded in existing seller guide.",
+    "expectedUniqueValue": "Seller guide can cover essential scope for now."
+  },
+  {
+    "intent": "Valuation preparation",
+    "parent": "/sell-your-restaurant",
+    "gap": "Valuation article can satisfy documentation intent.",
+    "recommendation": "Do not create competing article; expand existing asset.",
+    "links": [
+      "valuation",
+      "selling guide"
+    ],
+    "review": "Financial/accounting context and documented add-backs",
+    "status": "SATISFIED within existing valuation article; no new competing page.",
+    "expectedUniqueValue": "Valuation article can satisfy documentation intent."
+  }
+]

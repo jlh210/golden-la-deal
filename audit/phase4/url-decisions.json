@@ -1,0 +1,471 @@
+{
+  "articles": [
+    {
+      "url": "/blog/best-la-neighborhoods-open-restaurant-2026",
+      "title": "How to Evaluate a Los Angeles Neighborhood for a Restaurant",
+      "intent": "How should an operator evaluate a Los Angeles restaurant neighborhood?",
+      "contentType": "Blog explainer",
+      "commercialParent": "/buy-a-restaurant",
+      "supportingUrls": [
+        "/blog/second-generation-restaurant-space-explained",
+        "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+        "/help/local-markets/restaurant-broker-beverly-hills"
+      ],
+      "action": "REFINE",
+      "rationale": "Replaced unsupported best-area rankings with concept requirements, address-level observation, occupancy costs and jurisdiction checks. Preserved six neighborhood groupings as investigation examples rather than forecasts or demand claims.",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog/best-la-neighborhoods-open-restaurant-2026",
+      "indexability": "index, follow",
+      "dateModified": "2026-10-02",
+      "datePublished": "2026-08-27",
+      "answerWords": 61
+    },
+    {
+      "url": "/blog/restaurant-buyer-due-diligence-checklist",
+      "title": "Restaurant Due Diligence Findings: Proceed, Renegotiate or Pause?",
+      "intent": "How should a restaurant buyer assess due diligence findings?",
+      "contentType": "Blog explainer",
+      "commercialParent": "/business-investigations",
+      "supportingUrls": [
+        "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+        "/help/lease-assignments/restaurant-lease-assignment-guide",
+        "/blog/restaurant-valuation-los-angeles-2026"
+      ],
+      "action": "DIFFERENTIATE",
+      "rationale": "Rebuilt the overlapping checklist as findings interpretation: evidence gaps, financial discrepancies, lease and approval risk, equipment and health issues, issue log, specialist escalation and proceed/renegotiate/pause decisions. Prominently links to the primary Help checklist.",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog/restaurant-buyer-due-diligence-checklist",
+      "indexability": "index, follow",
+      "dateModified": "2026-10-02",
+      "datePublished": "2026-08-27",
+      "answerWords": 58
+    },
+    {
+      "url": "/blog/restaurant-valuation-los-angeles-2026",
+      "title": "Restaurant Valuation in Los Angeles: Earnings, Assets & Risk",
+      "intent": "How is a Los Angeles restaurant valued?",
+      "contentType": "Blog explainer",
+      "commercialParent": "/sell-your-restaurant",
+      "supportingUrls": [
+        "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+        "/help/lease-assignments/restaurant-lease-assignment-guide",
+        "/blog/restaurant-buyer-due-diligence-checklist"
+      ],
+      "action": "REFINE",
+      "rationale": "Distinguishes operating business from asset transaction; explains documented earnings, supported SDE adjustments, replacement labor, lease continuity, equipment, approvals, location risk and asking price versus transaction economics. Removed universal multiple and expiry claims; labeled the earnings arithmetic hypothetical.",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog/restaurant-valuation-los-angeles-2026",
+      "indexability": "index, follow",
+      "dateModified": "2026-10-02",
+      "datePublished": "2026-08-27",
+      "answerWords": 60
+    },
+    {
+      "url": "/blog/second-generation-restaurant-space-explained",
+      "title": "What Is a Second-Generation Restaurant Space?",
+      "intent": "What is a second-generation restaurant space?",
+      "contentType": "Blog explainer",
+      "commercialParent": "/restaurant-leasing",
+      "supportingUrls": [
+        "/help/lease-assignments/restaurant-lease-assignment-guide",
+        "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+        "/blog/best-la-neighborhoods-open-restaurant-2026"
+      ],
+      "action": "REFINE",
+      "rationale": "Preserved the infrastructure investigation; added system-by-system evidence, ownership and lease obligations, approvals versus prior use, ADA and health jurisdiction. Replaced promised six-figure savings with a complete cost comparison.",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog/second-generation-restaurant-space-explained",
+      "indexability": "index, follow",
+      "dateModified": "2026-10-02",
+      "datePublished": "2026-08-27",
+      "answerWords": 60
+    },
+    {
+      "url": "/blog/type-41-vs-type-47-liquor-license-california",
+      "title": "Type 41 vs. Type 47: California Restaurant Liquor Licenses",
+      "intent": "What is the difference between California Type 41 and Type 47?",
+      "contentType": "Blog explainer",
+      "commercialParent": "/alcohol-licensing",
+      "supportingUrls": [
+        "/help/alcohol-licensing/abc-license-transfer-guide",
+        "/blog/second-generation-restaurant-space-explained",
+        "/help/buying-a-restaurant/restaurant-due-diligence-checklist"
+      ],
+      "action": "REFINE",
+      "rationale": "Added a privileges comparison and food-service context; separated ABC from local land-use approval, explained transfer/new-license considerations, and replaced price/availability promises with cost components and official fee links.",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog/type-41-vs-type-47-liquor-license-california",
+      "indexability": "index, follow",
+      "dateModified": "2026-10-02",
+      "datePublished": "2026-08-27",
+      "answerWords": 56
+    },
+    {
+      "url": "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+      "title": "How to Buy a Restaurant in Los Angeles",
+      "intent": "How do I buy a restaurant in Los Angeles?",
+      "contentType": "Help evergreen guide",
+      "commercialParent": "/buy-a-restaurant",
+      "supportingUrls": [
+        "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+        "/help/alcohol-licensing/abc-license-transfer-guide",
+        "/help/lease-assignments/restaurant-lease-assignment-guide",
+        "/blog/second-generation-restaurant-space-explained"
+      ],
+      "action": "REFINE",
+      "rationale": "Preserved acquisition breadth: structure, budget, search, offer, diligence, lease, ABC/health, escrow, closing and transition. Removed formula prices, financing percentages and timelines. Added links to relevant guides, listings and specialist services.",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+      "indexability": "index, follow",
+      "dateModified": "2026-10-02",
+      "datePublished": null,
+      "answerWords": 58
+    },
+    {
+      "url": "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+      "title": "Restaurant Due Diligence Checklist",
+      "intent": "What belongs in a restaurant due diligence checklist?",
+      "contentType": "Help evergreen guide",
+      "commercialParent": "/business-investigations",
+      "supportingUrls": [
+        "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+        "/blog/restaurant-buyer-due-diligence-checklist",
+        "/help/lease-assignments/restaurant-lease-assignment-guide",
+        "/help/alcohol-licensing/abc-license-transfer-guide"
+      ],
+      "action": "REFINE",
+      "rationale": "Designated the primary checklist; retained detailed financial, lease, ABC, health, building/accessibility, equipment, contract and staffing review. Clarified the evidence and contractual limits, added an issue log and a link to the distinct Blog findings guide.",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+      "indexability": "index, follow",
+      "dateModified": "2026-10-02",
+      "datePublished": null,
+      "answerWords": 60
+    },
+    {
+      "url": "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+      "title": "How to Sell a Restaurant in Los Angeles",
+      "intent": "How do I sell a restaurant in Los Angeles?",
+      "contentType": "Help evergreen guide",
+      "commercialParent": "/sell-your-restaurant",
+      "supportingUrls": [
+        "/blog/restaurant-valuation-los-angeles-2026",
+        "/help/lease-assignments/restaurant-lease-assignment-guide",
+        "/help/alcohol-licensing/abc-license-transfer-guide"
+      ],
+      "action": "REFINE",
+      "rationale": "Preserved preparation, valuation, confidentiality, buyer qualification, negotiation, diligence, lease, licensing, escrow and transition. Removed universal discounts, multiples and timing; replaced absolute confidentiality and employee/tax directions with transaction-specific review.",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+      "indexability": "index, follow",
+      "dateModified": "2026-10-02",
+      "datePublished": null,
+      "answerWords": 60
+    },
+    {
+      "url": "/help/alcohol-licensing/abc-license-transfer-guide",
+      "title": "How a California ABC Restaurant License Transfer Works",
+      "intent": "How does a California ABC restaurant license transfer work?",
+      "contentType": "Help evergreen guide",
+      "commercialParent": "/alcohol-licensing",
+      "supportingUrls": [
+        "/blog/type-41-vs-type-47-liquor-license-california",
+        "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+        "/help/lease-assignments/restaurant-lease-assignment-guide"
+      ],
+      "action": "REFINE",
+      "rationale": "Owns procedure: transfer routes, application package, premises approval, escrow coordination, conditional temporary permits, license conditions, local authorization and cost/timing dependencies. Cross-links the license-type comparison; removes automatic-operation and fixed-timeline claims.",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/alcohol-licensing/abc-license-transfer-guide",
+      "indexability": "index, follow",
+      "dateModified": "2026-10-02",
+      "datePublished": null,
+      "answerWords": 63
+    },
+    {
+      "url": "/help/lease-assignments/restaurant-lease-assignment-guide",
+      "title": "Restaurant Lease Assignment Guide for Los Angeles Transactions",
+      "intent": "How does a restaurant lease assignment work?",
+      "contentType": "Help evergreen guide",
+      "commercialParent": "/restaurant-leasing",
+      "supportingUrls": [
+        "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+        "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+        "/blog/second-generation-restaurant-space-explained"
+      ],
+      "action": "REFINE",
+      "rationale": "Distinguishes assignment, sublease and new lease; covers consent clauses, landlord package, options, guaranty structures, rent relief and sale coordination. Qualifies the California consent standard, release and abatement; removes fee/time averages. Primary parent is now restaurant leasing.",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/lease-assignments/restaurant-lease-assignment-guide",
+      "indexability": "index, follow",
+      "dateModified": "2026-10-02",
+      "datePublished": null,
+      "answerWords": 59
+    },
+    {
+      "url": "/help/local-markets/restaurant-broker-beverly-hills",
+      "title": "Beverly Hills Restaurant Transactions: Location, Lease & Approvals",
+      "intent": "What local issues matter in a Beverly Hills restaurant transaction?",
+      "contentType": "Help evergreen guide",
+      "commercialParent": "/buy-a-restaurant",
+      "supportingUrls": [
+        "/blog/best-la-neighborhoods-open-restaurant-2026",
+        "/help/lease-assignments/restaurant-lease-assignment-guide",
+        "/help/alcohol-licensing/abc-license-transfer-guide"
+      ],
+      "action": "DIFFERENTIATE",
+      "rationale": "Reframes a broker-intent page as local transaction education: city jurisdiction, zoning, occupancy terms, documented costs, business certificate, outdoor dining, ABC and buyer/seller preparation. Preserves useful corridor examples while removing rent/premium and exclusivity claims.",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/local-markets/restaurant-broker-beverly-hills",
+      "indexability": "index, follow",
+      "dateModified": "2026-10-02",
+      "datePublished": null,
+      "answerWords": 61
+    }
+  ],
+  "categories": [
+    {
+      "url": "/help/buying-a-restaurant",
+      "title": "Buying a Restaurant",
+      "intent": "Browse Buying a Restaurant guides",
+      "contentType": "Help collection",
+      "commercialParent": "/buy-a-restaurant",
+      "supportingUrls": [
+        "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+        "/help/buying-a-restaurant/restaurant-due-diligence-checklist"
+      ],
+      "action": "REFINE",
+      "rationale": "Retain the populated collection and its original URL; refine introduction, navigation and editorial presentation.",
+      "status": 200,
+      "indexability": "index, follow",
+      "canonical": "https://www.penthouseadvisors.com/help/buying-a-restaurant"
+    },
+    {
+      "url": "/help/selling-a-restaurant",
+      "title": "Selling a Restaurant",
+      "intent": "Browse Selling a Restaurant guides",
+      "contentType": "Help collection",
+      "commercialParent": "/sell-your-restaurant",
+      "supportingUrls": [
+        "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles"
+      ],
+      "action": "REFINE",
+      "rationale": "Retain the populated collection and its original URL; refine introduction, navigation and editorial presentation.",
+      "status": 200,
+      "indexability": "index, follow",
+      "canonical": "https://www.penthouseadvisors.com/help/selling-a-restaurant"
+    },
+    {
+      "url": "/help/restaurant-leasing",
+      "title": "Restaurant Leasing",
+      "intent": "Browse Restaurant Leasing guides",
+      "contentType": "Help collection",
+      "commercialParent": "/restaurant-leasing",
+      "supportingUrls": [],
+      "action": "NOINDEX",
+      "rationale": "Empty collection: retain HTTP 200 and self-canonical with useful fallback; noindex, follow; remove from prominent collection navigation and indexable sitemap. Reconsider only after substantive content exists.",
+      "status": 200,
+      "indexability": "noindex, follow",
+      "canonical": "https://www.penthouseadvisors.com/help/restaurant-leasing"
+    },
+    {
+      "url": "/help/alcohol-licensing",
+      "title": "Alcohol Licensing",
+      "intent": "Browse Alcohol Licensing guides",
+      "contentType": "Help collection",
+      "commercialParent": "/alcohol-licensing",
+      "supportingUrls": [
+        "/help/alcohol-licensing/abc-license-transfer-guide"
+      ],
+      "action": "REFINE",
+      "rationale": "Retain the populated collection and its original URL; refine introduction, navigation and editorial presentation.",
+      "status": 200,
+      "indexability": "index, follow",
+      "canonical": "https://www.penthouseadvisors.com/help/alcohol-licensing"
+    },
+    {
+      "url": "/help/health-permitting",
+      "title": "Health Permitting",
+      "intent": "Browse Health Permitting guides",
+      "contentType": "Help collection",
+      "commercialParent": "/health-permitting",
+      "supportingUrls": [],
+      "action": "NOINDEX",
+      "rationale": "Empty collection: retain HTTP 200 and self-canonical with useful fallback; noindex, follow; remove from prominent collection navigation and indexable sitemap. Reconsider only after substantive content exists.",
+      "status": 200,
+      "indexability": "noindex, follow",
+      "canonical": "https://www.penthouseadvisors.com/help/health-permitting"
+    },
+    {
+      "url": "/help/grandfather-protection",
+      "title": "Grandfather Protection",
+      "intent": "Browse Grandfather Protection guides",
+      "contentType": "Help collection",
+      "commercialParent": "/restaurant-consulting",
+      "supportingUrls": [],
+      "action": "NOINDEX",
+      "rationale": "Empty collection: retain HTTP 200 and self-canonical with useful fallback; noindex, follow; remove from prominent collection navigation and indexable sitemap. Reconsider only after substantive content exists.",
+      "status": 200,
+      "indexability": "noindex, follow",
+      "canonical": "https://www.penthouseadvisors.com/help/grandfather-protection"
+    },
+    {
+      "url": "/help/lease-assignments",
+      "title": "Lease Assignments & Abatement",
+      "intent": "Browse Lease Assignments & Abatement guides",
+      "contentType": "Help collection",
+      "commercialParent": "/restaurant-leasing",
+      "supportingUrls": [
+        "/help/lease-assignments/restaurant-lease-assignment-guide"
+      ],
+      "action": "REFINE",
+      "rationale": "Retain the populated collection and its original URL; refine introduction, navigation and editorial presentation.",
+      "status": 200,
+      "indexability": "index, follow",
+      "canonical": "https://www.penthouseadvisors.com/help/lease-assignments"
+    },
+    {
+      "url": "/help/business-investigations",
+      "title": "Restaurant Business Investigations",
+      "intent": "Browse Restaurant Business Investigations guides",
+      "contentType": "Help collection",
+      "commercialParent": "/business-investigations",
+      "supportingUrls": [],
+      "action": "NOINDEX",
+      "rationale": "Empty collection: retain HTTP 200 and self-canonical with useful fallback; noindex, follow; remove from prominent collection navigation and indexable sitemap. Reconsider only after substantive content exists.",
+      "status": 200,
+      "indexability": "noindex, follow",
+      "canonical": "https://www.penthouseadvisors.com/help/business-investigations"
+    },
+    {
+      "url": "/help/buyer-tenant-resolutions",
+      "title": "Buyer / Tenant Resolutions",
+      "intent": "Browse Buyer / Tenant Resolutions guides",
+      "contentType": "Help collection",
+      "commercialParent": "/restaurant-consulting",
+      "supportingUrls": [],
+      "action": "NOINDEX",
+      "rationale": "Empty collection: retain HTTP 200 and self-canonical with useful fallback; noindex, follow; remove from prominent collection navigation and indexable sitemap. Reconsider only after substantive content exists.",
+      "status": 200,
+      "indexability": "noindex, follow",
+      "canonical": "https://www.penthouseadvisors.com/help/buyer-tenant-resolutions"
+    },
+    {
+      "url": "/help/off-market-sourcing",
+      "title": "Off-Market Restaurant Sourcing",
+      "intent": "Browse Off-Market Restaurant Sourcing guides",
+      "contentType": "Help collection",
+      "commercialParent": "/buy-a-restaurant",
+      "supportingUrls": [],
+      "action": "NOINDEX",
+      "rationale": "Empty collection: retain HTTP 200 and self-canonical with useful fallback; noindex, follow; remove from prominent collection navigation and indexable sitemap. Reconsider only after substantive content exists.",
+      "status": 200,
+      "indexability": "noindex, follow",
+      "canonical": "https://www.penthouseadvisors.com/help/off-market-sourcing"
+    },
+    {
+      "url": "/help/e2-visa",
+      "title": "E-2 Visa Restaurant Investments",
+      "intent": "Browse E-2 Visa Restaurant Investments guides",
+      "contentType": "Help collection",
+      "commercialParent": "/restaurant-consulting",
+      "supportingUrls": [],
+      "action": "NOINDEX",
+      "rationale": "Empty collection: retain HTTP 200 and self-canonical with useful fallback; noindex, follow; remove from prominent collection navigation and indexable sitemap. Reconsider only after substantive content exists.",
+      "status": 200,
+      "indexability": "noindex, follow",
+      "canonical": "https://www.penthouseadvisors.com/help/e2-visa"
+    },
+    {
+      "url": "/help/commercial-property-management",
+      "title": "Commercial Property Management",
+      "intent": "Browse Commercial Property Management guides",
+      "contentType": "Help collection",
+      "commercialParent": "/commercial-property-management",
+      "supportingUrls": [],
+      "action": "NOINDEX",
+      "rationale": "Empty collection: retain HTTP 200 and self-canonical with useful fallback; noindex, follow; remove from prominent collection navigation and indexable sitemap. Reconsider only after substantive content exists.",
+      "status": 200,
+      "indexability": "noindex, follow",
+      "canonical": "https://www.penthouseadvisors.com/help/commercial-property-management"
+    },
+    {
+      "url": "/help/medical-dental-leasing",
+      "title": "Medical & Dental Office Leasing",
+      "intent": "Browse Medical & Dental Office Leasing guides",
+      "contentType": "Help collection",
+      "commercialParent": "/restaurant-leasing",
+      "supportingUrls": [],
+      "action": "NOINDEX",
+      "rationale": "Empty collection: retain HTTP 200 and self-canonical with useful fallback; noindex, follow; remove from prominent collection navigation and indexable sitemap. Reconsider only after substantive content exists.",
+      "status": 200,
+      "indexability": "noindex, follow",
+      "canonical": "https://www.penthouseadvisors.com/help/medical-dental-leasing"
+    },
+    {
+      "url": "/help/restaurant-consulting",
+      "title": "Restaurant Consulting",
+      "intent": "Browse Restaurant Consulting guides",
+      "contentType": "Help collection",
+      "commercialParent": "/restaurant-consulting",
+      "supportingUrls": [],
+      "action": "NOINDEX",
+      "rationale": "Empty collection: retain HTTP 200 and self-canonical with useful fallback; noindex, follow; remove from prominent collection navigation and indexable sitemap. Reconsider only after substantive content exists.",
+      "status": 200,
+      "indexability": "noindex, follow",
+      "canonical": "https://www.penthouseadvisors.com/help/restaurant-consulting"
+    },
+    {
+      "url": "/help/local-markets",
+      "title": "LA Local Market Guides",
+      "intent": "Browse LA Local Market Guides guides",
+      "contentType": "Help collection",
+      "commercialParent": "/buy-a-restaurant",
+      "supportingUrls": [
+        "/help/local-markets/restaurant-broker-beverly-hills"
+      ],
+      "action": "REFINE",
+      "rationale": "Retain the populated collection and its original URL; refine introduction, navigation and editorial presentation.",
+      "status": 200,
+      "indexability": "index, follow",
+      "canonical": "https://www.penthouseadvisors.com/help/local-markets"
+    }
+  ],
+  "hubs": [
+    {
+      "url": "/help",
+      "intent": "Browse evergreen restaurant transaction guides",
+      "contentType": "Knowledge Center",
+      "commercialParent": null,
+      "supportingUrls": [
+        "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+        "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+        "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+        "/help/alcohol-licensing/abc-license-transfer-guide",
+        "/help/lease-assignments/restaurant-lease-assignment-guide",
+        "/help/local-markets/restaurant-broker-beverly-hills"
+      ],
+      "action": "REFINE",
+      "rationale": "Six conceptual knowledge areas plus five populated collections; cross-links Insights; searchable Help guides."
+    },
+    {
+      "url": "/blog",
+      "intent": "Browse restaurant transaction explainers and comparisons",
+      "contentType": "Insights archive",
+      "commercialParent": null,
+      "supportingUrls": [
+        "/blog/best-la-neighborhoods-open-restaurant-2026",
+        "/blog/restaurant-buyer-due-diligence-checklist",
+        "/blog/restaurant-valuation-los-angeles-2026",
+        "/blog/second-generation-restaurant-space-explained",
+        "/blog/type-41-vs-type-47-liquor-license-california"
+      ],
+      "action": "REFINE",
+      "rationale": "Editorial list of the five existing insights with clear subjects and reciprocal Help navigation; no tag/category URL expansion."
+    }
+  ],
+  "consolidations": [],
+  "redirects": [],
+  "canonicalChanges": [],
+  "note": "No article URL, category URL or route was removed. NOINDEX applies only to the ten empty category shells."
+}

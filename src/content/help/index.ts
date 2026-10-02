@@ -26,7 +26,7 @@ export const categories: Category[] = [
     "Buying a Restaurant",
     "Buying a Restaurant in Los Angeles — Guides & FAQs",
     "Guides, checklists, and FAQs for buying a restaurant in Los Angeles County — from first offer to keys in hand.",
-    "Everything a first-time or repeat buyer needs to acquire a restaurant in Los Angeles: how the process works, what due diligence to run, how financing and ABC transfers fit together, and where deals commonly break.",
+    "Understand the acquisition sequence and organize the evidence needed before the next commitment. These guides explain the process and provide a detailed diligence checklist.",
     "ShoppingBag",
     1,
     [buyingHowTo, buyingDD],
@@ -36,7 +36,7 @@ export const categories: Category[] = [
     "Selling a Restaurant",
     "Selling a Restaurant in Los Angeles — Owner Guides",
     "How to sell your restaurant in LA: valuation, confidential listing, buyer qualification, escrow, and closing.",
-    "For owners planning an exit — how valuation actually works in LA, how to prepare your books and lease for a serious buyer, and how a confidential listing protects your staff, vendors, and reputation while the sale runs.",
+    "Prepare the records, pricing questions, buyer qualification and handover steps involved in a restaurant sale. Pair the selling guide with the valuation explainer in Insights.",
     "Store",
     2,
     [sellingHowTo],
@@ -55,7 +55,7 @@ export const categories: Category[] = [
     "Alcohol Licensing",
     "California ABC License Guides — Transfers, Type 41 & 47",
     "California ABC licensing: transfers, Type 41, Type 47, CUB conditions, and what buyers and sellers need to know.",
-    "The California ABC is its own timeline inside every restaurant transaction. These guides explain person-to-person transfers, temporary retail permits, CUB conditions, and how license issues surface (and get resolved) in escrow.",
+    "Understand the ABC transfer process, conditional temporary permits, and the distinction between state licensing and local alcohol authorization.",
     "Wine",
     4,
     [abcTransfer],
@@ -83,7 +83,7 @@ export const categories: Category[] = [
     "Lease Assignments & Abatement",
     "Restaurant Lease Assignment & Rent Abatement Guides",
     "Restaurant lease assignments, landlord consent negotiation, and rent abatement tied to permit milestones.",
-    "Almost every restaurant sale in LA turns on the lease assignment. These guides cover landlord consent strategy, guaranty structures, and how to negotiate abated rent while you build out or wait on permits.",
+    "Review assignment requirements, landlord documentation, guaranties and negotiated rent relief in the context of the actual restaurant lease.",
     "FileSignature",
     7,
     [leasingAssignment],
@@ -154,9 +154,9 @@ export const categories: Category[] = [
   shell(
     "local-markets",
     "LA Local Market Guides",
-    "Restaurant Broker Guides by LA Neighborhood",
-    "Restaurant brokerage market guides by Los Angeles neighborhood: Beverly Hills, Santa Monica, Pasadena, and more.",
-    "LA is not one restaurant market — it's dozens. These neighborhood guides cover rent ranges, landlord expectations, license scarcity, and city-specific approvals across the submarkets we work in most.",
+    "Los Angeles Restaurant Location & Transaction Guides",
+    "Property-level restaurant transaction considerations in Los Angeles County, starting with the existing Beverly Hills guide.",
+    "Evaluate restaurant locations using the actual premises, lease and local approval requirements. Start with the Beverly Hills guide and use Insights for a broader neighborhood-evaluation framework.",
     "MapPin",
     15,
     [beverlyHills],
@@ -167,7 +167,10 @@ export function getCategory(slug: string): Category | undefined {
   return categories.find((c) => c.slug === slug);
 }
 
-export function getArticle(categorySlug: string, articleSlug: string): { article: Article; category: Category } | undefined {
+export function getArticle(
+  categorySlug: string,
+  articleSlug: string,
+): { article: Article; category: Category } | undefined {
   const category = getCategory(categorySlug);
   if (!category) return undefined;
   const article = category.articles.find((a) => a.slug === articleSlug);

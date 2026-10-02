@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "method": "Rendered browser inspection, DOM size measurements and UI interactions against the local production build.",
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "pages": [
+    "/help",
+    "/blog",
+    "/blog/restaurant-valuation-los-angeles-2026",
+    "/help/lease-assignments/restaurant-lease-assignment-guide"
+  ],
+  "observations": [
+    "Desktop article body capped at 780px; tablet body 688px; mobile body 350px.",
+    "Breadcrumbs, heading hierarchy, sources, tables, lists, contextual next step, related links, navigation and footer inspected.",
+    "Mobile table text increased to 14px; Help search placeholder shortened.",
+    "Desktop contents navigation and mobile collapsible contents preserve readable article width.",
+    "No horizontal overflow on required visual pages or the 56 wider route checks."
+  ],
+  "interactions": [
+    "ABC transfer query finds the license transfer guide first.",
+    "Unmatched search shows a useful status message.",
+    "Mobile navigation opens.",
+    "Mobile table-of-contents link reaches its heading.",
+    "Native FAQ disclosure exposes the matching answer."
+  ],
+  "screenshots": [
+    "screenshots/help-390.png",
+    "screenshots/help-768.png",
+    "screenshots/help-1440.png",
+    "screenshots/blog-390.png",
+    "screenshots/blog-768.png",
+    "screenshots/blog-1440.png",
+    "screenshots/valuation-390.png",
+    "screenshots/valuation-768.png",
+    "screenshots/valuation-1440.png",
+    "screenshots/lease-390.png",
+    "screenshots/lease-768.png",
+    "screenshots/lease-1440.png"
+  ]
+}

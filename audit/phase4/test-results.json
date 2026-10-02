@@ -1,0 +1,82 @@
+[
+  {
+    "status": "PASS",
+    "check": "Production build",
+    "evidence": "npm run build; local Cloudflare production worker used for SSR verification."
+  },
+  {
+    "status": "PASS",
+    "check": "TypeScript",
+    "evidence": "node_modules/.bin/tsc --noEmit"
+  },
+  {
+    "status": "PASS",
+    "check": "Changed-file lint",
+    "evidence": "ESLint on changed TypeScript/TSX, the new knowledge cluster module and scripts/verify-phase4.cjs."
+  },
+  {
+    "status": "PASS",
+    "check": "59 known routes",
+    "evidence": "Every baseline URL returns 200 without redirect; canonical unchanged."
+  },
+  {
+    "status": "PASS",
+    "check": "Internal links",
+    "evidence": "73 local destinations plus in-document anchors verified."
+  },
+  {
+    "status": "PASS",
+    "check": "Schema and FAQs",
+    "evidence": "JSON-LD parsing, publisher, dates, Article/Breadcrumb structure and 23 visible/schema FAQ pairs across 11 articles."
+  },
+  {
+    "status": "PASS",
+    "check": "Sitemap / indexability",
+    "evidence": "49 unique indexable URLs; ten preserved empty categories are noindex, follow and excluded."
+  },
+  {
+    "status": "PASS",
+    "check": "Phase 3 regression",
+    "evidence": "Seven commercial pages retain title, H1, normalized main text and schema. Source routes unchanged."
+  },
+  {
+    "status": "PASS",
+    "check": "Homepage regression",
+    "evidence": "Existing Phase 2 checks: nine sections, FAQ parity, 28 internal links and four image assets."
+  },
+  {
+    "status": "PASS",
+    "check": "Mobile overflow",
+    "evidence": "28 Blog/Help URLs at 320 and 390 pixels: 56 measurements without horizontal overflow."
+  },
+  {
+    "status": "PASS",
+    "check": "Visual inspection",
+    "evidence": "Help, Blog, valuation and lease article rendered and inspected at 390×844, 768×1024 and 1440×900; final screenshots archived."
+  },
+  {
+    "status": "PASS",
+    "check": "UI interactions",
+    "evidence": "ABC transfer search returns the ABC guide first; no-results message, mobile menu, contents anchor and FAQ expansion verified."
+  },
+  {
+    "status": "PASS",
+    "check": "Runtime scope",
+    "evidence": "SSR content remains crawlable; no added dependencies or heavy article-rendering library."
+  },
+  {
+    "status": "NOT VERIFIED",
+    "check": "Search outcomes",
+    "evidence": "No Search Console, analytics, backlinks, observed cannibalization, ranking gains or AI citation results."
+  },
+  {
+    "status": "NOT VERIFIED",
+    "check": "External validator eligibility",
+    "evidence": "Local JSON-LD validation and visible parity passed; Google Rich Results/Search Console eligibility was not tested."
+  },
+  {
+    "status": "NOT VERIFIED",
+    "check": "Production / field metrics",
+    "evidence": "No deployment, live route recrawl of this build, field Core Web Vitals, or live booking/payment submission. No performance score improvement claimed."
+  }
+]

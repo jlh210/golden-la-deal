@@ -56,11 +56,13 @@ export const Route = createFileRoute("/sitemap.xml")({
 
           // Help Center
           { path: "/help", changefreq: "weekly", priority: "0.8" },
-          ...categories.map((c) => ({
-            path: `/help/${c.slug}`,
-            changefreq: "monthly" as const,
-            priority: "0.7",
-          })),
+          ...categories
+            .filter((c) => c.articles.length > 0)
+            .map((c) => ({
+              path: `/help/${c.slug}`,
+              changefreq: "monthly" as const,
+              priority: "0.7",
+            })),
           ...categories.flatMap((c) =>
             c.articles.map((a) => ({
               path: `/help/${c.slug}/${a.slug}`,

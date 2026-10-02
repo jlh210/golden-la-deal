@@ -3,9 +3,11 @@ import type { Article } from "../types";
 export const article: Article = {
   slug: "how-to-buy-a-restaurant-in-los-angeles",
   title: "How to Buy a Restaurant in Los Angeles",
-  seoTitle: "How to Buy a Restaurant in Los Angeles (2026 Guide)",
+  seoTitle: "How to Buy a Restaurant in Los Angeles | Penthouse Advisors",
   description:
-    "Step-by-step guide to buying a restaurant in Los Angeles County: due diligence, financing, escrow, ABC and Health permits, lease assignment, and closing.",
+    "Understand the Los Angeles restaurant buying process: budget, offer, diligence, lease assignment, ABC transfer, health review, escrow, and handover.",
+  answer:
+    "Buying a Los Angeles restaurant involves defining the assets or business being acquired, checking the evidence behind the price, securing workable occupancy terms, and coordinating the approvals required for the new operation. The offer, diligence, landlord review, financing, and escrow need to fit together. Set decision deadlines around the actual transaction rather than assuming a standard closing window.",
   keywords: [
     "how to buy a restaurant in Los Angeles",
     "buying a restaurant in California",
@@ -13,118 +15,254 @@ export const article: Article = {
     "buy a restaurant LA",
     "restaurant broker Los Angeles",
   ],
-  updatedAt: "2026-07-24",
-  readMinutes: 11,
+  updatedAt: "2026-10-02",
+  readMinutes: 5,
   keyTakeaways: [
-    "Most LA restaurant acquisitions close in 60–120 days once an offer is accepted.",
-    "The lease is usually the single biggest risk — assignment consent and remaining term make or break the deal.",
-    "ABC liquor licenses transfer through escrow; expect a 60–90 day ABC review.",
-    "Los Angeles County Health Dept requires a permit change of ownership and often a plan check for altered layouts.",
-    "Verify seller-declared sales against POS, bank deposits, and sales-tax filings — never off the P&L alone.",
+    "Define the transaction and complete funding needs before choosing an asking price to pursue.",
+    "Use source records to investigate earnings, lease terms, equipment and approvals.",
+    "Treat possession, escrow completion and permission to operate as separate conditions.",
   ],
   sections: [
-    { type: "h2", text: "Decide what you're actually buying" },
+    {
+      type: "h2",
+      text: "What are you actually buying?",
+    },
     {
       type: "p",
-      text: "Restaurant deals in Los Angeles come in three shapes: an asset sale (equipment, goodwill, and the lease assignment), a business/stock sale (the operating entity with its liabilities), or a real-estate purchase where you buy the building along with the operation. The tax, licensing, and liability profile of each is very different — decide with your CPA before you write an offer.",
+      text: "Identify whether the agreement acquires specified assets, an ownership interest in an entity, real estate, or a combination. An operating restaurant can be purchased through an asset transaction; an asset sale does not necessarily mean a closed business. List included and excluded property, assumed obligations, intellectual property, inventory, deposits, and transition support. Review the structure with legal and accounting advisors before relying on its tax or liability effects.",
     },
-    { type: "h2", text: "Set your budget and financing" },
     {
-      type: "p",
-      text: "Independent LA restaurants change hands between roughly $150,000 for a small turnkey space and $2M+ for a full liquor concept in a prime submarket. Plan for the purchase price, working capital for 90 days, a security deposit and first month's rent for the landlord, ABC transfer costs, Health Dept plan-check fees, and a reserve for surprises found during inspection.",
-    },
-    { type: "h3", text: "Common financing paths" },
-    {
-      type: "ul",
-      items: [
-        "Cash — fastest close, strongest position.",
-        "SBA 7(a) loan — up to $5M, typical 10-year term, requires strong seller books.",
-        "Seller carry — the seller finances 20–40% at negotiated terms.",
-        "E-2 visa investment — for European entrepreneurs using the restaurant as their qualifying investment.",
-      ],
-    },
-    { type: "h2", text: "Find qualified listings" },
-    {
-      type: "p",
-      text: "Public listings surface a fraction of LA's real inventory. Most serious deals move off-market through brokers who know which operators are quietly tired, which landlords want a new tenant, and which spaces are about to be listed. That's why buyers work with a specialized restaurant broker rather than a generalist commercial broker.",
-    },
-    { type: "h2", text: "Write the LOI and open escrow" },
-    {
-      type: "p",
-      text: "A Letter of Intent locks in price, deposit, contingencies, and a due-diligence window (typically 21–45 days). Once accepted, escrow opens at a licensed California bulk-sale escrow house — a Bulk Sale Notice is published to protect you from the seller's creditors, which alone takes 12–15 business days.",
-    },
-    { type: "h2", text: "Run real due diligence" },
-    {
-      type: "p",
-      text: "This is where deals live or die. A thorough pre-purchase investigation covers:",
+      type: "h2",
+      text: "Build a complete acquisition budget",
     },
     {
       type: "ul",
       items: [
-        "Lease terms: remaining years, options, rent escalators, personal guarantees, assignment consent language, use clause.",
-        "Financials: last 24 months of POS reports, bank deposits, sales-tax returns (BOE-401), and credit-card processor statements — reconciled against the seller's P&L.",
-        "ABC license status: type, conditions (CUB), disciplinary history, and whether it will transfer with the sale.",
-        "Health Dept history: current grade card, red-tag history, open violations, and whether your planned menu triggers a new plan check.",
-        "Building & Safety: unpermitted construction, expired permits, ADA exposure.",
-        "Equipment: age, condition, whether items are owned or leased.",
+        "Purchase consideration and how it will be funded.",
+        "Lease deposits, rent and additional occupancy charges before opening.",
+        "Equipment inspection, repair, replacement and installation.",
+        "Professional services, application charges and required construction.",
+        "Insurance, staffing, inventory, systems and working capital based on the operating plan.",
+        "A contingency for unresolved items rather than a universal percentage allowance.",
       ],
     },
-    { type: "h2", text: "Handle the lease assignment" },
     {
       type: "p",
-      text: "Every LA restaurant lease requires landlord consent to assign. Landlords use this leverage to raise rent, extend the term, tighten the guaranty, or refuse entirely. Start the assignment conversation with the landlord within the first week of escrow — a stalled assignment is the number-one reason LA restaurant deals collapse.",
+      text: "Cash, acquisition lending and seller financing have different conditions and risks. Ask prospective lenders what records, borrower qualifications and collateral they require. Do not treat an intended loan or visa-related investment as approved funding. If immigration planning is involved, use qualified immigration counsel alongside transaction advisors.",
     },
-    { type: "h2", text: "Transfer the ABC license" },
     {
-      type: "p",
-      text: "If the restaurant sells beer, wine, or spirits, you'll file a person-to-person transfer with the California Department of Alcoholic Beverage Control. Expect 60–90 days for ABC to post, investigate, and issue. During that window, most buyers operate under a temporary retail permit for continuity.",
+      type: "sources",
+      items: [
+        {
+          title: "U.S. Small Business Administration: buying an existing business",
+          href: "https://www.sba.gov/counseling/plan-your-business/",
+        },
+      ],
     },
-    { type: "h2", text: "Change the Health permit" },
     {
-      type: "p",
-      text: "Los Angeles County Environmental Health requires a Change of Ownership application and inspection before you can operate under your name. If you alter the layout, add cooking equipment, or change the menu category, you may also trigger a full plan check — that adds 4–12 weeks and requires stamped blueprints.",
+      type: "h2",
+      text: "Find and compare appropriate opportunities",
     },
-    { type: "h2", text: "Close and take possession" },
     {
       type: "p",
-      text: "At closing, escrow disburses funds, records the bill of sale, and hands you keys. On day one you should have a working POS, a payroll provider, a food distributor account, a permit board posted, and your ABC temporary in the register drawer.",
+      text: "Compare public listings, broker-sourced opportunities and direct contacts against a consistent concept brief. Record the location, size, occupancy costs, equipment, menu fit, approval history and evidence available for the price. A listing is an invitation to investigate, not verification that every claim is accurate or that the opportunity remains available.",
+    },
+    {
+      type: "links",
+      items: [
+        {
+          to: "/restaurants-for-sale",
+          title: "Browse current restaurant opportunities",
+        },
+        {
+          to: "/blog/second-generation-restaurant-space-explained",
+          title: "Understand second-generation restaurant space",
+        },
+        {
+          to: "/blog/best-la-neighborhoods-open-restaurant-2026",
+          title: "Evaluate a Los Angeles neighborhood",
+        },
+      ],
+    },
+    {
+      type: "h2",
+      text: "Set the offer and diligence framework",
+    },
+    {
+      type: "p",
+      text: "An offer or letter of intent can outline price, included assets, deposit, diligence access, financing, landlord consent and approval conditions. Whether particular terms are binding depends on the document. Have counsel review obligations, notices and deadlines before signing; do not assume a letter of intent is either wholly binding or wholly nonbinding.",
+    },
+    {
+      type: "p",
+      text: "Arrange the appropriate escrow and professional support for the transaction. Where consideration is involved in a retail ABC license transfer, ABC describes escrow and notice requirements. The escrow holder and counsel should establish the applicable process rather than applying one generic bulk-sale timeline to every purchase.",
+    },
+    {
+      type: "sources",
+      items: [
+        {
+          title: "California ABC: Notice of Intended Transfer instructions",
+          href: "https://www.abc.ca.gov/abc-227-instructions/",
+        },
+      ],
+    },
+    {
+      type: "h2",
+      text: "Run a coordinated diligence review",
+    },
+    {
+      type: "ul",
+      items: [
+        "Financial: reconcile seller reports with source records and explain adjustments.",
+        "Lease: read the full agreement, amendments, options, assignment clauses, use restrictions and guaranties.",
+        "Licensing: check the state license and any conditions separately from local alcohol authorization.",
+        "Health and premises: examine inspection history, approved plans, proposed changes and required agency review.",
+        "Equipment: identify ownership, condition, financing, service history and included assets.",
+        "Operations: review relevant contracts, staffing obligations and transition needs with appropriate professionals.",
+      ],
+    },
+    {
+      type: "links",
+      items: [
+        {
+          to: "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+          title: "Use the detailed restaurant due diligence checklist",
+        },
+      ],
+    },
+    {
+      type: "h2",
+      text: "Resolve the lease assignment or new lease",
+    },
+    {
+      type: "p",
+      text: "Read the actual transfer and consent provisions early. Establish whether the buyer will take an assignment or negotiate a new lease, which options remain available, and what landlord documentation is needed. Approval of the buyer and release of the seller or guarantor are different questions. Have counsel review the documents rather than assuming one signed consent resolves everything.",
+    },
+    {
+      type: "links",
+      items: [
+        {
+          to: "/help/lease-assignments/restaurant-lease-assignment-guide",
+          title: "Follow the restaurant lease assignment guide",
+        },
+        {
+          to: "/restaurant-leasing",
+          title: "Explore restaurant leasing representation",
+        },
+      ],
+    },
+    {
+      type: "h2",
+      text: "Coordinate ABC and local alcohol review",
+    },
+    {
+      type: "p",
+      text: "If the transaction includes an alcohol license, confirm the appropriate transfer route and applicant requirements with ABC. Review the local authorization for the address and intended operation separately. A temporary permit is conditional and is not available for every application or transfer. Do not begin service merely because an application has been filed.",
+    },
+    {
+      type: "sources",
+      items: [
+        {
+          title: "California ABC: person-to-person transfer",
+          href: "https://www.abc.ca.gov/licensing/transfer-or-change-a-license/person-to-person-transfer/",
+        },
+        {
+          title: "California ABC: temporary permit eligibility",
+          href: "https://www.abc.ca.gov/information-concerning-temporary-permits/",
+        },
+      ],
+    },
+    {
+      type: "links",
+      items: [
+        {
+          to: "/help/alcohol-licensing/abc-license-transfer-guide",
+          title: "Understand the ABC transfer process",
+        },
+      ],
+    },
+    {
+      type: "h2",
+      text: "Confirm health permitting and physical work",
+    },
+    {
+      type: "p",
+      text: "LA County directs a buyer without major construction or remodeling to the relevant district office for the permit process; major modifications or new construction involve plan-check review. Describe the proposed menu, equipment and layout accurately. Confirm jurisdiction: Pasadena, Long Beach and Vernon are outside LA County Environmental Health’s service area.",
+    },
+    {
+      type: "sources",
+      items: [
+        {
+          title: "LA County: obtaining a restaurant permit",
+          href: "https://publichealth.lacounty.gov/eh/inspection/how-to-obtain-restaurant-food-facility-permit.htm",
+        },
+        {
+          title: "LA County: Plan Check Program service area",
+          href: "https://admin.publichealth.lacounty.gov/eh/about/plan-check-program.htm",
+        },
+      ],
+    },
+    {
+      type: "links",
+      items: [
+        {
+          to: "/health-permitting",
+          title: "Discuss restaurant health permitting",
+        },
+      ],
+    },
+    {
+      type: "h2",
+      text: "Close, take possession and prepare to operate",
+    },
+    {
+      type: "p",
+      text: "Use a written closing and handover list: required consents, escrow conditions, ownership documents, keys, inventory, service accounts, records, training and outstanding obligations. Confirm which approvals must be in place before operation. Employment transition, payroll, insurance and tax arrangements need their own review; do not assume every employee or vendor agreement transfers automatically.",
+    },
+    {
+      type: "h2",
+      text: "Common mistakes",
+    },
+    {
+      type: "ul",
+      items: [
+        "Confusing an accepted offer with a fully funded, approved transaction.",
+        "Treating an existing permit or prior use as permission for the new concept.",
+        "Waiting until a contractual deadline to investigate a material record gap.",
+        "Comparing price without lease continuity, repair costs or working capital.",
+        "Assuming possession of the keys authorizes restaurant or alcohol service.",
+      ],
     },
   ],
   faqs: [
     {
-      q: "How long does it take to buy a restaurant in Los Angeles?",
-      a: "From accepted offer to keys, plan on 60–120 days. The gating items are landlord consent on the lease assignment, the ABC person-to-person transfer, and the LA County Health Dept change of ownership. Cash deals with no license transfer and a cooperative landlord can close in 45 days.",
+      q: "How long does buying a restaurant take?",
+      a: "The timing depends on access to records, financing, landlord documentation, escrow requirements, agency reviews, and any physical work. Establish a transaction-specific schedule with the parties and identify which decisions depend on others. A target closing date should not be presented as a guaranteed approval or opening date.",
     },
     {
-      q: "How much money do I need to buy a restaurant in LA?",
-      a: "Budget the purchase price plus 20–30% for working capital, deposits, permit fees, and reserves. A $400,000 restaurant purchase typically needs $475,000–$525,000 in total capital.",
-    },
-    {
-      q: "Do I need experience to buy a restaurant?",
-      a: "No, but landlords, lenders, and the ABC will weight your application heavily on hospitality experience. First-time buyers usually strengthen their file with an experienced operating partner or a general manager already on the ground.",
-    },
-    {
-      q: "Can I keep the current employees?",
-      a: "Yes. Most LA restaurant asset sales retain the staff on day one — the new owner rehires them under the new EIN. You'll need workers' comp, payroll, and I-9 verification set up before close.",
-    },
-    {
-      q: "What happens if the landlord won't approve the assignment?",
-      a: "The deal doesn't close unless your LOI made landlord consent a contingency (it should have). We negotiate directly with landlords daily and know which levers to pull — rent bumps, extended terms, or additional guaranty language usually break the logjam.",
+      q: "How much money should I budget beyond the purchase price?",
+      a: "Build the additional budget from the actual lease, equipment, staffing, construction, professional services, agency charges, and working-capital plan. Unresolved inspection or approval issues may change that budget. A fixed percentage of the asking price is not a substitute for documenting the costs and funding conditions of the particular acquisition.",
     },
   ],
-  commercialParent: { to: "/buy-a-restaurant", title: "Restaurant acquisition advisory" },
+  commercialParent: {
+    to: "/buy-a-restaurant",
+    title: "Discuss restaurant acquisition representation",
+  },
   related: [
     {
       to: "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
-      title: "Restaurant Due Diligence Checklist",
+      title: "Restaurant due diligence checklist",
     },
     {
       to: "/help/alcohol-licensing/abc-license-transfer-guide",
-      title: "ABC License Transfer Guide",
+      title: "ABC license transfer guide",
     },
     {
       to: "/help/lease-assignments/restaurant-lease-assignment-guide",
-      title: "Restaurant Lease Assignment Guide",
+      title: "Restaurant lease assignment guide",
+    },
+    {
+      to: "/blog/second-generation-restaurant-space-explained",
+      title: "Second-generation restaurant spaces",
     },
   ],
 };

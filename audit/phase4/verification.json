@@ -1,0 +1,426 @@
+{
+  "status": "PASS",
+  "knownRoutes": 59,
+  "indexableSitemapUrls": 49,
+  "noindexCategories": 10,
+  "articles": 11,
+  "internalDestinationsChecked": 73,
+  "protectedCommercialPages": 7,
+  "redirects": 0,
+  "unknownRoutes": 404,
+  "routes": [
+    {
+      "url": "/",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/about",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/about",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/agents",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/agents",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/services",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/services",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/contact",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/contact",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/restaurants-for-sale",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/restaurants-for-sale",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/buy-a-restaurant",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/buy-a-restaurant",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/sell-your-restaurant",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/sell-your-restaurant",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/restaurant-leasing",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/restaurant-leasing",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/licensing-and-permits",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/licensing-and-permits",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/restaurant-consulting",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/restaurant-consulting",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/commercial-property-management",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/commercial-property-management",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/leasing-vacant-restaurants",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/leasing-vacant-restaurants",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/alcohol-licensing",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/alcohol-licensing",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/liquor-license-for-sale",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/liquor-license-for-sale",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/health-inspection",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/health-inspection",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/health-permitting",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/health-permitting",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/vermin-inspections",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/vermin-inspections",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/grandfather-protection",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/grandfather-protection",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/assignments-rent-abatement",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/assignments-rent-abatement",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/business-investigations",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/business-investigations",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/buyer-tenant-resolutions",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/buyer-tenant-resolutions",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/search-door-knocking",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/search-door-knocking",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/off-market-sourcing",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/off-market-sourcing",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/e2-visa-europe",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/e2-visa-europe",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/hardware-store-for-sale",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/hardware-store-for-sale",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/restaurants-for-sale/westwood-santa-monica-restaurant-asset-sale",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/restaurants-for-sale/westwood-santa-monica-restaurant-asset-sale",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/restaurants-for-sale/dental-office-for-lease",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/restaurants-for-sale/dental-office-for-lease",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/restaurants-for-sale/santa-monica-asset-sale",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/restaurants-for-sale/santa-monica-asset-sale",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/restaurants-for-sale/wilshire-second-gen-lease",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/restaurants-for-sale/wilshire-second-gen-lease",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/restaurants-for-sale/hardware-store-for-sale",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/restaurants-for-sale/hardware-store-for-sale",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/blog/best-la-neighborhoods-open-restaurant-2026",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog/best-la-neighborhoods-open-restaurant-2026",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/blog",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/blog/restaurant-buyer-due-diligence-checklist",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog/restaurant-buyer-due-diligence-checklist",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/blog/restaurant-valuation-los-angeles-2026",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog/restaurant-valuation-los-angeles-2026",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/blog/second-generation-restaurant-space-explained",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog/second-generation-restaurant-space-explained",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/blog/type-41-vs-type-47-liquor-license-california",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog/type-41-vs-type-47-liquor-license-california",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/help",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/help/buying-a-restaurant",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/buying-a-restaurant",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/help/selling-a-restaurant",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/selling-a-restaurant",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/help/restaurant-leasing",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/restaurant-leasing",
+      "indexability": "noindex, follow",
+      "inSitemap": false
+    },
+    {
+      "url": "/help/alcohol-licensing",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/alcohol-licensing",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/help/health-permitting",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/health-permitting",
+      "indexability": "noindex, follow",
+      "inSitemap": false
+    },
+    {
+      "url": "/help/grandfather-protection",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/grandfather-protection",
+      "indexability": "noindex, follow",
+      "inSitemap": false
+    },
+    {
+      "url": "/help/lease-assignments",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/lease-assignments",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/help/business-investigations",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/business-investigations",
+      "indexability": "noindex, follow",
+      "inSitemap": false
+    },
+    {
+      "url": "/help/buyer-tenant-resolutions",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/buyer-tenant-resolutions",
+      "indexability": "noindex, follow",
+      "inSitemap": false
+    },
+    {
+      "url": "/help/off-market-sourcing",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/off-market-sourcing",
+      "indexability": "noindex, follow",
+      "inSitemap": false
+    },
+    {
+      "url": "/help/e2-visa",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/e2-visa",
+      "indexability": "noindex, follow",
+      "inSitemap": false
+    },
+    {
+      "url": "/help/commercial-property-management",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/commercial-property-management",
+      "indexability": "noindex, follow",
+      "inSitemap": false
+    },
+    {
+      "url": "/help/medical-dental-leasing",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/medical-dental-leasing",
+      "indexability": "noindex, follow",
+      "inSitemap": false
+    },
+    {
+      "url": "/help/restaurant-consulting",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/restaurant-consulting",
+      "indexability": "noindex, follow",
+      "inSitemap": false
+    },
+    {
+      "url": "/help/local-markets",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/local-markets",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/help/alcohol-licensing/abc-license-transfer-guide",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/alcohol-licensing/abc-license-transfer-guide",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/help/lease-assignments/restaurant-lease-assignment-guide",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/lease-assignments/restaurant-lease-assignment-guide",
+      "indexability": "index, follow",
+      "inSitemap": true
+    },
+    {
+      "url": "/help/local-markets/restaurant-broker-beverly-hills",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help/local-markets/restaurant-broker-beverly-hills",
+      "indexability": "index, follow",
+      "inSitemap": true
+    }
+  ]
+}

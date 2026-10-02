@@ -1,0 +1,367 @@
+{
+  "reviewDate": "2026-10-02",
+  "scope": "All eleven existing articles; regulatory and material numerical assertions reviewed. Qualified editorial process guidance is not represented as a legal determination.",
+  "claims": [
+    {
+      "status": "VERIFIED",
+      "claim": "Type 41 / Type 47 privileges and eating-place requirement",
+      "decision": "Retained the beer/wine versus general alcohol distinction with food-service context; approval remains license- and premises-specific.",
+      "affectedUrls": [
+        "/blog/type-41-vs-type-47-liquor-license-california"
+      ],
+      "primarySources": [
+        {
+          "title": "ABC license types",
+          "url": "https://www.abc.ca.gov/licensing/license-types/"
+        }
+      ]
+    },
+    {
+      "status": "QUALIFIED",
+      "claim": "ABC approval versus local land-use authorization",
+      "decision": "Separated state licensing from local requirements; City of LA RBP eligibility is not a countywide rule or an automatic substitute for every approval.",
+      "affectedUrls": [
+        "/blog/restaurant-buyer-due-diligence-checklist",
+        "/blog/type-41-vs-type-47-liquor-license-california",
+        "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+        "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+        "/help/alcohol-licensing/abc-license-transfer-guide",
+        "/blog/best-la-neighborhoods-open-restaurant-2026"
+      ],
+      "primarySources": [
+        {
+          "title": "LA City RBP",
+          "url": "https://planning.lacity.gov/restaurant-beverage-program"
+        },
+        {
+          "title": "ABC license types",
+          "url": "https://www.abc.ca.gov/licensing/license-types/"
+        }
+      ]
+    },
+    {
+      "status": "QUALIFIED",
+      "claim": "Temporary permit and continuing alcohol operation",
+      "decision": "Explained the discretionary, qualifying person-to-person route; removed automatic operation, near-universal availability and one-week expectations. No numeric permit duration is asserted.",
+      "affectedUrls": [
+        "/blog/restaurant-buyer-due-diligence-checklist",
+        "/blog/type-41-vs-type-47-liquor-license-california",
+        "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+        "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+        "/help/alcohol-licensing/abc-license-transfer-guide"
+      ],
+      "primarySources": [
+        {
+          "title": "ABC temporary permit",
+          "url": "https://www.abc.ca.gov/information-concerning-temporary-permits/"
+        },
+        {
+          "title": "ABC transfer application",
+          "url": "https://www.abc.ca.gov/licensing/transfer-or-change-a-license/person-to-person-transfer/"
+        }
+      ]
+    },
+    {
+      "status": "VERIFIED",
+      "claim": "ABC application and escrow coordination",
+      "decision": "Linked official forms/process and escrow instructions; explained approval-dependent closing rather than a guaranteed timetable.",
+      "affectedUrls": [
+        "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+        "/help/alcohol-licensing/abc-license-transfer-guide"
+      ],
+      "primarySources": [
+        {
+          "title": "ABC transfer application",
+          "url": "https://www.abc.ca.gov/licensing/transfer-or-change-a-license/person-to-person-transfer/"
+        },
+        {
+          "title": "ABC escrow",
+          "url": "https://www.abc.ca.gov/abc-227-instructions/"
+        }
+      ]
+    },
+    {
+      "status": "QUALIFIED",
+      "claim": "Health change of ownership versus construction review",
+      "decision": "Distinguished ownership change from proposed remodeling or equipment/layout changes; prior use does not establish permission for a new operation.",
+      "affectedUrls": [
+        "/blog/second-generation-restaurant-space-explained",
+        "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+        "/help/buying-a-restaurant/restaurant-due-diligence-checklist"
+      ],
+      "primarySources": [
+        {
+          "title": "LA County restaurant permits",
+          "url": "https://publichealth.lacounty.gov/eh/inspection/how-to-obtain-restaurant-food-facility-permit.htm"
+        }
+      ]
+    },
+    {
+      "status": "VERIFIED",
+      "claim": "Health jurisdiction",
+      "decision": "Identifies Pasadena, Long Beach and Vernon as outside the described LA County program; route the project to its actual authority.",
+      "affectedUrls": [
+        "/blog/best-la-neighborhoods-open-restaurant-2026",
+        "/blog/second-generation-restaurant-space-explained",
+        "/help/buying-a-restaurant/restaurant-due-diligence-checklist"
+      ],
+      "primarySources": [
+        {
+          "title": "LA County plan-check service area",
+          "url": "https://admin.publichealth.lacounty.gov/eh/about/plan-check-program.htm"
+        }
+      ]
+    },
+    {
+      "status": "QUALIFIED",
+      "claim": "ADA and grandfathering",
+      "decision": "Removed blanket immunity assumptions; existing facilities can have ongoing readily achievable barrier-removal obligations.",
+      "affectedUrls": [
+        "/blog/second-generation-restaurant-space-explained",
+        "/help/buying-a-restaurant/restaurant-due-diligence-checklist"
+      ],
+      "primarySources": [
+        {
+          "title": "DOJ ADA small-business primer",
+          "url": "https://www.ada.gov/resources/title-iii-primer/"
+        }
+      ]
+    },
+    {
+      "status": "QUALIFIED",
+      "claim": "Landlord consent and lease transfer",
+      "decision": "Explains the specific no-stated-standard case in Civil Code 1995.260. Actual lease language, facts and counsel determine application; no guaranteed approval.",
+      "affectedUrls": [
+        "/help/lease-assignments/restaurant-lease-assignment-guide"
+      ],
+      "primarySources": [
+        {
+          "title": "California Civil Code 1995.260",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1995.260."
+        }
+      ]
+    },
+    {
+      "status": "QUALIFIED",
+      "claim": "Guarantor release, options and rent abatement",
+      "decision": "Treat release, option transfer and rent relief as document-dependent negotiated terms; preserve capped, burn-off, surrender and full-guaranty distinctions without a legal guarantee.",
+      "affectedUrls": [
+        "/help/lease-assignments/restaurant-lease-assignment-guide"
+      ],
+      "primarySources": []
+    },
+    {
+      "status": "VERIFIED",
+      "claim": "Beverly Hills city-specific process",
+      "decision": "Uses city zoning, business certificate and open-air dining resources; keeps local approvals separate from ABC.",
+      "affectedUrls": [
+        "/help/local-markets/restaurant-broker-beverly-hills"
+      ],
+      "primarySources": [
+        {
+          "title": "Beverly Hills commercial regulations",
+          "url": "https://www.beverlyhills.org/819/Commercial-Business-Regulations"
+        },
+        {
+          "title": "Beverly Hills open-air dining",
+          "url": "https://beverlyhills.org/openairdining"
+        }
+      ]
+    },
+    {
+      "status": "QUALIFIED",
+      "claim": "SDE and valuation methods",
+      "decision": "Explains earnings adjustments with supporting records and replacement labor. IBBA supports the definition, not an LA market multiple; SBA supports multiple valuation approaches.",
+      "affectedUrls": [
+        "/blog/restaurant-valuation-los-angeles-2026"
+      ],
+      "primarySources": [
+        {
+          "title": "IBBA: SDE definition",
+          "url": "https://www.ibba.org/newsletters/main-street-news-march-2017/"
+        },
+        {
+          "title": "SBA business purchase planning",
+          "url": "https://www.sba.gov/counseling/plan-your-business/"
+        }
+      ]
+    },
+    {
+      "status": "REMOVED",
+      "claim": "Universal 1.5–3× SDE and 3–6 month valuation validity",
+      "decision": "Replaced formula claims with evidence, valuation date, business/asset structure and risk factors.",
+      "affectedUrls": [
+        "/blog/restaurant-valuation-los-angeles-2026",
+        "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles"
+      ],
+      "primarySources": []
+    },
+    {
+      "status": "REMOVED",
+      "claim": "Fixed transaction, diligence, landlord and licensing timelines",
+      "decision": "Removed 2–4 weeks, 21–45 days, 60–90 / 60–120 days, 4–9 months and 2–8 week expectations as universal claims. Explain dependencies and contractual dates.",
+      "affectedUrls": [
+        "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+        "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+        "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+        "/help/alcohol-licensing/abc-license-transfer-guide",
+        "/help/lease-assignments/restaurant-lease-assignment-guide"
+      ],
+      "primarySources": []
+    },
+    {
+      "status": "REMOVED",
+      "claim": "Acquisition prices, minimum capital and financing percentages",
+      "decision": "Removed generalized $150,000–$2M+ acquisition prices, capital percentages, seller-carry proportions and canned SBA loan amount/term assumptions; use actual budget and lender terms.",
+      "affectedUrls": [
+        "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles"
+      ],
+      "primarySources": []
+    },
+    {
+      "status": "REMOVED",
+      "claim": "Assignment fees and alcohol license premiums",
+      "decision": "Removed $1,000–$5,000 assignment-fee averages and fixed licensing premiums. Use lease-specific costs and the current official ABC fee schedule.",
+      "affectedUrls": [
+        "/blog/type-41-vs-type-47-liquor-license-california",
+        "/help/alcohol-licensing/abc-license-transfer-guide",
+        "/help/lease-assignments/restaurant-lease-assignment-guide",
+        "/help/local-markets/restaurant-broker-beverly-hills"
+      ],
+      "primarySources": []
+    },
+    {
+      "status": "REMOVED",
+      "claim": "Six-figure savings and universal build-out cost advantage",
+      "decision": "Retained a qualitative potential advantage and added complete scope, condition and approvals comparison.",
+      "affectedUrls": [
+        "/blog/second-generation-restaurant-space-explained"
+      ],
+      "primarySources": []
+    },
+    {
+      "status": "REMOVED",
+      "claim": "Rent ranges, neighborhood demand rankings and sale-value loss percentages",
+      "decision": "Removed unsourced $8–$18/sq ft/month local rent, premium/demand rankings and 20–40% value-loss assertions. Neighborhoods and corridors remain illustrative evaluation settings.",
+      "affectedUrls": [
+        "/blog/best-la-neighborhoods-open-restaurant-2026",
+        "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+        "/help/local-markets/restaurant-broker-beverly-hills"
+      ],
+      "primarySources": []
+    },
+    {
+      "status": "QUALIFIED",
+      "claim": "24 months of financial records; reserve and training periods",
+      "decision": "Two years can be a preparation starting point rather than a universal requirement. Reserve size and transition scope depend on the actual business and agreement, not a universal 90-day or 1–4-week rule.",
+      "affectedUrls": [
+        "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+        "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+        "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles"
+      ],
+      "primarySources": []
+    },
+    {
+      "status": "QUALIFIED",
+      "claim": "Illustrative $100,000 earnings less $20,000 cost equals $80,000",
+      "decision": "Explicitly hypothetical arithmetic that explains sensitivity; not a reported transaction, market average or valuation estimate.",
+      "affectedUrls": [
+        "/blog/restaurant-valuation-los-angeles-2026"
+      ],
+      "primarySources": []
+    },
+    {
+      "status": "QUALIFIED",
+      "claim": "Offer, tax, staffing, confidentiality and applicant eligibility",
+      "decision": "Removed automatic legal outcomes, absolute confidentiality and blanket disclosure/eligibility directions; scope review to transaction documents and appropriate professionals.",
+      "affectedUrls": [
+        "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+        "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+        "/help/alcohol-licensing/abc-license-transfer-guide"
+      ],
+      "primarySources": []
+    },
+    {
+      "status": "DEFERRED",
+      "claim": "Fresh rent, demand, transaction multiples, ranking and traffic evidence",
+      "decision": "No unsupported substitute figures published. Future dated market reporting requires reliable data and defined coverage; Search Console/backlinks are unavailable.",
+      "affectedUrls": [
+        "/blog/best-la-neighborhoods-open-restaurant-2026",
+        "/blog/restaurant-valuation-los-angeles-2026",
+        "/help/local-markets/restaurant-broker-beverly-hills"
+      ],
+      "primarySources": []
+    }
+  ],
+  "sources": [
+    {
+      "title": "ABC temporary permit",
+      "url": "https://www.abc.ca.gov/information-concerning-temporary-permits/",
+      "application": "Conditional, discretionary same-premises person-to-person route; not a blanket permission for new licenses or relocation."
+    },
+    {
+      "title": "ABC transfer application",
+      "url": "https://www.abc.ca.gov/licensing/transfer-or-change-a-license/person-to-person-transfer/",
+      "application": "Required documents and temporary permit application are separate steps."
+    },
+    {
+      "title": "ABC escrow",
+      "url": "https://www.abc.ca.gov/abc-227-instructions/",
+      "application": "Escrow approval condition; avoid substituting a generic closing timeline."
+    },
+    {
+      "title": "California Civil Code 1995.260",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1995.260.",
+      "application": "Implied reasonable-consent standard applies to the described lease restriction; not a guarantee every assignment is approved."
+    },
+    {
+      "title": "DOJ ADA small-business primer",
+      "url": "https://www.ada.gov/resources/title-iii-primer/",
+      "application": "Existing facilities can have ongoing readily achievable barrier-removal duties. Do not claim blanket grandfather immunity."
+    },
+    {
+      "title": "Beverly Hills commercial regulations",
+      "url": "https://www.beverlyhills.org/819/Commercial-Business-Regulations",
+      "application": "Address zoning, business tax certificate and open-air dining requirements; no support for current rent or demand rankings."
+    },
+    {
+      "title": "Beverly Hills open-air dining",
+      "url": "https://beverlyhills.org/openairdining",
+      "application": "City-specific outdoor dining process."
+    },
+    {
+      "title": "SBA business purchase planning",
+      "url": "https://www.sba.gov/counseling/plan-your-business/",
+      "application": "Supports evaluating multiple valuation approaches, not a universal LA restaurant SDE multiple."
+    },
+    {
+      "title": "ABC license types",
+      "url": "https://www.abc.ca.gov/licensing/license-types/",
+      "application": "Phase 3 source review: distinguish Type 41/47 privileges and eating-place requirement."
+    },
+    {
+      "title": "LA City RBP",
+      "url": "https://planning.lacity.gov/restaurant-beverage-program",
+      "application": "Phase 3 source review: eligible restaurants may use administrative RBP route instead of CUB; do not apply City rules countywide."
+    },
+    {
+      "title": "LA County restaurant permits",
+      "url": "https://publichealth.lacounty.gov/eh/inspection/how-to-obtain-restaurant-food-facility-permit.htm",
+      "application": "Phase 3 source review: purchase without major changes differs from construction/remodel plan check."
+    },
+    {
+      "title": "LA County plan-check service area",
+      "url": "https://admin.publichealth.lacounty.gov/eh/about/plan-check-program.htm",
+      "application": "Phase 3 source review: Long Beach, Pasadena, Vernon exclusions."
+    },
+    {
+      "title": "IBBA: SDE definition",
+      "url": "https://www.ibba.org/newsletters/main-street-news-march-2017/",
+      "application": "Primary professional association explanation of adjusted earnings and replacement-salary distinction; used only for the SDE concept, not 2026 market multiples."
+    }
+  ],
+  "additionalVisibleSources": [
+    "https://www.abc.ca.gov/licensing/license-fees/application-fee-schedules/",
+    "https://publichealth.lacounty.gov/eh/inspection/construction-requirements-retail-food-facilities.htm"
+  ]
+}

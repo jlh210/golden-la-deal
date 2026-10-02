@@ -1,4 +1,7 @@
 export type Section =
+  | { type: "table"; headers: string[]; rows: string[][] }
+  | { type: "links"; items: { to: string; title: string }[] }
+  | { type: "sources"; items: { href: string; title: string }[] }
   | { type: "h2"; text: string; id?: string }
   | { type: "h3"; text: string }
   | { type: "p"; text: string }
@@ -11,6 +14,8 @@ export type FAQ = { q: string; a: string };
 
 export type Article = {
   slug: string;
+  answer?: string;
+  originalAuthor?: { name: string; role: string; to: string };
   title: string;
   seoTitle: string;
   description: string;

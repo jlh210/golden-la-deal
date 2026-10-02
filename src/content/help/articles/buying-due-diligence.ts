@@ -3,134 +3,253 @@ import type { Article } from "../types";
 export const article: Article = {
   slug: "restaurant-due-diligence-checklist",
   title: "Restaurant Due Diligence Checklist",
-  seoTitle: "Restaurant Due Diligence Checklist for LA Buyers",
+  seoTitle: "Restaurant Due Diligence Checklist | Penthouse Advisors",
   description:
-    "The complete pre-purchase due diligence checklist for Los Angeles restaurant buyers: lease, financials, ABC license, Health Dept history, equipment, and permits.",
+    "A practical restaurant due diligence checklist covering lease, financial records, ABC, health, building, equipment, contracts, staffing, and unresolved issues.",
+  answer:
+    "Restaurant due diligence tests the proposed purchase against financial records, occupancy rights, asset ownership, operating approvals, and the condition of the premises. Use this checklist to organize evidence requests and assign professional review before relevant contractual deadlines. The scope depends on what is being acquired; a completed checklist records findings and unresolved questions rather than guaranteeing that no risk remains.",
   keywords: [
     "restaurant due diligence checklist",
     "restaurant due diligence Los Angeles",
     "buying an existing restaurant due diligence",
     "restaurant acquisition checklist",
   ],
-  updatedAt: "2026-07-24",
-  readMinutes: 8,
+  updatedAt: "2026-10-02",
+  readMinutes: 5,
   keyTakeaways: [
-    "Never accept a seller's P&L at face value — reconcile against POS, bank, and sales-tax filings.",
-    "The lease review is the single most valuable line item in a restaurant due diligence.",
-    "Pull the ABC license file directly from the state — sellers routinely omit CUB restrictions.",
-    "Health Dept red-tag history and open plan-check items follow the location, not the operator.",
-    "Get every leased equipment contract in writing before you assume you own the hood.",
+    "Match requested records to the transaction, concept and contractual deadlines.",
+    "Keep state licensing, local land use and health review distinct.",
+    "Separate evidence collection from legal, accounting and technical interpretation.",
   ],
   sections: [
-    { type: "h2", text: "Why due diligence matters" },
+    {
+      type: "h2",
+      text: "Set the scope before requesting documents",
+    },
     {
       type: "p",
-      text: "A restaurant looks the same from the sidewalk whether it's clean or riddled with liabilities. Due diligence is the process of getting behind the sidewalk view — verifying the lease, the license, the permits, the numbers, and the equipment — before your deposit becomes non-refundable.",
+      text: "Identify the assets or interests being purchased, the proposed operation, the agreement’s access rights, and the diligence and notice deadlines. Assign responsibility for financial, legal, licensing and physical review. The time needed depends on record access and unresolved issues; no fixed window is suitable for every restaurant transaction.",
     },
-    { type: "h2", text: "1. Lease review" },
+    {
+      type: "p",
+      text: "For financial and inspection history, agree a period that captures seasonality, operating changes and unusual events. Two years can be a preparation starting point, but it is not a universal requirement. Request an explanation where records are unavailable and record the limitation rather than silently treating the file as complete.",
+    },
+    {
+      type: "h2",
+      text: "1. Lease and occupancy",
+    },
     {
       type: "ul",
       items: [
-        "Full lease with every amendment and estoppel.",
-        "Remaining term and every renewal option (in writing, not verbal).",
-        "Base rent, CAM, insurance, taxes, and how they escalate.",
-        "Assignment and change-of-control clauses — who has to approve, and what standards can they apply?",
-        "Personal guaranty language — is it good-guy, full recourse, or burn-off?",
-        "Use clause — does it permit your intended concept or restrict alcohol/hours?",
-        "Exclusives, radius restrictions, co-tenancy, kick-out rights.",
-        "Landlord's current standing with the property (foreclosure, tax liens).",
+        "Full executed lease, every amendment, side letter, option notice and relevant landlord correspondence.",
+        "Remaining term, renewal rights and conditions for exercising or transferring options.",
+        "Base rent, additional rent, taxes, insurance, common-area charges and escalation terms.",
+        "Assignment and change-of-control clauses, consent standards and recapture provisions.",
+        "Existing and proposed guaranties, including any release, cap or reduction conditions.",
+        "Permitted use, alcohol, operating hours, signage, outdoor areas and concept restrictions.",
+        "Exclusives, radius restrictions, co-tenancy, termination or relocation provisions where present.",
+        "Relevant estoppel, notices of default, disputed charges and questions about landlord authority.",
       ],
     },
-    { type: "h2", text: "2. Financial verification" },
     {
-      type: "ul",
+      type: "links",
       items: [
-        "24 months of monthly POS sales reports (Toast, Square, Aloha exports).",
-        "24 months of bank statements — reconcile deposits against POS.",
-        "24 months of merchant processor statements.",
-        "Trailing four sales-tax returns (California CDTFA / BOE-401).",
-        "Federal tax returns for the operating entity (last two).",
-        "P&L, balance sheet, and A/R aging.",
-        "Payroll register — verify tip reporting and workers' comp classifications.",
-        "Vendor invoices for the last three months (food cost verification).",
+        {
+          to: "/help/lease-assignments/restaurant-lease-assignment-guide",
+          title: "Understand the restaurant lease assignment process",
+        },
       ],
     },
-    { type: "h2", text: "3. ABC license status" },
+    {
+      type: "h2",
+      text: "2. Financial verification",
+    },
     {
       type: "ul",
       items: [
-        "License type (41, 47, 48, etc.) and premises address.",
-        "Every Conditional Use Beverage (CUB) restriction — hours, entertainment, food-service ratios.",
-        "Disciplinary history from the ABC file.",
-        "Any pending accusations or license holds.",
-        "Confirmation the license is transferable person-to-person.",
+        "Monthly POS detail and merchant statements reconciled with bank activity.",
+        "Profit-and-loss statements, balance sheets and relevant business tax returns.",
+        "Sales-tax reporting for matching periods, with timing differences explained.",
+        "Payroll and staffing costs, including work currently performed by the owner or family.",
+        "Vendor invoices and agreements supporting food, beverage and other recurring costs.",
+        "Debt, equipment finance, leases, outstanding obligations and claimed add-backs.",
+        "Explanations for closures, changed hours, refunds, delivery fees and unusual transactions.",
       ],
     },
-    { type: "h2", text: "4. Health Department history" },
+    {
+      type: "p",
+      text: "Ask an accountant to evaluate the consistency of the records and the earnings definition being used. Revenue, deposits and cash available to a buyer are not interchangeable measures. Unsupported adjustments should remain visible as questions, not accepted earnings.",
+    },
+    {
+      type: "h2",
+      text: "3. ABC and local alcohol records",
+    },
     {
       type: "ul",
       items: [
-        "Current grade card and last 24 months of inspection reports.",
-        "Red-tag history and any current open violations.",
-        "Whether the current permit covers your planned menu and equipment.",
-        "Open plan-check items or required corrections tied to the address.",
+        "License type, license number, owner and premises address.",
+        "State license status, conditions, disciplinary history and pending matters.",
+        "The proposed transfer route and applicant information required by ABC.",
+        "Separate local alcohol approval, approved plans and operating conditions.",
+        "Compatibility of the proposed menu, hours, entertainment and outdoor service with those approvals.",
       ],
     },
-    { type: "h2", text: "5. Building & Safety" },
     {
-      type: "ul",
+      type: "sources",
       items: [
-        "Certificate of Occupancy — confirms legal use of the premises.",
-        "Permit history — any unpermitted construction becomes your liability.",
-        "ADA exposure — restrooms, path of travel, parking.",
-        "Fire Dept clearance and current extinguisher/hood-suppression tags.",
+        {
+          title: "California ABC: license types",
+          href: "https://www.abc.ca.gov/licensing/license-types/",
+        },
+        {
+          title: "California ABC: person-to-person transfer",
+          href: "https://www.abc.ca.gov/licensing/transfer-or-change-a-license/person-to-person-transfer/",
+        },
       ],
     },
-    { type: "h2", text: "6. Equipment and personal property" },
     {
-      type: "ul",
+      type: "links",
       items: [
-        "Itemized equipment list with age and condition.",
-        "Which items are owned outright vs. leased (POS, ice machine, dish machine, soda system).",
-        "Copies of every equipment lease with payoff or transfer terms.",
-        "Serial numbers on hood, walk-in, ovens — confirm they match the bill of sale.",
+        {
+          to: "/help/alcohol-licensing/abc-license-transfer-guide",
+          title: "Review the ABC transfer procedure",
+        },
       ],
     },
-    { type: "h2", text: "7. Contracts and staff" },
+    {
+      type: "h2",
+      text: "4. Health Department records",
+    },
     {
       type: "ul",
       items: [
-        "Every service contract: pest, grease, hood cleaning, linen, waste, POS, music.",
-        "Employee census with wage, position, tenure, and I-9 status.",
-        "Any union or collective bargaining coverage.",
-        "Open workers' comp claims or wage-and-hour actions.",
+        "Current operating permit and responsible health jurisdiction.",
+        "Inspection reports, repeated findings, closure history and correction evidence.",
+        "Existing approved plans and equipment schedule where available.",
+        "Open plan-check items or agency notices requiring follow-up.",
+        "The review required for the buyer’s menu, equipment, layout and ownership changes.",
+      ],
+    },
+    {
+      type: "sources",
+      items: [
+        {
+          title: "LA County: obtaining a restaurant permit",
+          href: "https://publichealth.lacounty.gov/eh/inspection/how-to-obtain-restaurant-food-facility-permit.htm",
+        },
+        {
+          title: "LA County: Plan Check Program service area",
+          href: "https://admin.publichealth.lacounty.gov/eh/about/plan-check-program.htm",
+        },
+      ],
+    },
+    {
+      type: "h2",
+      text: "5. Building, fire and accessibility",
+    },
+    {
+      type: "ul",
+      items: [
+        "Approved use and occupancy records, plans and permit history.",
+        "Unpermitted or undocumented alterations and the agency’s required next step.",
+        "Qualified assessment of electrical, gas, plumbing, ventilation and grease systems.",
+        "Fire-related records and current service information for relevant suppression equipment.",
+        "Accessibility review covering entry, circulation, restrooms, parking and other applicable features.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Prior use and building age do not establish blanket ADA exemption. Existing facilities can have ongoing readily achievable barrier-removal obligations. Have qualified professionals assess physical issues and counsel review their contractual implications instead of assuming every prior defect automatically becomes, or never becomes, the buyer’s liability.",
+    },
+    {
+      type: "sources",
+      items: [
+        {
+          title: "U.S. Department of Justice: ADA primer for small businesses",
+          href: "https://www.ada.gov/resources/title-iii-primer/",
+        },
+      ],
+    },
+    {
+      type: "h2",
+      text: "6. Equipment and personal property",
+    },
+    {
+      type: "ul",
+      items: [
+        "Itemized included and excluded assets, model or serial numbers, age and observed condition.",
+        "Invoices, ownership evidence, finance obligations and payoff or release arrangements.",
+        "Equipment leases and their transfer, return or consent requirements.",
+        "Maintenance and inspection records, warranties and service agreements.",
+        "A walkthrough comparing the schedule with the actual assets and proposed bill of sale.",
+      ],
+    },
+    {
+      type: "h2",
+      text: "7. Contracts, staff and handover",
+    },
+    {
+      type: "ul",
+      items: [
+        "Service contracts for pest control, grease, hood cleaning, linen, waste, POS, utilities and music.",
+        "Contract assignment, cancellation, deposit and renewal terms.",
+        "Staffing costs and relevant employment obligations reviewed with counsel and payroll advisors.",
+        "Any applicable collective bargaining, claims or transition issues requiring specialist review.",
+        "Training, recipes, passwords, records, supplier introductions and included intellectual property.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Limit requests for personal employee information to what is appropriate for the transaction, with proper access and handling arrangements. A buyer’s need to evaluate staffing does not justify indiscriminate circulation of sensitive employee records.",
+    },
+    {
+      type: "h2",
+      text: "Turn the checklist into a decision record",
+    },
+    {
+      type: "p",
+      text: "For each unresolved item, record the evidence needed, responsible reviewer, potential effect, and deadline. Some issues require clarification; others affect price, conditions or feasibility. Determine what would resolve the question and assess the agreement before taking action. Do not allow an unchecked item to become an assumption simply because closing is approaching.",
+    },
+    {
+      type: "links",
+      items: [
+        {
+          to: "/blog/restaurant-buyer-due-diligence-checklist",
+          title: "Interpret findings and decide whether to proceed, renegotiate or pause",
+        },
       ],
     },
   ],
   faqs: [
     {
-      q: "How long should due diligence take on a restaurant purchase?",
-      a: "Standard LA due-diligence windows are 21–45 days. Complex deals with a full plan check, ABC investigation, or unusual lease terms often need 60.",
+      q: "Can a buyer complete diligence without advisors?",
+      a: "A buyer can collect records and ask factual questions, but interpretation may require an accountant, attorney, technical specialist or agency response. Define the review scope and responsibilities before relying on the results. A public-record search does not establish equipment condition, resolve contract terms, or guarantee that the proposed operation will be approved.",
     },
     {
-      q: "What is the biggest hidden risk in a restaurant purchase?",
-      a: "Unpermitted construction. If the previous owner added a bar, extended the hood, or converted storage into seating without permits, the liability transfers to you the moment you close.",
-    },
-    {
-      q: "Can I do due diligence myself?",
-      a: "You can pull most public records yourself, but the interpretation — what a CUB condition actually forbids, whether a lease's assignment clause is workable, whether the sales numbers reconcile — is where experienced advisors save buyers six figures.",
+      q: "What is the biggest risk in a restaurant purchase?",
+      a: "There is no single biggest risk for every purchase. An unusable lease, unsupported earnings, disputed equipment ownership, or an approval conflict can each change the decision. Prioritize issues by their effect on the proposed operation and contractual commitments, then obtain evidence rather than relying on a generic ranking of defects.",
     },
   ],
-  commercialParent: { to: "/business-investigations", title: "Restaurant due diligence services" },
+  commercialParent: {
+    to: "/business-investigations",
+    title: "Discuss a restaurant due diligence engagement",
+  },
   related: [
     {
       to: "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
-      title: "How to Buy a Restaurant in Los Angeles",
+      title: "How to buy a restaurant in Los Angeles",
     },
-    { to: "/buy-a-restaurant", title: "Restaurant acquisition advisory" },
+    {
+      to: "/blog/restaurant-buyer-due-diligence-checklist",
+      title: "Interpreting diligence findings",
+    },
     {
       to: "/help/lease-assignments/restaurant-lease-assignment-guide",
-      title: "Restaurant Lease Assignment Guide",
+      title: "Restaurant lease assignment guide",
+    },
+    {
+      to: "/help/alcohol-licensing/abc-license-transfer-guide",
+      title: "ABC transfer guide",
     },
   ],
 };

@@ -2,10 +2,12 @@ import type { Article } from "../types";
 
 export const article: Article = {
   slug: "restaurant-lease-assignment-guide",
-  title: "Restaurant Lease Assignment Guide (Los Angeles)",
-  seoTitle: "Restaurant Lease Assignment Guide — LA County",
+  title: "Restaurant Lease Assignment Guide for Los Angeles Transactions",
+  seoTitle: "Restaurant Lease Assignment Guide for Los Angeles Transactions | Penthouse Advisors",
   description:
-    "How restaurant lease assignments work in Los Angeles: landlord consent, guaranty structure, rent bumps, and negotiation tactics that get deals closed.",
+    "Understand restaurant lease assignments, landlord review, guaranties, rent abatement, and how occupancy terms affect a Los Angeles restaurant transaction.",
+  answer:
+    "A restaurant lease assignment transfers the tenant’s lease interest to another party under the lease and assignment documents. It does not automatically create a new lease, preserve every option, or release the original tenant and guarantor. Review consent requirements, permitted use, economic terms and continuing obligations together before relying on an assignment to complete a restaurant purchase or sale.",
   keywords: [
     "restaurant lease assignment",
     "restaurant lease transfer",
@@ -13,96 +15,176 @@ export const article: Article = {
     "restaurant lease negotiation",
     "restaurant tenant representation",
   ],
-  updatedAt: "2026-07-24",
-  readMinutes: 7,
+  updatedAt: "2026-10-02",
+  readMinutes: 5,
   keyTakeaways: [
-    "Almost every LA restaurant lease requires landlord consent to assign.",
-    "Landlords use assignment consent as leverage to raise rent, extend term, or tighten guaranty.",
-    "Start the landlord conversation in week one of escrow — waiting kills deals.",
-    "A well-drafted LOI makes landlord consent an explicit contingency.",
-    "Rent abatement during permit build-out is negotiable and often granted.",
+    "The lease and signed transaction documents determine the proposed transfer and remaining obligations.",
+    "Landlord consent, transfer of options and guarantor release are separate review points.",
+    "Rent relief and other changes require an agreement; they are not automatic assignment benefits.",
   ],
   sections: [
-    { type: "h2", text: "What a lease assignment actually is" },
     {
-      type: "p",
-      text: "An assignment transfers the existing lease from the seller (assignor) to the buyer (assignee). The lease terms usually stay the same — rent, term, use clause, options — but the tenant on the paper changes. Assignments are different from a sublease (where the seller stays on the hook) and different from a brand-new lease (where you negotiate everything from scratch).",
+      type: "h2",
+      text: "Assignment, sublease or a new lease?",
     },
-    { type: "h2", text: "Why landlords slow assignments down" },
     {
       type: "p",
-      text: "Consent gives the landlord a rare chance to reprice or reshape the lease mid-term. Expect requests for a rent increase, an extended term, a stronger personal guaranty, additional security deposit, or a share of the sale proceeds ('recapture' or 'profit participation'). Every one of these is negotiable.",
+      text: "An assignment transfers the lease interest described in the documents. A sublease creates a separate occupancy arrangement under the existing lease. A new lease establishes a new agreement with the landlord. Each can involve different rights, approvals and continuing obligations. Do not assume that calling an arrangement an assignment releases the original tenant from liability.",
     },
-    { type: "h2", text: "The assignment package" },
     {
-      type: "p",
-      text: "Landlords will ask for a package on the assignee. A tight package speeds consent:",
+      type: "h2",
+      text: "What does the existing lease allow?",
     },
     {
       type: "ul",
       items: [
-        "Personal financial statement and last two years of tax returns.",
-        "Two years of business tax returns for the operating entity.",
-        "Résumés showing hospitality experience.",
-        "Business plan or concept summary.",
-        "Proof of funds for purchase price plus 90-day working capital.",
-        "Bank and trade references.",
+        "Read assignment, subletting and change-of-control provisions together.",
+        "Identify consent standards, notice requirements, review costs and required documents.",
+        "Check recapture, profit-sharing, option-transfer and permitted-use provisions.",
+        "Review defaults, outstanding charges, security deposits and any side agreements.",
+        "Identify the parties responsible under the lease and guaranties before and after the proposed transaction.",
       ],
     },
-    { type: "h2", text: "Guaranty structures to negotiate" },
-    {
-      type: "ul",
-      items: [
-        "Good-guy guaranty — personal liability ends when you return the space in agreed condition.",
-        "Burn-off guaranty — personal exposure decreases over time as you pay rent on time.",
-        "Capped guaranty — total personal exposure is capped at a dollar amount or number of months.",
-        "Full-recourse guaranty — you're personally on the hook for the full term. Avoid when possible.",
-      ],
-    },
-    { type: "h2", text: "Rent abatement during build-out" },
     {
       type: "p",
-      text: "If you're renovating, permitting, or waiting on ABC, negotiate abated or reduced rent tied to real milestones — Health Dept permit issuance, ABC license issuance, or doors-open day. Landlords grant abatement more readily than a permanent rent reduction because the loss is defined.",
+      text: "California Civil Code section 1995.260 addresses a consent restriction that states no standard for giving or withholding consent. It provides an implied reasonable-consent standard in that situation. It does not mean every lease has identical language or that a buyer is guaranteed approval. Have counsel apply the lease and law to the facts.",
     },
-    { type: "h2", text: "Consent conditions to watch" },
+    {
+      type: "sources",
+      items: [
+        {
+          title: "California Civil Code section 1995.260",
+          href: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1995.260.",
+        },
+      ],
+    },
+    {
+      type: "h2",
+      text: "What information may a landlord review?",
+    },
+    {
+      type: "p",
+      text: "The landlord may request information about the incoming operator’s financial capacity, business experience and proposed use. Prepare a package suited to the lease and actual request. A documented package can reduce unanswered questions, but it does not establish a universal consent timeline or require the landlord to accept proposed changes.",
+    },
     {
       type: "ul",
       items: [
-        "Automatic recapture of options.",
-        "Waiver of the tenant's right to further assign.",
-        "Requirement that the seller-tenant remain secondarily liable.",
-        "Landlord approval of any future menu, hours, or concept change.",
+        "Concept description, menu, expected hours and alcohol plans.",
+        "Operating experience and the proposed management team.",
+        "Requested financial statements, relevant tax records and funding evidence.",
+        "A budget for acquisition, occupancy, required work and operating reserves.",
+        "Business and trade references where requested.",
+        "Proposed tenant entity, guarantor structure and transaction schedule.",
+      ],
+    },
+    {
+      type: "h2",
+      text: "What happens to personal guaranties?",
+    },
+    {
+      type: "p",
+      text: "Read guaranties separately from the assignment. A release, cap or reduction must be established by the relevant documents; the label used in negotiations is not enough. Confirm who remains responsible, which obligations are covered, and what conditions must be satisfied before any promised limitation takes effect.",
+    },
+    {
+      type: "table",
+      headers: ["Negotiated structure", "Terms that need review"],
+      rows: [
+        ["Capped guaranty", "The amount, covered obligations, duration and any exceptions."],
+        ["Burn-off or reduction", "The performance conditions, dates and obligations that remain."],
+        [
+          "Surrender-based release",
+          "Notice, payment, surrender condition and other prerequisites.",
+        ],
+        [
+          "Continuing or full guaranty",
+          "Scope, duration, amendments and whether any release is provided.",
+        ],
+      ],
+    },
+    {
+      type: "h2",
+      text: "Can rent abatement be negotiated during preparation?",
+    },
+    {
+      type: "p",
+      text: "A buyer may request reduced or deferred rent while completing agreed work or approvals, but the arrangement requires agreement. Define the start, end, scope, conditions, additional charges and consequences of delay. If rent relief depends on a milestone, document what satisfies it and what happens if an agency or construction schedule changes.",
+    },
+    {
+      type: "p",
+      text: "Do not assume a landlord can or will change every economic term as a condition of consent. The lease, transaction structure and applicable law matter. Likewise, a verbal promise of free rent should not be included in the acquisition budget as a confirmed benefit before the terms are documented.",
+    },
+    {
+      type: "h2",
+      text: "How does assignment affect the restaurant sale?",
+    },
+    {
+      type: "ol",
+      items: [
+        "Review the lease before committing to occupancy assumptions in the offer.",
+        "Identify the consent package and document requirements.",
+        "Coordinate landlord review with diligence and financing deadlines.",
+        "Review the proposed consent, assignment, amendments and guaranty treatment together.",
+        "Confirm that closing and possession conditions match the documented occupancy rights.",
+      ],
+    },
+    {
+      type: "p",
+      text: "A restaurant’s price may depend on the duration and cost of continued occupancy. Loss of an option, a changed use restriction or unresolved repair obligation can alter the buyer’s analysis. Keep lease questions visible in the transaction issue log and revisit the economics when the actual terms differ from the listing.",
+    },
+    {
+      type: "links",
+      items: [
+        {
+          to: "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
+          title: "See the restaurant buying process",
+        },
+        {
+          to: "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+          title: "Prepare for a restaurant sale",
+        },
+      ],
+    },
+    {
+      type: "h2",
+      text: "Common mistakes",
+    },
+    {
+      type: "ul",
+      items: [
+        "Treating an estoppel as a substitute for reading the full lease.",
+        "Assuming consent also releases the original tenant or guarantor.",
+        "Ignoring option language or restrictions on future transfers.",
+        "Budgeting rent relief before it is documented.",
+        "Letting the purchase deadline expire while waiting for landlord clarification.",
       ],
     },
   ],
   faqs: [
     {
-      q: "Can a landlord refuse to consent to a restaurant lease assignment?",
-      a: "It depends on the lease. Most California commercial leases say consent 'shall not be unreasonably withheld.' A financially qualified, experienced operator is generally reasonable; a first-time buyer with weak reserves is where landlords push back hardest.",
+      q: "Can a landlord refuse an assignment?",
+      a: "The answer depends on the lease, the proposed transfer, applicable law and the reasons for refusal. California law supplies an implied reasonable-consent standard in a specified situation where a consent restriction contains no standard. Review the actual clause and facts with counsel instead of assuming either unrestricted refusal or guaranteed approval.",
     },
     {
-      q: "How long does landlord consent take?",
-      a: "Two to eight weeks is typical. Institutional landlords with committee approval processes take longer; owner-operators can consent in days if they know the buyer.",
-    },
-    {
-      q: "Do I have to pay the landlord an assignment fee?",
-      a: "Sometimes. Leases often carry an assignment fee ($1,000–$5,000) plus reimbursement of the landlord's legal review. Anything beyond that is negotiation.",
-    },
-    {
-      q: "Can I get rent abatement even if the lease doesn't mention it?",
-      a: "Yes. Abatement is granted in the assignment consent document, not the original lease. If you're bringing a qualified tenant to a landlord who wants the deal done, abatement tied to permit milestones is one of the most successful asks we make.",
+      q: "What does assignment cost and how long does it take?",
+      a: "Review the lease for charges and ask the landlord to identify the required package and review process. Professional work, missing documents and negotiated changes can affect cost and timing. This guide does not apply a universal fee range or consent period to all restaurant leases.",
     },
   ],
   commercialParent: {
-    to: "/assignments-rent-abatement",
-    title: "Lease assignment and rent abatement support",
+    to: "/restaurant-leasing",
+    title: "Discuss restaurant leasing and assignment strategy",
   },
   related: [
     {
       to: "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles",
-      title: "How to Buy a Restaurant in Los Angeles",
+      title: "How to buy a restaurant",
     },
-
-    { to: "/restaurant-leasing", title: "Restaurant Leasing in Los Angeles" },
+    {
+      to: "/help/selling-a-restaurant/how-to-sell-a-restaurant-in-los-angeles",
+      title: "How to sell a restaurant",
+    },
+    {
+      to: "/blog/second-generation-restaurant-space-explained",
+      title: "Second-generation restaurant spaces",
+    },
   ],
 };

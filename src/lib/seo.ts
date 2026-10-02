@@ -65,6 +65,7 @@ export function articleScript(opts: {
   datePublished?: string;
   dateModified?: string;
   authorName?: string;
+  authorUrl?: string;
   image?: string;
 }) {
   return {
@@ -78,12 +79,16 @@ export function articleScript(opts: {
       url: canonicalUrl(opts.path),
       ...(opts.datePublished ? { datePublished: opts.datePublished } : {}),
       ...(opts.dateModified ? { dateModified: opts.dateModified } : {}),
-      author: {
-        "@type": "Person",
-        name: opts.authorName ?? "Richard Stein",
-        jobTitle: "COO, Penthouse Advisors",
-        worksFor: { "@id": ORG_ID },
-      },
+      ...(opts.authorName
+        ? {
+            author: {
+              "@type": "Person",
+              name: opts.authorName,
+              ...(opts.authorUrl ? { url: opts.authorUrl } : {}),
+              worksFor: { "@id": ORG_ID },
+            },
+          }
+        : {}),
       publisher: { "@id": ORG_ID },
       ...(opts.image ? { image: opts.image } : {}),
     }),

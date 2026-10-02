@@ -1,0 +1,98 @@
+[
+  {
+    "page": "/help",
+    "width": 390,
+    "height": 844,
+    "bodyWidth": null,
+    "scroll": 390,
+    "viewport": 390
+  },
+  {
+    "page": "/blog",
+    "width": 390,
+    "height": 844,
+    "bodyWidth": null,
+    "scroll": 390,
+    "viewport": 390
+  },
+  {
+    "page": "/blog/restaurant-valuation-los-angeles-2026",
+    "width": 390,
+    "height": 844,
+    "bodyWidth": 350,
+    "scroll": 390,
+    "viewport": 390
+  },
+  {
+    "page": "/help/lease-assignments/restaurant-lease-assignment-guide",
+    "width": 390,
+    "height": 844,
+    "bodyWidth": 350,
+    "scroll": 390,
+    "viewport": 390
+  },
+  {
+    "page": "/help",
+    "width": 768,
+    "height": 1024,
+    "bodyWidth": null,
+    "scroll": 768,
+    "viewport": 768
+  },
+  {
+    "page": "/blog",
+    "width": 768,
+    "height": 1024,
+    "bodyWidth": null,
+    "scroll": 768,
+    "viewport": 768
+  },
+  {
+    "page": "/blog/restaurant-valuation-los-angeles-2026",
+    "width": 768,
+    "height": 1024,
+    "bodyWidth": 688,
+    "scroll": 768,
+    "viewport": 768
+  },
+  {
+    "page": "/help/lease-assignments/restaurant-lease-assignment-guide",
+    "width": 768,
+    "height": 1024,
+    "bodyWidth": 688,
+    "scroll": 768,
+    "viewport": 768
+  },
+  {
+    "page": "/help",
+    "width": 1440,
+    "height": 900,
+    "bodyWidth": null,
+    "scroll": 1440,
+    "viewport": 1440
+  },
+  {
+    "page": "/blog",
+    "width": 1440,
+    "height": 900,
+    "bodyWidth": null,
+    "scroll": 1440,
+    "viewport": 1440
+  },
+  {
+    "page": "/blog/restaurant-valuation-los-angeles-2026",
+    "width": 1440,
+    "height": 900,
+    "bodyWidth": 780,
+    "scroll": 1440,
+    "viewport": 1440
+  },
+  {
+    "page": "/help/lease-assignments/restaurant-lease-assignment-guide",
+    "width": 1440,
+    "height": 900,
+    "bodyWidth": 780,
+    "scroll": 1440,
+    "viewport": 1440
+  }
+]
