@@ -1,0 +1,8 @@
+{
+  "checks": {
+    "private_key_material": 0,
+    "github_token": 0,
+    "private_runtime_name_in_client": 0
+  },
+  "note": "Pattern scan only, not a penetration test. Public Maps browser keys are not private credentials; restrict their API/referrer scope."
+}

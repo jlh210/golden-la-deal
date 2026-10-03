@@ -8,7 +8,9 @@ type Props = {
 export function ListingLocationMap({ coords, title, location, zoom = 16 }: Props) {
   const [lat, lng] = coords;
   const key = import.meta.env.VITE_LOVABLE_CONNECTOR_GOOGLE_MAPS_BROWSER_KEY;
-  const src = `https://www.google.com/maps/embed/v1/place?key=${key}&q=${lat},${lng}&zoom=${zoom}`;
+  const src = key
+    ? `https://www.google.com/maps/embed/v1/place?key=${encodeURIComponent(key)}&q=${lat},${lng}&zoom=${zoom}`
+    : `https://www.google.com/maps?q=${lat},${lng}&z=${zoom}&output=embed`;
 
   return (
     <div className="h-48 w-full rounded-xl border border-gold/40 overflow-hidden shadow-elegant bg-card">

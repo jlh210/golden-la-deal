@@ -1,0 +1,24 @@
+{
+  "status": "PASS for tested local behavior; not a comprehensive accessibility certification",
+  "method": "CUA browser keyboard/DOM and mocked component/server tests",
+  "checks": [
+    "Skip link focuses main content",
+    "Desktop services Enter/Tab/Escape and focus return",
+    "Mobile menu focus transfer/Escape/focus return",
+    "Visible keyboard focus",
+    "Article FAQ Enter opens native details",
+    "Article contents anchor reaches target fragment",
+    "Form service query prefill",
+    "Empty submission renders associated validation errors without sending lead",
+    "Map tiles and three named marker icons render; popup details link resolves",
+    "Mock lead success/error and trusted Calendly origin+iframe source checks",
+    "No payment confirmation generated",
+    "60 screenshots with actual viewport width equality asserted; no document overflow or failed completed images"
+  ],
+  "limitations": [
+    "No real lead, booking or payment submitted",
+    "Automated accessibility scores do not establish full WCAG conformance",
+    "Third-party map/scheduling availability can vary"
+  ],
+  "responsiveEvidence": "responsive.json"
+}

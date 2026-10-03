@@ -24,7 +24,10 @@ export const Route = createFileRoute("/about")({
     ],
     links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/about" }],
     scripts: [
-      breadcrumbScript([{name:"Home",path:"/"},{name:'About',path:'/about'}]),
+      breadcrumbScript([
+        { name: "Home", path: "/" },
+        { name: "About", path: "/about" },
+      ]),
     ],
   }),
 
@@ -32,10 +35,26 @@ export const Route = createFileRoute("/about")({
 });
 
 const values = [
-  { icon: Zap, title: "Do It Now", body: "We move on day one. Restaurants don't have time to wait for callbacks." },
-  { icon: Users, title: "Principal-Led", body: "Direct access to the partners on every engagement. No layers, no handoffs." },
-  { icon: Scale, title: "Fair & Honest", body: "All parties - buyer, seller, landlord, tenant - represented with discretion and integrity." },
-  { icon: Award, title: "Full-Service", body: "Brokerage, licensing, health, leases, blueprints - under one roof." },
+  {
+    icon: Zap,
+    title: "Do It Now",
+    body: "We move on day one. Restaurants don't have time to wait for callbacks.",
+  },
+  {
+    icon: Users,
+    title: "Principal-Led",
+    body: "Direct access to the partners on every engagement. No layers, no handoffs.",
+  },
+  {
+    icon: Scale,
+    title: "Fair & Honest",
+    body: "All parties - buyer, seller, landlord, tenant - represented with discretion and integrity.",
+  },
+  {
+    icon: Award,
+    title: "Full-Service",
+    body: "Brokerage, licensing, health, leases, blueprints - under one roof.",
+  },
 ];
 
 const serviceCategories = [
@@ -127,11 +146,14 @@ function AboutPage() {
       <section className="container-x py-16 md:py-20">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {values.map((v) => (
-            <div key={v.title} className="rounded-xl border border-border bg-card p-6 shadow-elegant">
+            <div
+              key={v.title}
+              className="rounded-xl border border-border bg-card p-6 shadow-elegant"
+            >
               <div className="grid h-11 w-11 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30">
                 <v.icon className="h-5 w-5" />
               </div>
-              <h3 className="mt-4 text-lg font-display font-bold">{v.title}</h3>
+              <h2 className="mt-4 text-lg font-display font-bold">{v.title}</h2>
               <p className="mt-2 text-sm text-muted-foreground">{v.body}</p>
             </div>
           ))}
@@ -147,13 +169,17 @@ function AboutPage() {
               What Penthouse Advisors actually does.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              We solve restaurant problems fast. Here's everything we handle in-house for LA County restaurant owners, buyers, and landlords.
+              We solve restaurant problems fast. Here's everything we handle in-house for LA County
+              restaurant owners, buyers, and landlords.
             </p>
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {serviceCategories.map((s) => (
-              <article key={s.title} className="rounded-xl border border-border bg-card p-6 shadow-elegant">
+              <article
+                key={s.title}
+                className="rounded-xl border border-border bg-card p-6 shadow-elegant"
+              >
                 <h3 className="text-lg font-display font-bold leading-snug">{s.title}</h3>
                 <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{s.body}</p>
               </article>
@@ -179,13 +205,22 @@ function AboutPage() {
       {/* Owners */}
       <section className="container-x py-16 md:py-24">
         <p className="text-xs font-semibold uppercase tracking-widest text-gold">Leadership</p>
-        <h2 className="mt-3 text-3xl md:text-5xl font-display font-bold">Restaurant advisory, licensing, and deal support - under one roof.</h2>
+        <h2 className="mt-3 text-3xl md:text-5xl font-display font-bold">
+          Restaurant advisory, licensing, and deal support - under one roof.
+        </h2>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {owners.map((o) => (
-            <article key={o.name} className="rounded-2xl border border-border bg-card p-7 shadow-elegant">
+            <article
+              key={o.name}
+              className="rounded-2xl border border-border bg-card p-7 shadow-elegant"
+            >
               <div className="grid h-16 w-16 place-items-center rounded-full bg-gold-gradient text-charcoal-deep font-display text-2xl font-black">
-                {o.name.split(" ").map((w) => w[0]).slice(0, 2).join("")}
+                {o.name
+                  .split(" ")
+                  .map((w) => w[0])
+                  .slice(0, 2)
+                  .join("")}
               </div>
               <h3 className="mt-5 text-xl font-display font-bold">{o.name}</h3>
               <p className="mt-1 text-sm font-semibold text-gold">{o.title}</p>
@@ -196,7 +231,10 @@ function AboutPage() {
         </div>
       </section>
 
-      <CTASection title="Work with a team that knows restaurant deals from every angle." body="Principal-led advisory. Brokerage, licensing, permitting, and resolution - coordinated by one firm." />
+      <CTASection
+        title="Work with a team that knows restaurant deals from every angle."
+        body="Principal-led advisory. Brokerage, licensing, permitting, and resolution - coordinated by one firm."
+      />
     </SiteLayout>
   );
 }

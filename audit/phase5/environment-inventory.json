@@ -1,0 +1,47 @@
+[
+  {
+    "name": "GOOGLE_SERVICE_ACCOUNT_EMAIL",
+    "classification": "Required private runtime",
+    "purpose": "Google Sheets service account identity; production presence unverified."
+  },
+  {
+    "name": "GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY",
+    "classification": "Required private runtime secret",
+    "purpose": "Sheets JWT signing; never expose in client or logs. Production presence unverified."
+  },
+  {
+    "name": "GOOGLE_API_KEY",
+    "classification": "Optional runtime, browser-visible",
+    "purpose": "Contact Maps Embed key; restrict by API and permitted referrers. Fallback works without it."
+  },
+  {
+    "name": "VITE_LOVABLE_CONNECTOR_GOOGLE_MAPS_BROWSER_KEY",
+    "classification": "Optional public build-time",
+    "purpose": "Listing Maps Embed key; restrict by API/referrer. Query embed fallback provided."
+  },
+  {
+    "name": "VITE_LOVABLE_CONNECTOR_GOOGLE_MAPS_TRACKING_ID",
+    "classification": "Existing unused public build-time",
+    "purpose": "Not referenced by application; not evidence of an analytics installation."
+  },
+  {
+    "name": "NODE_ENV",
+    "classification": "Automatic build/runtime",
+    "purpose": "Framework environment."
+  },
+  {
+    "name": "PHASE1_TEST_TOOLS",
+    "classification": "Development-only",
+    "purpose": "Path to temporary jsdom/esbuild audit tooling."
+  },
+  {
+    "name": "CLOUDFLARE_API_TOKEN",
+    "classification": "Deployment tooling only, secret",
+    "purpose": "Optional alternative to authenticated Wrangler session; correct account and scope required."
+  },
+  {
+    "name": "CLOUDFLARE_ACCOUNT_ID",
+    "classification": "Deployment tooling only",
+    "purpose": "Correct target account identifier; never infer from current login."
+  }
+]

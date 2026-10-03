@@ -1,0 +1,112 @@
+{
+  "titleDuplicates": [],
+  "descriptionDuplicates": [],
+  "lengthReviewNotAutomaticRewrite": [
+    {
+      "url": "/about",
+      "titleLength": 61,
+      "descriptionLength": 204
+    },
+    {
+      "url": "/contact",
+      "titleLength": 49,
+      "descriptionLength": 189
+    },
+    {
+      "url": "/commercial-property-management",
+      "titleLength": 63,
+      "descriptionLength": 183
+    },
+    {
+      "url": "/leasing-vacant-restaurants",
+      "titleLength": 74,
+      "descriptionLength": 184
+    },
+    {
+      "url": "/alcohol-licensing",
+      "titleLength": 82,
+      "descriptionLength": 154
+    },
+    {
+      "url": "/health-inspection",
+      "titleLength": 74,
+      "descriptionLength": 157
+    },
+    {
+      "url": "/vermin-inspections",
+      "titleLength": 75,
+      "descriptionLength": 149
+    },
+    {
+      "url": "/grandfather-protection",
+      "titleLength": 74,
+      "descriptionLength": 170
+    },
+    {
+      "url": "/business-investigations",
+      "titleLength": 55,
+      "descriptionLength": 173
+    },
+    {
+      "url": "/search-door-knocking",
+      "titleLength": 52,
+      "descriptionLength": 171
+    },
+    {
+      "url": "/off-market-sourcing",
+      "titleLength": 73,
+      "descriptionLength": 149
+    },
+    {
+      "url": "/e2-visa-europe",
+      "titleLength": 70,
+      "descriptionLength": 179
+    },
+    {
+      "url": "/restaurants-for-sale/westwood-santa-monica-restaurant-asset-sale",
+      "titleLength": 74,
+      "descriptionLength": 147
+    },
+    {
+      "url": "/restaurants-for-sale/santa-monica-asset-sale",
+      "titleLength": 65,
+      "descriptionLength": 184
+    },
+    {
+      "url": "/blog/best-la-neighborhoods-open-restaurant-2026",
+      "titleLength": 80,
+      "descriptionLength": 147
+    },
+    {
+      "url": "/blog/restaurant-buyer-due-diligence-checklist",
+      "titleLength": 86,
+      "descriptionLength": 149
+    },
+    {
+      "url": "/blog/restaurant-valuation-los-angeles-2026",
+      "titleLength": 81,
+      "descriptionLength": 153
+    },
+    {
+      "url": "/blog/type-41-vs-type-47-liquor-license-california",
+      "titleLength": 79,
+      "descriptionLength": 151
+    },
+    {
+      "url": "/help/alcohol-licensing/abc-license-transfer-guide",
+      "titleLength": 75,
+      "descriptionLength": 147
+    },
+    {
+      "url": "/help/lease-assignments/restaurant-lease-assignment-guide",
+      "titleLength": 83,
+      "descriptionLength": 154
+    },
+    {
+      "url": "/help/local-markets/restaurant-broker-beverly-hills",
+      "titleLength": 87,
+      "descriptionLength": 149
+    }
+  ],
+  "note": "Character count is a truncation risk, not a search-engine limit. Descriptive locked metadata retained; two excessive listing descriptions shortened."
+}

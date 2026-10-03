@@ -1592,3 +1592,12 @@ summary:focus-visible {
     font-size: 14px;
   }
 }
+
+/* Phase 5: readable gold text on the site's light content surfaces. */
+main :is(.text-gold, .text-gold\/25, .text-gold\/50, .text-gold\/70, .text-gold\/80),
+main .hover\:text-gold:hover {
+  color: #80601c;
+}
+main .text-destructive {
+  color: #ac1922;
+}

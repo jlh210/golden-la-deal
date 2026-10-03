@@ -1,0 +1,37 @@
+[
+  {
+    "url": "/android-chrome-512x512.png",
+    "width": 512,
+    "height": 512,
+    "format": "png",
+    "bytes": 233092
+  },
+  {
+    "url": "/images/listings/hardware-storefront-1280.webp",
+    "width": 750,
+    "height": 1000,
+    "format": "webp",
+    "bytes": 108508
+  },
+  {
+    "url": "/images/listings/dental-office-for-lease-1280.webp",
+    "width": 828,
+    "height": 791,
+    "format": "webp",
+    "bytes": 68152
+  },
+  {
+    "url": "/images/listings/santa-monica-1-1280.webp",
+    "width": 1024,
+    "height": 768,
+    "format": "webp",
+    "bytes": 66894
+  },
+  {
+    "url": "/images/listings/wilshire-3-1280.webp",
+    "width": 1152,
+    "height": 1536,
+    "format": "webp",
+    "bytes": 169702
+  }
+]

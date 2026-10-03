@@ -1,0 +1,602 @@
+[
+  {
+    "name": "home",
+    "url": "/",
+    "width": 320,
+    "documentHeight": 13558,
+    "failedImages": [],
+    "scroll": 320,
+    "viewport": 320,
+    "viewportHeight": 844
+  },
+  {
+    "name": "buy",
+    "url": "/buy-a-restaurant",
+    "width": 320,
+    "documentHeight": 6658,
+    "failedImages": [],
+    "scroll": 320,
+    "viewport": 320,
+    "viewportHeight": 844
+  },
+  {
+    "name": "sell",
+    "url": "/sell-your-restaurant",
+    "width": 320,
+    "documentHeight": 6524,
+    "failedImages": [],
+    "scroll": 320,
+    "viewport": 320,
+    "viewportHeight": 844
+  },
+  {
+    "name": "leasing",
+    "url": "/restaurant-leasing",
+    "width": 320,
+    "documentHeight": 6786,
+    "failedImages": [],
+    "scroll": 320,
+    "viewport": 320,
+    "viewportHeight": 844
+  },
+  {
+    "name": "alcohol",
+    "url": "/alcohol-licensing",
+    "width": 320,
+    "documentHeight": 9393,
+    "failedImages": [],
+    "scroll": 320,
+    "viewport": 320,
+    "viewportHeight": 844
+  },
+  {
+    "name": "health",
+    "url": "/health-permitting",
+    "width": 320,
+    "documentHeight": 8202,
+    "failedImages": [],
+    "scroll": 320,
+    "viewport": 320,
+    "viewportHeight": 844
+  },
+  {
+    "name": "blog",
+    "url": "/blog",
+    "width": 320,
+    "documentHeight": 4830,
+    "failedImages": [],
+    "scroll": 320,
+    "viewport": 320,
+    "viewportHeight": 844
+  },
+  {
+    "name": "article",
+    "url": "/blog/restaurant-valuation-los-angeles-2026",
+    "width": 320,
+    "documentHeight": 10350,
+    "failedImages": [],
+    "scroll": 320,
+    "viewport": 320,
+    "viewportHeight": 844
+  },
+  {
+    "name": "help",
+    "url": "/help",
+    "width": 320,
+    "documentHeight": 4662,
+    "failedImages": [],
+    "scroll": 320,
+    "viewport": 320,
+    "viewportHeight": 844
+  },
+  {
+    "name": "guide",
+    "url": "/help/lease-assignments/restaurant-lease-assignment-guide",
+    "width": 320,
+    "documentHeight": 9324,
+    "failedImages": [],
+    "scroll": 320,
+    "viewport": 320,
+    "viewportHeight": 844
+  },
+  {
+    "name": "listings",
+    "url": "/restaurants-for-sale",
+    "width": 320,
+    "documentHeight": 7510,
+    "failedImages": [],
+    "scroll": 320,
+    "viewport": 320,
+    "viewportHeight": 844
+  },
+  {
+    "name": "contact",
+    "url": "/contact",
+    "width": 320,
+    "documentHeight": 3926,
+    "failedImages": [],
+    "scroll": 320,
+    "viewport": 320,
+    "viewportHeight": 844
+  },
+  {
+    "name": "home",
+    "url": "/",
+    "width": 390,
+    "documentHeight": 12243,
+    "failedImages": [],
+    "scroll": 390,
+    "viewport": 390,
+    "viewportHeight": 844
+  },
+  {
+    "name": "buy",
+    "url": "/buy-a-restaurant",
+    "width": 390,
+    "documentHeight": 6261,
+    "failedImages": [],
+    "scroll": 390,
+    "viewport": 390,
+    "viewportHeight": 844
+  },
+  {
+    "name": "sell",
+    "url": "/sell-your-restaurant",
+    "width": 390,
+    "documentHeight": 6069,
+    "failedImages": [],
+    "scroll": 390,
+    "viewport": 390,
+    "viewportHeight": 844
+  },
+  {
+    "name": "leasing",
+    "url": "/restaurant-leasing",
+    "width": 390,
+    "documentHeight": 6225,
+    "failedImages": [],
+    "scroll": 390,
+    "viewport": 390,
+    "viewportHeight": 844
+  },
+  {
+    "name": "alcohol",
+    "url": "/alcohol-licensing",
+    "width": 390,
+    "documentHeight": 8185,
+    "failedImages": [],
+    "scroll": 390,
+    "viewport": 390,
+    "viewportHeight": 844
+  },
+  {
+    "name": "health",
+    "url": "/health-permitting",
+    "width": 390,
+    "documentHeight": 7311,
+    "failedImages": [],
+    "scroll": 390,
+    "viewport": 390,
+    "viewportHeight": 844
+  },
+  {
+    "name": "blog",
+    "url": "/blog",
+    "width": 390,
+    "documentHeight": 4216,
+    "failedImages": [],
+    "scroll": 390,
+    "viewport": 390,
+    "viewportHeight": 844
+  },
+  {
+    "name": "article",
+    "url": "/blog/restaurant-valuation-los-angeles-2026",
+    "width": 390,
+    "documentHeight": 8805,
+    "failedImages": [],
+    "scroll": 390,
+    "viewport": 390,
+    "viewportHeight": 844
+  },
+  {
+    "name": "help",
+    "url": "/help",
+    "width": 390,
+    "documentHeight": 4292,
+    "failedImages": [],
+    "scroll": 390,
+    "viewport": 390,
+    "viewportHeight": 844
+  },
+  {
+    "name": "guide",
+    "url": "/help/lease-assignments/restaurant-lease-assignment-guide",
+    "width": 390,
+    "documentHeight": 8054,
+    "failedImages": [],
+    "scroll": 390,
+    "viewport": 390,
+    "viewportHeight": 844
+  },
+  {
+    "name": "listings",
+    "url": "/restaurants-for-sale",
+    "width": 390,
+    "documentHeight": 6991,
+    "failedImages": [],
+    "scroll": 390,
+    "viewport": 390,
+    "viewportHeight": 844
+  },
+  {
+    "name": "contact",
+    "url": "/contact",
+    "width": 390,
+    "documentHeight": 3758,
+    "failedImages": [],
+    "scroll": 390,
+    "viewport": 390,
+    "viewportHeight": 844
+  },
+  {
+    "name": "home",
+    "url": "/",
+    "width": 768,
+    "documentHeight": 8500,
+    "failedImages": [],
+    "scroll": 768,
+    "viewport": 768,
+    "viewportHeight": 900
+  },
+  {
+    "name": "buy",
+    "url": "/buy-a-restaurant",
+    "width": 768,
+    "documentHeight": 4479,
+    "failedImages": [],
+    "scroll": 768,
+    "viewport": 768,
+    "viewportHeight": 900
+  },
+  {
+    "name": "sell",
+    "url": "/sell-your-restaurant",
+    "width": 768,
+    "documentHeight": 4427,
+    "failedImages": [],
+    "scroll": 768,
+    "viewport": 768,
+    "viewportHeight": 900
+  },
+  {
+    "name": "leasing",
+    "url": "/restaurant-leasing",
+    "width": 768,
+    "documentHeight": 4479,
+    "failedImages": [],
+    "scroll": 768,
+    "viewport": 768,
+    "viewportHeight": 900
+  },
+  {
+    "name": "alcohol",
+    "url": "/alcohol-licensing",
+    "width": 768,
+    "documentHeight": 5468,
+    "failedImages": [],
+    "scroll": 768,
+    "viewport": 768,
+    "viewportHeight": 900
+  },
+  {
+    "name": "health",
+    "url": "/health-permitting",
+    "width": 768,
+    "documentHeight": 5483,
+    "failedImages": [],
+    "scroll": 768,
+    "viewport": 768,
+    "viewportHeight": 900
+  },
+  {
+    "name": "blog",
+    "url": "/blog",
+    "width": 768,
+    "documentHeight": 3048,
+    "failedImages": [],
+    "scroll": 768,
+    "viewport": 768,
+    "viewportHeight": 900
+  },
+  {
+    "name": "article",
+    "url": "/blog/restaurant-valuation-los-angeles-2026",
+    "width": 768,
+    "documentHeight": 6031,
+    "failedImages": [],
+    "scroll": 768,
+    "viewport": 768,
+    "viewportHeight": 900
+  },
+  {
+    "name": "help",
+    "url": "/help",
+    "width": 768,
+    "documentHeight": 2957,
+    "failedImages": [],
+    "scroll": 768,
+    "viewport": 768,
+    "viewportHeight": 900
+  },
+  {
+    "name": "guide",
+    "url": "/help/lease-assignments/restaurant-lease-assignment-guide",
+    "width": 768,
+    "documentHeight": 5619,
+    "failedImages": [],
+    "scroll": 768,
+    "viewport": 768,
+    "viewportHeight": 900
+  },
+  {
+    "name": "listings",
+    "url": "/restaurants-for-sale",
+    "width": 768,
+    "documentHeight": 5024,
+    "failedImages": [],
+    "scroll": 768,
+    "viewport": 768,
+    "viewportHeight": 900
+  },
+  {
+    "name": "contact",
+    "url": "/contact",
+    "width": 768,
+    "documentHeight": 3299,
+    "failedImages": [],
+    "scroll": 768,
+    "viewport": 768,
+    "viewportHeight": 900
+  },
+  {
+    "name": "home",
+    "url": "/",
+    "width": 1024,
+    "documentHeight": 7110,
+    "failedImages": [],
+    "scroll": 1024,
+    "viewport": 1024,
+    "viewportHeight": 900
+  },
+  {
+    "name": "buy",
+    "url": "/buy-a-restaurant",
+    "width": 1024,
+    "documentHeight": 4071,
+    "failedImages": [],
+    "scroll": 1024,
+    "viewport": 1024,
+    "viewportHeight": 900
+  },
+  {
+    "name": "sell",
+    "url": "/sell-your-restaurant",
+    "width": 1024,
+    "documentHeight": 3940,
+    "failedImages": [],
+    "scroll": 1024,
+    "viewport": 1024,
+    "viewportHeight": 900
+  },
+  {
+    "name": "leasing",
+    "url": "/restaurant-leasing",
+    "width": 1024,
+    "documentHeight": 3950,
+    "failedImages": [],
+    "scroll": 1024,
+    "viewport": 1024,
+    "viewportHeight": 900
+  },
+  {
+    "name": "alcohol",
+    "url": "/alcohol-licensing",
+    "width": 1024,
+    "documentHeight": 4893,
+    "failedImages": [],
+    "scroll": 1024,
+    "viewport": 1024,
+    "viewportHeight": 900
+  },
+  {
+    "name": "health",
+    "url": "/health-permitting",
+    "width": 1024,
+    "documentHeight": 4219,
+    "failedImages": [],
+    "scroll": 1024,
+    "viewport": 1024,
+    "viewportHeight": 900
+  },
+  {
+    "name": "blog",
+    "url": "/blog",
+    "width": 1024,
+    "documentHeight": 2629,
+    "failedImages": [],
+    "scroll": 1024,
+    "viewport": 1024,
+    "viewportHeight": 900
+  },
+  {
+    "name": "article",
+    "url": "/blog/restaurant-valuation-los-angeles-2026",
+    "width": 1024,
+    "documentHeight": 5513,
+    "failedImages": [],
+    "scroll": 1024,
+    "viewport": 1024,
+    "viewportHeight": 900
+  },
+  {
+    "name": "help",
+    "url": "/help",
+    "width": 1024,
+    "documentHeight": 2531,
+    "failedImages": [],
+    "scroll": 1024,
+    "viewport": 1024,
+    "viewportHeight": 900
+  },
+  {
+    "name": "guide",
+    "url": "/help/lease-assignments/restaurant-lease-assignment-guide",
+    "width": 1024,
+    "documentHeight": 5188,
+    "failedImages": [],
+    "scroll": 1024,
+    "viewport": 1024,
+    "viewportHeight": 900
+  },
+  {
+    "name": "listings",
+    "url": "/restaurants-for-sale",
+    "width": 1024,
+    "documentHeight": 3946,
+    "failedImages": [],
+    "scroll": 1024,
+    "viewport": 1024,
+    "viewportHeight": 900
+  },
+  {
+    "name": "contact",
+    "url": "/contact",
+    "width": 1024,
+    "documentHeight": 2206,
+    "failedImages": [],
+    "scroll": 1024,
+    "viewport": 1024,
+    "viewportHeight": 900
+  },
+  {
+    "name": "home",
+    "url": "/",
+    "width": 1440,
+    "documentHeight": 6832,
+    "failedImages": [],
+    "scroll": 1440,
+    "viewport": 1440,
+    "viewportHeight": 900
+  },
+  {
+    "name": "buy",
+    "url": "/buy-a-restaurant",
+    "width": 1440,
+    "documentHeight": 3931,
+    "failedImages": [],
+    "scroll": 1440,
+    "viewport": 1440,
+    "viewportHeight": 900
+  },
+  {
+    "name": "sell",
+    "url": "/sell-your-restaurant",
+    "width": 1440,
+    "documentHeight": 3858,
+    "failedImages": [],
+    "scroll": 1440,
+    "viewport": 1440,
+    "viewportHeight": 900
+  },
+  {
+    "name": "leasing",
+    "url": "/restaurant-leasing",
+    "width": 1440,
+    "documentHeight": 3897,
+    "failedImages": [],
+    "scroll": 1440,
+    "viewport": 1440,
+    "viewportHeight": 900
+  },
+  {
+    "name": "alcohol",
+    "url": "/alcohol-licensing",
+    "width": 1440,
+    "documentHeight": 4865,
+    "failedImages": [],
+    "scroll": 1440,
+    "viewport": 1440,
+    "viewportHeight": 900
+  },
+  {
+    "name": "health",
+    "url": "/health-permitting",
+    "width": 1440,
+    "documentHeight": 4186,
+    "failedImages": [],
+    "scroll": 1440,
+    "viewport": 1440,
+    "viewportHeight": 900
+  },
+  {
+    "name": "blog",
+    "url": "/blog",
+    "width": 1440,
+    "documentHeight": 2765,
+    "failedImages": [],
+    "scroll": 1440,
+    "viewport": 1440,
+    "viewportHeight": 900
+  },
+  {
+    "name": "article",
+    "url": "/blog/restaurant-valuation-los-angeles-2026",
+    "width": 1440,
+    "documentHeight": 5649,
+    "failedImages": [],
+    "scroll": 1440,
+    "viewport": 1440,
+    "viewportHeight": 900
+  },
+  {
+    "name": "help",
+    "url": "/help",
+    "width": 1440,
+    "documentHeight": 2616,
+    "failedImages": [],
+    "scroll": 1440,
+    "viewport": 1440,
+    "viewportHeight": 900
+  },
+  {
+    "name": "guide",
+    "url": "/help/lease-assignments/restaurant-lease-assignment-guide",
+    "width": 1440,
+    "documentHeight": 5245,
+    "failedImages": [],
+    "scroll": 1440,
+    "viewport": 1440,
+    "viewportHeight": 900
+  },
+  {
+    "name": "listings",
+    "url": "/restaurants-for-sale",
+    "width": 1440,
+    "documentHeight": 3769,
+    "failedImages": [],
+    "scroll": 1440,
+    "viewport": 1440,
+    "viewportHeight": 900
+  },
+  {
+    "name": "contact",
+    "url": "/contact",
+    "width": 1440,
+    "documentHeight": 2198,
+    "failedImages": [],
+    "scroll": 1440,
+    "viewport": 1440,
+    "viewportHeight": 900
+  }
+]

@@ -1,0 +1,312 @@
+[
+  {
+    "run": "after-1",
+    "scores": {
+      "performance": 87,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "metrics": {
+      "first-contentful-paint": 2388.122375,
+      "largest-contentful-paint": 3553.9957999999997,
+      "total-blocking-time": 7,
+      "cumulative-layout-shift": 0,
+      "speed-index": 2388.122375
+    }
+  },
+  {
+    "run": "after-2",
+    "scores": {
+      "performance": 90,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "metrics": {
+      "first-contentful-paint": 2612.67,
+      "largest-contentful-paint": 3062.67,
+      "total-blocking-time": 4,
+      "cumulative-layout-shift": 0.01519330204032295,
+      "speed-index": 2612.67
+    }
+  },
+  {
+    "run": "before-1",
+    "scores": {
+      "performance": 93,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "metrics": {
+      "first-contentful-paint": 2351.455,
+      "largest-contentful-paint": 2726.56,
+      "total-blocking-time": 4,
+      "cumulative-layout-shift": 0.01519330204032295,
+      "speed-index": 2351.455
+    }
+  },
+  {
+    "run": "before-2",
+    "scores": {
+      "performance": 93,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "metrics": {
+      "first-contentful-paint": 2323.5338,
+      "largest-contentful-paint": 2698.6283000000003,
+      "total-blocking-time": 6,
+      "cumulative-layout-shift": 0.01519330204032295,
+      "speed-index": 2323.5338
+    }
+  },
+  {
+    "run": "final-blog",
+    "scores": {
+      "performance": 95,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "metrics": {
+      "first-contentful-paint": 2265.83965,
+      "largest-contentful-paint": 2340.846225,
+      "total-blocking-time": 4,
+      "cumulative-layout-shift": 0,
+      "speed-index": 2265.83965
+    }
+  },
+  {
+    "run": "final-buy",
+    "scores": {
+      "performance": 95,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "metrics": {
+      "first-contentful-paint": 2418.688,
+      "largest-contentful-paint": 2418.688,
+      "total-blocking-time": 2,
+      "cumulative-layout-shift": 0.0007611494290279578,
+      "speed-index": 2418.688
+    }
+  },
+  {
+    "run": "final-contact",
+    "scores": {
+      "performance": 78,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 93
+    },
+    "metrics": {
+      "first-contentful-paint": 3424.2336,
+      "largest-contentful-paint": 3744.4134000000004,
+      "total-blocking-time": 3.5000000000002274,
+      "cumulative-layout-shift": 0.1137579682007512,
+      "speed-index": 3424.2336
+    }
+  },
+  {
+    "run": "final-guide",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "metrics": {
+      "first-contentful-paint": 2360.6347499999997,
+      "largest-contentful-paint": 2603.5617,
+      "total-blocking-time": 12,
+      "cumulative-layout-shift": 0.01429028330541121,
+      "speed-index": 2360.6347499999997
+    }
+  },
+  {
+    "run": "final-home-1",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "metrics": {
+      "first-contentful-paint": 2331.4909499999994,
+      "largest-contentful-paint": 2631.53385,
+      "total-blocking-time": 4,
+      "cumulative-layout-shift": 0.01519330204032295,
+      "speed-index": 2331.4909499999994
+    }
+  },
+  {
+    "run": "final-home-2",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "metrics": {
+      "first-contentful-paint": 2332.43035,
+      "largest-contentful-paint": 2632.46605,
+      "total-blocking-time": 4,
+      "cumulative-layout-shift": 0.01418236189503181,
+      "speed-index": 2332.43035
+    }
+  },
+  {
+    "run": "final-home-3",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "metrics": {
+      "first-contentful-paint": 2262.3422499999997,
+      "largest-contentful-paint": 2637.380125,
+      "total-blocking-time": 2,
+      "cumulative-layout-shift": 0.01418236189503181,
+      "speed-index": 2262.3422499999997
+    }
+  },
+  {
+    "run": "final-listings",
+    "scores": {
+      "performance": 71,
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "metrics": {
+      "first-contentful-paint": 3537.4832000000006,
+      "largest-contentful-paint": 5587.194600000001,
+      "total-blocking-time": 4,
+      "cumulative-layout-shift": 0.03150356953563187,
+      "speed-index": 4126.5060889182105
+    }
+  },
+  {
+    "run": "verified-alcohol",
+    "scores": {
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {}
+  },
+  {
+    "run": "verified-article",
+    "scores": {
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {}
+  },
+  {
+    "run": "verified-buy",
+    "scores": {
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {}
+  },
+  {
+    "run": "verified-contact",
+    "scores": {
+      "performance": 90,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 92
+    },
+    "metrics": {
+      "first-contentful-paint": 2420.1877,
+      "largest-contentful-paint": 2570.1877,
+      "total-blocking-time": 3.5,
+      "cumulative-layout-shift": 0.12494918378496046,
+      "speed-index": 2420.1877
+    }
+  },
+  {
+    "run": "verified-health-final",
+    "scores": {
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {}
+  },
+  {
+    "run": "verified-health",
+    "scores": {
+      "accessibility": 96,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {}
+  },
+  {
+    "run": "verified-help",
+    "scores": {
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {}
+  },
+  {
+    "run": "verified-leasing",
+    "scores": {
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {}
+  },
+  {
+    "run": "verified-listings",
+    "scores": {
+      "performance": 78,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "metrics": {
+      "first-contentful-paint": 3442.567,
+      "largest-contentful-paint": 4328.09975,
+      "total-blocking-time": 7,
+      "cumulative-layout-shift": 0.03150356953563187,
+      "speed-index": 3442.567
+    }
+  },
+  {
+    "run": "verified-sell",
+    "scores": {
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {}
+  }
+]

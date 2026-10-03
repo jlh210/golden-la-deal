@@ -1,0 +1,153 @@
+{
+  "status": "ARCHITECTURE PREPARED; collection not enabled",
+  "evidence": "No GA4, GTM, Cloudflare Web Analytics, Plausible or Clarity marker found in source or public production HTML. The repository has an optional Lovable error-reporting hook, not a conversion analytics integration. Hosting dashboard injection settings remain unverified.",
+  "recommendation": "One lightweight GA4 gtag integration after owner provides property ID and privacy/consent decision; no GTM or additional marketing stack unless already managed by the owner. Recheck production hosting injection immediately before enabling to avoid duplicates.",
+  "ownerDecisionsRequired": [
+    "Confirm existing analytics/property and hosting injection configuration.",
+    "Provide the chosen measurement/property ID (none invented).",
+    "Confirm applicable privacy notice, consent behavior and retention settings before any tracking starts.",
+    "Decide whether browser-widget booking confirmation is sufficient reporting or a trusted webhook is required."
+  ],
+  "events": [
+    {
+      "name": "consultation_cta_click",
+      "trigger": "User activates an actual consultation link; informational-to-commercial links are a separate navigation step.",
+      "properties": [
+        "page_path",
+        "page_type",
+        "service_intent",
+        "cta_location"
+      ],
+      "keyEvent": false
+    },
+    {
+      "name": "lead_submission_success",
+      "trigger": "Server confirms Google Sheets append; honeypot pseudo-success must not count. Deduplicate per submission.",
+      "properties": [
+        "page_path",
+        "page_type",
+        "service_intent",
+        "lead_source"
+      ],
+      "keyEvent": true
+    },
+    {
+      "name": "scheduling_opened",
+      "trigger": "First trusted Calendly page-view message from the owned iframe, after origin/source validation. Inserting a script/iframe or clicking an external link is not proof of successful opening.",
+      "properties": [
+        "page_path",
+        "service_intent",
+        "scheduling_mode"
+      ],
+      "keyEvent": false
+    },
+    {
+      "name": "scheduling_event_selected",
+      "trigger": "Only a documented, trusted Calendly selection event supported by the integration. Do not infer from a CTA click.",
+      "properties": [
+        "page_path",
+        "service_intent"
+      ],
+      "keyEvent": false,
+      "status": "DEFER until supported event semantics are verified"
+    },
+    {
+      "name": "booking_confirmed",
+      "trigger": "Trusted calendly.event_scheduled message from https://calendly.com and the exact owned iframe, once per inquiry. Label evidence browser_widget; server/webhook confirmation is a distinct stronger assurance.",
+      "properties": [
+        "page_path",
+        "service_intent",
+        "confirmation_source"
+      ],
+      "keyEvent": true
+    },
+    {
+      "name": "phone_click",
+      "trigger": "Activation of tel: link; measures click intent, not a completed call.",
+      "properties": [
+        "page_path",
+        "page_type",
+        "cta_location"
+      ],
+      "keyEvent": false
+    },
+    {
+      "name": "listing_inquiry",
+      "trigger": "Activation of listing inquiry CTA. Successful submission separately emits lead_submission_success with controlled source listing.",
+      "properties": [
+        "page_path",
+        "listing_slug",
+        "cta_location"
+      ],
+      "keyEvent": false
+    },
+    {
+      "name": "payment_success",
+      "trigger": "No event: payment-provider verification is unavailable. Browser navigation, inquiry and booking do not establish payment.",
+      "properties": [],
+      "keyEvent": false,
+      "status": "NOT IMPLEMENTED / NOT TECHNICALLY AVAILABLE"
+    }
+  ],
+  "allowedPageTypes": [
+    "home",
+    "commercial",
+    "insight",
+    "guide",
+    "knowledge_hub",
+    "collection",
+    "listing",
+    "listings",
+    "contact",
+    "about",
+    "other"
+  ],
+  "allowedServiceIntents": [
+    "buy",
+    "sell",
+    "lease",
+    "consult",
+    "alcohol",
+    "health",
+    "investigate",
+    "other"
+  ],
+  "ctaLocations": [
+    "header",
+    "hero",
+    "body",
+    "article_next_step",
+    "footer",
+    "listing",
+    "form"
+  ],
+  "privacy": [
+    "Never send name, email, telephone number, message, notes, budget, location, financing, Calendly event/invitee URI, or booking receipt.",
+    "Use pathname only. Do not collect URL query or fragment; a page_location override must omit prefill/tracking data that could contain PII.",
+    "Referrers limited to origin or approved source category, never arbitrary full URLs.",
+    "No advertising features, cross-site IDs or automatic enhanced form measurement by default.",
+    "Use an explicit allowlist payload adapter; do not serialize FormData, server responses or DOM text.",
+    "Do not use the booking receipt as an analytics lead ID. No lead identifier is needed for this first implementation."
+  ],
+  "funnel": [
+    "Organic/direct/referral entry",
+    "Service or informational page",
+    "Commercial parent",
+    "Consultation CTA",
+    "Lead submission success",
+    "Scheduling opened",
+    "Booking confirmed when observable",
+    "Payment status only with future provider confirmation"
+  ],
+  "rates": {
+    "consultationCtaRate": "sessions with consultation_cta_click / eligible sessions",
+    "leadSubmissionRate": "successful lead submissions / consultation CTA sessions (also report per session)",
+    "bookingRate": "trusted booking_confirmed / successful lead submissions; external-tab bookings may be unobserved"
+  },
+  "validationPlan": [
+    "Use mocked analytics sink and synthetic fixtures; assert forbidden fields never appear.",
+    "Verify one event per user action and no success event on validation/server errors or honeypot.",
+    "Reject untrusted origin and wrong iframe messages; do not count scheduling CTA as booking.",
+    "Use analytics debug mode only after owner configuration and consent decision."
+  ]
+}

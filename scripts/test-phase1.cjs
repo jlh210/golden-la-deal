@@ -59,7 +59,7 @@ assert.equal(document.activeElement,mobile);
 assert.equal(document.querySelector('.skip-link').getAttribute('href'),'#main-content');
 assert.equal(document.getElementById('main-content').tabIndex,-1);
 let leads=[],bookings=[];
-globalThis.phase1Submit = async(data)=>{ leads.push(data); return {ok:true}; };
+globalThis.phase1Submit = async(data)=>{ leads.push(data); return {ok:true,bookingReference:"00000000-0000-4000-8000-000000000001"}; };
 globalThis.phase1Mark = async(data)=>{ bookings.push(data); return {ok:true}; };
 const submit = async()=>{await act(async()=>document.querySelector('form').dispatchEvent(new Event('submit',{bubbles:true,cancelable:true})));};
 const fill = ()=>{

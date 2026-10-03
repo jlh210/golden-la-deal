@@ -236,15 +236,22 @@ function HomePage() {
               <p className="pa-hero-note">From the first decision to the details of closing.</p>
             </div>
             <figure className="pa-hero-image">
-              <img
-                src="/images/los-angeles-960.webp"
-                srcSet="/images/los-angeles-640.webp 426w, /images/los-angeles-960.webp 640w"
-                sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1199px) 38vw, 440px"
-                width={640}
-                height={960}
-                fetchPriority="high"
-                alt="Downtown Los Angeles skyline in warm evening light"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcSet="/images/los-angeles-640.avif 426w, /images/los-angeles-960.avif 640w"
+                  sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1199px) 38vw, 440px"
+                />
+                <img
+                  src="/images/los-angeles-960.webp"
+                  srcSet="/images/los-angeles-640.webp 426w, /images/los-angeles-960.webp 640w"
+                  sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1199px) 38vw, 440px"
+                  width={640}
+                  height={960}
+                  fetchPriority="high"
+                  alt="Downtown Los Angeles skyline in warm evening light"
+                />
+              </picture>
               <figcaption>
                 Los Angeles County <span>Our market. Your next chapter.</span>
               </figcaption>

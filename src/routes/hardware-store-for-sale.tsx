@@ -1,3 +1,4 @@
+import { listingImageProps } from "@/lib/listing-images";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Store, MapPin, Calendar, ArrowRight, FileText, Wrench } from "lucide-react";
 import { SiteLayout } from "@/components/site/Layout";
@@ -21,13 +22,28 @@ export const Route = createFileRoute("/hardware-store-for-sale")({
         property: "og:description",
         content: "Established hardware store on Westwood Blvd. $125k cash.",
       },
-      { property: "og:image", content: storefront.url },
-      { property: "twitter:image", content: storefront.url },
+      {
+        property: "og:image",
+        content: new URL(listingImageProps(storefront.url).src, "https://www.penthouseadvisors.com")
+          .href,
+      },
+      { property: "og:image:alt", content: "Westwood hardware store exterior" },
+      {
+        name: "twitter:image",
+        content: new URL(listingImageProps(storefront.url).src, "https://www.penthouseadvisors.com")
+          .href,
+      },
+      { name: "twitter:image:alt", content: "Westwood hardware store exterior" },
       { property: "og:url", content: "https://www.penthouseadvisors.com/hardware-store-for-sale" },
     ],
-    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/hardware-store-for-sale" }],
+    links: [
+      { rel: "canonical", href: "https://www.penthouseadvisors.com/hardware-store-for-sale" },
+    ],
     scripts: [
-      breadcrumbScript([{name:"Home",path:"/"},{name:'Hardware Store For Sale',path:'/hardware-store-for-sale'}]),
+      breadcrumbScript([
+        { name: "Home", path: "/" },
+        { name: "Hardware Store For Sale", path: "/hardware-store-for-sale" },
+      ]),
     ],
   }),
   component: HardwarePage,
@@ -105,10 +121,18 @@ function HardwarePage() {
       <section className="container-x pt-10">
         <div className="grid gap-4 md:grid-cols-2">
           <div className="aspect-[4/5] md:aspect-[4/3] overflow-hidden rounded-2xl border border-gold/40 shadow-elegant">
-            <img src={storefront.url} alt="Hardware store entrance on Westwood Blvd, West LA" className="h-full w-full object-cover" />
+            <img
+              {...listingImageProps(storefront.url)}
+              alt="Hardware store entrance on Westwood Blvd, West LA"
+              className="h-full w-full object-cover"
+            />
           </div>
           <div className="aspect-[4/5] md:aspect-[4/3] overflow-hidden rounded-2xl border border-gold/40 shadow-elegant">
-            <img src={aisle.url} alt="Hardware store aisle with tools and supplies" className="h-full w-full object-cover" />
+            <img
+              {...listingImageProps(aisle.url)}
+              alt="Hardware store aisle with tools and supplies"
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
       </section>
@@ -133,8 +157,12 @@ function HardwarePage() {
             <div className="p-7 grid sm:grid-cols-2 gap-5">
               {specs.map((s) => (
                 <div key={s.label}>
-                  <div className="text-xs uppercase tracking-wider text-muted-foreground">{s.label}</div>
-                  <div className="mt-1 font-display font-extrabold text-gold text-2xl">{s.value}</div>
+                  <div className="text-xs uppercase tracking-wider text-muted-foreground">
+                    {s.label}
+                  </div>
+                  <div className="mt-1 font-display font-extrabold text-gold text-2xl">
+                    {s.value}
+                  </div>
                   {s.note && <div className="text-xs text-gold/70 mt-1">{s.note}</div>}
                 </div>
               ))}
@@ -216,7 +244,11 @@ function HardwarePage() {
         </aside>
       </section>
 
-      <CTASection serviceNeeded={"Hardware store inquiry"} title="Selling a non-restaurant business?" body="We broker hardware, retail, and select small businesses across LA." />
+      <CTASection
+        serviceNeeded={"Hardware store inquiry"}
+        title="Selling a non-restaurant business?"
+        body="We broker hardware, retail, and select small businesses across LA."
+      />
     </SiteLayout>
   );
 }

@@ -39,9 +39,12 @@ export function LeadForm({
   const [stage, setStage] = useState<Stage>("form");
   const [loading, setLoading] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
-  const [submitted, setSubmitted] = useState<{ name: string; email: string; phone: string } | null>(
-    null,
-  );
+  const [submitted, setSubmitted] = useState<{
+    name: string;
+    email: string;
+    phone: string;
+    bookingReference?: string;
+  } | null>(null);
   const [embedReady, setEmbedReady] = useState(false);
   const [bookingSyncFailed, setBookingSyncFailed] = useState(false);
   const bookingHandled = useRef(false);
@@ -100,7 +103,7 @@ export function LeadForm({
       };
       if (
         payload.event === "calendly.event_scheduled" &&
-        submitted &&
+        submitted?.bookingReference &&
         payload.payload?.event?.uri &&
         !bookingHandled.current
       ) {
@@ -109,6 +112,7 @@ export function LeadForm({
           const result = await mark({
             data: {
               email: submitted.email,
+              bookingReference: submitted.bookingReference,
               eventUri: payload.payload?.event?.uri ?? "",
               startTime: payload.payload?.event?.start_time ?? "",
             },
@@ -147,10 +151,15 @@ export function LeadForm({
     setServerError(null);
     setLoading(true);
     try {
-      await send({
+      const response = await send({
         data: { source: title, serviceNeeded: serviceNeeded ?? data.serviceNeeded, fields: data },
       });
-      setSubmitted({ name: data.name, email: data.email, phone: data.phone });
+      setSubmitted({
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        bookingReference: response.bookingReference,
+      });
       setStage("calendly");
     } catch (err) {
       console.error(err);
@@ -164,9 +173,9 @@ export function LeadForm({
     return (
       <div className="rounded-2xl border border-gold/40 bg-card p-10 text-center shadow-elegant animate-in fade-in slide-in-from-bottom-2 duration-500">
         <CheckCircle2 className="mx-auto h-12 w-12 text-gold" />
-        <h3 className="mt-4 text-3xl font-display font-bold">
+        <h2 className="mt-4 text-3xl font-display font-bold">
           Calendly Has Confirmed Your Appointment.
-        </h3>
+        </h2>
         <p className="mt-4 text-muted-foreground leading-relaxed">
           Check your Calendly confirmation for appointment details. Scheduling does not confirm
           payment; this website cannot verify a payment.
@@ -193,7 +202,7 @@ export function LeadForm({
       <div className="rounded-2xl border border-gold/40 bg-card p-7 md:p-10 shadow-elegant animate-in fade-in slide-in-from-bottom-2 duration-500">
         <div className="text-center">
           <CheckCircle2 className="mx-auto h-10 w-10 text-gold" />
-          <h3 className="mt-3 text-3xl font-display font-bold">Thank You for Your Inquiry.</h3>
+          <h2 className="mt-3 text-3xl font-display font-bold">Thank You for Your Inquiry.</h2>
           <p className="mt-3 text-muted-foreground leading-relaxed max-w-xl mx-auto">
             Your inquiry has been received. An appointment has not yet been booked.
           </p>
@@ -229,7 +238,7 @@ export function LeadForm({
 
   return (
     <div className="rounded-2xl border border-border bg-card p-7 md:p-10 shadow-elegant">
-      <h3 className="text-2xl font-display font-bold">{title}</h3>
+      <h2 className="text-2xl font-display font-bold">{title}</h2>
       <p className="mt-2 text-sm text-muted-foreground">{subtitle}</p>
       <form onSubmit={onSubmit} noValidate className="mt-6 space-y-5">
         {/* Honeypot — visually and functionally hidden (clipped to 1px, not

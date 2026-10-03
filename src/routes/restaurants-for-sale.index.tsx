@@ -1,3 +1,4 @@
+import { listingImageProps } from "@/lib/listing-images";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { MapPin, Ruler, Flame, ArrowRight, Phone, Sparkles } from "lucide-react";
@@ -30,8 +31,18 @@ export const Route = createFileRoute("/restaurants-for-sale/")({
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://www.penthouseadvisors.com/" },
-            { "@type": "ListItem", position: 2, name: "Restaurants For Sale", item: "https://www.penthouseadvisors.com/restaurants-for-sale" },
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.penthouseadvisors.com/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Restaurants For Sale",
+              item: "https://www.penthouseadvisors.com/restaurants-for-sale",
+            },
           ],
         }),
       },
@@ -94,7 +105,7 @@ function ListingsPage() {
               >
                 {l.images && l.images.length > 0 ? (
                   <img
-                    src={l.images[0]}
+                    {...listingImageProps(l.images[0])}
                     alt={l.title}
                     className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
                     loading="lazy"
@@ -126,7 +137,7 @@ function ListingsPage() {
                 </span>
               </Link>
               <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-lg font-display font-bold">
+                <h2 className="text-lg font-display font-bold">
                   <Link
                     to="/restaurants-for-sale/$slug"
                     params={{ slug: l.slug }}
@@ -134,7 +145,7 @@ function ListingsPage() {
                   >
                     {l.title}
                   </Link>
-                </h3>
+                </h2>
                 <div className="mt-2 flex items-center gap-1.5 text-sm text-muted-foreground">
                   <MapPin className="h-3.5 w-3.5 text-gold" /> {l.location}
                 </div>
@@ -143,9 +154,7 @@ function ListingsPage() {
                     <Ruler className="h-3.5 w-3.5 text-gold" /> {l.sqft} · {l.leaseType}
                   </div>
                 )}
-                {!l.sqft && (
-                  <div className="mt-1 text-sm text-muted-foreground">{l.leaseType}</div>
-                )}
+                {!l.sqft && <div className="mt-1 text-sm text-muted-foreground">{l.leaseType}</div>}
                 {l.description && (
                   <p className="mt-3 text-sm text-foreground/80 line-clamp-3">{l.description}</p>
                 )}
@@ -173,7 +182,7 @@ function ListingsPage() {
                     {l.images.slice(1, 4).map((src, i) => (
                       <img
                         key={i}
-                        src={src}
+                        {...listingImageProps(src)}
                         alt={`${l.title} ${i + 2}`}
                         className="h-16 w-full object-cover rounded border border-border"
                         loading="lazy"
@@ -212,7 +221,7 @@ function ListingsPage() {
               </h2>
             </div>
             <p className="text-sm text-muted-foreground max-w-sm">
-              Click a gold pin to preview a listing and jump to full details.
+              Click a pin to preview a listing and jump to full details.
             </p>
           </div>
           <ListingsMap />

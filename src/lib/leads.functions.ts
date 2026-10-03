@@ -3,12 +3,13 @@ import { z } from "zod";
 
 const SHEET_ID = "1XxSXkc43h9qV4CeSgYzudsAbPfGDXk2rQn24y7_0Yhg";
 const SHEET_NAME = "Website leads";
-const RANGE = `'${SHEET_NAME}'!A:O`;
+const RANGE = `'${SHEET_NAME}'!A:P`;
 const SHEETS_API = "https://sheets.googleapis.com/v4/spreadsheets";
 
 // Columns: A Name | B Phone | C Email | D Source | E Role | F Service Needed | G Status |
 //          H Timeline | I Financing | J Timestamp | K Notes |
 //          L Calendly Booking Date | M Calendly Booking Time | N Calendly Event URI | O Last Updated
+//          P Opaque booking reference (never send to analytics)
 export const COLUMNS = [
   "Name",
   "Phone",
@@ -25,6 +26,7 @@ export const COLUMNS = [
   "Calendly Booking Time",
   "Calendly Event URI",
   "Last Updated",
+  "Booking Reference",
 ] as const;
 
 function laNow() {
@@ -132,9 +134,23 @@ async function sheetsHeaders() {
 }
 
 const leadSchema = z.object({
-  source: z.string().min(1).max(120),
-  serviceNeeded: z.string().max(160).optional(),
-  fields: z.record(z.string(), z.string()).default({}),
+  source: z.string().trim().min(1).max(120),
+  serviceNeeded: z.string().trim().max(160).optional(),
+  fields: z.object({
+    name: z.string().trim().min(1).max(100),
+    phone: z.string().trim().min(7).max(30),
+    email: z.string().trim().email().max(255),
+    role: z.string().trim().min(1).max(80),
+    serviceNeeded: z.string().trim().max(160).optional(),
+    message: z.string().trim().max(1000).optional(),
+    notes: z.string().trim().max(1000).optional(),
+    timeline: z.string().trim().max(120).optional(),
+    financing: z.string().trim().max(120).optional(),
+    budget: z.string().trim().max(120).optional(),
+    location: z.string().trim().max(120).optional(),
+    businessType: z.string().trim().max(120).optional(),
+    website: z.string().max(2000).optional(),
+  }),
 });
 
 export const submitLead = createServerFn({ method: "POST" })
@@ -151,6 +167,15 @@ export const submitLead = createServerFn({ method: "POST" })
 
     const headers = await sheetsHeaders();
 
+    const bookingReference = crypto.randomUUID();
+    const notes = [
+      f.message ?? f.notes,
+      f.budget && `Budget: ${f.budget}`,
+      f.location && `Location: ${f.location}`,
+      f.businessType && `Business type: ${f.businessType}`,
+    ]
+      .filter(Boolean)
+      .join("\n");
     const row = [
       f.name ?? "",
       f.phone ?? "",
@@ -162,14 +187,15 @@ export const submitLead = createServerFn({ method: "POST" })
       f.timeline ?? "",
       f.financing ?? "",
       laNow(),
-      f.message ?? f.notes ?? "",
+      notes,
       "",
       "",
       "",
       "",
+      bookingReference,
     ];
 
-    const url = `${SHEETS_API}/${SHEET_ID}/values/${RANGE}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`;
+    const url = `${SHEETS_API}/${SHEET_ID}/values/${RANGE}:append?valueInputOption=RAW&insertDataOption=INSERT_ROWS`;
     const res = await fetch(url, {
       method: "POST",
       headers,
@@ -177,18 +203,24 @@ export const submitLead = createServerFn({ method: "POST" })
     });
 
     if (!res.ok) {
-      const body = await res.text();
-      console.error("Sheets append failed", res.status, body);
+      console.error("Sheets append failed", res.status);
       throw new Error(`Sheets append failed: ${res.status}`);
     }
 
-    return { ok: true };
+    return { ok: true, bookingReference };
   });
 
 const bookingSchema = z.object({
   email: z.string().email().max(255),
-  eventUri: z.string().max(500).optional().default(""),
-  startTime: z.string().max(100).optional().default(""),
+  bookingReference: z.string().uuid(),
+  eventUri: z
+    .string()
+    .max(500)
+    .regex(/^https:\/\/api\.calendly\.com\/scheduled_events\/[A-Za-z0-9_-]+$/),
+  startTime: z
+    .union([z.literal(""), z.string().datetime({ offset: true })])
+    .optional()
+    .default(""),
 });
 
 export const markLeadBooked = createServerFn({ method: "POST" })
@@ -196,12 +228,12 @@ export const markLeadBooked = createServerFn({ method: "POST" })
   .handler(async ({ data }) => {
     const headers = await sheetsHeaders();
 
-    // Find the most recent row matching this email (column C).
-    const readUrl = `${SHEETS_API}/${SHEET_ID}/values/'${SHEET_NAME}'!C:C`;
+    // Only update a row whose email AND server-issued opaque receipt match.
+    // A browser scheduling report is not an independent provider/webhook verification.
+    const readUrl = `${SHEETS_API}/${SHEET_ID}/values/'${SHEET_NAME}'!C:P`;
     const readRes = await fetch(readUrl, { headers });
     if (!readRes.ok) {
-      const body = await readRes.text();
-      console.error("Sheets read failed", readRes.status, body);
+      console.error("Sheets read failed", readRes.status);
       throw new Error(`Sheets read failed: ${readRes.status}`);
     }
     const readJson = (await readRes.json()) as { values?: string[][] };
@@ -211,14 +243,14 @@ export const markLeadBooked = createServerFn({ method: "POST" })
     const target = data.email.trim().toLowerCase();
     for (let i = values.length - 1; i >= 0; i--) {
       const cell = (values[i]?.[0] ?? "").trim().toLowerCase();
-      if (cell === target) {
+      if (cell === target && values[i]?.[13] === data.bookingReference) {
         rowIndex = i + 1;
         break;
       }
     }
 
     if (rowIndex < 1) {
-      console.warn("markLeadBooked: no matching email row", data.email);
+      console.warn("markLeadBooked: no matching inquiry receipt");
       return { ok: false, reason: "not_found" as const };
     }
 
@@ -239,11 +271,11 @@ export const markLeadBooked = createServerFn({ method: "POST" })
       method: "POST",
       headers,
       body: JSON.stringify({
-        valueInputOption: "USER_ENTERED",
+        valueInputOption: "RAW",
         data: [
           {
             range: `'${SHEET_NAME}'!G${rowIndex}`,
-            values: [["Consultation Booked"]],
+            values: [["Booking reported — verify Calendly"]],
           },
           {
             range: `'${SHEET_NAME}'!L${rowIndex}:O${rowIndex}`,
@@ -254,8 +286,7 @@ export const markLeadBooked = createServerFn({ method: "POST" })
     });
 
     if (!updateRes.ok) {
-      const body = await updateRes.text();
-      console.error("Sheets update failed", updateRes.status, body);
+      console.error("Sheets update failed", updateRes.status);
       throw new Error(`Sheets update failed: ${updateRes.status}`);
     }
 

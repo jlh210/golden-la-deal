@@ -1,3 +1,4 @@
+import { listingImageProps } from "@/lib/listing-images";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowLeft, MapPin, Ruler, Phone, ArrowRight, Sparkles, Check } from "lucide-react";
@@ -15,8 +16,18 @@ export const Route = createFileRoute("/restaurants-for-sale/$slug")({
   head: ({ params, loaderData }) => {
     const l = loaderData?.listing;
     const url = `https://www.penthouseadvisors.com/restaurants-for-sale/${params.slug}`;
-    if (!l) return { meta: [{ title: "Listing — Penthouse Advisors" }], links: [{ rel: "canonical", href: url }] };
-    const desc = l.description ?? l.longDescription?.[0] ?? l.title;
+    if (!l)
+      return {
+        meta: [{ title: "Listing — Penthouse Advisors" }],
+        links: [{ rel: "canonical", href: url }],
+      };
+    const conciseDescriptions: Record<string, string> = {
+      "westwood-santa-monica-restaurant-asset-sale":
+        "Explore an equipped restaurant asset sale at Westwood and Santa Monica Boulevards in Los Angeles, with parking and access to public transportation.",
+      "dental-office-for-lease":
+        "Explore doctor, therapy and plumbed dental office space for lease in West LA. Review room configurations, asking rent and the listing’s lease requirements.",
+    };
+    const desc = conciseDescriptions[l.slug] ?? l.description ?? l.longDescription?.[0] ?? l.title;
     const image = l.images?.[0];
     return {
       meta: [
@@ -28,8 +39,18 @@ export const Route = createFileRoute("/restaurants-for-sale/$slug")({
         { property: "og:type", content: "article" },
         ...(image
           ? [
-              { property: "og:image", content: image },
-              { name: "twitter:image", content: image },
+              {
+                property: "og:image",
+                content: new URL(listingImageProps(image).src, "https://www.penthouseadvisors.com")
+                  .href,
+              },
+              { property: "og:image:alt", content: l.title },
+              {
+                name: "twitter:image",
+                content: new URL(listingImageProps(image).src, "https://www.penthouseadvisors.com")
+                  .href,
+              },
+              { name: "twitter:image:alt", content: l.title },
             ]
           : []),
       ],
@@ -112,7 +133,10 @@ function ListingDetail() {
         <section className="container-x pb-8">
           <div className="overflow-hidden rounded-2xl border border-border bg-card">
             <img
-              src={l.images[active]}
+              {...listingImageProps(
+                l.images[active],
+                "(max-width: 1279px) calc(100vw - 40px), 1200px",
+              )}
               alt={`${l.title} ${active + 1}`}
               className="w-full h-[280px] md:h-[560px] object-cover"
             />
@@ -128,7 +152,7 @@ function ListingDetail() {
                   }`}
                 >
                   <img
-                    src={src}
+                    {...listingImageProps(src)}
                     alt={`${l.title} thumb ${i + 1}`}
                     className="h-20 md:h-28 w-full object-cover"
                     loading="lazy"
@@ -159,9 +183,7 @@ function ListingDetail() {
 
           {l.sections?.map((s) => (
             <div key={s.heading} className="rounded-xl border border-border bg-card p-6 md:p-8">
-              <h2 className="text-xl md:text-2xl font-display font-bold text-gold">
-                {s.heading}
-              </h2>
+              <h2 className="text-xl md:text-2xl font-display font-bold text-gold">{s.heading}</h2>
               <p className="mt-2 text-foreground/85 leading-relaxed">{s.body}</p>
               {s.bullets && (
                 <ul className="mt-4 grid gap-2 sm:grid-cols-2">
@@ -191,9 +213,7 @@ function ListingDetail() {
           <div className="rounded-2xl border border-gold/40 bg-card p-6 shadow-elegant">
             {l.price && (
               <>
-                <div className="text-xs uppercase tracking-wider text-muted-foreground">
-                  Price
-                </div>
+                <div className="text-xs uppercase tracking-wider text-muted-foreground">Price</div>
                 <div className="mt-1 text-3xl font-display font-extrabold text-gold tabular-nums leading-tight">
                   {l.price}
                 </div>
@@ -245,8 +265,8 @@ function ListingDetail() {
               Inquire about {l.title}
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Send a private inquiry on this specific property. We'll respond same business day
-              with next steps, NDA, and any financials available.
+              Send a private inquiry on this specific property. We'll respond same business day with
+              next steps, NDA, and any financials available.
             </p>
             <ul className="mt-5 space-y-2 text-sm text-foreground/85">
               <li className="flex items-start gap-2">
@@ -255,13 +275,18 @@ function ListingDetail() {
               {l.price && (
                 <li className="flex items-start gap-2">
                   <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-gold shrink-0" />
-                  <span><span className="font-semibold">{l.price}</span>
-                    {l.priceNote ? ` · ${l.priceNote}` : ""}</span>
+                  <span>
+                    <span className="font-semibold">{l.price}</span>
+                    {l.priceNote ? ` · ${l.priceNote}` : ""}
+                  </span>
                 </li>
               )}
               <li className="flex items-start gap-2">
                 <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-gold shrink-0" />
-                <span>{l.leaseType}{l.sqft ? ` · ${l.sqft}` : ""}</span>
+                <span>
+                  {l.leaseType}
+                  {l.sqft ? ` · ${l.sqft}` : ""}
+                </span>
               </li>
             </ul>
           </div>
@@ -282,7 +307,9 @@ function ListingDetail() {
                     defaultValue=""
                     className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-gold focus:outline-none"
                   >
-                    <option value="" disabled>Select one…</option>
+                    <option value="" disabled>
+                      Select one…
+                    </option>
                     <option value="Ready now">Ready now</option>
                     <option value="30-60 days">30-60 days</option>
                     <option value="60-90 days">60-90 days</option>
@@ -296,7 +323,9 @@ function ListingDetail() {
                     defaultValue=""
                     className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-gold focus:outline-none"
                   >
-                    <option value="" disabled>Select one…</option>
+                    <option value="" disabled>
+                      Select one…
+                    </option>
                     <option value="Cash">Cash</option>
                     <option value="SBA / bank">SBA / bank</option>
                     <option value="Seller financing needed">Seller financing needed</option>
@@ -323,7 +352,7 @@ function ListingDetail() {
                 <div className="h-36 bg-muted overflow-hidden">
                   {o.images?.[0] ? (
                     <img
-                      src={o.images[0]}
+                      {...listingImageProps(o.images[0])}
                       alt={o.title}
                       className="h-full w-full object-cover transition group-hover:scale-105"
                       loading="lazy"

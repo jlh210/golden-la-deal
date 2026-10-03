@@ -1,0 +1,155 @@
+{
+  "/__l5e/assets-v1/74fb9b75-76ee-4c62-87de-86c044bf5038/dental-office-for-lease.png": {
+    "originalBytes": 796358,
+    "variants": [
+      {
+        "url": "/images/listings/dental-office-for-lease-640.webp",
+        "width": 640,
+        "height": 611,
+        "bytes": 46070
+      },
+      {
+        "url": "/images/listings/dental-office-for-lease-1280.webp",
+        "width": 828,
+        "height": 791,
+        "bytes": 68152
+      }
+    ]
+  },
+  "/__l5e/assets-v1/394331f4-696d-4d9c-8db8-88db9b99b4d4/santa-monica-1.png": {
+    "originalBytes": 938782,
+    "variants": [
+      {
+        "url": "/images/listings/santa-monica-1-640.webp",
+        "width": 640,
+        "height": 480,
+        "bytes": 33520
+      },
+      {
+        "url": "/images/listings/santa-monica-1-1280.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 66894
+      }
+    ]
+  },
+  "/__l5e/assets-v1/c04c32bc-a3ca-429d-b468-e7ad0b2e1ef5/santa-monica-2.png": {
+    "originalBytes": 1101959,
+    "variants": [
+      {
+        "url": "/images/listings/santa-monica-2-640.webp",
+        "width": 640,
+        "height": 480,
+        "bytes": 46670
+      },
+      {
+        "url": "/images/listings/santa-monica-2-1280.webp",
+        "width": 1024,
+        "height": 768,
+        "bytes": 89666
+      }
+    ]
+  },
+  "/__l5e/assets-v1/c297f29c-8b36-4f9f-8d2a-888f9b5cc29a/wilshire-3.png": {
+    "originalBytes": 2136512,
+    "variants": [
+      {
+        "url": "/images/listings/wilshire-3-640.webp",
+        "width": 640,
+        "height": 853,
+        "bytes": 63366
+      },
+      {
+        "url": "/images/listings/wilshire-3-1280.webp",
+        "width": 1152,
+        "height": 1536,
+        "bytes": 169702
+      }
+    ]
+  },
+  "/__l5e/assets-v1/4616d007-94f4-44e9-b3af-28bfa3f0aa44/wilshire-1.png": {
+    "originalBytes": 1699753,
+    "variants": [
+      {
+        "url": "/images/listings/wilshire-1-640.webp",
+        "width": 640,
+        "height": 853,
+        "bytes": 38154
+      },
+      {
+        "url": "/images/listings/wilshire-1-1280.webp",
+        "width": 1152,
+        "height": 1536,
+        "bytes": 80768
+      }
+    ]
+  },
+  "/__l5e/assets-v1/d4007413-d0c2-4def-9c26-a773eaae0ffc/wilshire-2.png": {
+    "originalBytes": 2026580,
+    "variants": [
+      {
+        "url": "/images/listings/wilshire-2-640.webp",
+        "width": 640,
+        "height": 853,
+        "bytes": 47172
+      },
+      {
+        "url": "/images/listings/wilshire-2-1280.webp",
+        "width": 1152,
+        "height": 1536,
+        "bytes": 108490
+      }
+    ]
+  },
+  "/__l5e/assets-v1/f27b994a-6f7b-4c9c-96f9-6ce991f41f69/wilshire-4.png": {
+    "originalBytes": 2587540,
+    "variants": [
+      {
+        "url": "/images/listings/wilshire-4-640.webp",
+        "width": 640,
+        "height": 853,
+        "bytes": 112462
+      },
+      {
+        "url": "/images/listings/wilshire-4-1280.webp",
+        "width": 1152,
+        "height": 1536,
+        "bytes": 321978
+      }
+    ]
+  },
+  "/__l5e/assets-v1/e723f71a-0cda-49a6-a63d-80944a78f1f3/hardware-storefront.png": {
+    "originalBytes": 1173949,
+    "variants": [
+      {
+        "url": "/images/listings/hardware-storefront-640.webp",
+        "width": 640,
+        "height": 853,
+        "bytes": 80042
+      },
+      {
+        "url": "/images/listings/hardware-storefront-1280.webp",
+        "width": 750,
+        "height": 1000,
+        "bytes": 108508
+      }
+    ]
+  },
+  "/__l5e/assets-v1/a00ce87b-dc9b-4b81-ba07-109d2135d548/hardware-aisle.png": {
+    "originalBytes": 1356104,
+    "variants": [
+      {
+        "url": "/images/listings/hardware-aisle-640.webp",
+        "width": 640,
+        "height": 853,
+        "bytes": 120998
+      },
+      {
+        "url": "/images/listings/hardware-aisle-1280.webp",
+        "width": 750,
+        "height": 1000,
+        "bytes": 165364
+      }
+    ]
+  }
+}

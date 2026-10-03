@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /?p=
+Disallow: /*?p=
+Disallow: /*?replytocom=
+
+Sitemap: https://www.penthouseadvisors.com/sitemap.xml
