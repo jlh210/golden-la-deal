@@ -1,0 +1,78 @@
+{
+  "period": {
+    "start": "2026-09-02",
+    "end": "2026-09-29",
+    "days": 28,
+    "note": "Latest complete 28-day period shown by Search Console during review; predates October 4 deployment. Not the exact 28 days immediately before launch."
+  },
+  "property": "sc-domain:penthouseadvisors.com",
+  "searchType": "Web (text)",
+  "country": "All",
+  "device": "All",
+  "allQueries": {
+    "clicks": 20,
+    "impressions": 1066,
+    "ctrPercent": 1.9,
+    "averagePosition": 27.6
+  },
+  "nonBranded": {
+    "excludeRegex": "(?i)penthouse|pent house|paticchio|roschard|rosanna|richard stein|jamal ali joseph|jeremie campbell",
+    "clicks": 1,
+    "impressions": 722,
+    "ctrDisplayedPercent": 0.1,
+    "averagePosition": 33.4,
+    "caveat": "Filtered totals are partial; anonymous queries are omitted. Non-branded does not mean commercially relevant; unrelated location queries remain."
+  },
+  "nonBrandedPages": [
+    {
+      "url": "/restaurants-for-sale",
+      "clicks": 0,
+      "impressions": 346,
+      "position": 21.5
+    },
+    {
+      "url": "/liquor-license-for-sale",
+      "clicks": 0,
+      "impressions": 194,
+      "position": 38.2
+    },
+    {
+      "url": "/search-door-knocking",
+      "clicks": 1,
+      "impressions": 17,
+      "position": 22.7
+    }
+  ],
+  "licenseQuerySample": [
+    {
+      "query": "liquor license for sale ca",
+      "clicks": 0,
+      "impressions": 18,
+      "position": 36.1
+    },
+    {
+      "query": "type 48 liquor license for sale",
+      "clicks": 0,
+      "impressions": 17,
+      "position": 33.1
+    },
+    {
+      "query": "california liquor license for sale",
+      "clicks": 0,
+      "impressions": 16,
+      "position": 36.9
+    },
+    {
+      "query": "type 47 liquor license for sale",
+      "clicks": 0,
+      "impressions": 14,
+      "position": 26.2
+    }
+  ],
+  "qualifiedInquiryBaseline": {
+    "websiteInquiries": null,
+    "qualifiedInquiries": null,
+    "organicQualifiedInquiries": null,
+    "status": "Aggregate counts requested from owner. No customer records inspected; not inferred from clicks or bookings."
+  }
+}

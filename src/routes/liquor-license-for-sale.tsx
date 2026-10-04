@@ -1,125 +1,136 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Wine, ArrowRight } from "lucide-react";
 import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
-
 import { breadcrumbScript } from "@/lib/seo";
+
+const title = "California Type 47 Liquor License Inquiries | Penthouse Advisors";
+const description =
+  "Looking for a Type 47 liquor license in Los Angeles? Discuss availability, your proposed location and transfer questions with Penthouse Advisors.";
+
 export const Route = createFileRoute("/liquor-license-for-sale")({
   head: () => ({
     meta: [
-      { title: "Liquor License For Sale - Type 47 ABC License | Penthouse Advisors" },
-      {
-        name: "description",
-        content:
-          "Active California ABC liquor licenses available for purchase. Vetted, transferable, all-in pricing. Type 47 Hard Liquor available now.",
-      },
-      { property: "og:title", content: "Liquor License For Sale - Penthouse Advisors" },
-      {
-        property: "og:description",
-        content: "Active California ABC liquor licenses available for transfer.",
-      },
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
       { property: "og:url", content: "https://www.penthouseadvisors.com/liquor-license-for-sale" },
     ],
-    links: [{ rel: "canonical", href: "https://www.penthouseadvisors.com/liquor-license-for-sale" }],
+    links: [
+      { rel: "canonical", href: "https://www.penthouseadvisors.com/liquor-license-for-sale" },
+    ],
     scripts: [
-      breadcrumbScript([{name:"Home",path:"/"},{name:'Liquor Licenses For Sale',path:'/liquor-license-for-sale'}]),
+      breadcrumbScript([
+        { name: "Home", path: "/" },
+        { name: "Liquor License Inquiries", path: "/liquor-license-for-sale" },
+      ]),
     ],
   }),
   component: LiquorLicenseForSale,
 });
 
-type License = {
-  id: string;
-  type: string;
-  licenseNumber: string;
-  status: "Active" | "Inactive";
-  issued: string;
-  expires: string;
-  restrictions: string;
-  history: string;
-  price: string;
-  priceNote: string;
-};
-
-const licenses: License[] = [
-  {
-    id: "LL-001",
-    type: "Type 47 - Hard Liquor",
-    licenseNumber: "47-525737",
-    status: "Active",
-    issued: "March 14, 2014",
-    expires: "March 31, 2026",
-    restrictions: "None",
-    history: "No disciplinary history",
-    price: "$85,650",
-    priceNote: "All In",
-  },
-];
-
 function LiquorLicenseForSale() {
   return (
     <SiteLayout>
       <PageHero
-        eyebrow="Liquor License For Sale"
-        title="Active ABC licenses"
-        accent="available for transfer."
-        subtitle="Fully vetted California ABC liquor licenses available for purchase and transfer. All-in pricing includes our processing fee, state payment, mailing, Live Scan, and notary."
+        eyebrow="California liquor license inquiries"
+        title="Looking for a Type 47 liquor license"
+        accent="in Los Angeles?"
+        subtitle="Discuss your proposed restaurant location, license needs and purchase questions with Penthouse Advisors. Confirm current availability and terms before relying on a quoted opportunity."
       />
-
       <section className="container-x py-12 md:py-16">
-        <div className="grid gap-6 lg:grid-cols-2">
-          {licenses.map((l) => (
-            <article key={l.id} className="rounded-2xl border border-gold/40 bg-card overflow-hidden shadow-elegant">
-              <div className="bg-gradient-to-br from-muted to-card p-7 border-b border-border flex items-start justify-between">
-                <div>
-                  <div className="grid h-12 w-12 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30">
-                    <Wine className="h-6 w-6" />
-                  </div>
-                  <h2 className="mt-4 text-2xl font-display font-bold">{l.type}</h2>
-                  <p className="mt-1 text-sm text-muted-foreground">License #{l.licenseNumber}</p>
-                </div>
-                <span className={`rounded-full border px-3 py-1 text-xs font-semibold ${
-                  l.status === "Active"
-                    ? "bg-gold/15 text-gold border-gold/40"
-                    : "bg-destructive/15 text-destructive border-destructive/30"
-                }`}>
-                  {l.status}
-                </span>
-              </div>
-              <div className="p-7 grid grid-cols-2 gap-5 text-sm">
-                <Spec label="Original Issue Date" value={l.issued} />
-                <Spec label="Expiration Date" value={l.expires} />
-                <Spec label="Operating Restrictions" value={l.restrictions} />
-                <Spec label="Disciplinary History" value={l.history} />
-              </div>
-              <div className="border-t border-border p-7 flex flex-wrap items-end justify-between gap-4">
-                <div>
-                  <div className="text-3xl font-display font-extrabold text-gold">{l.price}</div>
-                  <div className="text-xs uppercase tracking-wider text-gold/70 mt-1">{l.priceNote}</div>
-                </div>
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center gap-2 rounded-md bg-gold-gradient px-5 py-3 text-sm font-bold text-charcoal-deep shadow-gold"
-                >
-                  Inquire <ArrowRight className="h-4 w-4" />
+        <div className="rounded-2xl border border-gold/40 bg-card p-7 md:p-10">
+          <h2 className="text-2xl font-display font-bold">Confirm current license availability</h2>
+          <p className="mt-3 max-w-3xl text-muted-foreground">
+            We are not displaying a verified license-for-sale offer on this page at present. Contact
+            us with your proposed address or area, restaurant concept and target timing to discuss
+            your search and the information needed to evaluate an opportunity.
+          </p>
+          <Link
+            to="/contact"
+            search={{ service: "Type 47 liquor license inquiry" }}
+            className="mt-5 inline-flex rounded-md bg-gold-gradient px-5 py-3 text-sm font-bold text-charcoal-deep"
+          >
+            Ask about Type 47 license availability
+          </Link>
+        </div>
+        <div className="mt-12 grid gap-10 md:grid-cols-2">
+          <section>
+            <h2 className="text-2xl font-display font-bold">What is a Type 47 liquor license?</h2>
+            <p className="mt-3 text-muted-foreground">
+              California ABC classifies Type 47 as On-Sale General — Eating Place. It is a
+              restaurant license permitting beer, wine and distilled spirits for consumption on the
+              licensed premises. The business must operate as a bona fide eating place.
+            </p>
+            <a
+              href="https://www.abc.ca.gov/licensing/license-types/"
+              className="mt-4 inline-block underline"
+            >
+              Read California ABC’s official license-type descriptions
+            </a>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold">
+              How do I check a license before buying?
+            </h2>
+            <p className="mt-3 text-muted-foreground">
+              Start with the exact license number. Review its current status and record in ABC’s
+              official lookup, and ask about the proposed premises, conditions, transfer process and
+              itemized costs. A purchase inquiry does not establish transfer approval.
+            </p>
+            <a
+              href="https://www.abc.ca.gov/licensing/license-lookup/"
+              className="mt-4 inline-block underline"
+            >
+              Check the official ABC license record
+            </a>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold">What does a Type 47 license cost?</h2>
+            <p className="mt-3 text-muted-foreground">
+              Request a current written quote for the specific opportunity. Ask what the quoted
+              amount includes, which fees are separate and what conditions apply. No current license
+              purchase price is confirmed on this page.
+            </p>
+          </section>
+          <section>
+            <h2 className="text-2xl font-display font-bold">
+              Planning a restaurant purchase or transfer?
+            </h2>
+            <p className="mt-3 text-muted-foreground">
+              Connect your license questions with the restaurant and location you are considering.
+              These resources explain the topics to discuss with your advisor.
+            </p>
+            <ul className="mt-4 space-y-3">
+              <li>
+                <Link to="/alcohol-licensing" className="underline">
+                  Restaurant ABC licensing services
                 </Link>
-              </div>
-            </article>
-          ))}
+              </li>
+              <li>
+                <Link
+                  to="/help/$category/$slug"
+                  params={{ category: "alcohol-licensing", slug: "abc-license-transfer-guide" }}
+                  className="underline"
+                >
+                  ABC license transfer guide
+                </Link>
+              </li>
+              <li>
+                <Link to="/restaurants-for-sale" className="underline">
+                  Restaurants and businesses for sale
+                </Link>
+              </li>
+            </ul>
+          </section>
         </div>
       </section>
-
-      <CTASection serviceNeeded={"Liquor license for sale"} title="Looking for a specific license type?" body="Tell us your tract and we'll source a transferable license that fits." />
+      <CTASection
+        serviceNeeded="Type 47 liquor license inquiry"
+        title="Discuss your restaurant’s license needs."
+        body="Share your proposed location, concept and timing so we can identify the questions to review."
+      />
     </SiteLayout>
-  );
-}
-
-function Spec({ label, value }: { label: string; value: string }) {
-  return (
-    <div>
-      <div className="text-xs uppercase tracking-wider text-muted-foreground">{label}</div>
-      <div className="mt-1 font-semibold">{value}</div>
-    </div>
   );
 }

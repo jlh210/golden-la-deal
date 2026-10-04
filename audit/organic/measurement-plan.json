@@ -1,0 +1,24 @@
+{
+  "primaryMetrics": [
+    "Non-branded search clicks using the fixed exclusion regex",
+    "Qualified website inquiries, assessed by owner",
+    "Organic-attributed qualified inquiries only where source is known"
+  ],
+  "qualifiedDefinition": "Unique, non-spam inquiry for an offered service in the service area, with a stated transaction need and enough information for an advisor follow-up. Owner confirms business qualification; budget or purchase readiness is not inferred from a pageview.",
+  "deduplication": "Owner deduplicates repeat inquiries about the same opportunity within reporting window; supply aggregate counts only.",
+  "cadence": "Manual weekly review, then compare complete 28-day periods. No automatic monitoring scheduled.",
+  "firstPostLaunchWindow": {
+    "start": "2026-10-05",
+    "end": "2026-11-01",
+    "note": "Measures October 4 deployed release only; annotate any later optimization publication separately. Wait until GSC data for the full window is available."
+  },
+  "comparison": [
+    "Use same property, Web (text), country/device scope and brand regex.",
+    "Report absolute click change; do not calculate percentage growth against zero for page-level baseline.",
+    "Report impressions, position and CTR alongside clicks; compare relevant restaurant/Type 47 query groups separately from irrelevant queries.",
+    "Do not equate Search Console clicks to sessions or claim causal attribution from before/after alone.",
+    "Qualified-inquiry counts remain unavailable until owner supplies aggregates; do not call a conversion rate valid without matched attribution and denominator."
+  ],
+  "tracking": "No new analytics account, tracking code, consent changes or lead-field changes. Existing Cloudflare visitor analytics retained.",
+  "dataLimits": "Historical search queries cannot be connected to individual customers using this data."
+}

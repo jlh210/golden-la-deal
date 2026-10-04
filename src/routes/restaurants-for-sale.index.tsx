@@ -14,12 +14,13 @@ export const Route = createFileRoute("/restaurants-for-sale/")({
       {
         name: "description",
         content:
-          "Current LA restaurants for sale and restaurant asset sales. Turnkey concepts, hoods, lease assignments. Updated weekly.",
+          "Browse Los Angeles restaurant asset sales, business opportunities and spaces for lease. Compare asking prices, equipment and locations; inquire about availability.",
       },
       { property: "og:title", content: "LA Restaurants For Sale - Penthouse Advisors" },
       {
         property: "og:description",
-        content: "Turnkey restaurants and asset sales across Los Angeles County.",
+        content:
+          "Compare restaurant asset sales and spaces for lease in Los Angeles County. Review asking prices, equipment and locations.",
       },
       { property: "og:url", content: "https://www.penthouseadvisors.com/restaurants-for-sale" },
     ],
@@ -67,9 +68,9 @@ function ListingsPage() {
     <>
       <PageHero
         eyebrow="Live Opportunities"
-        title="Restaurants & Businesses for Sale/Lease in Los Angeles, with"
-        accent="Penthouse Advisors Inc."
-        subtitle="Live restaurant and business listings across Los Angeles. Off-market deals available by direct request."
+        title="Restaurants for sale in Los Angeles"
+        accent="& selected business and lease opportunities."
+        subtitle="Compare restaurant asset sales, selected businesses and spaces for lease across Los Angeles County. Review each listing’s asking price, equipment and location, then confirm availability with an advisor."
       />
 
       <section className="container-x py-12 md:py-16">
@@ -227,6 +228,42 @@ function ListingsPage() {
           <ListingsMap />
         </div>
 
+        <section className="mt-14 grid gap-8 md:grid-cols-2" aria-label="Restaurant buyer guidance">
+          <div>
+            <h2 className="text-2xl font-display font-bold">
+              What is included in a restaurant asset sale?
+            </h2>
+            <p className="mt-3 text-muted-foreground">
+              Review the individual listing for the equipment, fixtures and other assets offered. An
+              asset sale is different from purchasing the real estate. Ask which items are included
+              and review the lease and licensing questions before making an offer.
+            </p>
+            <Link
+              to="/help/$category/$slug"
+              params={{
+                category: "buying-a-restaurant",
+                slug: "how-to-buy-a-restaurant-in-los-angeles",
+              }}
+              className="mt-4 inline-block underline"
+            >
+              Read the Los Angeles restaurant buying guide
+            </Link>
+          </div>
+          <div>
+            <h2 className="text-2xl font-display font-bold">
+              How do I compare restaurant opportunities?
+            </h2>
+            <p className="mt-3 text-muted-foreground">
+              Start with your budget, preferred area and concept. Compare the asking price, rent,
+              available space and equipment, then identify what needs review with the seller,
+              landlord and relevant agencies. A listing is a starting point for due diligence.
+            </p>
+            <Link to="/buy-a-restaurant" className="mt-4 inline-block underline">
+              Explore restaurant buyer representation
+            </Link>
+          </div>
+        </section>
+
         <div className="mt-14 rounded-2xl border border-gold/40 bg-card p-8 md:p-10 text-center">
           <h2 className="text-2xl md:text-3xl font-display font-bold">
             Looking for something specific?
@@ -235,6 +272,19 @@ function ListingsPage() {
             Tell us your budget, area, and concept - we'll source it off-market.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <Link
+              to="/contact"
+              search={{ service: "Restaurant purchase inquiry" }}
+              className="inline-flex items-center gap-2 rounded-md bg-gold-gradient px-6 py-3 text-sm font-bold text-charcoal-deep"
+            >
+              Discuss your restaurant search
+            </Link>
+            <Link
+              to="/off-market-sourcing"
+              className="inline-flex items-center gap-2 rounded-md border border-gold/40 px-6 py-3 text-sm font-semibold"
+            >
+              Explore off-market restaurant sourcing
+            </Link>
             <a
               href={PHONE_HREF}
               className="inline-flex items-center gap-2 rounded-md border border-gold/40 px-6 py-3 text-sm font-semibold hover:bg-gold/10"

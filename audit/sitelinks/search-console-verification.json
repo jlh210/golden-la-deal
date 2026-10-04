@@ -1,0 +1,11 @@
+{
+  "status": "Ownership verified",
+  "method": "Domain name provider / TXT",
+  "domain": "penthouseadvisors.com",
+  "account": "jlh21001@gmail.com",
+  "record": "google-site-verification=DSkFU0xVMUpL2iCmOrlWkwx2SHRHSoMuFquCtr_jOKQ",
+  "dnsProvider": "Cloudflare",
+  "existingRecordsPreserved": true,
+  "evidence": "Cloudflare table showed saved TXT; Google displayed Ownership verified; Penthouse reports opened successfully.",
+  "note": "Retain TXT record to maintain verification. No sitemap submission or indexing request performed."
+}

@@ -304,7 +304,7 @@ function HomePage() {
                 </ul>
                 <EditorialLink to="/buy-a-restaurant">Explore Buying a Restaurant</EditorialLink>
                 <Link to="/restaurants-for-sale" className="pa-secondary-link">
-                  View available opportunities
+                  View restaurants and businesses for sale
                 </Link>
               </article>
               <article>

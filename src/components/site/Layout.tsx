@@ -21,7 +21,7 @@ const serviceGroups = [
     links: [
       ["/buy-a-restaurant", "Restaurant Acquisitions"],
       ["/sell-your-restaurant", "Restaurant Dispositions"],
-      ["/restaurants-for-sale", "Available Opportunities"],
+      ["/restaurants-for-sale", "Restaurants & Businesses for Sale"],
       ["/business-investigations", "Due Diligence"],
       ["/off-market-sourcing", "Off-Market Sourcing"],
       ["/restaurant-consulting", "Restaurant Consulting"],
@@ -215,7 +215,7 @@ function Footer() {
               {[
                 ["/buy-a-restaurant", "Buy a Restaurant"],
                 ["/sell-your-restaurant", "Sell a Restaurant"],
-                ["/restaurants-for-sale", "Available Opportunities"],
+                ["/restaurants-for-sale", "Restaurants & Businesses for Sale"],
                 ["/restaurant-leasing", "Restaurant Leasing"],
                 ["/alcohol-licensing", "ABC Licensing"],
                 ["/health-permitting", "Restaurant Permitting"],

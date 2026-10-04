@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-04T22:15:38.654573+00:00",
+  "property": "sc-domain:penthouseadvisors.com",
+  "url": "https://www.penthouseadvisors.com/sitemap.xml",
+  "submission": "Google confirmed Sitemap submitted successfully",
+  "processing": "SUCCESS: Search Console reports Sitemap, Success, 49 discovered pages, last read Oct 4 2026 after resubmission.",
+  "publicChecks": {
+    "status": 200,
+    "contentType": "application/xml",
+    "uniqueCanonicalUrls": 49,
+    "browserAndGooglebotUserAgent": "Both returned 200/XML/49 URLs. A spoofed user-agent does not prove access by real Google crawlers."
+  },
+  "nextStep": "Monitor indexing of intended pages; sitemap success does not establish indexing or ranking.",
+  "existingSubmissions": "Preserved; no old sitemap removed",
+  "websiteChanges": "None in this turn",
+  "resolution": {
+    "liveInspection": "Google Inspection Tool smartphone: crawl allowed Yes, page fetch Successful, tested Oct 4 2026 15:18:14 Pacific",
+    "action": "Resubmitted identical URL after successful live test",
+    "configurationChanges": "None required; no firewall or robots relaxation",
+    "rootCause": "Not established; initial report failure resolved after successful test/resubmission."
+  }
+}

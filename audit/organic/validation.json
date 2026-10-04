@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "build": "PASS",
+  "typescript": "PASS",
+  "changedFileLint": "PASS",
+  "routes": 64,
+  "sitemapUrls": 49,
+  "changedMainContentPaths": [
+    "/",
+    "/restaurants-for-sale",
+    "/buy-a-restaurant",
+    "/liquor-license-for-sale"
+  ],
+  "preservation": "All statuses, canonicals, robots and sitemap inclusion unchanged. All main-page fingerprints outside four authorized paths unchanged.",
+  "accuracy": "Unsupported license-number/price offer absent; official resource links and direct answers present.",
+  "liveSubmissions": "None"
+}

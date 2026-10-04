@@ -1,0 +1,14 @@
+{
+  "source": "https://www.abc.ca.gov/licensing/license-lookup/single-license/?RPTTYPE=12&LICENSE=525737",
+  "method": "Official public ABC lookup viewed in browser",
+  "checkedDate": "2026-10-04",
+  "license": "525737",
+  "type": "47 - ON-SALE GENERAL EATING PLACE",
+  "status": "CANCELED",
+  "statusDate": "2015-12-29",
+  "expiration": "2016-11-30",
+  "restrictions": "Operating restrictions exist",
+  "originalIssueDate": "2013-06-21",
+  "siteMismatch": "Previous page advertised Active, March 14 2014 original issue, March 31 2026 expiry and no restrictions.",
+  "action": "Removed unsupported active-offer card from local revision; preserved public URL, replaced with inquiry guidance and official sources. No replacement license number or offer invented. Correct current sale listing remains owner-dependent."
+}

@@ -1,0 +1,119 @@
+{
+  "status": "Local improvements prepared; not deployed",
+  "sources": [
+    "https://developers.google.com/search/docs/appearance/sitelinks",
+    "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+    "https://developers.google.com/search/docs/appearance/ai-features"
+  ],
+  "limitations": [
+    "Google selects sitelinks automatically; no guarantee of appearance, order, clicks or rankings.",
+    "Attached screenshot unavailable due filesystem permission; no claim about its contents."
+  ],
+  "localChanges": [
+    "Replace vague Available Opportunities labels in service menu and footer with Restaurants & Businesses for Sale.",
+    "Clarify homepage listing-link text.",
+    "Add relevant buyer-page link to off-market sourcing, previously lacking a main-body incoming link in crawl."
+  ],
+  "preserved": [
+    "Existing URLs, canonical rules, indexability, sitemap, approved pricing and site structure",
+    "No new schema claiming to control sitelinks; no tracking installation or search submissions"
+  ],
+  "priorityDestinations": [
+    {
+      "path": "/restaurants-for-sale",
+      "intent": "Browse available restaurant/business listings"
+    },
+    {
+      "path": "/buy-a-restaurant",
+      "intent": "Buyer representation"
+    },
+    {
+      "path": "/sell-your-restaurant",
+      "intent": "Seller representation"
+    },
+    {
+      "path": "/restaurant-leasing",
+      "intent": "Restaurant leasing"
+    },
+    {
+      "path": "/alcohol-licensing",
+      "intent": "ABC licensing"
+    },
+    {
+      "path": "/contact",
+      "intent": "Contact and consultation"
+    }
+  ],
+  "organicGrowthNextSteps": [
+    "Review Search Console indexing and Google-selected canonicals for key destinations; compare current 28 days with previous period and year-over-year when available.",
+    "Separate branded searches from non-branded restaurant sale, purchase, leasing, licensing and permitting queries; prioritize relevant pages with impressions but low clicks.",
+    "Improve existing service/guide answers based on observed questions; add verified firsthand examples, named expert review and authoritative sources where useful. Avoid unsupported claims and thin duplicate location pages.",
+    "Measure organic qualified inquiries alongside clicks; do not infer booking/payment conversion from pageviews.",
+    "Synchronize production-linked GitHub with the deployed release before publishing these local follow-up changes, to prevent an old automated build replacing current production."
+  ],
+  "aeo": "Google AI features use core SEO practices; prioritize indexable, crawlable pages, useful direct answers, clear authorship and internal links. Inclusion is not guaranteed.",
+  "searchConsoleAccess": {
+    "account": "jlh21001@gmail.com",
+    "property": "sc-domain:penthouseadvisors.com",
+    "status": "Ownership verified via authorized Cloudflare TXT record",
+    "performanceData": "Historical reports now accessible"
+  },
+  "searchConsoleBaseline": {
+    "period": "2026-06-30 through 2026-09-29",
+    "clicks": 63,
+    "impressions": 4579,
+    "ctr": "1.4%",
+    "averagePosition": 30.1,
+    "indexing": {
+      "indexed": 29,
+      "notIndexed": 36,
+      "alternateCanonical": 18,
+      "notFound": 12,
+      "redirect": 5,
+      "crawledNotIndexed": 1
+    },
+    "opportunities": [
+      {
+        "query": "los angeles restaurants for sale",
+        "clicks": 0,
+        "impressions": 201
+      },
+      {
+        "query": "los angeles county restaurants for sale",
+        "clicks": 0,
+        "impressions": 165
+      },
+      {
+        "query": "restaurants for sale in los angeles",
+        "clicks": 0,
+        "impressions": 128
+      },
+      {
+        "page": "https://www.penthouseadvisors.com/liquor-license-for-sale",
+        "clicks": 1,
+        "impressions": 1093
+      }
+    ],
+    "caveats": [
+      "Historical figures predate deployment; not a measurement of release impact.",
+      "Canonical alternates and redirects may be intentional; exclusion count is not a count of SEO errors.",
+      "Query table omits some anonymized queries; displayed query clicks need not sum to report total."
+    ],
+    "existingSitemaps": [
+      {
+        "url": "https://penthouseadvisors.com/sitemap.xml",
+        "status": "Success",
+        "lastRead": "2026-06-30",
+        "discoveredPages": 25
+      },
+      {
+        "url": "https://penthouseadvisors.com/sitemap.rss",
+        "status": "1 error",
+        "lastRead": "2026-05-05",
+        "discoveredPages": 14
+      }
+    ],
+    "newSubmissions": "SUCCESS: www sitemap processed with 49 discovered pages after live fetch and resubmission. See sitemap-submission.json."
+  },
+  "currentWork": "See ../organic/baseline.json, measurement-plan.json and report.html for targeted local revisions and fixed pre-launch baseline."
+}
