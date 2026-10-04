@@ -11,23 +11,23 @@ import { useEffect, useState } from "react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors" },
+      { title: "Restaurant Business Broker Los Angeles, CA | Penthouse Advisors Inc." },
       {
         name: "description",
         content:
-          "Los Angeles restaurant brokerage, consulting, permitting, licensing, and ADA compliance. Buy, sell, lease, and license restaurants across LA County under one roof.",
+          "Penthouse Advisors Inc. is a restaurant business broker in Los Angeles, CA. Buy, sell, lease, and license restaurants across LA County, plus consulting, permitting, and ADA compliance under one roof.",
       },
-      { property: "og:title", content: "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors" },
+      { property: "og:title", content: "Restaurant Business Broker Los Angeles, CA | Penthouse Advisors Inc." },
       {
         property: "og:description",
         content:
-          "Restaurant brokerage, consulting, licensing, permitting, and ADA compliance for Los Angeles County. One firm, full service.",
+          "Restaurant business broker in Los Angeles, CA. Brokerage, consulting, licensing, permitting, and ADA compliance for LA County. One firm, full service.",
       },
       { property: "og:url", content: "https://www.penthouseadvisors.com" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors" },
-      { name: "twitter:description", content: "Restaurant brokerage, consulting, licensing, permitting & ADA compliance for LA County." },
+      { name: "twitter:title", content: "Restaurant Business Broker Los Angeles, CA | Penthouse Advisors Inc." },
+      { name: "twitter:description", content: "Restaurant business broker in Los Angeles, CA. Brokerage, consulting, licensing, permitting & ADA compliance for LA County." },
     ],
     links: [
       { rel: "canonical", href: "https://www.penthouseadvisors.com" },
