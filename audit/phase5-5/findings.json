@@ -1,0 +1,74 @@
+{
+  "checkedDate": "2026-10-04 America/Los_Angeles",
+  "baselineCommit": "59002c9",
+  "production": {
+    "provider": "Cloudflare Workers",
+    "accountName": "Jackie@jackiehickey.com's Account",
+    "accountId": "e9e9f1ee7c7d7826e013d47be606ba94",
+    "worker": "penthouse",
+    "environment": "production",
+    "domains": [
+      "penthouseadvisors.com",
+      "www.penthouseadvisors.com"
+    ],
+    "activeVersion": "8ec09e64-a134-4587-9525-c55e18e67f6c",
+    "versionNumber": 196,
+    "deploymentId": "9443e5e7-ac64-4aa7-a050-ec5650af5532",
+    "deployedLocalTime": "2026-10-04 11:59:13 America/Los_Angeles",
+    "priorVersion": "1aeeef6a-5f48-491e-97af-712d0c51b709",
+    "gitRevision": "NOT VERIFIED: version metadata has no git SHA",
+    "linkedRepository": "jlh210/golden-la-deal",
+    "localRepository": "jlh210/penthouseadvisors.com",
+    "buildCommand": "npm install && npm run build",
+    "deployCommand": "npx nitro deploy --prebuilt",
+    "versionCommand": "npx wrangler deploy",
+    "productionBranch": "main",
+    "warning": "Configured version command publishes, unlike versions upload. Do not invoke it as a read-only preview."
+  },
+  "otherHosting": {
+    "sites": "Connected Sites list exhausted; no Penthouse project. No .openai/hosting.json in checkout.",
+    "lovableProject": "0b604838-c031-4f20-b744-28614ecfedd1",
+    "lovableOwner": "jlh21001@gmail.com",
+    "lovableDomainStatus": "Both custom domains show Offline; not current custom-domain host.",
+    "lovableVisitorAnalytics": "Enabled in General settings",
+    "goldenLaDealWorker": "Separate Worker; no custom domains/routes. Do not confuse with penthouse."
+  },
+  "sheets": {
+    "runtimeSecretsPresent": [
+      "GOOGLE_SERVICE_ACCOUNT_EMAIL",
+      "GOOGLE_SERVICE_ACCOUNT_JSON_B64"
+    ],
+    "separatePrivateKeyPresent": false,
+    "serviceAccountAccess": "NOT VERIFIED: secret-name inventory cannot prove credential validity or Sheet permissions; no credential values retrieved.",
+    "headerOnlyRange": "'Website leads'!A1:P1",
+    "headerLabels": [
+      "Name",
+      "Phone",
+      "Email",
+      "Source/Page Inquiry",
+      "Role",
+      "Service Needed",
+      "Status",
+      "Timeline",
+      "Financing",
+      "Timestamp",
+      "Notes"
+    ],
+    "columnsLtoP": "No returned header labels. Unused/reserved status NOT VERIFIED; no data rows inspected.",
+    "changes": "None to sheet or permissions. Local code now accepts existing bundled JSON credential or legacy pair; no deployment."
+  },
+  "analytics": {
+    "liveCloudflareBeacon": true,
+    "ga4OrGtm": "Not found in sampled HTML. Cloudflare beacon confirmed through direct script-source inspection; crawler heuristic missed it.",
+    "conversionEvents": "NOT VERIFIED/NOT IMPLEMENTED by this phase",
+    "decision": "Retain current hosting analytics; decide whether custom conversion measurement is needed before choosing GA4/another event platform. Specify existing property ID if any plus privacy, consent and retention decisions. No duplicate beacon installation."
+  },
+  "remainingOwnerActions": [
+    "Choose authoritative release repository and reconcile current production changes with frozen Phase 5 checkout.",
+    "Confirm Sheet L:O intended booking fields and column P reserved exclusively for Booking Reference, without exposing lead data.",
+    "Confirm configured service account has Editor access or provide an approved local credential path for a metadata/header-only access check; never paste credentials in chat.",
+    "Approve conversion measurement platform/property and privacy/consent/retention behavior, or explicitly defer conversion tracking.",
+    "Before any later release, refresh active version, save production baseline and validate that current version is an acceptable rollback target."
+  ],
+  "prohibitedActionsPerformed": []
+}

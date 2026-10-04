@@ -30,6 +30,15 @@ const n=()=>requests.length;
 const before=n();await assert.rejects(()=>submitLead({data:{...lead,fields:{...lead.fields,email:'bad'}}}));assert.equal(n(),before);
 await assert.rejects(()=>submitLead({data:{...lead,fields:{...lead.fields,message:'x'.repeat(1001)}}}));assert.equal(n(),before);
 await submitLead({data:{...lead,fields:{...lead.fields,website:'bot'}}});assert.equal(n(),before);
+if(process.env.PHASE55_AUTH_MODE==='base64'){
+ const validAccount=Buffer.from(JSON.stringify({client_email:process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,private_key:process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY})).toString('base64');
+ delete process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY;
+ for(const invalid of ['sensitive-invalid-input',Buffer.from(JSON.stringify({client_email:42,private_key:'sensitive-invalid-input'})).toString('base64')]){
+  process.env.GOOGLE_SERVICE_ACCOUNT_JSON_B64=invalid;
+  await assert.rejects(()=>submitLead({data:lead}),{message:'Google Sheets service-account configuration is invalid.'});assert.equal(n(),before);
+ }
+ process.env.GOOGLE_SERVICE_ACCOUNT_JSON_B64=validAccount;
+}
 const result=await submitLead({data:lead});assert.match(result.bookingReference,/^[a-f0-9-]{36}$/);
 const append=requests.find(x=>x.url.includes(':append'));assert(append.url.includes('valueInputOption=RAW'));const row=JSON.parse(append.options.body).values[0];assert.equal(row.length,16);assert(row[10].startsWith('=IMPORTXML'));assert(row[10].includes('Budget: test budget'));assert.equal(row[15],result.bookingReference);
 const booking={email:lead.fields.email,bookingReference:result.bookingReference,eventUri:'https://api.calendly.com/scheduled_events/mock-event',startTime:''};

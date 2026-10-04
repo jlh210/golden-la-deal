@@ -1,0 +1,396 @@
+{
+  "account": "e9e9f1ee7c7d7826e013d47be606ba94",
+  "worker": "penthouse",
+  "deployments": {
+    "status": 200,
+    "result": {
+      "deployments": [
+        {
+          "id": "9443e5e7-ac64-4aa7-a050-ec5650af5532",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "jackie@jackiehickey.com",
+          "annotations": {
+            "workers/triggered_by": "deployment"
+          },
+          "versions": [
+            {
+              "version_id": "8ec09e64-a134-4587-9525-c55e18e67f6c",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-10-04T18:59:13.9799Z"
+        },
+        {
+          "id": "d273f66b-d5ec-4105-8068-780609d2f133",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "jackie@jackiehickey.com",
+          "annotations": {
+            "workers/triggered_by": "deployment"
+          },
+          "versions": [
+            {
+              "version_id": "1aeeef6a-5f48-491e-97af-712d0c51b709",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-10-04T18:58:33.227625Z"
+        },
+        {
+          "id": "98acaf5f-1694-48dd-801a-6c52fa0f679e",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "jackie@jackiehickey.com",
+          "annotations": {
+            "workers/triggered_by": "deployment"
+          },
+          "versions": [
+            {
+              "version_id": "57d66b3b-ca5f-4508-b79e-585c0ef88baa",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-10-04T18:41:37.818414Z"
+        },
+        {
+          "id": "0c1608b8-290f-49ce-aafc-17c1f601f8d5",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "jackie@jackiehickey.com",
+          "annotations": {
+            "workers/triggered_by": "deployment"
+          },
+          "versions": [
+            {
+              "version_id": "fe9bb4c7-7495-46da-b138-19bd82a46542",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-10-04T18:41:01.169941Z"
+        },
+        {
+          "id": "fe31c7e5-59e9-4356-8fee-e1c78cff86a6",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "jackie@jackiehickey.com",
+          "annotations": {
+            "workers/triggered_by": "deployment"
+          },
+          "versions": [
+            {
+              "version_id": "d991374d-70ad-4f78-b1a2-4abb372e92bb",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-10-04T18:34:29.478521Z"
+        },
+        {
+          "id": "9960ab5a-5c71-40ce-99cb-262acc846c3a",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "jackie@jackiehickey.com",
+          "annotations": {
+            "workers/triggered_by": "deployment"
+          },
+          "versions": [
+            {
+              "version_id": "29e83448-6a3c-4e17-860d-93d35e93e5d6",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-10-04T18:33:41.70581Z"
+        },
+        {
+          "id": "a2a33d68-e19a-476e-8ffb-12be39ec104a",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "jackie@jackiehickey.com",
+          "annotations": {
+            "workers/triggered_by": "deployment"
+          },
+          "versions": [
+            {
+              "version_id": "3a168bce-a9ca-444b-b8bf-e1219e44966e",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-10-04T18:28:46.806273Z"
+        },
+        {
+          "id": "6d076141-9267-45c6-bb17-c5719512f1a8",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "jackie@jackiehickey.com",
+          "annotations": {
+            "workers/triggered_by": "deployment"
+          },
+          "versions": [
+            {
+              "version_id": "09e41788-522b-4c30-bab5-b74167278df4",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-10-04T18:28:05.369419Z"
+        },
+        {
+          "id": "58726813-33e2-480c-98ec-803633de1b0a",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "jackie@jackiehickey.com",
+          "annotations": {
+            "workers/triggered_by": "deployment"
+          },
+          "versions": [
+            {
+              "version_id": "7929a0e7-1ca4-41a9-90e4-4a3a2b1d1d0b",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-10-04T18:26:28.163949Z"
+        },
+        {
+          "id": "f4045657-7d2f-4b31-b662-2220d998ae03",
+          "source": "wrangler",
+          "strategy": "percentage",
+          "author_email": "jackie@jackiehickey.com",
+          "annotations": {
+            "workers/triggered_by": "deployment"
+          },
+          "versions": [
+            {
+              "version_id": "908eccc5-697a-4ec2-8b38-3ebbfe52889f",
+              "percentage": 100
+            }
+          ],
+          "created_on": "2026-10-04T18:24:35.723734Z"
+        }
+      ]
+    },
+    "success": true,
+    "errors": [],
+    "messages": [],
+    "result_info": {
+      "page": 1,
+      "per_page": 10,
+      "count": 10,
+      "total_count": 193,
+      "total_pages": 20
+    }
+  },
+  "versions": {
+    "status": 200,
+    "result": {
+      "items": [
+        {
+          "id": "8ec09e64-a134-4587-9525-c55e18e67f6c",
+          "number": 196,
+          "metadata": {
+            "created_on": "2026-10-04T18:59:13.004463Z",
+            "source": "wrangler",
+            "author_id": "d6cd9bdec2c9b318b62e3def73757a7a",
+            "author_email": "jackie@jackiehickey.com",
+            "has_preview": true
+          },
+          "annotations": {
+            "workers/triggered_by": "version_upload"
+          }
+        },
+        {
+          "id": "1aeeef6a-5f48-491e-97af-712d0c51b709",
+          "number": 195,
+          "metadata": {
+            "created_on": "2026-10-04T18:58:32.275797Z",
+            "source": "wrangler",
+            "author_id": "d6cd9bdec2c9b318b62e3def73757a7a",
+            "author_email": "jackie@jackiehickey.com",
+            "has_preview": true
+          },
+          "annotations": {
+            "workers/triggered_by": "version_upload"
+          }
+        },
+        {
+          "id": "57d66b3b-ca5f-4508-b79e-585c0ef88baa",
+          "number": 194,
+          "metadata": {
+            "created_on": "2026-10-04T18:41:36.842341Z",
+            "source": "wrangler",
+            "author_id": "d6cd9bdec2c9b318b62e3def73757a7a",
+            "author_email": "jackie@jackiehickey.com",
+            "has_preview": true
+          },
+          "annotations": {
+            "workers/triggered_by": "version_upload"
+          }
+        },
+        {
+          "id": "fe9bb4c7-7495-46da-b138-19bd82a46542",
+          "number": 193,
+          "metadata": {
+            "created_on": "2026-10-04T18:40:59.613536Z",
+            "source": "wrangler",
+            "author_id": "d6cd9bdec2c9b318b62e3def73757a7a",
+            "author_email": "jackie@jackiehickey.com",
+            "has_preview": true
+          },
+          "annotations": {
+            "workers/triggered_by": "version_upload"
+          }
+        },
+        {
+          "id": "d991374d-70ad-4f78-b1a2-4abb372e92bb",
+          "number": 192,
+          "metadata": {
+            "created_on": "2026-10-04T18:34:28.573942Z",
+            "source": "wrangler",
+            "author_id": "d6cd9bdec2c9b318b62e3def73757a7a",
+            "author_email": "jackie@jackiehickey.com",
+            "has_preview": true
+          },
+          "annotations": {
+            "workers/triggered_by": "version_upload"
+          }
+        },
+        {
+          "id": "29e83448-6a3c-4e17-860d-93d35e93e5d6",
+          "number": 191,
+          "metadata": {
+            "created_on": "2026-10-04T18:33:40.740613Z",
+            "source": "wrangler",
+            "author_id": "d6cd9bdec2c9b318b62e3def73757a7a",
+            "author_email": "jackie@jackiehickey.com",
+            "has_preview": true
+          },
+          "annotations": {
+            "workers/triggered_by": "version_upload"
+          }
+        },
+        {
+          "id": "3a168bce-a9ca-444b-b8bf-e1219e44966e",
+          "number": 190,
+          "metadata": {
+            "created_on": "2026-10-04T18:28:45.737128Z",
+            "source": "wrangler",
+            "author_id": "d6cd9bdec2c9b318b62e3def73757a7a",
+            "author_email": "jackie@jackiehickey.com",
+            "has_preview": true
+          },
+          "annotations": {
+            "workers/triggered_by": "version_upload"
+          }
+        },
+        {
+          "id": "09e41788-522b-4c30-bab5-b74167278df4",
+          "number": 189,
+          "metadata": {
+            "created_on": "2026-10-04T18:28:03.629305Z",
+            "source": "wrangler",
+            "author_id": "d6cd9bdec2c9b318b62e3def73757a7a",
+            "author_email": "jackie@jackiehickey.com",
+            "has_preview": true
+          },
+          "annotations": {
+            "workers/triggered_by": "version_upload"
+          }
+        },
+        {
+          "id": "7929a0e7-1ca4-41a9-90e4-4a3a2b1d1d0b",
+          "number": 188,
+          "metadata": {
+            "created_on": "2026-10-04T18:26:27.267963Z",
+            "source": "wrangler",
+            "author_id": "d6cd9bdec2c9b318b62e3def73757a7a",
+            "author_email": "jackie@jackiehickey.com",
+            "has_preview": true
+          },
+          "annotations": {
+            "workers/triggered_by": "version_upload"
+          }
+        },
+        {
+          "id": "908eccc5-697a-4ec2-8b38-3ebbfe52889f",
+          "number": 187,
+          "metadata": {
+            "created_on": "2026-10-04T18:24:34.533322Z",
+            "source": "wrangler",
+            "author_id": "d6cd9bdec2c9b318b62e3def73757a7a",
+            "author_email": "jackie@jackiehickey.com",
+            "has_preview": true
+          },
+          "annotations": {
+            "workers/triggered_by": "version_upload"
+          }
+        }
+      ]
+    },
+    "success": true,
+    "errors": null,
+    "messages": null,
+    "result_info": {
+      "page": 1,
+      "per_page": 10,
+      "count": 10,
+      "total_count": 196
+    }
+  },
+  "secrets": {
+    "status": 200,
+    "result": [
+      {
+        "name": "GOOGLE_SERVICE_ACCOUNT_EMAIL",
+        "type": "secret_text"
+      },
+      {
+        "name": "GOOGLE_SERVICE_ACCOUNT_JSON_B64",
+        "type": "secret_text"
+      }
+    ],
+    "success": true,
+    "errors": [],
+    "messages": []
+  },
+  "settings": {
+    "status": 200,
+    "result": {
+      "compatibility_date": "2026-09-16",
+      "compatibility_flags": [
+        "nodejs_compat"
+      ],
+      "assets": null,
+      "observability": {
+        "enabled": true,
+        "head_sampling_rate": 1,
+        "redact_query_string": false,
+        "logs": {
+          "enabled": true,
+          "head_sampling_rate": 1,
+          "persist": true,
+          "invocation_logs": true
+        },
+        "traces": {
+          "enabled": false,
+          "persist": true,
+          "head_sampling_rate": 1
+        }
+      },
+      "bindingNamesAndTypes": [
+        {
+          "name": "ASSETS",
+          "type": "assets"
+        },
+        {
+          "name": "GOOGLE_SERVICE_ACCOUNT_EMAIL",
+          "type": "secret_text"
+        },
+        {
+          "name": "GOOGLE_SERVICE_ACCOUNT_JSON_B64",
+          "type": "secret_text"
+        }
+      ]
+    },
+    "success": true,
+    "errors": [],
+    "messages": []
+  }
+}

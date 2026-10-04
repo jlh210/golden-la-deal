@@ -1,9 +1,9 @@
 {
-  "status": "ARCHITECTURE PREPARED; collection not enabled",
-  "evidence": "No GA4, GTM, Cloudflare Web Analytics, Plausible or Clarity marker found in source or public production HTML. The repository has an optional Lovable error-reporting hook, not a conversion analytics integration. Hosting dashboard injection settings remain unverified.",
-  "recommendation": "One lightweight GA4 gtag integration after owner provides property ID and privacy/consent decision; no GTM or additional marketing stack unless already managed by the owner. Recheck production hosting injection immediately before enabling to avoid duplicates.",
+  "status": "CONVERSION ARCHITECTURE PREPARED; Cloudflare visitor beacon already present on live site",
+  "evidence": "October 4 read-only public responses contain static.cloudflareinsights.com beacon. Confirmed separate Lovable project also has Visitor analytics enabled, but its custom domains are Offline. October 2 no-marker observation is historical. No conversion event implementation verified.",
+  "recommendation": "Keep existing Cloudflare visitor measurement; do not inject a duplicate beacon. Owner chooses whether to add a single conversion event platform, such as an existing GA4 property, after privacy/consent/retention decisions. No analytics installed in this phase.",
   "ownerDecisionsRequired": [
-    "Confirm existing analytics/property and hosting injection configuration.",
+    "Confirm whether to retain visitor analytics alone or add conversion events, and identify any existing event-measurement property.",
     "Provide the chosen measurement/property ID (none invented).",
     "Confirm applicable privacy notice, consent behavior and retention settings before any tracking starts.",
     "Decide whether browser-widget booking confirmation is sufficient reporting or a trusted webhook is required."

@@ -1,0 +1,45 @@
+{
+  "comparedWith": "2026-10-02 production-before",
+  "changes": [
+    {
+      "url": "/",
+      "changedFields": [
+        "title",
+        "description"
+      ]
+    },
+    {
+      "url": "/about",
+      "changedFields": [
+        "contentFingerprint"
+      ]
+    },
+    {
+      "url": "/agents",
+      "changedFields": [
+        "contentFingerprint"
+      ]
+    },
+    {
+      "url": "/help/business-investigations/what-is-a-restaurant-business-investigation",
+      "changedFields": [
+        "description"
+      ]
+    },
+    {
+      "url": "/help/health-permitting/restaurant-health-permit-transfer",
+      "changedFields": [
+        "description"
+      ]
+    },
+    {
+      "url": "/help/restaurant-leasing/restaurant-leasing-overview",
+      "changedFields": [
+        "description"
+      ]
+    }
+  ],
+  "note": "Public content only; no inference that current production has Phase 5 changes.",
+  "crawlerAnalyticsMarkerCount": 0,
+  "analyticsDetectionLimit": "Crawler marker heuristic did not recognize the current beacon. Separate public HTTP script-source inspection in discovery.json confirms Cloudflare Insights on apex and www."
+}

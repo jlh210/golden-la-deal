@@ -1,13 +1,18 @@
 [
   {
+    "name": "GOOGLE_SERVICE_ACCOUNT_JSON_B64",
+    "classification": "Preferred existing production private runtime secret; alternative to email/private-key pair",
+    "purpose": "Present on penthouse. Base64 JSON containing client_email and private_key. Value, validity and Sheet access not independently verified; local support added October 4."
+  },
+  {
     "name": "GOOGLE_SERVICE_ACCOUNT_EMAIL",
-    "classification": "Required private runtime",
-    "purpose": "Google Sheets service account identity; production presence unverified."
+    "classification": "Required only for legacy email/private-key pair; private runtime",
+    "purpose": "Present as a secret on penthouse. Bundled JSON credentials carry their own client_email. Value/identity not exposed."
   },
   {
     "name": "GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY",
-    "classification": "Required private runtime secret",
-    "purpose": "Sheets JWT signing; never expose in client or logs. Production presence unverified."
+    "classification": "Alternative private runtime secret; not required with bundled JSON",
+    "purpose": "Absent on penthouse. Local compatibility fix supports the configured bundled JSON alternative."
   },
   {
     "name": "GOOGLE_API_KEY",

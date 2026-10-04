@@ -1,0 +1,89 @@
+{
+  "penthouseadvisors.com": {
+    "A": [
+      "172.67.162.218",
+      "104.21.82.201"
+    ],
+    "CNAME": [],
+    "NS": [
+      "melinda.ns.cloudflare.com.",
+      "jacob.ns.cloudflare.com."
+    ],
+    "http": {
+      "status": 200,
+      "headers": {
+        "Server": "cloudflare",
+        "CF-RAY": "a4573311f86e7eb9-LAX"
+      },
+      "scripts": [
+        "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+      ],
+      "analyticsMarkers": [
+        "cloudflareinsights"
+      ],
+      "lovableReferences": []
+    }
+  },
+  "www.penthouseadvisors.com": {
+    "A": [
+      "172.67.162.218",
+      "104.21.82.201"
+    ],
+    "CNAME": [],
+    "NS": [],
+    "http": {
+      "status": 200,
+      "headers": {
+        "Server": "cloudflare",
+        "CF-RAY": "a4573314ef01b08c-LAX"
+      },
+      "scripts": [
+        "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+      ],
+      "analyticsMarkers": [
+        "cloudflareinsights"
+      ],
+      "lovableReferences": []
+    }
+  },
+  "cloudflare": {
+    "status": 200,
+    "errors": [],
+    "accounts": [
+      {
+        "id": "e9e9f1ee7c7d7826e013d47be606ba94",
+        "name": "Jackie@jackiehickey.com's Account",
+        "workers": {
+          "status": 200,
+          "errors": [],
+          "items": [
+            {
+              "id": "golden-la-deal"
+            },
+            {
+              "id": "penthouse"
+            }
+          ]
+        },
+        "domains": {
+          "status": 200,
+          "errors": null,
+          "items": [
+            {
+              "id": "71c110af28ff6b9f9f97eafffc22c84799404471",
+              "hostname": "penthouseadvisors.com",
+              "service": "penthouse",
+              "environment": "production"
+            },
+            {
+              "id": "f32cb5d7d3037e00ad86bc2aede4e16f1d607250",
+              "hostname": "www.penthouseadvisors.com",
+              "service": "penthouse",
+              "environment": "production"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

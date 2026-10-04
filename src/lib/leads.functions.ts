@@ -63,11 +63,24 @@ function pemToArrayBuffer(pem: string): ArrayBuffer {
 let cachedToken: { token: string; expiresAt: number } | null = null;
 
 async function getGoogleAccessToken(): Promise<string> {
-  const email = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
-  const rawKey = process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY;
+  let email = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
+  let rawKey = process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY;
+  const encodedAccount = process.env.GOOGLE_SERVICE_ACCOUNT_JSON_B64;
+  if (encodedAccount) {
+    try {
+      const account = z
+        .object({ client_email: z.string().email(), private_key: z.string().min(1) })
+        .parse(JSON.parse(atob(encodedAccount.trim())));
+      email = account.client_email;
+      rawKey = account.private_key;
+    } catch {
+      // Never include credential contents or parser input in an error or log.
+      throw new Error("Google Sheets service-account configuration is invalid.");
+    }
+  }
   if (!email || !rawKey) {
     throw new Error(
-      "Google Sheets is not configured (missing GOOGLE_SERVICE_ACCOUNT_EMAIL / GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY).",
+      "Google Sheets is not configured (requires GOOGLE_SERVICE_ACCOUNT_JSON_B64 or the email/private-key pair).",
     );
   }
 

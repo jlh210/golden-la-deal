@@ -1,0 +1,11 @@
+{
+  "build": "PASS npm run build",
+  "typescript": "PASS npx tsc --noEmit",
+  "changedFileLint": "PASS src/lib/leads.functions.ts and scripts/test-phase5-server.cjs",
+  "mockedServerTests": [
+    "PASS legacy email/private-key mode",
+    "PASS bundled JSON_B64 mode; malformed and wrong-typed payloads fail with sanitized errors before network"
+  ],
+  "liveWrites": "None",
+  "scope": "One backend configuration compatibility fix; no content or architecture edits. Historical performance/visual tests not rerun because rendering is unchanged."
+}

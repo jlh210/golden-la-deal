@@ -1,0 +1,61 @@
+{
+  "currentVersion": {
+    "id": "8ec09e64-a134-4587-9525-c55e18e67f6c",
+    "number": 196,
+    "metadata": {
+      "created_on": "2026-10-04T18:59:13.004463Z",
+      "source": "wrangler",
+      "author_id": "d6cd9bdec2c9b318b62e3def73757a7a",
+      "author_email": "jackie@jackiehickey.com",
+      "has_preview": true
+    },
+    "annotations": {
+      "workers/triggered_by": "version_upload"
+    },
+    "resourceKeys": [
+      "script",
+      "script_runtime",
+      "bindings"
+    ]
+  },
+  "previousVersion": {
+    "id": "1aeeef6a-5f48-491e-97af-712d0c51b709",
+    "number": 195,
+    "metadata": {
+      "created_on": "2026-10-04T18:58:32.275797Z",
+      "source": "wrangler",
+      "author_id": "d6cd9bdec2c9b318b62e3def73757a7a",
+      "author_email": "jackie@jackiehickey.com",
+      "has_preview": true
+    },
+    "annotations": {
+      "workers/triggered_by": "version_upload"
+    },
+    "resourceKeys": [
+      "script",
+      "script_runtime",
+      "bindings"
+    ]
+  },
+  "source": {
+    "sha256": "2dda9f0382f7f79859772fcf8bfbfd701a4bc069a30efbd9828232d4e14b9f21",
+    "bytes": 2929072,
+    "envNames": [
+      "GOOGLE_API_KEY",
+      "GOOGLE_SERVICE_ACCOUNT_EMAIL",
+      "GOOGLE_SERVICE_ACCOUNT_JSON_B",
+      "GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY"
+    ],
+    "sheetIdMatchesLocal": true,
+    "hasBookingReference": false,
+    "analyticsMarkers": [],
+    "readOnlyDiagnosticPaths": [
+      "/assets/health-inspection-vPMZx0nK.js",
+      "/assets/health-permitting-CzUrgXyh.js",
+      "/health-inspection",
+      "/health-permitting",
+      "/opt/buildhome/repo/src/routes/health-inspection.tsx",
+      "/opt/buildhome/repo/src/routes/health-permitting.tsx"
+    ]
+  }
+}
