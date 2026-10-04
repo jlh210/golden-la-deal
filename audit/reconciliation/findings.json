@@ -59,5 +59,8 @@
     "Sheet edits",
     "customer-row inspection",
     "live leads/bookings/payments"
-  ]
+  ],
+  "localReleaseBranch": "release/phase5-reconciled",
+  "reconciledMergeCommit": "5e96d9b33dcb79fd1125c24332e30002b014c99e",
+  "productionAncestry": "Verified production snapshot is an ancestor; approved tree retained after manual reconciliation"
 }
