@@ -10,7 +10,10 @@
   "comparisonTool": "PASS local manifest self-comparison; not a production deployment check",
   "artifactPrivateKeyTokenScan": "PASS zero matches; see security-artifact-scan.json",
   "deployment": "NOT PERFORMED",
-  "releaseDecision": "NOT DEPLOYMENT READY: health offer decision, Sheet permission/column confirmation and rollback acceptance remain",
+  "releaseDecision": "READ-ONLY RELEASE PREPARATION COMPLETE; awaiting explicit deployment authorization. Rollback baseline has documented existing defects; real credential exchange not independently tested.",
   "phase55Update": "2026-10-04: target/version identified; new bundled credential support passes local tests; production source reconciliation, Sheet access/column reservation and rollback baseline suitability remain open. See ../phase5-5/findings.json.",
-  "reconciliationUpdate": "2026-10-04: local source reconciliation prepared, exact Worker configured, runtime formats mocked successfully; health offer conflict, Sheet permissions/columns and rollback acceptance still block release. See ../reconciliation/findings.json."
+  "reconciliationUpdate": "Local source reconciliation prepared and exact Worker configured; mocked runtime checks pass. Health offer and Sheet confirmations resolved by owner. Refresh production source/version and confirm rollback before separately authorized deployment.",
+  "healthPermittingDecision": "Owner confirmed retaining currently approved $3,750 price and engagement terms. Website unchanged.",
+  "sheetConfirmation": "Owner confirmed service-account Editor access and L:O booking fields / P Booking Reference allocation. No independent live credential exchange or Sheet mutation.",
+  "finalRefresh": "Production main c351eac41ff486c7df3ecd539d199bf1191dc34b and Worker version 8ec09e64-a134-4587-9525-c55e18e67f6c unchanged; fresh 67-path production crawl captured."
 }

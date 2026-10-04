@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "status": "LOCAL RECONCILIATION PREPARED; NOT DEPLOYMENT READY",
+  "status": "FINAL READ-ONLY REFRESH COMPLETE; AWAITING EXPLICIT DEPLOYMENT AUTHORIZATION",
   "approvedBaseline": "0751b88",
   "productionRepository": "jlh210/golden-la-deal",
   "productionSourceSnapshot": "c351eac41ff486c7df3ecd539d199bf1191dc34b",
@@ -24,12 +24,6 @@
     "Responsive restored images; current article text and truthful timestamps",
     "Lead validation, RAW cell storage, opaque receipt, trusted Calendly messages and no unsupported payment confirmation"
   ],
-  "pendingConflict": {
-    "path": "/health-permitting",
-    "local": "$3,750 and approved engagement terms",
-    "production": "$4,750 and Good to Open For Business wording",
-    "action": "Owner choose price and engagement terms; local approved text remains untouched until answered"
-  },
   "validation": {
     "build": "PASS",
     "typescript": "PASS",
@@ -40,15 +34,11 @@
     "historicalTechnicalVerifier": "10 PASS; content-freeze FAIL expected for documented production factual updates. Original verifier and historical evidence preserved.",
     "reconciliationContentCheck": "PASS: only nine listed team/listing page fingerprints changed; all other page fingerprints unchanged",
     "workflow": "Identical to production snapshot; no workflow invocation",
-    "realGoogleAccess": "NOT VERIFIED",
+    "realGoogleAccess": "OWNER CONFIRMED Editor permission; live credential exchange not independently tested.",
     "visual": "Updated advisor cards inspected in local browser; no layout issue observed"
   },
   "remainingOwnerActions": [
-    "Confirm health-permitting price and engagement terms.",
-    "Confirm configured service account has Editor access to Website leads, or identify an approved credential file path for metadata/header-only validation; do not paste secrets.",
-    "Confirm L:O reserved for booking date, time, event URI and last updated, and P exclusively for opaque Booking Reference. Blank headers alone are insufficient.",
-    "Retain existing Cloudflare visitor analytics; custom conversion tracking can be explicitly deferred.",
-    "Before a separately authorized deployment, refresh production main and active Worker version, review release diff and confirm an acceptable rollback target."
+    "Authorize deployment explicitly if ready to publish the reviewed release. Current production is the recorded rollback baseline with documented existing defects."
   ],
   "notPerformed": [
     "push",
@@ -62,5 +52,20 @@
   ],
   "localReleaseBranch": "release/phase5-reconciled",
   "reconciledMergeCommit": "5e96d9b33dcb79fd1125c24332e30002b014c99e",
-  "productionAncestry": "Verified production snapshot is an ancestor; approved tree retained after manual reconciliation"
+  "productionAncestry": "Verified production snapshot is an ancestor; approved tree retained after manual reconciliation",
+  "resolvedHealthPermittingDecision": {
+    "path": "/health-permitting",
+    "local": "$3,750 and approved engagement terms",
+    "production": "$4,750 and Good to Open For Business wording",
+    "action": "Retain local $3,750 price and existing approved engagement terms; no website content change needed.",
+    "status": "RESOLVED by owner: keep currently approved"
+  },
+  "sheetOwnerStatement": "Owner confirmed service-account Editor access; L:O available for booking date, time, event URI and last updated; P reserved exclusively for Booking Reference. Owner attestation, not an independently tested live credential exchange.",
+  "productionRefresh": {
+    "evidence": "production-refresh.json",
+    "sourceUnchanged": true,
+    "activeVersion": "8ec09e64-a134-4587-9525-c55e18e67f6c",
+    "rollback": "Current-production restoration target exists; known old Help-link defects and lead limitations remain. Not executed.",
+    "baseline": "production-before-release/manifest.json"
+  }
 }

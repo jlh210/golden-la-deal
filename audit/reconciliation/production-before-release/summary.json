@@ -1,0 +1,85 @@
+{
+  "pages": 67,
+  "sitemapStatus": 200,
+  "sitemapUrls": 59,
+  "uniqueSitemapUrls": 59,
+  "noindex": [
+    "/help/business-investigations/what-is-a-restaurant-business-investigation",
+    "/help/health-permitting/restaurant-health-permit-transfer",
+    "/help/restaurant-leasing/restaurant-leasing-overview"
+  ],
+  "titleDuplicates": [],
+  "metaDuplicates": [
+    {
+      "value": "null",
+      "urls": [
+        "/api/public/contact-map"
+      ]
+    }
+  ],
+  "orphaned": [
+    "/api/public/contact-map",
+    "/off-market-sourcing"
+  ],
+  "weakMainDiscovery": [
+    "/api/public/contact-map",
+    "/about",
+    "/agents",
+    "/buy-a-restaurant",
+    "/sell-your-restaurant",
+    "/restaurant-leasing",
+    "/licensing-and-permits",
+    "/restaurant-consulting",
+    "/off-market-sourcing"
+  ],
+  "unknown": [
+    {
+      "url": "/blog/phase5-missing-post",
+      "status": 404
+    },
+    {
+      "url": "/help/buying-a-restaurant/phase5-missing-guide",
+      "status": 404
+    },
+    {
+      "url": "/help/phase5-missing-category",
+      "status": 404
+    },
+    {
+      "url": "/restaurants-for-sale/phase5-missing-listing",
+      "status": 404
+    },
+    {
+      "url": "/phase5-missing-service",
+      "status": 404
+    }
+  ],
+  "assetCount": 70,
+  "failures": [
+    {
+      "url": "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+      "issue": "Broken/redirecting internal link",
+      "target": "/help/business-investigations/what-is-a-restaurant-business-investigation",
+      "status": 404
+    },
+    {
+      "url": "/help/alcohol-licensing/abc-license-transfer-guide",
+      "issue": "Broken/redirecting internal link",
+      "target": "/help/health-permitting/restaurant-health-permit-transfer",
+      "status": 404
+    },
+    {
+      "url": "/help/lease-assignments/restaurant-lease-assignment-guide",
+      "issue": "Broken/redirecting internal link",
+      "target": "/help/restaurant-leasing/restaurant-leasing-overview",
+      "status": 404
+    },
+    {
+      "url": "/help/local-markets/restaurant-broker-beverly-hills",
+      "issue": "Broken/redirecting internal link",
+      "target": "/help/restaurant-leasing/restaurant-leasing-overview",
+      "status": 404
+    }
+  ],
+  "robots": "User-agent: *\nAllow: /\nDisallow: /wp-admin/\nDisallow: /wp-login.php\nDisallow: /?p=\nDisallow: /*?p=\nDisallow: /*?replytocom=\n\nSitemap: https://www.penthouseadvisors.com/sitemap.xml\n"
+}
