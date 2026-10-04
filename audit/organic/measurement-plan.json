@@ -10,7 +10,7 @@
   "firstPostLaunchWindow": {
     "start": "2026-10-05",
     "end": "2026-11-01",
-    "note": "Measures October 4 deployed release only; annotate any later optimization publication separately. Wait until GSC data for the full window is available."
+    "note": "Includes the October 4 initial release and SEO follow-up published at 15:31 Pacific. Wait until GSC data for the full window is available; do not isolate the effects of these same-day releases."
   },
   "comparison": [
     "Use same property, Web (text), country/device scope and brand regex.",
@@ -20,5 +20,12 @@
     "Qualified-inquiry counts remain unavailable until owner supplies aggregates; do not call a conversion rate valid without matched attribution and denominator."
   ],
   "tracking": "No new analytics account, tracking code, consent changes or lead-field changes. Existing Cloudflare visitor analytics retained.",
-  "dataLimits": "Historical search queries cannot be connected to individual customers using this data."
+  "dataLimits": "Historical search queries cannot be connected to individual customers using this data.",
+  "releaseAnnotations": [
+    {
+      "sourceCommit": "d4167a2",
+      "publishedAt": "2026-10-04T22:31:50.337638Z",
+      "description": "Restaurant-sale content, Type 47 accuracy correction and internal linking revisions deployed."
+    }
+  ]
 }

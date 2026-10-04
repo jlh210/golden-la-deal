@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-04T22:32:15.141540+00:00",
+  "sourceCommit": "d4167a2",
+  "deployment": {
+    "id": "4c1bed63-86a3-4bd7-a443-a974d384b6ce",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "jackie@jackiehickey.com",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "64840cf8-ca4d-4825-82b6-8a280c5825b9",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-10-04T22:31:50.337638Z"
+  },
+  "domains": [
+    {
+      "hostname": "penthouseadvisors.com",
+      "service": "penthouse"
+    },
+    {
+      "hostname": "www.penthouseadvisors.com",
+      "service": "penthouse"
+    }
+  ],
+  "secretNames": [
+    "GOOGLE_SERVICE_ACCOUNT_EMAIL",
+    "GOOGLE_SERVICE_ACCOUNT_JSON_B64"
+  ],
+  "rollbackVersion": "66c910ad-f09f-431d-8d69-1c11c9ba6400",
+  "rollbackCommand": "npx --yes wrangler@4.147.0 rollback 66c910ad-f09f-431d-8d69-1c11c9ba6400 --config .output/server/wrangler.json",
+  "verification": "PASS: all 64 live routes match the tested revision; 49 unique sitemap URLs; no broken internal links, duplicate metadata or orphaned indexable pages. Live listing and Type 47 pages visually inspected.",
+  "limitations": "No live lead, booking or payment submitted. GitHub main remains older; an automated build could overwrite this direct release."
+}
