@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "status": "FINAL READ-ONLY REFRESH COMPLETE; AWAITING EXPLICIT DEPLOYMENT AUTHORIZATION",
+  "status": "DEPLOYED AND VERIFIED",
   "approvedBaseline": "0751b88",
   "productionRepository": "jlh210/golden-la-deal",
   "productionSourceSnapshot": "c351eac41ff486c7df3ecd539d199bf1191dc34b",
@@ -38,11 +38,10 @@
     "visual": "Updated advisor cards inspected in local browser; no layout issue observed"
   },
   "remainingOwnerActions": [
-    "Authorize deployment explicitly if ready to publish the reviewed release. Current production is the recorded rollback baseline with documented existing defects."
+    "Before future automated releases, synchronize the reviewed release branch with production-linked GitHub main; current direct deployment did not push or merge the repository."
   ],
   "notPerformed": [
     "push",
-    "deploy",
     "DNS changes",
     "tracking installation",
     "search-engine submission",
@@ -67,5 +66,6 @@
     "activeVersion": "8ec09e64-a134-4587-9525-c55e18e67f6c",
     "rollback": "Current-production restoration target exists; known old Help-link defects and lead limitations remain. Not executed.",
     "baseline": "production-before-release/manifest.json"
-  }
+  },
+  "deploymentEvidence": "deployment.json"
 }

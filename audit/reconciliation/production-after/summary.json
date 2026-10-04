@@ -1,0 +1,50 @@
+{
+  "pages": 64,
+  "sitemapStatus": 200,
+  "sitemapUrls": 49,
+  "uniqueSitemapUrls": 49,
+  "noindex": [
+    "/api/public/contact-map",
+    "/help/restaurant-leasing",
+    "/help/health-permitting",
+    "/help/grandfather-protection",
+    "/help/business-investigations",
+    "/help/buyer-tenant-resolutions",
+    "/help/off-market-sourcing",
+    "/help/e2-visa",
+    "/help/commercial-property-management",
+    "/help/medical-dental-leasing",
+    "/help/restaurant-consulting"
+  ],
+  "titleDuplicates": [],
+  "metaDuplicates": [],
+  "orphaned": [],
+  "weakMainDiscovery": [
+    "/off-market-sourcing"
+  ],
+  "unknown": [
+    {
+      "url": "/blog/phase5-missing-post",
+      "status": 404
+    },
+    {
+      "url": "/help/buying-a-restaurant/phase5-missing-guide",
+      "status": 404
+    },
+    {
+      "url": "/help/phase5-missing-category",
+      "status": 404
+    },
+    {
+      "url": "/restaurants-for-sale/phase5-missing-listing",
+      "status": 404
+    },
+    {
+      "url": "/phase5-missing-service",
+      "status": 404
+    }
+  ],
+  "assetCount": 118,
+  "failures": [],
+  "robots": "User-agent: *\nAllow: /\nDisallow: /wp-admin/\nDisallow: /wp-login.php\nDisallow: /?p=\nDisallow: /*?p=\nDisallow: /*?replytocom=\n\nSitemap: https://www.penthouseadvisors.com/sitemap.xml\n"
+}

@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-04T22:01:36.174569+00:00",
+  "sourceCommit": "04b86d9",
+  "deployment": {
+    "id": "c3be33ce-9e16-4418-b693-cc40015dc774",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "jackie@jackiehickey.com",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "66c910ad-f09f-431d-8d69-1c11c9ba6400",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-10-04T22:01:16.942402Z"
+  },
+  "secretNames": [
+    "GOOGLE_SERVICE_ACCOUNT_EMAIL",
+    "GOOGLE_SERVICE_ACCOUNT_JSON_B64"
+  ],
+  "domains": [
+    {
+      "hostname": "penthouseadvisors.com",
+      "service": "penthouse",
+      "environment": "production"
+    },
+    {
+      "hostname": "www.penthouseadvisors.com",
+      "service": "penthouse",
+      "environment": "production"
+    }
+  ],
+  "rollbackVersion": "8ec09e64-a134-4587-9525-c55e18e67f6c",
+  "method": "Direct Wrangler deployment of reviewed local release; GitHub main not pushed or merged",
+  "verification": "PASS: 64 routes match approved release; 49 sitemap URLs; no broken links or duplicate metadata",
+  "propagation": "Initial crawl briefly returned previous content; repeated crawl after both domains updated passed exact comparison.",
+  "limitations": "No live lead, booking or payment tests. GitHub main remains older and automated deployment from it could overwrite this direct release."
+}
