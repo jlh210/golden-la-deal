@@ -216,7 +216,7 @@ dre: "DRE #02203003",
 },
 {
 name: "Richard Stein",
-title: "COO · Chief Operating Officer · Deal Closer & Supervisor, Owner",
+title: "COO - Chief Operating Officer / Owner / Deal Supervisor / Closer",
 dre: null,
 },
 {
