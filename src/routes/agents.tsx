@@ -44,6 +44,12 @@ export const agents = [
     focus: ["buy/seller representation", "abc licensing oversight", "restaurant sales"],
   },
   {
+    name: "Richard Stein",
+    title: "COO · Chief Operating Officer · Creator · Owner",
+    bio: "As COO, Richard turns the firm’s strategy into everyday results, making sure execution across the company matches the direction set by leadership.",
+    focus: ["operations & execution", "strategy implementation", "business advisory"],
+  },
+  {
     name: "Rosanna Paticchio",
     title: "CFO · Broker of Record",
     dre: "DRE #02332697",

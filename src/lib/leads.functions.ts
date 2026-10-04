@@ -48,24 +48,73 @@ function base64UrlFromString(str: string): string {
   return base64UrlFromBytes(new TextEncoder().encode(str));
 }
 
+// DER length octets for a given content length (short or long form).
+function derLength(len: number): number[] {
+  if (len < 0x80) return [len];
+  const bytes: number[] = [];
+  let n = len;
+  while (n > 0) {
+    bytes.unshift(n & 0xff);
+    n >>= 8;
+  }
+  return [0x80 | bytes.length, ...bytes];
+}
+
+// Web Crypto's importKey(format: "pkcs8", ...) only accepts a PKCS8
+// PrivateKeyInfo structure. A traditional "-----BEGIN RSA PRIVATE KEY-----"
+// PEM (PKCS1) is a bare RSAPrivateKey DER, not PKCS8, and Google service
+// account JSON keys are normally PKCS8 already — but if this key came from
+// somewhere else (e.g. `openssl genrsa`) it may be PKCS1. Wrap it in the
+// fixed PKCS8 envelope (version + rsaEncryption AlgorithmIdentifier + the
+// PKCS1 bytes as an OCTET STRING) so either format works transparently.
+function wrapPkcs1AsPkcs8(pkcs1Der: Uint8Array): Uint8Array {
+  const version = new Uint8Array([0x02, 0x01, 0x00]); // INTEGER 0
+  // SEQUENCE { OID 1.2.840.113549.1.1.1 (rsaEncryption), NULL }
+  const algId = new Uint8Array([
+    0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00,
+  ]);
+  const octetHeader = new Uint8Array([0x04, ...derLength(pkcs1Der.length)]);
+  const octetString = new Uint8Array(octetHeader.length + pkcs1Der.length);
+  octetString.set(octetHeader, 0);
+  octetString.set(pkcs1Der, octetHeader.length);
+
+  const bodyLength = version.length + algId.length + octetString.length;
+  const bodyHeader = new Uint8Array([0x30, ...derLength(bodyLength)]);
+
+  const result = new Uint8Array(bodyHeader.length + bodyLength);
+  let offset = 0;
+  result.set(bodyHeader, offset);
+  offset += bodyHeader.length;
+  result.set(version, offset);
+  offset += version.length;
+  result.set(algId, offset);
+  offset += algId.length;
+  result.set(octetString, offset);
+  return result;
+}
+
 function pemToArrayBuffer(pem: string): ArrayBuffer {
+  const isPkcs1 = pem.includes("-----BEGIN RSA PRIVATE KEY-----");
   const clean = pem
-    .replace(/-----BEGIN PRIVATE KEY-----/, "")
-    .replace(/-----END PRIVATE KEY-----/, "")
+    .replace(/-----BEGIN (?:RSA )?PRIVATE KEY-----/, "")
+    .replace(/-----END (?:RSA )?PRIVATE KEY-----/, "")
     .replace(/\s+/g, "");
   const binary = atob(clean);
   const bytes = new Uint8Array(binary.length);
   for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
-  return bytes.buffer;
+  return (isPkcs1 ? wrapPkcs1AsPkcs8(bytes) : bytes).buffer as ArrayBuffer;
 }
 
 // Cached per-isolate; harmless if it doesn't survive a cold start.
 let cachedToken: { token: string; expiresAt: number } | null = null;
 
 async function getGoogleAccessToken(): Promise<string> {
-  let email = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
-  let rawKey = process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY;
-  const encodedAccount = process.env.GOOGLE_SERVICE_ACCOUNT_JSON_B64;
+  // Nitro’s Cloudflare adapter exposes the request bindings on __env__.
+  const env =
+    (globalThis as { __env__?: Record<string, string | undefined> }).__env__ ?? process.env;
+  let email = env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
+  let rawKey = env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY;
+  const encodedAccount = env.GOOGLE_SERVICE_ACCOUNT_JSON_B64;
   if (encodedAccount) {
     try {
       const account = z

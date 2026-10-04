@@ -12,6 +12,7 @@ const esbuild = require("/private/tmp/penthouse-phase1-tests/node_modules/esbuil
       loader: "ts",
       contents: `
 import assert from 'node:assert/strict';
+import {createPrivateKey} from 'node:crypto';
 import {submitLead,markLeadBooked} from './src/lib/leads.functions';
 const key=await crypto.subtle.generateKey({name:'RSASSA-PKCS1-v1_5',modulusLength:2048,publicExponent:new Uint8Array([1,0,1]),hash:'SHA-256'},true,['sign','verify']);
 process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL='mock@example.invalid';
@@ -39,7 +40,13 @@ if(process.env.PHASE55_AUTH_MODE==='base64'){
  }
  process.env.GOOGLE_SERVICE_ACCOUNT_JSON_B64=validAccount;
 }
+if(process.env.RELEASE_AUTH_MODE?.startsWith('worker-')){
+ const pem=createPrivateKey(process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY.replace(/\\\\n/g,'\\n')).export({type:process.env.RELEASE_AUTH_MODE==='worker-pkcs1'?'pkcs1':'pkcs8',format:'pem'});
+ globalThis.__env__={GOOGLE_SERVICE_ACCOUNT_JSON_B64:Buffer.from(JSON.stringify({client_email:'worker@example.invalid',private_key:pem})).toString('base64')};
+ delete process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;delete process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY;
+}
 const result=await submitLead({data:lead});assert.match(result.bookingReference,/^[a-f0-9-]{36}$/);
+if(process.env.RELEASE_AUTH_MODE?.startsWith('worker-')){const assertion=new URLSearchParams(requests.find(x=>x.url==='https://oauth2.googleapis.com/token').options.body).get('assertion');assert.equal(JSON.parse(Buffer.from(assertion.split('.')[1],'base64url')).iss,'worker@example.invalid');}
 const append=requests.find(x=>x.url.includes(':append'));assert(append.url.includes('valueInputOption=RAW'));const row=JSON.parse(append.options.body).values[0];assert.equal(row.length,16);assert(row[10].startsWith('=IMPORTXML'));assert(row[10].includes('Budget: test budget'));assert.equal(row[15],result.bookingReference);
 const booking={email:lead.fields.email,bookingReference:result.bookingReference,eventUri:'https://api.calendly.com/scheduled_events/mock-event',startTime:''};
 await assert.rejects(()=>markLeadBooked({data:{...booking,bookingReference:undefined}}));

@@ -1,0 +1,11 @@
+{
+  "name": "penthouse",
+  "account_id": "e9e9f1ee7c7d7826e013d47be606ba94",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

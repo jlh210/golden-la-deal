@@ -1,0 +1,97 @@
+{
+  "checks": [
+    {
+      "name": "59 known production routes preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "Full crawl and sitemap",
+      "status": "PASS"
+    },
+    {
+      "name": "Titles, descriptions, H1 and canonicals",
+      "status": "PASS"
+    },
+    {
+      "name": "Content freeze",
+      "status": "FAIL",
+      "reason": "/about main copy changed\n+ actual - expected\n\n+ 'c634ecda6e189cc7b4a953ae47c1c92773e6e762e26df81a0dc63e6c24a1728e'\n- '347e01a6f8c43779eeb35ab168cf0b6385df6ba92f804dca589840a5332f30b3'\n"
+    },
+    {
+      "name": "No orphaned indexable pages",
+      "status": "PASS"
+    },
+    {
+      "name": "Robots declaration and noindex visibility",
+      "status": "PASS"
+    },
+    {
+      "name": "JSON-LD identity, unsupported fields and FAQ visible parity",
+      "status": "PASS"
+    },
+    {
+      "name": "Current offer and no old consultation price",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown content returns genuine 404",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing legacy redirects remain one-hop",
+      "status": "PASS"
+    },
+    {
+      "name": "Tracking parameters excluded from canonical",
+      "status": "PASS"
+    }
+  ],
+  "redirectChecks": [
+    {
+      "from": "/hello-world",
+      "to": "/",
+      "status": 301,
+      "destinationStatus": 200
+    },
+    {
+      "from": "/house-condo-servicing",
+      "to": "/",
+      "status": 301,
+      "destinationStatus": 200
+    },
+    {
+      "from": "/residential",
+      "to": "/",
+      "status": 301,
+      "destinationStatus": 200
+    },
+    {
+      "from": "/sample-page",
+      "to": "/",
+      "status": 301,
+      "destinationStatus": 200
+    }
+  ],
+  "queries": [
+    {
+      "url": "/?utm_source=phase5",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com"
+    },
+    {
+      "url": "/contact?service=Buying%20a%20restaurant&utm_source=phase5",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/contact"
+    },
+    {
+      "url": "/blog?utm_campaign=phase5",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/blog"
+    },
+    {
+      "url": "/help?utm_campaign=phase5",
+      "status": 200,
+      "canonical": "https://www.penthouseadvisors.com/help"
+    }
+  ]
+}

@@ -120,7 +120,7 @@ const owners = [
   },
   {
     name: "Richard Stein",
-    title: "COO · Business Advisor · Owner",
+    title: "COO · Creator and Owner, Business Advisor",
     dre: null,
     bio: "As COO, Richard turns the firm’s strategy into everyday results, making sure execution across the company matches the direction set by leadership.",
   },
