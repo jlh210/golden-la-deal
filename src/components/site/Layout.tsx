@@ -216,7 +216,7 @@ dre: "DRE #02203003",
 },
 {
 name: "Richard Stein",
-title: "COO / Business Advisor / Owner",
+title: "COO · Chief Operating Officer · Deal Closer & Supervisor, Owner",
 dre: null,
 },
 {
@@ -277,7 +277,7 @@ Servicing Los Angeles County since 2021. <span className="text-gold font-semibol
 <h4 className="mt-8 text-sm font-semibold text-gold uppercase tracking-wider">Agents</h4>
 <ul className="mt-4 space-y-4 text-sm">
 {agents
-.filter((a) => a.name !== "Rosanna Paticchio")
+.filter((a) => a.name !== "Rosanna Paticchio" && a.name !== "Richard Stein")
 .map((a) => (
 <li key={a.name}>
 <div className="font-semibold">{a.name}</div>
