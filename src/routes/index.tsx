@@ -4,9 +4,9 @@ import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
 import { CONSULTATION_LABEL } from "@/lib/consultation";
 import { SITE_URL, ORG_ID, WEBSITE_ID, faqScript } from "@/lib/seo";
 
-const title = "Los Angeles Restaurant Advisors | Penthouse Advisors";
+const title = "Restaurant Business Broker Los Angeles, CA | Penthouse Advisors Inc.";
 const description =
-  "Buy, sell and navigate restaurant transactions in Los Angeles County. Penthouse Advisors coordinates acquisitions, leasing, licensing and permitting.";
+  "Penthouse Advisors Inc. is a restaurant business broker in Los Angeles, CA. Buy, sell and navigate restaurant transactions across LA County, with acquisitions, leasing, licensing and permitting coordinated by one firm.";
 const faqs = [
   {
     q: "What does a restaurant broker or advisor help coordinate?",
@@ -214,7 +214,7 @@ function HomePage() {
         <section className="pa-hero" aria-labelledby="home-title">
           <div className="pa-shell pa-hero-grid">
             <div className="pa-hero-copy">
-              <p className="pa-kicker">Los Angeles Restaurant Brokerage &amp; Advisory</p>
+              <p className="pa-kicker">Restaurant Business Broker · Los Angeles, CA</p>
               <h1 id="home-title">
                 Restaurant Transactions, <br />
                 <em>
@@ -272,6 +272,24 @@ function HomePage() {
                 <EditorialLink to={c.to}>{c.label}</EditorialLink>
               </article>
             ))}
+          </div>
+          <div className="pa-ownership" aria-labelledby="ownership-title">
+            <p className="pa-kicker" id="ownership-title">Ownership</p>
+            <div className="pa-ownership-card">
+              <span className="pa-ownership-mark" aria-hidden="true">
+                RS
+              </span>
+              <div>
+                <h3>Richard Stein</h3>
+                <p className="pa-ownership-role">
+                  COO · Chief Operating Officer · Owner · Deal Supervisor · Closer
+                </p>
+                <p>
+                  As COO, Richard turns the firm’s strategy into everyday results, making sure execution
+                  across the company matches the direction set by leadership.
+                </p>
+              </div>
+            </div>
           </div>
           <div className="pa-authority-links">
             <EditorialLink to="/agents">Meet the Advisors</EditorialLink>
