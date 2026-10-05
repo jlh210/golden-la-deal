@@ -58,6 +58,7 @@ env:
 
 jobs:
   update-site:
+    if: ${{ !startsWith(github.event.client_payload.request, 'Done') }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
