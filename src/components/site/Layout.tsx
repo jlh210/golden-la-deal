@@ -208,6 +208,14 @@ function Footer() {
               {EMAIL}
             </a>
             <p className="pa-hours">{HOURS}</p>
+            <div className="pa-footer-owner">
+              <h2>Ownership</h2>
+              <p>
+                <strong>Richard Stein</strong>
+                <br />
+                COO · Chief Operating Officer · Deal Closer &amp; Supervisor, Owner
+              </p>
+            </div>
           </div>
           <div>
             <h2>Restaurant Transactions</h2>
