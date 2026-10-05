@@ -73,17 +73,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "LA Restaurant Brokerage, Consulting & Licensing | Penthouse Advisors" },
+      { title: "Restaurant Business Broker Los Angeles, CA | Penthouse Advisors Inc." },
       {
         name: "description",
         content:
-          "Penthouse Advisors: Los Angeles restaurant brokerage, consulting, permitting, licensing, and ADA compliance. Buy, sell, lease, license, and rescue restaurants across LA County. Call 310-663-3521.",
+          "Penthouse Advisors Inc. is a restaurant business broker in Los Angeles, CA, offering restaurant brokerage, consulting, permitting, licensing, and ADA compliance. Buy, sell, lease, license, and rescue restaurants across LA County. Call 310-663-3521.",
       },
       { name: "author", content: "Penthouse Advisors Inc." },
       {
         name: "keywords",
         content:
-          "Los Angeles restaurant broker, restaurant consulting LA, restaurant permits Los Angeles, restaurant licensing LA, ADA compliance restaurant, liquor license transfer LA, commercial restaurant leasing Los Angeles, restaurants for sale Los Angeles",
+          "restaurant business broker Los Angeles CA, restaurant business broker Los Angeles, Los Angeles restaurant business broker, Los Angeles restaurant broker, restaurant consulting LA, restaurant permits Los Angeles, restaurant licensing LA, ADA compliance restaurant, liquor license transfer LA, commercial restaurant leasing Los Angeles, restaurants for sale Los Angeles",
       },
       { name: "robots", content: "index, follow" },
       { name: "theme-color", content: "#c9a24a" },
@@ -124,7 +124,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               name: "Penthouse Advisors Inc.",
               alternateName: "Penthouse Advisors",
               description:
-                "Full-service restaurant brokerage, consulting, licensing, permitting, and ADA compliance advisory firm serving Los Angeles County.",
+                "Restaurant business broker in Los Angeles, CA: full-service restaurant brokerage, consulting, licensing, permitting, and ADA compliance advisory serving Los Angeles County.",
               url: SITE_URL,
               logo: {
                 "@type": "ImageObject",
@@ -141,6 +141,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               ],
               foundingDate: "2021",
               knowsAbout: [
+                "Restaurant Business Brokerage",
                 "Restaurant Brokerage",
                 "Restaurant Consulting",
                 "Restaurant Acquisitions",
