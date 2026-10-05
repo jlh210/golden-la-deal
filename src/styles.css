@@ -1601,3 +1601,66 @@ main .hover\:text-gold:hover {
 main .text-destructive {
   color: #ac1922;
 }
+
+/* Ownership: Richard Stein (homepage + footer) */
+.pa-ownership {
+  margin-top: 46px;
+  padding-top: 26px;
+  border-top: 1px solid #cbc8bd;
+}
+.pa-ownership-card {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  margin-top: 18px;
+  max-width: 760px;
+}
+.pa-ownership-mark {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border: 1px solid #c9a24a;
+  border-radius: 50%;
+  color: #70592e;
+  font-family: var(--font-display);
+  font-size: 20px;
+  letter-spacing: 0.04em;
+}
+.pa-ownership-card h3 {
+  margin: 0;
+}
+.pa-ownership-role {
+  color: #806b44;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 8px 0 12px;
+}
+.pa-ownership-card p:not(.pa-ownership-role) {
+  font-size: 13px;
+  color: #62665d;
+  margin: 0;
+}
+.pa-footer-owner {
+  margin-top: 26px;
+}
+.pa-footer-owner h2 {
+  margin-bottom: 10px;
+}
+.pa-footer-owner p {
+  font-size: 12px;
+  line-height: 1.55;
+  color: #30372c;
+}
+@media (max-width: 479px) {
+  .pa-ownership-card {
+    gap: 16px;
+  }
+  .pa-ownership-mark {
+    width: 46px;
+    height: 46px;
+    font-size: 17px;
+  }
+}
