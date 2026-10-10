@@ -262,9 +262,6 @@ function Footer() {
               <li>
                 <Link to="/e2-visa-europe">International Restaurant Buyers</Link>
               </li>
-              <li>
-                <Link to="/hardware-store-for-sale">Selected Business Opportunities</Link>
-              </li>
             </ul>
           </div>
         </div>
