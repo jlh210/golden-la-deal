@@ -183,7 +183,7 @@ export const listings: Listing[] = [
     id: "R-003",
     slug: "wilshire-second-gen-lease",
     type: "Asset Sale",
-    title: "Gym and Coffee Shop Facility on the entire Property Lot",
+    title: "Gym Outdoor/Coffee Shop- North Santa Monica",
     location: "2408 Wilshire Blvd, Santa Monica, CA",
     coords: [34.032541, -118.484189],
     price: "$10,000 / month All-In",
