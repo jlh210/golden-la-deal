@@ -19,9 +19,9 @@ const serviceGroups = [
   {
     title: "Transactions",
     links: [
+      ["/restaurants-for-sale", "Restaurants & Businesses for Sale"],
       ["/buy-a-restaurant", "Restaurant Acquisitions"],
       ["/sell-your-restaurant", "Restaurant Dispositions"],
-      ["/restaurants-for-sale", "Restaurants & Businesses for Sale"],
       ["/business-investigations", "Due Diligence"],
       ["/off-market-sourcing", "Off-Market Sourcing"],
       ["/restaurant-consulting", "Restaurant Consulting"],
