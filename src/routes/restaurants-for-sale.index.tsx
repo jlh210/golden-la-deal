@@ -66,10 +66,9 @@ function ListingsPage() {
 
   return (
     <>
+      <h1 className="sr-only">Restaurants for sale in Los Angeles</h1>
       <PageHero
         eyebrow="Live Opportunities"
-        title="Restaurants for sale in Los Angeles"
-        accent="& selected business and lease opportunities."
         subtitle="Compare restaurant asset sales, selected businesses and spaces for lease across Los Angeles County. Review each listing’s asking price, equipment and location, then confirm availability with an advisor."
       />
 
