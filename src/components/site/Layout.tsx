@@ -9,7 +9,10 @@ const EMAIL = "PenthouseAdvisors@gmail.com";
 const EMAIL_HREF = "mailto:PenthouseAdvisors@gmail.com";
 const HOURS = "8:00am – 7:00pm · Mon–Sun";
 const primaryNav = [
-  { to: "/buy-a-restaurant", label: "Buy a Restaurant" },
+  {
+    to: "/restaurants-for-sale",
+    label: "Restaurants for sale in Los Angeles & selected business and lease opportunities",
+  },
   { to: "/sell-your-restaurant", label: "Sell a Restaurant" },
   { to: "/services", label: "Services" },
   { to: "/help", label: "Help Center" },
@@ -122,7 +125,11 @@ function Header() {
                 </div>
               </div>
             ) : (
-              <Link key={n.to} to={n.to}>
+              <Link
+                key={n.to}
+                to={n.to}
+                className={n.to === "/restaurants-for-sale" ? "pa-nav-wrap" : undefined}
+              >
                 {n.label}
               </Link>
             ),
