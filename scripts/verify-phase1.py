@@ -79,7 +79,6 @@ for path, page in pages.items():
 
 listing_slugs = re.findall(r'slug: "([^"]+)"', (ROOT/'src/lib/listings.ts').read_text())
 for slug in listing_slugs: assert '/restaurants-for-sale/' + slug in pages
-assert '/hardware-store-for-sale' in pages
 article_count = 0
 for source in (ROOT/'src/content/help/articles').glob('*.ts'):
     text = source.read_text()

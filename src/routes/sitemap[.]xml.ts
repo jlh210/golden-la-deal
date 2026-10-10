@@ -40,9 +40,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/search-door-knocking", changefreq: "monthly", priority: "0.7" },
           { path: "/off-market-sourcing", changefreq: "monthly", priority: "0.7" },
           { path: "/e2-visa-europe", changefreq: "monthly", priority: "0.6" },
-          { path: "/hardware-store-for-sale", changefreq: "weekly", priority: "0.5" },
 
-          // Both hardware-store destinations are retained pending equity review.
           ...listings
             .filter((listing) => getListingBySlug(listing.slug) === listing)
             .map((listing) => ({
