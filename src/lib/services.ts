@@ -10,7 +10,6 @@ import {
   Search,
   Plane,
   Building2,
-  Store,
   Home,
   FileSearch,
   Handshake,
@@ -36,7 +35,7 @@ export const services: Service[] = [
   {
     slug: "brokerage",
     to: "/restaurants-for-sale",
-    title: "Restaurant, Medical Office, Hardware Store for Sale/Lease in Los Angeles",
+    title: "Restaurant & Medical Office for Sale/Lease in Los Angeles",
     short: "Confidential buy/sell brokerage with full disclosure across LA County.",
     icon: ArrowRightLeft,
     featured: true,
@@ -101,13 +100,6 @@ export const services: Service[] = [
     icon: Plane,
   },
   {
-    slug: "hardware-store",
-    to: "/hardware-store-for-sale",
-    title: "Hardware Store For Sale",
-    short: "Established West LA hardware store - full business listing.",
-    icon: Store,
-  },
-  {
     slug: "leasing-vacant-restaurants",
     to: "/leasing-vacant-restaurants",
     title: "Leasing Vacant Restaurants",
@@ -164,7 +156,6 @@ export const serviceTopics = [
   "Leasing vacant restaurant",
   "E-2 visa (Europe)",
   "Second generation space",
-  "Hardware store inquiry",
   "Commercial property management",
   "Residential listing",
   "House/condo servicing",
