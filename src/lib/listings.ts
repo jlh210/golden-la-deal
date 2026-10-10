@@ -4,8 +4,6 @@ import wilshire3 from "@/assets/wilshire-3.png.asset.json";
 import wilshire4 from "@/assets/wilshire-4.png.asset.json";
 import santaMonica1 from "@/assets/santa-monica-1.png.asset.json";
 import santaMonica2 from "@/assets/santa-monica-2.png.asset.json";
-import hardwareStorefront from "@/assets/hardware-storefront.png.asset.json";
-import hardwareAisle from "@/assets/hardware-aisle.png.asset.json";
 import dentalOffice from "@/assets/dental-office-for-lease.png.asset.json";
 
 export type SaleType =
@@ -229,58 +227,6 @@ export const listings: Listing[] = [
       "Wilshire at 24th Street, Santa Monica",
     ],
     images: [wilshire3.url, wilshire1.url, wilshire2.url, wilshire4.url],
-  },
-  {
-    id: "B-001",
-    slug: "hardware-store-for-sale",
-    type: "Business Sale",
-    title: "Hardware Store for Sale",
-    location: "Westwood Blvd, West LA",
-    price: "$175,000",
-    priceNote: "Cash",
-    leaseType: "Business sale · Retail",
-    badge: "Available Now",
-    description:
-      "Established hardware store for sale on Westwood Blvd, West LA. $175,000 cash. Annual revenue $402,000. Established 2020.",
-    longDescription: [
-      "Established hardware store for sale on Westwood Blvd in West Los Angeles.",
-      "Asking $175,000 cash. Annual revenue of approximately $402,000. Business established in 2020 with one full-time employee.",
-      "New lease to be negotiated with three 3-year extension options. Product categories include key duplication, tools, gardening, plumbing, electrical, home hardware, and more.",
-    ],
-    sections: [
-      {
-        heading: "Deal Highlights",
-        body: "Straightforward business sale with training and escrow support included.",
-        bullets: [
-          "Asking price: $175,000 cash",
-          "Annual revenue: approximately $402,000",
-          "Established: 2020",
-          "Employees: 1 full-time",
-          "4 weeks of support & training included",
-          "Co-brokering welcome",
-        ],
-      },
-      {
-        heading: "Lease Terms",
-        body: "Lease commenced October 9, 2020. New lease terms to be negotiated with the landlord.",
-        bullets: [
-          "Base rent at commencement: $3,082.56 / mo",
-          "Year 6 monthly base rent: $4,840.89 + CAM",
-          "Three (3) 3-year options to extend",
-          "Buyer reimburses Seller's security deposit through escrow",
-          "FF&E sold in as-is condition",
-        ],
-      },
-    ],
-    features: [
-      "Established hardware store",
-      "Westwood Blvd, West LA location",
-      "$175,000 cash",
-      "$402,000 annual revenue",
-      "Key duplication, tools, plumbing, electrical",
-      "New lease negotiable",
-    ],
-    images: [hardwareStorefront.url, hardwareAisle.url],
   },
 ];
 
