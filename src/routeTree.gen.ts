@@ -27,7 +27,6 @@ import { Route as HouseCondoServicingRouteImport } from './routes/house-condo-se
 import { Route as HelloWorldRouteImport } from './routes/hello-world'
 import { Route as HealthPermittingRouteImport } from './routes/health-permitting'
 import { Route as HealthInspectionRouteImport } from './routes/health-inspection'
-import { Route as HardwareStoreForSaleRouteImport } from './routes/hardware-store-for-sale'
 import { Route as GrandfatherProtectionRouteImport } from './routes/grandfather-protection'
 import { Route as E2VisaEuropeRouteImport } from './routes/e2-visa-europe'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -138,11 +137,6 @@ const HealthPermittingRoute = HealthPermittingRouteImport.update({
 const HealthInspectionRoute = HealthInspectionRouteImport.update({
   id: '/health-inspection',
   path: '/health-inspection',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const HardwareStoreForSaleRoute = HardwareStoreForSaleRouteImport.update({
-  id: '/hardware-store-for-sale',
-  path: '/hardware-store-for-sale',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GrandfatherProtectionRoute = GrandfatherProtectionRouteImport.update({
@@ -261,7 +255,6 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/e2-visa-europe': typeof E2VisaEuropeRoute
   '/grandfather-protection': typeof GrandfatherProtectionRoute
-  '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
   '/health-inspection': typeof HealthInspectionRoute
   '/health-permitting': typeof HealthPermittingRoute
   '/hello-world': typeof HelloWorldRoute
@@ -302,7 +295,6 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/e2-visa-europe': typeof E2VisaEuropeRoute
   '/grandfather-protection': typeof GrandfatherProtectionRoute
-  '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
   '/health-inspection': typeof HealthInspectionRoute
   '/health-permitting': typeof HealthPermittingRoute
   '/hello-world': typeof HelloWorldRoute
@@ -343,7 +335,6 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/e2-visa-europe': typeof E2VisaEuropeRoute
   '/grandfather-protection': typeof GrandfatherProtectionRoute
-  '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
   '/health-inspection': typeof HealthInspectionRoute
   '/health-permitting': typeof HealthPermittingRoute
   '/hello-world': typeof HelloWorldRoute
@@ -386,7 +377,6 @@ export interface FileRouteTypes {
     | '/contact'
     | '/e2-visa-europe'
     | '/grandfather-protection'
-    | '/hardware-store-for-sale'
     | '/health-inspection'
     | '/health-permitting'
     | '/hello-world'
@@ -427,7 +417,6 @@ export interface FileRouteTypes {
     | '/contact'
     | '/e2-visa-europe'
     | '/grandfather-protection'
-    | '/hardware-store-for-sale'
     | '/health-inspection'
     | '/health-permitting'
     | '/hello-world'
@@ -467,7 +456,6 @@ export interface FileRouteTypes {
     | '/contact'
     | '/e2-visa-europe'
     | '/grandfather-protection'
-    | '/hardware-store-for-sale'
     | '/health-inspection'
     | '/health-permitting'
     | '/hello-world'
@@ -509,7 +497,6 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   E2VisaEuropeRoute: typeof E2VisaEuropeRoute
   GrandfatherProtectionRoute: typeof GrandfatherProtectionRoute
-  HardwareStoreForSaleRoute: typeof HardwareStoreForSaleRoute
   HealthInspectionRoute: typeof HealthInspectionRoute
   HealthPermittingRoute: typeof HealthPermittingRoute
   HelloWorldRoute: typeof HelloWorldRoute
@@ -662,13 +649,6 @@ declare module '@tanstack/react-router' {
       path: '/health-inspection'
       fullPath: '/health-inspection'
       preLoaderRoute: typeof HealthInspectionRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/hardware-store-for-sale': {
-      id: '/hardware-store-for-sale'
-      path: '/hardware-store-for-sale'
-      fullPath: '/hardware-store-for-sale'
-      preLoaderRoute: typeof HardwareStoreForSaleRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/grandfather-protection': {
@@ -840,7 +820,6 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   E2VisaEuropeRoute: E2VisaEuropeRoute,
   GrandfatherProtectionRoute: GrandfatherProtectionRoute,
-  HardwareStoreForSaleRoute: HardwareStoreForSaleRoute,
   HealthInspectionRoute: HealthInspectionRoute,
   HealthPermittingRoute: HealthPermittingRoute,
   HelloWorldRoute: HelloWorldRoute,

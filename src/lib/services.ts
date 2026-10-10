@@ -10,7 +10,6 @@ import {
   Search,
   Plane,
   Building2,
-  Store,
   Home,
   FileSearch,
   Handshake,
@@ -99,13 +98,6 @@ export const services: Service[] = [
     title: "E-2 Visa Europe",
     short: "Investment-visa-ready acquisitions for European entrepreneurs.",
     icon: Plane,
-  },
-  {
-    slug: "hardware-store",
-    to: "/hardware-store-for-sale",
-    title: "Hardware Store For Sale",
-    short: "Established West LA hardware store - full business listing.",
-    icon: Store,
   },
   {
     slug: "leasing-vacant-restaurants",
