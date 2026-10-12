@@ -195,7 +195,36 @@ async function sheetsHeaders() {
   };
 }
 
+// --- Cloudflare Turnstile (invisible-first bot check) ------------------------
+// Server-side verification. If TURNSTILE_SECRET_KEY is not set the check is
+// skipped (with a warning) so the form never breaks while the key is being
+// configured; once the secret exists, a valid token is REQUIRED.
+async function verifyTurnstile(token: string | undefined): Promise<boolean> {
+  const env =
+    (globalThis as { __env__?: Record<string, string | undefined> }).__env__ ?? process.env;
+  const secret = env.TURNSTILE_SECRET_KEY;
+  if (!secret) {
+    console.warn("TURNSTILE_SECRET_KEY not set; skipping bot verification.");
+    return true;
+  }
+  if (!token) return false;
+  try {
+    const res = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+      method: "POST",
+      body: new URLSearchParams({ secret, response: token }),
+      signal: AbortSignal.timeout(8000),
+    });
+    if (!res.ok) return false;
+    const json = (await res.json()) as { success?: boolean };
+    return json.success === true;
+  } catch (err) {
+    console.error("Turnstile verification error", err);
+    return false;
+  }
+}
+
 const leadSchema = z.object({
+  turnstileToken: z.string().max(2048).optional(),
   source: z.string().trim().min(1).max(120),
   serviceNeeded: z.string().trim().max(160).optional(),
   fields: z.object({
@@ -225,6 +254,11 @@ export const submitLead = createServerFn({ method: "POST" })
     // Pretend success so bots don't learn anything, but skip the write.
     if (f.website) {
       return { ok: true };
+    }
+
+    // Turnstile: blocks automated submissions before anything is written.
+    if (!(await verifyTurnstile(data.turnstileToken))) {
+      return { ok: false as const, reason: "bot_check_failed" as const };
     }
 
     const headers = await sheetsHeaders();
