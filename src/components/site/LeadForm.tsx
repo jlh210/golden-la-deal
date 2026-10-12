@@ -9,6 +9,26 @@ import { submitLead, markLeadBooked } from "@/lib/leads.functions";
 
 const CALENDLY_URL = "https://calendly.com/penthouseadvisors/30min";
 
+// Cloudflare Turnstile (public site key). When unset, the widget is not
+// rendered and the server skips verification, so the form keeps working.
+const TURNSTILE_SITE_KEY = import.meta.env.VITE_TURNSTILE_SITE_KEY as string | undefined;
+const TURNSTILE_SCRIPT_ID = "cf-turnstile-script";
+
+type TurnstileApi = {
+  render: (
+    el: HTMLElement,
+    opts: {
+      sitekey: string;
+      callback: (token: string) => void;
+      "expired-callback": () => void;
+      "error-callback": () => void;
+      theme?: "auto" | "light" | "dark";
+    },
+  ) => string;
+  reset: (widgetId?: string) => void;
+  remove: (widgetId?: string) => void;
+};
+
 const schema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
   phone: z.string().trim().min(7, "Valid phone required").max(30),
@@ -49,6 +69,9 @@ export function LeadForm({
   const [bookingSyncFailed, setBookingSyncFailed] = useState(false);
   const bookingHandled = useRef(false);
   const calendlyRef = useRef<HTMLDivElement>(null);
+  const turnstileRef = useRef<HTMLDivElement>(null);
+  const turnstileWidgetId = useRef<string | null>(null);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
 
   const send = useServerFn(submitLead);
   const mark = useServerFn(markLeadBooked);
@@ -134,6 +157,53 @@ export function LeadForm({
     };
   }, [stage, submitted, mark]);
 
+  // Render the Turnstile widget while the form is showing.
+  useEffect(() => {
+    if (stage !== "form" || !TURNSTILE_SITE_KEY) return;
+    let cancelled = false;
+
+    function mount() {
+      const api = (window as unknown as { turnstile?: TurnstileApi }).turnstile;
+      if (cancelled || !api || !turnstileRef.current || turnstileWidgetId.current) return;
+      turnstileWidgetId.current = api.render(turnstileRef.current, {
+        sitekey: TURNSTILE_SITE_KEY as string,
+        theme: "auto",
+        callback: (token) => setTurnstileToken(token),
+        "expired-callback": () => setTurnstileToken(null),
+        "error-callback": () => setTurnstileToken(null),
+      });
+    }
+
+    const existing = document.getElementById(TURNSTILE_SCRIPT_ID) as HTMLScriptElement | null;
+    if ((window as unknown as { turnstile?: TurnstileApi }).turnstile) {
+      mount();
+    } else if (existing) {
+      existing.addEventListener("load", mount);
+    } else {
+      const s = document.createElement("script");
+      s.id = TURNSTILE_SCRIPT_ID;
+      s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+      s.async = true;
+      s.defer = true;
+      s.addEventListener("load", mount);
+      document.head.appendChild(s);
+    }
+
+    return () => {
+      cancelled = true;
+      const api = (window as unknown as { turnstile?: TurnstileApi }).turnstile;
+      if (api && turnstileWidgetId.current) api.remove(turnstileWidgetId.current);
+      turnstileWidgetId.current = null;
+      setTurnstileToken(null);
+    };
+  }, [stage]);
+
+  function resetTurnstile() {
+    const api = (window as unknown as { turnstile?: TurnstileApi }).turnstile;
+    if (api && turnstileWidgetId.current) api.reset(turnstileWidgetId.current);
+    setTurnstileToken(null);
+  }
+
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
@@ -147,13 +217,28 @@ export function LeadForm({
       setErrors(fieldErrors);
       return;
     }
+    if (TURNSTILE_SITE_KEY && !turnstileToken) {
+      setErrors({});
+      setServerError("Please wait for the security check to finish, then try again.");
+      return;
+    }
     setErrors({});
     setServerError(null);
     setLoading(true);
     try {
       const response = await send({
-        data: { source: title, serviceNeeded: serviceNeeded ?? data.serviceNeeded, fields: data },
+        data: {
+          source: title,
+          serviceNeeded: serviceNeeded ?? data.serviceNeeded,
+          fields: data,
+          turnstileToken: turnstileToken ?? undefined,
+        },
       });
+      if (!response.ok) {
+        setServerError("Security check failed. Please try again, or call us.");
+        resetTurnstile();
+        return;
+      }
       setSubmitted({
         name: data.name,
         email: data.email,
@@ -164,6 +249,7 @@ export function LeadForm({
     } catch (err) {
       console.error(err);
       setServerError("Something went wrong sending your message. Please call us.");
+      resetTurnstile();
     } finally {
       setLoading(false);
     }
@@ -356,6 +442,7 @@ export function LeadForm({
         {note && (
           <p className="text-xs text-gold text-center font-semibold leading-relaxed">{note}</p>
         )}
+        {TURNSTILE_SITE_KEY && <div ref={turnstileRef} className="flex justify-center" />}
         <button
           type="submit"
           disabled={loading}
