@@ -14,7 +14,6 @@ import {
   Home,
   FileSearch,
   Handshake,
-  Stamp,
   DoorOpen,
   type LucideIcon,
 } from "lucide-react";
@@ -134,13 +133,6 @@ export const services: Service[] = [
     title: "Commercial Property Management",
     short: "Full-service commercial management for LA landlords and investors.",
     icon: Building2,
-  },
-  {
-    slug: "health-permitting",
-    to: "/health-permitting",
-    title: "Health Dept Permitting & Plan Check",
-    short: "Hand-drafted blueprints, plan-check submittal, stamped approvals, permits.",
-    icon: Stamp,
   },
 ];
 
