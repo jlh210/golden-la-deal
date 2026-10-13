@@ -135,7 +135,6 @@ export const serviceAuthority = {
       "Inspection notices, correction lists, and Building & Safety records.",
     ],
     guides: [
-      { to: "/health-inspection", label: "Health inspection preparation" },
       { to: "/restaurant-leasing", label: "Assess a restaurant space before leasing" },
     ],
     sources: [
