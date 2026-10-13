@@ -147,7 +147,7 @@ export const serviceAuthority = {
       },
     ],
     jurisdiction:
-      "Confirm jurisdiction for the property: LA County Environmental Health does not serve Pasadena, Long Beach, or Vernon. The $3,750 service term described here is an engagement term, not a statement about how long a government permit remains valid.",
+      "Confirm jurisdiction for the property: LA County Environmental Health does not serve Pasadena, Long Beach, or Vernon. The $4,750 service term described here is an engagement term, not a statement about how long a government permit remains valid.",
   },
   investigate: {
     title: "Restaurant Due Diligence in Los Angeles",
@@ -187,8 +187,8 @@ export const specialistFaqs = {
       a: "The proposed changes determine the review path. LA County directs buyers without major construction or remodeling to the appropriate district office for a health permit. A new facility or major modification requires plan-check coordination. Describe your menu, equipment changes, and construction scope to the responsible agency before work begins.",
     },
     {
-      q: "Is the $3,750 fee a government permit fee?",
-      a: "The $3,750 amount is Penthouse Advisors' published service fee for blueprint preparation and plan-check coordination. Confirm the written engagement scope and how agency or outside-vendor charges are handled. Agency approvals and permit issuance remain subject to their own reviews; payment for coordination does not guarantee approval.",
+      q: "Is the $4,750 fee a government permit fee?",
+      a: "The $4,750 amount is Penthouse Advisors' published service fee for blueprint preparation and plan-check coordination. Confirm the written engagement scope and how agency or outside-vendor charges are handled. Agency approvals and permit issuance remain subject to their own reviews; payment for coordination does not guarantee approval.",
     },
   ],
   investigate: [
