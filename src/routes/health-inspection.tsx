@@ -33,7 +33,7 @@ export const Route = createFileRoute("/health-inspection")({
 const steps = [
   { icon: ShieldCheck, title: "Pre-Inspection", body: "We walk your space first - same checklist the LA County Public Health inspector uses. Punch list with priorities and cost estimates." },
   { icon: AlertTriangle, title: "Red-Tag Triage", body: "If you've been closed, we identify the exact violations and the remediation path. We negotiate the re-inspection window." },
-  { icon: Ruler, title: "Hand-Drafted Blueprints", body: "Floor plan, site plan, reflected ceiling plan, hood and cook-line elevations - drafted to LA County standards. Included in the $2,700 fee." },
+  { icon: Ruler, title: "Hand-Drafted Blueprints", body: "Floor plan, site plan, reflected ceiling plan, hood and cook-line elevations - drafted to LA County standards. Separate agreement." },
   { icon: Flame, title: "Hood Cleaning & Inspection", body: "Type I hood cleaning, certified inspection, and grease interceptor sign-off coordinated through our vendor network." },
   { icon: Wrench, title: "Repair to Reopen", body: "Plumbing, refrigeration, hand sinks, sneeze guards - whatever the inspector cited, we get it corrected and documented." },
   { icon: DoorOpen, title: "Reopen", body: "Re-inspection scheduled, permit reissued, doors open. We stay on the file until you're operating." },
