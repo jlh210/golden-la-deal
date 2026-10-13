@@ -26,7 +26,6 @@ import { Route as LeasingVacantRestaurantsRouteImport } from './routes/leasing-v
 import { Route as HouseCondoServicingRouteImport } from './routes/house-condo-servicing'
 import { Route as HelloWorldRouteImport } from './routes/hello-world'
 import { Route as HealthPermittingRouteImport } from './routes/health-permitting'
-import { Route as HealthInspectionRouteImport } from './routes/health-inspection'
 import { Route as HardwareStoreForSaleRouteImport } from './routes/hardware-store-for-sale'
 import { Route as GrandfatherProtectionRouteImport } from './routes/grandfather-protection'
 import { Route as E2VisaEuropeRouteImport } from './routes/e2-visa-europe'
@@ -133,11 +132,6 @@ const HelloWorldRoute = HelloWorldRouteImport.update({
 const HealthPermittingRoute = HealthPermittingRouteImport.update({
   id: '/health-permitting',
   path: '/health-permitting',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const HealthInspectionRoute = HealthInspectionRouteImport.update({
-  id: '/health-inspection',
-  path: '/health-inspection',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HardwareStoreForSaleRoute = HardwareStoreForSaleRouteImport.update({
@@ -262,7 +256,6 @@ export interface FileRoutesByFullPath {
   '/e2-visa-europe': typeof E2VisaEuropeRoute
   '/grandfather-protection': typeof GrandfatherProtectionRoute
   '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
-  '/health-inspection': typeof HealthInspectionRoute
   '/health-permitting': typeof HealthPermittingRoute
   '/hello-world': typeof HelloWorldRoute
   '/house-condo-servicing': typeof HouseCondoServicingRoute
@@ -303,7 +296,6 @@ export interface FileRoutesByTo {
   '/e2-visa-europe': typeof E2VisaEuropeRoute
   '/grandfather-protection': typeof GrandfatherProtectionRoute
   '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
-  '/health-inspection': typeof HealthInspectionRoute
   '/health-permitting': typeof HealthPermittingRoute
   '/hello-world': typeof HelloWorldRoute
   '/house-condo-servicing': typeof HouseCondoServicingRoute
@@ -344,7 +336,6 @@ export interface FileRoutesById {
   '/e2-visa-europe': typeof E2VisaEuropeRoute
   '/grandfather-protection': typeof GrandfatherProtectionRoute
   '/hardware-store-for-sale': typeof HardwareStoreForSaleRoute
-  '/health-inspection': typeof HealthInspectionRoute
   '/health-permitting': typeof HealthPermittingRoute
   '/hello-world': typeof HelloWorldRoute
   '/house-condo-servicing': typeof HouseCondoServicingRoute
@@ -387,7 +378,6 @@ export interface FileRouteTypes {
     | '/e2-visa-europe'
     | '/grandfather-protection'
     | '/hardware-store-for-sale'
-    | '/health-inspection'
     | '/health-permitting'
     | '/hello-world'
     | '/house-condo-servicing'
@@ -428,7 +418,6 @@ export interface FileRouteTypes {
     | '/e2-visa-europe'
     | '/grandfather-protection'
     | '/hardware-store-for-sale'
-    | '/health-inspection'
     | '/health-permitting'
     | '/hello-world'
     | '/house-condo-servicing'
@@ -468,7 +457,6 @@ export interface FileRouteTypes {
     | '/e2-visa-europe'
     | '/grandfather-protection'
     | '/hardware-store-for-sale'
-    | '/health-inspection'
     | '/health-permitting'
     | '/hello-world'
     | '/house-condo-servicing'
@@ -510,7 +498,6 @@ export interface RootRouteChildren {
   E2VisaEuropeRoute: typeof E2VisaEuropeRoute
   GrandfatherProtectionRoute: typeof GrandfatherProtectionRoute
   HardwareStoreForSaleRoute: typeof HardwareStoreForSaleRoute
-  HealthInspectionRoute: typeof HealthInspectionRoute
   HealthPermittingRoute: typeof HealthPermittingRoute
   HelloWorldRoute: typeof HelloWorldRoute
   HouseCondoServicingRoute: typeof HouseCondoServicingRoute
@@ -655,13 +642,6 @@ declare module '@tanstack/react-router' {
       path: '/health-permitting'
       fullPath: '/health-permitting'
       preLoaderRoute: typeof HealthPermittingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/health-inspection': {
-      id: '/health-inspection'
-      path: '/health-inspection'
-      fullPath: '/health-inspection'
-      preLoaderRoute: typeof HealthInspectionRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/hardware-store-for-sale': {
@@ -841,7 +821,6 @@ const rootRouteChildren: RootRouteChildren = {
   E2VisaEuropeRoute: E2VisaEuropeRoute,
   GrandfatherProtectionRoute: GrandfatherProtectionRoute,
   HardwareStoreForSaleRoute: HardwareStoreForSaleRoute,
-  HealthInspectionRoute: HealthInspectionRoute,
   HealthPermittingRoute: HealthPermittingRoute,
   HelloWorldRoute: HelloWorldRoute,
   HouseCondoServicingRoute: HouseCondoServicingRoute,

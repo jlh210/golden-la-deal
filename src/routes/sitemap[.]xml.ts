@@ -30,7 +30,6 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/leasing-vacant-restaurants", changefreq: "monthly", priority: "0.8" },
           { path: "/alcohol-licensing", changefreq: "monthly", priority: "0.8" },
           { path: "/liquor-license-for-sale", changefreq: "weekly", priority: "0.8" },
-          { path: "/health-inspection", changefreq: "monthly", priority: "0.7" },
           { path: "/health-permitting", changefreq: "monthly", priority: "0.7" },
           { path: "/vermin-inspections", changefreq: "monthly", priority: "0.6" },
           { path: "/grandfather-protection", changefreq: "monthly", priority: "0.7" },
