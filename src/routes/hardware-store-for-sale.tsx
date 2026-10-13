@@ -4,8 +4,8 @@ import { Store, MapPin, Calendar, ArrowRight, FileText, Wrench } from "lucide-re
 import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
-import storefront from "@/assets/hardware-storefront.png.asset.json";
-import aisle from "@/assets/hardware-aisle.png.asset.json";
+import storefront from "@/assets/hardware-storefront.png";
+import aisle from "@/assets/hardware-aisle.png";
 
 import { breadcrumbScript } from "@/lib/seo";
 export const Route = createFileRoute("/hardware-store-for-sale")({
@@ -24,13 +24,13 @@ export const Route = createFileRoute("/hardware-store-for-sale")({
       },
       {
         property: "og:image",
-        content: new URL(listingImageProps(storefront.url).src, "https://www.penthouseadvisors.com")
+        content: new URL(listingImageProps(storefront).src, "https://www.penthouseadvisors.com")
           .href,
       },
       { property: "og:image:alt", content: "Westwood hardware store exterior" },
       {
         name: "twitter:image",
-        content: new URL(listingImageProps(storefront.url).src, "https://www.penthouseadvisors.com")
+        content: new URL(listingImageProps(storefront).src, "https://www.penthouseadvisors.com")
           .href,
       },
       { name: "twitter:image:alt", content: "Westwood hardware store exterior" },
@@ -122,14 +122,14 @@ function HardwarePage() {
         <div className="grid gap-4 md:grid-cols-2">
           <div className="aspect-[4/5] md:aspect-[4/3] overflow-hidden rounded-2xl border border-gold/40 shadow-elegant">
             <img
-              {...listingImageProps(storefront.url)}
+              {...listingImageProps(storefront)}
               alt="Hardware store entrance on Westwood Blvd, West LA"
               className="h-full w-full object-cover"
             />
           </div>
           <div className="aspect-[4/5] md:aspect-[4/3] overflow-hidden rounded-2xl border border-gold/40 shadow-elegant">
             <img
-              {...listingImageProps(aisle.url)}
+              {...listingImageProps(aisle)}
               alt="Hardware store aisle with tools and supplies"
               className="h-full w-full object-cover"
             />
