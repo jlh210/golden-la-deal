@@ -59,7 +59,7 @@ const scope = [
   {
     icon: Ruler,
     title: "Hand-drafted blueprints",
-    body: "Floor plan, proposed floor plan, site plan, reflected ceiling plan, hood and cook-line elevations, prep sink and drain elevations, scope of work, equipment schedule - all drafted to scale.",
+    body: "Existing floor plan, proposed floor plan, site plan, reflected ceiling plan, hood and cook-line elevations, prep sink, hand sink, three compartment sink, mop sink, floor sink, drain lines, elevations, scope of work, equipment schedule - all drafted to scale.",
   },
   {
     icon: FileCheck2,
