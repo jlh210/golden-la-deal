@@ -12,10 +12,6 @@ const health = {
   href: "https://publichealth.lacounty.gov/eh/inspection/how-to-obtain-restaurant-food-facility-permit.htm",
   label: "LA County: obtaining a restaurant permit",
 };
-const plans = {
-  href: "https://publichealth.lacounty.gov/eh/inspection/construction-requirements-retail-food-facilities.htm",
-  label: "LA County: food facility construction requirements",
-};
 
 export const serviceAuthority = {
   buy: {
@@ -124,31 +120,6 @@ export const serviceAuthority = {
     jurisdiction:
       "In the City of Los Angeles, eligible restaurants may use the Restaurant Beverage Program instead of a CUB. Other cities and unincorporated areas have their own local requirements. Approval, conditions, and timing are determined by the relevant agencies.",
   },
-  health: {
-    title: "Restaurant Health Permitting & Plan Check in Los Angeles",
-    answer:
-      "Penthouse Advisors helps restaurant owners coordinate plans, plan-check submissions, corrections, and opening inspections. The required path depends on the location and proposed work: buying an existing restaurant without major changes differs from remodeling or building a new facility. Identify the responsible health authority and required approvals before scheduling construction or committing to an opening date.",
-    service: "Health Dept permitting / plan check",
-    prepare: [
-      "Address, proposed menu, and description of construction or equipment changes.",
-      "Existing floor plans, equipment specifications, and prior health permit if available.",
-      "Inspection notices, correction lists, and Building & Safety records.",
-    ],
-    guides: [
-      { to: "/health-inspection", label: "Health inspection preparation" },
-      { to: "/restaurant-leasing", label: "Assess a restaurant space before leasing" },
-    ],
-    sources: [
-      health,
-      plans,
-      {
-        href: "https://admin.publichealth.lacounty.gov/eh/about/plan-check-program.htm",
-        label: "LA County: Plan Check Program and service area",
-      },
-    ],
-    jurisdiction:
-      "Confirm jurisdiction for the property: LA County Environmental Health does not serve Pasadena, Long Beach, or Vernon. The $3,750 service term described here is an engagement term, not a statement about how long a government permit remains valid.",
-  },
   investigate: {
     title: "Restaurant Due Diligence in Los Angeles",
     answer:
@@ -179,16 +150,6 @@ export const specialistFaqs = {
     {
       q: "Does every Los Angeles restaurant need a CUB?",
       a: "The local approval path depends on the jurisdiction and property. Within the City of Los Angeles, qualifying restaurants may use the Restaurant Beverage Program instead of a CUB. Review the existing approval, proposed hours, and operating conditions with the planning authority before assuming a prior restaurant's authorization covers your concept.",
-    },
-  ],
-  health: [
-    {
-      q: "Does buying an existing restaurant always require new plans?",
-      a: "The proposed changes determine the review path. LA County directs buyers without major construction or remodeling to the appropriate district office for a health permit. A new facility or major modification requires plan-check coordination. Describe your menu, equipment changes, and construction scope to the responsible agency before work begins.",
-    },
-    {
-      q: "Is the $3,750 fee a government permit fee?",
-      a: "The $3,750 amount is Penthouse Advisors' published service fee for blueprint preparation and plan-check coordination. Confirm the written engagement scope and how agency or outside-vendor charges are handled. Agency approvals and permit issuance remain subject to their own reviews; payment for coordination does not guarantee approval.",
     },
   ],
   investigate: [

@@ -64,7 +64,7 @@ export const knowledgeClusters = [
         to: "/help/alcohol-licensing/abc-license-transfer-guide",
         title: "How an ABC license transfer works",
       },
-      { to: "/health-permitting", title: "Health permitting service and agency resources" },
+      { to: "/health-inspection", title: "Health inspection service and agency resources" },
     ],
   },
   {

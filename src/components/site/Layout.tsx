@@ -39,7 +39,6 @@ const serviceGroups = [
     title: "Licensing & Permits",
     links: [
       ["/alcohol-licensing", "ABC / Liquor Licensing"],
-      ["/health-permitting", "Health Permitting"],
       ["/health-inspection", "Health Inspection"],
       ["/licensing-and-permits", "Licensing & Permits Overview"],
     ],
@@ -226,7 +225,6 @@ function Footer() {
                 ["/restaurants-for-sale", "Restaurants & Businesses for Sale"],
                 ["/restaurant-leasing", "Restaurant Leasing"],
                 ["/alcohol-licensing", "ABC Licensing"],
-                ["/health-permitting", "Restaurant Permitting"],
                 ["/services", "All Advisory Services"],
               ].map(([to, label]) => (
                 <li key={to}>

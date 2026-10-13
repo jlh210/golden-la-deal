@@ -106,7 +106,6 @@ function LicensingPage() {
       related={[
         { to: "/alcohol-licensing", label: "Alcohol Licensing (Type 41/47)" },
         { to: "/liquor-license-for-sale", label: "Liquor License For Sale" },
-        { to: "/health-permitting", label: "Health Dept Plan Check" },
         { to: "/health-inspection", label: "Health Inspection & Red-Tag" },
         { to: "/vermin-inspections", label: "Vermin Inspections" },
         { to: "/grandfather-protection", label: "Grandfather Protection" },

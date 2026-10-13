@@ -73,7 +73,7 @@ const services = [
   {
     title: "Restaurant Permitting",
     body: "Navigate health permitting, ownership-change requirements, plan check and inspection coordination for restaurant premises.",
-    to: "/health-permitting",
+    to: "/health-inspection",
     label: "Explore permitting support",
   },
 ];
@@ -431,7 +431,7 @@ function HomePage() {
               approvals. <Link to="/alcohol-licensing">ABC transfer support</Link> should account
               for those distinct processes. Health permitting and ownership-change requirements also
               depend on the premises and the responsible agency;{" "}
-              <Link to="/health-permitting">restaurant permitting support</Link> helps organize that
+              <Link to="/health-inspection">restaurant permitting support</Link> helps organize that
               review.
             </p>
             <p>
