@@ -34,6 +34,14 @@ export type Service = {
  */
 export const services: Service[] = [
   {
+    slug: "health-permitting",
+    to: "/health-permitting",
+    title: "Restaurant Health Permitting & Plan Check in Los Angeles",
+    short: "Hand-drafted blueprints, plan-check submittal, stamped approvals, permits.",
+    icon: Stamp,
+    featured: true,
+  },
+  {
     slug: "brokerage",
     to: "/restaurants-for-sale",
     title: "Restaurant, Medical Office, Hardware Store for Sale/Lease in Los Angeles",
@@ -134,13 +142,6 @@ export const services: Service[] = [
     title: "Commercial Property Management",
     short: "Full-service commercial management for LA landlords and investors.",
     icon: Building2,
-  },
-  {
-    slug: "health-permitting",
-    to: "/health-permitting",
-    title: "Health Dept Permitting & Plan Check",
-    short: "Hand-drafted blueprints, plan-check submittal, stamped approvals, permits.",
-    icon: Stamp,
   },
 ];
 
