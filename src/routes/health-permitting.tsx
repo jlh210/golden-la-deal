@@ -10,11 +10,7 @@ import {
   Thermometer,
 } from "lucide-react";
 import { SiteLayout } from "@/components/site/Layout";
-import {
-  ServiceAuthorityFaq,
-  ServiceAuthorityHero,
-  ServiceAuthorityDetails,
-} from "@/components/site/ServiceAuthority";
+import { ServiceAuthorityFaq, ServiceAuthorityDetails } from "@/components/site/ServiceAuthority";
 import { serviceAuthority, specialistFaqs } from "@/content/service-authority";
 import { CTASection } from "@/components/site/CTASection";
 
@@ -116,8 +112,6 @@ const statusStyle: Record<string, string> = {
 function PermittingPage() {
   return (
     <SiteLayout>
-      <ServiceAuthorityHero content={serviceAuthority.health} />
-
       {/* Pricing band */}
       <section className="border-b border-border bg-card">
         <div className="container-x py-10 md:py-12 flex items-start gap-4">
