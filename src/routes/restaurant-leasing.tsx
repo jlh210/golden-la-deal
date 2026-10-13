@@ -112,7 +112,6 @@ function RestaurantLeasingPage() {
         { to: "/leasing-vacant-restaurants", label: "Leasing Vacant Restaurants" },
         { to: "/assignments-rent-abatement", label: "Assignments & Rent Abatement" },
         { to: "/grandfather-protection", label: "Grandfather Protection" },
-        { to: "/health-permitting", label: "Health Permitting & Plan Check" },
       ]}
       serviceNeeded="Leasing vacant restaurant"
       ctaTitle="Looking for a restaurant lease — or a qualified tenant?"

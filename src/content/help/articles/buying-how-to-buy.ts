@@ -205,8 +205,8 @@ export const article: Article = {
       type: "links",
       items: [
         {
-          to: "/health-permitting",
-          title: "Discuss restaurant health permitting",
+          to: "/health-inspection",
+          title: "Discuss restaurant health inspection support",
         },
       ],
     },

@@ -14,7 +14,6 @@ import {
   Home,
   FileSearch,
   Handshake,
-  Stamp,
   DoorOpen,
   type LucideIcon,
 } from "lucide-react";
@@ -135,13 +134,6 @@ export const services: Service[] = [
     short: "Full-service commercial management for LA landlords and investors.",
     icon: Building2,
   },
-  {
-    slug: "health-permitting",
-    to: "/health-permitting",
-    title: "Health Dept Permitting & Plan Check",
-    short: "Hand-drafted blueprints, plan-check submittal, stamped approvals, permits.",
-    icon: Stamp,
-  },
 ];
 
 export const featuredServices = services.filter((s) => s.featured);
@@ -153,7 +145,6 @@ export const serviceTopics = [
   "Alcohol licensing (Type 41 / 47)",
   "Liquor license for sale",
   "Health department / inspection",
-  "Health Dept permitting / plan check",
   "Vermin / compliance inspection",
   "Grandfather protection question",
   "Lease assignment / rent abatement",
