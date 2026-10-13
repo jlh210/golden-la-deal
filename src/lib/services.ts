@@ -34,6 +34,13 @@ export type Service = {
  */
 export const services: Service[] = [
   {
+    slug: "commercial-property-management",
+    to: "/commercial-property-management",
+    title: "Commercial Property Management",
+    short: "Full-service commercial management for LA landlords and investors.",
+    icon: Building2,
+  },
+  {
     slug: "brokerage",
     to: "/restaurants-for-sale",
     title: "Restaurant, Medical Office, Hardware Store for Sale/Lease in Los Angeles",
@@ -127,13 +134,6 @@ export const services: Service[] = [
     title: "Buyer / Tenant Resolutions",
     short: "Stuck mid-deal? We resolve landlord, lease, escrow, and permit dilemmas.",
     icon: Handshake,
-  },
-  {
-    slug: "commercial-property-management",
-    to: "/commercial-property-management",
-    title: "Commercial Property Management",
-    short: "Full-service commercial management for LA landlords and investors.",
-    icon: Building2,
   },
   {
     slug: "health-permitting",
