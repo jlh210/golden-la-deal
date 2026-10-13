@@ -26,13 +26,13 @@ export const Route = createFileRoute("/health-permitting")({
       {
         name: "description",
         content:
-          "Restaurant health permitting and plan-check coordination in Los Angeles: scaled plans, submissions, corrections, and inspection preparation. $3,750 service fee.",
+          "Restaurant health permitting and plan-check coordination in Los Angeles: scaled plans, submissions, corrections, and inspection preparation. $4,750 service fee.",
       },
-      { property: "og:title", content: "Health Dept Permitting & Plan Check - $3,750" },
+      { property: "og:title", content: "Health Dept Permitting & Plan Check - $4,750" },
       {
         property: "og:description",
         content:
-          "Restaurant plans, plan-check coordination, and inspection preparation. $3,750 service fee.",
+          "Restaurant plans, plan-check coordination, and inspection preparation. $4,750 service fee.",
       },
       { property: "og:url", content: "https://www.penthouseadvisors.com/health-permitting" },
     ],
@@ -129,7 +129,7 @@ function PermittingPage() {
               Transparent Pricing
             </div>
             <h2 className="mt-1 text-2xl md:text-3xl font-display font-bold">
-              $3,750 flat - blueprints, plan check, and permit shepherding.
+              $4,750 flat - blueprints, plan check, and permit shepherding.
             </h2>
             <p className="mt-2 text-sm text-muted-foreground max-w-2xl">
               Service engagement term: 1 year or until the restaurant is leased, whichever comes
@@ -193,7 +193,7 @@ function PermittingPage() {
       <CTASection
         serviceNeeded={"Health Dept permitting / plan check"}
         title="Need stamped blueprints or a permit pushed through?"
-        body="Discuss your plans and the $3,750 service scope, including the agency reviews your project may require."
+        body="Discuss your plans and the $4,750 service scope, including the agency reviews your project may require."
       />
     </SiteLayout>
   );
