@@ -1,7 +1,6 @@
 import {
   ArrowRightLeft,
   Wine,
-  ShieldCheck,
   FileSignature,
   Ruler,
   AlertTriangle,
@@ -55,14 +54,6 @@ export const services: Service[] = [
     title: "Liquor License For Sale",
     short: "Active ABC licenses available - fully vetted, priced all-in.",
     icon: Wine,
-  },
-  {
-    slug: "health-permitting",
-    to: "/health-inspection",
-    title: "Health Dept Inspection & Permitting",
-    short: "Pre-inspections, red-tag removal, blueprints, hood cleaning, reopen.",
-    icon: ShieldCheck,
-    featured: true,
   },
   {
     slug: "vermin-inspections",
@@ -152,7 +143,6 @@ export const serviceTopics = [
   "Selling my restaurant",
   "Alcohol licensing (Type 41 / 47)",
   "Liquor license for sale",
-  "Health department / inspection",
   "Health Dept permitting / plan check",
   "Vermin / compliance inspection",
   "Grandfather protection question",
