@@ -114,6 +114,11 @@ const recentPermits = [
     addr: "Wilshire Blvd., West Los Angeles, Restaurant",
     status: "Red Tagged, Work Completed, Restaurant Open",
   },
+  {
+    addr: "West Los Angeles, Restaurant",
+    status:
+      "Restaurant Red Tag Closed, Blueprint Corrections, Equipment Schedule & Specifications Submission to Plan-Check Completed, Restaurant Opened for Business",
+  },
 ];
 
 const statusStyle: Record<string, string> = {
@@ -126,6 +131,8 @@ const statusStyle: Record<string, string> = {
     "bg-foreground/10 text-foreground/85 border-border",
   "Red Tag Removed, Health Dept Permit Issuance Complete": "bg-gold/15 text-gold border-gold/40",
   "Red Tagged, Work Completed, Restaurant Open": "bg-gold/15 text-gold border-gold/40",
+  "Restaurant Red Tag Closed, Blueprint Corrections, Equipment Schedule & Specifications Submission to Plan-Check Completed, Restaurant Opened for Business":
+    "bg-gold/15 text-gold border-gold/40",
 };
 
 function PermittingPage() {
