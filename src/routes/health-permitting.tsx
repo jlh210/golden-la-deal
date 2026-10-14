@@ -121,8 +121,7 @@ const recentPermits = [
   },
   {
     addr: 'Sunset Blvd., Hollywood, "Commissary Kitchen"',
-    status:
-      "Brought up to Code Compliance, Change of Ownership, Permit Issuance Complete",
+    status: "Brought to Code Compliance, Change of Ownership, Permit Issuance",
   },
 ];
 
@@ -138,7 +137,7 @@ const statusStyle: Record<string, string> = {
   "Red Tagged, Work Completed, Restaurant Open": "bg-gold/15 text-gold border-gold/40",
   "Restaurant Red Tag Closed, Blueprint Corrections, Equipment Schedule & Specifications Submission to Plan-Check Completed, Restaurant Opened for Business":
     "bg-gold/15 text-gold border-gold/40",
-  "Brought up to Code Compliance, Change of Ownership, Permit Issuance Complete":
+  "Brought to Code Compliance, Change of Ownership, Permit Issuance":
     "bg-gold/15 text-gold border-gold/40",
 };
 
