@@ -102,7 +102,7 @@ const recentPermits = [
   { addr: "Sunset Blvd, Silver Lake", status: "Permit Approved Open" },
   { addr: "Pico Blvd, West LA", status: "Red Tag Corrected" },
   { addr: "Ventura Blvd, Sherman Oaks", status: "Permit Approved Open" },
-  { addr: "Melrose Ave, Hollywood", status: "Plan Check In Review" },
+  { addr: "Melrose Ave, Hollywood", status: "Plan Check Review Completed" },
   { addr: "Beverly Blvd, Mid-City", status: "Permit Approved Open" },
   { addr: "Main St, Santa Monica", status: "Red Tag Corrected" },
 ];
@@ -110,7 +110,7 @@ const recentPermits = [
 const statusStyle: Record<string, string> = {
   "Permit Approved Open": "bg-gold/15 text-gold border-gold/40",
   "Red Tag Corrected": "bg-foreground/10 text-foreground/85 border-border",
-  "Plan Check In Review": "bg-destructive/10 text-destructive border-destructive/30",
+  "Plan Check Review Completed": "bg-gold/15 text-gold border-gold/40",
 };
 
 function PermittingPage() {
