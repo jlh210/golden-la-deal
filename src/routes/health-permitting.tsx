@@ -108,6 +108,7 @@ const recentPermits = [
   { addr: "Echo Park, Coffee Shop", status: "Equipment Review Pending" },
   { addr: "Burbank, Restaurant", status: "Equipment Review Pending" },
   { addr: "Santa Monica, Restaurant", status: "Red Tag Removed, Health Dept Permit Issued" },
+  { addr: "Woodland Hills, Meat Market", status: '"Change of Use" & Health Dept Permit, Pending' },
 ];
 
 const statusStyle: Record<string, string> = {
@@ -116,6 +117,7 @@ const statusStyle: Record<string, string> = {
   "Plan Check Review Completed": "bg-gold/15 text-gold border-gold/40",
   "Equipment Review Pending": "bg-foreground/10 text-foreground/85 border-border",
   "Red Tag Removed, Health Dept Permit Issued": "bg-gold/15 text-gold border-gold/40",
+  '"Change of Use" & Health Dept Permit, Pending': "bg-foreground/10 text-foreground/85 border-border",
 };
 
 function PermittingPage() {
