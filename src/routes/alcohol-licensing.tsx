@@ -82,7 +82,7 @@ const fees = [
 
 const recent = [
   { addr: "7275 Melrose Ave", type: "Type 41", status: "Approved-Active" },
-  { addr: "6535 Melrose Ave", type: "Type 47", status: "Pending" },
+  { addr: "6535 Melrose Ave", type: "Type 47", status: "Approved-Active" },
   { addr: "5710 E Los Angeles Ave, Simi Valley", type: "Type 41", status: "Pending" },
   { addr: "8406 Topanga Canyon Blvd, Canoga Park", type: "Type 41", status: "Approved-Active" },
   { addr: "1831 S La Cienega", type: "Type 41", status: "Pending" },
