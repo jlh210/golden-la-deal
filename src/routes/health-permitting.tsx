@@ -122,6 +122,7 @@ const recentPermits = [
     addr: 'Sunset Blvd., Hollywood, "Commissary Kitchen"',
     status: "Brought to Code Compliance, Change of Ownership, Permit Issuance",
   },
+  { addr: "Mar Vista, Los Angeles, Restaurant", status: "Health Dept Inspection Pending Approval" },
 ];
 
 const statusStyle: Record<string, string> = {
@@ -137,6 +138,7 @@ const statusStyle: Record<string, string> = {
   "Red Tag Closed, Blueprint Corrections, Reopened": "bg-gold/15 text-gold border-gold/40",
   "Brought to Code Compliance, Change of Ownership, Permit Issuance":
     "bg-gold/15 text-gold border-gold/40",
+  "Health Dept Inspection Pending Approval": "bg-foreground/10 text-foreground/85 border-border",
 };
 
 function PermittingPage() {
