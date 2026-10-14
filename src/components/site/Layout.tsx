@@ -11,6 +11,7 @@ const HOURS = "8:00am – 7:00pm · Mon–Sun";
 const primaryNav = [
   { to: "/buy-a-restaurant", label: "Buy a Restaurant" },
   { to: "/sell-your-restaurant", label: "Sell a Restaurant" },
+  { to: "/health-permitting", label: "Health Permitting" },
   { to: "/services", label: "Services" },
   { to: "/help", label: "Help Center" },
   { to: "/about", label: "About" },
