@@ -122,7 +122,7 @@ const recentPermits = [
   {
     addr: 'Sunset Blvd., Hollywood, "Commissary Kitchen"',
     status:
-      "Brought up to Code Compliance, Change of Ownership, Health Dept. Permit Inspection, Permit Issuance Complete",
+      "Brought up to Code Compliance, Change of Ownership, Permit Issuance Complete",
   },
 ];
 
