@@ -4,9 +4,9 @@ import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 import { breadcrumbScript } from "@/lib/seo";
 
-const title = "California Type 47 Liquor License Inquiries | Penthouse Advisors";
+const title = "Liquor License For Sale - Type 47 Hard Liquor | Penthouse Advisors";
 const description =
-  "Looking for a Type 47 liquor license in Los Angeles? Discuss availability, your proposed location and transfer questions with Penthouse Advisors.";
+  "Type 47 Hard Liquor license for sale inquiries in Los Angeles. Discuss availability, your proposed location and transfer questions with Penthouse Advisors.";
 
 export const Route = createFileRoute("/liquor-license-for-sale")({
   head: () => ({
@@ -23,7 +23,7 @@ export const Route = createFileRoute("/liquor-license-for-sale")({
     scripts: [
       breadcrumbScript([
         { name: "Home", path: "/" },
-        { name: "Liquor License Inquiries", path: "/liquor-license-for-sale" },
+        { name: "Liquor License For Sale", path: "/liquor-license-for-sale" },
       ]),
     ],
   }),
@@ -34,9 +34,9 @@ function LiquorLicenseForSale() {
   return (
     <SiteLayout>
       <PageHero
-        eyebrow="California liquor license inquiries"
-        title="Looking for a Type 47 liquor license"
-        accent="in Los Angeles?"
+        eyebrow="Liquor License For Sale"
+        title="Type 47 Hard Liquor"
+        accent="License For Sale"
         subtitle="Discuss your proposed restaurant location, license needs and purchase questions with Penthouse Advisors. Confirm current availability and terms before relying on a quoted opportunity."
       />
       <section className="container-x py-12 md:py-16">
