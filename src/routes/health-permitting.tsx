@@ -106,6 +106,7 @@ const recentPermits = [
   { addr: "Beverly Blvd, Mid-City", status: "Permit Approved Open" },
   { addr: "Main St, Santa Monica", status: "Red Tag Corrected" },
   { addr: "Echo Park, Coffee Shop", status: "Equipment Review Pending" },
+  { addr: "Burbank, Restaurant", status: "Equipment Review Pending" },
 ];
 
 const statusStyle: Record<string, string> = {
