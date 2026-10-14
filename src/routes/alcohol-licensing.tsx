@@ -81,7 +81,7 @@ const fees = [
 ];
 
 const recent = [
-  { addr: "7275 Melrose Ave", type: "Type 41", status: "Pending" },
+  { addr: "7275 Melrose Ave", type: "Type 41", status: "Approved-Active" },
   { addr: "6535 Melrose Ave", type: "Type 47", status: "Pending" },
   { addr: "5710 E Los Angeles Ave, Simi Valley", type: "Type 41", status: "Pending" },
   { addr: "8406 Topanga Canyon Blvd, Canoga Park", type: "Type 41", status: "Pending" },
@@ -107,6 +107,7 @@ const recent = [
 
 const statusStyle: Record<string, string> = {
   "Issuance Activated": "bg-gold/15 text-gold border-gold/40",
+  "Approved-Active": "bg-gold/15 text-gold border-gold/40",
   Pending: "bg-foreground/10 text-foreground/85 border-border",
 };
 
