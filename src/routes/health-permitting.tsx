@@ -116,8 +116,7 @@ const recentPermits = [
   },
   {
     addr: "West Los Angeles, Restaurant",
-    status:
-      "Restaurant Red Tag Closed, Blueprint Corrections, Equipment Schedule & Specifications Submission to Plan-Check Completed, Restaurant Opened for Business",
+    status: "Red Tag Closed, Blueprint Corrections, Reopened",
   },
   {
     addr: 'Sunset Blvd., Hollywood, "Commissary Kitchen"',
@@ -135,8 +134,7 @@ const statusStyle: Record<string, string> = {
     "bg-foreground/10 text-foreground/85 border-border",
   "Red Tag Removed, Health Dept Permit Issuance Complete": "bg-gold/15 text-gold border-gold/40",
   "Red Tagged, Work Completed, Restaurant Open": "bg-gold/15 text-gold border-gold/40",
-  "Restaurant Red Tag Closed, Blueprint Corrections, Equipment Schedule & Specifications Submission to Plan-Check Completed, Restaurant Opened for Business":
-    "bg-gold/15 text-gold border-gold/40",
+  "Red Tag Closed, Blueprint Corrections, Reopened": "bg-gold/15 text-gold border-gold/40",
   "Brought to Code Compliance, Change of Ownership, Permit Issuance":
     "bg-gold/15 text-gold border-gold/40",
 };
