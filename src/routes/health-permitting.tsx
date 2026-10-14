@@ -105,12 +105,14 @@ const recentPermits = [
   { addr: "Melrose Ave, Hollywood", status: "Plan Check Review Completed" },
   { addr: "Beverly Blvd, Mid-City", status: "Permit Approved Open" },
   { addr: "Main St, Santa Monica", status: "Red Tag Corrected" },
+  { addr: "Echo Park, Coffee Shop", status: "Equipment Review Pending" },
 ];
 
 const statusStyle: Record<string, string> = {
   "Permit Approved Open": "bg-gold/15 text-gold border-gold/40",
   "Red Tag Corrected": "bg-foreground/10 text-foreground/85 border-border",
   "Plan Check Review Completed": "bg-gold/15 text-gold border-gold/40",
+  "Equipment Review Pending": "bg-foreground/10 text-foreground/85 border-border",
 };
 
 function PermittingPage() {
