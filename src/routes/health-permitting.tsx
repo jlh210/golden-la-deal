@@ -110,6 +110,10 @@ const recentPermits = [
   { addr: "Santa Monica, Restaurant", status: "Red Tag Removed, Health Dept Permit Issued" },
   { addr: "Woodland Hills, Meat Market", status: '"Change of Use" & Health Dept Permit, Pending' },
   { addr: "West Los Angeles, Restaurant", status: "Red Tag Removed, Health Dept Permit Issuance Complete" },
+  {
+    addr: "Wilshire Blvd., West Los Angeles, Restaurant",
+    status: "Red Tagged, Work Completed, Restaurant Open",
+  },
 ];
 
 const statusStyle: Record<string, string> = {
@@ -121,6 +125,7 @@ const statusStyle: Record<string, string> = {
   '"Change of Use" & Health Dept Permit, Pending':
     "bg-foreground/10 text-foreground/85 border-border",
   "Red Tag Removed, Health Dept Permit Issuance Complete": "bg-gold/15 text-gold border-gold/40",
+  "Red Tagged, Work Completed, Restaurant Open": "bg-gold/15 text-gold border-gold/40",
 };
 
 function PermittingPage() {
