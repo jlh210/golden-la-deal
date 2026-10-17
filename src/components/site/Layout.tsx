@@ -10,7 +10,7 @@ const EMAIL_HREF = "mailto:PenthouseAdvisors@gmail.com";
 const HOURS = "8:00am – 7:00pm · Mon–Sun";
 const primaryNav = [
   { to: "/alcohol-licensing", label: "Restaurant Alcohol Licensing" },
-  { to: "/health-permitting", label: "Restaurant Health Dept Permitting" },
+  { to: "/health-permitting", label: "Health Permitting" },
   { to: "/sell-your-restaurant", label: "Sell a Restaurant" },
   { to: "/buy-a-restaurant", label: "Buy a Restaurant" },
   { to: "/services", label: "Services" },
