@@ -75,7 +75,7 @@ const types = [
 const fees = [
   { label: "Deposit (non-refundable)", amount: "$8,000" },
   { label: "California ABC application fees", amount: "Per current ABC schedule" },
-  { label: "ABC Mailing / Notification", amount: "$2,900" },
+  { label: "ABC Mailing / Notification", amount: "$2,950" },
   { label: "Live Scan per person", amount: "Confirm current provider charge" },
   { label: "Notary", amount: "Confirm scope and charge" },
 ];
@@ -195,7 +195,7 @@ function LicensingPage() {
               <p className="text-sm">
                 <span className="font-semibold text-gold">Application notices:</span> Confirm the
                 posting, mailing, and publication requirements for the specific application with
-                ABC. The $2,900 published notification service line is not presented as a government
+                ABC. The $2,950 published notification service line is not presented as a government
                 fee.
               </p>
             </div>
