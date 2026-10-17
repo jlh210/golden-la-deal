@@ -277,6 +277,24 @@ function HomePage() {
             <p className="pa-kicker" id="ownership-title">Ownership</p>
             <div className="pa-ownership-card">
               <span className="pa-ownership-mark" aria-hidden="true">
+                RP
+              </span>
+              <div>
+                <h3>Roschard Paticchio-Stein</h3>
+                <p className="pa-ownership-role">
+                  CEO · Owner · Business Agent
+                  <br />
+                  DRE #02203003
+                </p>
+                <p>
+                  As CEO, Roschard makes the major corporate decisions that shape Penthouse Advisors,
+                  drives the firm’s direction, supervises the executive team, and oversees growth
+                  plans.
+                </p>
+              </div>
+            </div>
+            <div className="pa-ownership-card">
+              <span className="pa-ownership-mark" aria-hidden="true">
                 RS
               </span>
               <div>
