@@ -128,7 +128,7 @@ const owners = [
     name: "Rosanna Paticchio",
     title: "CFO · Broker of Record",
     dre: "DRE #02332697",
-    bio: "Broker of Record and head of finance. Rosanna is responsible for compliance, trust accounting, and licensure oversight across the firm's brokerage and ABC licensing activity.",
+    bio: "Broker of Record and head of finance. Rosanna is responsible for compliance, trust accounting, and licensure oversight across the firm's brokerage activity.",
   },
 ];
 
