@@ -139,7 +139,7 @@ function AboutPage() {
         eyebrow="About Us"
         lead="Penthouse Advisors Inc. Los Angeles County’s Premier Restaurant & Business Advisory Firm."
         title="Servicing LA County's Restaurants & Businesses."
-        subtitle={`Penthouse Advisors is a modern, full-service restaurant and business brokerage serving Los Angeles County. Established in 2021, we combine brokerage expertise, ABC licensing, Health Department Permitting, Health Dept Plan-Check Restaurant Red Rag removal and operational advisory under one roof. Protocol: All parties, Buyer, Seller, Landlord are treated equally, fairly, and honestly with our "Do It Now" services. If we don't "Do It Now" it won't get done & you'll forget all about it.`}
+        subtitle={`Penthouse Advisors is a modern, full-service restaurant and business brokerage serving Los Angeles County. Established in 2021, we combine brokerage expertise, ABC licensing, Health Department Permitting, Health Dept Plan-Check Restaurant Red Rag removal and operational advisory under one roof. Protocol: All parties, Buyer, Seller, Landlord are treated equally, fairly, and honestly with our "Do It Now" services. If we don't "Do It Now" it won't get done & you'll forget all about doing it later. Book a Consultation Appointment, Now.`}
       />
 
       {/* Values */}
