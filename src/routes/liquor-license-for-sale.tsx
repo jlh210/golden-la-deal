@@ -35,8 +35,8 @@ function LiquorLicenseForSale() {
     <SiteLayout>
       <PageHero
         eyebrow="Liquor License For Sale"
-        title="Type 47 Hard Liquor"
-        accent="License For Sale"
+        title="We Sell Los Angeles County, Transferable, Clean,"
+        accent="Type 47 Hard Liquor Licenses"
         subtitle="Discuss your proposed restaurant location, license needs and purchase questions with Penthouse Advisors. Confirm current availability and terms before relying on a quoted opportunity."
       />
       <section className="container-x py-12 md:py-16">
