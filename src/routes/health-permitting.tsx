@@ -182,35 +182,29 @@ function PermittingPage() {
         ))}
       </section>
 
-      {/* Red tagged */}
+      {/* Red tag */}
       <section className="border-t border-border">
         <div className="container-x py-16 md:py-20">
-          <p className="text-xs font-semibold uppercase tracking-widest text-gold">Red Tagged</p>
-          <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">
-            Removing a Retail Food or Restaurant red tag.
-          </h2>
+          <p className="text-xs font-semibold uppercase tracking-widest text-gold">
+            Health Dept Permitting
+          </p>
+          <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">Red Tag</h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">
             The following steps are required to remove a Retail Food and Restaurant red tag
             situation.
           </p>
           <ol className="mt-8 max-w-3xl space-y-6 list-decimal pl-6 text-muted-foreground leading-relaxed">
             <li>
-              We will draft blueprints: existing floor plan of the premises, proposed floor plan of
-              the premises, a site plan, and a reflected ceiling plan. Proposed plan examples:
-              <ol className="mt-3 space-y-2 list-[lower-alpha] pl-6">
-                <li>
-                  An express plumbing permit must be pulled with Building &amp; Safety. The plan
-                  will show the hand sink moved and connected direct to the sewage.
-                </li>
-                <li>All exposed drains buried behind the wall and connected direct.</li>
-                <li>Any and all changes if required.</li>
-              </ol>
+              We draft existing and proposed blueprints, a site plan, and a reflected ceiling plan.
+              An express permit must be pulled with Building &amp; Safety. The proposed plan will
+              show any and all changes required or made.
             </li>
-            <li>Upon stamping the blueprints, Arturo's work can only commence.</li>
+            <li>Upon blueprint stamping, the alteration work can only commence.</li>
             <li>
-              We will have all the forms and paperwork with Health Dept plan-check ready for
-              signature, perform site inspections, and contact the newly assigned plan-check
-              inspector for red tag removal and clearance issuance.
+              We will have all the forms and paperwork with Health Dept plan-check prepared and
+              ready for signature. Site inspections are made during the remodel. After we make our
+              final pre-inspection, we contact the newly assigned plan-check inspector to inspect
+              and remove the red tags, followed by clearance.
             </li>
           </ol>
         </div>
