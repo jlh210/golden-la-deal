@@ -157,13 +157,8 @@ function PermittingPage() {
               Transparent Pricing
             </div>
             <h2 className="mt-1 text-2xl md:text-3xl font-display font-bold">
-              $4,750 flat - blueprints, plan check, and permit shepherding.
+              $4,750 flat - Blueprints, Health Dept Plan-Check, and Permitting
             </h2>
-            <p className="mt-2 text-sm text-muted-foreground max-w-2xl">
-              Service engagement term: 1 year or until the restaurant is leased, whichever comes
-              first. Confirm the written scope and treatment of agency and outside-vendor charges
-              before engagement.
-            </p>
           </div>
         </div>
       </section>
