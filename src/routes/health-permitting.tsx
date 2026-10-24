@@ -157,7 +157,8 @@ function PermittingPage() {
               Transparent Pricing
             </div>
             <h2 className="mt-1 text-2xl md:text-3xl font-display font-bold">
-              $4,750 flat - Blueprints, Health Dept Plan-Check, and Permitting
+              $4,750 flat - Health Dept Plan-Check Food Facility and Restaurant Pre Inspections,
+              Corrections and Permitting, Open for Business
             </h2>
             <p className="mt-2 text-lg md:text-xl font-display font-semibold text-foreground/85">
               $4,750 flat - Blueprints, Red Tag Removal
