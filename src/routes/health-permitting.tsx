@@ -159,6 +159,9 @@ function PermittingPage() {
             <h2 className="mt-1 text-2xl md:text-3xl font-display font-bold">
               $4,750 flat - Blueprints, Health Dept Plan-Check, and Permitting
             </h2>
+            <p className="mt-2 text-lg md:text-xl font-display font-semibold text-foreground/85">
+              $4,750 flat - Blueprints, Red Tag Removal
+            </p>
           </div>
         </div>
       </section>
@@ -176,6 +179,40 @@ function PermittingPage() {
             <p className="mt-3 text-muted-foreground leading-relaxed text-sm">{c.body}</p>
           </div>
         ))}
+      </section>
+
+      {/* Red tagged */}
+      <section className="border-t border-border">
+        <div className="container-x py-16 md:py-20">
+          <p className="text-xs font-semibold uppercase tracking-widest text-gold">Red Tagged</p>
+          <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">
+            Removing a Retail Food or Restaurant red tag.
+          </h2>
+          <p className="mt-3 max-w-2xl text-muted-foreground">
+            The following steps are required to remove a Retail Food and Restaurant red tag
+            situation.
+          </p>
+          <ol className="mt-8 max-w-3xl space-y-6 list-decimal pl-6 text-muted-foreground leading-relaxed">
+            <li>
+              We will draft blueprints: existing floor plan of the premises, proposed floor plan of
+              the premises, a site plan, and a reflected ceiling plan. Proposed plan examples:
+              <ol className="mt-3 space-y-2 list-[lower-alpha] pl-6">
+                <li>
+                  An express plumbing permit must be pulled with Building &amp; Safety. The plan
+                  will show the hand sink moved and connected direct to the sewage.
+                </li>
+                <li>All exposed drains buried behind the wall and connected direct.</li>
+                <li>Any and all changes if required.</li>
+              </ol>
+            </li>
+            <li>Upon stamping the blueprints, Arturo's work can only commence.</li>
+            <li>
+              We will have all the forms and paperwork with Health Dept plan-check ready for
+              signature, perform site inspections, and contact the newly assigned plan-check
+              inspector for red tag removal and clearance issuance.
+            </li>
+          </ol>
+        </div>
       </section>
 
       {/* Recent permits */}
