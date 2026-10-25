@@ -218,7 +218,8 @@ function PermittingPage() {
           </h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">
             Examples retained from our published service history. Status labels describe the
-            recorded project stage and are not a live agency feed. Addresses are abbreviated.
+            recorded project stage and are not a live agency feed. Addresses are abbreviated,
+            and brands are not disclosed to customers.
           </p>
           <div className="mt-8 grid gap-3 md:grid-cols-2">
             {recentPermits.map((r, i) => (
