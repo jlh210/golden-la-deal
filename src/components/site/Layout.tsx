@@ -198,14 +198,11 @@ function TopBar() {
     <div className="pa-topbar">
       <div className="pa-shell pa-topbar-inner">
         <p>
-          <strong>Need Restaurant solutions Fast? Book Now</strong>{" "}
-          <Link to="/contact">
-            a 30-minute mobile-to-mobile call for real answers on restaurants, properties, and city
-            matters.
-          </Link>
+          <strong>Need Restaurant, Food Market, Retail Business solutions Fast? Book Now</strong>{" "}
+          <Link to="/contact">a 30-minute -$35 mobile-to-mobile call for real answers</Link>.
         </p>
         <p>
-          Other Matters: Call or Text: <a href={PHONE_HREF}>{PHONE}</a>
+          All Other Matters: Call or Text: <a href={PHONE_HREF}>{PHONE}</a>
           {" · "}
           <a href={EMAIL_HREF}>{EMAIL}</a>
           {" · "}
