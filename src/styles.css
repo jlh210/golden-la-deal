@@ -329,6 +329,28 @@ summary:focus-visible {
   width: min(1200px, calc(100% - 80px));
   margin-inline: auto;
 }
+.pa-topbar {
+  background: #222720;
+  color: #e4dccb;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.pa-topbar-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding-block: 8px;
+  text-align: center;
+}
+.pa-topbar strong {
+  color: #fff;
+}
+.pa-topbar a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 .pa-header {
   position: sticky;
   top: 0;
