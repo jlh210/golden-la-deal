@@ -205,17 +205,17 @@ function Footer() {
               <br />
               brokerage &amp; advisory.
             </p>
-            <a href={PHONE_HREF}>{PHONE}</a>
+            <div className="pa-footer-owner">
+              <p>COO · Chief Operating Officer · Deal Closer &amp; Supervisor, Owner</p>
+            </div>
+            <a href={PHONE_HREF}>Call or Text: {PHONE}</a>
             <a className="pa-email" href={EMAIL_HREF}>
               {EMAIL}
             </a>
             <p className="pa-hours">{HOURS}</p>
             <div className="pa-footer-owner">
-              <h2>Ownership</h2>
               <p>
-                <strong>Richard Stein</strong>
-                <br />
-                COO · Chief Operating Officer · Deal Closer &amp; Supervisor, Owner
+                <strong>Thank you, Richard Stein COO · Roschard Paticchio-Stein CEO</strong>
               </p>
             </div>
           </div>
