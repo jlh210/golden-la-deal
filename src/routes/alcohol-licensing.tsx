@@ -95,7 +95,7 @@ const recent = [
   { addr: "6136 Venice Blvd", type: "Type 41", status: "Issuance Activated" },
   { addr: "14350 Ventura Blvd, Sherman Oaks", type: "Type 41", status: "Issuance Activated" },
   { addr: "101 Fairfax Ave", type: "Type 41", status: "Issuance Activated" },
-  { addr: "7300 Sunset Blvd", type: "Type 47", status: "Issuance Activated" },
+  { addr: "7300 Sunset Blvd", type: "Type 47", status: "Sale Pending" },
   { addr: "7274-7276 Melrose Ave", type: "Type 41", status: "Issuance Activated" },
   { addr: "5910 W. Sunset Blvd", type: "Type 41", status: "Issuance Activated" },
   { addr: "5902 W. Sunset Blvd", type: "Type 41", status: "Issuance Activated" },
@@ -109,6 +109,7 @@ const statusStyle: Record<string, string> = {
   "Issuance Activated": "bg-gold/15 text-gold border-gold/40",
   "Approved-Active": "bg-gold/15 text-gold border-gold/40",
   Pending: "bg-foreground/10 text-foreground/85 border-border",
+  "Sale Pending": "bg-foreground/10 text-foreground/85 border-border",
 };
 
 function LicensingPage() {
