@@ -267,9 +267,10 @@ function AboutPage() {
       <section className="container-x py-12 md:py-16">
         <div className="max-w-2xl space-y-1 text-muted-foreground">
           <p className="pb-2">
+            <strong className="text-foreground">Need Restaurant solutions Fast? Book Now</strong>{" "}
             <Link to="/contact" className="text-gold hover:underline">
-              <strong>Need Restaurant solutions Fast? Book Now</strong> a 30-minute mobile-to-mobile
-              call for real answers on restaurants, properties, and city matters.
+              a 30-minute mobile-to-mobile call for real answers on restaurants, properties, and
+              city matters.
             </Link>
           </p>
           <p>
