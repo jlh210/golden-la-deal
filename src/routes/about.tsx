@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Award, Users, Scale, Zap, Check } from "lucide-react";
 import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
@@ -159,6 +159,12 @@ function AboutPage() {
           <p>8:00am – 7:00pm · Mon–Sun</p>
           <p className="pt-3 font-semibold text-foreground">
             Thank you, Richard Stein COO · Roschard Paticchio-Stein CEO
+          </p>
+          <p className="pt-2">
+            <Link to="/contact" className="text-gold hover:underline">
+              <strong>Need solutions? Book now</strong> a 30-minute mobile-to-mobile call for real
+              answers on restaurants, properties, and city matters.
+            </Link>
           </p>
         </div>
       </PageHero>
