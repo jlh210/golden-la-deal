@@ -81,7 +81,7 @@ const fees = [
 ];
 
 const recent = [
-  { addr: "7373 Sunset Blvd", type: "Type 47", status: "For Sale" },
+  { addr: "7373 Sunset Blvd", type: "Type 47", status: "Sale Pending" },
   { addr: "7275 Melrose Ave", type: "Type 41", status: "Approved-Active" },
   { addr: "6535 Melrose Ave", type: "Type 47", status: "Approved-Active" },
   { addr: "5710 E Los Angeles Ave, Simi Valley", type: "Type 41", status: "Pending" },
