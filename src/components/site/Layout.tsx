@@ -193,6 +193,29 @@ function Header() {
     </header>
   );
 }
+function TopBar() {
+  return (
+    <div className="pa-topbar">
+      <div className="pa-shell pa-topbar-inner">
+        <p>
+          <strong>Need Restaurant solutions Fast? Book Now</strong>{" "}
+          <Link to="/contact">
+            a 30-minute mobile-to-mobile call for real answers on restaurants, properties, and city
+            matters.
+          </Link>
+        </p>
+        <p>
+          Other Matters: Call or Text: <a href={PHONE_HREF}>{PHONE}</a>
+          {" · "}
+          <a href={EMAIL_HREF}>{EMAIL}</a>
+          {" · "}
+          {HOURS}
+        </p>
+        <p>Thank you, Richard Stein COO · Roschard Paticchio-Stein CEO</p>
+      </div>
+    </div>
+  );
+}
 function Footer() {
   return (
     <footer className="pa-footer">
@@ -282,6 +305,7 @@ export function SiteLayout({ children }: { children: ReactNode; transparentHeade
       <a href="#main-content" className="skip-link">
         Skip to main content
       </a>
+      <TopBar />
       <Header />
       <main id="main-content" tabIndex={-1} className="flex-1">
         {children}
