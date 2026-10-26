@@ -228,7 +228,14 @@ function Footer() {
               <br />
               Brokerage &amp; Advisory.
             </p>
-            <a href={PHONE_HREF}>Call or Text: {PHONE}</a>
+            <p className="pa-footer-book">
+              <strong>Need Restaurant solutions Fast? Book Now</strong>{" "}
+              <Link to="/contact">
+                a 30-minute mobile-to-mobile call for real answers on restaurants, properties, and
+                city matters.
+              </Link>
+            </p>
+            <a href={PHONE_HREF}>Other Matters: Call or Text: {PHONE}</a>
             <a className="pa-email" href={EMAIL_HREF}>
               {EMAIL}
             </a>
