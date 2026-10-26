@@ -142,8 +142,14 @@ function AboutPage() {
         subtitle={`Penthouse Advisors is a modern, full-service restaurant and business brokerage serving Los Angeles County. Established in 2021, we combine brokerage expertise, ABC licensing, Health Department Permitting, Health Dept Plan-Check Restaurant Red Rag removal and operational advisory under one roof. Protocol: All parties, Buyer, Seller, Landlord are treated equally, fairly, and honestly with our "Do It Now" services. If you don't "Do It Now", it won't get done & you'll forget all about doing it. Book a Consultation Appointment.`}
       >
         <div className="max-w-2xl space-y-1 text-muted-foreground">
+          <p className="pb-2">
+            <Link to="/contact" className="text-gold hover:underline">
+              <strong>Need Restaurant solutions Fast? Book</strong> a 30-minute mobile-to-mobile
+              call for real answers on restaurants, properties, and city matters.
+            </Link>
+          </p>
           <p>
-            Call or Text:{" "}
+            All other matters: Call or Text:{" "}
             <a href="tel:+13106633521" className="font-semibold text-gold hover:underline">
               310-663-3521
             </a>
@@ -159,12 +165,6 @@ function AboutPage() {
           <p>8:00am – 7:00pm · Mon–Sun</p>
           <p className="pt-3 font-semibold text-foreground">
             Thank you, Richard Stein COO · Roschard Paticchio-Stein CEO
-          </p>
-          <p className="pt-2">
-            <Link to="/contact" className="text-gold hover:underline">
-              <strong>Need solutions? Book now</strong> a 30-minute mobile-to-mobile call for real
-              answers on restaurants, properties, and city matters.
-            </Link>
           </p>
         </div>
       </PageHero>
