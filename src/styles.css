@@ -905,6 +905,11 @@ summary:focus-visible {
   font-size: 13px;
   margin-top: 9px;
 }
+.pa-footer-book {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
 .pa-email {
   overflow-wrap: anywhere;
 }
