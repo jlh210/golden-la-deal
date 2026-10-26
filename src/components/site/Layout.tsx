@@ -198,7 +198,11 @@ function TopBar() {
     <div className="pa-topbar">
       <div className="pa-shell pa-topbar-inner">
         <p>
-          <strong>Need Restaurant, Food Market, Retail Business solutions Fast? Book Now</strong>{" "}
+          <strong>
+            Fast Resolutions for Restaurant &amp; Food Market Health Dept., Code Compliance Issues,
+            Alcohol Licensing, All Retail Business Matters, Lease, Rent Abatement Allowances? Book
+            Now
+          </strong>{" "}
           <Link to="/contact">a 30-minute -$35 mobile-to-mobile call for real answers</Link>.
         </p>
         <p>
