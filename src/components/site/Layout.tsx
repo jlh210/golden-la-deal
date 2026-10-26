@@ -201,13 +201,10 @@ function Footer() {
           <div>
             <Brand />
             <p className="pa-footer-position">
-              Los Angeles restaurant
+              Los Angeles Restaurant
               <br />
-              brokerage &amp; advisory.
+              Brokerage &amp; Advisory.
             </p>
-            <div className="pa-footer-owner">
-              <p>COO · Chief Operating Officer · Deal Closer &amp; Supervisor, Owner</p>
-            </div>
             <a href={PHONE_HREF}>Call or Text: {PHONE}</a>
             <a className="pa-email" href={EMAIL_HREF}>
               {EMAIL}
