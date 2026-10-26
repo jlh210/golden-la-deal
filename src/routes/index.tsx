@@ -224,7 +224,10 @@ function HomePage() {
               <p className="pa-hero-description">
                 Penthouse Advisors helps restaurant owners, buyers, sellers and operators navigate
                 acquisitions, dispositions, leasing, licensing, permitting and complex restaurant
-                transactions throughout Los Angeles County.
+                transactions throughout Los Angeles County.{" "}
+                <Link to="/contact">
+                  <strong>Need fast solutions? Book now.</strong>
+                </Link>
               </p>
               <div className="pa-hero-actions">
                 <Link to="/contact" className="pa-button">
