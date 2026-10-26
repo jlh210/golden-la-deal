@@ -262,6 +262,36 @@ function AboutPage() {
         title="Work with a team that knows restaurant deals from every angle."
         body="Principal-led advisory. Brokerage, licensing, permitting, and resolution - coordinated by one firm."
       />
+
+      {/* Bottom booking / contact */}
+      <section className="container-x py-12 md:py-16">
+        <div className="max-w-2xl space-y-1 text-muted-foreground">
+          <p className="pb-2">
+            <Link to="/contact" className="text-gold hover:underline">
+              <strong>Need Restaurant solutions Fast? Book Now</strong> a 30-minute mobile-to-mobile
+              call for real answers on restaurants, properties, and city matters.
+            </Link>
+          </p>
+          <p>
+            Other Matters: Call or Text:{" "}
+            <a href="tel:+13106633521" className="font-semibold text-gold hover:underline">
+              310-663-3521
+            </a>
+          </p>
+          <p>
+            <a
+              href="mailto:PenthouseAdvisors@gmail.com"
+              className="font-semibold text-gold hover:underline"
+            >
+              PenthouseAdvisors@gmail.com
+            </a>
+          </p>
+          <p>8:00am – 7:00pm · Mon–Sun</p>
+          <p className="pt-3 font-semibold text-foreground">
+            Thank you, Richard Stein COO · Roschard Paticchio-Stein CEO
+          </p>
+        </div>
+      </section>
     </SiteLayout>
   );
 }
