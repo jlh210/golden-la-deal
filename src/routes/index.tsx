@@ -226,8 +226,9 @@ function HomePage() {
                 acquisitions, dispositions, leasing, licensing, permitting and complex restaurant
                 transactions throughout Los Angeles County.{" "}
                 <Link to="/contact">
-                  <strong>Need solutions? Book now</strong> a 30-minute mobile-to-mobile call for
-                  real answers on restaurants, properties, and city matters.
+                  <strong>Need Restaurant solutions Fast? Book</strong> a 30-minute
+                  mobile-to-mobile call for real answers on restaurants, properties, and city
+                  matters.
                 </Link>
               </p>
               <div className="pa-hero-actions">
