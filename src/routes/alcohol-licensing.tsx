@@ -81,6 +81,7 @@ const fees = [
 ];
 
 const recent = [
+  { addr: "7373 Sunset Blvd", type: "Type 47", status: "For Sale" },
   { addr: "7275 Melrose Ave", type: "Type 41", status: "Approved-Active" },
   { addr: "6535 Melrose Ave", type: "Type 47", status: "Approved-Active" },
   { addr: "5710 E Los Angeles Ave, Simi Valley", type: "Type 41", status: "Pending" },
@@ -111,6 +112,7 @@ const statusStyle: Record<string, string> = {
   "Approved-Active": "bg-gold/15 text-gold border-gold/40",
   Pending: "bg-foreground/10 text-foreground/85 border-border",
   "Sale Pending": "bg-foreground/10 text-foreground/85 border-border",
+  "For Sale": "bg-gold/15 text-gold border-gold/40",
 };
 
 function LicensingPage() {
