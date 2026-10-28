@@ -199,13 +199,14 @@ function TopBar() {
       <div className="pa-shell pa-topbar-inner">
         <p>
           <strong>
-            Fast Resolutions for Restaurant &amp; Food Market Health Dept., Code Compliance Issues,
-            Alcohol Licensing, All Retail Business Matters, Lease, Rent Abatement Allowances?
+            Book a Fast Resolution: Restaurant &amp; Food Market Health Dept., Permitting, Red Tags,
+            Code Compliance Issues, Alcohol Licensing, Lease, Rent and Abatement Allowances, Retail
+            Business Situations.
           </strong>
         </p>
         <p>
           <strong>Book Now:</strong>{" "}
-          <Link to="/contact">a 30-minute -$35 mobile-to-mobile call for real answers</Link>.
+          <Link to="/contact">$35 mobile-to-mobile 30 minute call for real answers</Link>.
         </p>
         <p>
           All Other Matters: Call or Text: <a href={PHONE_HREF}>{PHONE}</a>
