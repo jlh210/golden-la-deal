@@ -203,6 +203,60 @@ export const listings: Listing[] = [
     ],
     images: [wilshire3, wilshire1, wilshire2, wilshire4],
   },
+  {
+    id: "R-004",
+    slug: "melrose-massage-spa-asset-sale",
+    type: "Asset Sale",
+    title: "FIRE SALE - Massage Spa located on Melrose Ave",
+    location: "Melrose Ave, Los Angeles",
+    price: "$37,000",
+    priceNote: "Asking · Make an offer",
+    sqft: "850 sq ft",
+    leaseType: "Retail massage · Full buildout · New lease negotiable",
+    badge: "Fire Sale",
+    description:
+      "FIRE SALE - Massage Spa located on Melrose Ave. Fully Built Out - Turn Key. Asking $37,000 - Make an offer. New Lease Negotiable. Base Rent $3,000, NNN $500, 850 square feet. Current customer list goes to Buyer and the Massage Specialist is willing to stay.",
+    longDescription: [
+      "FIRE SALE - Massage Spa located on Melrose Ave. Fully Built Out - Turn Key.",
+      "Asking $37,000 - Make an offer.",
+      "New Lease Negotiable. Base Rent: $3,000. NNN: $500. 850 Square Footage.",
+      "Current Customer list goes to Buyer. Massage Specialist willing to stay.",
+      "New Lease upon landlord approval.",
+    ],
+    sections: [
+      {
+        heading: "Deal Structure",
+        body: "Retail massage full buildout asset sale. Asking $37,000 - make an offer.",
+        bullets: [
+          "Fully Built Out - Turn Key",
+          "Asking $37,000 - Make an offer",
+          "Current Customer list goes to Buyer",
+          "Massage Specialist willing to stay",
+        ],
+      },
+      {
+        heading: "Lease Terms",
+        body: "New Lease Negotiable, upon landlord approval.",
+        bullets: [
+          "Base Rent: $3,000",
+          "NNN: $500",
+          "850 Square Footage",
+          "New Lease upon landlord approval",
+        ],
+      },
+    ],
+    features: [
+      "Fully Built Out - Turn Key",
+      "Asking $37,000 - Make an offer",
+      "New Lease Negotiable",
+      "Base Rent: $3,000",
+      "NNN: $500",
+      "850 Square Footage",
+      "Current Customer list goes to Buyer",
+      "Massage Specialist willing to stay",
+      "New Lease upon landlord approval",
+    ],
+  },
 ];
 
 export function getListingBySlug(slug: string): Listing | undefined {
