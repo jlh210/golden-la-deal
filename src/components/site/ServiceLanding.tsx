@@ -33,6 +33,8 @@ export interface ServiceLandingProps {
   ctaBody?: string;
   /** Optional content rendered at the very bottom of the page, after the CTA. */
   footerSection?: ReactNode;
+  /** When true, the Related Services links render directly under the hero's consultation button. */
+  relatedAtTop?: boolean;
 }
 
 export function ServiceLanding(props: ServiceLandingProps) {
@@ -50,7 +52,26 @@ export function ServiceLanding(props: ServiceLandingProps) {
     serviceNeeded,
     ctaTitle,
     ctaBody,
+    relatedAtTop,
   } = props;
+
+  const relatedLinks = (
+    <>
+      <p className="text-xs font-semibold uppercase tracking-widest text-gold">Related Services</p>
+      <h2 className="mt-2 text-2xl md:text-4xl font-display font-bold">Explore more.</h2>
+      <div className="mt-8 flex flex-wrap gap-3">
+        {related.map((r) => (
+          <Link
+            key={r.to}
+            to={r.to}
+            className="inline-flex items-center gap-2 rounded-md border border-gold/40 px-5 py-3 text-sm font-semibold hover:bg-gold/10 hover:border-gold transition"
+          >
+            <CheckCircle2 className="h-4 w-4 text-gold" /> {r.label}
+          </Link>
+        ))}
+      </div>
+    </>
+  );
 
   return (
     <SiteLayout>
@@ -59,6 +80,8 @@ export function ServiceLanding(props: ServiceLandingProps) {
       ) : (
         <PageHero eyebrow={eyebrow} title={h1} subtitle={subtitle} />
       )}
+
+      {relatedAtTop && <section className="container-x py-12 md:py-16">{relatedLinks}</section>}
 
       {/* Overview */}
       <section className="container-x py-12 md:py-16">
@@ -133,22 +156,8 @@ export function ServiceLanding(props: ServiceLandingProps) {
 
       {/* Related services - internal linking */}
       <section className="container-x py-12 md:py-16 border-t border-border">
-        <p className="text-xs font-semibold uppercase tracking-widest text-gold">
-          Related Services
-        </p>
-        <h2 className="mt-2 text-2xl md:text-4xl font-display font-bold">Explore more.</h2>
-        <div className="mt-8 flex flex-wrap gap-3">
-          {related.map((r) => (
-            <Link
-              key={r.to}
-              to={r.to}
-              className="inline-flex items-center gap-2 rounded-md border border-gold/40 px-5 py-3 text-sm font-semibold hover:bg-gold/10 hover:border-gold transition"
-            >
-              <CheckCircle2 className="h-4 w-4 text-gold" /> {r.label}
-            </Link>
-          ))}
-        </div>
-        <div className="mt-8 flex flex-wrap gap-3">
+        {!relatedAtTop && relatedLinks}
+        <div className={relatedAtTop ? "flex flex-wrap gap-3" : "mt-8 flex flex-wrap gap-3"}>
           <Link
             to="/contact"
             search={serviceNeeded ? { service: serviceNeeded } : undefined}
