@@ -208,8 +208,8 @@ function TopBar() {
           </Link>
         </p>
         <p>
-          All Other Matters: <a href={EMAIL_HREF}>Email: {EMAIL}</a> Call/Text: Richard Stein COO ·
-          Roschard Paticchio-Stein CEO <a href={PHONE_HREF}>{PHONE}</a>
+          All Other Matters: <a href={EMAIL_HREF}>Email: {EMAIL}</a> Call/Text:{" "}
+          <a href={PHONE_HREF}>{PHONE}</a> Richard Stein COO · Roschard Paticchio-Stein CEO
           {" · "}
           {HOURS}
         </p>
