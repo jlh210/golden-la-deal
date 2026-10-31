@@ -447,6 +447,7 @@ summary:focus-visible {
 }
 .pa-header-book small {
   font-size: 10px;
+  text-align: center;
   color: #e4dccb;
 }
 .pa-menu-toggle {

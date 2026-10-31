@@ -1,7 +1,12 @@
 import { Link } from "@tanstack/react-router";
 import { Menu, X, ChevronDown, ArrowUpRight, Accessibility } from "lucide-react";
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { CONSULTATION_LABEL, CONSULTATION_OFFER } from "@/lib/consultation";
+import {
+  CONSULTATION_LABEL,
+  CONSULTATION_OFFER,
+  CONSULTATION_TAB_DETAIL,
+  CONSULTATION_TAB_TITLE,
+} from "@/lib/consultation";
 
 const PHONE = "310-663-3521";
 const PHONE_HREF = "tel:+13106633521";
@@ -133,10 +138,10 @@ function Header() {
         <Link
           to="/contact"
           className="pa-header-book"
-          aria-label={`Book a Consultation — ${CONSULTATION_OFFER}`}
+          aria-label={CONSULTATION_LABEL}
         >
-          <span>Book a Consultation</span>
-          <small>{CONSULTATION_OFFER}</small>
+          <span>{CONSULTATION_TAB_TITLE}</span>
+          <small>{CONSULTATION_TAB_DETAIL}</small>
         </Link>
         <button
           ref={mobileToggle}
