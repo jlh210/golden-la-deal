@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Menu, X, ChevronDown, ArrowUpRight } from "lucide-react";
+import { Menu, X, ChevronDown, ArrowUpRight, Accessibility } from "lucide-react";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { CONSULTATION_LABEL, CONSULTATION_OFFER } from "@/lib/consultation";
 
@@ -304,6 +304,10 @@ function Footer() {
         <div className="pa-footer-bottom">
           <span>© {new Date().getFullYear()} Penthouse Advisors Inc.</span>
           <span>Serving Los Angeles County</span>
+          <span className="pa-ada-badge">
+            <Accessibility size={16} aria-hidden="true" />
+            ADA Accessible Website
+          </span>
           <Link to="/contact">{CONSULTATION_OFFER}</Link>
         </div>
       </div>

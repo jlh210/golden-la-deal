@@ -948,6 +948,13 @@ summary:focus-visible {
   font-size: 10px;
   color: #62665d;
 }
+.pa-ada-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: #1f4e9c;
+}
 .pa-shared-cta {
   border-top: 1px solid #c9a35a;
   padding-block: 40px 64px;
