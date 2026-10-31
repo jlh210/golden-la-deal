@@ -4,8 +4,6 @@ import wilshire3 from "@/assets/wilshire-3.png";
 import wilshire4 from "@/assets/wilshire-4.png";
 import santaMonica1 from "@/assets/santa-monica-1.png";
 import santaMonica2 from "@/assets/santa-monica-2.png";
-import hardwareStorefront from "@/assets/hardware-storefront.png";
-import hardwareAisle from "@/assets/hardware-aisle.png";
 import dentalOffice from "@/assets/dental-office-for-lease.png";
 
 export type SaleType =
@@ -41,31 +39,6 @@ export type Listing = {
 };
 
 export const listings: Listing[] = [
-  {
-    id: "R-004",
-    slug: "westwood-santa-monica-restaurant-asset-sale",
-    type: "Asset Sale",
-    title: "Restaurant Fully Equipped, Open, Permitted Asset Sale",
-    location: "NW corner of Westwood Blvd & Santa Monica Blvd, Los Angeles",
-    coords: [34.043, -118.4436],
-    price: "$125,000",
-    priceNote: "Cash",
-    leaseType: "Asset sale · Fully equipped, open & permitted restaurant",
-    badge: "Available Now",
-    description:
-      "Restaurant Fully Equipped, Open, Permitted Asset Sale Located in a vibrant commercial corridor on the northwest corner of Westwood and Santa Monica Boulevards. Charming building with restaurant on the ground floor. Off-street parking available for customers, and plenty of metered spots as well. Close to major public transportation routes with unobstructed exposure to the intersections of Santa Monica and Westwood (100,000 cars/day traffic count).",
-    features: [
-      "Fully equipped, open and permitted",
-      "Vibrant commercial corridor",
-      "Charming building with restaurant on the ground floor",
-      "Off-street parking for customers",
-      "Plenty of metered street parking",
-      "Close to major public transportation routes",
-      "Unobstructed exposure at Santa Monica & Westwood",
-      "100,000 cars/day traffic count",
-    ],
-    images: ["/images/westwood-santa-monica-restaurant-1.jpg"],
-  },
   {
     id: "RE-005",
     slug: "dental-office-for-lease",
@@ -229,58 +202,6 @@ export const listings: Listing[] = [
       "Wilshire at 24th Street, Santa Monica",
     ],
     images: [wilshire3, wilshire1, wilshire2, wilshire4],
-  },
-  {
-    id: "B-001",
-    slug: "hardware-store-for-sale",
-    type: "Business Sale",
-    title: "Hardware Store for Sale",
-    location: "Westwood Blvd, West LA",
-    price: "$175,000",
-    priceNote: "Cash",
-    leaseType: "Business sale · Retail",
-    badge: "Available Now",
-    description:
-      "Established hardware store for sale on Westwood Blvd, West LA. $175,000 cash. Annual revenue $402,000. Established 2020.",
-    longDescription: [
-      "Established hardware store for sale on Westwood Blvd in West Los Angeles.",
-      "Asking $175,000 cash. Annual revenue of approximately $402,000. Business established in 2020 with one full-time employee.",
-      "New lease to be negotiated with three 3-year extension options. Product categories include key duplication, tools, gardening, plumbing, electrical, home hardware, and more.",
-    ],
-    sections: [
-      {
-        heading: "Deal Highlights",
-        body: "Straightforward business sale with training and escrow support included.",
-        bullets: [
-          "Asking price: $175,000 cash",
-          "Annual revenue: approximately $402,000",
-          "Established: 2020",
-          "Employees: 1 full-time",
-          "4 weeks of support & training included",
-          "Co-brokering welcome",
-        ],
-      },
-      {
-        heading: "Lease Terms",
-        body: "Lease commenced October 9, 2020. New lease terms to be negotiated with the landlord.",
-        bullets: [
-          "Base rent at commencement: $3,082.56 / mo",
-          "Year 6 monthly base rent: $4,840.89 + CAM",
-          "Three (3) 3-year options to extend",
-          "Buyer reimburses Seller's security deposit through escrow",
-          "FF&E sold in as-is condition",
-        ],
-      },
-    ],
-    features: [
-      "Established hardware store",
-      "Westwood Blvd, West LA location",
-      "$175,000 cash",
-      "$402,000 annual revenue",
-      "Key duplication, tools, plumbing, electrical",
-      "New lease negotiable",
-    ],
-    images: [hardwareStorefront, hardwareAisle],
   },
 ];
 
