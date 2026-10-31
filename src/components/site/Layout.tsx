@@ -211,14 +211,12 @@ function TopBar() {
         </p>
         <p>
           <Link to="/contact">
-            <strong>Book Now: $35</strong> Mobile-to-Mobile 30 Minute Call For Resolutions.
+            <strong>Book Now: $35</strong> Mobile-to-Mobile 30 Minute Business Consultation
           </Link>
         </p>
         <p>
-          All Other Matters: Call/Text: Richard Stein COO · Roschard Paticchio-Stein CEO{" "}
-          <a href={PHONE_HREF}>{PHONE}</a>
-          {" · "}
-          <a href={EMAIL_HREF}>Email: {EMAIL}</a>
+          All Other Matters: <a href={EMAIL_HREF}>Email: {EMAIL}</a> Call/Text: Richard Stein COO ·
+          Roschard Paticchio-Stein CEO <a href={PHONE_HREF}>{PHONE}</a>
           {" · "}
           {HOURS}
         </p>
