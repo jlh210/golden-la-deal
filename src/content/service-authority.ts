@@ -127,7 +127,7 @@ export const serviceAuthority = {
   health: {
     title: "Restaurant Health Permitting & Plan Check in Los Angeles",
     answer:
-      "Penthouse Advisors helps restaurant owners coordinate plans, plan-check submissions, corrections, and opening inspections. The required path depends on the location and proposed work: buying an existing restaurant without major changes differs from remodeling or building a new facility. Identify the responsible health authority and required approvals before scheduling construction or committing to an opening date.",
+      "Penthouse Advisors helps Restaurant and Food Market Owners/Operators coordinate the required Health Department Plan-Check corrections, hearings, and final inspections. The required path depends on the Health Dept. and the violations: when buying a Restaurant/Food Market, a facility closed within a 90-day window differs from a facility that exceeds the 90-day deadline. Blueprint stamped approval is mandatory before scheduling construction or committing to an opening date.",
     service: "Health Dept permitting / plan check",
     prepare: [
       "Address, proposed menu, and description of construction or equipment changes.",
