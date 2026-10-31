@@ -210,17 +210,18 @@ function TopBar() {
           </strong>
         </p>
         <p>
-          <strong>Book Now:</strong>{" "}
-          <Link to="/contact">$35 mobile-to-mobile 30 minute call for real answers</Link>.
+          <Link to="/contact">
+            <strong>Book Now: $35</strong> Mobile-to-Mobile 30 Minute Call For Resolutions.
+          </Link>
         </p>
         <p>
-          All Other Matters: Call or Text: <a href={PHONE_HREF}>{PHONE}</a>
+          All Other Matters: Call/Text: <a href={PHONE_HREF}>{PHONE}</a>
           {" · "}
-          <a href={EMAIL_HREF}>{EMAIL}</a>
+          <a href={EMAIL_HREF}>Email: {EMAIL}</a>
           {" · "}
           {HOURS}
         </p>
-        <p>Thank you, Richard Stein COO · Roschard Paticchio-Stein CEO</p>
+        <p>Do IT Now: Richard Stein COO · Roschard Paticchio-Stein CEO</p>
       </div>
     </div>
   );
