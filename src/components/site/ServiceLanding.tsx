@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Phone, CheckCircle2 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import type { ReactNode } from "react";
 import { SiteLayout, PHONE, PHONE_HREF } from "./Layout";
 import { PageHero } from "./PageHero";
 import { CTASection } from "./CTASection";
@@ -30,6 +31,8 @@ export interface ServiceLandingProps {
   serviceNeeded?: string;
   ctaTitle?: string;
   ctaBody?: string;
+  /** Optional content rendered at the very bottom of the page, after the CTA. */
+  footerSection?: ReactNode;
 }
 
 export function ServiceLanding(props: ServiceLandingProps) {
@@ -167,6 +170,8 @@ export function ServiceLanding(props: ServiceLandingProps) {
         body={ctaBody ?? "We answer the phone. We move today."}
         serviceNeeded={serviceNeeded}
       />
+
+      {props.footerSection}
     </SiteLayout>
   );
 }

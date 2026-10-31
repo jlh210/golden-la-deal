@@ -1,7 +1,7 @@
 import { serviceAuthority } from "@/content/service-authority";
 import { buildServiceJsonLd } from "@/lib/seo";
-import { createFileRoute } from "@tanstack/react-router";
-import { Search, FileSearch, ShieldCheck } from "lucide-react";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { Search, FileSearch, ShieldCheck, ArrowRight } from "lucide-react";
 import { ServiceLanding } from "@/components/site/ServiceLanding";
 
 const URL = "https://www.penthouseadvisors.com/buy-a-restaurant";
@@ -115,6 +115,26 @@ function BuyARestaurantPage() {
       serviceNeeded="Buying a restaurant"
       ctaTitle="Ready to buy your next restaurant?"
       ctaBody="Tell us your buy box. We'll come back with real opportunities — on- and off-market."
+      footerSection={
+        <section className="container-x py-12 md:py-16 border-t border-border">
+          <Link
+            to="/restaurants-for-sale"
+            className="group block rounded-2xl border border-gold/40 bg-card p-8 md:p-10 shadow-elegant hover:border-gold transition"
+          >
+            <p className="text-xs font-semibold uppercase tracking-widest text-gold">
+              Live Opportunities
+            </p>
+            <h2 className="mt-2 text-2xl md:text-4xl font-display font-bold leading-tight">
+              Restaurants for sale in Los Angeles{" "}
+              <span className="text-gold">&amp; selected business and lease opportunities.</span>
+            </h2>
+            <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold">
+              Browse live opportunities{" "}
+              <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+            </span>
+          </Link>
+        </section>
+      }
     />
   );
 }
