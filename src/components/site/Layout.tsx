@@ -203,13 +203,6 @@ function TopBar() {
     <div className="pa-topbar">
       <div className="pa-shell pa-topbar-inner">
         <p>
-          <strong>
-            Book a Fast Resolution: Restaurant &amp; Food Market Health Dept., Permitting, Red Tags,
-            Code Compliance Issues, Alcohol Licensing, Lease, Rent and Abatement Allowances, Retail
-            Business Situations.
-          </strong>
-        </p>
-        <p>
           <Link to="/contact">
             <strong>Book Now: $35</strong> Mobile-to-Mobile 30 Minute Business Consultation
           </Link>
