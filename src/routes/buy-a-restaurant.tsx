@@ -112,6 +112,7 @@ function BuyARestaurantPage() {
         { to: "/alcohol-licensing", label: "Alcohol Licensing" },
         { to: "/e2-visa-europe", label: "E-2 Visa (Europe)" },
       ]}
+      relatedAtTop
       serviceNeeded="Buying a restaurant"
       ctaTitle="Ready to buy your next restaurant?"
       ctaBody="Tell us your buy box. We'll come back with real opportunities — on- and off-market."
