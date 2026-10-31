@@ -296,6 +296,52 @@ export const listings: Listing[] = [
       "$585,000",
     ],
   },
+  {
+    id: "R-006",
+    slug: "restaurant-fully-equipped-asset-sale",
+    type: "Asset Sale",
+    title: "Restaurant Fully Equipped Top of the Line, Asset Sale",
+    location: "Los Angeles County",
+    price: "$375,000",
+    priceNote: "Asset Sale · Total Rent $17,158.50 / month",
+    sqft: "2,542 sq ft",
+    leaseType: "Restaurant · Fully equipped",
+    badge: "Available Now",
+    description:
+      "Restaurant Fully Equipped Top of the Line, Asset Sale. Base Rent: $14,616.50. NNN: $2,542. Total Rent: $17,158.50. Square Footage: 2,542. $375,000.",
+    longDescription: [
+      "Restaurant Fully Equipped Top of the Line, Asset Sale.",
+      "Base Rent: $14,616.50. NNN: $2,542. Total Rent: $17,158.50.",
+      "Square Footage: 2,542.",
+      "$375,000.",
+    ],
+    sections: [
+      {
+        heading: "Deal Structure",
+        body: "Restaurant asset sale. Fully Equipped Top of the Line. $375,000.",
+        bullets: ["Fully Equipped Top of the Line", "Asset Sale", "$375,000"],
+      },
+      {
+        heading: "Lease Terms",
+        body: "Base Rent $14,616.50 plus NNN $2,542, Total Rent $17,158.50.",
+        bullets: [
+          "Base Rent: $14,616.50",
+          "NNN: $2,542",
+          "Total Rent: $17,158.50",
+          "Square Footage: 2,542",
+        ],
+      },
+    ],
+    features: [
+      "Fully Equipped Top of the Line",
+      "Asset Sale",
+      "Base Rent: $14,616.50",
+      "NNN: $2,542",
+      "Total Rent: $17,158.50",
+      "Square Footage: 2,542",
+      "$375,000",
+    ],
+  },
 ];
 
 export function getListingBySlug(slug: string): Listing | undefined {

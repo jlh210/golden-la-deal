@@ -43,7 +43,7 @@ export const services: Service[] = [
     slug: "brokerage",
     to: "/restaurants-for-sale",
     title:
-      "Los Angeles County: Restaurant Asset Sales, Retail Massage Full Buildout Asset Sale, West LA Offices Medical Use For Lease, Coffee Shop Asset Sale",
+      "Los Angeles County: Restaurant Asset Sales, Retail Massage Full Buildout Asset Sale, West LA Offices Medical Use For Lease, Coffee Shop Asset Sale, Restaurant Fully Equipped Top of the Line, Asset Sale",
     short: "Confidential buy/sell brokerage with full disclosure across LA County.",
     icon: ArrowRightLeft,
     featured: true,
