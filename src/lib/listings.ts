@@ -257,6 +257,45 @@ export const listings: Listing[] = [
       "New Lease upon landlord approval",
     ],
   },
+  {
+    id: "R-005",
+    slug: "coffee-shop-asset-sale",
+    type: "Asset Sale",
+    title: "Coffee Shop Asset Sale",
+    location: "Los Angeles County",
+    price: "$585,000",
+    priceNote: "Turn Key ready",
+    leaseType: "Coffee shop · Shopping center",
+    badge: "Turn Key",
+    description:
+      "Coffee Shop Asset Sale. Turn Key ready. Fully Equipped and Permitted. Large Walk-In. Shopping Center Parking Lot and Off-street parking. $585,000.",
+    longDescription: [
+      "Coffee Shop Asset Sale. Turn Key ready.",
+      "Fully Equipped and Permitted. Large Walk-In.",
+      "Shopping Center Parking Lot and Off-street parking.",
+      "$585,000.",
+    ],
+    sections: [
+      {
+        heading: "Deal Structure",
+        body: "Coffee shop asset sale. Turn Key ready. $585,000.",
+        bullets: [
+          "Turn Key ready",
+          "Fully Equipped and Permitted",
+          "Large Walk-In",
+          "Shopping Center Parking Lot and Off-street parking",
+          "$585,000",
+        ],
+      },
+    ],
+    features: [
+      "Turn Key ready",
+      "Fully Equipped and Permitted",
+      "Large Walk-In",
+      "Shopping Center Parking Lot and Off-street parking",
+      "$585,000",
+    ],
+  },
 ];
 
 export function getListingBySlug(slug: string): Listing | undefined {
