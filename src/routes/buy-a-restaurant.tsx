@@ -105,7 +105,7 @@ function BuyARestaurantPage() {
       ]}
       faqs={FAQS}
       related={[
-        { to: "/restaurants-for-sale", label: "Browse Restaurants For Sale" },
+        { to: "/restaurants-for-sale", label: "Restaurants for sale. Los Angeles. Selected Business and Lease Opportunities." },
         { to: "/off-market-sourcing", label: "Off-Market Restaurant Sourcing" },
         { to: "/search-door-knocking", label: "Off-Market Door-Knocking" },
         { to: "/business-investigations", label: "Pre-Purchase Investigations" },
