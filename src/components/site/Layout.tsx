@@ -215,13 +215,13 @@ function TopBar() {
           </Link>
         </p>
         <p>
-          All Other Matters: Call/Text: <a href={PHONE_HREF}>{PHONE}</a>
+          All Other Matters: Call/Text: Richard Stein COO · Roschard Paticchio-Stein CEO{" "}
+          <a href={PHONE_HREF}>{PHONE}</a>
           {" · "}
           <a href={EMAIL_HREF}>Email: {EMAIL}</a>
           {" · "}
           {HOURS}
         </p>
-        <p>Do IT Now: Richard Stein COO · Roschard Paticchio-Stein CEO</p>
       </div>
     </div>
   );
