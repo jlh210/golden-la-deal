@@ -40,7 +40,7 @@ function ServicesPage() {
       <PageHero
         eyebrow="Services"
         title="Penthouse Advisors Inc."
-        subtitle="One firm, one phone call. Built for LA County restaurant operators, buyers, landlords, and international investors who need answers - and execution - fast."
+        subtitle="Penthouse Advisors Inc. is a full-service business: restaurant and food market buying, selling, remodeling, Health Department permitting and violation corrections, and alcohol licensing. One firm, one phone call. Built for Los Angeles County restaurant operators, buyers, landlords, and international investors who need answers - and execution - fast."
       />
 
       <section className="container-x py-16 md:py-20">
