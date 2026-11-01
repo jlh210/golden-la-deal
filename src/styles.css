@@ -559,8 +559,8 @@ summary:focus-visible {
   padding-block: 68px 60px;
 }
 .pa-hero h1 {
-  font-size: clamp(48px, 4.9vw, 70px);
-  line-height: 0.98;
+  font-size: clamp(34px, 3.45vw, 49px);
+  line-height: 1.02;
   letter-spacing: -0.035em;
   margin: 26px 0;
 }
@@ -569,7 +569,7 @@ summary:focus-visible {
 }
 .pa-hero h1 .pa-hero-eyebrow {
   display: block;
-  font-size: 0.45em;
+  font-size: 0.64em;
   font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1.1;
@@ -1009,7 +1009,7 @@ summary:focus-visible {
     padding-block: 48px;
   }
   .pa-hero h1 {
-    font-size: 54px;
+    font-size: 38px;
   }
   .pa-hero-image img {
     height: 410px;
@@ -1068,7 +1068,7 @@ summary:focus-visible {
     max-width: 320px;
   }
   .pa-hero h1 {
-    font-size: clamp(42px, 11.8vw, 62px);
+    font-size: clamp(30px, 8.3vw, 44px);
     margin: 23px 0;
     line-height: 1.01;
   }
