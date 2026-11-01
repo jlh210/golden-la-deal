@@ -227,7 +227,7 @@ function HomePage() {
                 Buyers &amp; Sellers throughout Los Angeles County,{" "}
                 <Link to="/contact">
                   <strong>Need Business Solutions Fast? Book</strong> a 30-minute mobile-to-mobile
-                  call for real answers on restaurants, properties, and city matters.
+                  call for real answers.
                 </Link>
               </p>
               <p className="pa-kicker">Retail Business Advisor and Broker · Los Angeles, CA</p>
