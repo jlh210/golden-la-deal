@@ -216,8 +216,8 @@ function HomePage() {
             <div className="pa-hero-copy">
               <p className="pa-kicker">Retail Business Advisor and Broker · Los Angeles, CA</p>
               <h1 id="home-title">
-                Retail Business Transactions, Restaurant Sale &amp; Acquisitions, Health
-                Department Permitting, Alcohol Licensing <br />
+                Retail Business Transactions, Restaurant Sales &amp; Acquisitions, Health
+                Department Permitting &amp; Violation Corrections, Alcohol Licensing <br />
                 <em>
                   Handled <span className="pa-no-break">End-to-End.</span>
                 </em>
