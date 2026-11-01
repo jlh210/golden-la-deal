@@ -216,7 +216,8 @@ function HomePage() {
             <div className="pa-hero-copy">
               <p className="pa-kicker">Restaurant/Food Market Business Advisor and Broker · Los Angeles, CA</p>
               <h1 id="home-title">
-                Restaurant &amp; Business Transactions, <br />
+                Retail Business Transactions, Restaurant Sale &amp; Acquisitions, Health
+                Department Permitting, Alcohol Licensing <br />
                 <em>
                   Handled <span className="pa-no-break">End-to-End.</span>
                 </em>
