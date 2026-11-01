@@ -214,6 +214,11 @@ function HomePage() {
         <section className="pa-hero" aria-labelledby="home-title">
           <div className="pa-shell pa-hero-grid">
             <div className="pa-hero-copy">
+              <p className="pa-kicker pa-hero-lead">
+                <Link to="/contact">
+                  Have Business Questions, Need Advise? <strong>Book a Consultation Now</strong>
+                </Link>
+              </p>
               <h1 id="home-title">
                 <span className="pa-hero-eyebrow">BUSINESS ADVISE AND HELP IS NOW AVAILABLE:</span>
                 Retail Business Transactions, Restaurant Sales &amp; Acquisitions, Health
@@ -228,11 +233,6 @@ function HomePage() {
                 <Link to="/contact">
                   <strong>Need Business Solutions Fast? Book</strong> a 30-minute mobile-to-mobile
                   call for real answers.
-                </Link>
-              </p>
-              <p className="pa-kicker">
-                <Link to="/contact">
-                  Have Business Questions, Need Advise? <strong>Book a Consultation Now</strong>
                 </Link>
               </p>
               <p className="pa-kicker">Retail Business Advisor and Broker · Los Angeles, CA</p>

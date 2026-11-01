@@ -583,6 +583,9 @@ summary:focus-visible {
 .pa-hero-description + .pa-kicker {
   margin-top: 16px;
 }
+.pa-hero-lead {
+  margin-bottom: 14px;
+}
 .pa-hero-actions {
   margin-top: 28px;
   display: flex;
