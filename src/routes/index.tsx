@@ -224,13 +224,12 @@ function HomePage() {
               </h1>
               <p className="pa-hero-description">
                 Penthouse Advisors Helps Retail Business Owners, Restaurant Operators, Restaurant
-                Buyers &amp; Sellers throughout Los Angeles County, navigate through the valuation
-                price points, sales/acquisitions agreements, lease/rent terms/conditions, Alcohol
-                Licensing, Health Dept., permitting.{" "}
+                Buyers &amp; Sellers throughout Los Angeles County, navigate; Valuation Price
+                Points, Sales/Acquisitions Agreements, Lease/Rent negotiation, Alcohol Licensing,
+                Health Department permitting, violation corrections.{" "}
                 <Link to="/contact">
-                  <strong>Need Business Advise &amp; Solutions, Fast?</strong> BOOK a 30-minute
-                  mobile-to-mobile call for real answers on restaurants, properties, and city
-                  matters.
+                  <strong>Need Business Solutions Fast? Book</strong> a 30-minute mobile-to-mobile
+                  call for real answers on restaurants, properties, and city matters.
                 </Link>
               </p>
               <div className="pa-hero-actions">
