@@ -203,6 +203,12 @@ function TopBar() {
     <div className="pa-topbar">
       <div className="pa-shell pa-topbar-inner">
         <p>
+          <Link to="/contact">
+            HAVE BUSINESS PROBLEMS? RECEIVE A RESOLUTION FAST.{" "}
+            <strong>BOOK A CONSULTATION NOW</strong>
+          </Link>
+        </p>
+        <p>
           All Other Matters: <a href={EMAIL_HREF}>Email: {EMAIL}</a> Call/Text:{" "}
           <a href={PHONE_HREF}>{PHONE}</a> Richard Stein COO · Roschard Paticchio-Stein CEO
           {" · "}
