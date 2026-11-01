@@ -214,7 +214,6 @@ function HomePage() {
         <section className="pa-hero" aria-labelledby="home-title">
           <div className="pa-shell pa-hero-grid">
             <div className="pa-hero-copy">
-              <p className="pa-kicker">Retail Business Advisor and Broker · Los Angeles, CA</p>
               <h1 id="home-title">
                 Retail Business Transactions, Restaurant Sales &amp; Acquisitions, Health
                 Department Permitting &amp; Violation Corrections, Alcohol Licensing <br />
@@ -230,6 +229,7 @@ function HomePage() {
                   call for real answers on restaurants, properties, and city matters.
                 </Link>
               </p>
+              <p className="pa-kicker">Retail Business Advisor and Broker · Los Angeles, CA</p>
               <div className="pa-hero-actions">
                 <Link to="/contact" className="pa-button">
                   {CONSULTATION_LABEL}
