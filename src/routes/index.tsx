@@ -230,6 +230,11 @@ function HomePage() {
                   call for real answers.
                 </Link>
               </p>
+              <p className="pa-kicker">
+                <Link to="/contact">
+                  Have Business Questions, Need Advise? <strong>Book a Consultation Now</strong>
+                </Link>
+              </p>
               <p className="pa-kicker">Retail Business Advisor and Broker · Los Angeles, CA</p>
               <div className="pa-hero-actions">
                 <Link to="/contact" className="pa-button">
