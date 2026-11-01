@@ -225,9 +225,9 @@ function Footer() {
               Brokerage &amp; Advisory.
             </p>
             <p className="pa-footer-book">
-              <strong>Need Restaurant solutions Fast? Book Now</strong>{" "}
+              <strong>Need Business Advise &amp; Solutions, Fast?</strong>{" "}
               <Link to="/contact">
-                a 30-minute mobile-to-mobile call for real answers on restaurants, properties, and
+                BOOK a 30-minute mobile-to-mobile call for real answers on restaurants, properties, and
                 city matters.
               </Link>
             </p>

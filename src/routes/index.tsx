@@ -228,7 +228,7 @@ function HomePage() {
                 price points, sales/acquisitions agreements, lease/rent terms/conditions, Alcohol
                 Licensing, Health Dept., permitting.{" "}
                 <Link to="/contact">
-                  <strong>Need Restaurant solutions Fast? Book</strong> a 30-minute
+                  <strong>Need Business Advise &amp; Solutions, Fast?</strong> BOOK a 30-minute
                   mobile-to-mobile call for real answers on restaurants, properties, and city
                   matters.
                 </Link>
