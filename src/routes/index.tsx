@@ -220,7 +220,7 @@ function HomePage() {
                 </Link>
               </p>
               <h1 id="home-title">
-                <span className="pa-hero-eyebrow">BUSINESS ADVISE AND HELP IS NOW AVAILABLE:</span>
+                <span className="pa-hero-eyebrow">BUSINESS HELP IS NOW AVAILABLE:</span>
                 Retail Business Transactions, Restaurant Sales &amp; Acquisitions, Health
                 Department Permitting &amp; Violation Corrections, Alcohol Licensing <br />
                 <em>
