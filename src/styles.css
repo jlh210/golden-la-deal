@@ -582,7 +582,8 @@ summary:focus-visible {
   font-weight: 700;
   color: #4d5149;
 }
-.pa-hero-description + .pa-kicker {
+.pa-hero-description + .pa-kicker,
+.pa-kicker + .pa-hero-description {
   margin-top: 16px;
 }
 .pa-hero .pa-kicker {
