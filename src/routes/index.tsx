@@ -214,6 +214,15 @@ function HomePage() {
         <section className="pa-hero" aria-labelledby="home-title">
           <div className="pa-shell pa-hero-grid">
             <div className="pa-hero-copy">
+              <p className="pa-hero-description">
+                Penthouse Advisors Helps Retail Business Owners, Restaurant Operators, Restaurant
+                Buyers &amp; Sellers throughout Los Angeles County,{" "}
+                <Link to="/contact">
+                  <strong>Need Business Solutions Fast? Book</strong> a 30-minute mobile-to-mobile
+                  call for real answers.
+                </Link>
+              </p>
+              <p className="pa-kicker">Retail Business Advisor and Broker · Los Angeles, CA</p>
               <h1 id="home-title">
                 <span className="pa-hero-eyebrow">BUSINESS ADVISE AVAILABLE:</span>
                 Restaurant &amp; Food Market, Health Department Permitting, Violation Corrections,
@@ -229,15 +238,6 @@ function HomePage() {
                   Have Business Questions, Need Advise? <strong>Book a Consultation Now</strong>
                 </Link>
               </p>
-              <p className="pa-hero-description">
-                Penthouse Advisors Helps Retail Business Owners, Restaurant Operators, Restaurant
-                Buyers &amp; Sellers throughout Los Angeles County,{" "}
-                <Link to="/contact">
-                  <strong>Need Business Solutions Fast? Book</strong> a 30-minute mobile-to-mobile
-                  call for real answers.
-                </Link>
-              </p>
-              <p className="pa-kicker">Retail Business Advisor and Broker · Los Angeles, CA</p>
               <div className="pa-hero-actions">
                 <Link to="/contact" className="pa-button">
                   {CONSULTATION_LABEL}
