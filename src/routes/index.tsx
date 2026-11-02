@@ -214,7 +214,7 @@ function HomePage() {
         <section className="pa-hero" aria-labelledby="home-title">
           <div className="pa-shell pa-hero-grid">
             <div className="pa-hero-copy">
-              <p className="pa-kicker">Retail Business Advisor and Broker · Los Angeles, CA</p>
+              <p className="pa-kicker">Retail Business Advisor and Brokerage · Los Angeles County</p>
               <p className="pa-hero-description">
                 <strong>
                   Penthouse Advisors Helps Retail Business Owners, Retail Investors, Restaurant
