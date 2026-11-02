@@ -577,7 +577,7 @@ summary:focus-visible {
 }
 .pa-hero-description {
   max-width: 535px;
-  font-size: 15px;
+  font-size: 13px;
   color: #4d5149;
 }
 .pa-hero-description + .pa-kicker {
@@ -1076,7 +1076,7 @@ summary:focus-visible {
     line-height: 1.01;
   }
   .pa-hero-description {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.75;
   }
   .pa-hero-actions {
