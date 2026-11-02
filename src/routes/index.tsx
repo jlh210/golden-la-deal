@@ -224,10 +224,10 @@ function HomePage() {
               </p>
               <p className="pa-kicker">Retail Business Advisor and Broker · Los Angeles, CA</p>
               <h1 id="home-title">
-                <span className="pa-hero-eyebrow">RETAIL BUSINESS ADVISE AVAILABLE:</span>
+                <span className="pa-hero-eyebrow">Services:</span>
                 Health Department Permitting, Violation Corrections, Alcohol Licensing, Restaurant
                 Remodeling, Sales &amp; Acquisitions, Rent Abatement Allowances, All Retail Business
-                Advise. <br />
+                Consultations. <br />
                 <em>
                   Handled <span className="pa-no-break">End-to-End.</span>
                 </em>
