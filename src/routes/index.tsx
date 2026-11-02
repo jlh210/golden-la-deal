@@ -220,9 +220,10 @@ function HomePage() {
                 </Link>
               </p>
               <h1 id="home-title">
-                <span className="pa-hero-eyebrow">BUSINESS HELP IS NOW AVAILABLE:</span>
-                Retail Business Transactions, Restaurant Sales &amp; Acquisitions, Health
-                Department Permitting &amp; Violation Corrections, Alcohol Licensing <br />
+                <span className="pa-hero-eyebrow">BUSINESS ADVISE AVAILABLE:</span>
+                Restaurant Health Department Permitting, Violation Corrections, Alcohol Licensing,
+                Restaurant Remodeling, Sales &amp; Acquisitions, Rent Abatement Allowances, Retail
+                Business Advise. <br />
                 <em>
                   Handled <span className="pa-no-break">End-to-End.</span>
                 </em>
