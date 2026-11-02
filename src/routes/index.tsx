@@ -215,8 +215,8 @@ function HomePage() {
           <div className="pa-shell pa-hero-grid">
             <div className="pa-hero-copy">
               <p className="pa-hero-description">
-                Penthouse Advisors Helps Retail Business Owners, Restaurant Operators, Restaurant
-                Buyers &amp; Sellers throughout Los Angeles County,{" "}
+                Penthouse Advisors Helps Retail Business Owners, Retail Investors, Restaurant
+                Owners, Restaurant Buyers throughout Los Angeles County,{" "}
                 <Link to="/contact">
                   <strong>Need Business Solutions Fast? Book</strong> a 30-minute mobile-to-mobile
                   call for real answers.
