@@ -221,8 +221,9 @@ function HomePage() {
               </p>
               <h1 id="home-title">
                 <span className="pa-hero-eyebrow">BUSINESS ADVISE AVAILABLE:</span>
-                Restaurant Health Department Permitting, Violation Corrections, Alcohol Licensing,
-                Restaurant Remodeling, Sales &amp; Acquisitions, Rent Abatement Allowances, Retail
+                Restaurant &amp; Food Market, Health Department Permitting, Violation Corrections,
+                Alcohol Licensing, Restaurant Remodeling, Valuations Sales &amp; Acquisitions, Rent
+                Abatement Allowances, Retail
                 Business Advise. <br />
                 <em>
                   Handled <span className="pa-no-break">End-to-End.</span>
