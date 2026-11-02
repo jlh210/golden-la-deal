@@ -234,7 +234,8 @@ function HomePage() {
               </h1>
               <p className="pa-kicker pa-hero-lead">
                 <Link to="/contact">
-                  Have Business Questions, Need Advise? <strong>Book a Consultation Now</strong>
+                  Have Business Questions? Need Business Advise?{" "}
+                  <strong>Book a Consultation Now</strong>
                 </Link>
               </p>
               <div className="pa-hero-actions">
