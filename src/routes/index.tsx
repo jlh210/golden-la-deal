@@ -225,9 +225,9 @@ function HomePage() {
               <p className="pa-kicker">Retail Business Advisor and Broker · Los Angeles, CA</p>
               <h1 id="home-title">
                 <span className="pa-hero-eyebrow">Services:</span>
-                Health Department Permitting, Violation Corrections, Alcohol Licensing, Restaurant
-                Remodeling, Sales &amp; Acquisitions, Rent Abatement Allowances, All Retail Business
-                Consultations. <br />
+                Health Department Permitting, Violation Corrections, Restaurant Remodeling, Sales
+                &amp; Acquisitions, Rent Abatement Allowances, Change of Use, Alcohol Licensing,
+                Retail Business Consulting. <br />
                 <em>
                   Handled <span className="pa-no-break">End-to-End.</span>
                 </em>
