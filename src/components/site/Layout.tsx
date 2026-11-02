@@ -204,7 +204,7 @@ function TopBar() {
       <div className="pa-shell pa-topbar-inner">
         <p>
           <Link to="/contact">
-            Have Business Questions, Need Advise?{" "}
+            Have Business Questions? Need Business Advise?{" "}
             <strong>Book a Consultation Now</strong>
           </Link>
         </p>
