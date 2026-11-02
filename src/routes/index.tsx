@@ -233,10 +233,7 @@ function HomePage() {
                 </em>
               </h1>
               <p className="pa-kicker pa-hero-lead">
-                <Link to="/contact">
-                  Have Business Questions? Need Business Advise?{" "}
-                  <strong>Book a Consultation Now</strong>
-                </Link>
+                <Link to="/contact">Have Business Questions? Need Business Advise?</Link>
               </p>
               <div className="pa-hero-actions">
                 <Link to="/contact" className="pa-button">

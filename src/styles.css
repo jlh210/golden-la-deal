@@ -592,6 +592,7 @@ summary:focus-visible {
 }
 .pa-hero-lead {
   margin-bottom: 14px;
+  text-transform: none;
 }
 .pa-hero-actions {
   margin-top: 28px;
