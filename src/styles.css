@@ -577,11 +577,16 @@ summary:focus-visible {
 }
 .pa-hero-description {
   max-width: 535px;
-  font-size: 13px;
+  font-size: 16px;
+  font-weight: 700;
   color: #4d5149;
 }
 .pa-hero-description + .pa-kicker {
   margin-top: 16px;
+}
+.pa-hero .pa-kicker {
+  font-size: 12px;
+  font-weight: 700;
 }
 .pa-hero-lead {
   margin-bottom: 14px;
@@ -1067,7 +1072,7 @@ summary:focus-visible {
     gap: 36px;
   }
   .pa-hero .pa-kicker {
-    font-size: 9px;
+    font-size: 11px;
     max-width: 320px;
   }
   .pa-hero h1 {
@@ -1076,7 +1081,7 @@ summary:focus-visible {
     line-height: 1.01;
   }
   .pa-hero-description {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 1.75;
   }
   .pa-hero-actions {
