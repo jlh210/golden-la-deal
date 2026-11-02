@@ -224,7 +224,7 @@ function HomePage() {
                 </strong>
               </p>
               <h1 id="home-title">
-                <span className="pa-hero-eyebrow">Example of our Services:</span>
+                <span className="pa-hero-eyebrow">Example of our Services: (see explore services)</span>
                 Health Department Permitting, Violation Corrections, Restaurant Remodeling, Sales
                 &amp; Acquisitions, Rent Abatement Allowances, Change of Use, Alcohol Licensing,
                 Retail Business Consulting. <br />
