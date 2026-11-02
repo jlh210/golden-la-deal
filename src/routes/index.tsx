@@ -221,6 +221,7 @@ function HomePage() {
                   Owners, Restaurant Buyers throughout Los Angeles County.
                 </strong>
                 <br />
+                <br />
                 <Link to="/contact">
                   <strong>
                     Need Business Solutions Fast? Book a 30-minute mobile-to-mobile call for real
