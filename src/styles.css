@@ -563,9 +563,10 @@ summary:focus-visible {
   line-height: 1.02;
   letter-spacing: -0.035em;
   margin: 26px 0;
+  font-weight: 700;
 }
 .pa-hero h1 em {
-  font-weight: 400;
+  font-weight: 700;
 }
 .pa-hero h1 .pa-hero-eyebrow {
   display: block;
