@@ -48,7 +48,7 @@ export const agents = [
   },
   {
     name: "Richard Stein",
-    title: "COO · Chief Operating Officer · Creator · Owner",
+    title: "COO · Creator · Owner/Partner · Business Consultant",
     bio: "As COO, Richard turns the firm’s strategy into everyday results, making sure execution across the company matches the direction set by leadership.",
     focus: ["operations & execution", "strategy implementation", "business advisory"],
   },
