@@ -144,10 +144,17 @@ function AboutPage() {
       >
         <div className="max-w-2xl space-y-1 text-muted-foreground">
           <p className="pb-2">
-            <Link to="/contact" className="text-gold hover:underline">
-              <strong>Need Business Advise &amp; Solutions, Fast?</strong> BOOK a 30-minute mobile-to-mobile
-              call for real answers on restaurants, properties, and city matters.
-            </Link>
+            <strong className="text-gold">Need Business Advise &amp; Solutions, Fast?</strong>{" "}
+            <strong>
+              <em>
+                Click "
+                <Link to="/contact" className="text-gold underline hover:opacity-80">
+                  Have Questions
+                </Link>
+                " to Book a 30-Minute $35 mobile-to-mobile consultation for real answers on
+                restaurants, properties, and city matters.
+              </em>
+            </strong>
           </p>
           <p>
             All other matters: Call or Text:{" "}
@@ -272,10 +279,16 @@ function AboutPage() {
         <div className="max-w-2xl space-y-1 text-muted-foreground">
           <p className="pb-2">
             <strong className="text-foreground">Need Business Advise &amp; Solutions, Fast?</strong>{" "}
-            <Link to="/contact" className="text-gold hover:underline">
-              BOOK a 30-minute mobile-to-mobile call for real answers on restaurants, properties, and
-              city matters.
-            </Link>
+            <strong className="text-foreground">
+              <em>
+                Click "
+                <Link to="/contact" className="text-gold underline hover:opacity-80">
+                  Have Questions
+                </Link>
+                " to Book a 30-Minute $35 mobile-to-mobile consultation for real answers on
+                restaurants, properties, and city matters.
+              </em>
+            </strong>
           </p>
           <p>
             Other Matters: Call or Text:{" "}

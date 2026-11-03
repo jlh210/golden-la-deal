@@ -226,10 +226,13 @@ function Footer() {
             </p>
             <p className="pa-footer-book">
               <strong>Need Business Advise &amp; Solutions, Fast?</strong>{" "}
-              <Link to="/contact">
-                BOOK a 30-minute mobile-to-mobile call for real answers on restaurants, properties, and
-                city matters.
-              </Link>
+              <strong>
+                <em>
+                  Click "<Link to="/contact">Have Questions</Link>" to Book a 30-Minute $35
+                  mobile-to-mobile consultation for real answers on restaurants, properties, and city
+                  matters.
+                </em>
+              </strong>
             </p>
             <a href={PHONE_HREF}>Other Matters: Call or Text: {PHONE}</a>
             <a className="pa-email" href={EMAIL_HREF}>
