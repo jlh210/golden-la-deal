@@ -1,7 +1,7 @@
 import { CONSULTATION_LABEL } from "@/lib/consultation";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Phone, Mail } from "lucide-react";
-import { SiteLayout, PHONE, PHONE_HREF, EMAIL, EMAIL_HREF } from "@/components/site/Layout";
+import { SiteLayout, EMAIL, EMAIL_HREF } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
@@ -34,13 +34,15 @@ export const Route = createFileRoute("/agents")({
   component: AgentsPage,
 });
 
+// All agents share the office mobile line.
+const AGENT_PHONE = "Office M 310.663.3521";
+const AGENT_PHONE_HREF = "tel:+13106633521";
+
 export const agents = [
   {
     name: "Roschard Paticchio-Stein",
     title: "CEO · Owner · Business Agent",
     dre: "DRE #02203003",
-    phone: "(310) 460-9757",
-    phoneHref: "tel:+13104609757",
     bio: "As CEO, Roschard makes the major corporate decisions that shape Penthouse Advisors, drives the firm’s direction, supervises the executive team, and oversees growth plans.",
     focus: ["buy/seller representation", "abc licensing oversight", "restaurant sales"],
   },
@@ -61,8 +63,6 @@ export const agents = [
     name: "Jamal Ali Joseph",
     title: "Business Agent",
     dre: "DRE #02417938",
-    phone: "(310) 432-3014",
-    phoneHref: "tel:+13104323014",
     bio: "Licensed Business Agent supporting restaurant sales, commercial sales, seller and buyer representation across Los Angeles County.",
     focus: ["restaurant sales", "commercial sales", "seller and buyer representation"],
   },
@@ -70,8 +70,6 @@ export const agents = [
     name: "Jeremie Campbell",
     title: "Business Agent",
     dre: "DRE #02223132",
-    phone: "(310) 936-0854",
-    phoneHref: "tel:+13109360854",
     bio: "Licensed Business Agent supporting restaurant sales, commercial sales, seller and buyer representation across Los Angeles County.",
     focus: ["restaurant sales", "commercial sales", "seller and buyer representation"],
   },
@@ -115,10 +113,10 @@ function AgentsPage() {
               </ul>
               <div className="mt-6 pt-5 border-t border-border flex flex-col gap-2 text-sm">
                 <a
-                  href={a.phoneHref || PHONE_HREF}
+                  href={AGENT_PHONE_HREF}
                   className="inline-flex items-center gap-2 hover:text-gold"
                 >
-                  <Phone className="h-4 w-4 text-gold" /> {a.phone || PHONE}
+                  <Phone className="h-4 w-4 text-gold" /> {AGENT_PHONE}
                 </a>
                 <a
                   href={EMAIL_HREF}
