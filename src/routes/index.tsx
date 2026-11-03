@@ -309,7 +309,7 @@ function HomePage() {
               <div>
                 <h3>Richard Stein</h3>
                 <p className="pa-ownership-role">
-                  COO · Chief Operating Officer · Owner · Deal Supervisor · Closer
+                  COO · Creator · Owner/Partner · Business Consultant
                 </p>
                 <p>
                   As COO, Richard turns the firm’s strategy into everyday results, making sure execution
