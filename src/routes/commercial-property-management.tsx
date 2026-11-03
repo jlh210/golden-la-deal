@@ -14,6 +14,7 @@ import {
 import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { LeadForm } from "@/components/site/LeadForm";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 
 const URL = "https://www.penthouseadvisors.com/commercial-property-management";
 
@@ -169,6 +170,7 @@ function CommercialPropertyManagementPage() {
           <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold leading-tight">
             Full-service management for commercial assets.
           </h2>
+          <HeadingCTA />
           <p className="mt-5 text-base md:text-lg text-muted-foreground leading-relaxed">
             Penthouse Advisors provides a full range of commercial management services and property
             management solutions. Our fee is based on $600 per door, or if the building has limited
@@ -182,6 +184,7 @@ function CommercialPropertyManagementPage() {
         <h2 className="mt-2 text-2xl md:text-4xl font-display font-bold">
           Penthouse Advisors Inc. services include.
         </h2>
+        <HeadingCTA />
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {managementServices.map((s, i) => (
             <div
@@ -203,6 +206,7 @@ function CommercialPropertyManagementPage() {
           <h2 className="mt-2 text-2xl md:text-3xl font-display font-bold leading-tight">
             Property management starts with relationships.
           </h2>
+          <HeadingCTA />
           <p className="mt-4 text-base text-muted-foreground leading-relaxed">
             We understand that successful property management starts with a workable relationship
             with the property owners. We maintain such relationships as a top priority.

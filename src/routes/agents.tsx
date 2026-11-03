@@ -6,6 +6,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
 import { breadcrumbScript } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/agents")({
   head: () => ({
     meta: [
@@ -101,6 +102,7 @@ function AgentsPage() {
                   .join("")}
               </div>
               <h2 className="mt-5 text-xl font-display font-bold">{a.name}</h2>
+              <HeadingCTA />
               <p className="mt-1 text-sm font-semibold text-gold">{a.title}</p>
               {a.dre && <p className="mt-1 text-xs text-muted-foreground">{a.dre}</p>}
               <p className="mt-4 text-sm text-foreground/85 leading-relaxed">{a.bio}</p>

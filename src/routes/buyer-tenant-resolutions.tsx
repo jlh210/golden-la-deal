@@ -5,6 +5,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
 import { breadcrumbScript } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/buyer-tenant-resolutions")({
   head: () => ({
     meta: [
@@ -45,6 +46,7 @@ function ResolutionsPage() {
             <AlertTriangle className="h-6 w-6" />
           </div>
           <h2 className="mt-5 text-2xl font-display font-bold">Common dilemmas</h2>
+          <HeadingCTA />
           <ul className="mt-4 space-y-2 text-muted-foreground leading-relaxed">
             <li>• Landlord or agent failed to disclose code, permit, or violation history</li>
             <li>• Seller's sales numbers don't match POS or tax records</li>
@@ -60,6 +62,7 @@ function ResolutionsPage() {
             <Handshake className="h-6 w-6" />
           </div>
           <h2 className="mt-5 text-2xl font-display font-bold">How we resolve it</h2>
+          <HeadingCTA />
           <ul className="mt-4 space-y-2 text-muted-foreground leading-relaxed">
             <li>• Direct landlord and agent negotiation - written, on the record</li>
             <li>• Lease re-trade: rent abatement, TI swaps, term changes</li>
@@ -76,6 +79,7 @@ function ResolutionsPage() {
           <Scale className="h-7 w-7 text-gold shrink-0 mt-1" />
           <div>
             <h2 className="text-2xl md:text-3xl font-display font-bold">Treated fairly, equally, honestly.</h2>
+            <HeadingCTA />
             <p className="mt-3 text-muted-foreground max-w-2xl">
               We don't pick sides for sport - we get the deal to a workable close,
               or we tell you straight when to walk. Either way, you stop bleeding time and money.

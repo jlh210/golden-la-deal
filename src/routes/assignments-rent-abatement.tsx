@@ -5,6 +5,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
 import { breadcrumbScript } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/assignments-rent-abatement")({
   head: () => ({
     meta: [
@@ -45,6 +46,7 @@ function AssignmentsPage() {
             <Scale className="h-6 w-6" />
           </div>
           <h2 className="mt-5 text-2xl font-display font-bold">Lease Assignment Risk</h2>
+          <HeadingCTA />
           <p className="mt-4 text-muted-foreground leading-relaxed">
             When a lease is assigned, the original tenant <span className="text-gold font-semibold">remains the first guarantor</span>.
             The incoming tenant becomes the <span className="text-gold font-semibold">second guarantor</span>. If the new operator defaults,
@@ -59,6 +61,7 @@ function AssignmentsPage() {
             <ShieldCheck className="h-6 w-6" />
           </div>
           <h2 className="mt-5 text-2xl font-display font-bold">Rent Abatement</h2>
+          <HeadingCTA />
           <p className="mt-4 text-muted-foreground leading-relaxed">
             Rent doesn't have to start the day you sign. We tie abatement to real
             milestones - Health permit issuance, ABC license activation, or the day the
@@ -76,6 +79,7 @@ function AssignmentsPage() {
             </div>
             <div>
               <h2 className="text-2xl font-display font-bold">Engagement Retainer</h2>
+              <HeadingCTA />
               <p className="mt-2 text-muted-foreground">
                 Flat retainer to open the file, review the lease, and start negotiating
                 with the landlord and counterparty.

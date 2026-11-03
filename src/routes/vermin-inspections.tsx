@@ -5,6 +5,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
 import { breadcrumbScript } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/vermin-inspections")({
   head: () => ({
     meta: [
@@ -52,6 +53,7 @@ function VerminPage() {
         <div>
           <p className="text-xs font-semibold uppercase tracking-widest text-gold">What's Included</p>
           <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">Built for landlords, not tenants.</h2>
+          <HeadingCTA />
           <p className="mt-4 text-muted-foreground">
             Under a standard commercial lease, the tenant is responsible for vermin control
             within their leased premises. Without a monthly inspection record, that

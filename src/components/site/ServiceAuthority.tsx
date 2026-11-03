@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { CONSULTATION_LABEL } from "@/lib/consultation";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 
 export interface ServiceAuthorityContent {
   title: string;
@@ -22,6 +23,7 @@ export function ServiceAuthorityHero({ content }: { content: ServiceAuthorityCon
         </nav>
         <p className="pa-kicker">Penthouse Advisors · Los Angeles County</p>
         <h1>{content.title}</h1>
+        <HeadingCTA />
         <p className="pa-service-answer">{content.answer}</p>
         <Link to="/contact" search={{ service: content.service }} className="pa-button">
           {CONSULTATION_LABEL}
@@ -37,6 +39,7 @@ export function ServiceAuthorityDetails({ content }: { content: ServiceAuthority
       <div>
         <p className="pa-kicker">Start with the facts</p>
         <h2>What to bring to the conversation.</h2>
+        <HeadingCTA />
         <ul>
           {content.prepare.map((item) => (
             <li key={item}>{item}</li>
@@ -50,6 +53,7 @@ export function ServiceAuthorityDetails({ content }: { content: ServiceAuthority
       <div>
         <p className="pa-kicker">Explore the details</p>
         <h2>Related services &amp; guides.</h2>
+        <HeadingCTA />
         <ul>
           {content.guides.map((item) => (
             <li key={item.to}>
@@ -80,6 +84,7 @@ export function ServiceAuthorityFaq({ faqs }: { faqs: { q: string; a: string }[]
     <section className="pa-shell pa-service-faq">
       <p className="pa-kicker">Questions answered</p>
       <h2>Before you begin.</h2>
+      <HeadingCTA />
       {faqs.map((f) => (
         <details key={f.q}>
           <summary>{f.q}</summary>

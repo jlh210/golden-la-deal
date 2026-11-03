@@ -4,6 +4,7 @@ import { HelpSearch } from "@/components/help/HelpSearch";
 import { categories } from "@/content/help";
 import { knowledgeClusters } from "@/content/knowledge-clusters";
 import { breadcrumbScript, collectionScript, SITE_URL } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/help/")({
   head: () => ({
     meta: [
@@ -50,6 +51,7 @@ function HelpHubPage() {
             <br />
             Knowledge Center.
           </h1>
+          <HeadingCTA />
           <p>
             Understand the steps, documents, and decisions behind a restaurant purchase, sale, or
             lease. Start with an evergreen guide, then explore the comparisons and explainers in
@@ -66,6 +68,7 @@ function HelpHubPage() {
           {knowledgeClusters.map((cluster) => (
             <section key={cluster.title}>
               <h2>{cluster.title}</h2>
+              <HeadingCTA />
               <p>{cluster.description}</p>
               <ul>
                 {cluster.guides.map((g) => (
@@ -82,6 +85,7 @@ function HelpHubPage() {
         </section>
         <nav className="pa-category-nav" aria-label="Populated guide collections">
           <h2>Browse guide collections.</h2>
+          <HeadingCTA />
           <ul>
             {categories
               .filter((c) => c.articles.length)

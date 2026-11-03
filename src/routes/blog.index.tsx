@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/Layout";
 import { blogPages } from "@/content/blog";
 import { collectionScript, breadcrumbScript, SITE_URL } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/blog/")({
   head: () => ({
     meta: [
@@ -45,6 +46,7 @@ function BlogArchive() {
             <br />
             More informed decisions.
           </h1>
+          <HeadingCTA />
           <p>
             Comparisons, explainers, and location decisions for restaurant buyers, sellers, and
             operators in Los Angeles County.
@@ -60,6 +62,7 @@ function BlogArchive() {
               <h2>
                 <Link to={page.path}>{page.title}</Link>
               </h2>
+              <HeadingCTA />
               <p>{page.answer}</p>
               <Link to={page.path} className="pa-text-link">
                 Explore {page.categoryLabel.toLowerCase()} <span aria-hidden="true">↗</span>

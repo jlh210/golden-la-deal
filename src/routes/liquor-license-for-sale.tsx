@@ -3,6 +3,7 @@ import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 import { breadcrumbScript } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 
 const title = "Liquor License For Sale - Type 47 Hard Liquor | Penthouse Advisors";
 const description =
@@ -42,6 +43,7 @@ function LiquorLicenseForSale() {
       <section className="container-x py-12 md:py-16">
         <div className="rounded-2xl border border-gold/40 bg-card p-7 md:p-10">
           <h2 className="text-2xl font-display font-bold">Confirm current license availability</h2>
+          <HeadingCTA />
           <p className="mt-3 max-w-3xl text-muted-foreground">
             We are not displaying a verified license-for-sale offer on this page at present. Contact
             us with your proposed address or area, restaurant concept and target timing to discuss
@@ -58,6 +60,7 @@ function LiquorLicenseForSale() {
         <div className="mt-12 grid gap-10 md:grid-cols-2">
           <section>
             <h2 className="text-2xl font-display font-bold">What is a Type 47 liquor license?</h2>
+            <HeadingCTA />
             <p className="mt-3 text-muted-foreground">
               California ABC classifies Type 47 as On-Sale General — Eating Place. It is a
               restaurant license permitting beer, wine and distilled spirits for consumption on the
@@ -74,6 +77,7 @@ function LiquorLicenseForSale() {
             <h2 className="text-2xl font-display font-bold">
               How do I check a license before buying?
             </h2>
+            <HeadingCTA />
             <p className="mt-3 text-muted-foreground">
               Start with the exact license number. Review its current status and record in ABC’s
               official lookup, and ask about the proposed premises, conditions, transfer process and
@@ -88,6 +92,7 @@ function LiquorLicenseForSale() {
           </section>
           <section>
             <h2 className="text-2xl font-display font-bold">What does a Type 47 license cost?</h2>
+            <HeadingCTA />
             <p className="mt-3 text-muted-foreground">
               Request a current written quote for the specific opportunity. Ask what the quoted
               amount includes, which fees are separate and what conditions apply. No current license
@@ -98,6 +103,7 @@ function LiquorLicenseForSale() {
             <h2 className="text-2xl font-display font-bold">
               Planning a restaurant purchase or transfer?
             </h2>
+            <HeadingCTA />
             <p className="mt-3 text-muted-foreground">
               Connect your license questions with the restaurant and location you are considering.
               These resources explain the topics to discuss with your advisor.

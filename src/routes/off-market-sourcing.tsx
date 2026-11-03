@@ -8,6 +8,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { submitLead } from "@/lib/leads.functions";
 
 import { breadcrumbScript } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/off-market-sourcing")({
   head: () => ({
     meta: [
@@ -109,6 +110,7 @@ function OffMarketPage() {
                   <Search className="h-5 w-5" />
                 </span>
                 <h2 className="text-2xl font-display font-bold">Buyer Brief</h2>
+                <HeadingCTA />
               </div>
               <p className="mt-2 text-sm text-muted-foreground">
                 A few details so we know what to hunt for.

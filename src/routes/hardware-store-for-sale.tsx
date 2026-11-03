@@ -8,6 +8,7 @@ import storefront from "@/assets/hardware-storefront.png";
 import aisle from "@/assets/hardware-aisle.png";
 
 import { breadcrumbScript } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/hardware-store-for-sale")({
   head: () => ({
     meta: [
@@ -146,6 +147,7 @@ function HardwarePage() {
               </div>
               <div>
                 <h2 className="text-2xl md:text-3xl font-display font-bold">Hardware Store</h2>
+                <HeadingCTA />
                 <div className="mt-2 flex items-center gap-1.5 text-sm text-muted-foreground">
                   <MapPin className="h-4 w-4 text-gold" /> Westwood Blvd, West LA
                 </div>

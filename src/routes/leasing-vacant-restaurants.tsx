@@ -5,6 +5,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { LeadForm } from "@/components/site/LeadForm";
 
 import { breadcrumbScript } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/leasing-vacant-restaurants")({
   head: () => ({
     meta: [
@@ -46,6 +47,7 @@ function LeasingVacantRestaurantsPage() {
             <Building2 className="h-6 w-6" />
           </div>
           <h2 className="mt-5 text-2xl font-display font-bold">NO FEE representation</h2>
+          <HeadingCTA />
 
           <p className="mt-4 text-muted-foreground leading-relaxed">
             Vacant, equipped, second-generation restaurants are lease-only deals. Property

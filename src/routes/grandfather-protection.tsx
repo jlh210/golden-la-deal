@@ -5,6 +5,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
 import { breadcrumbScript } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/grandfather-protection")({
   head: () => ({
     meta: [
@@ -57,6 +58,7 @@ function GrandfatherPage() {
             <h2 className="mt-1 text-2xl md:text-3xl font-display font-bold">
               Closed with the Health Department for over 90 days?
             </h2>
+            <HeadingCTA />
             <p className="mt-2 text-muted-foreground max-w-2xl">
               Grandfather Protection automatically expires. The space owes full current code from day 91 onward -
               no waivers, no negotiation. This is the single fastest way owners lose protected status.
@@ -71,6 +73,7 @@ function GrandfatherPage() {
             <Lock className="h-6 w-6" />
           </div>
           <h2 className="mt-5 text-2xl font-display font-bold">What it means</h2>
+          <HeadingCTA />
           <p className="mt-3 text-muted-foreground leading-relaxed">
             Grandfather Protection is a legacy allowance that lets older restaurant spaces
             continue operating under the codes in effect when they were built - not today's
@@ -84,6 +87,7 @@ function GrandfatherPage() {
             <AlertTriangle className="h-6 w-6" />
           </div>
           <h2 className="mt-5 text-2xl font-display font-bold">How owners lose it</h2>
+          <HeadingCTA />
           <ul className="mt-3 space-y-2 text-muted-foreground leading-relaxed text-sm">
             <li>• Closed with Health Dept for over 90 days (auto-expires)</li>
             <li>• Remodeling that <span className="font-semibold text-foreground">changes the floor plan</span></li>
@@ -103,6 +107,7 @@ function GrandfatherPage() {
             <p className="text-xs font-semibold uppercase tracking-widest text-gold">Still Required After a 90-Day Closure</p>
           </div>
           <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">ADA carve-outs apply after a Restaurant 90 closure, even with protection.</h2>
+          <HeadingCTA />
           <p className="mt-3 max-w-2xl text-muted-foreground">
             Prior Grandfather Protection does <span className="font-semibold text-foreground">not</span> exempt a restaurant (if and when the original floor plan is slightly altered or notification of closure with the Health Department exceeds the 90 day allowance) from baseline ADA compliance. These four items must be put in place regardless of any past protected status:
           </p>
@@ -120,6 +125,7 @@ function GrandfatherPage() {
       <section className="container-x py-16">
         <div className="rounded-2xl border border-gold/40 bg-card p-8 md:p-10">
           <h2 className="text-2xl md:text-3xl font-display font-bold">Before you remodel - call us.</h2>
+          <HeadingCTA />
           <p className="mt-3 text-muted-foreground max-w-2xl">
             We review the property's permit history, identify what's protected, and tell
             you exactly what work you can do without triggering full code compliance.
