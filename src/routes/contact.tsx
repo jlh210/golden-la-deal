@@ -44,7 +44,7 @@ function ContactPage() {
     <SiteLayout>
       <PageHero
         eyebrow="Reserve your advisory call"
-        title="Speak directly with our COO, Richard Stein or CEO Roschard Paticchio Stein."
+        title="Speak directly with our COO, Richard Stein"
         accent={CONSULTATION_OFFER}
         subtitle="A 30-minute mobile-to-mobile call for real answers on restaurants, properties, and city matters."
       />
