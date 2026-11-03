@@ -71,7 +71,7 @@ function ContactPage() {
               messagePlaceholder={
                 prefill ? "Address of my current restaurant" : "A few details on your situation…"
               }
-              note="$35 non-refundable. Zelle 310-460-9757 before submitting."
+              note="$35 non-refundable. Zelle PenthouseAdvisors@gmail.com before submitting."
             />
           </div>
 
