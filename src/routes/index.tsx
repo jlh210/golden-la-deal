@@ -228,7 +228,7 @@ function HomePage() {
                 <span className="pa-hero-eyebrow">Brief of our Services: (see below, explore services)</span>
                 Health Department Permitting, Violation Corrections, Restaurant Remodeling, Sales
                 &amp; Acquisitions, Rent Abatement Allowances, Change of Use, Alcohol Licensing,
-                Retail Business Consulting. <br />
+                Retail Consulting. <br />
                 <em>
                   Handled <span className="pa-no-break">End-to-End.</span>
                 </em>
