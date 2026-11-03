@@ -5,6 +5,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { LeadForm } from "@/components/site/LeadForm";
 
 import { breadcrumbScript } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/e2-visa-europe")({
   head: () => ({
     meta: [
@@ -73,6 +74,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">CORP BRIEF — MUST READ</h2>
+            <HeadingCTA />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               Penthouse Advisors Inc. is a sophisticated, full-service restaurant and business
               brokerage operation, consulting and advising on restaurant deals for active restaurant
@@ -86,6 +88,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">Making money by owning a restaurant business in Los Angeles County</h2>
+            <HeadingCTA />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               The key factor in owning a restaurant business is to be motivated and committed with
               the intent of expanding the brand into 10 chain locations. Here is why: when your
@@ -120,6 +123,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">Purchase a U.S. business under the E-2 visa</h2>
+            <HeadingCTA />
             <h3 className="mt-4 text-lg font-semibold text-foreground">About the business purchased</h3>
             <p className="mt-2 text-muted-foreground leading-relaxed">
               The business must be open and operating for profit. The buyer must invest a substantial
@@ -137,6 +141,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">Applying through a U.S. consulate or embassy abroad</h2>
+            <HeadingCTA />
             <ul className="mt-4 space-y-2">
               {consulateSteps.map((step, i) => (
                 <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
@@ -149,6 +154,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">E-2 visa through a U.S. consulate or embassy abroad</h2>
+            <HeadingCTA />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               Note that the E-2 visa is a non-immigrant visa: buyers are not eligible for permanent
               residency. Buyers must provide a written statement to the U.S. Embassy that they will
@@ -179,6 +185,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">Traveling to and from the U.S.</h2>
+            <HeadingCTA />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               The principal investor is allowed to travel abroad and is granted an automatic 2-year
               readmission period upon entering the U.S. If family members are traveling along with
@@ -199,6 +206,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">Renewing the E-2 visa</h2>
+            <HeadingCTA />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               After a two-year term, renewing the E-2 visa will require proof of achieving the
               projections mentioned at the time of application. The plan should mention the financial
@@ -209,6 +217,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">Timing</h2>
+            <HeadingCTA />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               The E-2 visa will allow the buyer to own a restaurant business and live in Los Angeles
               County for 2 years. All individuals covered by the E-2 visa are allowed to travel in
@@ -219,6 +228,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">Immigration interview</h2>
+            <HeadingCTA />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               The buyer must have a business immigration plan on how the investment affects the U.S.
               economy at the time of the interview. The buyer must verify a synergy between the buyer’s
@@ -231,6 +241,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">Documents required</h2>
+            <HeadingCTA />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               The LOI purchase agreement, copy of the assignment or new lease, business licenses,
               S-Corp, C-Corp, LLC, federal tax employer’s identification number, BOE (Board of
@@ -251,6 +262,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">LOI purchase agreement</h2>
+            <HeadingCTA />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               Penthouse Advisors Inc. will draft a “LOI” letter of intent purchase agreement at the
               agreed purchase price to be signed by and between the buyer and seller. The agreement
@@ -268,6 +280,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">Lease contingence</h2>
+            <HeadingCTA />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               Our work includes complex property owner (landlord) negotiations establishing a
               contingence that a copy of an assignment of lease or a new lease will be drafted and
@@ -278,6 +291,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">Investment</h2>
+            <HeadingCTA />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               The restaurant business investment must have a considerable impact on the U.S. economy
               and not provide a “living only” situation for the buyer and the buyer’s family. The
@@ -289,6 +303,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">Predicted future earnings</h2>
+            <HeadingCTA />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               Earnings must be met within 5 years from the date of acquiring the business activity.
               Just the intent to invest, or having uncommitted funds in a bank account, will not be
@@ -300,6 +315,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">Funds</h2>
+            <HeadingCTA />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               The funds should be put irrevocably at risk, meaning they should be used for
               business-related expenses that cannot be recovered in the event the restaurant business
@@ -309,6 +325,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">Guarantor to the lease</h2>
+            <HeadingCTA />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               Only one (1) guarantor to the lease. This can be a partner or family member that holds
               the strongest bank account and will be held responsible for all lease payments, lease
@@ -336,6 +353,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">Escrow opened</h2>
+            <HeadingCTA />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               Upon property owner approval of the said guarantor to the lease, escrow will be opened.
               Drafting a new lease or assignment to the existing lease will be signed by the property
@@ -347,6 +365,7 @@ function E2Page() {
 
           <div>
             <h2 className="text-2xl font-display font-bold">Alcohol licensing & health department permitting</h2>
+            <HeadingCTA />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               Upon receiving the E-2 visa non-immigrant status and purchasing a restaurant, Roschard
               Paticchio Stein and Richard Stein, specialists in restaurant alcohol licensing

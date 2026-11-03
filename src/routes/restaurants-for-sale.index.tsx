@@ -6,6 +6,7 @@ import { PHONE, PHONE_HREF } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { listings, type SaleType } from "@/lib/listings";
 import { ListingsMap } from "@/components/site/ListingsMap";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 
 export const Route = createFileRoute("/restaurants-for-sale/")({
   head: () => ({
@@ -147,6 +148,7 @@ function ListingsPage() {
                     {l.title}
                   </Link>
                 </h2>
+                <HeadingCTA />
                 <div className="mt-2 flex items-center gap-1.5 text-sm text-muted-foreground">
                   <MapPin className="h-3.5 w-3.5 text-gold" /> {l.location}
                 </div>
@@ -220,6 +222,7 @@ function ListingsPage() {
               <h2 className="mt-1 text-2xl md:text-3xl font-display font-bold">
                 Listings across Los Angeles
               </h2>
+              <HeadingCTA />
             </div>
             <p className="text-sm text-muted-foreground max-w-sm">
               Click a pin to preview a listing and jump to full details.
@@ -233,6 +236,7 @@ function ListingsPage() {
             <h2 className="text-2xl font-display font-bold">
               What is included in a restaurant asset sale?
             </h2>
+            <HeadingCTA />
             <p className="mt-3 text-muted-foreground">
               Review the individual listing for the equipment, fixtures and other assets offered. An
               asset sale is different from purchasing the real estate. Ask which items are included
@@ -253,6 +257,7 @@ function ListingsPage() {
             <h2 className="text-2xl font-display font-bold">
               How do I compare restaurant opportunities?
             </h2>
+            <HeadingCTA />
             <p className="mt-3 text-muted-foreground">
               Start with your budget, preferred area and concept. Compare the asking price, rent,
               available space and equipment, then identify what needs review with the seller,
@@ -268,6 +273,7 @@ function ListingsPage() {
           <h2 className="text-2xl md:text-3xl font-display font-bold">
             Looking for something specific?
           </h2>
+          <HeadingCTA />
           <p className="mt-2 text-muted-foreground">
             Tell us your budget, area, and concept - we'll source it off-market.
           </p>

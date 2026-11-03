@@ -3,6 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
 import { CONSULTATION_LABEL } from "@/lib/consultation";
 import { SITE_URL, ORG_ID, WEBSITE_ID, faqScript } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 
 const title = "Restaurant Business Broker Los Angeles, CA | Penthouse Advisors Inc.";
 const description =
@@ -232,6 +233,7 @@ function HomePage() {
                   Handled <span className="pa-no-break">End-to-End.</span>
                 </em>
               </h1>
+              <HeadingCTA />
               <p className="pa-kicker pa-hero-lead">
                 <Link to="/contact">Have Business Questions? Need Business Advise?</Link>
               </p>
@@ -271,6 +273,7 @@ function HomePage() {
           <div className="pa-section-head">
             <p className="pa-kicker">01 / The advisory perspective</p>
             <h2 id="authority-title">Advisory grounded in restaurant transaction details</h2>
+            <HeadingCTA />
           </div>
           <div className="pa-capabilities">
             {capabilities.map((c, i) => (
@@ -328,6 +331,7 @@ function HomePage() {
             <div className="pa-section-head">
               <p className="pa-kicker">02 / Your next move</p>
               <h2 id="intent-title">Buying or selling a restaurant?</h2>
+              <HeadingCTA />
             </div>
             <div className="pa-intent-grid">
               <article>
@@ -388,6 +392,7 @@ function HomePage() {
             <div>
               <p className="pa-kicker">03 / Areas of focus</p>
               <h2 id="services-title">Restaurant Advisory Services</h2>
+              <HeadingCTA />
             </div>
             <p>
               A restaurant transaction is a collection of connected decisions. Get support where the
@@ -413,6 +418,7 @@ function HomePage() {
               <div>
                 <p className="pa-kicker">04 / From strategy to closing</p>
                 <h2 id="process-title">What happens during a restaurant transaction?</h2>
+                <HeadingCTA />
               </div>
               <p>
                 Each transaction has its own sequence. Due diligence, landlord discussions and
@@ -434,6 +440,7 @@ function HomePage() {
           <div>
             <p className="pa-kicker">05 / Los Angeles, in detail</p>
             <h2 id="local-title">The Details That Shape a Los Angeles Restaurant Deal</h2>
+            <HeadingCTA />
             <span className="pa-local-rule" aria-hidden="true" />
           </div>
           <div className="pa-prose">
@@ -473,6 +480,7 @@ function HomePage() {
             <div className="pa-section-head">
               <p className="pa-kicker">06 / Informed decisions</p>
               <h2 id="guides-title">Restaurant Transaction Guides</h2>
+              <HeadingCTA />
             </div>
             <div className="pa-guides">
               {guides.map((g) => (
@@ -491,6 +499,7 @@ function HomePage() {
           <div>
             <p className="pa-kicker">07 / Questions worth asking</p>
             <h2 id="faq-title">Questions About Buying and Selling Restaurants</h2>
+            <HeadingCTA />
           </div>
           <div className="pa-faq">
             {faqs.map((f, i) => (
@@ -509,6 +518,7 @@ function HomePage() {
           <div className="pa-shell">
             <p className="pa-kicker">Your restaurant. Your next decision.</p>
             <h2 id="final-title">Planning to Buy, Sell or Navigate a Restaurant Transaction?</h2>
+            <HeadingCTA />
             <p>
               Discuss your restaurant, acquisition, sale, lease or transaction obstacle with
               Penthouse Advisors.

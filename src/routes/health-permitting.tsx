@@ -19,6 +19,7 @@ import { serviceAuthority, specialistFaqs } from "@/content/service-authority";
 import { CTASection } from "@/components/site/CTASection";
 
 import { breadcrumbScript, serviceScript, faqScript } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/health-permitting")({
   head: () => ({
     meta: [
@@ -160,6 +161,7 @@ function PermittingPage() {
               $4,750 Flat Fee - Food Facility and Restaurant Code Compliance Pre Inspections, Health
               Dept Plan-Check submittals, Corrections &amp; Permitting, Open.
             </h2>
+            <HeadingCTA />
           </div>
         </div>
       </section>
@@ -174,6 +176,7 @@ function PermittingPage() {
               <c.icon className="h-6 w-6" />
             </div>
             <h2 className="mt-5 text-xl font-display font-bold">{c.title}</h2>
+            <HeadingCTA />
             <p className="mt-3 text-muted-foreground leading-relaxed text-sm">{c.body}</p>
           </div>
         ))}
@@ -186,6 +189,7 @@ function PermittingPage() {
             Health Dept Permitting
           </p>
           <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">Red Tag</h2>
+          <HeadingCTA />
           <p className="mt-3 max-w-2xl text-muted-foreground">
             The following steps are required to remove a Retail Food and Restaurant red tag
             situation.
@@ -216,6 +220,7 @@ function PermittingPage() {
           <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">
             Files we've shepherded through.
           </h2>
+          <HeadingCTA />
           <p className="mt-3 max-w-2xl text-muted-foreground">
             Examples retained from our published service history. Status labels describe the
             recorded project stage and are not a live agency feed. Addresses are abbreviated,

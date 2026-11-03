@@ -1,6 +1,8 @@
+import { Fragment } from "react";
 import { Link } from "@tanstack/react-router";
 import type { Article, Category, Section } from "@/content/help/types";
 import { Breadcrumbs } from "./Breadcrumbs";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 
 function sectionId(section: Extract<Section, { type: "h2" }>) {
   return (
@@ -15,9 +17,10 @@ function renderSection(s: Section, i: number) {
   switch (s.type) {
     case "h2":
       return (
-        <h2 key={i} id={sectionId(s)}>
-          {s.text}
-        </h2>
+        <Fragment key={i}>
+          <h2 id={sectionId(s)}>{s.text}</h2>
+          <HeadingCTA />
+        </Fragment>
       );
     case "h3":
       return <h3 key={i}>{s.text}</h3>;
@@ -143,6 +146,7 @@ export function ArticleTemplate({
       <header className="pa-article-header">
         <p className="pa-kicker">{category?.title ?? blogCategory}</p>
         <h1>{article.title}</h1>
+        <HeadingCTA />
         {article.answer && <p className="pa-article-answer">{article.answer}</p>}
         <div className="pa-article-meta">
           {article.originalAuthor && (
@@ -168,6 +172,7 @@ export function ArticleTemplate({
         <div className="pa-article-body">
           <aside className="pa-takeaways" aria-label="Key takeaways">
             <h2>Key takeaways</h2>
+            <HeadingCTA />
             <ul>
               {article.keyTakeaways.map((item) => (
                 <li key={item}>{item}</li>
@@ -188,6 +193,7 @@ export function ArticleTemplate({
           {article.faqs.length > 0 && (
             <section className="pa-article-faq">
               <h2>Questions readers ask</h2>
+              <HeadingCTA />
               {article.faqs.map((f) => (
                 <details key={f.q}>
                   <summary>{f.q}</summary>
@@ -199,6 +205,7 @@ export function ArticleTemplate({
           <section className="pa-article-next">
             <p className="pa-kicker">Your next step</p>
             <h2>Apply this to your transaction.</h2>
+            <HeadingCTA />
             <p>
               When you need support with a specific restaurant, review the relevant Penthouse
               Advisors service and its consultation options.
@@ -210,6 +217,7 @@ export function ArticleTemplate({
           {article.related?.length ? (
             <section className="pa-article-related">
               <h2>Continue your research.</h2>
+              <HeadingCTA />
               <ul>
                 {article.related.map((r) => (
                   <li key={r.to}>

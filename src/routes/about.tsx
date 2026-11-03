@@ -5,6 +5,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
 import { breadcrumbScript } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
@@ -181,6 +182,7 @@ function AboutPage() {
                 <v.icon className="h-5 w-5" />
               </div>
               <h2 className="mt-4 text-lg font-display font-bold">{v.title}</h2>
+              <HeadingCTA />
               <p className="mt-2 text-sm text-muted-foreground">{v.body}</p>
             </div>
           ))}
@@ -195,6 +197,7 @@ function AboutPage() {
             <h2 className="mt-3 text-3xl md:text-4xl font-display font-bold">
               What Penthouse Advisors actually does.
             </h2>
+            <HeadingCTA />
             <p className="mt-4 text-muted-foreground">
               We solve restaurant problems fast. Here's everything we handle in-house for LA County
               restaurant owners, buyers, and landlords.
@@ -235,6 +238,7 @@ function AboutPage() {
         <h2 className="mt-3 text-3xl md:text-5xl font-display font-bold">
           Restaurant advisory, licensing, and deal support - under one roof.
         </h2>
+        <HeadingCTA />
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {owners.map((o) => (

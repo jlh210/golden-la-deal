@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { PHONE, PHONE_HREF } from "./Layout";
 import { CONSULTATION_LABEL } from "@/lib/consultation";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 
 export function CTASection({
   title = "Discuss your restaurant plans.",
@@ -17,6 +18,7 @@ export function CTASection({
       <div>
         <p className="pa-kicker">A conversation is the first step</p>
         <h2>{title}</h2>
+        <HeadingCTA />
         <p>{body}</p>
       </div>
       <div className="pa-cta-actions">

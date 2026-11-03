@@ -12,6 +12,7 @@ import {
   ServiceAuthorityDetails,
   type ServiceAuthorityContent,
 } from "./ServiceAuthority";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 
 export type FAQ = { q: string; a: string };
 export type RelatedLink = { to: string; label: string };
@@ -59,6 +60,7 @@ export function ServiceLanding(props: ServiceLandingProps) {
     <>
       <p className="text-xs font-semibold uppercase tracking-widest text-gold">Related Services</p>
       <h2 className="mt-2 text-2xl md:text-4xl font-display font-bold">Explore more.</h2>
+      <HeadingCTA />
       <div className="mt-8 flex flex-wrap gap-3">
         {related.map((r) => (
           <Link
@@ -90,6 +92,7 @@ export function ServiceLanding(props: ServiceLandingProps) {
           <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold leading-tight">
             {title} {accent}
           </h2>
+          <HeadingCTA />
           <p className="mt-5 text-base md:text-lg text-muted-foreground leading-relaxed">
             {overview}
           </p>
@@ -102,6 +105,7 @@ export function ServiceLanding(props: ServiceLandingProps) {
           Why Penthouse Advisors
         </p>
         <h2 className="mt-2 text-2xl md:text-4xl font-display font-bold">What you get.</h2>
+        <HeadingCTA />
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {benefits.map((b) => (
             <div
@@ -122,6 +126,7 @@ export function ServiceLanding(props: ServiceLandingProps) {
       <section className="container-x py-12 md:py-16 border-t border-border">
         <p className="text-xs font-semibold uppercase tracking-widest text-gold">Our Process</p>
         <h2 className="mt-2 text-2xl md:text-4xl font-display font-bold">How we move.</h2>
+        <HeadingCTA />
         <div className="mt-10 grid gap-8 md:grid-cols-3">
           {process.map((s) => (
             <div key={s.step}>
@@ -139,6 +144,7 @@ export function ServiceLanding(props: ServiceLandingProps) {
       <section className="container-x py-12 md:py-16 border-t border-border">
         <p className="text-xs font-semibold uppercase tracking-widest text-gold">FAQ</p>
         <h2 className="mt-2 text-2xl md:text-4xl font-display font-bold">Questions answered.</h2>
+        <HeadingCTA />
         <div className="mt-8 grid gap-4 max-w-3xl">
           {faqs.map((f) => (
             <details key={f.q} className="group rounded-xl border border-border bg-card p-5">

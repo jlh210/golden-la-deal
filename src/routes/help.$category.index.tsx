@@ -3,6 +3,7 @@ import { SiteLayout } from "@/components/site/Layout";
 import { Breadcrumbs } from "@/components/help/Breadcrumbs";
 import { getCategory, categories } from "@/content/help";
 import { breadcrumbScript, collectionScript, SITE_URL } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/help/$category/")({
   loader: ({ params }) => {
     const category = getCategory(params.category);
@@ -55,6 +56,7 @@ function CategoryPage() {
         <header className="pa-knowledge-header">
           <p className="pa-kicker">Transaction guides</p>
           <h1>{category.title}</h1>
+          <HeadingCTA />
           <p>
             {category.articles.length
               ? category.intro
@@ -73,6 +75,7 @@ function CategoryPage() {
                     {a.title}
                   </Link>
                 </h2>
+                <HeadingCTA />
                 <p>{a.answer ?? a.description}</p>
                 <span>{a.readMinutes} min read</span>
               </article>
@@ -81,6 +84,7 @@ function CategoryPage() {
         )}
         <nav className="pa-category-nav" aria-label="Available guide collections">
           <h2>Explore available guides.</h2>
+          <HeadingCTA />
           <ul>
             {categories
               .filter((c) => c.articles.length && c.slug !== category.slug)

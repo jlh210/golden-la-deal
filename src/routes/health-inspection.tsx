@@ -5,6 +5,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
 import { breadcrumbScript, serviceScript } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/health-inspection")({
   head: () => ({
     meta: [
@@ -69,6 +70,7 @@ function HealthPage() {
             <h2 className="mt-1 text-2xl md:text-3xl font-display font-bold">
               $2,700 flat - pre-inspection + hand-drafted blueprints included.
             </h2>
+            <HeadingCTA />
             <p className="mt-2 text-sm text-muted-foreground max-w-2xl">
               Payable via Zelle or cash. Restaurant pre-inspections commence immediately upon receipt.
             </p>
@@ -79,6 +81,7 @@ function HealthPage() {
       <section className="container-x py-16 md:py-20">
         <p className="text-xs font-semibold uppercase tracking-widest text-gold">The Process</p>
         <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">Six steps to operating.</h2>
+        <HeadingCTA />
 
         <ol className="mt-12 grid gap-6 md:grid-cols-2">
           {steps.map((s, i) => (
@@ -104,6 +107,7 @@ function HealthPage() {
             <p className="text-xs font-semibold uppercase tracking-widest text-destructive">Forbidden - Will Fail Inspection</p>
           </div>
           <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">What LA County will red-tag on sight.</h2>
+          <HeadingCTA />
           <p className="mt-3 max-w-2xl text-muted-foreground">
             These items fail inspection every time. If any are present in your space, we flag them during the pre-inspection
             and give you the corrective path before the County ever sees it.

@@ -6,6 +6,7 @@ import { PHONE, PHONE_HREF } from "@/components/site/Layout";
 import { LeadForm } from "@/components/site/LeadForm";
 import { getListingBySlug, listings, type Listing } from "@/lib/listings";
 import { ListingLocationMap } from "@/components/site/ListingLocationMap";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 
 export const Route = createFileRoute("/restaurants-for-sale/$slug")({
   loader: ({ params }) => {
@@ -116,6 +117,7 @@ function ListingDetail() {
         <h1 className="mt-3 text-3xl md:text-5xl font-display font-bold leading-tight">
           {l.title}
         </h1>
+        <HeadingCTA />
         <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground">
           <span className="inline-flex items-center gap-1.5">
             <MapPin className="h-4 w-4 text-gold" /> {l.location}
@@ -184,6 +186,7 @@ function ListingDetail() {
           {l.sections?.map((s) => (
             <div key={s.heading} className="rounded-xl border border-border bg-card p-6 md:p-8">
               <h2 className="text-xl md:text-2xl font-display font-bold text-gold">{s.heading}</h2>
+              <HeadingCTA />
               <p className="mt-2 text-foreground/85 leading-relaxed">{s.body}</p>
               {s.bullets && (
                 <ul className="mt-4 grid gap-2 sm:grid-cols-2">
@@ -199,6 +202,7 @@ function ListingDetail() {
 
           <div>
             <h2 className="text-xl font-display font-bold">Highlights</h2>
+            <HeadingCTA />
             <ul className="mt-3 grid gap-2 sm:grid-cols-2">
               {l.features.map((f) => (
                 <li key={f} className="flex items-start gap-2 text-sm text-foreground/90">
@@ -264,6 +268,7 @@ function ListingDetail() {
             <h2 className="mt-2 text-2xl md:text-3xl font-display font-bold">
               Inquire about {l.title}
             </h2>
+            <HeadingCTA />
             <p className="mt-3 text-muted-foreground">
               Send a private inquiry on this specific property. We'll respond same business day with
               next steps, NDA, and any financials available.
@@ -341,6 +346,7 @@ function ListingDetail() {
       {other.length > 0 && (
         <section className="container-x pb-20">
           <h2 className="text-2xl font-display font-bold">More listings</h2>
+          <HeadingCTA />
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             {other.map((o) => (
               <Link

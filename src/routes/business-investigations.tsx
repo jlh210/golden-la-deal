@@ -10,6 +10,7 @@ import { serviceAuthority, specialistFaqs } from "@/content/service-authority";
 import { CTASection } from "@/components/site/CTASection";
 
 import { breadcrumbScript, serviceScript, faqScript } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/business-investigations")({
   head: () => ({
     meta: [
@@ -77,6 +78,7 @@ function InvestigationsPage() {
               <c.icon className="h-6 w-6" />
             </div>
             <h2 className="mt-5 text-xl font-display font-bold">{c.title}</h2>
+            <HeadingCTA />
             <p className="mt-3 text-muted-foreground leading-relaxed text-sm">{c.body}</p>
           </div>
         ))}

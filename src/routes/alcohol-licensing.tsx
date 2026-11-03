@@ -10,6 +10,7 @@ import { serviceAuthority, specialistFaqs } from "@/content/service-authority";
 import { CTASection } from "@/components/site/CTASection";
 
 import { breadcrumbScript, serviceScript, faqScript } from "@/lib/seo";
+import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/alcohol-licensing")({
   head: () => ({
     meta: [
@@ -132,6 +133,7 @@ function LicensingPage() {
                 <Wine className="h-6 w-6" />
               </div>
               <h2 className="mt-5 text-2xl font-display font-bold">{t.name}</h2>
+              <HeadingCTA />
               <p className="mt-3 text-muted-foreground">{t.body}</p>
               <ul className="mt-5 space-y-2">
                 {t.bullets.map((b) => (
@@ -154,6 +156,7 @@ function LicensingPage() {
           <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">
             Service pricing and agency charges.
           </h2>
+          <HeadingCTA />
           <p className="mt-3 max-w-2xl text-muted-foreground">
             Our published deposit and notification amounts are retained below. Confirm the written
             scope, total service fee, and refund terms before engagement. Government charges vary by
@@ -221,6 +224,7 @@ function LicensingPage() {
         <h2 className="mt-2 text-3xl md:text-4xl font-display font-bold">
           Published project history.
         </h2>
+        <HeadingCTA />
         <p className="mt-3 max-w-2xl text-muted-foreground">
           Examples retained from our published service history. Status labels describe the recorded
           project stage and are not a live ABC feed. Confirm current license status directly with
