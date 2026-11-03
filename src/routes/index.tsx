@@ -234,9 +234,6 @@ function HomePage() {
                 </em>
               </h1>
               <HeadingCTA />
-              <p className="pa-kicker pa-hero-lead">
-                <Link to="/contact">Have Business Questions? Need Business Advise?</Link>
-              </p>
               <div className="pa-hero-actions">
                 <Link to="/contact" className="pa-button">
                   {CONSULTATION_LABEL}
