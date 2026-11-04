@@ -231,10 +231,13 @@ function HomePage() {
                 </strong>
               </p>
               <h1 id="home-title">
-                <span className="pa-hero-eyebrow">Brief of our Services: (see below, explore services)</span>
-                Health Department Permitting, Violation Corrections, Restaurant Remodeling, Sales
-                &amp; Acquisitions, Rent Abatement Allowances, Change of Use, Alcohol Licensing,
-                Retail Consulting. <br />
+                <span className="pa-hero-eyebrow">
+                  Brief of our Consulting Services: (See “explore services”)
+                </span>
+                Restaurant Health Department Permitting, Violation Corrections and Hearing
+                attendance to prevent closure, Alcohol Licensing, CUB Conditional Use Beverage
+                Permit upgrading, Restaurant Sales &amp; Acquisitions, Remodeling, Monthly Rent
+                Negotiations, New Tenant Rent Abatement Allowances, Change of Use. <br />
                 <em>
                   Handled <span className="pa-no-break">End-to-End.</span>
                 </em>
