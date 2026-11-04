@@ -12,7 +12,19 @@ export interface ServiceAuthorityContent {
   jurisdiction?: string;
 }
 
-export function ServiceAuthorityHero({ content }: { content: ServiceAuthorityContent }) {
+export function ServiceAuthorityHero({
+  content,
+  secondaryAction,
+}: {
+  content: ServiceAuthorityContent;
+  /** Optional box button rendered next to the consultation button. */
+  secondaryAction?: { to: string; label: string };
+}) {
+  const consultationButton = (
+    <Link to="/contact" search={{ service: content.service }} className="pa-button">
+      {CONSULTATION_LABEL}
+    </Link>
+  );
   return (
     <section className="pa-service-hero">
       <div className="pa-shell">
@@ -25,9 +37,16 @@ export function ServiceAuthorityHero({ content }: { content: ServiceAuthorityCon
         <h1>{content.title}</h1>
         <HeadingCTA />
         <p className="pa-service-answer">{content.answer}</p>
-        <Link to="/contact" search={{ service: content.service }} className="pa-button">
-          {CONSULTATION_LABEL}
-        </Link>
+        {secondaryAction ? (
+          <div className="pa-hero-actions pa-service-hero-actions">
+            {consultationButton}
+            <Link to={secondaryAction.to} className="pa-button pa-button-outline">
+              {secondaryAction.label}
+            </Link>
+          </div>
+        ) : (
+          consultationButton
+        )}
       </div>
     </section>
   );

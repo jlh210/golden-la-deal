@@ -36,6 +36,8 @@ export interface ServiceLandingProps {
   footerSection?: ReactNode;
   /** When true, the Related Services links render directly under the hero's consultation button. */
   relatedAtTop?: boolean;
+  /** Optional box button rendered next to the hero's consultation button. */
+  heroSecondaryAction?: { to: string; label: string };
 }
 
 export function ServiceLanding(props: ServiceLandingProps) {
@@ -78,7 +80,10 @@ export function ServiceLanding(props: ServiceLandingProps) {
   return (
     <SiteLayout>
       {props.authority ? (
-        <ServiceAuthorityHero content={props.authority} />
+        <ServiceAuthorityHero
+          content={props.authority}
+          secondaryAction={props.heroSecondaryAction}
+        />
       ) : (
         <PageHero eyebrow={eyebrow} title={h1} subtitle={subtitle} />
       )}
