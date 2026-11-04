@@ -92,7 +92,7 @@ const serviceCategories = [
     body: "Restaurant tenants before vacating the premises can sell the non-attached FF&E furniture, fixtures, and equipment (as key money) while holding legal possession under a lease. Property owners are not in the business of selling used restaurant furniture, fixtures, and equipment.",
   },
   {
-    title: "NSF or URL Sanitized Labeling",
+    title: "NSF or URL Sanitation Labeling",
     body: "A Health Department code requirement on all kitchen equipment. The equipment is deemed worthless if not displaying such visible labels.",
   },
 ];
