@@ -9,6 +9,10 @@ import restaurantFullyEquipped1 from "@/assets/restaurant-fully-equipped-1.jpeg"
 import restaurantFullyEquipped2 from "@/assets/restaurant-fully-equipped-2.jpeg";
 import restaurantFullyEquipped3 from "@/assets/restaurant-fully-equipped-3.jpeg";
 import restaurantFullyEquipped4 from "@/assets/restaurant-fully-equipped-4.jpeg";
+import melroseMassageSpa1 from "@/assets/melrose-massage-spa-1.jpeg";
+import melroseMassageSpa2 from "@/assets/melrose-massage-spa-2.jpeg";
+import melroseMassageSpa3 from "@/assets/melrose-massage-spa-3.jpeg";
+import melroseMassageSpa4 from "@/assets/melrose-massage-spa-4.jpeg";
 
 export type SaleType =
   | "Business Sale"
@@ -260,6 +264,7 @@ export const listings: Listing[] = [
       "Massage Specialist willing to stay",
       "New Lease upon landlord approval",
     ],
+    images: [melroseMassageSpa1, melroseMassageSpa2, melroseMassageSpa3, melroseMassageSpa4],
   },
   {
     id: "R-005",
