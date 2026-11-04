@@ -217,14 +217,6 @@ function HomePage() {
               <p className="pa-kicker">Retail Business Advisor and Brokerage · Los Angeles County</p>
               <p className="pa-hero-description">
                 <strong>
-                  <em>
-                    Penthouse Advisors INC., Helps Retail Owners, Retail Investors, Restaurant
-                    Owners, Restaurant Buyers, throughout Los Angeles County.
-                  </em>
-                </strong>
-              </p>
-              <p className="pa-hero-description">
-                <strong>
                   Penthouse Advisors Inc., a “Full-Service” Retail Advisory and Brokerage was Built
                   for Los Angeles County Retail Owners. Buyers, Sellers, Property Owners and
                   Landlords requiring fast execution of all newly created deals and resolutions.
