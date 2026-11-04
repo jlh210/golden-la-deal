@@ -40,7 +40,7 @@ function ServicesPage() {
       <PageHero
         eyebrow="Services"
         title="Penthouse Advisors Inc."
-        subtitle="Penthouse Advisors Inc. is a full-service business: Restaurant and Food Market Buying, Selling, Remodeling, Health Department Permitting, Violation Corrections, and Alcohol Licensing. One firm, One Call. Built for Los Angeles County Operators, Buyers, Sellers, landlords, and international investors who need E2 Visa answers and execution, fast."
+        subtitle="Penthouse Advisors Inc., a “Full-Service” Retail Advisory and Brokerage, was Built for Los Angeles County Retail Operations. Buyers, Sellers, and Landlords that require fast execution of all the newly created resolutions. Brief of our Services (explore services below): Health Department Permitting, Violation Corrections and Hearing attendance to prevent closure, Alcohol Licensing, CUB Conditional Use Beverage Permit upgrading, Restaurant Sales & Acquisitions, Remodeling, Rent Abatement Allowances, Lease Negotiation, Change of Use, Retail Consulting. Handled End-to-End."
       />
 
       <section className="container-x py-16 md:py-20">
