@@ -93,7 +93,7 @@ const serviceCategories = [
   },
   {
     title: "NSF or URL Sanitation Labeling",
-    body: "A Health Department code requirement on all kitchen equipment. The equipment is deemed worthless if not displaying such visible labels.",
+    body: "Los Angeles County Health Department code requires all usable equipment inside the premises to have the certification NSF and or ETL sanitation.",
   },
 ];
 
