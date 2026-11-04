@@ -15,7 +15,7 @@ export function PageHero({
   lead?: string;
   title: string;
   accent?: string;
-  subtitle?: string;
+  subtitle?: ReactNode;
   children?: ReactNode;
 }) {
   return (
