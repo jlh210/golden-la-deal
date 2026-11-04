@@ -67,7 +67,7 @@ function ContactPage() {
             <LeadForm
               serviceNeeded={prefill}
               title={CONSULTATION_OFFER}
-              subtitle="Fill in your details to open scheduling with Richard Stein or Roschard Paticchio Stein. Payment is handled separately; this website does not verify it."
+              subtitle="Fill in your details to open scheduling with Richard Stein. Payment is handled separately; this website does not verify it."
               messagePlaceholder={
                 prefill ? "Address of my current restaurant" : "A few details on your situation…"
               }
