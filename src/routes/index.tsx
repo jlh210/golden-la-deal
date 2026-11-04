@@ -223,6 +223,13 @@ function HomePage() {
                   </em>
                 </strong>
               </p>
+              <p className="pa-hero-description">
+                <strong>
+                  Penthouse Advisors Inc., a “Full-Service” Retail Advisory and Brokerage was Built
+                  for Los Angeles County Retail Owners. Buyers, Sellers, Property Owners and
+                  Landlords requiring fast execution of all newly created deals and resolutions.
+                </strong>
+              </p>
               <h1 id="home-title">
                 <span className="pa-hero-eyebrow">Brief of our Services: (see below, explore services)</span>
                 Health Department Permitting, Violation Corrections, Restaurant Remodeling, Sales
