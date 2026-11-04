@@ -40,7 +40,20 @@ function ServicesPage() {
       <PageHero
         eyebrow="Services"
         title="Penthouse Advisors Inc."
-        subtitle="Penthouse Advisors Inc., a “Full-Service” Retail Advisory and Brokerage, was Built for Los Angeles County Retail Operations. Buyers, Sellers, and Landlords that require fast execution of all the newly created resolutions. Brief of our Services (explore services below): Health Department Permitting, Violation Corrections and Hearing attendance to prevent closure, Alcohol Licensing, CUB Conditional Use Beverage Permit upgrading, Restaurant Sales & Acquisitions, Remodeling, Rent Abatement Allowances, Lease Negotiation, Change of Use, Retail Consulting. Handled End-to-End."
+        subtitle={
+          <>
+            Penthouse Advisors Inc., a “Full-Service” Retail Advisory and Brokerage, was Built for
+            Los Angeles County Retail Operations. Buyers, Sellers, and Landlords that require fast
+            execution of all the newly created resolutions.{" "}
+            <strong className="text-foreground">
+              Brief of our Services: (See Home Page Tab “explore services”) Health Department
+              Permitting, Violation Corrections and Hearing attendance to prevent closure, Alcohol
+              Licensing, CUB Conditional Use Beverage Permit upgrading, Restaurant Sales &amp;
+              Acquisitions, Remodeling, Rent Abatement Allowances, Lease Negotiation, Change of Use,
+              Retail Consulting. <em>Handled End-to-End.</em>
+            </strong>
+          </>
+        }
       />
 
       <section className="container-x py-16 md:py-20">
