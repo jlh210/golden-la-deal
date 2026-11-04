@@ -92,7 +92,7 @@ const serviceCategories = [
     body: "Restaurant tenants before vacating the premises can sell the non-attached FF&E furniture, fixtures, and equipment (as key money) while holding legal possession under a lease. Property owners are not in the business of selling used restaurant furniture, fixtures, and equipment.",
   },
   {
-    title: "NSF or URL Sanitation Labeling",
+    title: "NSF or ETL Sanitation Labeling",
     body: "Los Angeles County Health Department code requires all usable equipment inside the premises to have the certification NSF and or ETL sanitation.",
   },
 ];
