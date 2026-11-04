@@ -216,7 +216,7 @@ export const listings: Listing[] = [
     slug: "melrose-massage-spa-asset-sale",
     type: "Asset Sale",
     title: "FIRE SALE - Massage Spa located on Melrose Ave",
-    location: "Melrose Ave, Los Angeles",
+    location: "7420 Melrose Ave, Los Angeles, CA 90046",
     price: "$37,000",
     priceNote: "Asking · Make an offer",
     sqft: "850 sq ft",
