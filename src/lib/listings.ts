@@ -5,6 +5,10 @@ import wilshire4 from "@/assets/wilshire-4.png";
 import santaMonica1 from "@/assets/santa-monica-1.png";
 import santaMonica2 from "@/assets/santa-monica-2.png";
 import dentalOffice from "@/assets/dental-office-for-lease.png";
+import restaurantFullyEquipped1 from "@/assets/restaurant-fully-equipped-1.jpeg";
+import restaurantFullyEquipped2 from "@/assets/restaurant-fully-equipped-2.jpeg";
+import restaurantFullyEquipped3 from "@/assets/restaurant-fully-equipped-3.jpeg";
+import restaurantFullyEquipped4 from "@/assets/restaurant-fully-equipped-4.jpeg";
 
 export type SaleType =
   | "Business Sale"
@@ -300,7 +304,7 @@ export const listings: Listing[] = [
     id: "R-006",
     slug: "restaurant-fully-equipped-asset-sale",
     type: "Asset Sale",
-    title: "Restaurant Fully Equipped Top of the Line, Asset Sale",
+    title: "Restaurant Fully Equipped Top of the Line Asset Sale",
     location: "Los Angeles County",
     price: "$375,000",
     priceNote: "Asset Sale · Total Rent $17,158.50 / month",
@@ -308,9 +312,9 @@ export const listings: Listing[] = [
     leaseType: "Restaurant · Fully equipped",
     badge: "Available Now",
     description:
-      "Restaurant Fully Equipped Top of the Line, Asset Sale. Base Rent: $14,616.50. NNN: $2,542. Total Rent: $17,158.50. Square Footage: 2,542. $375,000.",
+      "Restaurant Fully Equipped Top of the Line Asset Sale. Base Rent: $14,616.50. NNN: $2,542. Total Rent: $17,158.50. Square Footage: 2,542. $375,000.",
     longDescription: [
-      "Restaurant Fully Equipped Top of the Line, Asset Sale.",
+      "Restaurant Fully Equipped Top of the Line Asset Sale.",
       "Base Rent: $14,616.50. NNN: $2,542. Total Rent: $17,158.50.",
       "Square Footage: 2,542.",
       "$375,000.",
@@ -341,6 +345,7 @@ export const listings: Listing[] = [
       "Square Footage: 2,542",
       "$375,000",
     ],
+    images: [restaurantFullyEquipped1, restaurantFullyEquipped2, restaurantFullyEquipped3, restaurantFullyEquipped4],
   },
 ];
 
