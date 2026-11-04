@@ -1314,6 +1314,18 @@ summary:focus-visible {
   max-width: 900px;
   margin: 20px 0;
 }
+.pa-service-hero-actions {
+  margin-top: 0;
+  gap: 14px;
+}
+.pa-button.pa-button-outline {
+  background: transparent;
+  color: #242a23;
+}
+.pa-button.pa-button-outline:hover {
+  background: #242a23;
+  color: #fff;
+}
 .pa-service-answer {
   max-width: 760px;
   color: #4d5149;
