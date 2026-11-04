@@ -42,15 +42,15 @@ function ServicesPage() {
         title="Penthouse Advisors Inc."
         subtitle={
           <>
-            Penthouse Advisors Inc., a “Full-Service” Retail Advisory and Brokerage, was Built for
-            Los Angeles County Retail Operations. Buyers, Sellers, and Landlords that require fast
-            execution of all the newly created resolutions.{" "}
+            Penthouse Advisors Inc., a “Full-Service” Retail Advisory and Brokerage was Built for
+            Los Angeles County Retail Owners. Buyers, Sellers, Property Owners and Landlords
+            requiring fast execution of all newly created deals and resolutions.{" "}
             <strong className="text-foreground">
-              Brief of our Services: (See Home Page Tab “explore services”) Health Department
-              Permitting, Violation Corrections and Hearing attendance to prevent closure, Alcohol
-              Licensing, CUB Conditional Use Beverage Permit upgrading, Restaurant Sales &amp;
-              Acquisitions, Remodeling, Rent Abatement Allowances, Lease Negotiation, Change of Use,
-              Retail Consulting. <em>Handled End-to-End.</em>
+              Brief of our Consulting Services: (See Home Page Tab “explore services”) Restaurant
+              Health Department Permitting, Violation Corrections and Hearing attendance to prevent
+              closure, Alcohol Licensing, CUB Conditional Use Beverage Permit upgrading, Restaurant
+              Sales &amp; Acquisitions, Remodeling, Monthly Rent Negotiations, New Tenant Rent
+              Abatement Allowances, Change of Use. <em>Handled End-to-End.</em>
             </strong>
           </>
         }
