@@ -8,7 +8,9 @@ export function PageHero({
   accent,
   subtitle,
   children,
+  hideHeadingCta = false,
 }: {
+  hideHeadingCta?: boolean;
   eyebrow: string;
   lead?: string;
   title: string;
@@ -28,7 +30,7 @@ export function PageHero({
           )}
           {title} {accent && <span className="text-gold">{accent}</span>}
         </h1>
-        <HeadingCTA />
+        {!hideHeadingCta && <HeadingCTA />}
         {subtitle && <p className="mt-5 max-w-2xl text-muted-foreground">{subtitle}</p>}
         {children && <div className="mt-6">{children}</div>}
       </div>
