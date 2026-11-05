@@ -1,5 +1,5 @@
-import { Link } from "@tanstack/react-router";
-import { Menu, X, ChevronDown, ArrowUpRight, Accessibility } from "lucide-react";
+import { Link, useRouterState } from "@tanstack/react-router";
+import { Menu, X, ChevronDown, ArrowUpRight, Accessibility, Phone, CalendarCheck } from "lucide-react";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import {
   CONSULTATION_LABEL,
@@ -70,6 +70,13 @@ function Header() {
   const servicesToggle = useRef<HTMLButtonElement>(null);
   useEffect(() => {
     if (open) mobilePanel.current?.querySelector<HTMLAnchorElement>("a")?.focus();
+    // Lock page scroll behind the open mobile menu and hide the sticky CTA bar.
+    document.documentElement.classList.toggle("pa-menu-open", open);
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.documentElement.classList.remove("pa-menu-open");
+      document.body.style.overflow = "";
+    };
   }, [open]);
   useEffect(() => {
     const query = window.matchMedia("(min-width: 1200px)");
@@ -309,9 +316,26 @@ function Footer() {
     </footer>
   );
 }
-export function SiteLayout({ children }: { children: ReactNode; transparentHeader?: boolean }) {
+function MobileCTA() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <nav className="pa-mobile-cta" aria-label="Quick contact">
+      <a href={PHONE_HREF}>
+        <Phone size={17} aria-hidden="true" />
+        Call
+      </a>
+      <Link to="/contact">
+        <CalendarCheck size={17} aria-hidden="true" />
+        Book a Consultation
+      </Link>
+    </nav>
+  );
+}
+export function SiteLayout({ children }: { children: ReactNode; transparentHeader?: boolean }) {
+  // The contact page already shows the booking form, so the sticky bar is skipped there.
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const showMobileCTA = !pathname.startsWith("/contact");
+  return (
+    <div className={`min-h-screen flex flex-col${showMobileCTA ? " pa-has-mobile-cta" : ""}`}>
       <a href="#main-content" className="skip-link">
         Skip to main content
       </a>
@@ -321,6 +345,7 @@ export function SiteLayout({ children }: { children: ReactNode; transparentHeade
         {children}
       </main>
       <Footer />
+      {showMobileCTA && <MobileCTA />}
     </div>
   );
 }
