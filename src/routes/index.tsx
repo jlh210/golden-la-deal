@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
+import { Fragment } from "react";
 import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
 import { CONSULTATION_LABEL } from "@/lib/consultation";
 import { SITE_URL, ORG_ID, WEBSITE_ID, faqScript } from "@/lib/seo";
@@ -207,6 +208,18 @@ function EditorialLink({ to, children }: { to: string; children: React.ReactNode
     </Link>
   );
 }
+// Hero services brief. Rendered as a sentence on desktop and as tags on phones.
+const HERO_SERVICES = [
+  "Restaurant Health Department Permitting",
+  "Violation Corrections and Hearing attendance to prevent closure",
+  "Alcohol Licensing",
+  "CUB Conditional Use Beverage Permit upgrading",
+  "Restaurant Sales & Acquisitions",
+  "Remodeling",
+  "Monthly Rent Negotiations",
+  "New Tenant Rent Abatement Allowances",
+  "Change of Use",
+];
 function HomePage() {
   return (
     <SiteLayout>
@@ -217,19 +230,31 @@ function HomePage() {
               <p className="pa-kicker">Retail Business Advisor and Brokerage · Los Angeles County</p>
               <p className="pa-hero-description">
                 <strong>
-                  Penthouse Advisors Inc., a “Full-Service” Retail Advisory and Brokerage was Built
-                  for Los Angeles County Retail Owners. Buyers, Sellers, Property Owners and
-                  Landlords requiring fast execution of all newly created deals and resolutions.
+                  <span className="pa-hero-statement">
+                    Penthouse Advisors Inc., a “Full-Service” Retail Advisory and Brokerage was
+                    Built for Los Angeles County Retail Owners.
+                  </span>{" "}
+                  <span className="pa-hero-support">
+                    Buyers, Sellers, Property Owners and Landlords requiring fast execution of all
+                    newly created deals and resolutions.
+                  </span>
                 </strong>
               </p>
               <h1 id="home-title">
                 <span className="pa-hero-eyebrow">
                   Brief of our Consulting Services: (See “explore services”)
                 </span>
-                Restaurant Health Department Permitting, Violation Corrections and Hearing
-                attendance to prevent closure, Alcohol Licensing, CUB Conditional Use Beverage
-                Permit upgrading, Restaurant Sales &amp; Acquisitions, Remodeling, Monthly Rent
-                Negotiations, New Tenant Rent Abatement Allowances, Change of Use. <br />
+                <span className="pa-hero-services">
+                  {HERO_SERVICES.map((service, i) => (
+                    <Fragment key={service}>
+                      <span className="pa-hero-service">{service}</span>
+                      <span className="pa-hero-sep">
+                        {i < HERO_SERVICES.length - 1 ? ", " : ". "}
+                      </span>
+                    </Fragment>
+                  ))}
+                </span>
+                <br />
                 <em>
                   Handled <span className="pa-no-break">End-to-End.</span>
                 </em>

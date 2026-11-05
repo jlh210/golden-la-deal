@@ -1869,3 +1869,166 @@ main .text-destructive {
     margin-top: 0;
   }
 }
+
+/* Mobile hero (Nov 2026): same copy, laid out to read on a phone and
+   put the booking button inside the first screen. */
+@media (max-width: 767px) {
+  .pa-header-inner {
+    min-height: 64px;
+  }
+  .pa-hero-grid {
+    padding-block: 26px 34px;
+    gap: 28px;
+  }
+  .pa-hero .pa-kicker {
+    font-size: 11px;
+    line-height: 1.6;
+    letter-spacing: 0.14em;
+    max-width: none;
+  }
+  .pa-hero-description {
+    margin-top: 14px;
+    font-size: 17px;
+    line-height: 1.45;
+    color: #2f332d;
+  }
+  /* Services brief: was ~13.7px at 1.01 line height, now a readable card. */
+  .pa-hero h1 {
+    margin: 20px 0 0;
+    padding: 16px 16px 18px;
+    background: #faf9f5;
+    border-left: 2px solid #c9a35a;
+    font-size: 17px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    font-weight: 600;
+    color: #2f332d;
+  }
+  .pa-hero h1 .pa-hero-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #70592e;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  .pa-hero h1 em {
+    display: block;
+    margin-top: 6px;
+  }
+  .pa-hero-actions {
+    margin-top: 22px;
+    gap: 6px;
+  }
+  .pa-hero-actions .pa-button {
+    font-size: 15px;
+    line-height: 1.35;
+    padding: 14px 16px;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .pa-hero-actions .pa-text-link {
+    margin-top: 8px;
+  }
+  .pa-hero-note {
+    margin-top: 16px;
+    font-size: 13px;
+  }
+  .pa-hero-image {
+    padding-left: 12px;
+  }
+  .pa-hero-image img {
+    height: 220px;
+  }
+  .pa-hero-image figcaption {
+    font-size: 12px;
+  }
+}
+/* Phones: booking button sits right under the opening statement so it is
+   on the first screen; the services brief follows as its own card. */
+@media (max-width: 767px) {
+  .pa-hero-copy {
+    display: flex;
+    flex-direction: column;
+  }
+  .pa-hero-copy > .pa-kicker { order: 1; }
+  .pa-hero-copy > .pa-hero-description { order: 2; }
+  .pa-hero-copy > .pa-hero-actions { order: 3; }
+  .pa-hero-copy > h1 { order: 4; margin-top: 26px; }
+  .pa-hero-copy > .pa-hero-note { order: 5; }
+}
+/* Hero structure (Nov 2026): same words, less wall-of-text.
+   Desktop renders exactly as before; phones get a headline, a support
+   line and service tags. */
+.pa-hero-services .pa-hero-service,
+.pa-hero-services .pa-hero-sep {
+  display: inline;
+}
+@media (max-width: 767px) {
+  .pa-hero-description {
+    margin-top: 14px;
+  }
+  .pa-hero-statement {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    color: #202320;
+  }
+  .pa-hero-support {
+    display: block;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.55;
+    color: #4d5149;
+  }
+  /* Services brief becomes a set of tags instead of a paragraph. */
+  .pa-hero h1 {
+    padding: 0;
+    background: none;
+    border-left: 0;
+  }
+  .pa-hero h1 .pa-hero-eyebrow {
+    margin-bottom: 12px;
+  }
+  .pa-hero-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .pa-hero-services .pa-hero-sep {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .pa-hero-services .pa-hero-service {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #faf9f5;
+    border: 1px solid #d9d2c2;
+    border-radius: 999px;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.35;
+    color: #2f332d;
+  }
+  .pa-hero h1 br {
+    display: none;
+  }
+  .pa-hero h1 em {
+    display: block;
+    margin-top: 14px;
+    font-family: var(--font-display);
+    font-size: 19px;
+    font-style: italic;
+    color: #70592e;
+  }
+}
