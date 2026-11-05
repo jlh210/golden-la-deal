@@ -37,8 +37,22 @@ async function normalizeCatastrophicSsrResponse(response: Response): Promise<Res
   });
 }
 
+// The router canonicalizes "/about/" -> "/about" with a temporary 307. Legacy
+// WordPress URLs all used trailing slashes, so issue a permanent 301 instead so
+// search engines consolidate ranking signals on the canonical URL.
+function trailingSlashRedirect(request: Request): Response | undefined {
+  if (request.method !== "GET" && request.method !== "HEAD") return undefined;
+  const url = new URL(request.url);
+  if (url.pathname === "/" || !url.pathname.endsWith("/")) return undefined;
+  url.pathname = url.pathname.replace(/\/+$/, "") || "/";
+  // Absolute same-origin URL: a bare "//host" path would be a protocol-relative open redirect.
+  return new Response(null, { status: 301, headers: { Location: url.toString() } });
+}
+
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
+    const slashRedirect = trailingSlashRedirect(request);
+    if (slashRedirect) return slashRedirect;
     try {
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);

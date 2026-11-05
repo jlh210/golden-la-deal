@@ -18,8 +18,10 @@ export const Route = createFileRoute("/restaurants-for-sale/$slug")({
     const url = `https://www.penthouseadvisors.com/restaurants-for-sale/${params.slug}`;
     if (!l)
       return {
-        meta: [{ title: "Listing — Penthouse Advisors" }],
-        links: [{ rel: "canonical", href: url }],
+        meta: [
+          { title: "Listing Not Found | Penthouse Advisors" },
+          { name: "robots", content: "noindex, follow" },
+        ],
       };
     const conciseDescriptions: Record<string, string> = {
       "westwood-santa-monica-restaurant-asset-sale":
