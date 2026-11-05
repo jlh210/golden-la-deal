@@ -1736,3 +1736,299 @@ main .text-destructive {
     font-size: 17px;
   }
 }
+
+/* ------------------------------------------------------------------
+   Mobile optimization (Nov 2026)
+   - Sticky Call / Book bar on phones
+   - 16px form fields so iOS Safari does not zoom on focus
+   - 44px minimum tap targets on touch screens
+   - Readable minimum text sizes on phones
+------------------------------------------------------------------- */
+.pa-mobile-cta {
+  display: none;
+}
+@media (max-width: 767px) {
+  .pa-mobile-cta {
+    position: fixed;
+    inset: auto 0 0 0;
+    z-index: 60;
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 8px;
+    padding: 8px 12px calc(8px + env(safe-area-inset-bottom));
+    background: rgba(250, 249, 245, 0.97);
+    border-top: 1px solid #dedbd3;
+    box-shadow: 0 -6px 18px rgba(32, 35, 32, 0.08);
+    backdrop-filter: blur(6px);
+  }
+  .pa-mobile-cta a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 48px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #242a23;
+  }
+  .pa-mobile-cta a:first-child {
+    color: #242a23;
+    background: #fff;
+  }
+  .pa-mobile-cta a:last-child {
+    color: #fff;
+    background: #242a23;
+  }
+  .pa-has-mobile-cta {
+    padding-bottom: calc(66px + env(safe-area-inset-bottom));
+  }
+  .pa-menu-open .pa-mobile-cta {
+    display: none;
+  }
+
+  /* Form fields: 16px stops iOS auto-zoom when a field is tapped. */
+  input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]),
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  /* Readable minimum sizes on phones. */
+  .pa-button,
+  .pa-hero-actions .pa-button,
+  .pa-final .pa-button {
+    font-size: 14px;
+    min-height: 52px;
+  }
+  .pa-text-link,
+  .pa-capabilities .pa-text-link,
+  .pa-guides .pa-text-link {
+    font-size: 14px;
+  }
+  .pa-capabilities p,
+  .pa-process p,
+  .pa-guides article > p:not(.pa-kicker) {
+    font-size: 15px;
+  }
+  .pa-kicker {
+    font-size: 11px;
+  }
+  .pa-topbar {
+    font-size: 13px;
+  }
+  .pa-footer li a,
+  .pa-footer-bottom,
+  .pa-hours {
+    font-size: 14px;
+  }
+
+  /* Mobile menu: bigger rows, room for the phone link. */
+  .pa-mobile-panel nav > a:not(.pa-button),
+  .pa-mobile-panel summary {
+    padding: 15px 0;
+    font-size: 16px;
+  }
+  .pa-mobile-panel details a {
+    padding: 12px 0 12px 16px;
+    font-size: 15px;
+  }
+  .pa-menu-toggle {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+/* Touch screens: every link and button gets at least a 44px tap area. */
+@media (pointer: coarse) {
+  /* Invisible hit area keeps the underline tight to the text. */
+  .pa-text-link {
+    position: relative;
+  }
+  .pa-text-link::after {
+    content: "";
+    position: absolute;
+    inset: -10px -6px -6px;
+  }
+  .pa-topbar a {
+    display: inline-block;
+    padding-block: 6px;
+  }
+  .pa-secondary-link,
+  .pa-footer li a,
+  .pa-footer-bottom a,
+  .pa-footer a[href^="tel:"],
+  .pa-footer a[href^="mailto:"] {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+  .pa-footer ul li {
+    margin-bottom: 0;
+  }
+  .pa-footer-grid > div > a:not(.pa-brand) {
+    margin-top: 0;
+  }
+}
+
+/* Mobile hero (Nov 2026): same copy, laid out to read on a phone and
+   put the booking button inside the first screen. */
+@media (max-width: 767px) {
+  .pa-header-inner {
+    min-height: 64px;
+  }
+  .pa-hero-grid {
+    padding-block: 26px 34px;
+    gap: 28px;
+  }
+  .pa-hero .pa-kicker {
+    font-size: 11px;
+    line-height: 1.6;
+    letter-spacing: 0.14em;
+    max-width: none;
+  }
+  .pa-hero-description {
+    margin-top: 14px;
+    font-size: 17px;
+    line-height: 1.45;
+    color: #2f332d;
+  }
+  /* Services brief: was ~13.7px at 1.01 line height, now a readable card. */
+  .pa-hero h1 {
+    margin: 20px 0 0;
+    padding: 16px 16px 18px;
+    background: #faf9f5;
+    border-left: 2px solid #c9a35a;
+    font-size: 17px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    font-weight: 600;
+    color: #2f332d;
+  }
+  .pa-hero h1 .pa-hero-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #70592e;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  .pa-hero h1 em {
+    display: block;
+    margin-top: 6px;
+  }
+  .pa-hero-actions {
+    margin-top: 22px;
+    gap: 6px;
+  }
+  .pa-hero-actions .pa-button {
+    font-size: 15px;
+    line-height: 1.35;
+    padding: 14px 16px;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .pa-hero-actions .pa-text-link {
+    margin-top: 8px;
+  }
+  .pa-hero-note {
+    margin-top: 16px;
+    font-size: 13px;
+  }
+  .pa-hero-image {
+    padding-left: 12px;
+  }
+  .pa-hero-image img {
+    height: 220px;
+  }
+  .pa-hero-image figcaption {
+    font-size: 12px;
+  }
+}
+/* Phones: booking button sits right under the opening statement so it is
+   on the first screen; the services brief follows as its own card. */
+@media (max-width: 767px) {
+  .pa-hero-copy {
+    display: flex;
+    flex-direction: column;
+  }
+  .pa-hero-copy > .pa-kicker { order: 1; }
+  .pa-hero-copy > .pa-hero-description { order: 2; }
+  .pa-hero-copy > .pa-hero-actions { order: 3; }
+  .pa-hero-copy > h1 { order: 4; margin-top: 26px; }
+  .pa-hero-copy > .pa-hero-note { order: 5; }
+}
+/* Hero structure (Nov 2026): same words, less wall-of-text.
+   Desktop renders exactly as before; phones get a headline, a support
+   line and service tags. */
+.pa-hero-services .pa-hero-service,
+.pa-hero-services .pa-hero-sep {
+  display: inline;
+}
+@media (max-width: 767px) {
+  .pa-hero-description {
+    margin-top: 14px;
+  }
+  .pa-hero-statement {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    color: #202320;
+  }
+  .pa-hero-support {
+    display: block;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.55;
+    color: #4d5149;
+  }
+  /* Services brief becomes a set of tags instead of a paragraph. */
+  .pa-hero h1 {
+    padding: 0;
+    background: none;
+    border-left: 0;
+  }
+  .pa-hero h1 .pa-hero-eyebrow {
+    margin-bottom: 12px;
+  }
+  .pa-hero-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .pa-hero-services .pa-hero-sep {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .pa-hero-services .pa-hero-service {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #faf9f5;
+    border: 1px solid #d9d2c2;
+    border-radius: 999px;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.35;
+    color: #2f332d;
+  }
+  .pa-hero h1 br {
+    display: none;
+  }
+  .pa-hero h1 em {
+    display: block;
+    margin-top: 14px;
+    font-family: var(--font-display);
+    font-size: 19px;
+    font-style: italic;
+    color: #70592e;
+  }
+}
