@@ -43,7 +43,7 @@ export const agents = [
     name: "Roschard Paticchio-Stein",
     title: "CEO · Owner · Business Agent",
     dre: "DRE #02203003",
-    bio: "As CEO, (Chief Executive Officer) Roschard sets the company’s vision and strategy, making major decisions that affect the organization’s direction, supervises the executive team, ensures that the company’s operations align with its goals.",
+    bio: "As CEO, (Chief Executive Officer), Roschard sets the company’s vision and strategy, making major decisions that affect the organization’s direction, supervises the executive team, ensures that the company’s operations align with its goals.",
     focus: ["buy/seller representation", "abc licensing oversight", "restaurant sales"],
   },
   {
