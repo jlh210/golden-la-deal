@@ -4,7 +4,7 @@ import { HeadingCTA } from "@/components/site/HeadingCTA";
 
 export interface ServiceAuthorityContent {
   title: string;
-  answer: string;
+  answer?: string;
   service: string;
   prepare: string[];
   guides: { to: string; label: string }[];
@@ -36,7 +36,7 @@ export function ServiceAuthorityHero({
         <p className="pa-kicker">Penthouse Advisors · Los Angeles County</p>
         <h1>{content.title}</h1>
         <HeadingCTA />
-        <p className="pa-service-answer">{content.answer}</p>
+        {content.answer && <p className="pa-service-answer">{content.answer}</p>}
         {secondaryAction ? (
           <div className="pa-hero-actions pa-service-hero-actions">
             {consultationButton}

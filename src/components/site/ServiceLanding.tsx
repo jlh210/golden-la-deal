@@ -24,7 +24,8 @@ export interface ServiceLandingProps {
   accent: string;
   subtitle: string;
   h1: string;
-  overview: string;
+  /** One string, or several strings rendered as separate paragraphs. */
+  overview: string | string[];
   benefits: { icon: LucideIcon; title: string; body: string }[];
   process: { step: string; title: string; body: string }[];
   faqs: FAQ[];
@@ -98,9 +99,14 @@ export function ServiceLanding(props: ServiceLandingProps) {
             {title} {accent}
           </h2>
           <HeadingCTA />
-          <p className="mt-5 text-base md:text-lg text-muted-foreground leading-relaxed">
-            {overview}
-          </p>
+          {(Array.isArray(overview) ? overview : [overview]).map((para) => (
+            <p
+              key={para}
+              className="mt-5 text-base md:text-lg text-muted-foreground leading-relaxed"
+            >
+              {para}
+            </p>
+          ))}
         </div>
       </section>
 
