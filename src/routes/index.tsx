@@ -224,7 +224,7 @@ function HomePage() {
               </p>
               <h1 id="home-title">
                 <span className="pa-hero-eyebrow">
-                  Brief of our Consulting Services: (See “explore services”)
+                  Brief; Consulting Services. For more Services See (“explore services”)
                 </span>
                 Restaurant Health Department Permitting, Violation Corrections and Hearing
                 attendance to prevent closure, Alcohol Licensing, CUB Conditional Use Beverage
