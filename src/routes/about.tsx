@@ -117,7 +117,7 @@ const owners = [
     name: "Roschard Paticchio-Stein",
     title: "CEO · Owner · Business Agent",
     dre: "DRE #02203003",
-    bio: "As CEO, Roschard makes the major corporate decisions that shape Penthouse Advisors, drives the firm’s direction, supervises the executive team, and oversees growth plans.",
+    bio: "As CEO, Roschard sets the company’s vision and strategy, making major decisions that affect the organization’s direction, supervises the executive team, ensures that the company’s operations align with its goals.",
   },
   {
     name: "Richard Stein",
