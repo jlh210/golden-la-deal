@@ -68,7 +68,10 @@ function BuyARestaurantPage() {
       accent="Penthouse Advisors Inc."
       subtitle="A disciplined acquisition process — sourcing, diligence, licensing, and lease — handled under one roof."
       h1="Buy a Restaurant in Los Angeles County"
-      overview="From first-time Operators acquiring a Restaurant to Investors building their portfolio. We source on and off-market opportunities, run full pre-purchase diligence, negotiate New Leases & Assignments and shepherd Liquor Licensing, Health Dept Permitting, Change of Ownership Transfers."
+      overview={[
+        "From first-time Operators acquiring a Restaurant to Investors building their portfolio. We source on and off-market opportunities, run full pre-purchase diligence, negotiate New Leases & Assignments and shepherd Liquor Licensing, Health Dept Permitting, Change of Ownership and violations issues.",
+        "Penthouse Advisors represents restaurant buyers across Los Angeles County, from defining the search to coordinating a purchase. The work connects on-market and off-market sourcing with financial, lease, equipment, and permit review. Before committing to a location, establish which assets are included, whether the lease supports your concept, and what approvals the new operation will need.",
+      ]}
       benefits={[
         {
           icon: Search,
@@ -105,7 +108,10 @@ function BuyARestaurantPage() {
       ]}
       faqs={FAQS}
       related={[
-        { to: "/restaurants-for-sale", label: "Restaurants for sale. Los Angeles. Selected Business and Lease Opportunities." },
+        {
+          to: "/restaurants-for-sale",
+          label: "Restaurants for sale. Los Angeles. Selected Business and Lease Opportunities.",
+        },
         { to: "/off-market-sourcing", label: "Off-Market Restaurant Sourcing" },
         { to: "/search-door-knocking", label: "Off-Market Door-Knocking" },
         { to: "/business-investigations", label: "Pre-Purchase Investigations" },

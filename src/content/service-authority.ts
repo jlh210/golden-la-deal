@@ -20,8 +20,6 @@ const plans = {
 export const serviceAuthority = {
   buy: {
     title: "Buy a Restaurant in Los Angeles County",
-    answer:
-      "Penthouse Advisors represents restaurant buyers across Los Angeles County, from defining the search to coordinating a purchase. The work connects on-market and off-market sourcing with financial, lease, equipment, and permit review. Before committing to a location, establish which assets are included, whether the lease supports your concept, and what approvals the new operation will need.",
     service: "Buying a restaurant",
     prepare: [
       "Target neighborhoods, restaurant concept, and preferred size.",
