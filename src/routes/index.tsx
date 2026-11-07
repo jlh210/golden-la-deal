@@ -295,7 +295,7 @@ function HomePage() {
                   DRE #02203003
                 </p>
                 <p>
-                  As CEO, Roschard sets the company’s vision and strategy, making major decisions that
+                  As CEO, (Chief Executive Officer) Roschard sets the company’s vision and strategy, making major decisions that
                   affect the organization’s direction, supervises the executive team, ensures that
                   the company’s operations align with its goals.
                 </p>
