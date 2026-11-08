@@ -311,8 +311,8 @@ function HomePage() {
                   COO · Creator · Owner/Partner · Business Consultant
                 </p>
                 <p>
-                  As COO (Chief Operating Officer), Richard is the key executive responsible for
-                  managing the day-to-day operations of the company, ensuring that business processes
+                  As COO (Chief Operating Officer), Richard works with Roschard CEO,
+                  managing the day-to-day operations of the company ensuring that business processes
                   run efficiently and effectively, maintaining organizational stability, and driving
                   growth through effective management of resources and processes.
                 </p>
