@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Award, Users, Scale, Zap, Check } from "lucide-react";
 import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
+import { FirmOverview } from "@/components/site/FirmOverview";
 import { CTASection } from "@/components/site/CTASection";
 
 import { breadcrumbScript } from "@/lib/seo";
@@ -141,8 +142,8 @@ function AboutPage() {
         lead="Penthouse Advisors Inc. Los Angeles County’s Premier Restaurant & Business Advisory Firm."
         title="Servicing LA County's Restaurants & Businesses."
         hideHeadingCta
-        subtitle={`Penthouse Advisors is a modern, full-service restaurant and business brokerage serving Los Angeles County. Established in 2021, we combine brokerage expertise, ABC licensing, Health Department Permitting, Health Dept Plan-Check Restaurant Red Rag removal and operational advisory under one roof. Protocol: All parties, Buyer, Seller, Landlord are treated equally, fairly, and honestly with our "Do It Now" services. If you don't "Do It Now", it won't get done & you'll forget all about doing it. Book a Consultation Appointment.`}
       >
+        <FirmOverview className="mb-6 max-w-2xl text-muted-foreground" />
         <div className="max-w-2xl space-y-1 text-muted-foreground">
           <p className="pb-2">
             <strong className="text-gold">Need Business Advise &amp; Solutions, Fast?</strong>{" "}
