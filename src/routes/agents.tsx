@@ -41,15 +41,15 @@ const AGENT_PHONE_HREF = "tel:+13106633521";
 export const agents = [
   {
     name: "Roschard Paticchio-Stein",
-    title: "CEO · Owner/Partner · Business Agent",
+    title: "CEO · Owner · Business Agent",
     dre: "DRE #02203003",
     bio: "As CEO (Chief Executive Officer), Roschard sets the company’s vision and strategy, making major decisions that affect the organization’s direction, supervises the executive team, ensures that the company’s operations align with its goals.",
     focus: ["buy/seller representation", "abc licensing oversight", "restaurant sales"],
   },
   {
     name: "Richard Stein",
-    title: "COO · Creator · Owner/Partner · Business Consultant",
-    bio: "As COO, Richard turns the firm’s strategy into everyday results, making sure execution across the company matches the direction set by leadership.",
+    title: "Creator · COO · Owner · Business Consultant",
+    bio: "As COO (Chief Operating Officer), Richard works with Roschard CEO, managing the day-to-day operations of the company ensuring that business processes run efficiently and effectively, maintaining organizational stability, and driving growth through effective management of resources and processes.",
     focus: ["operations & execution", "strategy implementation", "business advisory"],
   },
   {

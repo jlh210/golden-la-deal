@@ -290,7 +290,7 @@ function HomePage() {
               <div>
                 <h3>Roschard Paticchio-Stein</h3>
                 <p className="pa-ownership-role">
-                  CEO · Owner/Partner · Business Agent
+                  CEO · Owner · Business Agent
                   <br />
                   DRE #02203003
                 </p>
@@ -308,7 +308,7 @@ function HomePage() {
               <div>
                 <h3>Richard Stein</h3>
                 <p className="pa-ownership-role">
-                  COO · Creator · Owner/Partner · Business Consultant
+                  Creator · COO · Owner · Business Consultant
                 </p>
                 <p>
                   As COO (Chief Operating Officer), Richard works with Roschard CEO,
