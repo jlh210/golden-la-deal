@@ -290,7 +290,7 @@ function HomePage() {
               <div>
                 <h3>Roschard Paticchio-Stein</h3>
                 <p className="pa-ownership-role">
-                  CEO · Owner · Business Agent
+                  CEO · Owner/Partner · Business Agent
                   <br />
                   DRE #02203003
                 </p>
