@@ -219,17 +219,8 @@ function HomePage() {
               <div className="pa-hero-description" style={{ fontWeight: 400 }}>
                 <FirmOverview />
               </div>
-              <h1 id="home-title">
-                <span className="pa-hero-eyebrow">
-                  Brief of our Below Services. For more (“explore services”)
-                </span>
-                Restaurant Health Department Permitting, Violation Corrections and Hearing
-                attendance to prevent closure, Alcohol Licensing, CUB Conditional Use Beverage
-                Permit upgrading, Restaurant Sales &amp; Acquisitions, Remodeling, Monthly Rent
-                Negotiations, New Tenant Rent Abatement Allowances, Change of Use. <br />
-                <em>
-                  Handled <span className="pa-no-break">End-to-End.</span>
-                </em>
+              <h1 id="home-title" className="sr-only">
+                Restaurant Business Broker in Los Angeles, CA – Penthouse Advisors Inc.
               </h1>
               <div className="pa-hero-actions">
                 <Link to="/contact" className="pa-button">
