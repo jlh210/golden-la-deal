@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
 import { CONSULTATION_LABEL } from "@/lib/consultation";
+import { FirmOverview } from "@/components/site/FirmOverview";
 import { SITE_URL, ORG_ID, WEBSITE_ID, faqScript } from "@/lib/seo";
 
 const title = "Restaurant Business Broker Los Angeles, CA | Penthouse Advisors Inc.";
@@ -215,13 +216,9 @@ function HomePage() {
           <div className="pa-shell pa-hero-grid">
             <div className="pa-hero-copy">
               <p className="pa-kicker">Retail Business Advisor and Brokerage · Los Angeles County</p>
-              <p className="pa-hero-description">
-                <strong>
-                  Penthouse Advisors Inc., a “Full-Service” Retail Advisory and Brokerage was Built
-                  for Los Angeles County Retail Owners. Buyers, Sellers, Property Owners and
-                  Landlords requiring fast execution of all newly created deals and resolutions.
-                </strong>
-              </p>
+              <div className="pa-hero-description" style={{ fontWeight: 400 }}>
+                <FirmOverview />
+              </div>
               <h1 id="home-title">
                 <span className="pa-hero-eyebrow">
                   Brief of our Below Services. For more (“explore services”)
