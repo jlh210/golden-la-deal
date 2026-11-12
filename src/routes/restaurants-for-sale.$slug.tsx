@@ -6,6 +6,7 @@ import { PHONE, PHONE_HREF } from "@/components/site/Layout";
 import { LeadForm } from "@/components/site/LeadForm";
 import { getListingBySlug, listings, type Listing } from "@/lib/listings";
 import { ListingLocationMap } from "@/components/site/ListingLocationMap";
+import { listingOfferScript } from "@/lib/seo";
 
 export const Route = createFileRoute("/restaurants-for-sale/$slug")({
   loader: ({ params }) => {
@@ -57,6 +58,17 @@ export const Route = createFileRoute("/restaurants-for-sale/$slug")({
           : []),
       ],
       links: [{ rel: "canonical", href: url }],
+      scripts: [
+        listingOfferScript({
+          name: l.title,
+          description: desc,
+          path: `/restaurants-for-sale/${l.slug}`,
+          listingId: l.id,
+          listingType: l.type,
+          price: l.offerPrice,
+          lease: l.offerType === "lease",
+        }),
+      ],
     };
   },
 
