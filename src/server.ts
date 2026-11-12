@@ -49,8 +49,22 @@ function trailingSlashRedirect(request: Request): Response | undefined {
   return new Response(null, { status: 301, headers: { Location: url.toString() } });
 }
 
+
+// Google still surfaces a legacy WordPress monthly archive with obsolete
+// consultation copy. Keep the redirect at the Worker edge so it remains a
+// permanent signal even though this archive is no longer an application route.
+function legacyWordPressRedirect(request: Request): Response | undefined {
+  if (request.method !== "GET" && request.method !== "HEAD") return undefined;
+  const url = new URL(request.url);
+  if (url.pathname !== "/2021/07" && url.pathname !== "/2021/07/hello-world") return undefined;
+  url.pathname = "/";
+  return new Response(null, { status: 301, headers: { Location: url.toString() } });
+}
+
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
+    const legacyRedirect = legacyWordPressRedirect(request);
+    if (legacyRedirect) return legacyRedirect;
     const slashRedirect = trailingSlashRedirect(request);
     if (slashRedirect) return slashRedirect;
     try {
