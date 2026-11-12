@@ -126,6 +126,65 @@ export function collectionScript(opts: { name: string; description: string; path
   } as const;
 }
 
+/**
+ * Offer JSON-LD for a live brokerage listing.
+ *
+ * Listings are business, asset, and leasing opportunities rather than retail
+ * products, so use Offer with the facts shown on the page instead of Product
+ * or ProductGroup markup. A numeric price is included only when the listing
+ * data explicitly provides one.
+ */
+export function listingOfferScript(opts: {
+  name: string;
+  description: string;
+  path: string;
+  listingId: string;
+  listingType: string;
+  price?: number;
+  priceCurrency?: string;
+  lease?: boolean;
+}) {
+  const url = canonicalUrl(opts.path);
+  return {
+    type: "application/ld+json",
+    children: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Offer",
+      "@id": `${url}#offer`,
+      name: opts.name,
+      description: opts.description,
+      url,
+      category: opts.listingType,
+      availability: "https://schema.org/InStock",
+      businessFunction: opts.lease
+        ? "http://purl.org/goodrelations/v1#LeaseOut"
+        : "http://purl.org/goodrelations/v1#Sell",
+      offeredBy: { "@id": ORG_ID },
+      identifier: {
+        "@type": "PropertyValue",
+        name: "Listing ID",
+        value: opts.listingId,
+      },
+      itemOffered: {
+        "@type": "Thing",
+        name: opts.name,
+        description: opts.description,
+        additionalProperty: {
+          "@type": "PropertyValue",
+          name: "Listing type",
+          value: opts.listingType,
+        },
+      },
+      ...(opts.price !== undefined
+        ? {
+            price: opts.price,
+            priceCurrency: opts.priceCurrency ?? "USD",
+          }
+        : {}),
+    }),
+  } as const;
+}
+
 /** Shared service graph: one provider identity and one visible FAQ source. */
 export function buildServiceJsonLd(opts: {
   name: string;
