@@ -5,7 +5,7 @@ import { SiteLayout, EMAIL, EMAIL_HREF } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 
-import { breadcrumbScript } from "@/lib/seo";
+import { breadcrumbScript, ORG_ID } from "@/lib/seo";
 import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/agents")({
   head: () => ({
@@ -29,6 +29,32 @@ export const Route = createFileRoute("/agents")({
         { name: "Home", path: "/" },
         { name: "Agents", path: "/agents" },
       ]),
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": agents.map((agent) => ({
+            "@type": "Person",
+            "@id": `https://www.penthouseadvisors.com/agents#${agent.name
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, "-")
+              .replace(/(^-|-$)/g, "")}`,
+            name: agent.name,
+            jobTitle: agent.title,
+            description: agent.bio,
+            worksFor: { "@id": ORG_ID },
+            ...(agent.dre
+              ? {
+                  identifier: {
+                    "@type": "PropertyValue",
+                    name: "California DRE license",
+                    value: agent.dre.replace("DRE #", ""),
+                  },
+                }
+              : {}),
+          })),
+        }),
+      },
     ],
   }),
   component: AgentsPage,

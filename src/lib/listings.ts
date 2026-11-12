@@ -35,6 +35,10 @@ export type Listing = {
   location: string;
   coords?: [number, number]; // [lat, lng]
   price?: string;
+  /** Numeric public asking price for structured data; omit when the page shows a range. */
+  offerPrice?: number;
+  /** Lease listings use LeaseOut rather than a sale offer in structured data. */
+  offerType?: "sale" | "lease";
   priceNote?: string;
   sqft?: string;
   leaseType: string;
@@ -54,6 +58,7 @@ export const listings: Listing[] = [
     title: "Therapy & Dental Space For Lease",
     location: "West LA",
     price: "$4,800 – $5,850 / month",
+    offerType: "lease",
     priceNote: "All-in · First & last month and security deposit",
     leaseType: "Doctor, therapy & dental offices · Building zoned medical use",
     badge: "Available Now",
@@ -101,6 +106,7 @@ export const listings: Listing[] = [
     location: "1612 Santa Monica Blvd, Santa Monica, CA 90404",
     coords: [34.0257669, -118.4834686],
     price: "$125,000",
+    offerPrice: 125000,
     priceNote: "Available — Open & Active",
     sqft: "≈ 950 sq ft",
     leaseType: "Assignment of lease · Shopping center",
@@ -168,6 +174,8 @@ export const listings: Listing[] = [
     location: "2408 Wilshire Blvd, Santa Monica, CA",
     coords: [34.032541, -118.484189],
     price: "$10,000 / month All-In",
+    offerPrice: 10000,
+    offerType: "lease",
     priceNote: "Rent starts at $8,825 plus NNN · Long lease available",
     sqft: "1,150 sq ft",
     leaseType: "Single story, stand-alone building · Use: Gym & Coffee Shop",
@@ -219,6 +227,7 @@ export const listings: Listing[] = [
     location: "7420 Melrose Ave, Los Angeles, CA 90046",
     coords: [34.0835145, -118.3516022],
     price: "$37,000",
+    offerPrice: 37000,
     priceNote: "Asking · Make an offer",
     sqft: "850 sq ft",
     leaseType: "Retail massage · Full buildout · New lease negotiable",
@@ -275,6 +284,7 @@ export const listings: Listing[] = [
     location: "12200 Wilshire Blvd, Los Angeles, CA 90025",
     coords: [34.043277, -118.468347],
     price: "$585,000",
+    offerPrice: 585000,
     priceNote: "Turn Key ready",
     leaseType: "Coffee shop · Shopping center",
     badge: "Turn Key",
@@ -315,6 +325,7 @@ export const listings: Listing[] = [
     location: "6535 Melrose Ave, Los Angeles, CA 90038",
     coords: [34.0835425, -118.3378551],
     price: "$375,000",
+    offerPrice: 375000,
     priceNote: "Asset Sale · Total Rent $17,158.50 / month",
     sqft: "2,542 sq ft",
     leaseType: "Restaurant · Fully equipped",
@@ -353,7 +364,12 @@ export const listings: Listing[] = [
       "Square Footage: 2,542",
       "$375,000",
     ],
-    images: [restaurantFullyEquipped1, restaurantFullyEquipped2, restaurantFullyEquipped3, restaurantFullyEquipped4],
+    images: [
+      restaurantFullyEquipped1,
+      restaurantFullyEquipped2,
+      restaurantFullyEquipped3,
+      restaurantFullyEquipped4,
+    ],
   },
 ];
 
