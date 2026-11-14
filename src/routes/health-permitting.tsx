@@ -125,6 +125,7 @@ const recentPermits = [
     status: "Brought to Code Compliance, Change of Ownership, Permit Issuance",
   },
   { addr: "Mar Vista, Los Angeles, Restaurant", status: "Health Dept Inspection Approval" },
+  { addr: "Manhattan Beach, Pizza Restaurant", status: "Equipment Review Pending" },
 ];
 
 const statusStyle: Record<string, string> = {
