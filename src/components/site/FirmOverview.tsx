@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 
 const groups: { heading: string; items: { label: string; body: string }[] }[] = [
@@ -51,17 +52,27 @@ const groups: { heading: string; items: { label: string; body: string }[] }[] = 
  * and Brokerage · Los Angeles County") and the About hero (under "Servicing
  * LA County's Restaurants & Businesses").
  */
-export function FirmOverview({ className = "" }: { className?: string }) {
+export function FirmOverview({
+  className = "",
+  intro,
+}: {
+  className?: string;
+  intro?: ReactNode;
+}) {
   return (
     <div className={`space-y-3 ${className}`}>
-      <p>
-        <strong>Penthouse Advisors Inc.</strong> established in 2021, serving Los Angeles County as
-        a modern, full-service restaurant brokerage and business advisory firm with an office in
-        Santa Monica, CA. Because they operate as a professional consulting and brokerage firm
-        rather than a visual design or construction company, they do not have a public portfolio.
-        Instead, <strong>what they do</strong> focuses entirely on the legal, transactional, and
-        regulatory sides of the restaurant and commercial real estate business.
-      </p>
+      {intro ? (
+        <p>{intro}</p>
+      ) : (
+        <p>
+          <strong>Penthouse Advisors Inc.</strong> established in 2021, serving Los Angeles County as
+          a modern, full-service restaurant brokerage and business advisory firm with an office in
+          Santa Monica, CA. Because they operate as a professional consulting and brokerage firm
+          rather than a visual design or construction company, they do not have a public portfolio.
+          Instead, <strong>what they do</strong> focuses entirely on the legal, transactional, and
+          regulatory sides of the restaurant and commercial real estate business.
+        </p>
+      )}
       {groups.map((g) => (
         <div key={g.heading}>
           <p className="font-semibold">{g.heading}:</p>
