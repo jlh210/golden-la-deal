@@ -71,7 +71,11 @@ function ServicesPage() {
         </div>
 
         <div className="mt-12 rounded-xl border border-border bg-card p-7 shadow-elegant">
-          <h2 className="text-xl font-display font-bold">Restaurant Equipment Review</h2>
+          <h2 className="text-xl font-display font-bold">
+            <Link to="/restaurant-equipment-review" className="hover:text-gold transition">
+              Restaurant Equipment Review
+            </Link>
+          </h2>
           <p className="mt-1 text-sm font-semibold text-gold">$2,750 Flat Fee</p>
           <p className="mt-3 text-sm text-muted-foreground">
             When adding Equipment to a cook line, under the Hood we establish an “equipment
@@ -85,6 +89,12 @@ function ServicesPage() {
             <li>The menu should align with the new (N) equipment installed.</li>
             <li>A final site inspection will be arranged.</li>
           </ul>
+          <Link
+            to="/restaurant-equipment-review"
+            className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-gold"
+          >
+            Restaurant Equipment Review - $2,750 Flat Fee <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
         </div>
 
         <div className="mt-12 flex flex-wrap gap-3">
