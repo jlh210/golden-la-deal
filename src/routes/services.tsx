@@ -78,8 +78,9 @@ function ServicesPage() {
           </h2>
           <p className="mt-1 text-sm font-semibold text-gold">$2,750 Flat Fee</p>
           <p className="mt-3 text-sm text-muted-foreground">
-            When adding Equipment to a cook line, under the Hood we establish an “equipment
-            review” to ensure health and safety standards and local building codes are in place.
+            When adding Equipment under the Hood, an “equipment review” with Plan-Check must be
+            established to ensure health and safety standards and local building codes are in
+            place.
           </p>
           <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-muted-foreground">
             <li>
