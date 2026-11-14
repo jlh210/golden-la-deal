@@ -14,6 +14,7 @@ import {
   Handshake,
   Stamp,
   DoorOpen,
+  ClipboardCheck,
   type LucideIcon,
 } from "lucide-react";
 
@@ -37,6 +38,14 @@ export const services: Service[] = [
     title: "Health Dept Permitting & Plan Check",
     short: "Hand-drafted blueprints, plan-check submittal, stamped approvals, permits.",
     icon: Stamp,
+  },
+  {
+    slug: "equipment-review",
+    to: "/restaurant-equipment-review",
+    title: "Equipment Review - $2,750 Flat Fee",
+    short:
+      "Newly added Equipment under the Hood must go into an “equipment review” with Plan-Check to ensure health and safety standards and local building codes are in place.",
+    icon: ClipboardCheck,
   },
   {
     slug: "brokerage",
