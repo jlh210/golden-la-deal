@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Ruler,
   FileCheck2,
@@ -8,6 +8,7 @@ import {
   Flame,
   Droplets,
   Thermometer,
+  ArrowRight,
 } from "lucide-react";
 import { SiteLayout } from "@/components/site/Layout";
 import {
@@ -163,6 +164,26 @@ function PermittingPage() {
             </h2>
             <HeadingCTA />
           </div>
+        </div>
+      </section>
+
+      {/* Restaurant Equipment Review link */}
+      <section className="border-b border-border">
+        <div className="container-x py-8 flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <div className="text-xs font-semibold uppercase tracking-widest text-gold">
+              Also Available
+            </div>
+            <h2 className="mt-1 text-xl md:text-2xl font-display font-bold">
+              Restaurant Equipment Review - $2,750 Flat Fee
+            </h2>
+          </div>
+          <Link
+            to="/restaurant-equipment-review"
+            className="inline-flex items-center gap-1 text-sm font-semibold text-gold hover:underline"
+          >
+            Restaurant Equipment Review <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
       </section>
 
