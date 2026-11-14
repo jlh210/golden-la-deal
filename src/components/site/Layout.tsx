@@ -47,6 +47,7 @@ const serviceGroups = [
     links: [
       ["/alcohol-licensing", "ABC / Liquor Licensing"],
       ["/health-permitting", "Health Permitting"],
+      ["/restaurant-equipment-review", "Restaurant Equipment Review"],
       ["/health-inspection", "Health Inspection"],
       ["/licensing-and-permits", "Licensing & Permits Overview"],
     ],
