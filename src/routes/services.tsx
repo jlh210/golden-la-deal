@@ -78,6 +78,23 @@ function ServicesPage() {
           ))}
         </div>
 
+        <div className="mt-12 rounded-xl border border-border bg-card p-7 shadow-elegant">
+          <h2 className="text-xl font-display font-bold">Restaurant Equipment Review</h2>
+          <p className="mt-3 text-sm text-muted-foreground">
+            When adding Restaurant Equipment to the cooking line, under the Hood we establish an
+            “equipment review” with Health Department plan-check to ensure all the equipment meets
+            health and safety standards and local building codes.
+          </p>
+          <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-muted-foreground">
+            <li>
+              Specification sheets detailing the Equipment dimensions, power requirements are
+              required.
+            </li>
+            <li>The menu should align with the new (N) equipment installed.</li>
+            <li>A final site inspection will be arranged.</li>
+          </ul>
+        </div>
+
         <div className="mt-12 flex flex-wrap gap-3">
           <Link to="/contact" className="pa-button">
             {CONSULTATION_LABEL} <ArrowRight className="h-4 w-4" />
