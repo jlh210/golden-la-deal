@@ -41,7 +41,7 @@ function ServicesPage() {
         eyebrow="Services"
         title="Penthouse Advisors Inc."
         subtitle={
-          <strong className="text-foreground">Brief of our Services Below:</strong>
+          <strong className="text-foreground">Brief of our Services below:</strong>
         }
       />
 
