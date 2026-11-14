@@ -221,8 +221,10 @@ function HomePage() {
                   intro={
                     <>
                       <strong>
-                        Penthouse Advisors Inc., focuses entirely on the legal, transactional, and
-                        regulatory sides of the restaurant and commercial real estate business.
+                        Penthouse Advisors Inc., focuses entirely on the Legal, Transactional, Health
+                        Department Permitting/Code Compliance For Food Establishments, CA, State
+                        Alcohol Licensing, Rent/Lease Negotiations, Regulatory Sides of Restaurant
+                        and Commercial Real Estate Business.
                       </strong>
                     </>
                   }
