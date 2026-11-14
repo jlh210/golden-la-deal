@@ -220,9 +220,9 @@ function HomePage() {
                 <FirmOverview
                   intro={
                     <>
-                      <strong>Penthouse Advisors Inc.</strong> operates as a professional consulting
-                      and brokerage focusing entirely on the legal, transactional, and regulatory
-                      sides of the restaurant and commercial real estate business.
+                      <strong>Penthouse Advisors Inc.,</strong> focuses entirely on the legal,
+                      transactional, and regulatory sides of the restaurant and commercial real
+                      estate business.
                     </>
                   }
                 />
