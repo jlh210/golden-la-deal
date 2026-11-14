@@ -217,7 +217,15 @@ function HomePage() {
             <div className="pa-hero-copy">
               <p className="pa-kicker">Retail Business Advisor and Brokerage · Los Angeles County</p>
               <div className="pa-hero-description" style={{ fontWeight: 400 }}>
-                <FirmOverview />
+                <FirmOverview
+                  intro={
+                    <>
+                      <strong>Penthouse Advisors Inc.</strong> operates as a professional consulting
+                      and brokerage focusing entirely on the legal, transactional, and regulatory
+                      sides of the restaurant and commercial real estate business.
+                    </>
+                  }
+                />
               </div>
               <h1 id="home-title" className="sr-only">
                 Restaurant Business Broker in Los Angeles, CA – Penthouse Advisors Inc.
