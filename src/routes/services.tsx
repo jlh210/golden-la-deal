@@ -72,6 +72,7 @@ function ServicesPage() {
 
         <div className="mt-12 rounded-xl border border-border bg-card p-7 shadow-elegant">
           <h2 className="text-xl font-display font-bold">Restaurant Equipment Review</h2>
+          <p className="mt-1 text-sm font-semibold text-gold">$2,750 Flat Fee</p>
           <p className="mt-3 text-sm text-muted-foreground">
             When adding Equipment to a cook line, under the Hood we establish an “equipment
             review” to ensure health and safety standards and local building codes are in place.
