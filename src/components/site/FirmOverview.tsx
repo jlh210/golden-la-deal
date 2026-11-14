@@ -55,9 +55,12 @@ const groups: { heading: string; items: { label: string; body: string }[] }[] = 
 export function FirmOverview({
   className = "",
   intro,
+  coreServicesHeading,
 }: {
   className?: string;
   intro?: ReactNode;
+  /** Overrides the first group's heading ("Their core services include"). */
+  coreServicesHeading?: string;
 }) {
   return (
     <div className={`space-y-3 ${className}`}>
@@ -73,9 +76,11 @@ export function FirmOverview({
           regulatory sides of the restaurant and commercial real estate business.
         </p>
       )}
-      {groups.map((g) => (
+      {groups.map((g, i) => (
         <div key={g.heading}>
-          <p className="font-semibold">{g.heading}:</p>
+          <p className="font-semibold">
+            {i === 0 && coreServicesHeading ? coreServicesHeading : g.heading}:
+          </p>
           <ul className="mt-1 list-disc space-y-1 pl-5">
             {g.items.map((item) => (
               <li key={item.label}>
