@@ -221,9 +221,9 @@ function HomePage() {
                   intro={
                     <>
                       <strong>Penthouse Advisors Inc.,</strong> focuses entirely on the Legal,
-                      Transactional, Health Department Permitting/Code Compliance For Food
-                      Establishments, CA, State Alcohol Licensing, Rent/Lease Negotiations,
-                      Regulatory Sides of Restaurant and Commercial Real Estate Business.
+                      Transactional, Health Department Permitting/Code Compliance, CA, State
+                      Alcohol Licensing, Rent/Lease Negotiations, Regulatory Sides of Restaurant
+                      and Commercial Real Estate Business.
                     </>
                   }
                   coreServicesHeading="Brief on core services"
