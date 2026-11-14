@@ -178,6 +178,11 @@ function PermittingPage() {
             <h2 className="mt-1 text-xl md:text-2xl font-display font-bold">
               Restaurant Equipment Review - $2,750 Flat Fee
             </h2>
+            <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
+              When adding Equipment under the Hood, an “equipment review” with Plan-Check must be
+              established to ensure health and safety standards and local building codes are in
+              place.
+            </p>
           </div>
           <Link
             to="/restaurant-equipment-review"
