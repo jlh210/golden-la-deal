@@ -81,9 +81,8 @@ function ServicesPage() {
         <div className="mt-12 rounded-xl border border-border bg-card p-7 shadow-elegant">
           <h2 className="text-xl font-display font-bold">Restaurant Equipment Review</h2>
           <p className="mt-3 text-sm text-muted-foreground">
-            When adding Restaurant Equipment to the cooking line, under the Hood we establish an
-            “equipment review” with Health Department plan-check to ensure all the equipment meets
-            health and safety standards and local building codes.
+            When adding Restaurant Equipment to a cook line, under the Hood an “equipment review”
+            must be established to ensure health and safety standards and local building codes.
           </p>
           <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-muted-foreground">
             <li>
