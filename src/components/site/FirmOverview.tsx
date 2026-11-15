@@ -56,11 +56,14 @@ export function FirmOverview({
   className = "",
   intro,
   coreServicesHeading,
+  labelOverrides,
 }: {
   className?: string;
   intro?: ReactNode;
   /** Overrides the first group's heading ("Brief on our core services"). */
   coreServicesHeading?: string;
+  /** Per-page overrides for item labels, keyed by the default label. */
+  labelOverrides?: Record<string, string>;
 }) {
   return (
     <div className={`space-y-3 ${className}`}>
@@ -82,7 +85,7 @@ export function FirmOverview({
           <ul className="mt-1 list-disc space-y-1 pl-5">
             {g.items.map((item) => (
               <li key={item.label}>
-                <strong>{item.label}:</strong> {item.body}
+                <strong>{labelOverrides?.[item.label] ?? item.label}:</strong> {item.body}
               </li>
             ))}
           </ul>
