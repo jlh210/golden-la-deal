@@ -230,7 +230,13 @@ function HomePage() {
                   coreServicesHeading="Brief on our core services"
                   labelOverrides={{
                     "Commercial Leasing": "Retail-Commercial Leasing",
-                    Valuations: "Restaurant Valuations",
+                    Valuations: "Restaurant Business Valuations",
+                  }}
+                  bodyOverrides={{
+                    Valuations:
+                      "To find the correct Purchase Price Valuation we start off by reviewing the Rent, years remaining on the lease, available Options, the average gross monthly sales, Net Monthly Returns, and opportunity assessment. Then performing a Health Department, Code Compliant pre-inspection of the attached and non attached equipment.",
+                    "Health Department Permitting":
+                      "Restaurant Code Compliant pre-inspections. Adding or Changing Equipment under a Plan-Check “Equipment Review”. Navigating health department inspections. Ownership-Change Requirements. Resolving code compliance violations, example, “red tags”.",
                   }}
                 />
               </div>
