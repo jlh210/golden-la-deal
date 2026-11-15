@@ -228,6 +228,10 @@ function HomePage() {
                     </>
                   }
                   coreServicesHeading="Brief on our core services"
+                  labelOverrides={{
+                    "Commercial Leasing": "Retail-Commercial Leasing",
+                    Valuations: "Restaurant Valuations",
+                  }}
                 />
               </div>
               <h1 id="home-title" className="sr-only">
