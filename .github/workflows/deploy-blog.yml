@@ -1,0 +1,56 @@
+name: Deploy blog to Cloudflare
+
+# The autonomous blog publisher commits new posts to main via the GitHub API,
+# which does not reliably trigger Cloudflare's own git-connected build. This
+# workflow runs the same build + deploy that Cloudflare Workers Builds performs,
+# so a newly published post actually goes live without anyone touching it.
+#
+# Triggers:
+#   - push to main under src/content/blog/** (fires the moment a post lands, if
+#     the API commit triggers Actions)
+#   - a schedule ~20 min after each 9am Pacific publish window; both 16:00 and
+#     17:00 UTC are listed so the slot holds across daylight-saving changes
+#     (a redeploy with no new post is harmless/idempotent)
+#   - manual (workflow_dispatch) for testing and one-off deploys
+#
+# Requires the repository secret CLOUDFLARE_API_TOKEN to allow deploying this
+# Worker (Workers Scripts: Edit + Account Settings: Read, for account
+# e9e9f1ee7c7d7826e013d47be606ba94 / worker golden-la-deal).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/content/blog/**"
+  schedule:
+    - cron: "20 16 * * MON,WED,FRI"
+    - cron: "20 17 * * MON,WED,FRI"
+  workflow_dispatch: {}
+
+concurrency:
+  group: deploy-blog-cloudflare
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build site
+        run: bun run build
+
+      - name: Deploy to Cloudflare
+        run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: e9e9f1ee7c7d7826e013d47be606ba94
