@@ -1,5 +1,311 @@
 [
   {
+    "slug": "questions-to-ask-about-reason-for-sale-restaurant",
+    "title": "What to Ask About a Restaurant’s Reason for Sale in Los Angeles",
+    "seoTitle": "Restaurant Buyers: What to Ask About the Seller’s Reason for Sale in Los Angeles",
+    "description": "Use the seller’s reason for sale to surface operational, financial, lease, licensing, and reputational risks before you buy a Los Angeles restaurant. Here is what to ask, what to verify, and when to renegotiate or walk away.",
+    "answer": "Before you buy a Los Angeles restaurant, ask the seller why they are selling and use the answer to test for operational, financial, lease, licensing, and reputational risks that may require a price adjustment, added deal protections, or ending the process. Start with direct questions, match likely motives to documents and third-party checks, and add targeted contingencies in your offer or escrow instructions where risk is not fully known.",
+    "keywords": [
+      "restaurant reason for sale",
+      "questions to ask seller",
+      "buying a restaurant Los Angeles",
+      "restaurant due diligence",
+      "walk away red flags",
+      "escrow holdback",
+      "ABC license transfer",
+      "health permit change of ownership",
+      "successor liability CDTFA"
+    ],
+    "categoryLabel": "Buyer due diligence",
+    "publishedAt": "2026-11-16",
+    "updatedAt": "2026-11-16",
+    "readMinutes": 6,
+    "keyTakeaways": [
+      "Lead with open questions about the seller’s motive, then verify the story with records and third-party checks.",
+      "Map common reasons for sale to specific documents, on-site observations, and contract protections such as escrow holdbacks or longer diligence.",
+      "Treat licensing and health explanations as verifiable claims and confirm them with the responsible agency for the address.",
+      "If the story points to unpaid taxes or vendors, plan for successor-liability checks and potential withholding from the purchase price.",
+      "Be ready to pause or walk away if motive and evidence do not align, or if key risks cannot be contained in the lease or transfer approvals."
+    ],
+    "sections": [
+      {
+        "type": "h2",
+        "text": "Ask these baseline questions first",
+        "id": "section-1"
+      },
+      {
+        "type": "p",
+        "text": "Begin with simple, direct prompts that invite a factual narrative and a timeline. Listen, take notes, and then request the documents that match the story."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "What is the main reason you are selling now and when did you decide?",
+          "What changed in the past 12 to 24 months that made operating harder or less attractive?",
+          "What would you do differently if you kept it for another year?",
+          "What must the next owner fix or invest in immediately to succeed?",
+          "Which months are hardest and why? Seasonality, staff, supply, or neighborhood factors?",
+          "What do regulars love and what do they complain about?",
+          "What landlord, lender, or vendor approvals are needed for a transfer?",
+          "What licenses and permits does the business rely on and are any actions or renewals pending?"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Match common reasons to buyer checks and protections",
+        "id": "section-2"
+      },
+      {
+        "type": "p",
+        "text": "Use the seller’s stated reason to drive evidence requests and deal terms. Start with the items below, then layer in deeper checks from the due-diligence checklist."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Seller says…",
+          "What it could signal",
+          "What to verify",
+          "Protections to request"
+        ],
+        "rows": [
+          [
+            "Retiring or moving",
+            "Normal succession but possible hidden declines or deferred maintenance",
+            "Trailing 24 months P&L and POS detail, bank deposits, payroll, maintenance logs, vendor statements, on-site equipment testing",
+            "Price tied to verified SDE or asset condition, inspection contingency, short list of seller’s post-closing repairs"
+          ],
+          [
+            "Burnout or family reasons",
+            "Operational strain, management gaps, or labor issues",
+            "Manager schedules, turnover, overtime, open positions, interview key staff if appropriate",
+            "Extended diligence period, training transition plan, short-term consulting by seller"
+          ],
+          [
+            "Health inspection or build-out hurdles",
+            "Non-conformances or unapproved work",
+            "Recent inspection reports, plan-check or correction notices, proof of permits for remodels",
+            "Condition precedent that permits and corrections are cleared or a price credit for documented fixes"
+          ],
+          [
+            "Lease pressure or rent going up",
+            "Assignment limits, short remaining term, percentage rent, or personal guaranty exposure",
+            "Full lease with amendments, landlord estoppel and consent terms, rent schedule, options, any default notices",
+            "Closing conditioned on landlord consent and agreed lease terms, guaranty release or limit, rent abatement for delayed consent"
+          ],
+          [
+            "Neighborhood changed or sales fell",
+            "Demand shift, competition, safety, or parking",
+            "Traffic and sales by daypart, customer mix, nearby openings or closures, crime reports, parking terms",
+            "Price reflecting current sales, test period for specific hours, reopen with adjusted concept or menu"
+          ],
+          [
+            "Vendor or tax issues",
+            "Cash-flow stress and potential successor liability on taxes",
+            "Aging payables, lien searches, tax clearances where applicable, escrow instructions for withholdings",
+            "Escrow holdback sized for known exposures, payoff letters, specific indemnities"
+          ],
+          [
+            "ABC or alcohol problems",
+            "Transfer risk or conditions on license",
+            "ABC license record, any pending discipline, and transfer path for license type",
+            "ABC transfer contingency with timelines and responsibilities"
+          ]
+        ]
+      },
+      {
+        "type": "callout",
+        "title": "Where to go deeper",
+        "text": "Use the Help Center due-diligence checklist to expand each verification step and organize requests."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "/help/buying-a-restaurant/restaurant-due-diligence-checklist",
+          "/help/lease-assignments/restaurant-lease-assignment-guide",
+          "/help/alcohol-licensing/abc-license-transfer-guide"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "High-risk answers that justify a pause or walk-away",
+        "id": "section-3"
+      },
+      {
+        "type": "p",
+        "text": "End or pause the process if you hear any of the following and the evidence does not quickly resolve the concern."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Seller refuses to provide bank statements or tax returns to reconcile reported sales.",
+          "Material inconsistencies between POS, bank deposits, tax filings, and vendor statements.",
+          "Undisclosed lease defaults, past due rent, or a landlord unwilling to grant consent on terms acceptable to you.",
+          "Repeated or unresolved health closures with unclear corrective steps.",
+          "Active ABC disciplinary actions or transfer obstacles with no realistic path to approval.",
+          "Large, undocumented payables, tax liens, or payroll issues the seller will not satisfy in escrow."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "If the reason points to licensing or health issues, verify with the agency",
+        "id": "section-4"
+      },
+      {
+        "type": "p",
+        "text": "When a seller cites ABC or health-department problems, treat the explanation as a verifiable claim. In California, ABC requires an application for any person-to-person transfer and may deny the transfer if the buyer is not qualified. For Los Angeles County, a public health permit is issued to the operator and is not transferable on a change of ownership, so a new owner must apply under the correct health authority for the address."
+      },
+      {
+        "type": "callout",
+        "title": "Jurisdiction caveat",
+        "text": "Los Angeles County Environmental Health is the enforcement agency for most of the county. The cities of Long Beach, Pasadena, and Vernon operate their own environmental health departments. Confirm the authority for the specific address before you rely on county guidance or forms."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Pull the ABC license record and ask for any ABC correspondence or conditions tied to the premises or license.",
+          "Confirm the ABC transfer path for the license type and whether any public notices or recordings are required for the file.",
+          "Request recent health inspection reports, any correction notices, and proof that remodels went through plan check where required.",
+          "Budget time for the new owner’s health-permit application and any corrective work before opening."
+        ]
+      },
+      {
+        "type": "sources",
+        "items": [
+          {
+            "title": "ABC: Transfer or Change a License",
+            "href": "https://www.abc.ca.gov/licensing/transfer-or-change-a-license/"
+          },
+          {
+            "title": "ABC: License Application Requirements, including Notice of Intention to Transfer",
+            "href": "https://www.abc.ca.gov/licensing/apply-for-a-new-license/license-application-requirements/"
+          },
+          {
+            "title": "LA County Environmental Health: Public Health Permit/License Application (nontransferable)",
+            "href": "https://publichealth.lacounty.gov/eh/docs/permit/public-health-permit-license-application.pdf"
+          },
+          {
+            "title": "LA County Environmental Health: District Offices note jurisdictions not served (Long Beach, Pasadena, Vernon)",
+            "href": "https://publichealth.lacounty.gov/EH/about/district-offices.htm"
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "If the reason hints at unpaid taxes or vendors, plan for successor-liability checks",
+        "id": "section-5"
+      },
+      {
+        "type": "p",
+        "text": "If the seller cites tax pressure or old vendor balances, assume there could be successor-liability exposure and build protections into escrow. California’s tax agency explains when buyers can be held liable for a predecessor’s unpaid sales and use tax and describes how escrow may be instructed to withhold funds to cover amounts due."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Ask for aging payables and payoff letters for any liens or equipment loans.",
+          "Direct escrow to request tax clearances where applicable and to withhold funds if the agency instructs them to do so.",
+          "Size holdbacks to documented exposures and release them against proof of resolution.",
+          "Use specific indemnities in the purchase agreement for pre-closing liabilities that cannot be cleared before closing."
+        ]
+      },
+      {
+        "type": "sources",
+        "items": [
+          {
+            "title": "CDTFA Publication 74: Notifying CDTFA when buying or selling a business, including successor’s liability and escrow withholding",
+            "href": "https://cdtfa.ca.gov/formspubs/pub74/notifying-cdtfa.htm"
+          },
+          {
+            "title": "Sales and Use Tax Regulations, Article 18 (Successor’s Liability)",
+            "href": "https://cdtfa.ca.gov/lawguides/vol1/sutr/sales-and-use-tax-regulations-art18-all.html"
+          },
+          {
+            "title": "CDTFA Compliance Policy and Procedures Manual, Chapter 7 (successor liability concepts)",
+            "href": "https://cdtfa.ca.gov/taxes-and-fees/manuals/cpm-07.pdf"
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Negotiation levers tied to motive",
+        "id": "section-6"
+      },
+      {
+        "type": "p",
+        "text": "Translate what you learn into concrete terms in your letter of intent and escrow instructions."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Price adjustment tied to verified trailing earnings or current asset condition.",
+          "Longer diligence window when the story depends on third-party approvals or plan-check outcomes.",
+          "Escrow holdbacks sized to known exposures, with clear release milestones.",
+          "Representations and warranties that match the seller’s statements about permits, payables, and the absence of undisclosed disputes.",
+          "Conditions precedent for landlord consent, ABC transfer milestones, and receipt of required clearances."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "What to capture in writing",
+        "id": "section-7"
+      },
+      {
+        "type": "p",
+        "text": "Document the reason for sale and the key facts behind it. Your goal is to avoid later disagreement about what was promised or assumed."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "A short written summary of the seller’s reason for sale that both sides initial.",
+          "A list of documents the seller will provide and the dates you expect them.",
+          "Specific contingencies, holdbacks, and responsibilities with timelines.",
+          "Any training or transition support period you are relying on after closing."
+        ]
+      },
+      {
+        "type": "callout",
+        "title": "Practical rule of thumb",
+        "text": "If motive and evidence still do not align, favor more time, smaller nonrefundable deposits, or walking away over absorbing unbounded risk."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "If a seller says they are retiring, what should I still verify?",
+        "a": "If a seller says they are retiring, you should still verify trailing 24 months of sales and cash flow, confirm that equipment works, and check that the lease and key permits are in good standing. Ask for bank statements and tax returns to reconcile reported sales and request recent health inspection reports and any outstanding corrections."
+      },
+      {
+        "q": "How should I respond if the reason for sale is health-department trouble?",
+        "a": "If the reason for sale is health-department trouble, you should read recent inspection reports, correction notices, and any plan-check history. Confirm which health authority serves the address, because some cities in Los Angeles County have their own departments. Price for corrective work or condition closing on documented clearance where feasible."
+      },
+      {
+        "q": "What if the seller mentions alcohol-license complications?",
+        "a": "If the seller mentions alcohol-license complications, you should confirm the license record, any pending ABC discipline, and the correct transfer path for the license type. Make closing contingent on transfer milestones with clear timelines and responsibilities."
+      },
+      {
+        "q": "How do tax or vendor issues change the deal?",
+        "a": "If the seller cites tax or vendor issues, you should plan for successor-liability checks and potential withholding in escrow to cover unpaid amounts. Ask for aging payables and payoff letters and use holdbacks and specific indemnities until liabilities are cleared."
+      }
+    ],
+    "commercialParent": {
+      "title": "Buyer Representation for Los Angeles Restaurants",
+      "to": "/buy-a-restaurant"
+    },
+    "related": [
+      {
+        "title": "Restaurant Due Diligence Findings: Proceed, Renegotiate or Pause?",
+        "to": "/blog/restaurant-buyer-due-diligence-checklist"
+      },
+      {
+        "title": "How a California ABC Restaurant License Transfer Works",
+        "to": "/help/alcohol-licensing/abc-license-transfer-guide"
+      },
+      {
+        "title": "Restaurant Valuation in Los Angeles: Earnings, Assets and Risk",
+        "to": "/blog/restaurant-valuation-los-angeles-2026"
+      }
+    ],
+    "automationSlot": "2026-11-16"
+  },
+  {
     "slug": "second-generation-restaurant-space-explained",
     "title": "What Is a Second-Generation Restaurant Space?",
     "seoTitle": "What Is a Second-Generation Restaurant Space? | Penthouse Advisors",
