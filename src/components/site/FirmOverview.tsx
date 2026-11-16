@@ -10,12 +10,12 @@ const groups: { heading: string; items: { label: string; body: string }[] }[] = 
         body: "Assisting clients with buying or selling existing restaurants, bars, and food service businesses.",
       },
       {
-        label: "Commercial Leasing",
+        label: "Retail-Commercial Leasing",
         body: "Securing vacant second-generation spaces, handling lease negotiations, and managing landlord lease assignments.",
       },
       {
-        label: "Valuations",
-        body: "Performing pre-purchase business investigations and opportunity assessments.",
+        label: "Restaurant Business Valuations",
+        body: "To find the correct Purchase Price Valuation we start off by reviewing the Rent, years remaining on the lease, available Options, the average gross monthly sales, Net Monthly Returns, and opportunity assessment. Then performing a Health Department, Code Compliant pre-inspection of the attached and non attached equipment.",
       },
     ],
   },
@@ -28,7 +28,7 @@ const groups: { heading: string; items: { label: string; body: string }[] }[] = 
       },
       {
         label: "Health Department Permitting",
-        body: "Navigating health department inspections, ownership-change requirements, plan-checks, and resolving code compliance violations or “red tags”.",
+        body: "Restaurant Code Compliant pre-inspections. Adding or Changing Equipment under a Plan-Check “Equipment Review”. Navigating health department inspections. Ownership-Change Requirements. Resolving code compliance violations, example, “red tags”.",
       },
     ],
   },
