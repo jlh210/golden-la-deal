@@ -13,9 +13,11 @@ name: Deploy blog to Cloudflare
 #     (a redeploy with no new post is harmless/idempotent)
 #   - manual (workflow_dispatch) for testing and one-off deploys
 #
-# Requires the repository secret CLOUDFLARE_API_TOKEN to allow deploying this
-# Worker (Workers Scripts: Edit + Account Settings: Read, for account
-# e9e9f1ee7c7d7826e013d47be606ba94 / worker golden-la-deal).
+# Requires the repository secret CF_DEPLOY_TOKEN: a Cloudflare API token with
+# the "Edit Cloudflare Workers" permissions (Workers Scripts: Edit + Account
+# Settings: Read), for account e9e9f1ee7c7d7826e013d47be606ba94. The worker name
+# is forced to golden-la-deal because the repo's wrangler.jsonc name ("penthouse")
+# differs from the live Worker that Cloudflare's own build deploys to.
 
 on:
   push:
@@ -50,7 +52,7 @@ jobs:
         run: bun run build
 
       - name: Deploy to Cloudflare
-        run: npx wrangler deploy
+        run: npx wrangler deploy --name golden-la-deal
         env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_DEPLOY_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: e9e9f1ee7c7d7826e013d47be606ba94
