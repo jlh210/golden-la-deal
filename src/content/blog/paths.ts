@@ -1,6 +1,5 @@
 // Exact public production URLs; no inferred dates.
 export const blogPaths = [
-  "/blog/evaluate-restaurant-lease-escalations-and-assignment-restrictions-los-angeles",
   "/blog/questions-to-ask-about-reason-for-sale-restaurant",
   "/blog/best-la-neighborhoods-open-restaurant-2026",
   "/blog",
