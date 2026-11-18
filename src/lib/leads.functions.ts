@@ -1,5 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
+import { sendLeadAlert } from "./lead-alerts.server";
 
 const SHEET_ID = "1XxSXkc43h9qV4CeSgYzudsAbPfGDXk2rQn24y7_0Yhg";
 const SHEET_NAME = "Website leads";
@@ -302,6 +303,21 @@ export const submitLead = createServerFn({ method: "POST" })
       console.error("Sheets append failed", res.status);
       throw new Error(`Sheets append failed: ${res.status}`);
     }
+
+    // Lead is saved; now alert the team. sendLeadAlert never throws, so an
+    // alert problem can never break the form for the visitor.
+    await sendLeadAlert({
+      name: row[0],
+      phone: row[1],
+      email: row[2],
+      source: row[3],
+      role: row[4],
+      serviceNeeded: row[5],
+      timeline: row[7],
+      financing: row[8],
+      timestamp: row[9],
+      notes: row[10],
+    });
 
     return { ok: true, bookingReference };
   });
