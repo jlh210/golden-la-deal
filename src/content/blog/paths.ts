@@ -1,5 +1,6 @@
 // Exact public production URLs; no inferred dates.
 export const blogPaths = [
+  "/blog/what-happens-to-the-restaurant-health-permit-when-ownership-changes-in-los-angeles-county",
   "/blog/questions-to-ask-about-reason-for-sale-restaurant",
   "/blog/best-la-neighborhoods-open-restaurant-2026",
   "/blog",
