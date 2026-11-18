@@ -1,6 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
-import { SiteLayout, PHONE, PHONE_HREF } from "@/components/site/Layout";
+import {
+  SiteLayout,
+  PHONE,
+  PHONE_HREF,
+  EMAIL,
+  EMAIL_HREF,
+  HOURS,
+} from "@/components/site/Layout";
 import { CONSULTATION_LABEL } from "@/lib/consultation";
 import { FirmOverview } from "@/components/site/FirmOverview";
 import { SITE_URL, ORG_ID, WEBSITE_ID, faqScript } from "@/lib/seo";
@@ -212,6 +219,41 @@ function HomePage() {
   return (
     <SiteLayout>
       <div className="pa-home">
+        <section
+          className="pa-home-top-cta border-b border-[#dedbd3] bg-[#faf9f5]"
+          aria-label="Book a consultation"
+        >
+          <div className="pa-shell space-y-1 py-5 text-sm leading-relaxed">
+            <p>
+              <strong>Need Business Advise &amp; Solutions, Fast?</strong>{" "}
+              <strong>
+                <em>
+                  Click “
+                  <Link to="/contact" className="underline hover:opacity-80">
+                    Have Questions
+                  </Link>
+                  ” to Book a 30-Minute $35 mobile-to-mobile consultation for real answers on
+                  restaurants, properties, and city matters.
+                </em>
+              </strong>
+            </p>
+            <p>
+              Other Matters: Call or Text:{" "}
+              <a href={PHONE_HREF} className="font-semibold hover:underline">
+                {PHONE}
+              </a>
+            </p>
+            <p>
+              <a href={EMAIL_HREF} className="font-semibold break-all hover:underline">
+                {EMAIL}
+              </a>
+            </p>
+            <p>{HOURS}</p>
+            <p>
+              <strong>Thank you, Richard Stein COO · Roschard Paticchio-Stein CEO</strong>
+            </p>
+          </div>
+        </section>
         <section className="pa-hero" aria-labelledby="home-title">
           <div className="pa-shell pa-hero-grid">
             <div className="pa-hero-copy">
