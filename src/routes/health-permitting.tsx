@@ -126,7 +126,7 @@ const recentPermits = [
   },
   { addr: "Mar Vista, Los Angeles, Restaurant", status: "Health Dept Inspection Approval" },
   { addr: "Manhattan Beach, Pizza Restaurant", status: "Equipment Review Pending" },
-  { addr: "6th Street, Pick Up Restaurant", status: "Health Dept Inspection Pending" },
+  { addr: "6th Street, Downtown Los Angeles, Pick Up Restaurant", status: "Health Dept Inspection Pending" },
 ];
 
 const statusStyle: Record<string, string> = {
