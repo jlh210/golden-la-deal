@@ -127,6 +127,10 @@ const recentPermits = [
   { addr: "Mar Vista, Los Angeles, Restaurant", status: "Health Dept Inspection Approval" },
   { addr: "Manhattan Beach, Pizza Restaurant", status: "Equipment Review Pending" },
   { addr: "6th Street, Downtown Los Angeles, Pick Up Restaurant", status: "Health Dept Inspection Pending" },
+  {
+    addr: "La Cienega, Japanese Restaurant",
+    status: "Change of Use followed by ABC 41 License Pending",
+  },
 ];
 
 const statusStyle: Record<string, string> = {
@@ -145,6 +149,8 @@ const statusStyle: Record<string, string> = {
   "Health Dept Inspection Approval": "bg-gold/15 text-gold border-gold/40",
   "Health Dept Inspection Pending": "bg-foreground/10 text-foreground/85 border-border",
   "Restaurant Remodel Pending": "bg-foreground/10 text-foreground/85 border-border",
+  "Change of Use followed by ABC 41 License Pending":
+    "bg-foreground/10 text-foreground/85 border-border",
 };
 
 function PermittingPage() {
