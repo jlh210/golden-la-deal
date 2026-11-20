@@ -108,7 +108,7 @@ const recentPermits = [
   { addr: "Beverly Blvd, Mid-City", status: "Permit Approved Open" },
   { addr: "Main St, Santa Monica", status: "Red Tag Corrected" },
   { addr: "Echo Park, Coffee Shop", status: "Equipment Review Pending" },
-  { addr: "Burbank, Restaurant", status: "Equipment Review Pending" },
+  { addr: "Burbank, Restaurant", status: "Restaurant Remodel Pending" },
   { addr: "Santa Monica, Restaurant", status: "Red Tag Removed, Health Dept Permit Issued" },
   { addr: "Woodland Hills, Meat Market", status: '"Change of Use" & Health Dept Permit, Pending' },
   { addr: "West Los Angeles, Restaurant", status: "Red Tag Removed, Health Dept Permit Issuance Complete" },
@@ -144,6 +144,7 @@ const statusStyle: Record<string, string> = {
     "bg-gold/15 text-gold border-gold/40",
   "Health Dept Inspection Approval": "bg-gold/15 text-gold border-gold/40",
   "Health Dept Inspection Pending": "bg-foreground/10 text-foreground/85 border-border",
+  "Restaurant Remodel Pending": "bg-foreground/10 text-foreground/85 border-border",
 };
 
 function PermittingPage() {
