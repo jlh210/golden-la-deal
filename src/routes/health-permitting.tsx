@@ -262,8 +262,8 @@ function PermittingPage() {
                 key={i}
                 className={`flex items-center justify-between rounded-lg border p-4 ${
                   /pending/i.test(r.status)
-                    ? "border-destructive/30 bg-destructive/10"
-                    : "border-gold/30 bg-gold/10"
+                    ? "border-green-500/30 bg-green-500/10"
+                    : "border-gray-500/30 bg-gray-500/10"
                 }`}
               >
                 <div className="font-semibold text-sm">{r.addr}</div>
