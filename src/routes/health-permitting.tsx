@@ -260,7 +260,11 @@ function PermittingPage() {
             {recentPermits.map((r, i) => (
               <div
                 key={i}
-                className="flex items-center justify-between rounded-lg border border-border bg-card p-4"
+                className={`flex items-center justify-between rounded-lg border p-4 ${
+                  /pending/i.test(r.status)
+                    ? "border-destructive/30 bg-destructive/10"
+                    : "border-gold/30 bg-gold/10"
+                }`}
               >
                 <div className="font-semibold text-sm">{r.addr}</div>
                 <span
