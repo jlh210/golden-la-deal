@@ -1,5 +1,267 @@
 [
   {
+    "slug": "what-financial-records-to-review-before-buying-a-los-angeles-restaurant",
+    "title": "What Financial Records To Review Before Buying a Los Angeles Restaurant",
+    "seoTitle": "Financial Records To Review Before Buying a Los Angeles Restaurant",
+    "description": "A buyer’s guide to the financial documents to request for a Los Angeles restaurant, how to verify earnings, common red flags, and when findings should change price, terms, or your decision.",
+    "answer": "Before you buy a Los Angeles restaurant, request a complete financial packet covering at least the last 24 months, reconcile sales and deposits across independent systems, adjust the P&L to a normalized seller’s discretionary earnings (SDE), and verify tax, permit, and license items that can affect cash flow or closing. Use discrepancies to renegotiate price or terms, add escrow holdbacks for specific risks, or pause until verified.",
+    "keywords": [
+      "restaurant due diligence",
+      "restaurant financial records",
+      "Los Angeles restaurant buyers",
+      "SDE adjustments",
+      "verify restaurant sales",
+      "CDTFA successor liability",
+      "ABC license transfer",
+      "LA County health permit"
+    ],
+    "categoryLabel": "Buying a Restaurant",
+    "publishedAt": "2026-11-20",
+    "updatedAt": "2026-11-20",
+    "readMinutes": 6,
+    "keyTakeaways": [
+      "Ask for a full two-year financial packet and reconcile revenue across POS, bank, tax returns, merchant, and delivery platform statements.",
+      "Normalize the P&L to SDE by removing one-time items and owner-only benefits, and by adding the market rent and realistic labor costs you will actually pay.",
+      "Treat taxes, ABC licensing, and health permitting as cash flow variables. Missing clearances or non-transferable approvals can delay operations or require withholds in escrow.",
+      "Use document gaps, unexplained variances, unpaid taxes, or unstable lease costs as grounds to renegotiate price, add holdbacks, or pause.",
+      "Link findings back to value. Price should track documented, normalized earnings plus the risk in the lease, permits, and equipment."
+    ],
+    "sections": [
+      {
+        "type": "h2",
+        "text": "The core financial packet to request first",
+        "id": "section-1"
+      },
+      {
+        "type": "p",
+        "text": "Start by asking the seller to provide a complete, consistent packet for the most recent 24 months (36 is better) plus year-to-date. Read it as one system, not as separate documents."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Monthly profit and loss (P&L) statements and a trailing-12 summary",
+          "Year-end financials and the most recent interim P&L and balance sheet",
+          "Federal income tax returns for the business entity for two full years (for example, 1120S, 1065) and owner K-1s",
+          "Signed monthly bank statements for all operating and payroll accounts with check images enabled",
+          "Full POS reports showing daily sales, voids, comps, discounts, payment tenders, and Z-tapes or end-of-day summaries",
+          "Merchant processor and chargeback statements, including 1099-K forms",
+          "Third-party delivery platform payout and fee reports",
+          "Sales and use tax returns and payment confirmations",
+          "Payroll registers and quarterly payroll tax filings",
+          "Accounts payable and receivable aging, vendor statements, and any open credit terms",
+          "Loan and equipment lease schedules, UCC filings noticed to the business, and any personal guarantees disclosed",
+          "Utilities, waste, and grease service bills",
+          "Current rent invoice, CAM/NNN reconciliations, and any percentage-rent statements",
+          "Inventory counts at month-end for three consecutive periods using the same method",
+          "Equipment list with serial numbers and proof of ownership or lease"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Turn statements into a number you can underwrite: normalized SDE",
+        "id": "section-2"
+      },
+      {
+        "type": "p",
+        "text": "To decide if the asking price is supported, convert the seller’s P&L into a normalized seller’s discretionary earnings (SDE). Do the math in a copy of the P&L so you keep an audit trail."
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Start with net income on the P&L.",
+          "Add back a single working owner’s W-2 wages and benefits, personal or nonoperating expenses (for example, owner car, family cell plans, personal travel), interest expense, income taxes, and depreciation/amortization.",
+          "Remove one-time or nonrecurring gains and losses, and replace unusual shortfalls with realistic run-rate numbers where you have documentation (for example, a month closed for a flood that will not repeat).",
+          "Replace related-party terms with market terms you will pay. Most often this is rent. Use the lease’s actual base rent schedule and typical pass-throughs to compute a forward 12-month occupancy cost.",
+          "Normalize labor. If owners or family cover shifts below market pay, add the real wage cost to run the hours shown on schedules and POS labor reports.",
+          "Check consistency. Reconcile the SDE result to bank deposits, 1099-K, sales tax returns, and POS totals for the same periods. Gaps should be explained with documents, not just narratives."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Verify sales three independent ways",
+        "id": "section-3"
+      },
+      {
+        "type": "p",
+        "text": "Sales that only appear on one system are not enough. Cross-check the same date ranges across independent sources."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "POS daily summaries versus merchant processor and delivery payouts. Voids, discounts, and offline sales must reconcile to tender totals.",
+          "Total bank deposits versus gross POS sales less cash paid out and less card processor holds or reserves. Trace a few random days from POS to the exact bank deposit.",
+          "Sales tax returns versus POS taxable sales. Confirm that reported taxable sales align with menu mix and exempt items, then test one period in detail.",
+          "1099-K totals versus merchant statements and bank deposits. Investigate gaps from platform-level remittances, reserves, chargebacks, or equipment financing deductions.",
+          "Cash handling. Review cash logs, safe counts, and petty cash payouts. If cash is material, perform surprise spot checks during an observation period with seller cooperation."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Regulatory and tax records that can change cash flow or timing",
+        "id": "section-4"
+      },
+      {
+        "type": "p",
+        "text": "Plan for permit, license, and tax items that affect operations and escrow. In Los Angeles County, the public health permit is non-transferable on a change in ownership, so a new owner applies for the permit in their own name. Confirm the correct health authority for your address and sequence permitting with escrow."
+      },
+      {
+        "type": "p",
+        "text": "If the business sells alcohol, budget for an ABC license transfer. A license cannot be transferred from one person to another without filing an application with ABC signed by the current licensee and the transferee, and ABC may deny the transfer if the buyer is not qualified. Do not plan to operate (sell alcohol) until ABC issues you either a Temporary Permit (for person-to-person transfers at the same premises) or an Interim Operating Permit (generally available when a protested application is recommended for approval). Without one of these permits in your name, you cannot lawfully sell alcohol while the transfer is pending."
+      },
+      {
+        "type": "p",
+        "text": "Protect against sales and use tax successor liability. CDTFA advises buyers to request a Tax and Fee Clearance from CDTFA, and, if a liability exists, escrow may be instructed to withhold from the purchase price to cover it. Regulation 1702 explains the successor’s duty to withhold sufficient purchase price to cover the seller’s tax liability."
+      },
+      {
+        "type": "callout",
+        "title": "Local caveats to verify",
+        "text": "Advisory notes for Los Angeles addresses: Environmental Health is the local enforcement agency for most of Los Angeles County except in the independent jurisdictions of the Cities of Long Beach, Pasadena, and Vernon, so confirm which agency covers your address before sequencing permit steps with escrow. Also verify whether any plan check is triggered by menu or equipment changes, and whether the lease or lender requires ABC transfer approval before closing. Treat each as a scheduling and cash flow variable, not a post-closing surprise."
+      },
+      {
+        "type": "sources",
+        "items": [
+          {
+            "title": "Retail Food Inspection Guide – LA County DPH Environmental Health (non‑transferable permit)",
+            "href": "https://publichealth.lacounty.gov/eh/inspection/retail-food-inspection-guide.htm"
+          },
+          {
+            "title": "Local Agency Management Program Approval – Jurisdiction Exceptions",
+            "href": "https://admin.publichealth.lacounty.gov/eh//docs/about/local-agency-management-program-approval.pdf"
+          },
+          {
+            "title": "ABC Transfer or Change a License – FAQs and transfer types",
+            "href": "https://www.abc.ca.gov/licensing/transfer-or-change-a-license/"
+          },
+          {
+            "title": "Information Concerning Temporary Permits – ABC",
+            "href": "https://www.abc.ca.gov/information-concerning-temporary-permits/"
+          },
+          {
+            "title": "Information Concerning Interim Operating Permit (ABC‑275) – ABC",
+            "href": "https://www.abc.ca.gov/wp-content/uploads/forms/ABC-275.pdf"
+          },
+          {
+            "title": "Information Regarding Alcoholic Beverage License Applications and Protests – ABC",
+            "href": "https://www.abc.ca.gov/information-regarding-alcoholic-beverage-license-applications-and-protests/"
+          },
+          {
+            "title": "CDTFA Publication 74 – Notifying CDTFA; Tax and Fee Clearance and successor liability",
+            "href": "https://cdtfa.ca.gov/formspubs/pub74/notifying-cdtfa.htm"
+          },
+          {
+            "title": "CDTFA Regulation 1702 – Successor’s Liability and Withholding Duty",
+            "href": "https://cdtfa.ca.gov/lawguides/vol1/sutr/1702.html"
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Lease, occupancy, and vendor costs that will change your earnings",
+        "id": "section-5"
+      },
+      {
+        "type": "p",
+        "text": "Forecast your go-forward cost structure from documents, not rules of thumb. Use the lease to build a 12-month schedule of base rent, percent rent triggers, and pass-throughs, then layer in realistic utilities, waste, pest, linen, and hood or fire service costs from recent invoices."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Executed lease, amendments, estoppels if offered, and the current rent statement",
+          "CAM/NNN reconciliation and any pending true-up notices",
+          "Utility bills for electricity, gas, water, and dedicated equipment (for example, walk-in condensers)",
+          "Waste, grease, hood and fire, pest, linen, and security contracts with current rates and surcharges",
+          "Vendor statements for top ten food and beverage suppliers, plus any rebates or marketing funds"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Equipment ownership, liens, and what you are really buying",
+        "id": "section-6"
+      },
+      {
+        "type": "p",
+        "text": "Confirm whether kitchen equipment, POS, and smallwares are owned free and clear, leased, or subject to liens. Match the equipment list and serial numbers to invoices, leases, and any UCC or lender schedules. If any item is financed, tie the payoff to escrow instructions and consider a holdback until you have written lien releases."
+      },
+      {
+        "type": "h2",
+        "text": "Red flags that justify a price change, holdback, pause, or walk-away",
+        "id": "section-7"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Sales that do not reconcile across POS, bank, 1099-K, and sales tax returns",
+          "Cash sales unusually high relative to concept and payment mix without strong controls",
+          "Large owner add-backs with no third-party documentation",
+          "Under-market related-party rent or labor that will not carry over to you",
+          "A lease with near-term jumps, back rent, or unresolved defaults",
+          "Material negative inspection history or permit gaps that will require plan check before you can operate",
+          "Open tax balances, CDTFA liens, or a seller unwilling to authorize a tax clearance request",
+          "Equipment with missing serial numbers, mismatched invoices, or undisclosed leases",
+          "Third-party delivery statements that do not match POS and bank deposits"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Where this fits in your diligence timeline",
+        "id": "section-8"
+      },
+      {
+        "type": "p",
+        "text": "Run this records review in parallel with your site visits and interviews, and before you finalize price and terms. For a step-by-step process, use our buyer checklist, then connect findings back to value and closing conditions."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Restaurant Due Diligence Checklist",
+          "Restaurant Valuation in Los Angeles: Earnings, Assets and Risk",
+          "Buyer Representation for Los Angeles Restaurants"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What exact P&L items should I adjust to calculate SDE for a restaurant?",
+        "a": "Adjust for a single working owner’s compensation and benefits, personal or nonoperating expenses, interest, taxes, and noncash items like depreciation and amortization. Replace related-party rent and below-market family labor with the market costs you will actually pay, and remove one-time or nonrecurring items. Reconcile your SDE result back to bank deposits, 1099-K totals, sales tax returns, and POS reports for the same periods."
+      },
+      {
+        "q": "When should I insist on signed bank statements and tax returns instead of owner-prepared P&Ls?",
+        "a": "Ask for signed bank statements and filed tax returns whenever the P&L is missing, cash sales are material, or deposits do not reconcile to POS and merchant statements. Cross-verification with third-party statements reduces the risk of errors or omissions."
+      },
+      {
+        "q": "How do I verify third-party delivery revenue before closing?",
+        "a": "Request the platform payout reports and order-level summaries by month, then tie them to POS totals and to bank deposits. Investigate fees, chargebacks, and reserve holds. If POS does not itemize delivery versus on-premise sales, ask the seller to run separate reports for a test period and reconcile them to platform payouts."
+      },
+      {
+        "q": "What records show whether equipment is owned, leased, or subject to liens?",
+        "a": "Use the equipment list with serial numbers, invoices, and any loan or lease schedules. Match serial numbers to contracts, request payoff letters from any lender or lessor, and obtain written lien releases through escrow before funds are released."
+      },
+      {
+        "q": "How should lease escalations and CAM charges change price and terms?",
+        "a": "Model the next 12 to 24 months of base rent, percentage rent, and pass-throughs from the lease and recent reconciliations, then update your SDE. If costs jump soon after closing, use that forecast to renegotiate price or add an escrow holdback for specific risks that you can quantify from documents."
+      }
+    ],
+    "commercialParent": {
+      "title": "Buyer Representation",
+      "to": "/buy-a-restaurant"
+    },
+    "related": [
+      {
+        "title": "Restaurant Due Diligence Findings: Proceed, Renegotiate or Pause?",
+        "to": "/blog/restaurant-buyer-due-diligence-checklist"
+      },
+      {
+        "title": "Restaurant Valuation in Los Angeles: Earnings, Assets & Risk",
+        "to": "/blog/restaurant-valuation-los-angeles-2026"
+      },
+      {
+        "title": "Type 41 vs. Type 47: California Restaurant Liquor Licenses",
+        "to": "/blog/type-41-vs-type-47-liquor-license-california"
+      }
+    ],
+    "automationSlot": "2026-11-20"
+  },
+  {
     "slug": "what-happens-to-the-restaurant-health-permit-when-ownership-changes-in-los-angeles-county",
     "title": "What Happens to the Restaurant Health Permit When Ownership Changes in Los Angeles County?",
     "seoTitle": "LA County restaurant sale: what happens to the health permit",
