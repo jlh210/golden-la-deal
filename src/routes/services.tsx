@@ -98,6 +98,39 @@ function ServicesPage() {
           </Link>
         </div>
 
+        <div className="mt-12 rounded-xl border border-border bg-card p-7 shadow-elegant">
+          <h2 className="text-xl font-display font-bold">
+            Door Knocking for Retail Film Locations Throughout Los Angeles County
+          </h2>
+          <p className="mt-1 text-sm font-semibold text-gold">One-Time Fee per Script $2,750</p>
+          <h3 className="mt-4 text-base font-display font-bold">Research the Location</h3>
+          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-muted-foreground">
+            <li>We need to understand the significance of the location in the film.</li>
+            <li>
+              Familiarize ourselves with any filming history or notable scenes associated with
+              the site.
+            </li>
+            <li>
+              Choose the appropriate times to go door knocking, avoiding early mornings or late
+              evenings.
+            </li>
+            <li>Be ready to answer questions about the interest in the location.</li>
+            <li>Share any relevant details about the film project.</li>
+            <li>
+              Check if there are any regulations regarding filming or photography in the area.
+            </li>
+            <li>
+              If the above is clear, we set up a Location Tour for the Director and Producer.
+            </li>
+          </ul>
+          <Link
+            to="/contact"
+            className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-gold"
+          >
+            Film Location Door Knocking - $2,750 per Script <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        </div>
+
         <div className="mt-12 flex flex-wrap gap-3">
           <Link to="/contact" className="pa-button">
             {CONSULTATION_LABEL} <ArrowRight className="h-4 w-4" />
