@@ -145,6 +145,10 @@ function ServicesPage() {
               lease-only deal; therefore, the new tenant must supply us with a bank statement
               showing liquidity, with the account number crossed out for security.
             </li>
+            <li>
+              Under Restaurant Business Sales for Sale, the Buyer must supply a bank statement and
+              credit report, and go over their work-related experience.
+            </li>
           </ul>
           <Link
             to="/contact"
