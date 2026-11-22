@@ -131,6 +131,30 @@ function ServicesPage() {
           </Link>
         </div>
 
+        <div className="mt-12 rounded-xl border border-border bg-card p-7 shadow-elegant">
+          <h2 className="text-xl font-display font-bold">
+            Door Knocking for Restaurants and Retail Businesses for Lease, for Sale, Throughout
+            Los Angeles County
+          </h2>
+          <p className="mt-1 text-sm font-semibold text-gold">
+            One-Time Fee per Signed Lease $2,750
+          </p>
+          <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-muted-foreground">
+            <li>
+              Restaurant Asset Sales leased by the Landlord cannot require Key Money. This is a
+              lease-only deal; therefore, the new tenant must supply us with a bank statement
+              showing liquidity, with the account number crossed out for security.
+            </li>
+          </ul>
+          <Link
+            to="/contact"
+            className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-gold"
+          >
+            Restaurant &amp; Retail Door Knocking - $2,750 per Signed Lease{" "}
+            <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        </div>
+
         <div className="mt-12 flex flex-wrap gap-3">
           <Link to="/contact" className="pa-button">
             {CONSULTATION_LABEL} <ArrowRight className="h-4 w-4" />
