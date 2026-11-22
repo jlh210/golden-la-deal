@@ -125,8 +125,9 @@ function ServicesPage() {
               showing liquidity, with the account number crossed out for security.
             </li>
             <li>
-              Under Restaurant Business Sales for Sale, the Buyer must supply a bank statement and
-              credit report, and go over their work-related experience.
+              Under Restaurant Business Sales, the Buyer must supply a bank statement showing
+              liquidity and a credit report, along with a synopsis of their work-related
+              experience.
             </li>
           </ul>
           <Link
