@@ -226,7 +226,6 @@ function HomePage() {
                 Penthouse Advisors Inc., “Full Service” Premier Restaurant Business Advisory Firm
                 &amp; Brokerage. Servicing Los Angeles County
               </p>
-              <p className="pa-kicker">Retail Business Advisor and Brokerage · Los Angeles County</p>
               <div
                 className="pa-home-top-cta my-4 max-w-[535px] space-y-1 border-y border-[#dedbd3] py-4 text-sm leading-relaxed"
                 aria-label="Book a consultation"
