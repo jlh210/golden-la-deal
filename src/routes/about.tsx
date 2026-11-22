@@ -139,7 +139,7 @@ function AboutPage() {
     <SiteLayout>
       <PageHero
         eyebrow="About Us"
-        lead="Penthouse Advisors Inc. Los Angeles County’s Premier Restaurant & Business Advisory Firm."
+        lead="Penthouse Advisors Inc. Los Angeles County’s Premier Restaurant & Business Advisory “Full Service” Firm."
         title="Servicing LA County's Restaurants & Businesses."
         hideHeadingCta
       >
