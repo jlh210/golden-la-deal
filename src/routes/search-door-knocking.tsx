@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { DoorOpen } from "lucide-react";
+import { Clapperboard, DoorOpen } from "lucide-react";
 import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { LeadForm } from "@/components/site/LeadForm";
@@ -109,6 +109,21 @@ function SearchDoorKnockingPage() {
           subtitle="Tell us the area and concept. We respond same business day."
           messagePlaceholder="Address of my current restaurant"
         />
+      </section>
+
+      <section className="container-x pb-12 md:pb-20">
+        <div className="rounded-2xl border border-border bg-card p-8 shadow-elegant">
+          <div className="grid h-12 w-12 place-items-center rounded-md bg-gold/10 text-gold border border-gold/30">
+            <Clapperboard className="h-6 w-6" />
+          </div>
+          <h2 className="mt-5 text-2xl font-display font-bold">
+            Door Knocking for Retail Film Locations Throughout Los Angeles County
+          </h2>
+          <p className="mt-4 text-muted-foreground leading-relaxed">
+            One-Time Fee per Script, good for one (1) year,{" "}
+            <strong className="font-semibold text-foreground">$2,750</strong>
+          </p>
+        </div>
       </section>
     </SiteLayout>
   );
