@@ -222,7 +222,7 @@ function HomePage() {
         <section className="pa-hero" aria-labelledby="home-title">
           <div className="pa-shell pa-hero-grid">
             <div className="pa-hero-copy">
-              <p className="pa-home-top-tagline mb-3 max-w-[535px] text-base leading-snug font-semibold text-[#2b2b2b]">
+              <p className="pa-home-top-tagline mb-4 max-w-[535px] text-2xl leading-tight font-semibold text-gold md:text-3xl">
                 Penthouse Advisors Inc., “Full Service” Premier Restaurant Business Advisory Firm
                 &amp; Brokerage. Servicing Los Angeles County
               </p>
