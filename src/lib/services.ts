@@ -51,7 +51,7 @@ export const services: Service[] = [
     slug: "brokerage",
     to: "/restaurants-for-sale",
     title:
-      "Los Angeles County Listings: Restaurants for Sale, Selected Business, Medical Lease Opportunities",
+      "Los Angeles County Listings: Restaurant For Sale, Selected Business, Medical Lease Opportunities",
     short: "Confidential buy/sell brokerage with full disclosure across LA County.",
     icon: ArrowRightLeft,
     featured: true,
