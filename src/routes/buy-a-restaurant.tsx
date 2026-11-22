@@ -133,8 +133,7 @@ function BuyARestaurantPage() {
               Live Opportunities
             </p>
             <h2 className="mt-2 text-2xl md:text-4xl font-display font-bold leading-tight">
-              Restaurants for sale in Los Angeles{" "}
-              <span className="text-gold">&amp; selected business and lease opportunities.</span>
+              Restaurants for sale in Los Angeles &amp; selected business and lease opportunities.
             </h2>
             <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold">
               Browse live opportunities{" "}
