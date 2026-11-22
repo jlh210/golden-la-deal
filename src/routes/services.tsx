@@ -77,7 +77,12 @@ function ServicesPage() {
           <p className="mt-1 text-sm font-semibold text-gold">One-Time Fee per Script, good for one year, $2,750</p>
           <h3 className="mt-4 text-base font-display font-bold">Research the Location</h3>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-muted-foreground">
-            <li>We need to understand the significance of the location in the film.</li>
+            <li>
+              First we need to understand the significance of the required locations in the film
+              followed by negotiating with the Retail Owner or Landlord a suitable Location fee for
+              both parties with a shooting schedule that involves, dressing the set, wardrobe,
+              rehearsals, shoot days, breakdown and clean up.
+            </li>
             <li>
               Familiarize ourselves with any filming history or notable scenes associated with
               the site.
@@ -86,8 +91,10 @@ function ServicesPage() {
               Choose the appropriate times to go door knocking, avoiding early mornings or late
               evenings.
             </li>
-            <li>Be ready to answer questions about the interest in the location.</li>
-            <li>Share any relevant details about the film project.</li>
+            <li>
+              Always ready to answer questions about the interest in the location and share any
+              relevant details about the film project.
+            </li>
             <li>
               Check if there are any regulations regarding filming or photography in the area.
             </li>
