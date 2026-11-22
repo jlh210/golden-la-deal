@@ -48,9 +48,8 @@ const groups: { heading: string; items: { label: string; body: string }[] }[] = 
 ];
 
 /**
- * Firm overview copy shared by the Home hero (under "Retail Business Advisor
- * and Brokerage · Los Angeles County") and the About hero (under "Servicing
- * LA County's Restaurants & Businesses").
+ * Firm overview copy shared by the Home hero and the About hero (under
+ * "Servicing LA County's Restaurants & Businesses").
  */
 export function FirmOverview({
   className = "",
