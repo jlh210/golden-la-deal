@@ -72,34 +72,6 @@ function ServicesPage() {
 
         <div className="mt-12 rounded-xl border border-border bg-card p-7 shadow-elegant">
           <h2 className="text-xl font-display font-bold">
-            <Link to="/restaurant-equipment-review" className="hover:text-gold transition">
-              Restaurant Equipment Review
-            </Link>
-          </h2>
-          <p className="mt-1 text-sm font-semibold text-gold">$2,750 Flat Fee</p>
-          <p className="mt-3 text-sm text-muted-foreground">
-            Newly added Equipment under the Hood must go into an “equipment review” with
-            Plan-Check to ensure health and safety standards and local building codes are in
-            place.
-          </p>
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-muted-foreground">
-            <li>
-              Specification sheets detailing the Equipment dimensions, power requirements are
-              required.
-            </li>
-            <li>The menu should align with the new (N) equipment installed.</li>
-            <li>A final site inspection will be arranged.</li>
-          </ul>
-          <Link
-            to="/restaurant-equipment-review"
-            className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-gold"
-          >
-            Restaurant Equipment Review - $2,750 Flat Fee <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
-        </div>
-
-        <div className="mt-12 rounded-xl border border-border bg-card p-7 shadow-elegant">
-          <h2 className="text-xl font-display font-bold">
             Door Knocking for Retail Film Locations Throughout Los Angeles County
           </h2>
           <p className="mt-1 text-sm font-semibold text-gold">One-Time Fee per Script $2,750</p>
