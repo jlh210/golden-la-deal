@@ -109,7 +109,7 @@ function ServicesPage() {
             Los Angeles County
           </h2>
           <p className="mt-1 text-sm font-semibold text-gold">
-            One-Time Fee per Signed Lease $2,750
+            One-Time Fee per Signed Lease, good for one year, $2,750
           </p>
           <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-muted-foreground">
             <li>
