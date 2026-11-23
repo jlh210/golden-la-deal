@@ -1,5 +1,6 @@
 // Exact public production URLs; no inferred dates.
 export const blogPaths = [
+  "/blog/asset-sale-vs-business-sale-los-angeles-restaurants",
   "/blog/what-financial-records-to-review-before-buying-a-los-angeles-restaurant",
   "/blog/what-happens-to-the-restaurant-health-permit-when-ownership-changes-in-los-angeles-county",
   "/blog/questions-to-ask-about-reason-for-sale-restaurant",

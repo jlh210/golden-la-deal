@@ -1,5 +1,282 @@
 [
   {
+    "slug": "asset-sale-vs-business-sale-los-angeles-restaurants",
+    "title": "Restaurant Asset Sale vs. Business Sale in Los Angeles: What Buyers Should Know",
+    "seoTitle": "Restaurant Asset Sale vs. Business Sale in Los Angeles: Buyer’s Guide",
+    "description": "Plain-English definitions, ABC license and health-permit implications, lease and liability considerations, documents to request, and tax posture for Los Angeles restaurant buyers choosing between an asset purchase and a business/stock sale.",
+    "answer": "A restaurant asset sale means you buy the operating assets (for example, equipment, fixtures, inventory as agreed, goodwill, and typically the right to take over the lease) without automatically taking on the seller’s debts or obligations unless you agree to do so in writing; a business or stock sale means you buy the company that already owns and operates the restaurant, so you step into the entity with its assets and existing liabilities. In Los Angeles deals, buyers most often see asset sales tied to a lease assignment, while stock or membership-interest sales keep the entity in place and require deeper diligence on liabilities and approvals.",
+    "keywords": [
+      "asset sale vs stock sale restaurant",
+      "Los Angeles restaurant deal structure",
+      "restaurant asset purchase agreement",
+      "restaurant business sale stock sale",
+      "ABC stock transfer vs person-to-person transfer",
+      "LA County public health permit change of ownership"
+    ],
+    "categoryLabel": "Buying a Restaurant",
+    "publishedAt": "2026-11-23",
+    "updatedAt": "2026-11-23",
+    "readMinutes": 5,
+    "keyTakeaways": [
+      "Asset sale: you acquire assets and usually the lease assignment; obligations stay with the seller unless you agree to assume them in the contract.",
+      "Business or stock sale: you acquire the entity with its assets and liabilities, so diligence focuses on what you are inheriting.",
+      "ABC treats person-to-person transfers and stock transfers differently; confirm which applies to your deal and what application set ABC requires.",
+      "LA County’s restaurant Public Health Permit is issued to the operator and is nontransferable; a change of ownership triggers a new permit application with the correct health authority.",
+      "Tax posture often differs: sellers may favor stock sales, buyers often prefer asset purchases for basis; coordinate structure with your tax advisor early."
+    ],
+    "sections": [
+      {
+        "type": "h2",
+        "text": "The two common structures, defined",
+        "id": "section-1"
+      },
+      {
+        "type": "p",
+        "text": "In an asset sale, the buyer acquires operating assets and specified rights, and does not automatically assume the seller’s obligations unless the parties expressly agree. In a business or stock sale, the buyer acquires the ownership interests of the entity that holds the restaurant, receiving the same assets and liabilities that entity carried before the sale. Read your documents closely and align the structure with what you intend to take on."
+      },
+      {
+        "type": "sources",
+        "items": [
+          {
+            "title": "California DRE Real Estate Reference, Chapter 24: Business Opportunities (ref24.pdf)",
+            "href": "https://www.dre.ca.gov/files/pdf/refbook/ref24.pdf"
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "How ABC liquor licensing fits differently",
+        "id": "section-2"
+      },
+      {
+        "type": "p",
+        "text": "Expect the ABC path to follow the deal structure: a person-to-person change in ownership of the licensed business generally calls for a transfer application, while changes in control of an existing corporate or LLC licensee can trigger ABC’s Stock Transfer process, which ABC defines as a transfer of 50% or more of ownership in a legal entity. Confirm with the district office which category your transaction falls into and which forms and postings it requires."
+      },
+      {
+        "type": "p",
+        "text": "Do not assume an ABC license will move on your preferred closing date just because you filed. ABC can deny or delay a transfer, and timing depends on the agency’s investigation. Certain applications are subject to protests, but person-to-person transfers of an existing license cannot be protested by the public. Build contingency time into escrow and coordinate with your licensing representative."
+      },
+      {
+        "type": "sources",
+        "items": [
+          {
+            "title": "ABC: Transfer or Change a License (overview, including person-to-person and stock transfer)",
+            "href": "https://www.abc.ca.gov/licensing/transfer-or-change-a-license/"
+          },
+          {
+            "title": "ABC: Stock Transfer (definition and filing components)",
+            "href": "https://www.abc.ca.gov/licensing/transfer-or-change-a-license/stock-transfer/"
+          },
+          {
+            "title": "ABC Licensing FAQ (applications and transfers; filing does not assure transfer)",
+            "href": "https://www.abc.ca.gov/licensing/frequently-asked-questions/"
+          },
+          {
+            "title": "ABC Protest FAQ (person-to-person transfers cannot be protested by the public)",
+            "href": "https://www.abc.ca.gov/contact/file-complaint/protest-against-alcoholic-beverage-license-application/frequently-asked-questions/"
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Health permits and other operating approvals",
+        "id": "section-3"
+      },
+      {
+        "type": "p",
+        "text": "Plan for the restaurant’s Public Health Permit separately from ABC. In Los Angeles County, the permit is issued to the operator and is nontransferable, so a change of ownership calls for a new permit application with the correct health authority for the address. Confirm whether the premises is served by LA County Environmental Health or by one of the independent city health departments in Pasadena, Long Beach, or Vernon, and coordinate any plan check or inspection steps with that office."
+      },
+      {
+        "type": "sources",
+        "items": [
+          {
+            "title": "LA County Environmental Health: Public Health Permit/License Application (terms state permits/licenses are nontransferable)",
+            "href": "https://admin.publichealth.lacounty.gov/eh/docs/permit/Public-Health-Permit-License-Application.pdf"
+          },
+          {
+            "title": "LA County Environmental Health: Obtaining a Public Health Permit/License",
+            "href": "https://admin.publichealth.lacounty.gov/eh/about/permit.htm"
+          },
+          {
+            "title": "LA County Environmental Health: Contact Us (notes Pasadena, Long Beach, and Vernon operate their own EH departments)",
+            "href": "https://publichealth.lacounty.gov/Eh/about/contact-us.htm"
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Lease and landlord consent drive both structures",
+        "id": "section-4"
+      },
+      {
+        "type": "p",
+        "text": "In practice, your ability to operate after closing depends on lease continuity. For an asset sale, confirm whether the seller’s lease allows assignment, what consents are required, any transfer fees, cure requirements, and whether guarantees or security deposits must be replaced. For a stock sale, confirm whether a change in control of the tenant triggers a landlord consent or default under the lease. Ask for the full lease, amendments, and any assignment or change-of-control clauses early."
+      },
+      {
+        "type": "h2",
+        "text": "Tax posture at a glance (coordinate with your CPA)",
+        "id": "section-5"
+      },
+      {
+        "type": "p",
+        "text": "Structure has tax consequences. Sellers often prefer stock sales that they can report as capital gain, while buyers often prefer asset purchases to step up the tax basis of depreciable assets. Work with your CPA on the allocation schedule in an asset purchase or on elections available for entity deals, and price the structure accordingly."
+      },
+      {
+        "type": "sources",
+        "items": [
+          {
+            "title": "SBA: 7 Tax Strategies to Consider When Selling a Business (stock vs. asset motivations)",
+            "href": "https://www.sba.gov/blog/2020/2020-02/7-tax-strategies-consider-when-selling-business/"
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "At-a-glance comparison",
+        "id": "section-6"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Topic",
+          "Asset sale (direct answer first)",
+          "Business/stock sale (direct answer first)"
+        ],
+        "rows": [
+          [
+            "What you buy",
+            "Specified assets and rights such as FF&E, inventory as agreed, trade name/goodwill, and usually the right to take over the lease.",
+            "Ownership interests in the existing entity that already owns the restaurant."
+          ],
+          [
+            "Liabilities",
+            "Not assumed unless you agree in the contract. Diligence focuses on liens, taxes tied to assets, and any obligations you plan to assume.",
+            "Inherit the entity’s existing liabilities and obligations. Diligence focuses on financial, tax, legal, HR, and regulatory exposure inside the entity."
+          ],
+          [
+            "ABC license path",
+            "Typically a person-to-person transfer because a new owner will hold the license.",
+            "Often an ABC stock-transfer or ownership-change filing when control shifts while the entity stays the same. Confirm thresholds with ABC."
+          ],
+          [
+            "Health permit",
+            "New operator applies with the correct health authority; permits are not transferable.",
+            "Depends on whether the permitted operator changes. If the permittee or operating entity changes, you will need a new Public Health Permit; if the same entity continues operating, contact the correct health authority to confirm whether an update or new application is required."
+          ],
+          [
+            "Lease continuity",
+            "Assignment and landlord consent are common gating steps.",
+            "Check for change-of-control language and consent or notice obligations."
+          ]
+        ]
+      },
+      {
+        "type": "sources",
+        "items": [
+          {
+            "title": "LA County Environmental Health: Public Health Permit/License Application (terms state permits/licenses are nontransferable)",
+            "href": "https://admin.publichealth.lacounty.gov/eh/docs/permit/Public-Health-Permit-License-Application.pdf"
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Documents to request and what to confirm",
+        "id": "section-7"
+      },
+      {
+        "type": "h3",
+        "text": "For an asset sale, request these and confirm the conditions first:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Draft asset purchase agreement and exhibit schedules (FF&E list, inventory method, excluded items, assumed obligations).",
+          "Current lease, all amendments, and landlord’s assignment requirements including any transfer fee, guarantee, or deposit terms.",
+          "Recent UCC/lien searches and tax clearance confirmations; ask escrow to explain any hits and payoff mechanics.",
+          "Equipment proof of ownership and maintenance records; confirm no equipment is leased or under financing unless properly addressed.",
+          "ABC license transfer application set and any contingencies tied to approval.",
+          "Health authority change-of-ownership application steps and any inspections required before opening.",
+          "Allocation worksheet for purchase price and your CPA’s basis plan."
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "For a business or stock sale, request these and confirm the conditions first:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Entity records: formation documents, bylaws/operating agreement, minutes or consents, capitalization table, good-standing certificates.",
+          "Five years of federal, state, and local tax returns and any correspondence on audits or payment plans.",
+          "Full financials, payroll and HR files, vendor contracts, and any litigation or claims.",
+          "Licenses and permits in the entity’s name and any open violations or deadlines.",
+          "Lease change-of-control language and required landlord consents or notices.",
+          "ABC ownership-change or stock-transfer filings and any required postings or sign-offs; confirm with the district office which package applies.",
+          "Environmental Health permit steps for change of operator at the address, even if the entity remains the same operating tenant."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "How to choose structure for your deal",
+        "id": "section-8"
+      },
+      {
+        "type": "p",
+        "text": "Start with the risk you are willing to inherit, the approvals you need to keep operating, and the tax posture you and the seller can agree on. If you want a cleaner liability break and a fresh operating start under your own entity, you will usually push for an asset purchase with a well-managed lease assignment. If continuity inside the company matters most and diligence supports it, a stock or membership-interest deal can work, but budget more time for entity-level review and ABC coordination."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Which structure is more common for Los Angeles restaurant deals?",
+        "a": "In practice you will see many listings offered as asset sales tied to a lease assignment because it can separate the buyer from the seller’s obligations. Treat this as a starting point, not a rule, and choose based on your diligence, approvals, and tax advice."
+      },
+      {
+        "q": "Does an ABC license always transfer in an asset sale?",
+        "a": "Expect a person-to-person transfer package when ownership of the licensed business changes hands, but confirm the exact application type and posting steps with ABC for your location and license type."
+      },
+      {
+        "q": "If I buy stock in the seller’s corporation, do I avoid landlord consent?",
+        "a": "Not necessarily. Many restaurant leases treat a change in control of the tenant as an assignment that still requires landlord consent. Read your lease’s assignment and change-of-control clauses and confirm the landlord’s requirements in writing."
+      },
+      {
+        "q": "Does the Public Health Permit transfer to me at closing?",
+        "a": "No. In Los Angeles County the permit is issued to the operator and is nontransferable, so plan to apply with the correct health authority for the address."
+      },
+      {
+        "q": "How should we handle taxes on an asset purchase price?",
+        "a": "Ask your CPA to prepare an allocation schedule that matches the agreement’s exhibits and to explain how it affects your basis, depreciation, and any potential taxes due at closing."
+      }
+    ],
+    "commercialParent": {
+      "title": "Buyer Representation",
+      "to": "/buy-a-restaurant"
+    },
+    "related": [
+      {
+        "title": "How to Buy a Restaurant in Los Angeles",
+        "to": "/help/buying-a-restaurant/how-to-buy-a-restaurant-in-los-angeles"
+      },
+      {
+        "title": "ABC License Transfer Guide",
+        "to": "/help/alcohol-licensing/abc-license-transfer-guide"
+      },
+      {
+        "title": "Restaurant Lease Assignment Guide",
+        "to": "/help/lease-assignments/restaurant-lease-assignment-guide"
+      },
+      {
+        "title": "Restaurant Buyer Due Diligence: Proceed, Renegotiate or Pause?",
+        "to": "/blog/restaurant-buyer-due-diligence-checklist"
+      },
+      {
+        "title": "Restaurants for Sale",
+        "to": "/restaurants-for-sale"
+      }
+    ],
+    "automationSlot": "2026-11-23"
+  },
+  {
     "slug": "what-financial-records-to-review-before-buying-a-los-angeles-restaurant",
     "title": "What Financial Records To Review Before Buying a Los Angeles Restaurant",
     "seoTitle": "Financial Records To Review Before Buying a Los Angeles Restaurant",
