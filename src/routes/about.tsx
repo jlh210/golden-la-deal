@@ -48,10 +48,7 @@ function AboutPage() {
             State, the corporation maintains an active filing status.
           </p>
           <p>
-            The corporation is led by a team of key individuals: Richard Stein from Santa Monica CA,
-            holding the position of COO Director; Roschard Paticchio Stein from Santa Monica CA,
-            serving as the Chief Executive Officer, Business Agent, and Rosanna Paticchio from Santa
-            Monica CA, serving as the Broker of Record.
+            The corporation is led by a team of key individuals: See Below.
           </p>
         </div>
         <div className="pa-ownership" aria-labelledby="ownership-title">
