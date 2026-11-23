@@ -312,44 +312,6 @@ function HomePage() {
               </article>
             ))}
           </div>
-          <div className="pa-ownership" aria-labelledby="ownership-title">
-            <p className="pa-kicker" id="ownership-title">Ownership</p>
-            <div className="pa-ownership-card">
-              <span className="pa-ownership-mark" aria-hidden="true">
-                RP
-              </span>
-              <div>
-                <h3>Roschard Paticchio-Stein</h3>
-                <p className="pa-ownership-role">
-                  CEO · Owner · Business Agent
-                  <br />
-                  DRE #02203003
-                </p>
-                <p>
-                  As CEO (Chief Executive Officer), Roschard works with Richard COO setting up the company’s vision and strategy, making major decisions that
-                  affect the organization’s direction, supervises the executive team, ensures that
-                  the company’s operations align with its goals.
-                </p>
-              </div>
-            </div>
-            <div className="pa-ownership-card">
-              <span className="pa-ownership-mark" aria-hidden="true">
-                RS
-              </span>
-              <div>
-                <h3>Richard Stein</h3>
-                <p className="pa-ownership-role">
-                  Creator · COO · Owner · Business Consultant
-                </p>
-                <p>
-                  As COO (Chief Operating Officer), Richard works with Roschard CEO,
-                  managing the day-to-day operations of the company ensuring that business processes
-                  run efficiently and effectively, maintaining organizational stability, and driving
-                  growth through effective management of resources and processes.
-                </p>
-              </div>
-            </div>
-          </div>
           <div className="pa-authority-links">
             <EditorialLink to="/agents">Meet the Advisors</EditorialLink>
             <EditorialLink to="/about">About Penthouse Advisors</EditorialLink>
