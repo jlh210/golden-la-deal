@@ -36,12 +36,12 @@ function AboutPage() {
   return (
     <SiteLayout>
       <PageHero eyebrow="About Us" title="Penthouse Advisors Inc" hideHeadingCta>
-        <div className="max-w-3xl space-y-5 text-muted-foreground leading-relaxed">
+        <div className="max-w-3xl space-y-5 text-foreground leading-relaxed">
           <p>
             Penthouse Advisors Inc, a General Corporation focuses entirely on the Legal,
             Transactional matters involving, Health Department Permitting and Code Compliance, CA,
             State Alcohol Licensing, Rent/Lease Negotiations, Regulatory Sides of Restaurant
-            Sales/Acquisitions and Retail/Commercial Businesses and Real Estate. The business entity
+            Sales/Acquisitions, Retail/Commercial Businesses and Real Estate. The business entity
             is located in Santa Monica, CA. Officially filed on June 29, 2021, this corporation is
             recognized under the document number 4759388. Governed by the California Secretary of
             State, the corporation maintains an active filing status.
