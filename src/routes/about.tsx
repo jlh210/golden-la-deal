@@ -39,8 +39,8 @@ function AboutPage() {
       <PageHero eyebrow="About Us" title="Penthouse Advisors Inc" hideHeadingCta>
         <div className="max-w-3xl space-y-5 text-foreground leading-relaxed">
           <p>
-            Penthouse Advisors Inc, a California Corporation was created by Richard Stein, Roschard
-            Paticchio-Stein and Rosanna Paticchio, as a Family Business focusing entirely on the
+            Penthouse Advisors Inc is a California Corporation and Family Business created by Richard
+            Stein, Roschard Paticchio-Stein and Rosanna Paticchio, focusing entirely on the
             Legal, Transactional matters involving, Health Department Permitting and Code
             Compliance, CA, State Alcohol Licensing, Rent/Lease Negotiations, Regulatory Sides of
             Restaurant Sales/Acquisitions, Retail/Commercial Businesses and Real Estate. The
