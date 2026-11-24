@@ -39,13 +39,13 @@ function AboutPage() {
       <PageHero eyebrow="About Us" title="Penthouse Advisors Inc" hideHeadingCta>
         <div className="max-w-3xl space-y-5 text-foreground leading-relaxed">
           <p>
-            Penthouse Advisors Inc, a General Corporation focuses entirely on the Legal,
-            Transactional matters involving, Health Department Permitting and Code Compliance, CA,
-            State Alcohol Licensing, Rent/Lease Negotiations, Regulatory Sides of Restaurant
-            Sales/Acquisitions, Retail/Commercial Businesses and Real Estate. The business entity
-            is located in Santa Monica, CA. Officially filed on June 29, 2021, this corporation is
-            recognized under the document number 4759388. Governed by the California Secretary of
-            State, the corporation maintains an active filing status.
+            Penthouse Advisors Inc, a California Corporation was created by Richard Stein, Roschard
+            Paticchio-Stein and Rosanna Paticchio, as a Family Business focusing entirely on the
+            Legal, Transactional matters involving, Health Department Permitting and Code
+            Compliance, CA, State Alcohol Licensing, Rent/Lease Negotiations, Regulatory Sides of
+            Restaurant Sales/Acquisitions, Retail/Commercial Businesses and Real Estate. The
+            business entity is located in Santa Monica, CA. Officially filed on June 29, 2021 and
+            maintains an active filing status.
           </p>
           <p>
             The corporation is led by a team of key individuals: See Below.
