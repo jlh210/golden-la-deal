@@ -107,7 +107,7 @@ const recentPermits = [
   { addr: "Melrose Ave, Hollywood", status: "Plan Check Review Completed" },
   { addr: "Beverly Blvd, Mid-City", status: "Permit Approved Open" },
   { addr: "Main St, Santa Monica", status: "Red Tag Corrected" },
-  { addr: "Echo Park, Coffee Shop", status: "Equipment Review Pending" },
+  { addr: "Echo Park, Coffee Shop", status: "Equipment Review Completed 11/24/26" },
   { addr: "Burbank, Restaurant", status: "Restaurant Remodel Pending" },
   { addr: "Santa Monica, Restaurant", status: "Red Tag Removed, Health Dept Permit Issued" },
   { addr: "Woodland Hills, Meat Market", status: '"Change of Use" & Health Dept Permit, Pending' },
@@ -138,6 +138,7 @@ const statusStyle: Record<string, string> = {
   "Red Tag Corrected": "bg-foreground/10 text-foreground/85 border-border",
   "Plan Check Review Completed": "bg-gold/15 text-gold border-gold/40",
   "Equipment Review Pending": "bg-foreground/10 text-foreground/85 border-border",
+  "Equipment Review Completed 11/24/26": "bg-gold/15 text-gold border-gold/40",
   "Red Tag Removed, Health Dept Permit Issued": "bg-gold/15 text-gold border-gold/40",
   '"Change of Use" & Health Dept Permit, Pending':
     "bg-foreground/10 text-foreground/85 border-border",
