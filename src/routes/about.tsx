@@ -48,11 +48,13 @@ function AboutPage() {
             “existing and proposed” with an equipment schedule and scope of work, Reflective Ceiling
             plan, Site plan submission for Health Department Plan-Check review and Blueprint
             Stamping “prior to any work commencing” followed by a final site inspection for permit
-            issuance. Restaurant Business Sales Exclusive Listing, Restaurant Asset sale valuations
-            for the Non Attached Furniture, Fixtures, Equipment (FF&amp;E), Negotiations if and when
-            Vacant, Second Generation Restaurants are attempting to illegally charge Key Money.
-            Landlord Negotiations for Retail, New Tenant monthly rent, abatement allowances,
-            assignments, new lease terms and conditions. The business entity is located in Santa
+            issuance. Restaurant Business Sales valuations based off the Gross Monthly Net,
+            Restaurant Asset sale valuations for the Non Attached Furniture, Fixtures, Equipment
+            (FF&amp;E) with Exclusive Listing Agreements. Negotiations with Landlords or Management if
+            and when a Vacant, Second Generation Restaurant is illegally charging New Tenants Key
+            Money. Landlord Negotiations for New Tenant Retail Lease Assignments, New Lease terms and
+            conditions, Abatement allowances, Monthly Rental rates, Lease Signing. The business
+            entity is located in Santa
             Monica, CA., Officially filed on June 29, 2021 and maintains an active filing status.
           </p>
           <p>
