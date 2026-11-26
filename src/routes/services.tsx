@@ -116,7 +116,7 @@ function ServicesPage() {
             Los Angeles County
           </h2>
           <p className="mt-1 text-sm font-semibold text-gold">
-            One-Time Fee per Signed Lease, good for one year, $2,750
+            One-Time Fee per Signed Lease, good for one year, $2,990
           </p>
           <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-muted-foreground">
             <li>
@@ -134,7 +134,7 @@ function ServicesPage() {
             to="/contact"
             className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-gold"
           >
-            Restaurant &amp; Retail Door Knocking - $2,750 per Signed Lease{" "}
+            Restaurant &amp; Retail Door Knocking - $2,990 per Signed Lease{" "}
             <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>
