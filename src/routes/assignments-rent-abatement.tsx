@@ -36,7 +36,7 @@ function AssignmentsPage() {
       <PageHero
         eyebrow="Assignments & Rent Abatement"
         title="Know your guarantor position."
-        accent="Negotiate real abatement."
+        accent="Negotiate real abatement allowances $2990."
         subtitle="Lease assignments and rent abatement are two of the most misunderstood pieces of a restaurant deal - and two of the most expensive when handled wrong."
       />
 
