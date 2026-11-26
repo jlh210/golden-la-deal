@@ -128,7 +128,8 @@ const recentPermits = [
   { addr: "Manhattan Beach, Pizza Restaurant", status: "Equipment Review Pending" },
   {
     addr: "6th Street, Downtown Los Angeles, Pick Up Restaurant",
-    status: '"Restaurant Remodel" Pending Health Dept Plan Check Final Inspection',
+    status:
+      'Project Manager: Large "Restaurant Remodel" - Health Dept Plan-Check Final Site Inspection at Completion, Open for Business',
   },
   {
     addr: "La Cienega, Japanese Restaurant",
@@ -153,7 +154,7 @@ const statusStyle: Record<string, string> = {
   "Health Dept Inspection Approval": "bg-gold/15 text-gold border-gold/40",
   "Health Dept Inspection Pending": "bg-foreground/10 text-foreground/85 border-border",
   "Restaurant Remodel Pending": "bg-foreground/10 text-foreground/85 border-border",
-  '"Restaurant Remodel" Pending Health Dept Plan Check Final Inspection':
+  'Project Manager: Large "Restaurant Remodel" - Health Dept Plan-Check Final Site Inspection at Completion, Open for Business':
     "bg-foreground/10 text-foreground/85 border-border",
   "Change of Use followed by ABC 41 License Pending":
     "bg-foreground/10 text-foreground/85 border-border",
