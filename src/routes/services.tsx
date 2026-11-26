@@ -139,6 +139,19 @@ function ServicesPage() {
           </Link>
         </div>
 
+        <div className="mt-12 rounded-xl border border-border bg-card p-7 shadow-elegant">
+          <h2 className="text-xl font-display font-bold">
+            Supervising Project Manager for Restaurant Remodel and Upgrades
+          </h2>
+          <p className="mt-1 text-sm font-semibold text-gold">$2,990</p>
+          <Link
+            to="/contact"
+            className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-gold"
+          >
+            Supervising Project Manager - $2,990 <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        </div>
+
         <div className="mt-12 flex flex-wrap gap-3">
           <Link to="/contact" className="pa-button">
             {CONSULTATION_LABEL} <ArrowRight className="h-4 w-4" />
