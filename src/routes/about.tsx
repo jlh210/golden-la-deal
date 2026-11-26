@@ -53,8 +53,8 @@ function AboutPage() {
             (FF&amp;E) with Exclusive Listing Agreements. Negotiations with Landlords or Management if
             and when a Vacant, Second Generation Restaurant is illegally charging New Tenants Key
             Money. Landlord Negotiations for New Tenant Retail Lease Assignments, New Lease terms and
-            conditions, Abatement allowances, Monthly Rental rates, Lease Signing. The business
-            entity is located in Santa
+            conditions, Abatement allowances, Monthly Rental rates, Lease Signing, Retail Restaurant
+            Business Advisors: We do not give legal advice. The business entity is located in Santa
             Monica, CA., Officially filed on June 29, 2021 and maintains an active filing status.
           </p>
           <p>
