@@ -73,16 +73,7 @@ export function FirmOverview({
 }) {
   return (
     <div className={`space-y-3 ${className}`}>
-      {intro ? (
-        <p>{intro}</p>
-      ) : (
-        <p>
-          Focuses entirely on the Legal, Transactional
-          matters involving, Health Department Permitting and Code Compliance, CA, State Alcohol
-          Licensing, Rent/Lease Negotiations, Regulatory Sides of Restaurant Sales/Acquisitions and
-          Retail/Commercial Businesses and Real Estate.
-        </p>
-      )}
+      {intro ? <p>{intro}</p> : null}
       {groups.map((g, i) => (
         <div key={g.heading}>
           <p className="font-semibold">
