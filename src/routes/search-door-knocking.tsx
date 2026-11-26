@@ -121,7 +121,7 @@ function SearchDoorKnockingPage() {
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">
             One-Time Fee per Script, good for one (1) year,{" "}
-            <strong className="font-semibold text-foreground">$2,750</strong>
+            <strong className="font-semibold text-foreground">$2,990</strong>
           </p>
         </div>
       </section>

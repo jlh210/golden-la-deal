@@ -74,7 +74,7 @@ function ServicesPage() {
           <h2 className="text-xl font-display font-bold">
             Door Knocking for Retail Film Locations Throughout Los Angeles County
           </h2>
-          <p className="mt-1 text-sm font-semibold text-gold">One-Time Fee per Script, good for one year, $2,750</p>
+          <p className="mt-1 text-sm font-semibold text-gold">One-Time Fee per Script, good for one year, $2,990</p>
           <h3 className="mt-4 text-base font-display font-bold">Research the Location</h3>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-muted-foreground">
             <li>
@@ -106,7 +106,7 @@ function ServicesPage() {
             to="/contact"
             className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-gold"
           >
-            Film Location Door Knocking - $2,750 per Script <ArrowRight className="h-3.5 w-3.5" />
+            Film Location Door Knocking - $2,990 per Script <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>
 
