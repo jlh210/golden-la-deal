@@ -42,14 +42,15 @@ function AboutPage() {
             Penthouse Advisors Inc is a California Corporation and Family Business created by Richard
             Stein, Roschard Paticchio-Stein and Rosanna Paticchio, focusing entirely throughout Los
             Angeles County on Legal, Transactional matters involving the regulatory sides of
-            Restaurant and Retail Food Establishments Sales, Acquisitions, Alcohol ABC Licensing,
-            Health Department code compliant pre inspections to resolve any and all Permitting
-            issues, prepare required documentation, Draft Blueprints for submission prior to work
-            commencing to Health Department Plan-Check review and stamping, final site inspections
-            for permit issuance. CA., ABC, Alcohol Licensing and Transfers, Landlord Negotiations on
-            the Retail Monthly Rent, Abatement Allowances, Assignments, New Leases terms and
-            conditions. The business entity is located in Santa Monica, CA., Officially filed on
-            June 29, 2021 and maintains an active filing status.
+            Restaurant and Retail Food Establishments Sales, Acquisitions. Alcohol ABC Licensing and
+            Transfers. Health Department code compliant pre inspections to resolve any and all
+            Permitting issues, preparing all required documentation, Drafting Blueprints ie., Floor
+            Plan existing and proposed, Reflective Ceiling plan, Site plan showing the equipment
+            schedule and scope of work for submission prior to any work commencing for Health
+            Department Plan-Check review and stamping to follow a final site inspection for permit
+            issuance. Landlord Negotiations on Retail New Tenant monthly rent, abatement allowances,
+            assignments, new lease terms and conditions. The business entity is located in Santa
+            Monica, CA., Officially filed on June 29, 2021 and maintains an active filing status.
           </p>
           <p>
             The corporation is led by a team of key individuals: See Below.
