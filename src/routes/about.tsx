@@ -42,13 +42,16 @@ function AboutPage() {
             Penthouse Advisors Inc is a California Corporation and Family Business created by Richard
             Stein, Roschard Paticchio-Stein and Rosanna Paticchio, focusing entirely throughout Los
             Angeles County on Legal, Transactional matters involving the regulatory sides of
-            Restaurant and Retail Food Establishments Sales, Acquisitions. Alcohol ABC Licensing and
-            Transfers. Health Department code compliant pre inspections to resolve any and all
-            Permitting issues, preparing all required documentation, Drafting Blueprints ie., Floor
-            Plan existing and proposed, Reflective Ceiling plan, Site plan showing the equipment
-            schedule and scope of work for submission prior to any work commencing for Health
-            Department Plan-Check review and stamping to follow a final site inspection for permit
-            issuance. Landlord Negotiations on Retail New Tenant monthly rent, abatement allowances,
+            Restaurant and Retail Food Establishments, ABC Alcohol Licensing and Transfers, Health
+            Department code compliant pre-inspections for resolving any and all Permitting issues,
+            preparation of all required documentation, Drafting Blueprints ie., Floor Plan
+            “existing and proposed” with an equipment schedule and scope of work, Reflective Ceiling
+            plan, Site plan submission for Health Department Plan-Check review and Blueprint
+            Stamping “prior to any work commencing” followed by a final site inspection for permit
+            issuance. Restaurant Business Sales Exclusive Listing, Restaurant Asset sale valuations
+            for the Non Attached Furniture, Fixtures, Equipment (FF&amp;E), Negotiations if and when
+            Vacant, Second Generation Restaurants are attempting to illegally charge Key Money.
+            Landlord Negotiations for Retail, New Tenant monthly rent, abatement allowances,
             assignments, new lease terms and conditions. The business entity is located in Santa
             Monica, CA., Officially filed on June 29, 2021 and maintains an active filing status.
           </p>
