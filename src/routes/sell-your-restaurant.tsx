@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     q: "Can you sell the liquor license separately?",
-    a: "Often yes. If the business doesn't sell as a whole, a Type 41/47 can be transferred to a separate buyer — see our Liquor License For Sale page.",
+    a: "Often yes. If the business doesn't sell as a whole, a Type 41/47 can be transferred to a separate buyer.",
   },
 ];
 
@@ -105,7 +105,6 @@ function SellPage() {
       ]}
       faqs={FAQS}
       related={[
-        { to: "/liquor-license-for-sale", label: "Sell Your Liquor License" },
         { to: "/assignments-rent-abatement", label: "Lease Assignment" },
         { to: "/grandfather-protection", label: "Grandfather Protection" },
         { to: "/business-investigations", label: "Buyer Diligence" },

@@ -109,7 +109,6 @@ export const serviceAuthority = {
         to: "/blog/type-41-vs-type-47-liquor-license-california",
         label: "Type 41 and Type 47 comparison",
       },
-      { to: "/liquor-license-for-sale", label: "Liquor license sale and acquisition services" },
     ],
     sources: [
       abc,

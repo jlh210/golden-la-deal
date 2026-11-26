@@ -29,7 +29,6 @@ export const Route = createFileRoute("/sitemap.xml")({
           // Deep service pages
           { path: "/leasing-vacant-restaurants", changefreq: "monthly", priority: "0.8" },
           { path: "/alcohol-licensing", changefreq: "monthly", priority: "0.8" },
-          { path: "/liquor-license-for-sale", changefreq: "weekly", priority: "0.8" },
           { path: "/health-inspection", changefreq: "monthly", priority: "0.7" },
           { path: "/health-permitting", changefreq: "monthly", priority: "0.7" },
           { path: "/restaurant-equipment-review", changefreq: "monthly", priority: "0.7" },

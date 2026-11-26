@@ -65,13 +65,6 @@ export const services: Service[] = [
     featured: true,
   },
   {
-    slug: "liquor-license-for-sale",
-    to: "/liquor-license-for-sale",
-    title: "Liquor License For Sale",
-    short: "Active ABC licenses available - fully vetted, priced all-in.",
-    icon: Wine,
-  },
-  {
     slug: "vermin-inspections",
     to: "/vermin-inspections",
     title: "Vermin Infestation Inspections",
@@ -144,7 +137,6 @@ export const serviceTopics = [
   "Buying a restaurant",
   "Selling my restaurant",
   "Alcohol licensing (Type 41 / 47)",
-  "Liquor license for sale",
   "Health department / inspection",
   "Health Dept permitting / plan check",
   "Vermin / compliance inspection",
