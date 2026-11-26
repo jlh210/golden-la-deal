@@ -9,7 +9,7 @@ import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/search-door-knocking")({
   head: () => ({
     meta: [
-      { title: "Search Off-Market Restaurant - Penthouse Advisors LA" },
+      { title: "Search Off-Market Restaurants - $2,990 Flat Fee | Penthouse Advisors LA" },
       {
         name: "description",
         content:
@@ -56,7 +56,7 @@ function SearchDoorKnockingPage() {
           <HeadingCTA />
           <p className="mt-4 text-muted-foreground leading-relaxed">
             Upon reviewing the location to service, the menu and affordable rent, Zelle Penthouse
-            Advisors Inc. $3,775. Upon receiving the funds we will email an invoice with balance
+            Advisors Inc. $2,990 Flat Fee. Upon receiving the funds we will email an invoice with balance
             zero.
           </p>
 
@@ -76,7 +76,7 @@ function SearchDoorKnockingPage() {
               },
               {
                 step: "STEP 4",
-                text: "Hand-drafted blueprints required by Health Department plan-check are included in the $3,775 fee.",
+                text: "Hand-drafted blueprints required by Health Department plan-check are included in the $2,990 flat fee.",
               },
               {
                 step: "STEP 5",
