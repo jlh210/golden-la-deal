@@ -73,7 +73,7 @@ export function FirmOverview({
         <p>{intro}</p>
       ) : (
         <p>
-          <strong>Penthouse Advisors Inc.,</strong> focuses entirely on the Legal, Transactional
+          Focuses entirely on the Legal, Transactional
           matters involving, Health Department Permitting and Code Compliance, CA, State Alcohol
           Licensing, Rent/Lease Negotiations, Regulatory Sides of Restaurant Sales/Acquisitions and
           Retail/Commercial Businesses and Real Estate.
