@@ -9,17 +9,17 @@ import { HeadingCTA } from "@/components/site/HeadingCTA";
 export const Route = createFileRoute("/restaurant-equipment-review")({
   head: () => ({
     meta: [
-      { title: "Restaurant Equipment Review - $2,990 Flat Fee | Penthouse Advisors" },
+      { title: "Restaurant Equipment Review - $2,750 Flat Fee | Penthouse Advisors" },
       {
         name: "description",
         content:
-          "Restaurant equipment review with Health Dept plan-check for cook-line equipment added under the hood. $2,990 flat fee, including final site inspection coordination.",
+          "Restaurant equipment review with Health Dept plan-check for cook-line equipment added under the hood. $2,750 flat fee, including final site inspection coordination.",
       },
-      { property: "og:title", content: "Restaurant Equipment Review - $2,990 Flat Fee" },
+      { property: "og:title", content: "Restaurant Equipment Review - $2,750 Flat Fee" },
       {
         property: "og:description",
         content:
-          "Adding equipment to a cook line under the hood? We establish an equipment review with plan-check. $2,990 flat.",
+          "Adding equipment to a cook line under the hood? We establish an equipment review with plan-check. $2,750 flat.",
       },
       {
         property: "og:url",
@@ -76,7 +76,7 @@ function EquipmentReviewPage() {
       <PageHero
         eyebrow="Health Permitting"
         title="Restaurant Equipment Review."
-        accent="$2,990 flat fee."
+        accent="$2,750 flat fee."
         subtitle="Adding equipment to a cook line under the hood? We establish the equipment review with Health Dept plan-check and arrange the final site inspection."
       />
 
@@ -91,7 +91,7 @@ function EquipmentReviewPage() {
               Transparent Pricing
             </div>
             <h2 className="mt-1 text-2xl md:text-3xl font-display font-bold">
-              $2,990 Flat Fee - Restaurant Equipment Review.
+              $2,750 Flat Fee - Restaurant Equipment Review.
             </h2>
             <HeadingCTA />
           </div>
@@ -127,7 +127,7 @@ function EquipmentReviewPage() {
       <CTASection
         serviceNeeded={"Restaurant equipment review"}
         title="Adding equipment to your cook line?"
-        body="Discuss your equipment plans and the $2,990 equipment review scope."
+        body="Discuss your equipment plans and the $2,750 equipment review scope."
       />
     </SiteLayout>
   );
