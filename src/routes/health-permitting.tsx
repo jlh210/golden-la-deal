@@ -191,7 +191,7 @@ function PermittingPage() {
               Also Available
             </div>
             <h2 className="mt-1 text-xl md:text-2xl font-display font-bold">
-              Restaurant Equipment Review - $2,750 Flat Fee
+              Restaurant Equipment Review - $2,990 Flat Fee
             </h2>
             <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
               When adding Equipment under the Hood, an “equipment review” with Plan-Check must be
