@@ -42,7 +42,7 @@ export const services: Service[] = [
   {
     slug: "equipment-review",
     to: "/restaurant-equipment-review",
-    title: "Health Department Plan-Check Restaurant Equipment Review - $2,750 Flat Fee",
+    title: "Health Department Plan-Check Restaurant Equipment Review - $2,990 Flat Fee",
     short:
       "Newly added Equipment under the Hood must go into an “equipment review” with Plan-Check to ensure health and safety standards and local building codes are in place.",
     icon: ClipboardCheck,
