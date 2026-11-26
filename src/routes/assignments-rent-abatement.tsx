@@ -13,7 +13,7 @@ export const Route = createFileRoute("/assignments-rent-abatement")({
       {
         name: "description",
         content:
-          "Lease assignment risk explained and rent abatement negotiation tied to permit issuance or opening day. Retainer $2,750.",
+          "Lease assignment risk explained and rent abatement negotiation tied to permit issuance or opening day. Retainer $2,990.",
       },
       { property: "og:title", content: "Assignments & Rent Abatement" },
       {
@@ -87,7 +87,7 @@ function AssignmentsPage() {
             </div>
           </div>
           <div className="text-right">
-            <div className="text-3xl font-display font-extrabold text-gold">$2,750</div>
+            <div className="text-3xl font-display font-extrabold text-gold">$2,990</div>
             <div className="text-xs uppercase tracking-wider text-gold/70 mt-1">Retainer Fee</div>
           </div>
         </div>
