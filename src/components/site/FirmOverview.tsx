@@ -6,6 +6,10 @@ const groups: { heading: string; items: { label: string; body: string }[] }[] = 
     heading: "Brief on our core services",
     items: [
       {
+        label: "Retail Restaurant Business Advisors",
+        body: "We do not give legal advice.",
+      },
+      {
         label: "Acquisitions & Sales",
         body: "Assisting clients with buying or selling existing restaurants, bars, and food service businesses.",
       },
