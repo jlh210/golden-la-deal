@@ -89,7 +89,7 @@ export const services: Service[] = [
   {
     slug: "door-knocking",
     to: "/search-door-knocking",
-    title: "Search Off-Market Restaurant",
+    title: "Search Off-Market Restaurants - $2,990 Flat Fee",
     short: "Restaurant door-knocking off-market campaign — locate, negotiate, and permit.",
     icon: DoorOpen,
   },
