@@ -25,7 +25,7 @@ export const Route = createFileRoute("/commercial-property-management")({
       {
         name: "description",
         content:
-          "Full-service commercial property management in Los Angeles. $600 per door or 10% of gross monthly rent. Leasing, compliance, maintenance, tenant screening, and 24/7 emergency service.",
+          "Full-service commercial property management in Los Angeles. $600 per door or 8% of gross monthly rent. Leasing, compliance, maintenance, tenant screening, and 24/7 emergency service.",
       },
       { property: "og:title", content: "Commercial Property Management Los Angeles" },
       {
@@ -174,7 +174,7 @@ function CommercialPropertyManagementPage() {
           <p className="mt-5 text-base md:text-lg text-muted-foreground leading-relaxed">
             Penthouse Advisors provides a full range of commercial management services and property
             management solutions. Our fee is based on $600 per door, or if the building has limited
-            doors, 10% of the total monthly gross rent collected.
+            doors, 8% of the total monthly gross rent collected.
           </p>
         </div>
       </section>
@@ -245,7 +245,7 @@ function CommercialPropertyManagementPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-gold">•</span>
-                  <span>Limited-door buildings: 10% of total monthly gross rent collected</span>
+                  <span>Limited-door buildings: 8% of total monthly gross rent collected</span>
                 </li>
               </ul>
             </div>
