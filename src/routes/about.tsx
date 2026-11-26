@@ -40,16 +40,18 @@ function AboutPage() {
         <div className="max-w-3xl space-y-5 text-foreground leading-relaxed">
           <p>
             Penthouse Advisors Inc is a California Corporation and Family Business created by Richard
-            Stein, Roschard Paticchio-Stein and Rosanna Paticchio, focusing entirely on the
-            Legal, Transactional matters throughout Los Angeles County, involving Health
-            Department Code Compliant pre inspections, supervised preparation for and to any
-            required upgrades and remodeling followed by the submission of the required
-            documentation for Health Department Plan-Check Permit reviews site inspections for
-            permit issuance. Restaurant and Bar Alcohol Licensing, Negotiations of the Retail
-            Monthly Rent and Lease terms and conditions, Regulatory Sides of Restaurant
-            Sales/Acquisitions, Retail/Commercial Property Management, Sales/Acquisitions. The
-            business entity is located in Santa Monica, CA. Officially filed on June 29, 2021 and
-            maintains an active filing status.
+            Stein, Roschard Paticchio-Stein and Rosanna Paticchio, focusing throughout Los Angeles
+            County entirely on the Legal, Transactional matters involving Restaurant and Retail Food
+            Establishments Health Department Code Compliant pre inspections, supervised preparation
+            for and to any required upgrades and or remodeling, followed by submission of all
+            required documentation and Blueprints for Health Department Plan-Check review and
+            stamping followed by authorized site inspections for permit issuance. CA., ABC, Alcohol
+            Licensing and Transfers for Restaurants, Markets, and Bars. Negotiations of the Retail
+            Monthly Rent, Abatement Allowances, Assignments, New Leases and it’s terms and
+            conditions, Regulatory Sides of Restaurant Sales/Acquisitions, Retail/Commercial Rent
+            Collections, Tenant Management, Sales, Acquisitions. The business entity is located in
+            Santa Monica, CA. Officially filed on June 29, 2021 and maintains an active filing
+            status.
           </p>
           <p>
             The corporation is led by a team of key individuals: See Below.
