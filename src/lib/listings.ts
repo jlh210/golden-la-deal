@@ -1,10 +1,5 @@
-import wilshire1 from "@/assets/wilshire-1.png";
-import wilshire2 from "@/assets/wilshire-2.png";
-import wilshire3 from "@/assets/wilshire-3.png";
-import wilshire4 from "@/assets/wilshire-4.png";
 import santaMonica1 from "@/assets/santa-monica-1.png";
 import santaMonica2 from "@/assets/santa-monica-2.png";
-import dentalOffice from "@/assets/dental-office-for-lease.png";
 import restaurantFullyEquipped1 from "@/assets/restaurant-fully-equipped-1.jpeg";
 import restaurantFullyEquipped2 from "@/assets/restaurant-fully-equipped-2.jpeg";
 import restaurantFullyEquipped3 from "@/assets/restaurant-fully-equipped-3.jpeg";
@@ -51,53 +46,6 @@ export type Listing = {
 };
 
 export const listings: Listing[] = [
-  {
-    id: "RE-005",
-    slug: "dental-office-for-lease",
-    type: "Medical / Dental",
-    title: "Therapy & Dental Space For Lease",
-    location: "West LA",
-    price: "$4,800 – $5,850 / month",
-    offerType: "lease",
-    priceNote: "All-in · First & last month and security deposit",
-    leaseType: "Doctor, therapy & dental offices · Building zoned medical use",
-    badge: "Available Now",
-    description:
-      "Doctor, therapy and dental offices in a building zoned medical use, West LA. Available inside a beautiful building. The second floor offices for lease are a 7 room doctor/therapy office at $5,850 per month all-in, plus a 4 room, plumbed dental office at $4,800 per month all-in. Available now.",
-    longDescription: [
-      "Doctor, Therapy & Dental Offices West LA — offices in a building zoned medical use, West LA, available inside a beautiful building.",
-      "The second floor offices for lease are a 7 room doctor/therapy office at $5,850 per month all-in, plus a 4 room, plumbed dental office at $4,800 per month all-in. Available now.",
-      "First & last month and security deposit.",
-    ],
-    sections: [
-      {
-        heading: "Second Floor — Doctor/Therapy Office",
-        body: "Doctor/therapy office with 7 rooms. Rent $5,850 per month, all-in. Available now.",
-        bullets: ["7 rooms", "$5,850 per month, all-in", "First & last month and security deposit"],
-      },
-      {
-        heading: "Second Floor — Plumbed Dental Office",
-        body: "4 room, plumbed dental office. Rent $4,800 per month, all-in. Available now.",
-        bullets: [
-          "4 rooms, plumbed",
-          "$4,800 per month, all-in",
-          "First & last month and security deposit",
-        ],
-      },
-    ],
-    features: [
-      "Building zoned medical use",
-      "Doctor, therapy & dental offices",
-      "Beautiful building, West LA",
-      "Second floor 7 room doctor/therapy office",
-      "$5,850/month, all-in",
-      "4 room, plumbed dental office",
-      "$4,800/month, all-in",
-      "Available now",
-      "First & last month and security deposit",
-    ],
-    images: [dentalOffice],
-  },
   {
     id: "R-002",
     slug: "santa-monica-asset-sale",
@@ -165,59 +113,6 @@ export const listings: Listing[] = [
       "Shopping center location",
     ],
     images: [santaMonica1, santaMonica2],
-  },
-  {
-    id: "R-003",
-    slug: "wilshire-second-gen-lease",
-    type: "Asset Sale",
-    title: "Gym and Coffee Shop Facility on the entire Property Lot",
-    location: "2408 Wilshire Blvd, Santa Monica, CA",
-    coords: [34.032541, -118.484189],
-    price: "$10,000 / month All-In",
-    offerPrice: 10000,
-    offerType: "lease",
-    priceNote: "Rent starts at $8,825 plus NNN · Long lease available",
-    sqft: "1,150 sq ft",
-    leaseType: "Single story, stand-alone building · Use: Gym & Coffee Shop",
-    badge: "Available Now",
-    description:
-      "Gym and Coffee Shop Facility on the entire Property Lot. The Lot has a 1,150 sqft., Single Story, Stand-alone air conditioned building for Gym and Coffee Shop, equipped with a commercial kitchen to prepare high quality coffee and Smoothies, plus a walk-in refrigerator.",
-    longDescription: [
-      "Gym and Coffee Shop Facility on the entire Property Lot.",
-      "The Lot has a 1,150 sqft., Single Story, Stand-alone air conditioned building for Gym and Coffee Shop, equipped with a commercial kitchen to prepare high quality coffee and Smoothies, plus a walk-in refrigerator.",
-      "Key: The Property has a large, covered rear area gated for outdoor Gym. Private Employee Rear Parking.",
-      "Long lease is available. Rent starts at $8,825 plus NNN, TOTAL $10,000 per month all-in.",
-      "Call to Visit this Santa Monica opportunity at 2408 Wilshire Blvd., and 24th Street.",
-    ],
-    sections: [
-      {
-        heading: "Lease Opportunity",
-        body: "Gym and Coffee Shop Facility on the entire Property Lot, with a large, covered, gated rear area for an outdoor Gym and private employee rear parking.",
-        bullets: [
-          "1,150 sqft., single story, stand-alone building",
-          "Air conditioned",
-          "Commercial kitchen for high quality coffee and smoothies",
-          "Walk-in refrigerator",
-          "Large, covered rear area gated for outdoor Gym",
-          "Private employee rear parking",
-          "Long lease is available",
-          "Rent starts at $8,825 plus NNN",
-          "TOTAL $10,000 per month all-in",
-        ],
-      },
-    ],
-    features: [
-      "1,150 sqft. stand-alone building",
-      "Single story, air conditioned",
-      "Use: Gym & Coffee Shop",
-      "Commercial kitchen & walk-in refrigerator",
-      "Covered, gated rear area for outdoor Gym",
-      "Private employee rear parking",
-      "Long lease available",
-      "$8,825 plus NNN · $10,000 per month all-in",
-      "Wilshire at 24th Street, Santa Monica",
-    ],
-    images: [wilshire3, wilshire1, wilshire2, wilshire4],
   },
   {
     id: "R-004",
