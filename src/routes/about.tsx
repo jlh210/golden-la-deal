@@ -62,9 +62,9 @@ function AboutPage() {
               Fixtures, Equipment (FF&amp;E) with Exclusive Listing Agreements. Negotiations with
               Landlords or Management if and when a Vacant, Second Generation Restaurant is
               illegally charging New Tenants Key Money. Landlord Negotiations for New Tenant Retail
-              Lease Assignments, New Lease terms and conditions, Abatement allowances, Monthly
-              Rental rates, Lease Signing, Retail Restaurant Business Advisors{" "}
-              <strong>and solutions, fast.</strong> We don’t give legal advice.
+              Lease assignments, New Lease terms and conditions, Abatement allowances, Monthly
+              Rental rates, Lease Signing, Retail Restaurant Business Advisors with fast solutions.
+              We don’t give legal advice.
             </p>
           </div>
           <p>
