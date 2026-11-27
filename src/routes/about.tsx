@@ -50,17 +50,14 @@ function AboutPage() {
             </h2>
             <p>
               Penthouse Advisors INC., focuses on Legal, Transactional matters involving the
-              following;
+              regulatory sides of Restaurant and Retail Food Establishments as follows;
             </p>
             <ol className="space-y-3 pl-1">
               <li>
-                <strong>A.</strong> Regulatory sides of Restaurant and Retail Food Establishments.
+                <strong>A.</strong> Alcohol ABC Licensing and Transfers.
               </li>
               <li>
-                <strong>B.</strong> Alcohol ABC Licensing and Transfers.
-              </li>
-              <li>
-                <strong>C.</strong> Health Department code compliant pre-inspections resolving any
+                <strong>B.</strong> Health Department code compliant pre-inspections resolving any
                 and all Permitting issues, (new tenant, newly installed equipment, plumbing,
                 remodeling, upgrades, red tags), preparation of all required documentation,
                 Drafting Blueprints ie., Floor Plan “existing and proposed” with an equipment
@@ -69,25 +66,25 @@ function AboutPage() {
                 commencing” followed by a final site inspection for permit issuance.
               </li>
               <li>
-                <strong>D.</strong> Restaurant Business Sales valuations based off the Gross
+                <strong>C.</strong> Restaurant Business Sales valuations based off the Gross
                 Monthly Net Returns.
               </li>
               <li>
-                <strong>E.</strong> Restaurant Asset sale valuations based off the Non Attached
+                <strong>D.</strong> Restaurant Asset sale valuations based off the Non Attached
                 Furniture, Fixtures, Equipment (FF&amp;E).
               </li>
               <li>
-                <strong>F.</strong> Second Generation Restaurant Negotiations with Landlords or
-                Property Management on equipped and vacant premises if and when New Tenants are
+                <strong>E.</strong> Second Generation Restaurant Negotiations with Landlords or
+                Property Management on equipped and vacant premises, if and when New Tenants are
                 being charged illegally “Key Money” as a condition for lease signing.
               </li>
               <li>
-                <strong>G.</strong> New Lease and Assignment Negotiations with Landlords/Management
+                <strong>F.</strong> New Lease and Assignment Negotiations with Landlords/Management
                 on Retail terms and conditions, Options, Annual increases, Rent Abatement
                 allowances, Monthly Rental rates.
               </li>
               <li>
-                <strong>H.</strong> Retail Restaurant Business Advisors with fast, workable
+                <strong>G.</strong> Retail Restaurant Business Advisors with fast, workable
                 solutions.
               </li>
             </ol>
