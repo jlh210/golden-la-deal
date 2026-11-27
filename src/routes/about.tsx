@@ -50,22 +50,48 @@ function AboutPage() {
             </h2>
             <p>
               Penthouse Advisors INC., focuses on Legal, Transactional matters involving the
-              regulatory sides of Restaurant and Retail Food Establishments, ABC Alcohol Licensing
-              and Transfers, Health Department code compliant pre-inspections resolving any and all
-              Permitting issues, (new tenant, newly installed equipment, plumbing, remodeling,
-              upgrades, red tags), preparation of all required documentation, Drafting Blueprints
-              ie., Floor Plan “existing and proposed” with an equipment schedule and scope of work,
-              Reflective Ceiling plan, Site plan submission for Health Department Plan-Check review
-              and Blueprint Stamping “prior to any work commencing” followed by a final site
-              inspection for permit issuance. Restaurant Business Sales valuations based off the
-              Gross Monthly Net, Restaurant Asset sale valuations for the Non Attached Furniture,
-              Fixtures, Equipment (FF&amp;E) with Exclusive Listing Agreements. Negotiations with
-              Landlords or Property Management if and when New Tenants are illegally being charged
-              “Key Money” to occupy an equipped, vacant, Second Generation Restaurant. Landlord
-              Negotiations for New Tenant, Retail Lease assignments, New Lease terms and
-              conditions, Rent Abatement allowances, Monthly Rental rates, Retail Restaurant
-              Business Advisors with fast solutions. We don’t give legal advice.
+              following;
             </p>
+            <ol className="space-y-3 pl-1">
+              <li>
+                <strong>A.</strong> Regulatory sides of Restaurant and Retail Food Establishments.
+              </li>
+              <li>
+                <strong>B.</strong> Alcohol ABC Licensing and Transfers.
+              </li>
+              <li>
+                <strong>C.</strong> Health Department code compliant pre-inspections resolving any
+                and all Permitting issues, (new tenant, newly installed equipment, plumbing,
+                remodeling, upgrades, red tags), preparation of all required documentation,
+                Drafting Blueprints ie., Floor Plan “existing and proposed” with an equipment
+                schedule and scope of work, Reflective Ceiling plan, Site plan submission for
+                Health Department Plan-Check review and Blueprint Stamping “prior to any work
+                commencing” followed by a final site inspection for permit issuance.
+              </li>
+              <li>
+                <strong>D.</strong> Restaurant Business Sales valuations based off the Gross
+                Monthly Net Returns.
+              </li>
+              <li>
+                <strong>E.</strong> Restaurant Asset sale valuations based off the Non Attached
+                Furniture, Fixtures, Equipment (FF&amp;E).
+              </li>
+              <li>
+                <strong>F.</strong> Second Generation Restaurant Negotiations with Landlords or
+                Property Management on equipped and vacant premises if and when New Tenants are
+                being charged illegally “Key Money” as a condition for lease signing.
+              </li>
+              <li>
+                <strong>G.</strong> New Lease and Assignment Negotiations with Landlords/Management
+                on Retail terms and conditions, Options, Annual increases, Rent Abatement
+                allowances, Monthly Rental rates.
+              </li>
+              <li>
+                <strong>H.</strong> Retail Restaurant Business Advisors with fast, workable
+                solutions.
+              </li>
+            </ol>
+            <p>We don’t give legal advice.</p>
           </div>
           <p>
             The corporation is led by a team of key individuals: See Below.
