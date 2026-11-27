@@ -268,6 +268,52 @@ export const listings: Listing[] = [
       restaurantFullyEquipped4,
     ],
   },
+  {
+    id: "R-007",
+    slug: "coffee-cafe-and-restaurant-combined-sale",
+    type: "Asset Sale",
+    title: "Coffee Cafe and Restaurant Combined For Sale",
+    location:
+      "1612 Santa Monica Blvd, Santa Monica, CA 90404 & 12200 Wilshire Blvd, Los Angeles, CA 90025",
+    coords: [34.0257669, -118.4834686],
+    priceNote: "2 Restaurants sold together",
+    leaseType: "Restaurant + Coffee Cafe · Combined sale",
+    badge: "2 Locations",
+    description:
+      "Coffee Cafe and Restaurant combined for sale. The Restaurant at 1612 Santa Monica Blvd in Santa Monica does the cooking and baking for the Cafe at 12200 Wilshire Blvd in West Los Angeles. We are selling 2 Restaurants combined.",
+    longDescription: [
+      "Coffee Cafe and Restaurant combined for sale.",
+      "The Restaurant at 1612 Santa Monica Blvd in Santa Monica does the cooking and baking for the Cafe at 12200 Wilshire Blvd in West Los Angeles.",
+      "We are selling 2 Restaurants combined.",
+    ],
+    sections: [
+      {
+        heading: "Full Dine-In Restaurant — 1612 Santa Monica Blvd, Santa Monica",
+        body: "Fully Equipped and Permitted. Does the cooking and baking for the Coffee Cafe.",
+        bullets: [
+          "Fully Equipped and Permitted",
+          "Large Walk-In",
+          "18 foot hood",
+          "Shopping Center Parking Lot and Off-street parking",
+          "Rent approximately $6,500",
+        ],
+      },
+      {
+        heading: "Full Dine-In Coffee Cafe — 12200 Wilshire Blvd, Los Angeles, CA 90025",
+        body: "Turn Key ready in West Los Angeles.",
+        bullets: ["Turn Key ready", "Fully Equipped", "No Hood", "Rent approximately $7,600"],
+      },
+    ],
+    features: [
+      "2 Restaurants sold together",
+      "Santa Monica Restaurant: Fully Equipped and Permitted",
+      "Santa Monica Restaurant: Large Walk-In, 18 foot hood",
+      "Santa Monica Restaurant: Rent approximately $6,500",
+      "Wilshire Coffee Cafe: Turn Key ready, Fully Equipped",
+      "Wilshire Coffee Cafe: No Hood, Rent approximately $7,600",
+    ],
+    images: [santaMonica1, coffeeShopAssetSale1, santaMonica2],
+  },
 ];
 
 export function getListingBySlug(slug: string): Listing | undefined {
