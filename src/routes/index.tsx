@@ -9,7 +9,6 @@ import {
   HOURS,
 } from "@/components/site/Layout";
 import { CONSULTATION_LABEL } from "@/lib/consultation";
-import { FirmOverview } from "@/components/site/FirmOverview";
 import { SITE_URL, ORG_ID, WEBSITE_ID, faqScript } from "@/lib/seo";
 
 const title = "Restaurant Business Broker Los Angeles, CA | Penthouse Advisors Inc.";
@@ -258,9 +257,6 @@ function HomePage() {
                 <p>
                   <strong>Thank you, Richard Stein COO · Roschard Paticchio-Stein CEO</strong>
                 </p>
-              </div>
-              <div className="pa-hero-description" style={{ fontWeight: 400 }}>
-                <FirmOverview />
               </div>
               <h1 id="home-title" className="sr-only">
                 Restaurant Business Broker in Los Angeles, CA – Penthouse Advisors Inc.
