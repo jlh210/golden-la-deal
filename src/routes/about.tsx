@@ -52,8 +52,9 @@ function AboutPage() {
               Penthouse Advisors INC., focuses on Legal, Transactional matters involving the
               regulatory sides of Restaurant and Retail Food Establishments, ABC Alcohol Licensing
               and Transfers, Health Department code compliant pre-inspections resolving any and all
-              Permitting issues, (new tenant, newly installed equipment, plumbing, remodeling, up
-              grades, red tags), preparation of all required documentation, Drafting Blueprints ie.,
+              Permitting issues, example: (new tenant change of possession COP, newly installed
+              equipment, entity &amp; menu change same owner, plumbing upgrades, restaurant remodel,
+              red tags etc), preparation of all required documentation, Drafting Blueprints ie.,
               Floor Plan “existing and proposed” with an equipment schedule and scope of work,
               Reflective Ceiling plan, Site plan submission for Health Department Plan-Check review
               and Blueprint Stamping “prior to any work commencing” followed by a final site
