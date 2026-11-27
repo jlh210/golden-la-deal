@@ -27,8 +27,6 @@ export const Route = createFileRoute("/restaurants-for-sale/$slug")({
     const conciseDescriptions: Record<string, string> = {
       "westwood-santa-monica-restaurant-asset-sale":
         "Explore an equipped restaurant asset sale at Westwood and Santa Monica Boulevards in Los Angeles, with parking and access to public transportation.",
-      "dental-office-for-lease":
-        "Explore doctor, therapy and plumbed dental office space for lease in West LA. Review room configurations, asking rent and the listing’s lease requirements.",
     };
     const desc = conciseDescriptions[l.slug] ?? l.description ?? l.longDescription?.[0] ?? l.title;
     const image = l.images?.[0];
