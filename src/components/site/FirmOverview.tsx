@@ -7,7 +7,7 @@ const groups: { heading: string; items: { label: string; body: string }[] }[] = 
     items: [
       {
         label: "Retail Restaurant Business Advisors",
-        body: "We do not give legal advice.",
+        body: "We can help you find Business Resolutions without giving legal advice.",
       },
       {
         label: "Acquisitions & Sales",
