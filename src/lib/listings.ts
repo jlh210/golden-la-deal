@@ -8,6 +8,7 @@ import melroseMassageSpa1 from "@/assets/melrose-massage-spa-1.jpeg";
 import melroseMassageSpa2 from "@/assets/melrose-massage-spa-2.jpeg";
 import melroseMassageSpa3 from "@/assets/melrose-massage-spa-3.jpeg";
 import melroseMassageSpa4 from "@/assets/melrose-massage-spa-4.jpeg";
+import coffeeShopAssetSale1 from "@/assets/coffee-shop-asset-sale-1.webp";
 
 export type SaleType =
   | "Business Sale"
@@ -211,6 +212,7 @@ export const listings: Listing[] = [
       "Shopping Center Parking Lot and Off-street parking",
       "$585,000",
     ],
+    images: [coffeeShopAssetSale1],
   },
   {
     id: "R-006",
