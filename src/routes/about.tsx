@@ -41,21 +41,8 @@ function AboutPage() {
           <p>
             Penthouse Advisors Inc is a California Corporation and Family Business created by Richard
             Stein, Roschard Paticchio-Stein and Rosanna Paticchio, focusing entirely throughout Los
-            Angeles County on Legal, Transactional matters involving the regulatory sides of
-            Restaurant and Retail Food Establishments, ABC Alcohol Licensing and Transfers, Health
-            Department code compliant pre-inspections for resolving any and all Permitting issues,
-            preparation of all required documentation, Drafting Blueprints ie., Floor Plan
-            “existing and proposed” with an equipment schedule and scope of work, Reflective Ceiling
-            plan, Site plan submission for Health Department Plan-Check review and Blueprint
-            Stamping “prior to any work commencing” followed by a final site inspection for permit
-            issuance. Restaurant Business Sales valuations based off the Gross Monthly Net,
-            Restaurant Asset sale valuations for the Non Attached Furniture, Fixtures, Equipment
-            (FF&amp;E) with Exclusive Listing Agreements. Negotiations with Landlords or Management if
-            and when a Vacant, Second Generation Restaurant is illegally charging New Tenants Key
-            Money. Landlord Negotiations for New Tenant Retail Lease Assignments, New Lease terms and
-            conditions, Abatement allowances, Monthly Rental rates, Lease Signing, Retail Restaurant
-            Business Advisors: We do not give legal advice. The business entity is located in Santa
-            Monica, CA., Officially filed on June 29, 2021 and maintains an active filing status.
+            Angeles County. The business entity is located in Santa Monica, CA., Officially filed on
+            June 29, 2021 and maintains an active filing status.
           </p>
           <p>
             The corporation is led by a team of key individuals: See Below.
