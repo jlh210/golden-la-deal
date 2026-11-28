@@ -44,50 +44,100 @@ function AboutPage() {
             Angeles County. The business entity is located in Santa Monica, CA., Officially filed on
             June 29, 2021 and maintains an active filing status.
           </p>
-          <div className="space-y-3 pt-8">
+          <div className="space-y-6 pt-8">
             <h2 className="font-display text-[26px] font-bold leading-tight">
               Brief - What We Do
             </h2>
             <p>
               Penthouse Advisors INC., focuses on Legal, Transactional matters involving the
               regulatory sides of Restaurant and Retail Food Establishments throughout Los Angeles
-              County as follows;
+              County as follows:
             </p>
-            <ol className="space-y-3 pl-1">
+            <ul className="space-y-5 border-l-2 border-primary/40 pl-5">
               <li>
-                <strong>Buy and Sell Restaurants. TB.</strong> Health Department code compliant pre-inspections resolving any
-                and all Permitting issues, example: (new tenant change of possession COP, newly
-                installed equipment, entity &amp; menu change same owner, plumbing upgrades,
-                restaurant remodel, red tags etc.), preparation of all required documentation,
-                Drafting Blueprints i.e.., Floor Plan “existing and proposed” with an equipment
-                schedule and scope of work, Reflective Ceiling plan, Site plan submission for
-                Health Department Plan-Check review and Blueprint Stamping “prior to any work
-                commencing” followed by a final site inspection for permit issuance.
+                <h3 className="font-display text-lg font-semibold leading-snug">
+                  Restaurant Brokerage &amp; Off-Market Search
+                </h3>
+                <p>
+                  Buy and Sell Restaurants under exclusive listing agreements. Search by door
+                  knocking Off Market Restaurants and Food Establishments for sale.
+                </p>
               </li>
               <li>
-                <strong>C.</strong> Restaurant Business Sales valuations based off the Gross
-                Monthly Net Returns.
+                <h3 className="font-display text-lg font-semibold leading-snug">
+                  Health Department Compliance &amp; Permitting
+                </h3>
+                <p>
+                  Perform Health Department code compliant Restaurant pre-inspections resolving any
+                  and all Permitting issues, which involves the preparation of all required
+                  documentation, including Drafting Hand Drawn Blueprints i.e., Floor Plan
+                  “existing and proposed” with an equipment schedule and scope of work for Health
+                  Dept. Plan-Check review and permit issuance.
+                </p>
               </li>
               <li>
-                <strong>D.</strong> Restaurant Asset sale valuations based off the Non Attached
-                Furniture, Fixtures, Equipment (FF&amp;E).
+                <h3 className="font-display text-lg font-semibold leading-snug">
+                  Business &amp; Asset Valuations
+                </h3>
+                <p>
+                  When selling a Restaurant Business, we perform valuations based off the Gross
+                  Monthly Net Returns and condition of the attached and non-attached equipment.
+                  Restaurant Asset sale valuations are based off the condition of the attached
+                  equipment and Non Attached Furniture, Fixtures, Equipment (FF&amp;E), Health
+                  Department Permit compliance, location and parking. The existing Buildout and
+                  decorations are exempt from the valuation.
+                </p>
               </li>
               <li>
-                <strong>E.</strong> Second Generation Restaurant Negotiations with Landlords or
-                Property Management on equipped and vacant premises, if and when New Tenants are
-                being charged illegally “Key Money” as a condition for lease signing.
+                <h3 className="font-display text-lg font-semibold leading-snug">
+                  Buyer Protection - Second Generation Restaurants
+                </h3>
+                <p>
+                  We protect Buyers when retained to look into Second Generation Restaurants,
+                  equipped and vacant, when Landlords or Property Management are charging “Key
+                  Money” illegally for such equipment as a condition to lease signing.
+                </p>
               </li>
               <li>
-                <strong>F.</strong> New Lease and Assignment Negotiations with Landlords/Management
-                on Retail terms and conditions, Options, Annual increases, Rent Abatement
-                allowances, Monthly Rental rates.
+                <h3 className="font-display text-lg font-semibold leading-snug">
+                  Retail Lease &amp; Assignment Negotiations
+                </h3>
+                <p>
+                  We are strong negotiators with Retail Leases and Assignments: the monthly Rent,
+                  terms and conditions, Options, Annual increases, and Rent Abatement allowances.
+                </p>
               </li>
               <li>
-                <strong>G.</strong> Retail Restaurant Business Advisors with fast, workable
-                solutions.
+                <h3 className="font-display text-lg font-semibold leading-snug">
+                  Restaurant Business Advisors
+                </h3>
+                <p>Giving fast, workable solutions.</p>
               </li>
-            </ol>
-            <p>We don’t give legal advice.</p>
+            </ul>
+            <p className="text-sm italic text-muted-foreground">We don’t give legal advice.</p>
+          </div>
+          <div className="space-y-4 pt-6">
+            <h2 className="font-display text-[26px] font-bold leading-tight">
+              Example of Purchasing a Restaurant with Non Disclosures
+            </h2>
+            <ul className="list-disc space-y-2 pl-6 marker:text-primary">
+              <li>
+                Restaurant acquisition and remodeling, installing of new gas equipment under the
+                Hood
+              </li>
+              <li>Cooking under Countertop Ventless Hoods after permitting</li>
+              <li>Replacing the Entity &amp; Menu by the same owner</li>
+              <li>New tenant change of possession (COP)</li>
+              <li>Sink plumbing connections, red tags</li>
+              <li>
+                Buying a Restaurant with undisclosed code violations, expired permits, unpermitted
+                construction
+              </li>
+              <li>Absent Conditional Use Beverage Permit to serve alcohol (CUB)</li>
+              <li>Conditions that block your concept</li>
+              <li>Grandfather-protection traps</li>
+              <li>Equipment that’s leased, not owned</li>
+            </ul>
           </div>
           <p>
             The corporation is led by a team of key individuals: See Below.
