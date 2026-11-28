@@ -45,17 +45,17 @@ function AboutPage() {
             June 29, 2021 and maintains an active filing status.
           </p>
           <div className="space-y-6 pt-8">
-            <h2 className="font-display text-[26px] font-bold leading-tight">
-              Brief - What We Do
+            <h2 className="font-display text-[26px] font-bold italic leading-tight">
+              Brief What We Do:
             </h2>
-            <p>
+            <p className="italic">
               Penthouse Advisors INC., focuses on Legal, Transactional matters involving the
               regulatory sides of Restaurant and Retail Food Establishments throughout Los Angeles
               County as follows:
             </p>
             <ul className="space-y-5 border-l-2 border-primary/40 pl-5">
               <li>
-                <h3 className="font-display text-lg font-semibold leading-snug">
+                <h3 className="font-display text-lg font-semibold italic leading-snug">
                   Restaurant Brokerage &amp; Off-Market Search
                 </h3>
                 <p>
@@ -64,24 +64,28 @@ function AboutPage() {
                 </p>
               </li>
               <li>
-                <h3 className="font-display text-lg font-semibold leading-snug">
+                <h3 className="font-display text-lg font-semibold italic leading-snug">
                   Health Department Compliance &amp; Permitting
                 </h3>
                 <p>
                   Perform Health Department code compliant Restaurant pre-inspections resolving any
                   and all Permitting issues, which involves the preparation of all required
                   documentation, including Drafting Hand Drawn Blueprints i.e., Floor Plan
-                  “existing and proposed” with an equipment schedule and scope of work for Health
+                  “existing and proposed” with equipment schedules and scope of work for Health
                   Dept. Plan-Check review and permit issuance.
                 </p>
               </li>
               <li>
-                <h3 className="font-display text-lg font-semibold leading-snug">
+                <h3 className="font-display text-lg font-semibold italic leading-snug">
                   Business &amp; Asset Valuations
                 </h3>
                 <p>
                   When selling a Restaurant Business, we perform valuations based off the Gross
-                  Monthly Net Returns and condition of the attached and non-attached equipment.
+                  Monthly Net Returns, condition of the attached and non-attached equipment,
+                  Health Department Permit pre-inspections for non-compliance, Menu, Cooks and
+                  Servers dress and attitudes, shifts, location and parking.
+                </p>
+                <p className="pt-2">
                   Restaurant Asset sale valuations are based off the condition of the attached
                   equipment and Non Attached Furniture, Fixtures, Equipment (FF&amp;E), Health
                   Department Permit compliance, location and parking. The existing Buildout and
@@ -89,7 +93,7 @@ function AboutPage() {
                 </p>
               </li>
               <li>
-                <h3 className="font-display text-lg font-semibold leading-snug">
+                <h3 className="font-display text-lg font-semibold italic leading-snug">
                   Buyer Protection - Second Generation Restaurants
                 </h3>
                 <p>
@@ -99,7 +103,7 @@ function AboutPage() {
                 </p>
               </li>
               <li>
-                <h3 className="font-display text-lg font-semibold leading-snug">
+                <h3 className="font-display text-lg font-semibold italic leading-snug">
                   Retail Lease &amp; Assignment Negotiations
                 </h3>
                 <p>
@@ -108,7 +112,7 @@ function AboutPage() {
                 </p>
               </li>
               <li>
-                <h3 className="font-display text-lg font-semibold leading-snug">
+                <h3 className="font-display text-lg font-semibold italic leading-snug">
                   Restaurant Business Advisors
                 </h3>
                 <p>Giving fast, workable solutions.</p>
@@ -117,23 +121,19 @@ function AboutPage() {
             <p className="text-sm italic text-muted-foreground">We don’t give legal advice.</p>
           </div>
           <div className="space-y-4 pt-6">
-            <h2 className="font-display text-[26px] font-bold leading-tight">
-              Example of Purchasing a Restaurant with Non Disclosures
+            <h2 className="font-display text-[26px] font-bold italic leading-tight">
+              Example of Purchasing a Restaurant without Seller Disclosures of Code Violations:
             </h2>
             <ul className="list-disc space-y-2 pl-6 marker:text-primary">
+              <li>Installing of new gas equipment under the Hood without Building &amp; Safety sign off</li>
+              <li>Cooking with non-permitted Countertop Ventless Hoods</li>
+              <li>Added Sink and plumbing connections not to code</li>
+              <li>Red tag equipment (tags removed)</li>
+              <li>Expired permits</li>
+              <li>Unpermitted construction</li>
               <li>
-                Restaurant acquisition and remodeling, installing of new gas equipment under the
-                Hood
+                Non-existent or expired Conditional Use Beverage Permit (CUB) while serving alcohol
               </li>
-              <li>Cooking under Countertop Ventless Hoods after permitting</li>
-              <li>Replacing the Entity &amp; Menu by the same owner</li>
-              <li>New tenant change of possession (COP)</li>
-              <li>Sink plumbing connections, red tags</li>
-              <li>
-                Buying a Restaurant with undisclosed code violations, expired permits, unpermitted
-                construction
-              </li>
-              <li>Absent Conditional Use Beverage Permit to serve alcohol (CUB)</li>
               <li>Conditions that block your concept</li>
               <li>Grandfather-protection traps</li>
               <li>Equipment that’s leased, not owned</li>
