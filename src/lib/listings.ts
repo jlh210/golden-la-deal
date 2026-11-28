@@ -167,15 +167,18 @@ export const listings: Listing[] = [
     location:
       "1612 Santa Monica Blvd, Santa Monica, CA 90404 & 12200 Wilshire Blvd, Los Angeles, CA 90025",
     coords: [34.0257669, -118.4834686],
+    price: "$585,000",
+    offerPrice: 585000,
     priceNote: "2 Restaurants sold together",
     leaseType: "Restaurant + Coffee Cafe · Combined sale",
     badge: "2 Locations",
     description:
-      "Coffee Cafe and Restaurant combined for sale. The Restaurant at 1612 Santa Monica Blvd in Santa Monica does the cooking and baking for the Cafe at 12200 Wilshire Blvd in West Los Angeles. We are selling 2 Restaurants combined.",
+      "Coffee Cafe and Restaurant combined for sale. The Restaurant at 1612 Santa Monica Blvd in Santa Monica does the cooking and baking for the Cafe at 12200 Wilshire Blvd in West Los Angeles. We are selling 2 Restaurants combined. $585,000.",
     longDescription: [
       "Coffee Cafe and Restaurant combined for sale.",
       "The Restaurant at 1612 Santa Monica Blvd in Santa Monica does the cooking and baking for the Cafe at 12200 Wilshire Blvd in West Los Angeles.",
       "We are selling 2 Restaurants combined.",
+      "$585,000.",
     ],
     sections: [
       {
@@ -196,6 +199,7 @@ export const listings: Listing[] = [
       },
     ],
     features: [
+      "$585,000 for both locations",
       "2 Restaurants sold together",
       "Santa Monica Restaurant: Fully Equipped and Permitted",
       "Santa Monica Restaurant: Large Walk-In, 18 foot hood",
