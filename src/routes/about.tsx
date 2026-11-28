@@ -53,7 +53,7 @@ function AboutPage() {
               regulatory sides of Restaurant and Retail Food Establishments throughout Los Angeles
               County as follows:
             </p>
-            <ul className="space-y-5 border-l-2 border-primary/40 pl-5">
+            <ul className="space-y-5 border-l-2 border-primary/40 pl-5 italic">
               <li>
                 <h3 className="font-display text-lg font-semibold italic leading-snug">
                   Restaurant Brokerage &amp; Off-Market Search
@@ -97,9 +97,9 @@ function AboutPage() {
                   Buyer Protection - Second Generation Restaurants
                 </h3>
                 <p>
-                  We protect Buyers when retained to look into Second Generation Restaurants,
-                  equipped and vacant, when Landlords or Property Management are charging “Key
-                  Money” illegally for such equipment as a condition to lease signing.
+                  When our services are retained, we protect Buyers looking into leasing Second
+                  Generation Restaurants, equipped and vacant, if and when Landlords or Property
+                  Management try charging “Key Money” illegally as a condition to lease signing.
                 </p>
               </li>
               <li>
@@ -124,7 +124,7 @@ function AboutPage() {
             <h2 className="font-display text-[26px] font-bold italic leading-tight">
               Example of Purchasing a Restaurant without Seller Disclosures of Code Violations:
             </h2>
-            <ul className="list-disc space-y-2 pl-6 marker:text-primary">
+            <ul className="list-disc space-y-2 pl-6 italic marker:text-primary">
               <li>Installing of new gas equipment under the Hood without Building &amp; Safety sign off</li>
               <li>Cooking with non-permitted Countertop Ventless Hoods</li>
               <li>Added Sink and plumbing connections not to code</li>
