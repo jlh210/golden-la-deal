@@ -50,14 +50,12 @@ function AboutPage() {
             </h2>
             <p>
               Penthouse Advisors INC., focuses on Legal, Transactional matters involving the
-              regulatory sides of Restaurant and Retail Food Establishments as follows;
+              regulatory sides of Restaurant and Retail Food Establishments throughout Los Angeles
+              County as follows;
             </p>
             <ol className="space-y-3 pl-1">
               <li>
-                <strong>A.</strong> Alcohol ABC Licensing and Transfers.
-              </li>
-              <li>
-                <strong>B.</strong> Health Department code compliant pre-inspections resolving any
+                <strong>Buy and Sell Restaurants. TB.</strong> Health Department code compliant pre-inspections resolving any
                 and all Permitting issues, example: (new tenant change of possession COP, newly
                 installed equipment, entity &amp; menu change same owner, plumbing upgrades,
                 restaurant remodel, red tags etc.), preparation of all required documentation,
