@@ -174,48 +174,6 @@ export const listings: Listing[] = [
     images: [melroseMassageSpa1, melroseMassageSpa2, melroseMassageSpa3, melroseMassageSpa4],
   },
   {
-    id: "R-005",
-    slug: "coffee-shop-asset-sale",
-    type: "Asset Sale",
-    title: "Coffee Shop Asset Sale",
-    location: "12200 Wilshire Blvd, Los Angeles, CA 90025",
-    coords: [34.043277, -118.468347],
-    price: "$585,000",
-    offerPrice: 585000,
-    priceNote: "Turn Key ready",
-    leaseType: "Coffee shop · Shopping center",
-    badge: "Turn Key",
-    description:
-      "Coffee Shop Asset Sale. Turn Key ready. Fully Equipped and Permitted. Large Walk-In. Shopping Center Parking Lot and Off-street parking. $585,000.",
-    longDescription: [
-      "Coffee Shop Asset Sale. Turn Key ready.",
-      "Fully Equipped and Permitted. Large Walk-In.",
-      "Shopping Center Parking Lot and Off-street parking.",
-      "$585,000.",
-    ],
-    sections: [
-      {
-        heading: "Deal Structure",
-        body: "Coffee shop asset sale. Turn Key ready. $585,000.",
-        bullets: [
-          "Turn Key ready",
-          "Fully Equipped and Permitted",
-          "Large Walk-In",
-          "Shopping Center Parking Lot and Off-street parking",
-          "$585,000",
-        ],
-      },
-    ],
-    features: [
-      "Turn Key ready",
-      "Fully Equipped and Permitted",
-      "Large Walk-In",
-      "Shopping Center Parking Lot and Off-street parking",
-      "$585,000",
-    ],
-    images: [coffeeShopAssetSale1],
-  },
-  {
     id: "R-006",
     slug: "restaurant-fully-equipped-asset-sale",
     type: "Asset Sale",
