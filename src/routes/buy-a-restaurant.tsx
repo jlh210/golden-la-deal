@@ -117,6 +117,7 @@ function BuyARestaurantPage() {
         { to: "/business-investigations", label: "Pre-Purchase Investigations" },
         { to: "/alcohol-licensing", label: "Alcohol Licensing" },
         { to: "/e2-visa-europe", label: "E-2 Visa (Europe)" },
+        { to: "/health-permitting", label: "Health Department Permitting Issues" },
       ]}
       relatedAtTop
       heroSecondaryAction={{ to: "/restaurants-for-sale", label: "View Restaurants for Sale" }}
