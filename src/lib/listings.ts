@@ -9,6 +9,7 @@ import melroseMassageSpa2 from "@/assets/melrose-massage-spa-2.jpeg";
 import melroseMassageSpa3 from "@/assets/melrose-massage-spa-3.jpeg";
 import melroseMassageSpa4 from "@/assets/melrose-massage-spa-4.jpeg";
 import coffeeShopAssetSale1 from "@/assets/coffee-shop-asset-sale-1.webp";
+import coffeeCafeRestaurantCombined1 from "@/assets/coffee-cafe-restaurant-combined-1.webp";
 
 export type SaleType =
   | "Business Sale"
@@ -312,7 +313,7 @@ export const listings: Listing[] = [
       "Wilshire Coffee Cafe: Turn Key ready, Fully Equipped",
       "Wilshire Coffee Cafe: No Hood, Rent approximately $7,600",
     ],
-    images: [santaMonica1, coffeeShopAssetSale1, santaMonica2],
+    images: [santaMonica1, coffeeShopAssetSale1, santaMonica2, coffeeCafeRestaurantCombined1],
   },
 ];
 
